@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Morning Briefing -- Saturday, April 25, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../includes/AnthStyle.css">
+<script>
+  function copyTemplate(id, btn) {
+    const text = document.getElementById(id).textContent;
+    navigator.clipboard.writeText(text).then(() => {
+      btn.textContent = 'Copied!';
+      btn.classList.add('copied');
+      setTimeout(() => { btn.textContent = 'Copy to Clipboard'; btn.classList.remove('copied'); }, 2000);
+    });
+  }
+</script>
+</head>
+<body>
+
+<div class="page-header">
+  <h1>Morning Briefing -- Saturday, April 25, 2026</h1>
+  <p class="page-meta">Microsoft &bull; Security &amp; Compliance &bull; Firewall / VPN / Networking &bull; Servers/NAS &bull; Workstations &amp; Mobile &bull; Peripherals &amp; AV &bull; RMM &amp; Remote Access &bull; Construction &amp; Specialty Software &bull; General Tech &amp; AI &bull; Pacific Time</p>
+</div>
+
+<div class="exec-summary">
+  <h2>Today's Actions</h2>
+  <ol class="action-list">
+    <li><span class="urgency-red">Act Today</span> Update your small-business client's UCG Fiber gateway to UniFi Network Application 10.1.89+ immediately &mdash; CVE-2026-22557 is CVSS 10.0, unauthenticated, and allows full system takeover with active exploitation risk reported.</li>
+    <li><span class="urgency-red">Act Today</span> Push iOS/iPadOS 18.7.7 to all iPhones for your construction client &mdash; DarkSword is an in-the-wild full-chain spyware exploit targeting unpatched iOS 18.4&ndash;18.7 devices with no user interaction required.</li>
+    <li><span class="urgency-red">Act Today</span> Audit Atera and Splashtop deployment logs across your internal ops for unauthorized agent installations &mdash; an active phishing campaign is delivering both RMM tools simultaneously via Discord CDN links to create redundant backdoor access.</li>
+    <li><span class="urgency-red">Act Today</span> Verify whether your construction client, your small-business client, or your internal ops is running the Entra Global Secure Access client and disable it temporarily &mdash; April Windows updates are severing M365 and Entra connectivity with no confirmed Microsoft fix yet.</li>
+  </ol>
+  <h2 class="second">At a Glance</h2>
+  <div class="summary-cards">
+    <div class="summary-card"><a href="#item-1">Ubiquiti UniFi CVE-2026-22557 (CVSS 10) &mdash; Unauthenticated Path Traversal, Active Exploitation Risk</a><span class="urgency-red">Act Today</span><span class="sum-why">Check your small-business client's UCG Fiber gateway version and update to UniFi 10.1.89+ immediately &mdash; their Ubiquiti device is directly exposed to this critical unauthenticated exploit.</span></div>
+    <div class="summary-card"><a href="#item-2">Apple Expands iOS/iPadOS 18.7.7 DarkSword Exploit Patches to Wider Device Set</a><span class="urgency-red">Act Today</span><span class="sum-why">Verify iOS 18.7.7 is installed on all iPhones for your construction client &mdash; iPhones are their only mobile platform and DarkSword is actively exploited in the wild with no user interaction required.</span></div>
+    <div class="summary-card"><a href="#item-3">Multi-RMM Attack Campaign Delivers Splashtop and Atera Agents via Discord CDN</a><span class="urgency-red">Act Today</span><span class="sum-why">Audit your internal ops Atera and Splashtop deployment logs for unexpected agent installations, and brief end users at your construction client and your small-business client about unexpected software install prompts.</span></div>
+    <div class="summary-card"><a href="#item-4">Entra Global Secure Access Client Loses Connectivity After April 2026 Windows Update</a><span class="urgency-red">Act Today</span><span class="sum-why">If your construction client, your small-business client, or your internal ops is running the Entra Global Secure Access client, disable it temporarily &mdash; April Windows updates sever M365 and Entra connectivity with no confirmed Microsoft fix.</span></div>
+    <div class="summary-card"><a href="#item-5">Dell DSA-2026-075: Security Update for AMD-Based PowerEdge Servers</a><span class="urgency-yellow">This Week</span><span class="sum-why">General SMB IT context &mdash; no direct client impact.</span></div>
+    <div class="summary-card"><a href="#item-6">OpenAI Releases GPT-5.5 with Enhanced Agentic Coding and Research Capabilities</a><span class="urgency-yellow">This Week</span><span class="sum-why">Evaluate GPT-5.5 for your internal ops workflow automation and client tooling &mdash; now available via API and rolling out to all paid ChatGPT tiers.</span></div>
+  </div>
+</div>
+
+<h2>Worth Skimming</h2>
+<ul class="skim-list">
+  <li><strong>Cherokee Federal Achieves CMMC Level 2 C3PAO Certification Ahead of November 2026 Deadline</strong> &mdash; Cherokee Federal completed full CMMC Level 2 C3PAO certification before the DoD&rsquo;s November 2026 enforcement deadline, joining a small but growing group of certified contractors. Highlights ongoing C3PAO assessment capacity constraints noted by the GAO. <a href="https://www.prnewswire.com/news-releases/cherokee-federal-reaches-major-cybersecurity-milestone-with-cmmc-level-2-c3pao-certification-302753228.html" target="_blank">Read more &rarr;</a></li>
+  <li><strong>Castellum, Inc. Achieves CMMC Level 2 C3PAO Certification with Perfect Score</strong> &mdash; Castellum completed CMMC Level 2 with a perfect 110/110 score and zero open POA&amp;Ms, setting a high benchmark ahead of the November 2026 DoD enforcement window. <a href="https://www.globenewswire.com/news-release/2026/04/23/3279707/0/en/Castellum-Inc-Achieves-CMMC-Level-2-C3PAO-Certification.html" target="_blank">Read more &rarr;</a></li>
+  <li><strong>DeepSeek Releases V4 Model Preview with 1M Token Context</strong> &mdash; DeepSeek previewed its V4 AI model on April 24, claiming near-parity with frontier closed-source models at as low as $0.14/million tokens, relevant to IT teams evaluating cost-efficient AI options. <a href="https://techcrunch.com/2026/04/24/deepseek-previews-new-ai-model-that-closes-the-gap-with-frontier-models/" target="_blank">Read more &rarr;</a></li>
+  <li><strong>Atera RMM April 2026 Release Adds Multi-Device User Linking and Session Security Controls</strong> &mdash; Atera&rsquo;s April 2026 update adds multi-device user linking for improved ticket handling and configurable session-length enforcement for end-user security; all changes are live for Atera subscribers. <a href="https://support.atera.com/hc/en-us/articles/25381421604124-Release-Notes-2026" target="_blank">Read more &rarr;</a></li>
+</ul>
+
+<h2>Client Alert Templates</h2>
+<details class="alert-box">
+  <summary>
+    <span class="alert-subj">Subject: Important iPhone Security Update &mdash; Please Install Today</span>
+    <button type="button" class="copy-btn" onclick="event.preventDefault(); event.stopPropagation(); copyTemplate('alert-1', this);">Copy to Clipboard</button>
+  </summary>
+  <div class="alert-body">
+    <pre id="alert-1">Hi team,
+
+Apple has released an important security update for iPhones and iPads (iOS/iPadOS 18.7.7) that patches a serious set of vulnerabilities currently being actively exploited in the wild. These flaws can allow attackers to fully compromise a device — no clicking or downloading required on your part.
+
+To update: go to Settings > General > Software Update and install iOS 18.7.7. The update takes about 10–15 minutes and requires a restart. Please do this as soon as possible — today if you can.
+
+If your phone already shows version 18.7.7 or higher, you're all set. If you run into any trouble, reach out and I'll help.
+
+Thanks,
+Larry</pre>
+  </div>
+</details>
+<details class="alert-box">
+  <summary>
+    <span class="alert-subj">Subject: Security Notice &mdash; Watch for Unexpected Remote Access Software Prompts</span>
+    <button type="button" class="copy-btn" onclick="event.preventDefault(); event.stopPropagation(); copyTemplate('alert-2', this);">Copy to Clipboard</button>
+  </summary>
+  <div class="alert-body">
+    <pre id="alert-2">Hi team,
+
+We're aware of an active phishing campaign where attackers send links — often through messaging apps or email — that trick users into installing remote access software on their computers. Once installed, this gives attackers ongoing access to the device.
+
+What to watch for: any unexpected prompt asking you to install software, approve a download, or run a program from an unfamiliar link — especially links shared through Discord, chat platforms, or unexpected emails.
+
+If you see anything like this, do not click or install anything. Forward it to me immediately.
+
+Thanks,
+Larry</pre>
+  </div>
+</details>
+
+<h2>Details</h2>
+<div class="item" id="item-1">
+  <div class="item-header">
+    <span class="item-title">Ubiquiti UniFi CVE-2026-22557 (CVSS 10) Path Traversal &mdash; Active Exploitation Risk, Patch to 10.1.89+</span>
+    <span class="urgency-red">Act Today</span>
+    <span class="score">Score: 11/11</span>
+  </div>
+  <p>A CVSS 10.0 path traversal vulnerability (CVE-2026-22557) in the UniFi Network Application allows unauthenticated remote attackers to traverse directory boundaries, access OS-level files, and take over system accounts. A companion privilege escalation flaw (CVE-2026-22558, CVSS 7.7) was patched simultaneously. All deployments on version 10.1.85 or earlier must update to 10.1.89+ (official) or 10.2.97+ (RC); UniFi Express users must update to firmware 4.0.13+.</p>
+  <p class="relevance">Check your small-business client's UCG Fiber gateway version and update to UniFi Network Application 10.1.89+ immediately &mdash; their Ubiquiti device is directly exposed to this critical unauthenticated exploit.</p>
+  <a href="https://mspvendorwatch.com/flash-ubiquiti-unifi-cve-2026-22557-critical/" target="_blank" class="src">Source &rarr;</a>
+</div>
+
+<div class="item" id="item-2">
+  <div class="item-header">
+    <span class="item-title">Apple Expands iOS/iPadOS 18.7.7 DarkSword Exploit Patches to Wider Device Set</span>
+    <span class="urgency-red">Act Today</span>
+    <span class="score">Score: 11/11</span>
+  </div>
+  <p>Apple extended iOS/iPadOS 18.7.7 &mdash; patching the six-CVE DarkSword exploit chain (including WebKit, kernel, and dynamic loader flaws) &mdash; to a broader range of iPhone and iPad models, including iPhone XR through iPhone 16 series and multiple iPad generations. DarkSword is an in-the-wild full-chain exploit kit used by commercial spyware vendors and state-sponsored actors via watering-hole attacks; unpatched devices running iOS 18.4&ndash;18.7 remain at risk of full compromise.</p>
+  <p class="relevance">Verify iOS 18.7.7 is installed on all iPhones for your construction client &mdash; iPhones are their only mobile platform, and DarkSword is actively exploited in the wild with no user interaction required for compromise.</p>
+  <a href="https://thehackernews.com/2026/04/apple-expands-ios-1877-update-to-more.html" target="_blank" class="src">Source &rarr;</a>
+</div>
+
+<div class="item" id="item-3">
+  <div class="item-header">
+    <span class="item-title">Multi-RMM Attack Campaign Delivers Splashtop and Atera Agents via Discord CDN</span>
+    <span class="urgency-red">Act Today</span>
+    <span class="score">Score: 10/11</span>
+  </div>
+  <p>Sublime Security documented a phishing campaign delivering both Splashtop Streamer and Atera agent payloads via Discord CDN links. The dual-RMM approach provides redundant persistent access &mdash; removing one agent leaves the other active. Legitimate RMM tool traffic may evade EDR configured to trust these applications, and Discord CDN delivery bypasses many URL filtering rules.</p>
+  <p class="relevance">Audit your internal ops Atera and Splashtop deployment logs for unexpected agent installations, and brief end users at your construction client and your small-business client about unexpected software install prompts.</p>
+  <a href="https://sublime.security/blog/multi-rmm-attack-splashtop-streamer-and-atera-payloads-delivered-via-discord-cdn-link/" target="_blank" class="src">Source &rarr;</a>
+</div>
+
+<div class="item" id="item-4">
+  <div class="item-header">
+    <span class="item-title">Entra Global Secure Access Client Loses Connectivity After April 2026 Windows Update</span>
+    <span class="urgency-red">Act Today</span>
+    <span class="score">Score: 9/11</span>
+  </div>
+  <p>Users running the Entra Global Secure Access (GSA) client are reporting complete loss of Microsoft 365 and Entra connectivity after installing the April 2026 Windows updates, while general internet access remains functional. Reinstalling the client and clearing caches does not resolve the issue. Microsoft has not yet published a confirmed service-wide fix; affected organizations should open GSA Advanced Diagnostics, check NRPT rules, and disable Secure DNS (DoH/DoT) in Windows and browsers as interim mitigations.</p>
+  <p class="relevance">If your construction client, your small-business client, or your internal ops is running the Entra Global Secure Access client, disable it temporarily &mdash; April Windows updates sever M365 and Entra connectivity with no confirmed Microsoft fix yet.</p>
+  <a href="https://learn.microsoft.com/en-us/answers/questions/5867691/global-secure-access-client-no-internet-after-wind" target="_blank" class="src">Source &rarr;</a>
+</div>
+
+<div class="item" id="item-5">
+  <div class="item-header">
+    <span class="item-title">Dell DSA-2026-075: Security Update for AMD-Based PowerEdge Servers</span>
+    <span class="urgency-yellow">This Week</span>
+    <span class="score">Score: 9/11</span>
+  </div>
+  <p>Dell published DSA-2026-075 addressing a vulnerability in AMD-based PowerEdge server models (including R6515, R6525, R7515, R7525, R7615, R7625, XE8545, and others). The advisory is part of a recent cluster of Dell PowerEdge security updates and recommends firmware remediation to prevent potential system compromise on affected AMD-platform servers.</p>
+  <p class="relevance">General SMB IT context &mdash; no direct client impact.</p>
+  <a href="https://www.dell.com/support/kbdoc/en-us/000432584/dsa-2026-075-security-update-for-dell-amd-based-poweredge-server-vulnerability" target="_blank" class="src">Source &rarr;</a>
+</div>
+
+<div class="item" id="item-6">
+  <div class="item-header">
+    <span class="item-title">OpenAI Releases GPT-5.5 with Enhanced Agentic Coding and Research Capabilities</span>
+    <span class="urgency-yellow">This Week</span>
+    <span class="score">Score: 9/11</span>
+  </div>
+  <p>OpenAI announced GPT-5.5 on April 23, 2026, rolling it out to paid ChatGPT subscribers (Plus, Pro, Business, Enterprise) and making it available via API on April 24. The model delivers faster multi-step agentic workflows, advanced coding and research capabilities, and improved contextual understanding compared to GPT-5.4. IT professionals can leverage GPT-5.5 through ChatGPT and Codex for automation and productivity tasks.</p>
+  <p class="relevance">Evaluate GPT-5.5 for your internal ops workflow automation and client tooling &mdash; now available via API and rolling out to all paid ChatGPT tiers.</p>
+  <a href="https://www.cnbc.com/2026/04/23/openai-announces-latest-artificial-intelligence-model.html" target="_blank" class="src">Source &rarr;</a>
+</div>
+
+<div class="footer">Generated Saturday, April 25, 2026 &mdash; Purplesky IT Consulting</div>
+
+</body>
+</html>
