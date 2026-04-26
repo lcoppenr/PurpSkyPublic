@@ -1,6 +1,6 @@
 /* ============================================================
    AnthStyle.css -- Purplesky IT Consulting Design System
-   Version: v2026.04.25.002
+   Version: v2026.04.25.003
 
    Single source of truth for all Purplesky-branded pages.
    Consumers:
@@ -94,6 +94,14 @@ body.briefing {
   margin: 40px auto;
   padding: 0;
 }
+
+/* Briefing inner content wrapper -- hook for global padding/layout overrides */
+.briefing-content {}
+
+/* Briefing section wrappers -- neutral by default, CSS hooks for layout */
+.section-skim {}
+.section-alerts {}
+.section-details {}
 
 /* Dashboard: wider, tighter, no body margin (uses .wrap) */
 .wrap {
