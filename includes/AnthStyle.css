@@ -1,6 +1,6 @@
 /* ============================================================
    AnthStyle.css -- Purplesky IT Consulting Design System
-   Version: v2026.04.25.004
+   Version: v2026.04.26.001
 
    Single source of truth for all Purplesky-branded pages.
    Consumers:
@@ -435,6 +435,10 @@ details.todo-client[open] > summary::before { transform: rotate(90deg); }
 }
 
 .exec-summary {
+  background: var(--card-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px 20px;
   margin-bottom: 32px;
 }
 
@@ -535,7 +539,7 @@ details.todo-client[open] > summary::before { transform: rotate(90deg); }
   white-space: nowrap;
 }
 
-.sum-why { font-size: 0.85rem; color: var(--muted-light); }
+.sum-why { font-size: 0.85rem; color: var(--text-2); }
 
 
 /* ==========================================================
