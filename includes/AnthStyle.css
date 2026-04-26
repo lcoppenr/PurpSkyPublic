@@ -1,6 +1,6 @@
 /* ============================================================
    AnthStyle.css -- Purplesky IT Consulting Design System
-   Version: v2026.04.25.003
+   Version: v2026.04.25.004
 
    Single source of truth for all Purplesky-branded pages.
    Consumers:
@@ -435,15 +435,10 @@ details.todo-client[open] > summary::before { transform: rotate(90deg); }
 }
 
 .exec-summary {
-  background: var(--text);
-  border-radius: 10px;
-  padding: 22px 28px;
   margin-bottom: 32px;
 }
 
 .exec-summary h2 {
-  color: var(--bg);
-  border-bottom-color: var(--border-dark);
   margin-top: 0;
 }
 
@@ -470,9 +465,9 @@ details.todo-client[open] > summary::before { transform: rotate(90deg); }
   align-items: flex-start;
   gap: 12px;
   padding: 10px 0;
-  border-bottom: 1px solid var(--border-dark);
+  border-bottom: 1px solid var(--border);
   font-size: 0.95rem;
-  color: var(--bg);
+  color: var(--text);
   line-height: 1.5;
 }
 
@@ -514,7 +509,7 @@ details.todo-client[open] > summary::before { transform: rotate(90deg); }
 
 .summary-card > * {
   padding: 9px 0;
-  border-bottom: 1px solid var(--border-dark);
+  border-bottom: 1px solid var(--border);
   align-self: baseline;
 }
 
