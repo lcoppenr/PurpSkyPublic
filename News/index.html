@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<title>Morning Briefing -- Sunday, April 26, 2026</title>
+<title>Morning Briefing -- Monday, April 27, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -24,112 +24,118 @@
 <main class="briefing-content">
 
 <div class="page-header">
-  <h1>Morning Briefing -- Sunday, April 26, 2026</h1>
+  <h1>Morning Briefing -- Monday, April 27, 2026</h1>
   <p class="page-meta">Microsoft &bull; Security &amp; Compliance &bull; Firewall / VPN / Networking &bull; Servers/NAS &bull; Workstations &amp; Mobile &bull; Peripherals &amp; AV &bull; RMM &amp; Remote Access &bull; Construction &amp; Specialty Software &bull; General Tech &amp; AI &bull; Pacific Time</p>
 </div>
 
 <div class="exec-summary">
   <h2>Today's Actions</h2>
   <ol class="action-list">
-    <li><span class="urgency-red">Act Today</span> Update your small-business client&rsquo;s UCG Fiber gateway to UniFi Network Application 10.1.89+ immediately &mdash; CVE-2026-22557 is CVSS 10.0 unauthenticated and allows full account takeover with active exploitation risk.</li>
-    <li><span class="urgency-red">Act Today</span> Patch your hospitality client&rsquo;s Synology NAS to DSM 7.3.2-86009-3 or later and disable Telnet immediately &mdash; CVE-2026-32746 is a CVSS 9.8 unauthenticated remote code execution flaw on unpatched devices.</li>
-    <li><span class="urgency-red">Act Today</span> Verify no client environment runs Progress ShareFile Storage Zone Controller prior to version 5.12.4 &mdash; a pre-auth RCE chain (CVE-2026-2699/2701) is now publicly documented with ~30,000 exposed instances.</li>
-    <li><span class="urgency-red">Act Today</span> Hold HP EliteBook April 2026 BIOS deployments across all clients until HP confirms a fix &mdash; current firmware triggers BitLocker recovery loops on every restart after Secure Boot certificate updates.</li>
+    <li><span class="urgency-red">Act Today</span> Update all iPhones at your construction client to iOS 26.4.2 immediately &mdash; CVE-2026-28950 allows deleted notification content to be forensically recovered, and iPhones are the exclusive mobile platform in that environment.</li>
+    <li><span class="urgency-red">Act Today</span> Audit and restrict external Microsoft Teams collaboration settings at your construction client, your small-business client, and your internal ops &mdash; the UNC6692 group is actively impersonating IT helpdesk to deliver the Snow malware suite via Teams external chat.</li>
+    <li><span class="urgency-red">Act Today</span> Verify no environment uses Progress ShareFile Storage Zones Controller prior to version 5.12.4 &mdash; a pre-auth RCE chain (CVE-2026-2699/2701) is publicly documented and exploitable on unpatched self-hosted instances.</li>
   </ol>
   <h2 class="second">At a Glance</h2>
   <div class="summary-cards">
-    <div class="summary-card"><a href="#item-1">Ubiquiti UniFi CVE-2026-22557 (CVSS 10.0) &mdash; Unauthenticated Path Traversal, Full Account Takeover</a><span class="urgency-red">Act Today</span><span class="sum-why">Check your small-business client&rsquo;s UCG Fiber gateway version and update to UniFi Network Application 10.1.89+ immediately &mdash; their Ubiquiti device is directly exposed to this CVSS 10.0 unauthenticated exploit.</span></div>
-    <div class="summary-card"><a href="#item-2">Synology Critical DSM Advisory: CVE-2026-32746 Telnetd Buffer Overflow (CVSS 9.8) &mdash; Unauthenticated RCE</a><span class="urgency-red">Act Today</span><span class="sum-why">Patch your hospitality client&rsquo;s Synology NAS to DSM 7.3.2-86009-3 or later immediately and disable Telnet if patching must wait &mdash; CVE-2026-32746 allows unauthenticated remote code execution on unpatched devices.</span></div>
+    <div class="summary-card"><a href="#item-1">Apple iOS/iPadOS 26.4.2 Emergency Patch &mdash; CVE-2026-28950 Notification Database Privacy Flaw</a><span class="urgency-red">Act Today</span><span class="sum-why">Update all iPhones at your construction client to iOS 26.4.2 immediately &mdash; CVE-2026-28950 allows deleted notification content to be forensically recovered, and iPhones are the exclusive mobile platform in that environment.</span></div>
+    <div class="summary-card"><a href="#item-2">Microsoft Teams Impersonation Campaign Deploys &ldquo;Snow&rdquo; Malware Suite via IT Helpdesk Spoofing</a><span class="urgency-red">Act Today</span><span class="sum-why">Review and restrict external Microsoft Teams access policies at your construction client, your small-business client, and your internal ops &mdash; all three run M365 environments directly exposed to the UNC6692 IT helpdesk impersonation campaign.</span></div>
     <div class="summary-card"><a href="#item-3">Progress ShareFile Pre-Auth RCE Chain (CVE-2026-2699 &amp; CVE-2026-2701) &mdash; ~30,000 Exposed Instances</a><span class="urgency-red">Act Today</span><span class="sum-why">General SMB IT context &mdash; no direct client impact.</span></div>
-    <div class="summary-card"><a href="#item-4">HP April 2026 BIOS Updates Trigger BitLocker Recovery Loops on EliteBook Fleets</a><span class="urgency-red">Act Today</span><span class="sum-why">General SMB IT context &mdash; no direct client impact.</span></div>
-    <div class="summary-card"><a href="#item-5">Dell DSA-2026-026: Security Update for AMD-Based PowerEdge Servers</a><span class="urgency-yellow">This Week</span><span class="sum-why">General SMB IT context &mdash; no direct client impact.</span></div>
-    <div class="summary-card"><a href="#item-6">OpenAI Releases GPT-5.5 with Native Agentic Capabilities for ChatGPT and API</a><span class="urgency-yellow">This Week</span><span class="sum-why">Evaluate GPT-5.5&rsquo;s agentic features for your internal ops workflow automation &mdash; available now via API and rolling out to all paid ChatGPT tiers this week.</span></div>
   </div>
 </div>
 
 <div class="section-skim">
   <h2>Worth Skimming</h2>
   <ul class="skim-list">
-    <li><strong>Apple iOS/iPadOS 26.4.2 &mdash; CVE-2026-28950 Notification Data Retention Fix</strong> &mdash; Apple patched a logging flaw where deleted notification content persisted on-device beyond expected retention; all iPhone and iPad users should update promptly. <a href="https://support.apple.com/en-us/127002" target="_blank">Read more &rarr;</a></li>
-    <li><strong>Bluebeam Max Launches with AI-Assisted AEC Document Review (Claude AI Integration)</strong> &mdash; Bluebeam&rsquo;s new premium Max tier brings AI-driven construction document review, Smart Review for scope-gap detection, and Smart Overlay for design change detection; a 14-day free trial is available. <a href="https://www.bluebeam.com/bluebeam-max/" target="_blank">Read more &rarr;</a></li>
-    <li><strong>Anthropic Launches Claude Managed Agents at $0.08/Session-Hour</strong> &mdash; Usage-based pricing removes the need to self-host sandboxing or state infrastructure for long-running AI agents, making enterprise-class autonomous workflows accessible to small teams and MSPs. <a href="https://arahi.ai/ai-agent-news/ai-agent-news-april-2026-founders-smbs" target="_blank">Read more &rarr;</a></li>
-    <li><strong>HACKMAGEDDON April 1&ndash;15 2026: RDP Compromise and SMB Scanning Dominate Ransomware Initial Access</strong> &mdash; Phishing links and attachments remain top initial access vectors while the BEAST ransomware group actively exploits compromised RDP and SMB scanning; high/medium severity attacks rose 20.8% globally. <a href="https://www.hackmageddon.com/2026/04/24/1-15-april-2026-cyber-attacks-timeline/" target="_blank">Read more &rarr;</a></li>
-    <li><strong>Atera RMM April 2026 Release: Multi-Device User Linking and Session Inactivity Controls</strong> &mdash; Atera&rsquo;s April release adds multi-device user linking for improved ticket handling and configurable session-length enforcement; incremental updates with no urgent action needed. <a href="https://support.atera.com/hc/en-us/articles/25381421604124-Release-Notes-2026" target="_blank">Read more &rarr;</a></li>
-    <li><strong>Microsoft 365 Copilot Business at $21/User/Month for Sub-300-Seat Orgs Through June 2026</strong> &mdash; Microsoft&rsquo;s promotional pricing on Copilot Business ends June 30 before a global price update; SMBs evaluating AI-assisted productivity tools should act within this window. <a href="https://blog.mean.ceo/new-ai-model-releases-news-april-2026/" target="_blank">Read more &rarr;</a></li>
-    <li><strong>Corporate Technologies Releases SMB Technology &amp; Cyber Resilience Index Q1 2026</strong> &mdash; A new quarterly benchmark measuring IT and cybersecurity performance across U.S. SMBs provides comparative data on security posture, patching cadence, and resilience metrics for peer-group benchmarking. <a href="https://gocorptech.com/smb-technology-cyber-resilience-index/" target="_blank">Read more &rarr;</a></li>
+    <li><strong>DeepSeek V4 Open-Source Preview Released &mdash; Frontier-Rivaling Performance at Low API Cost</strong> &mdash; DeepSeek released an open-source preview of DeepSeek-V4 on April 24 featuring two MoE variants at $1.74/million input tokens, matching or exceeding leading closed-source models on math, coding, and STEM benchmarks. The model supports OpenAI and Anthropic-compatible APIs, making it a practical drop-in alternative for IT shops already using AI tooling. <a href="https://www.cnbc.com/2026/04/24/deepseek-v4-llm-preview-open-source-ai-competition-china.html" target="_blank">Read more &rarr;</a></li>
+    <li><strong>Microsoft Entra Security Innovations Announced at RSAC 2026 Including Shadow AI Detection</strong> &mdash; Microsoft announced Entra Internet Access Shadow AI Detection to identify unsanctioned AI service usage at the network layer, and previewed Agent 365 for AI agent access governance arriving May 1. <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/microsoft-entra-innovations-announced-at-rsac-2026/4502146" target="_blank">Read more &rarr;</a></li>
+    <li><strong>Microsoft Entra ID Protection Self-Remediation for All Auth Methods Now Generally Available</strong> &mdash; Entra ID Protection automatic self-remediation now covers both passwordless and password-based accounts; audit logs for Authentication Methods Policy changes now surface only modified properties for clearer review. <a href="https://learn.microsoft.com/en-us/entra/fundamentals/whats-new" target="_blank">Read more &rarr;</a></li>
+    <li><strong>CMMC Phase 1 Active &mdash; Phase 2 Mandatory C3PAO Assessments Begin November 10, 2026</strong> &mdash; CMMC Phase 2 begins November 10, 2026, at which point C3PAO-assessed Level 2 status will be mandatory in applicable DoD solicitations; defense contractors not yet engaged with a C3PAO should begin planning now given multi-month assessment timelines. <a href="https://dodcio.defense.gov/cmmc/About/" target="_blank">Read more &rarr;</a></li>
   </ul>
+</div>
+
+<div class="section-alerts">
+<h2>Client Alert Templates</h2>
+<details class="alert-box">
+  <summary>
+    <span class="alert-subj">Subject: Action Required: Update Your iPhone Today</span>
+    <button type="button" class="copy-btn" onclick="event.preventDefault(); event.stopPropagation(); copyTemplate('alert-1', this);">Copy to Clipboard</button>
+  </summary>
+  <div class="alert-body">
+    <pre id="alert-1">Hi team,
+
+Apple has released an important security update (iOS 26.4.2) that fixes a flaw where deleted notification content — including message previews — could be recovered from your iPhone.
+
+Please update your iPhone as soon as possible:
+1. Go to Settings → General → Software Update
+2. Tap "Update Now" and follow the prompts
+3. Your phone will restart — this takes about 5–10 minutes
+
+If you have any trouble updating, reply to this message and we'll walk you through it.
+
+Thanks,
+Larry</pre>
+  </div>
+</details>
+<details class="alert-box">
+  <summary>
+    <span class="alert-subj">Subject: Security Alert: Watch Out for Fake IT Support in Microsoft Teams</span>
+    <button type="button" class="copy-btn" onclick="event.preventDefault(); event.stopPropagation(); copyTemplate('alert-2', this);">Copy to Clipboard</button>
+  </summary>
+  <div class="alert-body">
+    <pre id="alert-2">Hi team,
+
+We want to give you a heads-up about a scam affecting Microsoft Teams users right now. Attackers are posing as IT support staff in Teams chat, claiming there's a problem with your account and asking you to install software or grant remote access.
+
+A few things to know:
+• We will never reach out via an unsolicited Teams message asking for remote access
+• If someone in Teams claims to be IT support and asks you to click a link or install something, do not do it
+• Contact us directly to verify any IT request before taking action
+
+If you've already responded to a message like this, please reach out to us right away.
+
+Thanks,
+Larry</pre>
+  </div>
+</details>
 </div>
 
 <div class="section-details">
   <h2>Details</h2>
   <div class="item" id="item-1">
     <div class="item-header">
-      <span class="item-title">Ubiquiti UniFi CVE-2026-22557 (CVSS 10.0) &mdash; Unauthenticated Path Traversal Enables Full Account Takeover</span>
+      <span class="item-title">Apple iOS/iPadOS 26.4.2 Emergency Patch &mdash; CVE-2026-28950 Notification Database Privacy Flaw</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 11/11</span>
     </div>
-    <p>CVE-2026-22557 is a maximum-severity (CVSS 10.0) unauthenticated path traversal flaw in UniFi Network Application versions prior to 10.1.89. An attacker with network access can traverse directory boundaries, access OS-level files, and achieve full account takeover. A companion privilege-escalation flaw (CVE-2026-22558, CVSS 7.7) can be chained with it; Ubiquiti issued an emergency patch requiring update to 10.1.89+ (official) or 10.2.97+ (RC) and UniFi Express firmware 4.0.13+.</p>
-    <p class="relevance">Check your small-business client&rsquo;s UCG Fiber gateway version and update to UniFi Network Application 10.1.89+ immediately &mdash; their Ubiquiti device is directly exposed to this CVSS 10.0 unauthenticated exploit.</p>
-    <a href="https://www.bleepingcomputer.com/news/security/ubiquiti-warns-of-unifi-flaw-that-may-enable-account-takeover/" target="_blank" class="src">Source &rarr;</a>
+    <p>Apple issued an out-of-cycle update for iOS and iPadOS addressing CVE-2026-28950, a flaw that caused deleted notifications to persist in the system notification database &mdash; exploited in a real forensic case to recover Signal message previews from a seized device. All iPhones from iPhone 11 onward should update to iOS 26.4.2 immediately; older devices (iPhone XS/XR) should apply iOS 18.7.8.</p>
+    <p class="relevance">Update all iPhones at your construction client to iOS 26.4.2 immediately &mdash; CVE-2026-28950 allows deleted notification content to be forensically recovered, and iPhones are the exclusive mobile platform in that environment.</p>
+    <a href="https://support.apple.com/en-us/127002" target="_blank" class="src">Source &rarr;</a>
   </div>
 
   <div class="item" id="item-2">
     <div class="item-header">
-      <span class="item-title">Synology Critical DSM Advisory: CVE-2026-32746 Telnetd Buffer Overflow (CVSS 9.8) Enables Unauthenticated RCE</span>
+      <span class="item-title">Microsoft Teams Impersonation Campaign Deploys &ldquo;Snow&rdquo; Malware Suite via IT Helpdesk Spoofing</span>
       <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 11/11</span>
+      <span class="score">Score: 10/11</span>
     </div>
-    <p>Synology released three security advisories covering DSM and SSL VPN Client. CVE-2026-32746 is a CVSS 9.8 unauthenticated buffer overflow in the telnetd service allowing remote code execution. Additional advisories cover arbitrary file read/write, DoS, and information disclosure for authenticated users. Patches are available in DSM 7.3.2-86009-3, DSM 7.2.2-72806-8, and DSM 7.2.1-69057-11; Synology recommends disabling Telnet immediately if patching must be delayed.</p>
-    <p class="relevance">Patch your hospitality client&rsquo;s Synology NAS to DSM 7.3.2-86009-3 or later immediately and disable Telnet if patching must wait &mdash; CVE-2026-32746 allows unauthenticated remote code execution on unpatched devices.</p>
-    <a href="https://www.storagenewsletter.com/2026/04/21/synology-three-security-advisories-on-resolved-vulnerabilities-2/" target="_blank" class="src">Source &rarr;</a>
+    <p>Mandiant researchers documented threat group UNC6692 abusing Microsoft Teams external collaboration features to impersonate IT helpdesk staff, convincing users to grant remote access. The campaign delivers a custom malware suite called &ldquo;Snow,&rdquo; designed for credential theft and lateral movement within corporate networks. Organizations should review external Teams access policies and restrict who can initiate external chat sessions.</p>
+    <p class="relevance">Review and restrict external Microsoft Teams access policies at your construction client, your small-business client, and your internal ops &mdash; all three run M365 environments directly exposed to the UNC6692 IT helpdesk impersonation campaign.</p>
+    <a href="https://securityboulevard.com/2026/04/threat-actor-uses-microsoft-teams-to-deploy-new-snow-malware-suite/" target="_blank" class="src">Source &rarr;</a>
   </div>
 
   <div class="item" id="item-3">
     <div class="item-header">
-      <span class="item-title">Progress ShareFile Pre-Auth RCE Chain (CVE-2026-2699 &amp; CVE-2026-2701) &mdash; ~30,000 Exposed Internet-Facing Instances</span>
+      <span class="item-title">Progress ShareFile Pre-Auth RCE Chain (CVE-2026-2699 &amp; CVE-2026-2701) &mdash; ~30,000 Exposed Instances</span>
       <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 11/11</span>
+      <span class="score">Score: 10/11</span>
     </div>
     <p>watchTowr Labs disclosed a pre-authenticated remote code execution chain in Progress ShareFile Storage Zones Controller combining an authentication bypass (CVE-2026-2699) with an RCE flaw (CVE-2026-2701). Approximately 30,000 internet-facing instances are exposed. The vendor released a patch in version 5.12.4 on March 10, 2026; organizations running customer-managed Storage Zone Controllers must verify they have applied this update immediately.</p>
     <p class="relevance">General SMB IT context &mdash; no direct client impact.</p>
     <a href="https://labs.watchtowr.com/youre-not-supposed-to-sharefile-with-everyone-progress-sharefile-pre-auth-rce-chain-cve-2026-2699-cve-2026-2701/" target="_blank" class="src">Source &rarr;</a>
   </div>
-
-  <div class="item" id="item-4">
-    <div class="item-header">
-      <span class="item-title">HP April 2026 BIOS Updates Trigger BitLocker Recovery Loops on EliteBook and ZBook Fleets</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 9/11</span>
-    </div>
-    <p>HP&rsquo;s April 2026 BIOS updates (version 1.18 for G9/G10 EliteBooks and ZBooks) are causing BitLocker recovery key prompts at every restart when Secure Boot certificate updates are applied. HP temporarily pulled the BIOS from its support site and HPIA FTP, but HPIA still flags the update as required, causing deployment failures. The recommended workaround is to suspend BitLocker before applying the firmware and enable updated 2023 certificate settings in BIOS.</p>
-    <p class="relevance">General SMB IT context &mdash; no direct client impact.</p>
-    <a href="https://h30434.www3.hp.com/t5/Business-Notebooks/April-2026-BIOS-Updates-BitLocker-Looping-SecureBoot-UEFI/td-p/9643448" target="_blank" class="src">Source &rarr;</a>
-  </div>
-
-  <div class="item" id="item-5">
-    <div class="item-header">
-      <span class="item-title">Dell DSA-2026-026: Security Update for AMD-Based PowerEdge Servers</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
-    </div>
-    <p>Dell published security advisory DSA-2026-026 addressing vulnerabilities in AMD-based PowerEdge servers (R6415, R6515, R6615, R7515, R7615, R7625, and XE series) that could allow system compromise. This accompanies DSA-2026-012 covering Intel-based PowerEdge platforms under the 2026.1 Intel Platform Update (IPU). Firmware updates are available through Dell&rsquo;s support portal.</p>
-    <p class="relevance">General SMB IT context &mdash; no direct client impact.</p>
-    <a href="https://www.dell.com/support/kbdoc/en-us/000426703/dsa-2026-026-security-update-for-dell-amd-based-poweredge-server-vulnerability" target="_blank" class="src">Source &rarr;</a>
-  </div>
-
-  <div class="item" id="item-6">
-    <div class="item-header">
-      <span class="item-title">OpenAI Releases GPT-5.5 with Native Agentic Capabilities for ChatGPT and API</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
-    </div>
-    <p>OpenAI shipped GPT-5.5 on April 23, 2026 to ChatGPT Plus, Pro, Business, and Enterprise subscribers, now available via API as well. The model is designed for multi-step agentic tasks and can plan, use tools, check its own work, and complete complex assignments without step-by-step user management. Pricing is $5/million input tokens and $30/million output; it narrowly beats Claude Mythos Preview on Terminal-Bench 2.0 coding benchmark.</p>
-    <p class="relevance">Evaluate GPT-5.5&rsquo;s agentic features for your internal ops workflow automation &mdash; available now via API and rolling out to all paid ChatGPT tiers this week.</p>
-    <a href="https://techcrunch.com/2026/04/23/openai-chatgpt-gpt-5-5-ai-model-superapp/" target="_blank" class="src">Source &rarr;</a>
-  </div>
 </div>
 
-<div class="footer">Generated Sunday, April 26, 2026 &mdash; Purplesky IT Consulting</div>
+<div class="footer">Generated Monday, April 27, 2026 &mdash; Purplesky IT Consulting</div>
 
 </main>
 </body>
