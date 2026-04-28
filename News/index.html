@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<title>Morning Briefing -- Monday, April 27, 2026</title>
+<title>Morning Briefing -- Tuesday, April 28, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -24,32 +24,33 @@
 <main class="briefing-content">
 
 <div class="page-header">
-  <h1>Morning Briefing -- Monday, April 27, 2026</h1>
+  <h1>Morning Briefing -- Tuesday, April 28, 2026</h1>
   <p class="page-meta">Microsoft &bull; Security &amp; Compliance &bull; Firewall / VPN / Networking &bull; Servers/NAS &bull; Workstations &amp; Mobile &bull; Peripherals &amp; AV &bull; RMM &amp; Remote Access &bull; Construction &amp; Specialty Software &bull; General Tech &amp; AI &bull; Pacific Time</p>
 </div>
 
 <div class="exec-summary">
   <h2>Today's Actions</h2>
   <ol class="action-list">
-    <li><span class="urgency-red">Act Today</span> Update all iPhones at your construction client to iOS 26.4.2 immediately &mdash; CVE-2026-28950 allows deleted notification content to be forensically recovered, and iPhones are the exclusive mobile platform in that environment.</li>
-    <li><span class="urgency-red">Act Today</span> Audit and restrict external Microsoft Teams collaboration settings at your construction client, your small-business client, and your internal ops &mdash; the UNC6692 group is actively impersonating IT helpdesk to deliver the Snow malware suite via Teams external chat.</li>
-    <li><span class="urgency-red">Act Today</span> Verify no environment uses Progress ShareFile Storage Zones Controller prior to version 5.12.4 &mdash; a pre-auth RCE chain (CVE-2026-2699/2701) is publicly documented and exploitable on unpatched self-hosted instances.</li>
+    <li><span class="urgency-red">Act Today</span> Patch Windows and audit NTLMv2 restrictions at your construction client and your small-business client &mdash; CVE-2026-32202, under active APT28 exploitation, steals NTLMv2 hashes zero-click via weaponized LNK files.</li>
+    <li><span class="urgency-red">Act Today</span> Update all SonicWall TZ firmware to SonicOS 7.2.0-7015 at your construction client &mdash; an unauthenticated SSLVPN null pointer flaw allows remote crash or exploitation on every Gen7 device.</li>
+    <li><span class="urgency-red">Act Today</span> Audit RMM agent deployments and EDR telemetry for unauthorized installations at all clients &mdash; ransomware groups complete full encryption within hours using BeyondTrust CVE-2026-1731 and dual-RMM persistence techniques.</li>
+    <li><span class="urgency-red">Act Today</span> Confirm no client runs Progress ShareFile Storage Zones Controller below v5.12.4 &mdash; a public pre-auth RCE chain (CVE-2026-2699/2701) exposes ~30,000 internet-facing instances to zero-click takeover.</li>
   </ol>
   <h2 class="second">At a Glance</h2>
   <div class="summary-cards">
-    <div class="summary-card"><a href="#item-1">Apple iOS/iPadOS 26.4.2 Emergency Patch &mdash; CVE-2026-28950 Notification Database Privacy Flaw</a><span class="urgency-red">Act Today</span><span class="sum-why">Update all iPhones at your construction client to iOS 26.4.2 immediately &mdash; CVE-2026-28950 allows deleted notification content to be forensically recovered, and iPhones are the exclusive mobile platform in that environment.</span></div>
-    <div class="summary-card"><a href="#item-2">Microsoft Teams Impersonation Campaign Deploys &ldquo;Snow&rdquo; Malware Suite via IT Helpdesk Spoofing</a><span class="urgency-red">Act Today</span><span class="sum-why">Review and restrict external Microsoft Teams access policies at your construction client, your small-business client, and your internal ops &mdash; all three run M365 environments directly exposed to the UNC6692 IT helpdesk impersonation campaign.</span></div>
-    <div class="summary-card"><a href="#item-3">Progress ShareFile Pre-Auth RCE Chain (CVE-2026-2699 &amp; CVE-2026-2701) &mdash; ~30,000 Exposed Instances</a><span class="urgency-red">Act Today</span><span class="sum-why">General SMB IT context &mdash; no direct client impact.</span></div>
+    <div class="summary-card"><a href="#item-1">CVE-2026-32202: APT28 Zero-Click NTLMv2 Hash Theft via Windows Shell LNK</a><span class="urgency-red">Act Today</span><span class="sum-why">Verify Windows is patched and audit NTLMv2 settings at your construction client, your small-business client, and your internal ops &mdash; CVE-2026-32202 enables zero-click hash theft with confirmed APT28 exploitation.</span></div>
+    <div class="summary-card"><a href="#item-2">SonicWall Gen7/TZ SonicOS 7.2.0-7015 Emergency Firmware &mdash; Unauthenticated SSLVPN Crash/RCE</a><span class="urgency-red">Act Today</span><span class="sum-why">Update all SonicWall TZ firmware to SonicOS 7.2.0-7015 immediately at your construction client &mdash; every site runs Gen7 hardware affected by the unauthenticated SSLVPN null pointer dereference.</span></div>
+    <div class="summary-card"><a href="#item-3">Ransomware Kill Chains Now Measured in Hours &mdash; BeyondTrust CVE-2026-1731 Exploited Against MSPs</a><span class="urgency-red">Act Today</span><span class="sum-why">General SMB IT context &mdash; review RMM agent deployments and enforce change-control for remote access tools across all client environments, as modern ransomware campaigns complete full encryption within hours of initial access.</span></div>
+    <div class="summary-card"><a href="#item-4">Progress ShareFile Pre-Auth RCE Chain (CVE-2026-2699 &amp; CVE-2026-2701) &mdash; ~30,000 Exposed Instances</a><span class="urgency-red">Act Today</span><span class="sum-why">General SMB IT context &mdash; no direct client impact.</span></div>
+    <div class="summary-card"><a href="#item-5">UNC6692 Email Bombing + Microsoft Teams Helpdesk Impersonation Pushes Fake Patches</a><span class="urgency-red">Act Today</span><span class="sum-why">Notify users at your construction client, your small-business client, and your internal ops to reject unsolicited Teams helpdesk messages &mdash; UNC6692 is weaponizing email bombing followed by Teams impersonation to push fake patches.</span></div>
+    <div class="summary-card"><a href="#item-6">Dell PowerEdge Intel 2026.1 IPU Firmware Advisories (DSA-2026-012, DSA-2026-014)</a><span class="urgency-yellow">This Week</span><span class="sum-why">General SMB IT context &mdash; audit PowerEdge BIOS and iDRAC firmware currency if any client environment includes Dell PowerEdge servers with Intel processors.</span></div>
   </div>
 </div>
 
 <div class="section-skim">
   <h2>Worth Skimming</h2>
   <ul class="skim-list">
-    <li><strong>DeepSeek V4 Open-Source Preview Released &mdash; Frontier-Rivaling Performance at Low API Cost</strong> &mdash; DeepSeek released an open-source preview of DeepSeek-V4 on April 24 featuring two MoE variants at $1.74/million input tokens, matching or exceeding leading closed-source models on math, coding, and STEM benchmarks. The model supports OpenAI and Anthropic-compatible APIs, making it a practical drop-in alternative for IT shops already using AI tooling. <a href="https://www.cnbc.com/2026/04/24/deepseek-v4-llm-preview-open-source-ai-competition-china.html" target="_blank">Read more &rarr;</a></li>
-    <li><strong>Microsoft Entra Security Innovations Announced at RSAC 2026 Including Shadow AI Detection</strong> &mdash; Microsoft announced Entra Internet Access Shadow AI Detection to identify unsanctioned AI service usage at the network layer, and previewed Agent 365 for AI agent access governance arriving May 1. <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/microsoft-entra-innovations-announced-at-rsac-2026/4502146" target="_blank">Read more &rarr;</a></li>
-    <li><strong>Microsoft Entra ID Protection Self-Remediation for All Auth Methods Now Generally Available</strong> &mdash; Entra ID Protection automatic self-remediation now covers both passwordless and password-based accounts; audit logs for Authentication Methods Policy changes now surface only modified properties for clearer review. <a href="https://learn.microsoft.com/en-us/entra/fundamentals/whats-new" target="_blank">Read more &rarr;</a></li>
-    <li><strong>CMMC Phase 1 Active &mdash; Phase 2 Mandatory C3PAO Assessments Begin November 10, 2026</strong> &mdash; CMMC Phase 2 begins November 10, 2026, at which point C3PAO-assessed Level 2 status will be mandatory in applicable DoD solicitations; defense contractors not yet engaged with a C3PAO should begin planning now given multi-month assessment timelines. <a href="https://dodcio.defense.gov/cmmc/About/" target="_blank">Read more &rarr;</a></li>
+    <li><strong>Ubiquiti UniFi Security Advisory &mdash; CVE-2026-22557 Network App and Protect Camera/DoS Flaws</strong> &mdash; Ubiquiti disclosed CVE-2026-22557 (fixed in Network Application 10.1.89+) and two UniFi Protect vulnerabilities including an improper authentication flaw (CVSS 8.8, fixed in Protect 6.2.72+) that enables unauthorized camera access. Organizations running UniFi Network App 10.1.85 or earlier or Protect below 6.2.72 should update. <a href="https://community.ui.com/releases/Security-Advisory-Bulletin-058-058/6922ff20-8cd7-4724-8d8c-676458a2d0f9" target="_blank">Read more &rarr;</a></li>
   </ul>
 </div>
 
@@ -57,41 +58,22 @@
 <h2>Client Alert Templates</h2>
 <details class="alert-box">
   <summary>
-    <span class="alert-subj">Subject: Action Required: Update Your iPhone Today</span>
+    <span class="alert-subj">Subject: Security Alert: Beware of Fake IT Support Messages in Microsoft Teams</span>
     <button type="button" class="copy-btn" onclick="event.preventDefault(); event.stopPropagation(); copyTemplate('alert-1', this);">Copy to Clipboard</button>
   </summary>
   <div class="alert-body">
     <pre id="alert-1">Hi team,
 
-Apple has released an important security update (iOS 26.4.2) that fixes a flaw where deleted notification content — including message previews — could be recovered from your iPhone.
+We want to flag an active scam targeting Microsoft Teams users. Attackers are first flooding inboxes with a surge of spam email, then following up in Teams posing as IT support — claiming there is an urgent problem and asking you to install a "patch" or grant remote access to your computer.
 
-Please update your iPhone as soon as possible:
-1. Go to Settings → General → Software Update
-2. Tap "Update Now" and follow the prompts
-3. Your phone will restart — this takes about 5–10 minutes
+Here is what to watch for:
+• A sudden wave of junk email, followed by an unsolicited Teams message from someone claiming to be IT
+• Requests to download or install anything, or to allow remote access to your computer
+• Any Teams message from an unfamiliar contact, even if they claim to work in IT
 
-If you have any trouble updating, reply to this message and we'll walk you through it.
+Our team will never reach out through an unsolicited Teams message asking you to install software or grant remote access. If you receive a message like this, do not click any links — contact us directly to verify.
 
-Thanks,
-Larry</pre>
-  </div>
-</details>
-<details class="alert-box">
-  <summary>
-    <span class="alert-subj">Subject: Security Alert: Watch Out for Fake IT Support in Microsoft Teams</span>
-    <button type="button" class="copy-btn" onclick="event.preventDefault(); event.stopPropagation(); copyTemplate('alert-2', this);">Copy to Clipboard</button>
-  </summary>
-  <div class="alert-body">
-    <pre id="alert-2">Hi team,
-
-We want to give you a heads-up about a scam affecting Microsoft Teams users right now. Attackers are posing as IT support staff in Teams chat, claiming there's a problem with your account and asking you to install software or grant remote access.
-
-A few things to know:
-• We will never reach out via an unsolicited Teams message asking for remote access
-• If someone in Teams claims to be IT support and asks you to click a link or install something, do not do it
-• Contact us directly to verify any IT request before taking action
-
-If you've already responded to a message like this, please reach out to us right away.
+If you have already responded to something like this, please let us know right away.
 
 Thanks,
 Larry</pre>
@@ -103,39 +85,72 @@ Larry</pre>
   <h2>Details</h2>
   <div class="item" id="item-1">
     <div class="item-header">
-      <span class="item-title">Apple iOS/iPadOS 26.4.2 Emergency Patch &mdash; CVE-2026-28950 Notification Database Privacy Flaw</span>
+      <span class="item-title">CVE-2026-32202: APT28 Zero-Click NTLMv2 Hash Theft via Windows Shell LNK</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 11/11</span>
     </div>
-    <p>Apple issued an out-of-cycle update for iOS and iPadOS addressing CVE-2026-28950, a flaw that caused deleted notifications to persist in the system notification database &mdash; exploited in a real forensic case to recover Signal message previews from a seized device. All iPhones from iPhone 11 onward should update to iOS 26.4.2 immediately; older devices (iPhone XS/XR) should apply iOS 18.7.8.</p>
-    <p class="relevance">Update all iPhones at your construction client to iOS 26.4.2 immediately &mdash; CVE-2026-28950 allows deleted notification content to be forensically recovered, and iPhones are the exclusive mobile platform in that environment.</p>
-    <a href="https://support.apple.com/en-us/127002" target="_blank" class="src">Source &rarr;</a>
+    <p>Microsoft confirmed active exploitation of CVE-2026-32202, a Windows Shell spoofing flaw linked to an incomplete patch of an earlier APT28 zero-day. Attackers use auto-parsed LNK files to trigger zero-click SMB authentication, exfiltrating NTLMv2 hashes without any user interaction. The flaw persists after the April 2026 Patch Tuesday cycle and enables downstream NTLM relay and offline hash-cracking attacks.</p>
+    <p class="relevance">Verify Windows is patched and audit NTLMv2 settings at your construction client, your small-business client, and your internal ops &mdash; CVE-2026-32202 enables zero-click hash theft with confirmed APT28 exploitation.</p>
+    <a href="https://thehackernews.com/2026/04/microsoft-confirms-active-exploitation.html" target="_blank" class="src">Source &rarr;</a>
   </div>
 
   <div class="item" id="item-2">
     <div class="item-header">
-      <span class="item-title">Microsoft Teams Impersonation Campaign Deploys &ldquo;Snow&rdquo; Malware Suite via IT Helpdesk Spoofing</span>
+      <span class="item-title">SonicWall Gen7/TZ SonicOS 7.2.0-7015 Emergency Firmware &mdash; Unauthenticated SSLVPN Crash/RCE</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 10/11</span>
     </div>
-    <p>Mandiant researchers documented threat group UNC6692 abusing Microsoft Teams external collaboration features to impersonate IT helpdesk staff, convincing users to grant remote access. The campaign delivers a custom malware suite called &ldquo;Snow,&rdquo; designed for credential theft and lateral movement within corporate networks. Organizations should review external Teams access policies and restrict who can initiate external chat sessions.</p>
-    <p class="relevance">Review and restrict external Microsoft Teams access policies at your construction client, your small-business client, and your internal ops &mdash; all three run M365 environments directly exposed to the UNC6692 IT helpdesk impersonation campaign.</p>
-    <a href="https://securityboulevard.com/2026/04/threat-actor-uses-microsoft-teams-to-deploy-new-snow-malware-suite/" target="_blank" class="src">Source &rarr;</a>
+    <p>SonicWall issued an urgent firmware update for all Gen7 platforms including TZ series on April 24, 2026, releasing SonicOS 7.2.0-7015 to patch a null pointer dereference in the SSLVPN Virtual Office interface. The flaw allows remote unauthenticated attackers to crash or potentially exploit affected devices; SonicOS versions 7.1.1-7040 and above are affected. SonicWall rates this high severity and urges immediate upgrade via mysonicwall.com.</p>
+    <p class="relevance">Update all SonicWall TZ firmware to SonicOS 7.2.0-7015 immediately at your construction client &mdash; every site runs Gen7 hardware affected by the unauthenticated SSLVPN null pointer dereference.</p>
+    <a href="https://australiancybersecuritymagazine.com.au/sonicwall-releases-new-firmware-for-sonicos-gen7-and-tz80-vulnerability/" target="_blank" class="src">Source &rarr;</a>
   </div>
 
   <div class="item" id="item-3">
+    <div class="item-header">
+      <span class="item-title">Ransomware Kill Chains Now Measured in Hours &mdash; BeyondTrust CVE-2026-1731 Exploited Against MSPs</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 10/11</span>
+    </div>
+    <p>Threat intelligence from April 27, 2026 confirms modern ransomware campaigns (The Gentlemen, Akira, and Qilin) routinely complete initial access to full encryption within hours. A surge of attacks is exploiting CVE-2026-1731, an unauthenticated RCE in Bomgar/BeyondTrust Remote Support, targeting MSPs and healthcare providers, with LockBit deployed after lateral movement via SMB and Group Policy. Dual-RMM persistence using both Splashtop Streamer and Atera agent is also documented to hinder eviction.</p>
+    <p class="relevance">General SMB IT context &mdash; review RMM agent deployments and enforce change-control for remote access tools across all client environments, as modern ransomware campaigns complete full encryption within hours of initial access.</p>
+    <a href="https://research.checkpoint.com/2026/27th-april-threat-intelligence-report/" target="_blank" class="src">Source &rarr;</a>
+  </div>
+
+  <div class="item" id="item-4">
     <div class="item-header">
       <span class="item-title">Progress ShareFile Pre-Auth RCE Chain (CVE-2026-2699 &amp; CVE-2026-2701) &mdash; ~30,000 Exposed Instances</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 10/11</span>
     </div>
-    <p>watchTowr Labs disclosed a pre-authenticated remote code execution chain in Progress ShareFile Storage Zones Controller combining an authentication bypass (CVE-2026-2699) with an RCE flaw (CVE-2026-2701). Approximately 30,000 internet-facing instances are exposed. The vendor released a patch in version 5.12.4 on March 10, 2026; organizations running customer-managed Storage Zone Controllers must verify they have applied this update immediately.</p>
+    <p>Researchers at watchTowr published a detailed technical write-up of a pre-authentication remote code execution chain in Progress ShareFile Storage Zones Controller, combining an authentication bypass (CVE-2026-2699) with an RCE flaw (CVE-2026-2701). Approximately 30,000 internet-facing Storage Zone Controller instances remain exposed. The vendor patched the issues in version 5.12.4 released March 10, 2026; organizations still running older on-premises SZC versions are at critical risk and must upgrade immediately.</p>
     <p class="relevance">General SMB IT context &mdash; no direct client impact.</p>
     <a href="https://labs.watchtowr.com/youre-not-supposed-to-sharefile-with-everyone-progress-sharefile-pre-auth-rce-chain-cve-2026-2699-cve-2026-2701/" target="_blank" class="src">Source &rarr;</a>
   </div>
+
+  <div class="item" id="item-5">
+    <div class="item-header">
+      <span class="item-title">UNC6692 Email Bombing + Microsoft Teams Helpdesk Impersonation Pushes Fake Patches</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 9/11</span>
+    </div>
+    <p>Threat actor UNC6692 is conducting a campaign that begins with email bombing targets, then follows up in Microsoft Teams posing as IT helpdesk staff to pressure victims into installing fake patches. The social engineering chain is specifically designed to bypass RMM and endpoint defenses by exploiting user trust in the Teams platform. MSPs should alert end-users and consider disabling external Teams messaging or enforcing strict external-contact policies.</p>
+    <p class="relevance">Notify users at your construction client, your small-business client, and your internal ops to reject unsolicited Teams helpdesk messages &mdash; UNC6692 is weaponizing email bombing followed by Teams impersonation to push fake patches.</p>
+    <a href="https://www.acronis.com/en/tru/posts/msp-cybersecurity-news-digest-april-27-2026/" target="_blank" class="src">Source &rarr;</a>
+  </div>
+
+  <div class="item" id="item-6">
+    <div class="item-header">
+      <span class="item-title">Dell PowerEdge Intel 2026.1 IPU Firmware Advisories (DSA-2026-012, DSA-2026-014)</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 9/11</span>
+    </div>
+    <p>Dell published security advisories DSA-2026-012 and DSA-2026-014 on April 27, 2026, addressing Intel 2026.1 Platform Update components and an Intel Server Firmware vulnerability across PowerEdge R-series, T-series, C-series, and XE-series models with Intel processors. Exploitable conditions could allow malicious actors to compromise affected systems. Administrators should review both advisories and apply iDRAC and BIOS firmware updates via Dell's support portal.</p>
+    <p class="relevance">General SMB IT context &mdash; audit PowerEdge BIOS and iDRAC firmware currency if any client environment includes Dell PowerEdge servers with Intel processors.</p>
+    <a href="https://www.dell.com/support/kbdoc/en-us/000426743/dsa-2026-012-security-update-for-dell-poweredge-server-for-intel-2026-security-advisories-2026-1-ipu" target="_blank" class="src">Source &rarr;</a>
+  </div>
 </div>
 
-<div class="footer">Generated Monday, April 27, 2026 &mdash; Purplesky IT Consulting</div>
+<div class="footer">Generated Tuesday, April 28, 2026 &mdash; Purplesky IT Consulting</div>
 
 </main>
 </body>
