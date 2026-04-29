@@ -29,28 +29,26 @@
 </div>
 
 <div class="exec-summary">
-  <h2>Today's Actions</h2>
+  <h2>Today&#39;s Actions</h2>
   <ol class="action-list">
-    <li><span class="urgency-red">Act Today</span> Patch Windows and verify NTLMv2 relay restrictions at your construction client, your small-business client, and your internal ops &mdash; CVE-2026-32202 is actively exploited zero-click via malicious LNK files and is now on the CISA KEV list.</li>
-    <li><span class="urgency-red">Act Today</span> Confirm no internet-exposed ShareFile Storage Zones Controller is running below v5.12.4 &mdash; a public pre-auth RCE chain (CVE-2026-2699/2701) puts ~30,000 unpatched instances at risk of zero-click takeover.</li>
-    <li><span class="urgency-yellow">This Week</span> Verify April Patch Tuesday is applied to all Windows endpoints at your construction client &mdash; the update adds RDP file warning dialogs that defend against .rdp phishing campaigns targeting your RDP Gateway deployment.</li>
+    <li><span class="urgency-red">Act Today</span> Patch Windows and verify NTLMv2 relay restrictions at your construction client, your small-business client, and your internal ops &mdash; CVE-2026-32202 is actively exploited zero-click via LNK files and is now on the CISA KEV list with a May&nbsp;12 federal remediation deadline.</li>
+    <li><span class="urgency-red">Act Today</span> Review Microsoft Teams external access policies and brief end users at your construction client, your small-business client, and your internal ops &mdash; attackers (UNC6692) are impersonating IT helpdesk via Teams to deploy multi-stage malware after flooding victims&#39; inboxes.</li>
+    <li><span class="urgency-red">Act Today</span> Verify Synology DSM is patched and disable Telnet at your hospitality client &mdash; CVE-2026-32746 (CVSS&nbsp;9.8) allows unauthenticated remote code execution on Synology NAS via the Telnet service.</li>
+    <li><span class="urgency-yellow">This Week</span> Brief your construction client on the anticipated CMMC alignment to NIST SP 800-171 Rev.&nbsp;3 &mdash; DoD has signaled rulemaking within 12&ndash;18&nbsp;months that will expand compliance scope beyond current CMMC&nbsp;2.0 requirements.</li>
   </ol>
   <h2 class="second">At a Glance</h2>
   <div class="summary-cards">
-    <div class="summary-card"><a href="#item-1">CVE-2026-32202: CISA-Listed Windows Shell Zero-Day &mdash; Active NTLM Hash Theft via LNK Files</a><span class="urgency-red">Act Today</span><span class="sum-why">Verify Windows is patched and NTLMv2 restrictions are audited at your construction client, your small-business client, and your internal ops &mdash; CVE-2026-32202 enables zero-click NTLMv2 hash theft via LNK files with confirmed active exploitation.</span></div>
-    <div class="summary-card"><a href="#item-2">Progress ShareFile Pre-Auth RCE Chain (CVE-2026-2699 &amp; CVE-2026-2701) &mdash; ~30,000 Exposed Servers</a><span class="urgency-red">Act Today</span><span class="sum-why">General SMB IT context &mdash; no direct client impact.</span></div>
-    <div class="summary-card"><a href="#item-3">Microsoft April Patch Tuesday Adds RDP Warning Dialogs to Counter .rdp File Phishing</a><span class="urgency-yellow">This Week</span><span class="sum-why">Confirm Windows endpoints at your construction client have received the April Patch Tuesday update that adds RDP connection warning dialogs &mdash; your RDP Gateway deployment is directly in scope for the phishing campaigns this defends against.</span></div>
-    <div class="summary-card"><a href="#item-4">OpenAI Releases GPT-5.5 with Enhanced Agentic Coding and Computer-Use Capabilities</a><span class="urgency-green">FYI</span><span class="sum-why">General SMB IT context &mdash; no direct client impact.</span></div>
+    <div class="summary-card"><a href="#item-1">CVE-2026-32202: CISA-Listed Windows Shell Zero-Day &mdash; Active NTLMv2 Credential Theft via LNK Files</a><span class="urgency-red">Act Today</span><span class="sum-why">Verify Windows is patched and NTLMv2 relay restrictions are in place at your construction client, your small-business client, and your internal ops &mdash; CVE-2026-32202 enables zero-click credential theft via LNK files with confirmed active exploitation on CISA&rsquo;s KEV list.</span></div>
+    <div class="summary-card"><a href="#item-2">Microsoft Teams Helpdesk Impersonation Campaign Delivers SNOWBELT/SNOWGLAZE Malware (UNC6692)</a><span class="urgency-red">Act Today</span><span class="sum-why">Review Teams external access policies and brief end users at your construction client, your small-business client, and your internal ops &mdash; attackers are impersonating IT helpdesk via Teams to deploy multi-stage malware after flooding victims&rsquo; inboxes.</span></div>
+    <div class="summary-card"><a href="#item-3">Synology DSM Critical Telnet RCE CVE-2026-32746 (CVSS 9.8) &mdash; Unauthenticated Command Execution</a><span class="urgency-red">Act Today</span><span class="sum-why">Verify Synology DSM is patched and Telnet is disabled at your hospitality client &mdash; CVE-2026-32746 allows unauthenticated remote code execution on Synology NAS via the Telnet service.</span></div>
   </div>
 </div>
 
 <div class="section-skim">
   <h2>Worth Skimming</h2>
   <ul class="skim-list">
-    <li><strong>Microsoft 365 Outage Disrupts Teams, Exchange Online, and Outlook (April 28)</strong> &mdash; A Microsoft 365 service disruption on April 28 affected Teams, Exchange Online, and Outlook globally due to a network infrastructure issue. Services were restored by 7:56 AM ET the same day, with brief email delivery delays continuing as remediation propagated. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-365-outage-blocks-access-to-teams-exchange-online/" target="_blank">Read more &rarr;</a></li>
-    <li><strong>CMMC Rev. 3 Transition Signaled &mdash; DoD Contractors Urged to Begin Preparing Now</strong> &mdash; DoD is signaling an upcoming requirement to align CMMC assessments with NIST SP 800-171 Rev. 3, adding new control families for supply chain, incident response, and advanced threats. A formal rulemaking process is expected within 12&ndash;18 months, with CMMC clauses required in all applicable solicitations from October 1, 2026. <a href="https://federalnewsnetwork.com/commentary/2026/04/rev-3-is-coming-start-preparing-for-the-next-cmmc-requirement/" target="_blank">Read more &rarr;</a></li>
-    <li><strong>Atera RMM April 2026 Release &mdash; Multi-Device User Linking, Bulk Alert Pause, API Action Triggers</strong> &mdash; Atera's April 2026 update introduces multi-device user linking, bulk alert pause/resume, and parameter-based API action triggers. Several bug fixes shipped for software inventory, remote connections, and threshold profile configuration. <a href="https://support.atera.com/hc/en-us/articles/25381421604124-Release-Notes-2026" target="_blank">Read more &rarr;</a></li>
-    <li><strong>SMB Cybersecurity Index Launched to Benchmark U.S. SMB IT and Cyber Performance</strong> &mdash; Corporate Technologies launched the SMB Technology &amp; Cyber Resilience Index, a new quarterly benchmark measuring actual IT and cybersecurity performance inside U.S. SMBs, giving MSPs a data-driven baseline for assessing client security posture. <a href="https://www.prnewswire.com/news-releases/corporate-technologies-launches-the-smb-technology--cyber-resilience-index-a-new-quarterly-benchmark-measuring-actual-it-and-cybersecurity-performance-inside-us-small-and-mid-sized-businesses-302737298.html" target="_blank">Read more &rarr;</a></li>
+    <li><strong>CMMC Rev. 3 Transition Signaled &mdash; DoD Contractors Urged to Begin Preparing Now</strong> &mdash; DoD is preparing to align CMMC requirements with NIST SP 800-171 Rev.&nbsp;3 via future rulemaking expected within 12&ndash;18 months. The Pentagon plans to require CMMC clauses in all applicable solicitations from October 1, 2026, compounding compliance challenges for defense contractors still working toward CMMC 2.0. <a href="https://federalnewsnetwork.com/commentary/2026/04/rev-3-is-coming-start-preparing-for-the-next-cmmc-requirement/" target="_blank">Read more &rarr;</a></li>
+    <li><strong>Check Point 27 April 2026 Threat Intelligence Report: VECT Ransomware and SMB Threat Trends</strong> &mdash; Check Point&rsquo;s April 27 weekly report highlights new wiper-ransomware hybrid VECT, active BEAST ransomware targeting RDP and SMB, and ransomware-as-a-service platforms lowering attacker barriers for SMB targeting. <a href="https://research.checkpoint.com/2026/27th-april-threat-intelligence-report/" target="_blank">Read more &rarr;</a></li>
   </ul>
 </div>
 
@@ -58,22 +56,21 @@
 <h2>Client Alert Templates</h2>
 <details class="alert-box">
   <summary>
-    <span class="alert-subj">Subject: Security Alert: Do Not Open Unexpected Remote Desktop (.rdp) File Attachments</span>
+    <span class="alert-subj">Subject: Security Alert: Watch for Fake IT Support Requests via Microsoft Teams</span>
     <button type="button" class="copy-btn" onclick="event.preventDefault(); event.stopPropagation(); copyTemplate('alert-1', this);">Copy to Clipboard</button>
   </summary>
   <div class="alert-body">
     <pre id="alert-1">Hi team,
 
-We want to flag an active phishing campaign that uses Remote Desktop files (.rdp) as email attachments. If you receive an email with a .rdp file attached — even if it appears to come from a trusted sender — do not open it.
+We want to flag an active attack campaign where criminals impersonate IT helpdesk staff through Microsoft Teams. These attacks often start by flooding your inbox with junk email, then following up via Teams offering to "help" — which is how they gain remote access.
 
 Here is what to watch for:
-• An unexpected email containing a .rdp file attachment
-• A pop-up dialog box prompting you to connect to a remote computer you did not request
-• Any request to allow remote access to your files, clipboard, or drives through a connection prompt you did not initiate
+• An unexpected Teams message from someone claiming to be IT support
+• A request to share your screen or allow remote access through Quick Assist or another tool
+• Urgency or pressure to act immediately to resolve a "security incident"
+• Being asked to approve sign-in prompts or disable security settings you did not initiate
 
-If you accidentally open a .rdp file and see a remote desktop connection dialog, click Cancel immediately and contact us.
-
-Our team will never send you a .rdp file by email. If you receive one or are unsure about an attachment, forward it to us before opening it.
+Our team will never contact you unsolicited through Teams to request remote access. If you receive a Teams message from someone claiming to be from IT support that you did not request, decline and contact us directly to verify.
 
 Thanks,
 Larry</pre>
@@ -85,50 +82,39 @@ Larry</pre>
   <h2>Details</h2>
   <div class="item" id="item-1">
     <div class="item-header">
-      <span class="item-title">CVE-2026-32202: CISA-Listed Windows Shell Zero-Day &mdash; Active NTLM Hash Theft via LNK Files</span>
+      <span class="item-title">CVE-2026-32202: CISA-Listed Windows Shell Zero-Day &mdash; Active NTLMv2 Credential Theft via LNK Files</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 11/11</span>
     </div>
-    <p>CVE-2026-32202 is a Windows Shell spoofing vulnerability exploited via malicious LNK files that trigger automatic NTLM hash theft without any user interaction beyond browsing a folder. Microsoft updated the advisory on April 27 and CISA added it to the KEV catalog on April 28 with a federal remediation deadline of May 12, 2026. The stolen NTLMv2 hash enables relay attacks, lateral movement, and privilege escalation across the network.</p>
-    <p class="relevance">Verify Windows is patched and NTLMv2 restrictions are audited at your construction client, your small-business client, and your internal ops &mdash; CVE-2026-32202 enables zero-click NTLMv2 hash theft via LNK files with confirmed active exploitation.</p>
+    <p>CVE-2026-32202, a Windows Shell spoofing vulnerability, was added to CISA&rsquo;s Known Exploited Vulnerabilities catalog on April 28, 2026 with a federal remediation deadline of May 12. The flaw enables zero-click NTLMv2 credential theft via malicious LNK files; victims need only open the shortcut to expose their hash. A patch was released April 14 as part of Patch Tuesday; organizations should verify it has been applied and consider enforcing NTLMv2 relay restrictions via Group Policy.</p>
+    <p class="relevance">Verify Windows is patched and NTLMv2 relay restrictions are in place at your construction client, your small-business client, and your internal ops &mdash; CVE-2026-32202 enables zero-click credential theft via LNK files with confirmed active exploitation on CISA&rsquo;s KEV list.</p>
     <a href="https://www.helpnetsecurity.com/2026/04/29/windows-cve-2026-32202-exploited/" target="_blank" class="src">Source &rarr;</a>
   </div>
 
   <div class="item" id="item-2">
     <div class="item-header">
-      <span class="item-title">Progress ShareFile Pre-Auth RCE Chain (CVE-2026-2699 &amp; CVE-2026-2701) &mdash; ~30,000 Exposed Servers</span>
+      <span class="item-title">Microsoft Teams Helpdesk Impersonation Campaign Delivers SNOWBELT/SNOWGLAZE Malware (UNC6692)</span>
       <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 11/11</span>
+      <span class="score">Score: 10/11</span>
     </div>
-    <p>Two critical flaws in Progress ShareFile Storage Zones Controller 5.x (CVSS 9.8 and 9.1) can be chained by an unauthenticated attacker to achieve remote code execution via an authentication bypass and arbitrary file upload to webroot. Approximately 30,000 SZC instances remain internet-exposed; patch to version 5.12.4 (released March 10, 2026) is available. Public exploit details were published by watchTowr Labs, heightening active exploitation risk.</p>
-    <p class="relevance">General SMB IT context &mdash; no direct client impact.</p>
-    <a href="https://labs.watchtowr.com/youre-not-supposed-to-sharefile-with-everyone-progress-sharefile-pre-auth-rce-chain-cve-2026-2699-cve-2026-2701/" target="_blank" class="src">Source &rarr;</a>
+    <p>Attackers attributed to UNC6692 are impersonating IT helpdesk staff via Microsoft Teams to deliver a multi-stage malware suite including browser extension SNOWBELT, Python tunneler SNOWGLAZE, and persistent backdoor SNOWBASIN. The attack begins with email bombing to overwhelm the victim&rsquo;s inbox, followed by a Teams message offering assistance and requesting remote access via Quick Assist. Organizations using Teams with external tenant access should review cross-tenant communication policies and restrict or audit external Teams messaging.</p>
+    <p class="relevance">Review Teams external access policies and brief end users at your construction client, your small-business client, and your internal ops &mdash; attackers are impersonating IT helpdesk via Teams to deploy multi-stage malware after flooding victims&rsquo; inboxes.</p>
+    <a href="https://voip.review/2026/04/28/sophisticated-phishing-attack-targets-microsoft-teams-users/" target="_blank" class="src">Source &rarr;</a>
   </div>
 
   <div class="item" id="item-3">
     <div class="item-header">
-      <span class="item-title">Microsoft April Patch Tuesday Adds RDP Warning Dialogs to Counter .rdp File Phishing</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
+      <span class="item-title">Synology DSM Critical Telnet RCE CVE-2026-32746 (CVSS 9.8) &mdash; Unauthenticated Command Execution</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 10/11</span>
     </div>
-    <p>Microsoft's April 14, 2026 Patch Tuesday update introduces new RDP connection warning dialogs in Windows that alert users when an .rdp file requests local resource redirections (drives, clipboards, credentials), targeting phishing campaigns such as Midnight Blizzard's mass-distributed malicious .rdp files. Every new connection now displays the remote address, publisher signature status, and a list of requested redirections. Organizations using RDP Gateway should validate that user endpoints have received this update.</p>
-    <p class="relevance">Confirm Windows endpoints at your construction client have received the April Patch Tuesday update that adds RDP connection warning dialogs &mdash; your RDP Gateway deployment is directly in scope for the phishing campaigns this defends against.</p>
-    <a href="https://cybersecuritynews.com/rdp-alert/" target="_blank" class="src">Source &rarr;</a>
-  </div>
-
-  <div class="item" id="item-4">
-    <div class="item-header">
-      <span class="item-title">OpenAI Releases GPT-5.5 with Enhanced Agentic Coding and Computer-Use Capabilities</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
-    </div>
-    <p>OpenAI released GPT-5.5 on April 23, 2026, rolling out to Plus, Pro, Business, and Enterprise subscribers and available in the API at $5/1M input tokens and $30/1M output tokens with a 1M context window. The model shows strong gains in agentic coding, computer-use automation, and multi-tool workflows, completing tasks in fewer tokens than GPT-5.4 while matching its latency. IT shops evaluating AI-assisted scripting or helpdesk automation should assess upgrade impact.</p>
-    <p class="relevance">General SMB IT context &mdash; no direct client impact.</p>
-    <a href="https://openai.com/index/introducing-gpt-5-5/" target="_blank" class="src">Source &rarr;</a>
+    <p>CVE-2026-32746 is a critical CVSS 9.8 remote code execution flaw in Synology DiskStation Manager allowing unauthenticated remote attackers to execute arbitrary commands via the Telnet service. Synology advises disabling Telnet immediately via Control Panel &gt; Terminal &amp; SNMP as a mitigation step while firmware patches are applied. Organizations running Synology NAS devices should treat this as urgent and disable Telnet if it is not actively required.</p>
+    <p class="relevance">Verify Synology DSM is patched and Telnet is disabled at your hospitality client &mdash; CVE-2026-32746 allows unauthenticated remote code execution on Synology NAS via the Telnet service.</p>
+    <a href="https://securityonline.info/synology-dsm-critical-telnet-rce-vulnerability-cve-2026-32746/" target="_blank" class="src">Source &rarr;</a>
   </div>
 </div>
 
-<div class="footer">Generated Wednesday, April 29, 2026 &mdash; Purplesky IT Consulting</div>
+<div class="footer">Generated Wednesday, April 29, 2026 at 7:30 AM PT &bull; Prompt v2026.04.29.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-04-29.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
 
 </main>
 </body>
