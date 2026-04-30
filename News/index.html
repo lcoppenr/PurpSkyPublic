@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<title>Morning Briefing -- Wednesday, April 29, 2026</title>
+<title>Morning Briefing -- Thursday, April 30, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -24,31 +24,40 @@
 <main class="briefing-content">
 
 <div class="page-header">
-  <h1>Morning Briefing -- Wednesday, April 29, 2026</h1>
+  <h1>Morning Briefing -- Thursday, April 30, 2026</h1>
   <p class="page-meta">Microsoft &bull; Security &amp; Compliance &bull; Firewall / VPN / Networking &bull; Servers/NAS &bull; Workstations &amp; Mobile &bull; Peripherals &amp; AV &bull; RMM &amp; Remote Access &bull; Construction &amp; Specialty Software &bull; General Tech &amp; AI &bull; Pacific Time</p>
 </div>
 
 <div class="exec-summary">
   <h2>Today&#39;s Actions</h2>
   <ol class="action-list">
-    <li><span class="urgency-red">Act Today</span> Patch Windows and verify NTLMv2 relay restrictions at your construction client, your small-business client, and your internal ops &mdash; CVE-2026-32202 is actively exploited zero-click via LNK files and is now on the CISA KEV list with a May&nbsp;12 federal remediation deadline.</li>
-    <li><span class="urgency-red">Act Today</span> Review Microsoft Teams external access policies and brief end users at your construction client, your small-business client, and your internal ops &mdash; attackers (UNC6692) are impersonating IT helpdesk via Teams to deploy multi-stage malware after flooding victims&#39; inboxes.</li>
-    <li><span class="urgency-red">Act Today</span> Verify Synology DSM is patched and disable Telnet at your hospitality client &mdash; CVE-2026-32746 (CVSS&nbsp;9.8) allows unauthenticated remote code execution on Synology NAS via the Telnet service.</li>
-    <li><span class="urgency-yellow">This Week</span> Brief your construction client on the anticipated CMMC alignment to NIST SP 800-171 Rev.&nbsp;3 &mdash; DoD has signaled rulemaking within 12&ndash;18&nbsp;months that will expand compliance scope beyond current CMMC&nbsp;2.0 requirements.</li>
+    <li><span class="urgency-red">Act Today</span> Patch Windows endpoints and verify Net-NTLMv2 outbound restrictions at your construction client, your small-business client, and your internal ops &mdash; CVE-2026-32202 is on the CISA KEV list with a May&nbsp;12 federal remediation deadline.</li>
+    <li><span class="urgency-red">Act Today</span> Patch SonicOS firmware on your construction client&rsquo;s TZ fleet and disable HTTP/HTTPS management on external interfaces &mdash; SonicWall advisory SNWLID-2026-0004 includes a CVSS&nbsp;8.0 access-control bypass.</li>
+    <li><span class="urgency-red">Act Today</span> Brief users at your construction client, your small-business client, and your internal ops on the Teams helpdesk impersonation campaign and restrict external Teams chat &mdash; UNC6692 is luring victims into a fake mailbox-repair tool.</li>
+    <li><span class="urgency-red">Act Today</span> Watch for Microsoft&rsquo;s supplemental zero-click NTLM patch and verify SMB/NTLM egress hardening at your construction client, your small-business client, and your internal ops &mdash; the April fix is incomplete.</li>
   </ol>
   <h2 class="second">At a Glance</h2>
   <div class="summary-cards">
-    <div class="summary-card"><a href="#item-1">CVE-2026-32202: CISA-Listed Windows Shell Zero-Day &mdash; Active NTLMv2 Credential Theft via LNK Files</a><span class="urgency-red">Act Today</span><span class="sum-why">Verify Windows is patched and NTLMv2 relay restrictions are in place at your construction client, your small-business client, and your internal ops &mdash; CVE-2026-32202 enables zero-click credential theft via LNK files with confirmed active exploitation on CISA&rsquo;s KEV list.</span></div>
-    <div class="summary-card"><a href="#item-2">Microsoft Teams Helpdesk Impersonation Campaign Delivers SNOWBELT/SNOWGLAZE Malware (UNC6692)</a><span class="urgency-red">Act Today</span><span class="sum-why">Review Teams external access policies and brief end users at your construction client, your small-business client, and your internal ops &mdash; attackers are impersonating IT helpdesk via Teams to deploy multi-stage malware after flooding victims&rsquo; inboxes.</span></div>
-    <div class="summary-card"><a href="#item-3">Synology DSM Critical Telnet RCE CVE-2026-32746 (CVSS 9.8) &mdash; Unauthenticated Command Execution</a><span class="urgency-red">Act Today</span><span class="sum-why">Verify Synology DSM is patched and Telnet is disabled at your hospitality client &mdash; CVE-2026-32746 allows unauthenticated remote code execution on Synology NAS via the Telnet service.</span></div>
+    <div class="summary-card"><a href="#item-1">CISA Adds Windows Shell CVE-2026-32202 and ScreenConnect CVE-2024-1708 to KEV (May&nbsp;12 Deadline)</a><span class="urgency-red">Act Today</span><span class="sum-why">Patch Windows and verify Net-NTLMv2 outbound restrictions at your construction client, your small-business client, and your internal ops &mdash; CVE-2026-32202 is now CISA-listed with active in-the-wild exploitation.</span></div>
+    <div class="summary-card"><a href="#item-2">SonicWall SNWLID-2026-0004 &mdash; CVSS 8.0 Auth Bypass on TZ Series</a><span class="urgency-red">Act Today</span><span class="sum-why">Patch SonicOS and disable HTTP/HTTPS management on external interfaces at your construction client &mdash; CVE-2026-0204 is an unauthenticated management bypass affecting your TZ Gen7 fleet.</span></div>
+    <div class="summary-card"><a href="#item-3">Incomplete Microsoft Patch Leaves Windows Open to Zero-Click NTLM Coercion</a><span class="urgency-red">Act Today</span><span class="sum-why">Watch for Microsoft&rsquo;s supplemental advisory and harden NTLM/SMB egress at your construction client, your small-business client, and your internal ops &mdash; the April fix left a zero-click coercion path open.</span></div>
+    <div class="summary-card"><a href="#item-4">UNC6692 Teams Helpdesk Impersonation Lures Users to Fake Mailbox Repair Utility</a><span class="urgency-red">Act Today</span><span class="sum-why">Restrict external Teams chat and brief end users at your construction client, your small-business client, and your internal ops &mdash; UNC6692 is impersonating IT helpdesk to harvest credentials.</span></div>
+    <div class="summary-card"><a href="#item-5">Critical cPanel Authentication Bypass &mdash; All Supported Versions Affected</a><span class="urgency-red">Act Today</span><span class="sum-why">General SMB IT context &mdash; no direct client impact.</span></div>
+    <div class="summary-card"><a href="#item-6">GitHub Enterprise RCE CVE-2026-3854 &mdash; 88% of Internet-Exposed Instances Vulnerable</a><span class="urgency-red">Act Today</span><span class="sum-why">General SMB IT context &mdash; no direct client impact.</span></div>
+    <div class="summary-card"><a href="#item-7">LiteLLM SQL Injection CVE-2026-42208 &mdash; Exploited Within 36 Hours of Disclosure</a><span class="urgency-red">Act Today</span><span class="sum-why">General SMB IT context &mdash; no direct client impact.</span></div>
+    <div class="summary-card"><a href="#item-8">April KB5083769 Windows 11 Update Causes Backup Software Failures (24H2/25H2)</a><span class="urgency-yellow">This Week</span><span class="sum-why">Test backup software before broad deployment of KB5083769 at your construction client, your small-business client, and your internal ops &mdash; the April Win11 cumulative is breaking third-party backup apps.</span></div>
+    <div class="summary-card"><a href="#item-9">Dell PowerEdge DSA-2026-012 / DSA-2026-014 &mdash; Intel 2026.1 IPU Firmware Updates</a><span class="urgency-yellow">This Week</span><span class="sum-why">General SMB IT context &mdash; no direct client impact.</span></div>
   </div>
 </div>
 
 <div class="section-skim">
   <h2>Worth Skimming</h2>
   <ul class="skim-list">
-    <li><strong>CMMC Rev. 3 Transition Signaled &mdash; DoD Contractors Urged to Begin Preparing Now</strong> &mdash; DoD is preparing to align CMMC requirements with NIST SP 800-171 Rev.&nbsp;3 via future rulemaking expected within 12&ndash;18 months. The Pentagon plans to require CMMC clauses in all applicable solicitations from October 1, 2026, compounding compliance challenges for defense contractors still working toward CMMC 2.0. <a href="https://federalnewsnetwork.com/commentary/2026/04/rev-3-is-coming-start-preparing-for-the-next-cmmc-requirement/" target="_blank">Read more &rarr;</a></li>
-    <li><strong>Check Point 27 April 2026 Threat Intelligence Report: VECT Ransomware and SMB Threat Trends</strong> &mdash; Check Point&rsquo;s April 27 weekly report highlights new wiper-ransomware hybrid VECT, active BEAST ransomware targeting RDP and SMB, and ransomware-as-a-service platforms lowering attacker barriers for SMB targeting. <a href="https://research.checkpoint.com/2026/27th-april-threat-intelligence-report/" target="_blank">Read more &rarr;</a></li>
+    <li><strong>ShinyHunters Exploit Anodot Compromise to Target Vimeo</strong> &mdash; ShinyHunters leveraged a compromise of analytics vendor Anodot to pivot into Vimeo, exposing customer metadata and email addresses. The pattern reinforces ongoing supply-chain credential abuse; SMBs should review third-party SaaS access tokens and conditional access on shared connectors. <a href="https://securityaffairs.com/191448/security/shinyhunters-exploit-anodot-incident-to-target-vimeo.html" target="_blank">Read more &rarr;</a></li>
+    <li><strong>Anthropic Releases Claude Opus 4.7 with Coding and Vision Improvements</strong> &mdash; Claude Opus 4.7 brings notable improvements over Opus 4.6 in advanced software engineering, harder coding tasks, and higher-resolution image understanding. Relevant for IT teams using Claude for code review, automation, ticket triage, and document analysis. <a href="https://www.anthropic.com/news/claude-opus-4-7" target="_blank">Read more &rarr;</a></li>
+    <li><strong>Robinhood Account-Creation Flaw Abused to Send Phishing From Genuine Infrastructure</strong> &mdash; Attackers abused a flaw in Robinhood&rsquo;s account creation to dispatch phishing emails that bypass standard SPF/DKIM/DMARC checks. Email gateways should monitor for unusual Robinhood-origin lures. <a href="https://www.securityweek.com/robinhood-vulnerability-exploited-for-phishing-attacks/" target="_blank">Read more &rarr;</a></li>
+    <li><strong>Russia-Linked Signal Phishing Campaign Targets German Officials</strong> &mdash; A suspected Russian operation is using Signal-themed phishing lures against German government officials, ministers, and journalists. Reinforces ongoing state-actor abuse of trusted messaging brands. <a href="https://securityaffairs.com/191425/intelligence/signal-phishing-campaign-targets-german-officials-in-suspected-russian-operation.html" target="_blank">Read more &rarr;</a></li>
+    <li><strong>OpenAI Ships GPT-5.5 Days After Anthropic&rsquo;s Opus 4.7</strong> &mdash; OpenAI announced GPT-5.5 on April 23 with API availability April 24, citing improved speed, instruction following, tool use, and long-context performance over GPT-5.4. Back-to-back releases give IT buyers fresh options for agentic workloads. <a href="https://www.aicloudit.com/blog/ai/openai-gpt-5-5-anthropic-opus-4-7-release/" target="_blank">Read more &rarr;</a></li>
   </ul>
 </div>
 
@@ -56,21 +65,21 @@
 <h2>Client Alert Templates</h2>
 <details class="alert-box">
   <summary>
-    <span class="alert-subj">Subject: Security Alert: Watch for Fake IT Support Requests via Microsoft Teams</span>
+    <span class="alert-subj">Subject: Heads-Up: Fake IT Support Messages on Microsoft Teams</span>
     <button type="button" class="copy-btn" onclick="event.preventDefault(); event.stopPropagation(); copyTemplate('alert-1', this);">Copy to Clipboard</button>
   </summary>
   <div class="alert-body">
     <pre id="alert-1">Hi team,
 
-We want to flag an active attack campaign where criminals impersonate IT helpdesk staff through Microsoft Teams. These attacks often start by flooding your inbox with junk email, then following up via Teams offering to "help" — which is how they gain remote access.
+We are seeing an active campaign where attackers first flood a user's inbox with junk email, then follow up over Microsoft Teams pretending to be IT support and offering to "fix" the inbox. They walk users to a fake mailbox-repair page that captures the user's credentials.
 
 Here is what to watch for:
-• An unexpected Teams message from someone claiming to be IT support
-• A request to share your screen or allow remote access through Quick Assist or another tool
-• Urgency or pressure to act immediately to resolve a "security incident"
-• Being asked to approve sign-in prompts or disable security settings you did not initiate
+- An unexpected Teams message from someone claiming to be IT support, often right after a sudden surge of junk email
+- A request to share your screen, allow remote access, or run a "Mailbox Repair" or "Quick Assist" tool
+- Pressure to act immediately to resolve a "security issue" or "mailbox problem"
+- Being asked to re-enter your Microsoft password on a page that looks like a Microsoft sign-in
 
-Our team will never contact you unsolicited through Teams to request remote access. If you receive a Teams message from someone claiming to be from IT support that you did not request, decline and contact us directly to verify.
+Our team will never contact you unsolicited via Teams to request remote access or ask you to re-enter your password. If you receive a Teams message like this, decline, do not click any links, and contact us directly to verify.
 
 Thanks,
 Larry</pre>
@@ -82,39 +91,105 @@ Larry</pre>
   <h2>Details</h2>
   <div class="item" id="item-1">
     <div class="item-header">
-      <span class="item-title">CVE-2026-32202: CISA-Listed Windows Shell Zero-Day &mdash; Active NTLMv2 Credential Theft via LNK Files</span>
+      <span class="item-title">CISA Adds Windows Shell CVE-2026-32202 and ScreenConnect CVE-2024-1708 to KEV (May&nbsp;12 Deadline)</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 11/11</span>
     </div>
-    <p>CVE-2026-32202, a Windows Shell spoofing vulnerability, was added to CISA&rsquo;s Known Exploited Vulnerabilities catalog on April 28, 2026 with a federal remediation deadline of May 12. The flaw enables zero-click NTLMv2 credential theft via malicious LNK files; victims need only open the shortcut to expose their hash. A patch was released April 14 as part of Patch Tuesday; organizations should verify it has been applied and consider enforcing NTLMv2 relay restrictions via Group Policy.</p>
-    <p class="relevance">Verify Windows is patched and NTLMv2 relay restrictions are in place at your construction client, your small-business client, and your internal ops &mdash; CVE-2026-32202 enables zero-click credential theft via LNK files with confirmed active exploitation on CISA&rsquo;s KEV list.</p>
-    <a href="https://www.helpnetsecurity.com/2026/04/29/windows-cve-2026-32202-exploited/" target="_blank" class="src">Source &rarr;</a>
+    <p>CISA added a Windows Shell zero-click authentication coercion flaw (CVE-2026-32202) and a ConnectWise ScreenConnect path traversal (CVE-2024-1708, CVSS 8.4) to the Known Exploited Vulnerabilities catalog with a May 12, 2026 federal remediation deadline. The Windows Shell flaw triggers Net-NTLMv2 hash leakage via SMB and is being exploited in the wild; Microsoft attributes ScreenConnect activity to China-based Storm-1175 deploying Medusa ransomware. Patches are available; verify deployment and consider enforcing NTLMv2 relay restrictions via Group Policy.</p>
+    <p class="relevance">Patch Windows and verify Net-NTLMv2 outbound restrictions at your construction client, your small-business client, and your internal ops &mdash; CVE-2026-32202 is now CISA-listed with active in-the-wild exploitation.</p>
+    <a href="https://securityaffairs.com/191442/security/u-s-cisa-adds-microsoft-windows-shell-and-connectwise-screenconnect-flaws-to-its-known-exploited-vulnerabilities-catalog.html" target="_blank" class="src">Source &rarr;</a>
   </div>
 
   <div class="item" id="item-2">
     <div class="item-header">
-      <span class="item-title">Microsoft Teams Helpdesk Impersonation Campaign Delivers SNOWBELT/SNOWGLAZE Malware (UNC6692)</span>
+      <span class="item-title">SonicWall SNWLID-2026-0004 &mdash; Three SonicOS Flaws Including CVSS 8.0 Auth Bypass on TZ Series</span>
       <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
+      <span class="score">Score: 11/11</span>
     </div>
-    <p>Attackers attributed to UNC6692 are impersonating IT helpdesk staff via Microsoft Teams to deliver a multi-stage malware suite including browser extension SNOWBELT, Python tunneler SNOWGLAZE, and persistent backdoor SNOWBASIN. The attack begins with email bombing to overwhelm the victim&rsquo;s inbox, followed by a Teams message offering assistance and requesting remote access via Quick Assist. Organizations using Teams with external tenant access should review cross-tenant communication policies and restrict or audit external Teams messaging.</p>
-    <p class="relevance">Review Teams external access policies and brief end users at your construction client, your small-business client, and your internal ops &mdash; attackers are impersonating IT helpdesk via Teams to deploy multi-stage malware after flooding victims&rsquo; inboxes.</p>
-    <a href="https://voip.review/2026/04/28/sophisticated-phishing-attack-targets-microsoft-teams-users/" target="_blank" class="src">Source &rarr;</a>
+    <p>SonicWall published advisory SNWLID-2026-0004 disclosing CVE-2026-0204 (CVSS 8.0 unauthenticated management-interface access bypass), CVE-2026-0205 (path traversal), and CVE-2026-0206 (post-auth stack buffer overflow). All Gen6 TZ 300-600, Gen7 TZ270-TZ670, and Gen8 TZ80-TZ680 series are affected. SonicWall urges admins to disable HTTP/HTTPS management and SSL-VPN on external interfaces and restrict management to SSH until patches are applied.</p>
+    <p class="relevance">Patch SonicOS and disable HTTP/HTTPS management on external interfaces at your construction client &mdash; CVE-2026-0204 is an unauthenticated management bypass affecting your TZ Gen7 fleet.</p>
+    <a href="https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0004" target="_blank" class="src">Source &rarr;</a>
   </div>
 
   <div class="item" id="item-3">
     <div class="item-header">
-      <span class="item-title">Synology DSM Critical Telnet RCE CVE-2026-32746 (CVSS 9.8) &mdash; Unauthenticated Command Execution</span>
+      <span class="item-title">Incomplete Microsoft Patch Leaves Windows Open to Zero-Click NTLM Coercion Attacks</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 10/11</span>
     </div>
-    <p>CVE-2026-32746 is a critical CVSS 9.8 remote code execution flaw in Synology DiskStation Manager allowing unauthenticated remote attackers to execute arbitrary commands via the Telnet service. Synology advises disabling Telnet immediately via Control Panel &gt; Terminal &amp; SNMP as a mitigation step while firmware patches are applied. Organizations running Synology NAS devices should treat this as urgent and disable Telnet if it is not actively required.</p>
-    <p class="relevance">Verify Synology DSM is patched and Telnet is disabled at your hospitality client &mdash; CVE-2026-32746 allows unauthenticated remote code execution on Synology NAS via the Telnet service.</p>
-    <a href="https://securityonline.info/synology-dsm-critical-telnet-rce-vulnerability-cve-2026-32746/" target="_blank" class="src">Source &rarr;</a>
+    <p>The Register reported April 29 that Microsoft&rsquo;s April 14 fix for CVE-2026-32202 prevented RCE and SmartScreen bypass but left a zero-click authentication coercion vector that leaks Net-NTLMv2 hashes via SMB. Both CISA and Microsoft confirmed active in-the-wild exploitation. Admins should verify patch level, watch for Microsoft&rsquo;s supplemental advisory, and harden NTLM/SMB egress at the perimeter.</p>
+    <p class="relevance">Watch for Microsoft&rsquo;s supplemental advisory and harden NTLM/SMB egress at your construction client, your small-business client, and your internal ops &mdash; the April fix left a zero-click coercion path open.</p>
+    <a href="https://www.theregister.com/2026/04/29/microsoft_zero_click_exploit/" target="_blank" class="src">Source &rarr;</a>
+  </div>
+
+  <div class="item" id="item-4">
+    <div class="item-header">
+      <span class="item-title">UNC6692 Teams Helpdesk Impersonation Lures Users to Fake Mailbox Repair Utility</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 10/11</span>
+    </div>
+    <p>Google Threat Intelligence Group disclosed that UNC6692 launches attacks by first email-bombing victims, then contacting them via Microsoft Teams impersonating IT helpdesk and luring them to a fake &ldquo;Mailbox Repair Utility&rdquo; that harvests credentials twice. Microsoft confirmed Teams&rsquo; external collaboration features are being abused despite in-app security warnings. SMBs using Teams should review external tenant access policies and brief users immediately.</p>
+    <p class="relevance">Restrict external Teams chat and brief end users at your construction client, your small-business client, and your internal ops &mdash; UNC6692 is impersonating IT helpdesk to harvest credentials.</p>
+    <a href="https://voip.review/2026/04/28/sophisticated-phishing-attack-targets-microsoft-teams-users/" target="_blank" class="src">Source &rarr;</a>
+  </div>
+
+  <div class="item" id="item-5">
+    <div class="item-header">
+      <span class="item-title">Critical cPanel Authentication Bypass &mdash; All Supported Versions Affected</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 10/11</span>
+    </div>
+    <p>A critical authentication bypass affecting all supported cPanel versions has been patched. Fixed versions include 11.110.0.97, 11.118.0.63, and 11.126.0.54. Hosting providers like Namecheap applied temporary firewall mitigations pending full patch deployment. SMBs running cPanel-managed servers should apply the update immediately given the broad install base.</p>
+    <p class="relevance">General SMB IT context &mdash; no direct client impact.</p>
+    <a href="https://securityaffairs.com/191465/security/all-supported-cpanel-versions-hit-by-critical-auth-bug-now-patched.html" target="_blank" class="src">Source &rarr;</a>
+  </div>
+
+  <div class="item" id="item-6">
+    <div class="item-header">
+      <span class="item-title">GitHub Enterprise RCE CVE-2026-3854 &mdash; 88% of Internet-Exposed Instances Vulnerable</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 10/11</span>
+    </div>
+    <p>Wiz researchers disclosed a command-injection RCE flaw in GitHub Enterprise Server (CVE-2026-3854) allowing attackers with repository push access to execute code. At report time, 88% of internet-exposed instances remained unpatched. Self-hosted GHES admins should prioritize patching across all affected Enterprise versions.</p>
+    <p class="relevance">General SMB IT context &mdash; no direct client impact.</p>
+    <a href="https://securityaffairs.com/191434/security/cve-2026-3854-github-flaw-enables-remote-code-execution.html" target="_blank" class="src">Source &rarr;</a>
+  </div>
+
+  <div class="item" id="item-7">
+    <div class="item-header">
+      <span class="item-title">LiteLLM SQL Injection CVE-2026-42208 &mdash; Exploited Within 36 Hours of Disclosure</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 10/11</span>
+    </div>
+    <p>A SQL injection flaw in LiteLLM&rsquo;s API key verification (CVE-2026-42208) was exploited approximately 36 hours after disclosure. Attackers can read data from the proxy&rsquo;s database and modify credentials. Versions 1.81.16-1.83.6 are affected; fixed in 1.83.7. Teams running LiteLLM as an LLM gateway should patch and audit immediately.</p>
+    <p class="relevance">General SMB IT context &mdash; no direct client impact.</p>
+    <a href="https://securityaffairs.com/191483/hacking/cve-2026-42208-litellm-bug-exploited-36-hours-after-its-disclosure.html" target="_blank" class="src">Source &rarr;</a>
+  </div>
+
+  <div class="item" id="item-8">
+    <div class="item-header">
+      <span class="item-title">April KB5083769 Windows 11 Update Causes Backup Software Failures (24H2/25H2)</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 9/11</span>
+    </div>
+    <p>The April Windows 11 cumulative update (KB5083769) is breaking third-party backup applications on systems running 24H2 and 25H2, affecting multiple vendors. Admins should test backup software before broad deployment and consider deferring the update where feasible until vendor compatibility patches ship.</p>
+    <p class="relevance">Test backup software before broad deployment of KB5083769 at your construction client, your small-business client, and your internal ops &mdash; the April Win11 cumulative is breaking third-party backup apps.</p>
+    <a href="https://www.bleepingcomputer.com/news/microsoft/april-kb5083769-windows-11-update-causes-backup-software-failures/" target="_blank" class="src">Source &rarr;</a>
+  </div>
+
+  <div class="item" id="item-9">
+    <div class="item-header">
+      <span class="item-title">Dell PowerEdge DSA-2026-012 / DSA-2026-014 &mdash; Intel 2026.1 IPU Firmware Updates</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 9/11</span>
+    </div>
+    <p>Dell published advisories DSA-2026-012 (Intel 2026.1 IPU) and DSA-2026-014 covering Intel-processor PowerEdge servers (R250-R770, T150-T550, XE/XC families). Updated BIOS and Intel Chipset Device Software components were posted April 21, 2026. Admins should identify affected models and schedule firmware/BIOS rollouts.</p>
+    <p class="relevance">General SMB IT context &mdash; no direct client impact.</p>
+    <a href="https://www.dell.com/support/kbdoc/en-us/000426743/dsa-2026-012-security-update-for-dell-poweredge-server-for-intel-2026-security-advisories-2026-1-ipu" target="_blank" class="src">Source &rarr;</a>
   </div>
 </div>
 
-<div class="footer">Generated Wednesday, April 29, 2026 at 7:30 AM PT &bull; Prompt v2026.04.29.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-04-29.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
+<div class="footer">Generated Thursday, April 30, 2026 at 8:45 AM PT &bull; Prompt v2026.04.30.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-04-30.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
 
 </main>
 </body>
