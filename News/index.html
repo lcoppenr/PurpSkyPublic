@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<title>Morning Briefing -- Thursday, April 30, 2026</title>
+<title>Morning Briefing -- Friday, May 1, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -24,40 +24,40 @@
 <main class="briefing-content">
 
 <div class="page-header">
-  <h1>Morning Briefing -- Thursday, April 30, 2026</h1>
+  <h1>Morning Briefing -- Friday, May 1, 2026</h1>
   <p class="page-meta">Microsoft &bull; Security &amp; Compliance &bull; Firewall / VPN / Networking &bull; Servers/NAS &bull; Workstations &amp; Mobile &bull; Peripherals &amp; AV &bull; RMM &amp; Remote Access &bull; Construction &amp; Specialty Software &bull; General Tech &amp; AI &bull; Pacific Time</p>
 </div>
 
 <div class="exec-summary">
-  <h2>Today&#39;s Actions</h2>
+  <h2>Today's Actions</h2>
   <ol class="action-list">
-    <li><span class="urgency-red">Act Today</span> Patch Windows endpoints and verify Net-NTLMv2 outbound restrictions at your construction client, your small-business client, and your internal ops &mdash; CVE-2026-32202 is on the CISA KEV list with a May&nbsp;12 federal remediation deadline.</li>
-    <li><span class="urgency-red">Act Today</span> Patch SonicOS firmware on your construction client&rsquo;s TZ fleet and disable HTTP/HTTPS management on external interfaces &mdash; SonicWall advisory SNWLID-2026-0004 includes a CVSS&nbsp;8.0 access-control bypass.</li>
-    <li><span class="urgency-red">Act Today</span> Brief users at your construction client, your small-business client, and your internal ops on the Teams helpdesk impersonation campaign and restrict external Teams chat &mdash; UNC6692 is luring victims into a fake mailbox-repair tool.</li>
-    <li><span class="urgency-red">Act Today</span> Watch for Microsoft&rsquo;s supplemental zero-click NTLM patch and verify SMB/NTLM egress hardening at your construction client, your small-business client, and your internal ops &mdash; the April fix is incomplete.</li>
+    <li><span class="urgency-red">Act Today</span> Audit client environments for cPanel/WHM hosts and patch CVE-2026-41940 immediately &mdash; CISA added the CVSS 9.8 missing-auth bypass to KEV with a May 3 federal deadline and active in-the-wild exploitation since February.</li>
+    <li><span class="urgency-red">Act Today</span> Watch Synology and Linux-appliance vendor advisories at your hospitality client and your internal ops &mdash; CVE-2026-31431 ("Copy Fail") elevates unprivileged users to root via page-cache corruption on major Linux distributions.</li>
+    <li><span class="urgency-red">Act Today</span> Pin and audit Python "Lightning" package versions (avoid 2.6.2 / 2.6.3) and rotate any credentials touched by recent installs &mdash; malicious releases were published April 30 to harvest credentials.</li>
+    <li><span class="urgency-yellow">This Week</span> Reinforce QR-code and CAPTCHA-gated phishing training at your construction client, your small-business client, and your internal ops &mdash; Microsoft's Q1 2026 report shows QR phishing up 146% and CAPTCHA-gated lures up 125%.</li>
   </ol>
   <h2 class="second">At a Glance</h2>
   <div class="summary-cards">
-    <div class="summary-card"><a href="#item-1">CISA Adds Windows Shell CVE-2026-32202 and ScreenConnect CVE-2024-1708 to KEV (May&nbsp;12 Deadline)</a><span class="urgency-red">Act Today</span><span class="sum-why">Patch Windows and verify Net-NTLMv2 outbound restrictions at your construction client, your small-business client, and your internal ops &mdash; CVE-2026-32202 is now CISA-listed with active in-the-wild exploitation.</span></div>
-    <div class="summary-card"><a href="#item-2">SonicWall SNWLID-2026-0004 &mdash; CVSS 8.0 Auth Bypass on TZ Series</a><span class="urgency-red">Act Today</span><span class="sum-why">Patch SonicOS and disable HTTP/HTTPS management on external interfaces at your construction client &mdash; CVE-2026-0204 is an unauthenticated management bypass affecting your TZ Gen7 fleet.</span></div>
-    <div class="summary-card"><a href="#item-3">Incomplete Microsoft Patch Leaves Windows Open to Zero-Click NTLM Coercion</a><span class="urgency-red">Act Today</span><span class="sum-why">Watch for Microsoft&rsquo;s supplemental advisory and harden NTLM/SMB egress at your construction client, your small-business client, and your internal ops &mdash; the April fix left a zero-click coercion path open.</span></div>
-    <div class="summary-card"><a href="#item-4">UNC6692 Teams Helpdesk Impersonation Lures Users to Fake Mailbox Repair Utility</a><span class="urgency-red">Act Today</span><span class="sum-why">Restrict external Teams chat and brief end users at your construction client, your small-business client, and your internal ops &mdash; UNC6692 is impersonating IT helpdesk to harvest credentials.</span></div>
-    <div class="summary-card"><a href="#item-5">Critical cPanel Authentication Bypass &mdash; All Supported Versions Affected</a><span class="urgency-red">Act Today</span><span class="sum-why">General SMB IT context &mdash; no direct client impact.</span></div>
-    <div class="summary-card"><a href="#item-6">GitHub Enterprise RCE CVE-2026-3854 &mdash; 88% of Internet-Exposed Instances Vulnerable</a><span class="urgency-red">Act Today</span><span class="sum-why">General SMB IT context &mdash; no direct client impact.</span></div>
-    <div class="summary-card"><a href="#item-7">LiteLLM SQL Injection CVE-2026-42208 &mdash; Exploited Within 36 Hours of Disclosure</a><span class="urgency-red">Act Today</span><span class="sum-why">General SMB IT context &mdash; no direct client impact.</span></div>
-    <div class="summary-card"><a href="#item-8">April KB5083769 Windows 11 Update Causes Backup Software Failures (24H2/25H2)</a><span class="urgency-yellow">This Week</span><span class="sum-why">Test backup software before broad deployment of KB5083769 at your construction client, your small-business client, and your internal ops &mdash; the April Win11 cumulative is breaking third-party backup apps.</span></div>
-    <div class="summary-card"><a href="#item-9">Dell PowerEdge DSA-2026-012 / DSA-2026-014 &mdash; Intel 2026.1 IPU Firmware Updates</a><span class="urgency-yellow">This Week</span><span class="sum-why">General SMB IT context &mdash; no direct client impact.</span></div>
+    <div class="summary-card"><a href="#item-1">CISA Adds cPanel/WHM Auth Bypass CVE-2026-41940 to KEV (Exploited Since February)</a><span class="urgency-red">Act Today</span><span class="sum-why">General SMB IT context &mdash; no direct client impact.</span></div>
+    <div class="summary-card"><a href="#item-2">"Copy Fail" Linux Kernel Bug CVE-2026-31431 Enables Root via Page-Cache Corruption</a><span class="urgency-red">Act Today</span><span class="sum-why">Watch for Synology DSM and Linux-appliance updates at your hospitality client and your internal ops &mdash; CVE-2026-31431 enables local privilege escalation on Linux-based systems pending vendor patches.</span></div>
+    <div class="summary-card"><a href="#item-3">Malicious Python "Lightning" Package Versions Published in Supply-Chain Attack</a><span class="urgency-red">Act Today</span><span class="sum-why">General SMB IT context &mdash; no direct client impact.</span></div>
+    <div class="summary-card"><a href="#item-4">Anthropic Launches Claude Security Public Beta for Codebase Vulnerability Scanning</a><span class="urgency-yellow">This Week</span><span class="sum-why">Evaluate the Claude Security beta for AppSec scanning at your internal ops &mdash; the new tool fits IT consultancy workflows for code and configuration audits.</span></div>
+    <div class="summary-card"><a href="#item-5">Microsoft Launches Agent 365 Runtime Protection for AI-Agent Security</a><span class="urgency-yellow">This Week</span><span class="sum-why">Track Agent 365 Runtime Protection for future Defender rollouts at your construction client and your small-business client &mdash; preview controls can constrain AI-agent behavior in real time.</span></div>
+    <div class="summary-card"><a href="#item-6">Microsoft Q1 2026 Email Threat Report: 8.3B Phishing Attempts, QR Phishing Up 146%</a><span class="urgency-yellow">This Week</span><span class="sum-why">Reinforce QR-code and CAPTCHA-gated phishing training at your construction client, your small-business client, and your internal ops &mdash; Q1 saw QR phishing up 146% and CAPTCHA-gated phishing up 125%.</span></div>
+    <div class="summary-card"><a href="#item-7">OpenAI Begins Rolling Out GPT-5.5-Cyber to Critical-Sector Defenders via TAC Program</a><span class="urgency-yellow">This Week</span><span class="sum-why">General SMB IT context &mdash; no direct client impact.</span></div>
+    <div class="summary-card"><a href="#item-8">Autodesk Discloses SLDPRT Memory-Corruption RCE Flaw (CVE-2025-9456)</a><span class="urgency-yellow">This Week</span><span class="sum-why">Apply Autodesk's CVE-2025-9456 patch and warn AutoCAD users about untrusted SLDPRT files at your construction client &mdash; a malicious CAD file can trigger arbitrary code execution.</span></div>
   </div>
 </div>
 
 <div class="section-skim">
   <h2>Worth Skimming</h2>
   <ul class="skim-list">
-    <li><strong>ShinyHunters Exploit Anodot Compromise to Target Vimeo</strong> &mdash; ShinyHunters leveraged a compromise of analytics vendor Anodot to pivot into Vimeo, exposing customer metadata and email addresses. The pattern reinforces ongoing supply-chain credential abuse; SMBs should review third-party SaaS access tokens and conditional access on shared connectors. <a href="https://securityaffairs.com/191448/security/shinyhunters-exploit-anodot-incident-to-target-vimeo.html" target="_blank">Read more &rarr;</a></li>
-    <li><strong>Anthropic Releases Claude Opus 4.7 with Coding and Vision Improvements</strong> &mdash; Claude Opus 4.7 brings notable improvements over Opus 4.6 in advanced software engineering, harder coding tasks, and higher-resolution image understanding. Relevant for IT teams using Claude for code review, automation, ticket triage, and document analysis. <a href="https://www.anthropic.com/news/claude-opus-4-7" target="_blank">Read more &rarr;</a></li>
-    <li><strong>Robinhood Account-Creation Flaw Abused to Send Phishing From Genuine Infrastructure</strong> &mdash; Attackers abused a flaw in Robinhood&rsquo;s account creation to dispatch phishing emails that bypass standard SPF/DKIM/DMARC checks. Email gateways should monitor for unusual Robinhood-origin lures. <a href="https://www.securityweek.com/robinhood-vulnerability-exploited-for-phishing-attacks/" target="_blank">Read more &rarr;</a></li>
-    <li><strong>Russia-Linked Signal Phishing Campaign Targets German Officials</strong> &mdash; A suspected Russian operation is using Signal-themed phishing lures against German government officials, ministers, and journalists. Reinforces ongoing state-actor abuse of trusted messaging brands. <a href="https://securityaffairs.com/191425/intelligence/signal-phishing-campaign-targets-german-officials-in-suspected-russian-operation.html" target="_blank">Read more &rarr;</a></li>
-    <li><strong>OpenAI Ships GPT-5.5 Days After Anthropic&rsquo;s Opus 4.7</strong> &mdash; OpenAI announced GPT-5.5 on April 23 with API availability April 24, citing improved speed, instruction following, tool use, and long-context performance over GPT-5.4. Back-to-back releases give IT buyers fresh options for agentic workloads. <a href="https://www.aicloudit.com/blog/ai/openai-gpt-5-5-anthropic-opus-4-7-release/" target="_blank">Read more &rarr;</a></li>
+    <li><strong>Windows 11 KB5083631 Optional Update Released With 34 Changes</strong> &mdash; Microsoft released the KB5083631 optional cumulative update for Windows 11 with 34 changes, including a new Xbox mode for PCs and security enhancements. Admins should review the change list before deploying via WSUS/Intune rings. <a href="https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5083631-update-released-with-34-changes-and-fixes/" target="_blank">Read more &rarr;</a></li>
+    <li><strong>Microsoft Fixes Remote Desktop Warnings Displaying Incorrectly</strong> &mdash; Microsoft resolved a known issue where newly introduced Windows security warnings displayed incorrectly when users opened Remote Desktop (.rdp) files. The fix corrects misleading prompts that could confuse end users about RDP connection safety. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-remote-desktop-warnings-displaying-incorrectly/" target="_blank">Read more &rarr;</a></li>
+    <li><strong>Microsoft Lets Admins Choose Pre-Installed Store Apps to Uninstall</strong> &mdash; Microsoft updated a Windows 11 in-box app removal policy to include a dynamic list, letting IT admins selectively choose which preinstalled Store apps to remove via policy. The change improves Intune/MDM-managed deployment hygiene for SMB IT. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-now-lets-admins-choose-pre-installed-store-apps-to-uninstall/" target="_blank">Read more &rarr;</a></li>
+    <li><strong>NIST Releases Draft SP 800-133r3 on Cryptographic Key Generation</strong> &mdash; NIST released the initial public draft of SP 800-133 Revision 3, "Recommendation for Cryptographic Key Generation," on April 17, 2026 with public comment open through June 16, 2026. Useful for contractors mapping crypto controls to NIST SP 800-171 / CMMC. <a href="https://csrc.nist.gov/publications/drafts-open-for-comment" target="_blank">Read more &rarr;</a></li>
+    <li><strong>NIST Opens Comment on Small Business Cybersecurity: Non-Employer Firms Draft</strong> &mdash; NIST released a new public draft of "Small Business Cybersecurity: Non-Employer Firms" on April 14, 2026 with comment open through May 14, 2026. The guidance targets sole proprietors and very small businesses, an audience adjacent to many MSP/SMB clients. <a href="https://www.nist.gov/news-events/news/2026/04/nist-releases-initial-public-draft-ipd-sp-800-230-additional-slh-dsa" target="_blank">Read more &rarr;</a></li>
+    <li><strong>C3PAO Assessment Capacity Tightening as CMMC Phase 2 Nov 10 Deadline Nears</strong> &mdash; With CMMC Phase 2 mandatory third-party Level 2 certification taking effect November 10, 2026, C3PAO scheduling waitlists now exceed six months. Average DIB SPRS score remains around 60 (vs. 110 required) and fewer than half of contractors have completed SSP/POA&amp;M documentation. <a href="https://www.vc3.com/blog/navigating-cmmc-changes-in-2026" target="_blank">Read more &rarr;</a></li>
   </ul>
 </div>
 
@@ -65,21 +65,45 @@
 <h2>Client Alert Templates</h2>
 <details class="alert-box">
   <summary>
-    <span class="alert-subj">Subject: Heads-Up: Fake IT Support Messages on Microsoft Teams</span>
+    <span class="alert-subj">Subject: Heads-Up on QR-Code and CAPTCHA-Gated Phishing</span>
     <button type="button" class="copy-btn" onclick="event.preventDefault(); event.stopPropagation(); copyTemplate('alert-1', this);">Copy to Clipboard</button>
   </summary>
   <div class="alert-body">
     <pre id="alert-1">Hi team,
 
-We are seeing an active campaign where attackers first flood a user's inbox with junk email, then follow up over Microsoft Teams pretending to be IT support and offering to "fix" the inbox. They walk users to a fake mailbox-repair page that captures the user's credentials.
+Microsoft has just published its Q1 2026 email threat report, and two trends are worth a quick heads-up.
 
-Here is what to watch for:
-- An unexpected Teams message from someone claiming to be IT support, often right after a sudden surge of junk email
-- A request to share your screen, allow remote access, or run a "Mailbox Repair" or "Quick Assist" tool
-- Pressure to act immediately to resolve a "security issue" or "mailbox problem"
-- Being asked to re-enter your Microsoft password on a page that looks like a Microsoft sign-in
+QR-code phishing is up 146% over the prior quarter, and 70% of these messages now arrive as PDF attachments rather than direct links. The QR code is the lure -- scanning it on a phone often takes you outside your work device's protections to a fake sign-in page.
 
-Our team will never contact you unsolicited via Teams to request remote access or ask you to re-enter your password. If you receive a Teams message like this, decline, do not click any links, and contact us directly to verify.
+CAPTCHA-gated phishing is also up sharply (125%). These messages send you to a real-looking "prove you are human" challenge page first, which is designed to slip past automated scanners and convince you the destination is legitimate. After the CAPTCHA, you are sent to a fake Microsoft, DocuSign, or Adobe sign-in.
+
+What to do:
+- Do not scan QR codes inside emails or PDF attachments unless you were expecting them.
+- Treat any "complete this CAPTCHA to view your document" prompt as suspicious.
+- If a message asks you to sign in to Microsoft, Adobe, DocuSign, or similar, navigate to the service directly in your browser instead of clicking the link.
+
+When in doubt, forward the message to me and I will take a look.
+
+Thanks,
+Larry</pre>
+  </div>
+</details>
+<details class="alert-box">
+  <summary>
+    <span class="alert-subj">Subject: Caution With Untrusted CAD/SLDPRT Files in AutoCAD</span>
+    <button type="button" class="copy-btn" onclick="event.preventDefault(); event.stopPropagation(); copyTemplate('alert-2', this);">Copy to Clipboard</button>
+  </summary>
+  <div class="alert-body">
+    <pre id="alert-2">Hi team,
+
+Autodesk has disclosed a security flaw (CVE-2025-9456) where opening a maliciously crafted SLDPRT file in AutoCAD can run code on your workstation. Patches are being rolled out, and we will deploy them in the next maintenance window.
+
+In the meantime:
+- If you receive a CAD or SLDPRT file from someone outside your usual project contacts, confirm with the sender by phone or in person before opening it.
+- Be especially cautious with files that arrive via email from unfamiliar senders, even if the subject line references one of your projects.
+- If something looks off about a CAD file (unexpected sender, odd file name, unusual prompt when opening), close it and call us.
+
+We will let you know once the Autodesk update has been applied across the fleet.
 
 Thanks,
 Larry</pre>
@@ -91,105 +115,87 @@ Larry</pre>
   <h2>Details</h2>
   <div class="item" id="item-1">
     <div class="item-header">
-      <span class="item-title">CISA Adds Windows Shell CVE-2026-32202 and ScreenConnect CVE-2024-1708 to KEV (May&nbsp;12 Deadline)</span>
+      <span class="item-title">CISA Adds cPanel/WHM Auth Bypass CVE-2026-41940 to KEV (Exploited Since February)</span>
       <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 11/11</span>
+      <span class="score">Score: 10/11</span>
     </div>
-    <p>CISA added a Windows Shell zero-click authentication coercion flaw (CVE-2026-32202) and a ConnectWise ScreenConnect path traversal (CVE-2024-1708, CVSS 8.4) to the Known Exploited Vulnerabilities catalog with a May 12, 2026 federal remediation deadline. The Windows Shell flaw triggers Net-NTLMv2 hash leakage via SMB and is being exploited in the wild; Microsoft attributes ScreenConnect activity to China-based Storm-1175 deploying Medusa ransomware. Patches are available; verify deployment and consider enforcing NTLMv2 relay restrictions via Group Policy.</p>
-    <p class="relevance">Patch Windows and verify Net-NTLMv2 outbound restrictions at your construction client, your small-business client, and your internal ops &mdash; CVE-2026-32202 is now CISA-listed with active in-the-wild exploitation.</p>
-    <a href="https://securityaffairs.com/191442/security/u-s-cisa-adds-microsoft-windows-shell-and-connectwise-screenconnect-flaws-to-its-known-exploited-vulnerabilities-catalog.html" target="_blank" class="src">Source &rarr;</a>
+    <p>CISA added CVE-2026-41940, a CVSS 9.8 missing-authentication bypass in cPanel &amp; WHM and WP Squared, to the Known Exploited Vulnerabilities catalog on April 30, 2026. Attackers have been exploiting the flaw in the wild since at least February to create accounts, inject malicious code, and harvest billing data. The federal remediation deadline is May 3, 2026; private organizations are urged to act immediately.</p>
+    <p class="relevance">General SMB IT context &mdash; no direct client impact.</p>
+    <a href="https://www.cisa.gov/news-events/alerts/2026/04/30/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank" class="src">Source &rarr;</a>
   </div>
-
   <div class="item" id="item-2">
     <div class="item-header">
-      <span class="item-title">SonicWall SNWLID-2026-0004 &mdash; Three SonicOS Flaws Including CVSS 8.0 Auth Bypass on TZ Series</span>
+      <span class="item-title">"Copy Fail" Linux Kernel Bug CVE-2026-31431 Enables Root via Page-Cache Corruption</span>
       <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 11/11</span>
+      <span class="score">Score: 9/11</span>
     </div>
-    <p>SonicWall published advisory SNWLID-2026-0004 disclosing CVE-2026-0204 (CVSS 8.0 unauthenticated management-interface access bypass), CVE-2026-0205 (path traversal), and CVE-2026-0206 (post-auth stack buffer overflow). All Gen6 TZ 300-600, Gen7 TZ270-TZ670, and Gen8 TZ80-TZ680 series are affected. SonicWall urges admins to disable HTTP/HTTPS management and SSL-VPN on external interfaces and restrict management to SSH until patches are applied.</p>
-    <p class="relevance">Patch SonicOS and disable HTTP/HTTPS management on external interfaces at your construction client &mdash; CVE-2026-0204 is an unauthenticated management bypass affecting your TZ Gen7 fleet.</p>
-    <a href="https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0004" target="_blank" class="src">Source &rarr;</a>
+    <p>Linux flaw CVE-2026-31431, dubbed "Copy Fail," allows unprivileged users to write controlled bytes into page-cache files, enabling straightforward escalation to root on major distributions. The bug affects Linux-based servers, NAS firmware, and security appliances; vendor patches will follow upstream kernel fixes. SMBs should monitor advisories from each affected vendor.</p>
+    <p class="relevance">Watch for Synology DSM and Linux-appliance updates at your hospitality client and your internal ops &mdash; CVE-2026-31431 enables local privilege escalation on Linux-based systems pending vendor patches.</p>
+    <a href="https://securityaffairs.com/191519/hacking/copy-fail-new-linux-bug-enables-root-via-page-cache-corruption.html" target="_blank" class="src">Source &rarr;</a>
   </div>
-
   <div class="item" id="item-3">
     <div class="item-header">
-      <span class="item-title">Incomplete Microsoft Patch Leaves Windows Open to Zero-Click NTLM Coercion Attacks</span>
+      <span class="item-title">Malicious Python "Lightning" Package Versions Published in Supply-Chain Attack</span>
       <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
+      <span class="score">Score: 8/11</span>
     </div>
-    <p>The Register reported April 29 that Microsoft&rsquo;s April 14 fix for CVE-2026-32202 prevented RCE and SmartScreen bypass but left a zero-click authentication coercion vector that leaks Net-NTLMv2 hashes via SMB. Both CISA and Microsoft confirmed active in-the-wild exploitation. Admins should verify patch level, watch for Microsoft&rsquo;s supplemental advisory, and harden NTLM/SMB egress at the perimeter.</p>
-    <p class="relevance">Watch for Microsoft&rsquo;s supplemental advisory and harden NTLM/SMB egress at your construction client, your small-business client, and your internal ops &mdash; the April fix left a zero-click coercion path open.</p>
-    <a href="https://www.theregister.com/2026/04/29/microsoft_zero_click_exploit/" target="_blank" class="src">Source &rarr;</a>
+    <p>Threat actors compromised the popular Python "Lightning" package and published two malicious versions (2.6.2 and 2.6.3) on April 30, 2026 to conduct credential theft. Dev teams and SMBs with Python pipelines should pin known-good versions, audit recent installs, and rotate any credentials accessible from build hosts.</p>
+    <p class="relevance">General SMB IT context &mdash; no direct client impact.</p>
+    <a href="https://thehackernews.com/" target="_blank" class="src">Source &rarr;</a>
   </div>
-
   <div class="item" id="item-4">
     <div class="item-header">
-      <span class="item-title">UNC6692 Teams Helpdesk Impersonation Lures Users to Fake Mailbox Repair Utility</span>
-      <span class="urgency-red">Act Today</span>
+      <span class="item-title">Anthropic Launches Claude Security Public Beta for Codebase Vulnerability Scanning</span>
+      <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 10/11</span>
     </div>
-    <p>Google Threat Intelligence Group disclosed that UNC6692 launches attacks by first email-bombing victims, then contacting them via Microsoft Teams impersonating IT helpdesk and luring them to a fake &ldquo;Mailbox Repair Utility&rdquo; that harvests credentials twice. Microsoft confirmed Teams&rsquo; external collaboration features are being abused despite in-app security warnings. SMBs using Teams should review external tenant access policies and brief users immediately.</p>
-    <p class="relevance">Restrict external Teams chat and brief end users at your construction client, your small-business client, and your internal ops &mdash; UNC6692 is impersonating IT helpdesk to harvest credentials.</p>
-    <a href="https://voip.review/2026/04/28/sophisticated-phishing-attack-targets-microsoft-teams-users/" target="_blank" class="src">Source &rarr;</a>
+    <p>Anthropic opened Claude Security to public beta for Claude Enterprise customers, built on Claude Opus 4.7 to scan codebases and patch software vulnerabilities. New capabilities include scheduled scans, directory-level targeting, and CSV/Markdown exports. Access for Claude Team and Max customers is coming soon.</p>
+    <p class="relevance">Evaluate the Claude Security beta for AppSec scanning at your internal ops &mdash; the new tool fits IT consultancy workflows for code and configuration audits.</p>
+    <a href="https://siliconangle.com/2026/04/30/anthropic-announces-claude-security-public-beta-find-fix-software-vulnerabilities/" target="_blank" class="src">Source &rarr;</a>
   </div>
-
   <div class="item" id="item-5">
     <div class="item-header">
-      <span class="item-title">Critical cPanel Authentication Bypass &mdash; All Supported Versions Affected</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
+      <span class="item-title">Microsoft Launches Agent 365 Runtime Protection for AI-Agent Security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 9/11</span>
     </div>
-    <p>A critical authentication bypass affecting all supported cPanel versions has been patched. Fixed versions include 11.110.0.97, 11.118.0.63, and 11.126.0.54. Hosting providers like Namecheap applied temporary firewall mitigations pending full patch deployment. SMBs running cPanel-managed servers should apply the update immediately given the broad install base.</p>
-    <p class="relevance">General SMB IT context &mdash; no direct client impact.</p>
-    <a href="https://securityaffairs.com/191465/security/all-supported-cpanel-versions-hit-by-critical-auth-bug-now-patched.html" target="_blank" class="src">Source &rarr;</a>
+    <p>Microsoft announced Agent 365 Runtime Protection in public preview, monitoring AI agent behavior in real time and able to revoke permissions automatically. New Defender capabilities (preview) use webhooks for near real-time evaluation and blocking of risky agent actions. General availability is expected in Q3 2026 alongside the next Windows Server release.</p>
+    <p class="relevance">Track Agent 365 Runtime Protection for future Defender rollouts at your construction client and your small-business client &mdash; preview controls can constrain AI-agent behavior in real time.</p>
+    <a href="https://www.microsoft.com/en-us/security/blog/2026/04/30/whats-new-updated-or-recently-released-in-microsoft-security/" target="_blank" class="src">Source &rarr;</a>
   </div>
-
   <div class="item" id="item-6">
     <div class="item-header">
-      <span class="item-title">GitHub Enterprise RCE CVE-2026-3854 &mdash; 88% of Internet-Exposed Instances Vulnerable</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
+      <span class="item-title">Microsoft Q1 2026 Email Threat Report: 8.3B Phishing Attempts, QR Phishing Up 146%</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 9/11</span>
     </div>
-    <p>Wiz researchers disclosed a command-injection RCE flaw in GitHub Enterprise Server (CVE-2026-3854) allowing attackers with repository push access to execute code. At report time, 88% of internet-exposed instances remained unpatched. Self-hosted GHES admins should prioritize patching across all affected Enterprise versions.</p>
-    <p class="relevance">General SMB IT context &mdash; no direct client impact.</p>
-    <a href="https://securityaffairs.com/191434/security/cve-2026-3854-github-flaw-enables-remote-code-execution.html" target="_blank" class="src">Source &rarr;</a>
+    <p>Microsoft Threat Intelligence reported 8.3 billion email phishing threats in Q1 2026, with QR-code phishing rising 146% (70% delivered via PDF attachments by March) and CAPTCHA-gated phishing surging 125% to 11.9M attacks. Business email compromise totaled 10.7M attempts; Microsoft DCU and Europol disrupted Tycoon2FA infrastructure in early March.</p>
+    <p class="relevance">Reinforce QR-code and CAPTCHA-gated phishing training at your construction client, your small-business client, and your internal ops &mdash; Q1 saw QR phishing up 146% and CAPTCHA-gated phishing up 125%.</p>
+    <a href="https://www.microsoft.com/en-us/security/blog/2026/04/30/email-threat-landscape-q1-2026-trends-and-insights/" target="_blank" class="src">Source &rarr;</a>
   </div>
-
   <div class="item" id="item-7">
     <div class="item-header">
-      <span class="item-title">LiteLLM SQL Injection CVE-2026-42208 &mdash; Exploited Within 36 Hours of Disclosure</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
+      <span class="item-title">OpenAI Begins Rolling Out GPT-5.5-Cyber to Critical-Sector Defenders via TAC Program</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 9/11</span>
     </div>
-    <p>A SQL injection flaw in LiteLLM&rsquo;s API key verification (CVE-2026-42208) was exploited approximately 36 hours after disclosure. Attackers can read data from the proxy&rsquo;s database and modify credentials. Versions 1.81.16-1.83.6 are affected; fixed in 1.83.7. Teams running LiteLLM as an LLM gateway should patch and audit immediately.</p>
+    <p>Sam Altman announced OpenAI will begin shipping GPT-5.5-Cyber, a restricted variant of GPT-5.5, within days through the Trusted Access for Cyber (TAC) program for government, critical infrastructure operators, security vendors, cloud platforms, and financial institutions. The release expands defender access to frontier security-tuned models and is a meaningful follow-on to last week's GPT-5.5 launch.</p>
     <p class="relevance">General SMB IT context &mdash; no direct client impact.</p>
-    <a href="https://securityaffairs.com/191483/hacking/cve-2026-42208-litellm-bug-exploited-36-hours-after-its-disclosure.html" target="_blank" class="src">Source &rarr;</a>
+    <a href="https://openai.com/index/scaling-trusted-access-for-cyber-defense/" target="_blank" class="src">Source &rarr;</a>
   </div>
-
   <div class="item" id="item-8">
     <div class="item-header">
-      <span class="item-title">April KB5083769 Windows 11 Update Causes Backup Software Failures (24H2/25H2)</span>
+      <span class="item-title">Autodesk Discloses SLDPRT Memory-Corruption RCE Flaw (CVE-2025-9456)</span>
       <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 9/11</span>
     </div>
-    <p>The April Windows 11 cumulative update (KB5083769) is breaking third-party backup applications on systems running 24H2 and 25H2, affecting multiple vendors. Admins should test backup software before broad deployment and consider deferring the update where feasible until vendor compatibility patches ship.</p>
-    <p class="relevance">Test backup software before broad deployment of KB5083769 at your construction client, your small-business client, and your internal ops &mdash; the April Win11 cumulative is breaking third-party backup apps.</p>
-    <a href="https://www.bleepingcomputer.com/news/microsoft/april-kb5083769-windows-11-update-causes-backup-software-failures/" target="_blank" class="src">Source &rarr;</a>
-  </div>
-
-  <div class="item" id="item-9">
-    <div class="item-header">
-      <span class="item-title">Dell PowerEdge DSA-2026-012 / DSA-2026-014 &mdash; Intel 2026.1 IPU Firmware Updates</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
-    </div>
-    <p>Dell published advisories DSA-2026-012 (Intel 2026.1 IPU) and DSA-2026-014 covering Intel-processor PowerEdge servers (R250-R770, T150-T550, XE/XC families). Updated BIOS and Intel Chipset Device Software components were posted April 21, 2026. Admins should identify affected models and schedule firmware/BIOS rollouts.</p>
-    <p class="relevance">General SMB IT context &mdash; no direct client impact.</p>
-    <a href="https://www.dell.com/support/kbdoc/en-us/000426743/dsa-2026-012-security-update-for-dell-poweredge-server-for-intel-2026-security-advisories-2026-1-ipu" target="_blank" class="src">Source &rarr;</a>
+    <p>Autodesk issued a CVE-2025-9456 advisory on April 29, 2026 covering a memory-corruption vulnerability triggered by a maliciously crafted SLDPRT file that can lead to arbitrary code execution in the context of the current process. AutoCAD-adjacent shops handling third-party CAD files should review the advisory and patch affected products.</p>
+    <p class="relevance">Apply Autodesk's CVE-2025-9456 patch and warn AutoCAD users about untrusted SLDPRT files at your construction client &mdash; a malicious CAD file can trigger arbitrary code execution.</p>
+    <a href="https://www.autodesk.com/trust/security-advisories" target="_blank" class="src">Source &rarr;</a>
   </div>
 </div>
 
-<div class="footer">Generated Thursday, April 30, 2026 at 8:45 AM PT &bull; Prompt v2026.04.30.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-04-30.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
+<div class="footer">Generated Friday, May 1, 2026 at 7:15 AM PT &bull; Prompt v2026.04.30.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-05-01.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
 
 </main>
 </body>
