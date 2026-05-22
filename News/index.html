@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<title>Morning Briefing -- Thursday, May 21, 2026</title>
+<title>Morning Briefing -- Friday, May 22, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -14,62 +14,55 @@
 <main class="briefing-content">
 
 <div class="page-header">
-  <h1>Morning Briefing -- Thursday, May 21, 2026</h1>
+  <h1>Morning Briefing -- Friday, May 22, 2026</h1>
   <p class="page-meta">Microsoft &bull; Security &amp; Compliance &bull; Firewall / VPN / Networking &bull; Servers/NAS &bull; Workstations &amp; Mobile &bull; Peripherals &amp; AV &bull; RMM &amp; Remote Access &bull; Construction &amp; Specialty Software &bull; General Tech &amp; AI &bull; Pacific Time</p>
 </div>
 
 <div class="section-actions">
   <h2>Today's Actions</h2>
-  <p class="section-transparency">Showing 3 of 15</p>
+  <p class="section-transparency">Showing 3 of 10</p>
   <ol class="action-list">
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Patch Microsoft Defender immediately &mdash; two zero-days (CVE-2026-41091 LPE-to-SYSTEM and CVE-2026-45498 DoS) are being exploited in active attacks. <a href="#item-1" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Warn users about the "Code of Conduct" phishing wave &mdash; a multi-stage AiTM campaign hitting 13,000+ orgs is bypassing MFA by stealing Microsoft 365 session tokens. <a href="#item-2" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Reset all SonicWall SSL-VPN credentials, AD VPN passwords, and OTP seeds &mdash; Akira ransomware is bypassing MFA on Gen6/7 firewalls (including SonicOS 7.3.0) sometimes within an hour of access. <a href="#item-3" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Update UniFi OS to 5.1.12 or later immediately on UDM/UDM-Pro/gateway hardware &mdash; Ubiquiti patched three CVSS 10.0 vulnerabilities that allow a network-adjacent attacker to take over UniFi consoles. <a href="#item-1" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Run the full six-step LDAP reconfiguration on SonicWall Gen6 SSL-VPN firewalls &mdash; the firmware patch alone does not remediate the MFA-bypass, and attackers are reaching internal networks within 30-60 minutes. <a href="#item-2" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Confirm Defender Antimalware Platform is at 1.1.26040.8 / 4.18.26040.7 or later across all endpoints &mdash; CISA added the two May Defender zero-days to the KEV catalog with a federal patch deadline of June 3. <a href="#item-3" class="detail-link">details</a></li>
   </ol>
-  <details class="section-overflow"><summary>Show 12 more actions</summary><ol class="action-list" start="4">
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Apply SonicWall firmware for SNWLID-2026-0004 covering CVE-2026-0204 (CVSS 8.0 access-control bypass), path traversal, and stack overflow flaws across Gen6/7/8; disable HTTP/HTTPS management and SSL-VPN until firmware is applied. <a href="#item-4" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Audit any Nx Console VS Code extension installs and rotate developer/CI tokens &mdash; GitHub has linked the 3,800-repo breach to the TanStack npm supply-chain attack. <a href="#item-5" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Rotate every GitHub Actions and CI token that touched TanStack/Nx code paths &mdash; Grafana's breach was caused by a single workflow token that survived rotation cleanup. <a href="#item-6" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Block or restrict device-code authentication via Conditional Access &mdash; Tycoon2FA is now phishing Microsoft 365 accounts through device-code flows and Trustifi click-tracking URLs. <a href="#item-7" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Audit Entra ID Self-Service Password Reset configuration and tighten MFA enforcement &mdash; Microsoft has named threat actor Storm-2949 abusing SSPR for sophisticated account takeover. <a href="#item-8" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Confirm the April 27 Windows SMB patch is deployed and block SMB at the perimeter &mdash; CISA warns CVE-2026-32202 (zero-click NTLMv2 hash leak) is under active exploitation. <a href="#item-9" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-yellow">This Week</span> Push iOS 26.5 / iPadOS 26.5 / macOS Tahoe 26.5 (or matching legacy releases) to managed Apple devices &mdash; the updates close 60+ to 80 CVEs including WebKit and root escalation flaws. <a href="#item-10" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-yellow">This Week</span> Plan BIOS and iDRAC firmware updates on Intel-based PowerEdge servers per Dell DSA-2026-014 and the bundled 14G/15G/16G/17G advisories addressing Intel Server Firmware vulnerabilities. <a href="#item-11" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-yellow">This Week</span> Update AutoCAD 2026 via Shared Components 2026.6 &mdash; adsk-sa-2026-0004 covers two out-of-bounds writes in CATPART/MODEL parsing that can lead to RCE on engineering workstations. <a href="#item-12" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-yellow">This Week</span> Prioritize the May Patch Tuesday CVSS 9.8 Remote Desktop Services RCE on any RDP Gateway, VPN, or Exchange host &mdash; the flaw is unauthenticated and exploitable over the network. <a href="#item-13" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-yellow">This Week</span> Schedule Canon copier/MFP firmware updates &mdash; CVE-2026-1789 (CVSS 6.9) exposes sensitive data through the web management UI, and IJ Scan Utility carries a CVSS 8.4 local code-execution flaw. <a href="#item-14" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-yellow">This Week</span> Note the international takedown of "First VPN" (used by ransomware affiliates for attack infrastructure) and watch partner advisories for IOC drops to feed into firewall and Atera blocklists. <a href="#item-15" class="detail-link">details</a></li>
+  <details class="section-overflow"><summary>Show 7 more actions</summary><ol class="action-list" start="4">
+    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Warn users about the FBI's Kali365 phishing-as-a-service alert and block or scope device-code authentication via Conditional Access &mdash; the kit steals Microsoft 365 OAuth tokens and bypasses MFA. <a href="#item-4" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Switch BitLocker from TPM-only to TPM+PIN on Windows 11 and Server 2025 endpoints and disable autofstx.exe in WinRE &mdash; Microsoft published the YellowKey BitLocker-bypass mitigation but no patch is available yet. <a href="#item-5" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> File the CISA KEV addition of Trend Micro Apex One CVE-2026-34926 for awareness &mdash; no client environment we manage deploys Apex One, but track for partner discussions. <a href="#item-6" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> Note that the critical Drupal SQL injection is now under active exploitation &mdash; no client we manage hosts a Drupal site, but flag for any partner-hosted marketing properties. <a href="#item-7" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-yellow">This Week</span> Schedule KB5087539 on Windows Server 2025 hosts within the week &mdash; the update patches a critical unauthenticated Netlogon RCE (CVE-2026-41089) and a Windows DNS Client heap overflow. <a href="#item-8" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-yellow">This Week</span> Plan the Dell 2026.1 IPU firmware updates on Intel PowerEdge servers &mdash; DSA-2026-027 and DSA-2026-012 layer additional BIOS/iDRAC remediation on top of last week's DSA-2026-014. <a href="#item-9" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-yellow">This Week</span> Push iOS/iPadOS 18.7.9 and the parallel macOS backport bundle to managed legacy Apple devices &mdash; the release closes 40+ vulnerabilities across WebKit, Kernel, ImageIO, Siri, and Model IO on iPhone XS/XR and iPad 7th-gen-era hardware. <a href="#item-10" class="detail-link">details</a></li>
   </ol></details>
 </div>
 
 <div class="section-new">
   <h2>What's New</h2>
-  <p class="section-transparency">Showing 3 of 9</p>
+  <p class="section-transparency">Showing 3 of 5</p>
   <ul class="new-list">
-    <li><strong><a href="#item-16">Exchange Server May 2026 hotfix introduces EWS-to-Graph hybrid coexistence switch</a></strong> -- The May 2026 Exchange Server hotfix update lets hybrid environments migrate rich coexistence from EWS to REST-based Microsoft Graph API calls. No security update was issued for Exchange in May, but the hotfix is recommended for hybrid orgs preparing for EWS retirement. <a href="https://techcommunity.microsoft.com/blog/exchange/released-may-2026-exchange-server-hotfix-update/4517516" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-17">Windows 11 KB5089549 cumulative update ships with File Explorer overhaul and Xbox mode</a></strong> -- KB5089549 (24H2 build 26100.8457, 25H2 build 26200.8457) rolled out May 12 with persistent File Explorer view/sort settings, expanded archive support (UU, CPIO, XAR, NuGet), faster File Explorer launch, and Xbox full-screen gaming mode. Microsoft reiterated Secure Boot certificates begin expiring in June 2026. <a href="https://support.microsoft.com/en-us/topic/may-12-2026-kb5089549-os-builds-26200-8457-and-26100-8457-28ec2a99-4bbe-481d-a340-5c6cf18d9acb" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-18">Intune enables Windows Autopatch hotpatch updates by default</a></strong> -- Starting May 2026, Windows Autopatch enables hotpatch updates by default for eligible Intune-managed devices, delivering security fixes without restarts. Intune also adds a new device page in public preview, multi-account support, and Copilot removal policies. <a href="https://learn.microsoft.com/en-us/intune/whats-new/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-11">Microsoft Agent 365 reaches GA with Intune/Defender shadow-AI controls in preview</a></strong> -- Microsoft announced general availability of Agent 365 alongside previews of shadow-AI discovery and management for local agents including Claude Code. Context mapping, policy-based controls, and runtime blocking will be available through Intune and Defender public preview in June 2026. Gives SMB admins a path to inventory and govern AI agents on managed endpoints. <a href="https://www.microsoft.com/en-us/security/blog/2026/05/21/whats-new-in-microsoft-security-may-2026/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-12">Anthropic releases Claude Opus 4.7 with software-engineering and vision gains</a></strong> -- Anthropic released Claude Opus 4.7 with notable improvements on the hardest software-engineering benchmarks, substantially better vision, and stronger creative output for professional artifacts. The release also previews a Dreaming persistent-memory feature in the Managed Agents API. <a href="https://www.anthropic.com/news/claude-opus-4-7" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-13">Anthropic launches Claude for Small Business with QuickBooks, HubSpot, and M365 workflows</a></strong> -- Anthropic introduced Claude for Small Business, embedding Claude into SMB-centric tools including QuickBooks, PayPal, HubSpot, Canva, Docusign, Google Workspace, and Microsoft 365 with ready-to-run workflows. Directly relevant for SMB IT shops evaluating AI assistants for client environments. <a href="https://www.anthropic.com/news/claude-opus-4-7" target="_blank">Source &rarr;</a></li>
   </ul>
-  <details class="section-overflow"><summary>Show 6 more updates</summary><ul class="new-list">
-    <li><strong><a href="#item-19">Entra ID May update adds License Usage page, configurable token lifetimes, and Explicit Forward Proxy</a></strong> -- May 2026 Entra updates include a new License Usage page showing P1/P2/Suite feature consumption, configurable token lifetime policies, expanded social IdP support in External ID, an Explicit Forward Proxy for Global Secure Access, and improved Conditional Access enforcement for resource exclusions. <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/whats-new-in-microsoft-entra-may-2026/4517884" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-20">Microsoft Teams May 2026 adds multi-line phone, transcription without recording, and Org Trust Score</a></strong> -- Teams May updates include Pre-Meeting Device Testing, automatic language detection in meetings, respect for Windows Do Not Disturb, the Queues App for iOS/Android, transcription without requiring recording, Teams Phone multi-line (up to 10 numbers per user), and an Organization Trust Score for apps and agents. <a href="https://releasebot.io/updates/microsoft/microsoft-teams" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-21">UniFi Network Application 10.4.57 released with new Routing experience and Policy-Based Routing</a></strong> -- Ubiquiti released UniFi Network Application 10.4.57 on May 19, 2026, introducing an expanded Routing section with PBR, WiFi Airtime/Multicast Dashboard graphs, an improved WAN/ISP side panel with SLA/latency/packet-loss/utilization insights, and expanded 5G/cellular visibility. Rollout is staged. <a href="https://community.ui.com/rss/releases/UniFi-Network-Application/e6712595-81bb-4829-8e42-9e2630fabcfe" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-22">Bluebeam ships Revu for iOS v1.30 with Studio upload/delete and faster navigation</a></strong> -- Bluebeam released iOS app version 1.30 on May 12, 2026, adding the ability to upload and delete Studio PDFs directly from the app, quick access to recent files, and faster file-to-file navigation. The release also fixes bugs around custom line styles, polygon cutouts on curved segments, ARM64 image rendering, and grid snapping after PDF rotation. <a href="https://support.bluebeam.com/release-notes-all.html" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-23">Google launches Gemini 3.5 Flash and previews Gemini Spark agent at I/O 2026</a></strong> -- At Google I/O on May 19, Google made Gemini 3.5 Flash generally available the same day, pricing it at roughly half to one-third of comparable frontier models. Google also previewed Gemini Spark, a 24/7 personal AI agent that reasons across connected apps, rolling out in beta to trusted testers and Google AI Ultra subscribers. <a href="https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-24">Discord enables end-to-end encryption by default on voice and video calls</a></strong> -- Discord rolled out default E2EE for all voice and video calls, including DMs, group calls, and server voice channels. Relevant for SMBs that allow Discord on corporate devices because it changes the DLP/monitoring posture for that traffic. <a href="https://securityaffairs.com/192463/security/discord-adds-end-to-end-encryption-to-voice-and-video-calls-by-default.html" target="_blank">Source &rarr;</a></li>
+  <details class="section-overflow"><summary>Show 2 more updates</summary><ul class="new-list">
+    <li><strong><a href="#item-14">Teams to require authentication for external meeting joiners; Unified App Management nears full rollout</a></strong> -- Among May 2026 Teams changes, external users will no longer join Teams meetings anonymously and must authenticate with a recognized account or be added as guests, which may impact SMB customer-facing meeting workflows. Microsoft is also finalizing Unified App Management across Teams, Outlook, and the M365 app, with full rollout by end of June 2026. <a href="https://www.neowin.net/news/microsoft-teams-and-outlook-are-getting-significant-changes-soon/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-15">Splashtop embeds native remote support inside Rippling's Devices app</a></strong> -- Splashtop announced an integration that places its remote-support capabilities directly inside Rippling's Devices app, letting IT admins launch secure remote sessions on Mac and Windows endpoints from device records with full identity, health, and policy context. Useful for SMBs already standardized on Rippling for HRIS/MDM. <a href="https://www.globenewswire.com/news-release/2026/05/05/3288036/0/en/splashtop-powers-remote-support-within-rippling.html" target="_blank">Source &rarr;</a></li>
   </ul></details>
 </div>
 
 <div class="section-security">
   <h2>Security &amp; Patches</h2>
-  <p class="section-transparency">Showing 3 of 4</p>
+  <p class="section-transparency">Showing 3 of 6</p>
   <div class="security-cards">
-    <div class="security-card"><a href="#item-25" class="security-headline">Ukraine identifies infostealer operator linked to 28,000 stolen accounts</a><span class="urgency-yellow">This Week</span><span class="security-summary">Ukrainian cyberpolice partnering with U.S. authorities identified an 18-year-old from Odesa suspected of managing an infostealer campaign targeting a California online retailer, tied to roughly 28,000 stolen credential sets.</span></div>
-    <div class="security-card"><a href="#item-26" class="security-headline">HP EliteBook G9/G10 BIOS updates pulled from HPIA amid Secure Boot 2023 certificate rollout</a><span class="urgency-yellow">This Week</span><span class="security-summary">HP has removed recent G9/G10 EliteBook and ZBook BIOS updates from the support site and FTP source used by HP Image Assistant, even though HPIA continues to flag the newer version as needed, causing deployment failures.</span></div>
-    <div class="security-card"><a href="#item-27" class="security-headline">CMMC Phase 1 underway; self-assessment clauses appearing in DoD solicitations</a><span class="urgency-yellow">This Week</span><span class="security-summary">CMMC Phase 1 (Nov 10, 2025 - Nov 9, 2026) is active, with DoD solicitations now including Level 1 (Self) or Level 2 (Self) assessment requirements; assessments continue against NIST SP 800-171 Rev 2 until the class deviation memo is withdrawn.</span></div>
+    <div class="security-card"><a href="#item-16" class="security-headline">NIST finalizes SP 800-172r3 and SP 800-172Ar3 enhanced CUI security requirements</a><span class="urgency-yellow">This Week</span><span class="security-summary">NIST published final SP 800-172r3 (Enhanced Security Requirements for Protecting CUI) and the matching assessment guide SP 800-172Ar3 in mid-May 2026.</span></div>
+    <div class="security-card"><a href="#item-17" class="security-headline">Guardz MSP threat report names RMM tool abuse as the top endpoint campaign</a><span class="urgency-yellow">This Week</span><span class="security-summary">A new Guardz MSP threat report finds 9 of 10 SMBs have at least one compromised user and identifies RMM tool abuse as the single largest endpoint threat campaign at 26% of detections, naming AteraAgent, ScreenConnect, and MeshAgent.</span></div>
+    <div class="security-card"><a href="#item-18" class="security-headline">US and Canada arrest suspected admin of KimWolf DDoS botnet (~2M devices)</a><span class="urgency-green">FYI</span><span class="security-summary">US and Canadian law enforcement arrested and charged the suspected administrator of the KimWolf botnet, which had compromised roughly two million internet-connected devices and was used for DDoS-for-hire services.</span></div>
   </div>
-  <details class="section-overflow"><summary>Show 1 more security item</summary><div class="security-cards">
-    <div class="security-card"><a href="#item-28" class="security-headline">WatchGuard report says 91% of SMBs fear AI-driven attacks, accelerating shift to MSP-led security</a><span class="urgency-green">FYI</span><span class="security-summary">A WatchGuard report finds 91% of organizations are concerned about AI-driven cyberattacks and 75% experienced at least one incident in the past year, pushing SMBs from DIY security toward MSP-led, always-on protection.</span></div>
+  <details class="section-overflow"><summary>Show 3 more security items</summary><div class="security-cards">
+    <div class="security-card"><a href="#item-19" class="security-headline">Single telecom hosts 72% of Middle East C2 infrastructure, Hunt.io reports</a><span class="urgency-green">FYI</span><span class="security-summary">Hunt.io research reveals 1,350+ command-and-control servers across 98 providers in the Middle East, with Saudi Telecom Company hosting 72% of detected C2 infrastructure.</span></div>
+    <div class="security-card"><a href="#item-20" class="security-headline">Microsoft Copilot weekly actives stall at 20M vs ChatGPT's 900M, Fortune reports</a><span class="urgency-green">FYI</span><span class="security-summary">Fortune reported that Microsoft Copilot's weekly active user base has flatlined around 20 million, compared to ChatGPT's 900 million, after a 2025 personal-assistant style upgrade failed to drive growth.</span></div>
+    <div class="security-card"><a href="#item-21" class="security-headline">Apple 2025 fraud report: 2M apps and $2.2B in fraudulent transactions blocked</a><span class="urgency-green">FYI</span><span class="security-summary">Apple published its annual App Store fraud-prevention report, claiming it blocked more than two million risky app submissions and prevented $2.2 billion in fraudulent transactions during 2025.</span></div>
   </div></details>
 </div>
 
@@ -77,343 +70,259 @@
   <h2>Details</h2>
   <details class="item" id="item-1">
     <summary class="item-header">
-      <span class="item-title">Microsoft patches two Defender zero-days actively exploited in attacks</span>
+      <span class="item-title">Ubiquiti patches three max-severity UniFi OS vulnerabilities</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft released fixes on May 19, 2026 for CVE-2026-41091 (privilege escalation to SYSTEM, CVSS 7.8) and CVE-2026-45498 (DoS, CVSS 4.0) in Microsoft Defender, both confirmed exploited in the wild. Admins should verify Defender platform and definition updates have rolled out across endpoints immediately. Critical for SMBs running Defender for Business.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/microsoft-warns-of-new-defender-zero-days-exploited-in-attacks/" target="_blank" class="src">Source &rarr;</a>
+      <p>Ubiquiti disclosed three critical (CVSS 10.0) vulnerabilities in UniFi OS affecting UDM, UDM-Pro, gateways, and UniFi OS Server. CVE-2026-34908 is an improper access-control flaw and CVE-2026-34910 is an improper input-validation issue leading to command injection; both are exploitable by a network-adjacent attacker. Admins must update to UniFi OS 5.1.12 or later immediately.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/ubiquiti-patches-three-max-severity-unifi-os-vulnerabilities/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-2">
     <summary class="item-header">
-      <span class="item-title">Microsoft warns of AiTM "Code of Conduct" phishing wave hitting 13,000 orgs</span>
+      <span class="item-title">SonicWall Gen6 SSL-VPN MFA bypass requires six manual LDAP reconfiguration steps</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft Defender researchers detail a multi-stage phishing campaign that impersonates HR/compliance "code of conduct" notices to drive victims through CAPTCHAs and AiTM proxies that steal Microsoft 365 session tokens and bypass MFA. 35,000+ users across 13,000+ organizations were targeted, with 92% in the U.S. Refresh KnowBe4 phishing modules immediately.</p>
-      <a href="https://www.microsoft.com/en-us/security/blog/2026/05/04/breaking-the-code-multi-stage-code-of-conduct-phishing-campaign-leads-to-aitm-token-compromise/" target="_blank" class="src">Source &rarr;</a>
+      <p>ReliaQuest and SonicWall confirm that the previously released firmware patch alone does NOT remediate Gen6 SSL-VPN appliances against the CVE-2024-12802 MFA bypass. Admins must also (1) delete the LDAP configuration using userPrincipalName, (2) remove cached LDAP users, (3) remove the SSL VPN User Domain, (4) reboot the firewall, (5) recreate the LDAP config without UPN format, and (6) take a fresh backup. Attackers are reaching internal networks within 30-60 minutes and deploying Cobalt Strike post-bypass.</p>
+      <a href="https://securityaffairs.com/192477/hacking/attackers-are-bypassing-mfa-on-sonicwall-vpns-because-something-was-wrong-with-previous-fix.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-3">
     <summary class="item-header">
-      <span class="item-title">Akira ransomware bypasses SonicWall SSL-VPN MFA on patched TZ/NSA devices</span>
+      <span class="item-title">CISA adds Microsoft Defender zero-days to the KEV catalog with June 3 federal deadline</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>Threat actors are brute-forcing credentials and bypassing OTP MFA on SonicWall Gen6/Gen7 SSL-VPNs (including TZ-series running SonicOS 7.3.0 builds) to deploy Akira ransomware, sometimes within an hour of initial access. SonicWall's prior CVE-2024-40766 patches are insufficient. Admins must reset all SSL-VPN credentials, AD passwords used for VPN/LDAP sync, and OTP seeds; Arctic Wolf, Huntress, and Rapid7 have confirmed active exploitation.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/hackers-bypass-sonicwall-vpn-mfa-due-to-incomplete-patching/" target="_blank" class="src">Source &rarr;</a>
+      <p>CISA added the two May Defender flaws (CVE-2026-41091 elevation-of-privilege to SYSTEM and CVE-2026-45498 DoS) to its Known Exploited Vulnerabilities catalog, mandating remediation across federal agencies by June 3, 2026. Fixed in Defender Antimalware Platform 1.1.26040.8 / 4.18.26040.7 and later; verify Defender for Business clients are current.</p>
+      <a href="https://securityaffairs.com/192508/security/u-s-cisa-adds-microsoft-and-adobe-flaws-to-its-known-exploited-vulnerabilities-catalog.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-4">
     <summary class="item-header">
-      <span class="item-title">SonicWall publishes SNWLID-2026-0004 patching three SonicOS vulnerabilities</span>
+      <span class="item-title">FBI warns of Kali365 phishing-as-a-service stealing M365 OAuth tokens via device-code flow</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>SonicWall released fixes for CVE-2026-0204 (CVSS 8.0 improper access control on the management interface), CVE-2026-0205 (CVSS 6.8 post-auth path traversal), and CVE-2026-0206 (CVSS 4.9 post-auth stack buffer overflow) across Gen6/7/8 firewalls including TZ series. Until firmware can be applied, SonicWall PSIRT recommends disabling HTTP/HTTPS management and SSL-VPN on all interfaces and restricting management to SSH. ACSC is warning about active exploitation of the access-control flaw.</p>
-      <a href="https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0004" target="_blank" class="src">Source &rarr;</a>
+      <p>The FBI issued PSA 260521 warning of Kali365, a Telegram-distributed phishing-as-a-service platform first seen in April 2026 that captures Microsoft 365 OAuth access and refresh tokens via device-code phishing, bypassing MFA without stealing passwords. Kali365 ships AI-generated lures, automated campaign templates, and real-time tracking dashboards, enabling low-skill attackers to reach Outlook, Teams, and OneDrive without triggering traditional credential-theft alerts.</p>
+      <a href="https://www.ic3.gov/PSA/2026/PSA260521" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-5">
     <summary class="item-header">
-      <span class="item-title">GitHub ties 3,800-repo breach to TanStack npm supply-chain attack via Nx Console</span>
+      <span class="item-title">Microsoft publishes YellowKey BitLocker-bypass mitigation (no patch yet)</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>GitHub confirmed that a breach exposing roughly 3,800 internal repositories was caused by a compromised Nx Console VS Code extension, tied to the broader TanStack npm supply-chain incident. Developer workstations using affected extensions should be audited, tokens rotated, and extension allowlisting policies revisited.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/github-links-repo-breach-to-tanstack-npm-supply-chain-attack/" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft acknowledged CVE-2026-45585 (YellowKey), a BitLocker bypass requiring physical access on Windows 11 and Server 2025. Mitigations include disabling autofstx.exe in WinRE images and switching from TPM-only to TPM+PIN protection, though a permanent patch remains unavailable. Plan a fleet-wide BitLocker protector audit alongside the WinRE servicing step.</p>
+      <a href="https://securityaffairs.com/192449/hacking/microsoft-issues-yellowkey-mitigation-no-patch-yet.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-6">
     <summary class="item-header">
-      <span class="item-title">Grafana breach traced to missed token rotation after TanStack npm attack</span>
+      <span class="item-title">Trend Micro Apex One Windows zero-day CVE-2026-34926 exploited and added to CISA KEV</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>Grafana disclosed a breach caused by a GitHub workflow token that was not rotated following the TanStack npm supply-chain compromise. The incident underscores the need for full credential rotation for any org touched by the TanStack/Nx incident, including CI/CD personal access tokens and OAuth apps.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/grafana-breach-caused-by-missed-token-rotation-after-tanstack-attack/" target="_blank" class="src">Source &rarr;</a>
+      <p>Trend Micro disclosed an actively exploited directory-traversal zero-day (CVE-2026-34926) in Apex One on Windows. CISA added Apex One (and Langflow) to the KEV catalog the same day, mandating remediation for federal agencies. No client environment we manage deploys Apex One, but track for partner discussions.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/trend-micro-warns-of-apex-one-zero-day-exploited-in-attacks/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-7">
     <summary class="item-header">
-      <span class="item-title">Tycoon2FA phishing kit adds device-code attacks against Microsoft 365</span>
+      <span class="item-title">Drupal critical SQL injection now under active exploitation</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>The Tycoon2FA Phishing-as-a-Service platform has rebuilt on new infrastructure after a March takedown and now supports device-code phishing while abusing Trustifi click-tracking URLs to hijack Microsoft 365 accounts. Defenders should review Conditional Access policies that block or restrict device-code flow, and watch for trusted-vendor URL redirects in inbound mail.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/tycoon2fa-hijacks-microsoft-365-accounts-via-device-code-phishing/" target="_blank" class="src">Source &rarr;</a>
+      <p>Drupal is warning that hackers are now attempting to exploit a highly critical SQL injection vulnerability announced earlier this week. SMBs running Drupal-based marketing or public-facing sites alongside their M365 estate should apply the vendor patch immediately, since compromised CMS hosts are routinely used as launch points for credential phishing against the connected M365 tenant.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/drupal-critical-sql-injection-flaw-now-targeted-in-attacks/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-8">
     <summary class="item-header">
-      <span class="item-title">Storm-2949 abuses Microsoft password reset flow to take over Entra accounts</span>
+      <span class="item-title">Windows Server 2025 KB5087539 patches critical Netlogon and DNS Client RCEs</span>
       <span class="item-type type-security">security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft Threat Intelligence reports threat actor Storm-2949 is abusing the Self-Service Password Reset feature across Microsoft 365, file-hosting, and Azure-hosted environments in a methodical and multi-layered account-takeover campaign. Admins should review SSPR configuration, monitoring, and number-matching/MFA enforcement, particularly for risky sign-in locations.</p>
-      <a href="https://www.techradar.com/pro/security/microsoft-warns-hackers-are-exploiting-password-resets-to-gain-access-to-user-accounts-heres-how-to-stay-safe" target="_blank" class="src">Source &rarr;</a>
+      <p>KB5087539 (build 26100.32860, May 12, 2026) addresses 63 vulnerabilities in Windows Server 2025, including critical CVE-2026-41089 (Netlogon stack-based buffer overflow enabling unauthenticated RCE against domain controllers) and CVE-2026-41096 (heap overflow in Windows DNS Client triggered by a crafted DNS response). A no-reboot hotpatch (KB5087423, build 26100.32772) is also available for Autopatch-eligible fleets.</p>
+      <a href="https://support.microsoft.com/en-us/topic/may-12-2026-kb5087539-os-build-26100-32860-fe3fd635-23fc-41bd-b7a7-00e57c1c4f91" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-9">
     <summary class="item-header">
-      <span class="item-title">CISA flags actively exploited Windows SMB flaw CVE-2026-32202 (NTLMv2 hash leak)</span>
+      <span class="item-title">Dell DSA-2026-027 and DSA-2026-012 add PowerEdge Intel 2026.1 IPU remediation</span>
       <span class="item-type type-security">security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>CISA has warned of active exploitation of CVE-2026-32202, a zero-click Windows SMB authentication flaw that exposes NTLMv2 hashes. With approximately 1.5 million internet-exposed SMB endpoints, SMBs should confirm the April 27 patch is deployed and block SMB at the perimeter.</p>
-      <a href="https://cyberpress.org/cisa-warns-smb-vulnerability/" target="_blank" class="src">Source &rarr;</a>
+      <p>Beyond the previously reported DSA-2026-014, Dell has published DSA-2026-012 and DSA-2026-027 covering additional Intel 2026.1 Platform Update component vulnerabilities that could allow malicious users to compromise PowerEdge servers. Affected platforms include R-series and C-series Intel-based PowerEdge models; firmware updates are available via Dell support.</p>
+      <a href="https://www.dell.com/support/kbdoc/en-us/000426748/dsa-2026-027-security-update-for-dell-poweredge-server-for-intel-2026-security-advisories-2026-1-ipu" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-10">
     <summary class="item-header">
-      <span class="item-title">Apple ships iOS/iPadOS 26.5 and macOS Tahoe 26.5 patching 60+ and 80 CVEs</span>
+      <span class="item-title">Apple ships iOS/iPadOS 18.7.9 and parallel legacy backports closing 40+ CVEs</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 10/11</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Apple released iOS 26.5 and iPadOS 26.5 on May 11, 2026, addressing more than 60 CVEs including 20 WebKit issues that could lead to crashes, sensitive data exposure, and security bypasses. macOS Tahoe 26.5 resolves nearly 80 vulnerabilities. Apple also pushed parallel updates for older OS branches (iOS/iPadOS 18.7.9, 17.7.11, 16.7.16, 15.8.8; macOS Sequoia 15.7.7; macOS Sonoma 14.8.7) to keep legacy devices covered.</p>
-      <a href="https://support.apple.com/en-us/100100" target="_blank" class="src">Source &rarr;</a>
+      <p>Alongside the iOS/iPadOS 26.5 release, Apple released iOS 18.7.9 and iPadOS 18.7.9 for iPhone XS, XS Max, XR, and iPad 7th-gen, plus backports for three older iOS versions, four older iPadOS versions, and two prior macOS versions. The 18.7.9 update alone addresses 40+ vulnerabilities across WebKit, Kernel, ImageIO, Siri, and Model IO. Fleets running older Apple hardware should patch this week.</p>
+      <a href="https://9to5mac.com/2026/05/11/apple-just-released-new-updates-for-old-versions-of-ios-ipados-and-macos/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-11">
     <summary class="item-header">
-      <span class="item-title">Dell publishes DSA-2026-014 for Intel Server Firmware vulnerability on PowerEdge</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 10/11</span>
+      <span class="item-title">Microsoft Agent 365 reaches GA with Intune/Defender shadow-AI controls in preview</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Dell issued DSA-2026-014 to address an Intel Server Firmware vulnerability affecting Intel-based PowerEdge servers. The advisory is grouped with related 17th-gen BIOS/iDRAC10 updates (DSA-2025-370, DSA-2026-012) and 16th-gen BIOS/iDRAC9 updates (DSA-2025-350/351/352, DSA-2026-004). Admins should plan BIOS and iDRAC firmware updates per Dell's recommended bundles.</p>
-      <a href="https://www.dell.com/support/kbdoc/en-us/000426775/dsa-2026-014-security-update-for-dell-poweredge-server-for-intel-server-firmware-vulnerability" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft announced general availability of Agent 365 alongside previews of shadow-AI discovery and management for local agents, including Claude Code. Context mapping, policy-based controls, and runtime blocking will be available through Intune and Defender public preview in June 2026. Gives SMB admins a path to inventory and govern AI agents on managed endpoints.</p>
+      <a href="https://www.microsoft.com/en-us/security/blog/2026/05/21/whats-new-in-microsoft-security-may-2026/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-12">
     <summary class="item-header">
-      <span class="item-title">Autodesk patches AutoCAD 2026 out-of-bounds write flaws (CVE-2026-0874/0875)</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 10/11</span>
+      <span class="item-title">Anthropic releases Claude Opus 4.7 with software-engineering and vision gains</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Autodesk issued advisory adsk-sa-2026-0004 covering two out-of-bounds write vulnerabilities in AutoCAD 2026 and specialty toolsets triggered by maliciously crafted CATPART and MODEL files, which can lead to crashes, data corruption, or arbitrary code execution. Fixes are delivered through Autodesk Shared Components 2026.6; versions 2026.5 and earlier are vulnerable. Users should install the update via Autodesk Access or the Accounts Portal.</p>
-      <a href="https://www.autodesk.com/trust/security-advisories/adsk-sa-2026-0004" target="_blank" class="src">Source &rarr;</a>
+      <p>Anthropic released Claude Opus 4.7 with notable improvements on the hardest software-engineering benchmarks, substantially better vision, and stronger creative output for professional artifacts like slides and docs. The release also previews a Dreaming persistent-memory feature in the Managed Agents API.</p>
+      <a href="https://www.anthropic.com/news/claude-opus-4-7" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-13">
     <summary class="item-header">
-      <span class="item-title">Microsoft May 2026 Patch Tuesday fixes Remote Desktop Services RCE (CVSS 9.8)</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 10/11</span>
+      <span class="item-title">Anthropic launches Claude for Small Business with QuickBooks, HubSpot, and M365 workflows</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft's May 2026 Patch Tuesday addressed 120 flaws with no zero-days but included a critical Remote Desktop Services remote code execution vulnerability (CVSS 9.8) allowing unauthenticated attackers to execute arbitrary code via crafted network packets. Guidance prioritizes internet-exposed systems such as RDP Gateways, VPN appliances, and Exchange for immediate patching.</p>
-      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-may-2026-patch-tuesday-fixes-120-flaws-no-zero-days/" target="_blank" class="src">Source &rarr;</a>
+      <p>Anthropic introduced Claude for Small Business, embedding Claude into SMB-centric tools including QuickBooks, PayPal, HubSpot, Canva, Docusign, Google Workspace, and Microsoft 365 with ready-to-run workflows. Directly relevant for SMB IT shops evaluating AI assistants for client environments.</p>
+      <a href="https://www.anthropic.com/news/claude-opus-4-7" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-14">
     <summary class="item-header">
-      <span class="item-title">Canon discloses CVE-2026-1789 information disclosure in MFP/production printer web UI</span>
-      <span class="item-type type-security">security</span>
+      <span class="item-title">Teams to require authentication for external meeting joiners; Unified App Management nears full rollout</span>
+      <span class="item-type type-feature">feature</span>
       <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>Canon PSIRT published CVE-2026-1789 (CVSS 6.9), a flaw in the browser-based remote management interface of certain production printers and office/small-office MFPs that could allow an administrator-level attacker to access sensitive information via crafted requests. A separate CVE-2026-1585 (CVSS 8.4) covers an unquoted service path in IJ Scan Utility for Windows allowing local code execution. Plan firmware updates across Canon copier fleets.</p>
-      <a href="https://psirt.canon/advisory-information/" target="_blank" class="src">Source &rarr;</a>
+      <p>Among May 2026 Teams changes, external users will no longer join Teams meetings anonymously and must authenticate with a recognized account or be added as guests, which may impact SMB customer-facing meeting workflows. Microsoft is also finalizing Unified App Management across Teams, Outlook, and the M365 app, with full rollout by end of June 2026. A new Ctrl+\ / Cmd+\ shortcut hides the app bar.</p>
+      <a href="https://www.neowin.net/news/microsoft-teams-and-outlook-are-getting-significant-changes-soon/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-15">
     <summary class="item-header">
-      <span class="item-title">International law enforcement seizes "First VPN" used in ransomware operations</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
+      <span class="item-title">Splashtop embeds native remote support inside Rippling's Devices app</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>An international police operation has taken offline the "First VPN" service, which was used by ransomware and data-theft crews to anonymize attack infrastructure. Expect short-term disruption to certain ransomware affiliate operations and partner advisories releasing IOCs over the coming days.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/police-seize-first-vpn-service-used-in-ransomware-data-theft-attacks/" target="_blank" class="src">Source &rarr;</a>
+      <p>Splashtop announced an integration that places its remote-support capabilities directly inside Rippling's Devices app, letting IT admins launch secure remote sessions on Mac and Windows endpoints from device records with full identity, health, and policy context. Useful for SMBs already standardized on Rippling for HRIS/MDM.</p>
+      <a href="https://www.globenewswire.com/news-release/2026/05/05/3288036/0/en/splashtop-powers-remote-support-within-rippling.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-16">
     <summary class="item-header">
-      <span class="item-title">Exchange Server May 2026 hotfix enables EWS-to-Graph hybrid coexistence switch</span>
-      <span class="item-type type-feature">feature</span>
+      <span class="item-title">NIST finalizes SP 800-172r3 and SP 800-172Ar3 enhanced CUI security requirements</span>
+      <span class="item-type type-industry">industry</span>
       <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
+      <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>The May 2026 Exchange Server hotfix update introduces functionality to migrate Exchange Server hybrid rich coexistence from EWS to REST-based Microsoft Graph API calls. No security update was issued for Exchange in May, but hybrid admins should plan the transition ahead of EWS retirement timelines and stage the switch in test tenants first.</p>
-      <a href="https://techcommunity.microsoft.com/blog/exchange/released-may-2026-exchange-server-hotfix-update/4517516" target="_blank" class="src">Source &rarr;</a>
+      <p>NIST published final SP 800-172r3 (Enhanced Security Requirements for Protecting CUI) and the matching assessment guide SP 800-172Ar3 in mid-May 2026. The revision expands access control, network segmentation, asset management, and supply-chain requirements and maps to SP 800-160 protection strategies. Directly relevant to CMMC Level 3 and DoD contractors handling high-value CUI; OSCAL and CPRT formats are included.</p>
+      <a href="https://csrc.nist.gov/News/2026/nist-releases-sp-800-172r3-and-sp-800-172ar3" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-17">
     <summary class="item-header">
-      <span class="item-title">Windows 11 KB5089549 cumulative update ships with File Explorer overhaul and Xbox mode</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
+      <span class="item-title">Guardz MSP threat report names RMM tool abuse as the top endpoint campaign</span>
+      <span class="item-type type-industry">industry</span>
+      <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>KB5089549 (24H2 build 26100.8457, 25H2 build 26200.8457) rolled out May 12 with persistent File Explorer view/sort settings, expanded archive support (UU, CPIO, XAR, NuGet), faster File Explorer launch, and Xbox full-screen gaming mode. Microsoft also reiterated that Secure Boot certificates begin expiring in June 2026, prompting BIOS update planning.</p>
-      <a href="https://support.microsoft.com/en-us/topic/may-12-2026-kb5089549-os-builds-26200-8457-and-26100-8457-28ec2a99-4bbe-481d-a340-5c6cf18d9acb" target="_blank" class="src">Source &rarr;</a>
+      <p>A new Guardz MSP threat report finds 9 of 10 SMBs have at least one compromised user and identifies RMM tool abuse as the single largest endpoint threat campaign at 26% of detections, naming AteraAgent, ScreenConnect, and MeshAgent as commonly deployed for unauthorized persistence. Ransomware behavioral detections surged 190% over a 50-day window with attackers shifting to living-off-the-land techniques.</p>
+      <a href="https://www.prnewswire.com/il/news-releases/guardz-report-9-out-of-10-smbs-have-compromised-users-as-ai-driven-attacks-reshape-the-msp-threat-landscape-302755600.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-18">
     <summary class="item-header">
-      <span class="item-title">Intune enables Windows Autopatch hotpatch updates by default</span>
-      <span class="item-type type-feature">feature</span>
+      <span class="item-title">US and Canada arrest suspected admin of KimWolf DDoS botnet of ~2 million devices</span>
+      <span class="item-type type-industry">industry</span>
       <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>Starting May 2026, Windows Autopatch enables hotpatch updates by default for eligible Intune-managed devices, delivering security fixes without restarts. Intune also adds a new device page in public preview, multi-account support, and Copilot removal policies. Review Autopatch policy and confirm hotpatch eligibility on Windows 11 23H2/24H2 Enterprise endpoints.</p>
-      <a href="https://learn.microsoft.com/en-us/intune/whats-new/" target="_blank" class="src">Source &rarr;</a>
+      <p>US and Canadian law enforcement arrested and charged the suspected administrator of the KimWolf botnet, which had compromised roughly two million internet-connected devices and was used for DDoS-for-hire services. The takedown removes a major DDoS-as-a-service capability commonly rented against SMB-hosted services.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/us-and-canada-arrest-and-charge-suspected-kimwolf-botnet-admin/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-19">
     <summary class="item-header">
-      <span class="item-title">Entra ID May update adds License Usage page, configurable token lifetimes, and Explicit Forward Proxy</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>May 2026 Entra updates include a new License Usage page showing P1/P2/Suite feature consumption, configurable token lifetime policies (access, ID, SAML), expanded social IdP support in External ID, an Explicit Forward Proxy for Global Secure Access scenarios where the GSA client cannot be deployed, and improved Conditional Access enforcement for resource exclusions.</p>
-      <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/whats-new-in-microsoft-entra-may-2026/4517884" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-20">
-    <summary class="item-header">
-      <span class="item-title">Microsoft Teams May 2026 adds multi-line phone, transcription without recording, and Org Trust Score</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Teams May updates include Pre-Meeting Device Testing, automatic language detection and real-time translation in meetings, respect for Windows Do Not Disturb, the Queues App for iOS/Android, transcription without requiring recording, Teams Phone multi-line (up to 10 numbers per user), and an Organization Trust Score for apps and agents.</p>
-      <a href="https://releasebot.io/updates/microsoft/microsoft-teams" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-21">
-    <summary class="item-header">
-      <span class="item-title">UniFi Network Application 10.4.57 released with new Routing experience and PBR</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Ubiquiti released UniFi Network Application 10.4.57 on May 19, 2026, introducing an expanded Routing section with Policy-Based Routing, WiFi Airtime and Multicast Dashboard graphs, an improved WAN/ISP side panel with SLA/latency/packet loss/utilization insights, and expanded 5G/cellular visibility. Rollout is staged.</p>
-      <a href="https://community.ui.com/rss/releases/UniFi-Network-Application/e6712595-81bb-4829-8e42-9e2630fabcfe" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-22">
-    <summary class="item-header">
-      <span class="item-title">Bluebeam ships Revu for iOS v1.30 with Studio upload/delete and faster navigation</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Bluebeam released iOS app version 1.30 on May 12, 2026, adding the ability to upload and delete Studio PDFs directly from the app, quick access to recent files in the editor, and faster file-to-file navigation across distant folders. The release also fixes bugs around custom line styles, polygon cutouts on curved segments, ARM64 image rendering, and grid snapping after PDF rotation.</p>
-      <a href="https://support.bluebeam.com/release-notes-all.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-23">
-    <summary class="item-header">
-      <span class="item-title">Google launches Gemini 3.5 Flash and previews Gemini Spark agent at I/O 2026</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>At Google I/O on May 19, Google made Gemini 3.5 Flash generally available the same day, pricing it at roughly half to one-third of comparable frontier models. Google also previewed Gemini Spark, a 24/7 personal AI agent that reasons across connected apps, rolling out in beta to trusted testers and Google AI Ultra subscribers.</p>
-      <a href="https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-24">
-    <summary class="item-header">
-      <span class="item-title">Discord enables end-to-end encryption by default on voice and video calls</span>
-      <span class="item-type type-feature">feature</span>
+      <span class="item-title">Single telecom hosts 72% of Middle East C2 infrastructure, Hunt.io reports</span>
+      <span class="item-type type-industry">industry</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>Discord rolled out default E2EE for all voice and video calls, including DMs, group calls, and server voice channels. Relevant for SMBs that allow Discord on corporate devices because it changes the DLP and monitoring posture for that traffic.</p>
-      <a href="https://securityaffairs.com/192463/security/discord-adds-end-to-end-encryption-to-voice-and-video-calls-by-default.html" target="_blank" class="src">Source &rarr;</a>
+      <p>Hunt.io research reveals 1,350+ command-and-control servers across 98 providers in the Middle East, with Saudi Telecom Company hosting 72% of detected C2 infrastructure. The analysis highlights how attackers concentrate malicious infrastructure within legitimate commercial networks rather than isolated dark servers. SMBs with regional ties or supplier exposure may want to validate outbound egress and DNS filtering on STC-owned ASNs.</p>
+      <a href="https://securityaffairs.com/192518/hacking/one-telecom-provider-hosted-most-of-the-middle-east-s-active-c2-infrastructure.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
-  <details class="item" id="item-25">
+  <details class="item" id="item-20">
     <summary class="item-header">
-      <span class="item-title">Ukraine identifies infostealer operator linked to 28,000 stolen accounts</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Ukrainian cyberpolice partnering with U.S. authorities identified an 18-year-old from Odesa suspected of managing an infostealer campaign targeting a California online retail operation, tied to roughly 28,000 stolen credential sets. SMBs should treat the disclosure as a prompt to rotate credentials potentially exposed via infostealer logs and enforce MFA on remaining accounts.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/ukraine-identifies-infostealer-operator-tied-to-28-000-stolen-accounts/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-26">
-    <summary class="item-header">
-      <span class="item-title">HP EliteBook G9/G10 BIOS updates pulled from HPIA amid Secure Boot 2023 certificate rollout</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>HP has removed recent G9/G10 EliteBook and ZBook BIOS updates from the HP support site and the FTP source used by HP Image Assistant, even though HPIA continues to flag the newer version as needed, causing deployment failures. The withdrawn updates install Microsoft's UEFI CA2023 Secure Boot certificates ahead of the June 2026 deadline when the 2011 certificates expire; track HP's reposted versions before relying on Secure Boot post-deadline.</p>
-      <a href="https://h30434.www3.hp.com/t5/Business-Notebooks/April-2026-BIOS-Updates-BitLocker-Looping-SecureBoot-UEFI/td-p/9643448" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-27">
-    <summary class="item-header">
-      <span class="item-title">DoD CMMC Phase 1 underway; self-assessment clauses appearing in solicitations</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>CMMC Phase 1 (Nov 10, 2025 - Nov 9, 2026) is active, with DoD solicitations now including Level 1 (Self) or Level 2 (Self) assessment requirements; assessments continue against NIST SP 800-171 Rev 2 until the class deviation memo is withdrawn. DoD estimates approximately 65% of the Defense Industrial Base is affected, which is relevant for construction GC and subcontractor portfolios.</p>
-      <a href="https://www.burr.com/newsroom/articles/dods-phased-implementation-of-cmmc-begins-what-you-need-to-know" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-28">
-    <summary class="item-header">
-      <span class="item-title">WatchGuard report: 91% of SMBs fear AI-driven attacks, accelerating MSP-led security shift</span>
+      <span class="item-title">Microsoft Copilot weekly actives stall at 20M vs ChatGPT's 900M, Fortune reports</span>
       <span class="item-type type-industry">industry</span>
       <span class="urgency-green">FYI</span>
-      <span class="score">Score: 8/11</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>A WatchGuard report released May 20, 2026 finds 91% of organizations are concerned about AI-driven cyberattacks and 75% experienced at least one incident in the past year, pushing SMBs away from DIY security toward MSP-led, always-on protection. 54% say they cannot sustain 24/7 monitoring in-house and 67% need outside help to meet compliance demands.</p>
-      <a href="https://www.globenewswire.com/news-release/2026/05/20/3298139/0/en/SMBs-Hit-a-Cybersecurity-Breaking-Point-as-91-Fear-AI-Driven-Attacks-Driving-Shift-to-MSP-Led-Security-Models-WatchGuard-Finds.html" target="_blank" class="src">Source &rarr;</a>
+      <p>Fortune reported on May 21 that Microsoft Copilot's weekly active user base has flatlined around 20 million, compared to ChatGPT's 900 million, after a 2025 personal-assistant style upgrade failed to drive growth. Useful context for IT teams making 12-month Copilot vs ChatGPT/Claude licensing bets.</p>
+      <a href="https://fortune.com/2026/05/21/microsoft-copilot-ai-openai-satya-nadella-gemini-claude/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-21">
+    <summary class="item-header">
+      <span class="item-title">Apple 2025 fraud report: 2M apps and $2.2B in fraudulent transactions blocked</span>
+      <span class="item-type type-industry">industry</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 6/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Apple published its annual App Store fraud-prevention report, claiming it blocked more than two million risky app submissions and prevented $2.2 billion in fraudulent transactions during 2025. Useful talking point for end users justifying Apple's walled-garden controls amid EU sideloading pressure; no direct IT action required.</p>
+      <a href="https://securityaffairs.com/192484/security/apple-blocks-over-2-million-apps-in-2025-fraud-crackdown.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 </div>
 
-<div class="footer">Generated Thursday, May 21, 2026 at 6:30 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-05-21.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
+<div class="footer">Generated Friday, May 22, 2026 at 6:30 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-05-22.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
 
 </main>
 </body>
