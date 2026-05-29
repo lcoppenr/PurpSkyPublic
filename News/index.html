@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<title>Morning Briefing -- Thursday, May 28, 2026</title>
+<title>Morning Briefing -- Friday, May 29, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
 <main class="briefing-content">
 
 <div class="page-header">
-  <h1>Morning Briefing -- Thursday, May 28, 2026</h1>
+  <h1>Morning Briefing -- Friday, May 29, 2026</h1>
   <p class="page-meta">Microsoft &bull; Security &amp; Compliance &bull; Firewall / VPN / Networking &bull; Servers/NAS &bull; Workstations &amp; Mobile &bull; Peripherals &amp; AV &bull; RMM &amp; Remote Access &bull; Construction &amp; Specialty Software &bull; General Tech &amp; AI &bull; Pacific Time</p>
 </div>
 
@@ -22,49 +22,43 @@
   <h2>Today's Actions</h2>
   <p class="section-transparency">Showing 3 of 5</p>
   <ol class="action-list">
-    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Hold all HP commercial BIOS updates until HP ships a fix -- the April 2026 BIOS push (EliteBook X G1a 01.03.11 and 01.05.00, plus other EliteBook, ProBook, and ZBook models) is leaving Windows 11 endpoints in BitLocker recovery loops tied to Secure Boot 2023; manual workaround is enabling the Secure Boot 2023 certificate in BIOS. <a href="#item-1" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Audit and remediate Daemon Tools, TanStack npm packages, and the Nx Console VS Code extension -- CISA added CVE-2026-8398, CVE-2026-45321, and CVE-2026-48027 to KEV after active exploitation of developer-toolchain supply chains. <a href="#item-2" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Verify no managed client has SMB ports 139/445 exposed to the internet -- a new WantToCry ransomware operation brute-forces credentials on exposed SMB and encrypts files remotely without dropping any malware on the host. <a href="#item-3" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Watch Microsoft for emergency Windows 11 zero-day patches -- three publicly dumped 'Chaotic Eclipse' zero-days (CVE-2026-33825, CVE-2026-41091, CVE-2026-45498) give SYSTEM on fully patched Windows 11 and are now actively exploited. <a href="#item-1" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Audit endpoints for Daemon Tools, TanStack npm packages, and Nx Console VS Code extension -- CISA added all three to KEV after active exploitation of developer toolchains. <a href="#item-2" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Patch or disable the LiteSpeed cPanel plugin on any managed web hosting -- CVE-2026-48172 grants root and is on CISA's KEV with active exploitation. <a href="#item-3" class="detail-link">details</a></li>
   </ol>
   <details class="section-overflow"><summary>Show 2 more actions</summary><ol class="action-list" start="4">
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-yellow">This Week</span> Push Splashtop client updates to 3.8.0.0 -- the May release upgrades bundled OpenSSL to 3.5.2 to address multiple CVEs and adds a new in-product Vulnerability Page across managed endpoints. <a href="#item-4" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-yellow">This Week</span> Tell users not to install software from links suggested by AI chatbots or top search results -- a GPU-cryptojacking campaign is spreading through SEO poisoning and AI assistant download recommendations targeting Windows endpoints with discrete GPUs. <a href="#item-5" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Update SonicWall TZ firewalls to SonicOS 7.3.2-7010 -- GreyNoise is tracking 46x baseline scanning of SonicWall management interfaces hunting for CVE-2026-0204. <a href="#item-4" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-yellow">This Week</span> Note that Microsoft's DCU took down Fox Tempest, the malware code-signing service that fraudulently signed malware to bypass Windows trust controls. <a href="#item-5" class="detail-link">details</a></li>
   </ol></details>
 </div>
 
 <div class="section-new">
   <h2>What's New</h2>
-  <p class="section-transparency">Showing 3 of 11</p>
+  <p class="section-transparency">Showing 3 of 4</p>
   <ul class="new-list">
-    <li><strong><a href="#item-6">NIST publishes final SP 800-172r3 and SP 800-172Ar3 for enhanced CUI security</a></strong> -- NIST released the final Revision 3 of SP 800-172 (enhanced security requirements for protecting Controlled Unclassified Information) along with SP 800-172Ar3 assessment procedures. The publications align with the Phase 2 CMMC ramp-up and are directly relevant for DoD contractors pursuing Level 3, including your construction client. <a href="https://csrc.nist.gov/News/2026/nist-releases-sp-800-172r3-and-sp-800-172ar3" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-7">Anthropic releases Claude Opus 4.7 with stronger coding and higher-resolution vision</a></strong> -- Anthropic shipped Claude Opus 4.7 with notable gains on difficult software engineering tasks, higher-resolution vision, and expanded Claude Code and Opus API limits. Managed Agents picks up multiagent orchestration and webhooks; this is the new flagship model available through the API, Claude apps, and Microsoft 365 Copilot. <a href="https://www.anthropic.com/news/claude-opus-4-7" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-8">KnowBe4 launches AI-native SAT Advanced and Foundation tiers with deepfake training</a></strong> -- KnowBe4 unveiled SAT Advanced and SAT Foundation tiers built around AI Defense Agents that automate program administration, generate personalized deepfake training experiences, and create policy-based content. The new Content Creation Agent supports 30 languages, and a Prevent DLP rule builder plus misdirected content analysis ship in June 2026. <a href="https://lasvegassun.com/news/2026/may/27/knowbe4-enables-organizations-to-have-independent-/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-6">Chrome rolls out Device Bound Session Credentials to all users to stop cookie theft</a></strong> -- Google Chrome's Device Bound Session Credentials (DBSC) feature is now generally available, binding session cookies to device-level cryptographic keys to prevent the AiTM and token-theft attacks fueling Microsoft 365 account takeovers. SMB IT teams should plan to enable and validate DBSC alongside Conditional Access controls. <a href="https://www.bleepingcomputer.com/news/security/google-chrome-adds-session-cookie-theft-protection-for-all-users/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-7">KnowBe4 launches outbound email security: DLP rule builder and misdirected content analysis</a></strong> -- KnowBe4 announced two new Prevent features -- a DLP rule builder and misdirected-content analysis -- that let organizations independently control outbound email security and block PII or financial data leaks without enterprise-tier licensing. The capabilities are positioned for SMB and mid-market buyers and become available in June 2026. <a href="https://www.businesswire.com/news/home/20260527424916/en/KnowBe4-Enables-Organizations-to-Have-Independent-Control-Over-Outbound-Email-Security" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-8">Anthropic releases Claude Opus 4.8 with faster mode and lower pricing</a></strong> -- Anthropic launched Claude Opus 4.8 on May 28, 2026, an upgrade to Opus 4.7 with gains in agentic coding (69.2% on SWE-Bench Pro), multidisciplinary reasoning, and computer use. Fast mode is roughly 2.5x faster and 3x cheaper, plus a new Dynamic workflows research preview, an effort-control toggle in claude.ai, and expanded Claude Code rate limits. <a href="https://www.techtimes.com/articles/317349/20260528/claude-opus-48-remote-execution-leaves-four-times-fewer-code-flaws-unflagged-beats-gpt-55-coding.htm" target="_blank">Source &rarr;</a></li>
   </ul>
-  <details class="section-overflow"><summary>Show 8 more updates</summary><ul class="new-list">
-    <li><strong><a href="#item-9">Intune service release 2605 adds enhanced app inventory and macOS Platform SSO</a></strong> -- Intune service release 2605 brings faster app inventory data refresh for outdated and risky software visibility, Platform SSO during macOS ADE enrollment for instant Entra ID access, Android XR device management, and Ubuntu 26.04 LTS support. Compliance reporting guidance was also clarified for SMB admins. <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/whats-new" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-10">Entra ID PIM now supports Conditional Access on privileged role activation</a></strong> -- Microsoft Entra Privileged Identity Management now lets admins require Conditional Access controls (MFA, compliant device, sign-in risk) when users activate privileged roles. The update strengthens just-in-time admin access and reduces standing privilege risk for SMBs running Entra ID P2. <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/whats-new-in-microsoft-entra-may-2026/4517884" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-11">Atera 2026 release stream adds SNMP AI Copilot and expanded security audit logs</a></strong> -- Atera's 2026 release notes detail recent updates including an AI Copilot that generates SNMP OIDs from prompts or MIB files, a redesigned monitored device view, an updated Scripts page showing per-AI-assistant enablement, and expanded security audit logs covering authentication, permission changes, and access attempts. <a href="https://support.atera.com/hc/en-us/articles/25381421604124-Release-Notes-2026" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-12">Autodesk releases AutoCAD 2026.1.1 with Connected Sheet Set Manager</a></strong> -- AutoCAD 2026.1.1 introduces the Connected Sheet Set Manager for cloud-based sheet set collaboration via Autodesk Docs and completes the Smart Blocks feature set. Autodesk reports AutoCAD 2026 opens DWGs up to 11x faster on LAN and network paths than AutoCAD 2025. <a href="https://www.autodesk.com/blogs/autocad/autocad-2026-1-1/" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-13">ConstructConnect ships On-Screen Takeoff 4.0.0.628 as Takeoff Boost AI expands</a></strong> -- ConstructConnect released On-Screen Takeoff 4.0.0.628 on May 6, 2026, following the April 22 launch of Takeoff Boost, a Google Cloud-based AI and computer-vision takeoff service that auto-classifies, counts, and measures objects from digital plans. Takeoff Boost now supports default wall heights and reads height callouts from reflected ceiling plans for painting takeoffs. <a href="https://help.constructconnect.com/getting-started-with-on-screen-takeoff-112/on-screen-takeoff-4-0-product-information-and-download-23" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-14">Microsoft Teams May 2026 rolls out chat auto-categorization, AI Interpreter dictionary, Attendee Packs</a></strong> -- May 2026 Teams updates include automatic categorization of muted and meeting chats, expanded Audio Recap language coverage, AI Interpreter support for Traditional Chinese plus tenant custom dictionaries, a simplified app bar on Windows and Mac, one-time email passcodes for verifying external event presenters, and Attendee Packs for larger webinars and town halls. <a href="https://techcommunity.microsoft.com/blog/microsoftteamsblog/whats-new-in-microsoft-teams--april-2026/4515907" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-15">Bluebeam iOS App 1.30 adds Studio PDF upload and faster cross-folder navigation</a></strong> -- Bluebeam shipped iOS App Version 1.30 on May 12, 2026, adding the ability to upload and delete Studio PDFs, quick access to recent files from within the editor, and faster cross-folder navigation. Fixes address Revu hangs with custom line styles, Polygon Cutout failures on curved segments, and markup snap-to-grid issues after PDF rotation under certain regional settings. <a href="https://support.bluebeam.com/release-notes-all.html" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-16">Trimble launches Materials platform integrating with Viewpoint Spectrum and Vista</a></strong> -- Trimble launched Trimble Materials, a centralized purchasing, inventory, and accounts payable platform for contractors that integrates with Viewpoint Spectrum and Viewpoint Vista to connect estimating, operations, and accounting. Spectrum's recent release also added batch invoice sending and migrated all users to the new AP processing UI, with payroll and regulatory updates for year-end 2025. <a href="https://www.forconstructionpros.com/business/business-services/product/22942282/trimble-solutions-usa-trimble-launches-new-materials-management-software-for-contractors" target="_blank">Source &rarr;</a></li>
+  <details class="section-overflow"><summary>Show 1 more updates</summary><ul class="new-list">
+    <li><strong><a href="#item-9">UniFi Network Application 10.3.58 released with mesh WiFi fix</a></strong> -- Ubiquiti released UniFi Network Application 10.3.58 on May 26, 2026, addressing an issue where WiFi could drop when Wireless Meshing is disabled and the gateway is unreachable. The release also previews upcoming U7-LR model support and applies cleanly to deployed Network Application 10.3+ instances. <a href="https://community.ui.com/releases/UniFi-Network-Application-10-3-58/449387c9-4187-44bd-ad47-02da91688dfc" target="_blank">Source &rarr;</a></li>
   </ul></details>
 </div>
 
 <div class="section-security">
   <h2>Security &amp; Patches</h2>
-  <p class="section-transparency">Showing 3 of 7</p>
+  <p class="section-transparency">Showing 3 of 8</p>
   <div class="security-cards">
-    <div class="security-card"><a href="#item-17" class="security-headline">19.6 billion files sit exposed on the internet with no authentication required</a><span class="urgency-yellow">This Week</span><span class="security-summary">Researchers found 19.6 billion files publicly accessible across 535,480 misconfigured cloud buckets, including 685,047 credential files and nearly 1 million database dumps reachable without a password.</span></div>
-    <div class="security-card"><a href="#item-18" class="security-headline">C3PAO assessment capacity crisis intensifies ahead of November 2026 CMMC Phase 2</a><span class="urgency-yellow">This Week</span><span class="security-summary">With Phase 2 CMMC requiring mandatory C3PAO Level 2 certification on November 10, 2026, the defense industrial base faces a capacity bottleneck of fewer than 600 certified assessors and roughly 80 authorized C3PAOs for tens of thousands of contractors needing Level 2.</span></div>
-    <div class="security-card"><a href="#item-19" class="security-headline">Fake UK Visa site exposed 100,000 passport scans on public AWS bucket</a><span class="urgency-yellow">This Week</span><span class="security-summary">A fraudulent UK visa application portal harvested approximately 100,000 passport scans, selfies, and personal data from victims and left them on a public AWS server.</span></div>
+    <div class="security-card"><a href="#item-10" class="security-headline">Charter Communications breach exposes 4.9M customer accounts via ShinyHunters</a><span class="urgency-yellow">This Week</span><span class="security-summary">ShinyHunters breached Charter Communications in April, stealing data on roughly 4.9 million customers.</span></div>
+    <div class="security-card"><a href="#item-11" class="security-headline">OpenVPN Connect for macOS local privilege escalation disclosed</a><span class="urgency-yellow">This Week</span><span class="security-summary">A critical privilege escalation vulnerability was disclosed May 28, 2026 in OpenVPN Connect for macOS, allowing local attackers to run arbitrary commands as root.</span></div>
+    <div class="security-card"><a href="#item-12" class="security-headline">BTMOB RAT offers point-and-click takeover kit for Android devices</a><span class="urgency-yellow">This Week</span><span class="security-summary">A new commodity Android RAT called BTMOB provides low-skill operators with a point-and-click interface for full device takeover, including screen capture, accessibility abuse, and credential theft.</span></div>
   </div>
-  <details class="section-overflow"><summary>Show 4 more security items</summary><div class="security-cards">
-    <div class="security-card"><a href="#item-20" class="security-headline">Carnival Cruise confirms ShinyHunters breach affecting nearly 6 million people</a><span class="urgency-yellow">This Week</span><span class="security-summary">Carnival Corporation, the world's largest cruise line operator, confirmed a data breach affecting close to 6 million customers and is attributed to the ShinyHunters extortion group.</span></div>
-    <div class="security-card"><a href="#item-21" class="security-headline">Integris announces intent to acquire First Focus to form largest SMB-focused MSP</a><span class="urgency-green">FYI</span><span class="security-summary">Integris announced its intent to acquire First Focus, the largest MSP serving SMBs across Australia, New Zealand, and the Philippines, in a deal that would make Integris the largest SMB-focused MSP globally.</span></div>
-    <div class="security-card"><a href="#item-22" class="security-headline">Romanian sentenced to 5 years for hacking Oregon government network</a><span class="urgency-green">FYI</span><span class="security-summary">A Romanian national received a 56-month federal prison sentence for breaching an Oregon state government computer network.</span></div>
-    <div class="security-card"><a href="#item-23" class="security-headline">HP customer says firmware update pushed printer off the support cliff</a><span class="urgency-green">FYI</span><span class="security-summary">The Register published a May 26, 2026 report describing a customer whose HP printer became unusable after a firmware update that effectively ended supported functionality.</span></div>
+  <details class="section-overflow"><summary>Show 5 more security items</summary><div class="security-cards">
+    <div class="security-card"><a href="#item-13" class="security-headline">Carnival data breach exposes personal data of nearly 6 million customers</a><span class="urgency-green">FYI</span><span class="security-summary">Carnival Corporation disclosed a breach exposing personal data of close to 6 million customers, adding to a string of recent large-scale identity-data spills.</span></div>
+    <div class="security-card"><a href="#item-14" class="security-headline">bzip2 vulnerability CVE-2026-42250 published affecting all versions before 1.0.9</a><span class="urgency-yellow">This Week</span><span class="security-summary">CVE-2026-42250 was published May 28, 2026, affecting all bzip2 versions before 1.0.9.</span></div>
+    <div class="security-card"><a href="#item-15" class="security-headline">Integris announces intent to acquire Australia/NZ MSP First Focus</a><span class="urgency-green">FYI</span><span class="security-summary">Integris announced its intent to acquire First Focus, the largest SMB-focused MSP in Australia, New Zealand, and the Philippines.</span></div>
+    <div class="security-card"><a href="#item-16" class="security-headline">19.6 billion files left exposed on the open internet</a><span class="urgency-green">FYI</span><span class="security-summary">Researchers report 19.6 billion files are sitting unauthenticated on internet-exposed storage including S3 buckets, open SMB shares, and misconfigured NAS.</span></div>
+    <div class="security-card"><a href="#item-17" class="security-headline">Fake UK visa site leaked 100,000 passports</a><span class="urgency-green">FYI</span><span class="security-summary">A fraudulent UK visa application site harvested and exposed about 100,000 passport scans on an unprotected AWS server.</span></div>
   </div></details>
 </div>
 
@@ -72,14 +66,14 @@
   <h2>Details</h2>
   <details class="item" id="item-1">
     <summary class="item-header">
-      <span class="item-title">HP confirms April 2026 BIOS update bricking EliteBook, ProBook, ZBook with BitLocker recovery loops</span>
+      <span class="item-title">Three Chaotic Eclipse Windows zero-days now actively exploited; Microsoft and researcher trade blame</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>HP publicly confirmed that its April 2026 BIOS update, pushed via Windows Update and tied to Microsoft's Secure Boot 2023 certificate rollout, is leaving EliteBook, ProBook, ZBook, and commercial desktops stuck in endless BitLocker recovery prompts or failing to boot. EliteBook X G1a versions 01.03.11 and 01.05.00 are explicitly flagged. Workaround is to manually enable the Secure Boot 2023 certificate in BIOS (F10 &gt; Security &gt; Secure Boot Configuration) until a fixed BIOS ships.</p>
-      <a href="https://www.windowslatest.com/2026/05/26/hp-admits-its-latest-bios-update-is-bricking-windows-11-with-bitlocker-loop-blocking-secure-boot-2023-fix/" target="_blank" class="src">Source &rarr;</a>
+      <p>Researcher 'Chaotic Eclipse' (aka Nightmare Eclipse, Dead Eclipse) has publicly dumped six Windows zero-days without coordination; BlueHammer (CVE-2026-33825), RedSun (CVE-2026-41091), and UnDefend (CVE-2026-45498) are confirmed exploited in the wild, with PoCs giving SYSTEM on fully patched Windows 11. GitHub and GitLab pulled the researcher's accounts around May 23-27 while patches remain pending.</p>
+      <a href="https://securityaffairs.com/192865/security/microsoft-calls-the-zero-day-dumps-irresponsible-the-researcher-says-microsoft-started-it.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-2">
@@ -90,265 +84,193 @@
       <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>CISA added three actively exploited flaws to its Known Exploited Vulnerabilities catalog: CVE-2026-8398 (Daemon Tools supply chain compromise), CVE-2026-45321 (TanStack npm package compromise), and CVE-2026-48027 (Nx Console malicious VS Code extension). Federal agencies must remediate quickly, and SMBs whose developers or workstations carry any of these tools should patch or remove them immediately as developer-toolchain compromises continue to spread.</p>
+      <p>CISA added three actively exploited supply-chain compromises to the Known Exploited Vulnerabilities catalog: Daemon Tools (CVE-2026-8398), TanStack npm packages (CVE-2026-45321), and the Nx Console VS Code extension (CVE-2026-48027). Developer-tooling exploitation is a notable SMB supply-chain risk; audit and remove affected versions on developer workstations and CI runners.</p>
       <a href="https://securityaffairs.com/192776/security/u-s-cisa-adds-daemon-tools-tanstack-and-nx-console-flaws-to-its-known-exploited-vulnerabilities-catalog.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-3">
     <summary class="item-header">
-      <span class="item-title">WantToCry ransomware brute-forces exposed SMB ports 139/445 to encrypt remotely</span>
+      <span class="item-title">CISA adds actively exploited LiteSpeed cPanel plugin flaw (CVE-2026-48172) to KEV</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>A new ransomware operation, WantToCry, brute-forces internet-exposed SMB services on TCP 139/445 and then encrypts files remotely over the authenticated session, leaving no local malware footprint and largely evading EDR. Ransoms reportedly run $400-$1,800. SMBs must ensure SMB ports are not exposed to the internet, that all accounts use strong unique passwords, and that MFA is enforced wherever possible.</p>
-      <a href="https://cybersecuritynews.com/wanttocry-ransomware-abuses-smb-services/" target="_blank" class="src">Source &rarr;</a>
+      <p>CVE-2026-48172 in the LiteSpeed cPanel plugin allows privilege escalation to root and is being exploited in the wild. SMBs running cPanel-managed web hosting should upgrade the plugin to version 2.4.7 immediately or disable it pending remediation, and audit logs for compromise indicators.</p>
+      <a href="https://securityaffairs.com/192795/hacking/u-s-cisa-adds-litespeed-cpanel-plugin-flaw-to-its-known-exploited-vulnerabilities-catalog.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-4">
     <summary class="item-header">
-      <span class="item-title">Splashtop 3.8.0.0 ships with OpenSSL 3.5.2 to address multiple CVEs</span>
+      <span class="item-title">SonicWall firewalls under heavy reconnaissance; CVE-2026-0204 patching urgent</span>
       <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
+      <span class="urgency-red">Act Today</span>
       <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>Splashtop released version 3.8.0.0 in May 2026, upgrading its bundled OpenSSL to 3.5.2 to remediate multiple CVEs. Splashtop urges all customers to update to receive the security fixes, and a new in-product Vulnerability Page provides centralized CVE visibility for managed endpoints.</p>
-      <a href="https://support-splashtopbusiness.splashtop.com/hc/en-us/articles/43014222816027-The-Addressed-CVEs-in-Splashtop-Version-3-8-0-0" target="_blank" class="src">Source &rarr;</a>
+      <p>GreyNoise has tracked sustained scanning of SonicWall SonicOS management interfaces, peaking near 597,000 sessions in a single day (roughly 46x baseline), as threat actors hunt for unpatched devices vulnerable to CVE-2026-0204 (CVSS 8.3 access control bypass). Gen 7 fix is firmware 7.3.2-7010; TZ deployments on 7.2+ should patch immediately and restrict management and SSL-VPN exposure.</p>
+      <a href="https://www.dataprise.com/resources/defense-digest/sonicwall-snwlid-2026-0004-vulnerability-threat-report/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-5">
     <summary class="item-header">
-      <span class="item-title">GPU mining malware spreads via SEO poisoning and AI chatbot answers</span>
+      <span class="item-title">Microsoft DCU disrupts Fox Tempest malware code-signing operation</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Threat actors are pushing GPU-targeted cryptomining malware to users who arrive via poisoned search results and AI chatbot recommendations for popular software downloads. SMB IT teams should reinforce download hygiene, EDR coverage on workstation GPUs, and user guidance against trusting chatbot-suggested installer links.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/gpu-mining-malware-spreads-via-seo-poisoning-ai-chatbots/" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft's Digital Crimes Unit, working with Resecurity, disrupted Fox Tempest, a criminal service that sold code-signing certificates used to sign malware and bypass Windows trust controls. The takedown seized infrastructure and revoked over 1,000 certificates linked to ransomware operations, and should reduce signed-malware volume targeting Windows and Defender environments in the near term.</p>
+      <a href="https://securityaffairs.com/192818/security/resecurity-supports-microsoft-dcu-in-disrupting-fox-tempest-cybercriminal-code-signing-ecosystem.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-6">
     <summary class="item-header">
-      <span class="item-title">NIST publishes final SP 800-172r3 and SP 800-172Ar3 for enhanced CUI security</span>
+      <span class="item-title">Chrome rolls out Device Bound Session Credentials to all users to stop cookie theft</span>
       <span class="item-type type-feature">feature</span>
       <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 10/11</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>NIST released the final Revision 3 of SP 800-172 (enhanced security requirements for protecting Controlled Unclassified Information) along with SP 800-172Ar3 assessment procedures. The publications align with the Phase 2 CMMC ramp-up and are directly relevant for DoD contractors pursuing Level 3 -- particularly your construction client.</p>
-      <a href="https://csrc.nist.gov/News/2026/nist-releases-sp-800-172r3-and-sp-800-172ar3" target="_blank" class="src">Source &rarr;</a>
+      <p>Google Chrome's Device Bound Session Credentials (DBSC) feature is now generally available, binding session cookies to device-level cryptographic keys to prevent the AiTM and token-theft attacks fueling Microsoft 365 account takeovers. SMB IT teams should plan to enable and validate DBSC alongside Conditional Access controls.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/google-chrome-adds-session-cookie-theft-protection-for-all-users/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-7">
     <summary class="item-header">
-      <span class="item-title">Anthropic releases Claude Opus 4.7 with stronger coding and higher-resolution vision</span>
+      <span class="item-title">KnowBe4 launches outbound email security: DLP rule builder and misdirected content analysis</span>
       <span class="item-type type-feature">feature</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 10/11</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Anthropic shipped Claude Opus 4.7 with notable gains on difficult software engineering tasks, higher-resolution vision, and expanded Claude Code and Opus API limits. Managed Agents picks up multiagent orchestration and webhooks; the new flagship is available through the API, Claude apps, and Microsoft 365 Copilot.</p>
-      <a href="https://www.anthropic.com/news/claude-opus-4-7" target="_blank" class="src">Source &rarr;</a>
+      <p>KnowBe4 announced two new Prevent features -- a DLP rule builder and misdirected-content analysis -- that let organizations independently control outbound email security and block PII or financial data leaks without enterprise-tier licensing. The capabilities are positioned for SMB and mid-market buyers and become available in June 2026.</p>
+      <a href="https://www.businesswire.com/news/home/20260527424916/en/KnowBe4-Enables-Organizations-to-Have-Independent-Control-Over-Outbound-Email-Security" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-8">
     <summary class="item-header">
-      <span class="item-title">KnowBe4 launches AI-native SAT Advanced and Foundation tiers with deepfake training</span>
+      <span class="item-title">Anthropic releases Claude Opus 4.8 with faster mode and lower pricing</span>
       <span class="item-type type-feature">feature</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>KnowBe4 unveiled SAT Advanced and SAT Foundation tiers built around AI Defense Agents that automate program administration, generate personalized deepfake training experiences, and create policy-based content. The new Content Creation Agent supports 30 languages, and a Prevent DLP rule builder plus misdirected content analysis ship in June 2026.</p>
-      <a href="https://lasvegassun.com/news/2026/may/27/knowbe4-enables-organizations-to-have-independent-/" target="_blank" class="src">Source &rarr;</a>
+      <p>Anthropic launched Claude Opus 4.8 on May 28, 2026, an upgrade to Opus 4.7 with gains in agentic coding (69.2% on SWE-Bench Pro), multidisciplinary reasoning, and computer use. Fast mode is roughly 2.5x faster and 3x cheaper, plus a new Dynamic workflows research preview, an effort-control toggle in claude.ai, and expanded Claude Code rate limits.</p>
+      <a href="https://www.techtimes.com/articles/317349/20260528/claude-opus-48-remote-execution-leaves-four-times-fewer-code-flaws-unflagged-beats-gpt-55-coding.htm" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-9">
     <summary class="item-header">
-      <span class="item-title">Intune service release 2605 adds enhanced app inventory and macOS Platform SSO</span>
+      <span class="item-title">UniFi Network Application 10.3.58 released with mesh WiFi fix</span>
       <span class="item-type type-feature">feature</span>
       <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>Intune service release 2605 brings faster app inventory data refresh for outdated and risky software visibility, Platform SSO during macOS ADE enrollment for instant Entra ID access, Android XR device management, and Ubuntu 26.04 LTS support. Compliance reporting guidance was also clarified for SMB admins.</p>
-      <a href="https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/whats-new" target="_blank" class="src">Source &rarr;</a>
+      <p>Ubiquiti released UniFi Network Application 10.3.58 on May 26, 2026, addressing an issue where WiFi could drop when Wireless Meshing is disabled and the gateway is unreachable. The release also previews upcoming U7-LR model support and applies cleanly to deployed Network Application 10.3+ instances.</p>
+      <a href="https://community.ui.com/releases/UniFi-Network-Application-10-3-58/449387c9-4187-44bd-ad47-02da91688dfc" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-10">
     <summary class="item-header">
-      <span class="item-title">Entra ID PIM now supports Conditional Access on privileged role activation</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
+      <span class="item-title">Charter Communications breach exposes 4.9M customer accounts via ShinyHunters</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft Entra Privileged Identity Management now lets admins require Conditional Access controls (MFA, compliant device, sign-in risk) when users activate privileged roles. The update strengthens just-in-time admin access and reduces standing privilege risk for SMBs running Entra ID P2.</p>
-      <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/whats-new-in-microsoft-entra-may-2026/4517884" target="_blank" class="src">Source &rarr;</a>
+      <p>ShinyHunters breached Charter Communications in April, stealing data on roughly 4.9 million customers. The incident reinforces credential-stuffing and identity-monitoring risk for downstream SMBs whose users may have reused Charter credentials.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/charter-communications-data-breach-affects-49-million-accounts/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-11">
     <summary class="item-header">
-      <span class="item-title">Atera 2026 release stream adds SNMP AI Copilot and expanded security audit logs</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
+      <span class="item-title">OpenVPN Connect for macOS local privilege escalation disclosed</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>Atera's 2026 release notes detail recent updates including an AI Copilot that generates SNMP OIDs from prompts or MIB files, a redesigned monitored device view, an updated Scripts page showing per-AI-assistant enablement, and expanded security audit logs covering authentication, permission changes, and access attempts.</p>
-      <a href="https://support.atera.com/hc/en-us/articles/25381421604124-Release-Notes-2026" target="_blank" class="src">Source &rarr;</a>
+      <p>A critical privilege escalation vulnerability was disclosed May 28, 2026 in OpenVPN Connect for macOS, allowing local attackers to run arbitrary commands as root. SMB IT shops with macOS endpoints running OpenVPN Connect should update promptly.</p>
+      <a href="https://cvefeed.io/newsroom/latest" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-12">
     <summary class="item-header">
-      <span class="item-title">Autodesk releases AutoCAD 2026.1.1 with Connected Sheet Set Manager</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
+      <span class="item-title">BTMOB RAT offers point-and-click takeover kit for Android devices</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>AutoCAD 2026.1.1 introduces the Connected Sheet Set Manager for cloud-based sheet set collaboration via Autodesk Docs and completes the Smart Blocks feature set. Autodesk reports AutoCAD 2026 opens DWGs up to 11x faster on LAN and network paths than AutoCAD 2025.</p>
-      <a href="https://www.autodesk.com/blogs/autocad/autocad-2026-1-1/" target="_blank" class="src">Source &rarr;</a>
+      <p>A new commodity Android RAT called BTMOB provides low-skill operators with a point-and-click interface for full device takeover, including screen capture, accessibility abuse, and credential theft. SMBs with BYOD Android fleets should ensure Intune/MAM policies block sideloaded apps and enforce Play Protect.</p>
+      <a href="https://securityaffairs.com/192846/malware/btmob-rat-gives-criminals-a-point-and-click-kit-to-take-over-your-android-phone.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-13">
     <summary class="item-header">
-      <span class="item-title">ConstructConnect ships On-Screen Takeoff 4.0.0.628 as Takeoff Boost AI expands</span>
-      <span class="item-type type-feature">feature</span>
+      <span class="item-title">Carnival data breach exposes personal data of nearly 6 million customers</span>
+      <span class="item-type type-industry">industry</span>
       <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>ConstructConnect released On-Screen Takeoff 4.0.0.628 on May 6, 2026, following the April 22 launch of Takeoff Boost, a Google Cloud-based AI and computer-vision takeoff service that auto-classifies, counts, and measures objects from digital plans. Takeoff Boost now supports default wall heights and reads height callouts from reflected ceiling plans for painting takeoffs.</p>
-      <a href="https://help.constructconnect.com/getting-started-with-on-screen-takeoff-112/on-screen-takeoff-4-0-product-information-and-download-23" target="_blank" class="src">Source &rarr;</a>
+      <p>Carnival Corporation disclosed a breach exposing personal data of close to 6 million customers, adding to a string of recent large-scale identity-data spills. SMB IT teams should expect a new wave of phishing lures referencing Carnival accounts and reservations.</p>
+      <a href="https://securityaffairs.com/192833/uncategorized/carnival-data-breach-exposes-personal-data-of-nearly-6-million-customers.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-14">
     <summary class="item-header">
-      <span class="item-title">Microsoft Teams May 2026 rolls out chat auto-categorization, AI Interpreter dictionary, Attendee Packs</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 8/11</span>
+      <span class="item-title">bzip2 vulnerability CVE-2026-42250 published affecting all versions before 1.0.9</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>May 2026 Teams updates include automatic categorization of muted and meeting chats, expanded Audio Recap language coverage, AI Interpreter support for Traditional Chinese plus tenant custom dictionaries, a simplified app bar on Windows and Mac, one-time email passcodes for verifying external event presenters, and Attendee Packs for larger webinars and town halls.</p>
-      <a href="https://techcommunity.microsoft.com/blog/microsoftteamsblog/whats-new-in-microsoft-teams--april-2026/4515907" target="_blank" class="src">Source &rarr;</a>
+      <p>CVE-2026-42250 was published May 28, 2026, affecting all bzip2 versions before 1.0.9. bzip2 is widely embedded in Linux distributions, backup tools, and developer toolchains used across SMB IT environments.</p>
+      <a href="https://cvefeed.io/newsroom/latest" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-15">
     <summary class="item-header">
-      <span class="item-title">Bluebeam iOS App 1.30 adds Studio PDF upload and faster cross-folder navigation</span>
-      <span class="item-type type-feature">feature</span>
+      <span class="item-title">Integris announces intent to acquire Australia/NZ MSP First Focus</span>
+      <span class="item-type type-industry">industry</span>
       <span class="urgency-green">FYI</span>
-      <span class="score">Score: 8/11</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>Bluebeam shipped iOS App Version 1.30 on May 12, 2026, adding the ability to upload and delete Studio PDFs, quick access to recent files from within the editor, and faster cross-folder navigation. Fixes address Revu hangs with custom line styles, Polygon Cutout failures on curved segments, and markup snap-to-grid issues after PDF rotation under certain regional settings.</p>
-      <a href="https://support.bluebeam.com/release-notes-all.html" target="_blank" class="src">Source &rarr;</a>
+      <p>Integris announced its intent to acquire First Focus, the largest SMB-focused MSP in Australia, New Zealand, and the Philippines. Once closed, the deal would make Integris the largest SMB-focused MSP worldwide, continuing the trend of PE-backed MSP consolidation.</p>
+      <a href="https://www.prnewswire.com/news-releases/integris-announces-intent-to-acquire-msp-first-focus-expanding-smb-focused-managed-services-presence-across-australia-new-zealand-and-the-philippines-302753753.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-16">
     <summary class="item-header">
-      <span class="item-title">Trimble launches Materials platform integrating with Viewpoint Spectrum and Vista</span>
-      <span class="item-type type-feature">feature</span>
+      <span class="item-title">19.6 billion files left exposed on the open internet</span>
+      <span class="item-type type-industry">industry</span>
       <span class="urgency-green">FYI</span>
-      <span class="score">Score: 8/11</span>
+      <span class="score">Score: 6/11</span>
     </summary>
     <div class="item-body">
-      <p>Trimble launched Trimble Materials, a centralized purchasing, inventory, and accounts payable platform for contractors that integrates with Viewpoint Spectrum and Viewpoint Vista to connect estimating, operations, and accounting. Spectrum's recent release also added batch invoice sending and migrated all users to the new AP processing UI, with payroll and regulatory updates for year-end 2025.</p>
-      <a href="https://www.forconstructionpros.com/business/business-services/product/22942282/trimble-solutions-usa-trimble-launches-new-materials-management-software-for-contractors" target="_blank" class="src">Source &rarr;</a>
+      <p>Researchers report 19.6 billion files are sitting unauthenticated on internet-exposed storage including S3 buckets, open SMB shares, and misconfigured NAS. SMBs should re-audit external attack surface and storage ACLs as opportunistic scraping continues.</p>
+      <a href="https://securityaffairs.com/192787/security/19-6-billion-files-are-sitting-open-on-the-internet-no-password-required.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-17">
     <summary class="item-header">
-      <span class="item-title">19.6 billion files sit exposed on the internet with no authentication required</span>
+      <span class="item-title">Fake UK visa site leaked 100,000 passports</span>
       <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 6/11</span>
     </summary>
     <div class="item-body">
-      <p>Researchers found 19.6 billion files publicly accessible across 535,480 misconfigured cloud buckets, including 685,047 credential files and nearly 1 million database dumps reachable without a password. SMB IT teams should audit S3 buckets, Azure Blob containers, SMB shares, and any ShareFile-style external exposure against current inventories.</p>
-      <a href="https://securityaffairs.com/192787/security/19-6-billion-files-are-sitting-open-on-the-internet-no-password-required.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-18">
-    <summary class="item-header">
-      <span class="item-title">C3PAO assessment capacity crisis intensifies ahead of November 2026 CMMC Phase 2</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>With Phase 2 CMMC requiring mandatory C3PAO Level 2 certification on November 10, 2026, the defense industrial base faces a capacity bottleneck of fewer than 600 certified assessors and roughly 80 authorized C3PAOs for tens of thousands of contractors needing Level 2. Wait times are projected to exceed 18 months by Q3 2026 and assessment fees are expected to double to $75K-$150K.</p>
-      <a href="https://www.preveil.com/blog/cmmc-timeline/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-19">
-    <summary class="item-header">
-      <span class="item-title">Fake UK Visa site exposed 100,000 passport scans on public AWS bucket</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>A fraudulent UK visa application portal harvested approximately 100,000 passport scans, selfies, and personal data from victims and left them on a public AWS server. The operator responded with legal threats instead of fixing the exposure; relevant as a reminder of convincing government-impersonation phishing aimed at SMB employees handling travel or immigration documents.</p>
+      <p>A fraudulent UK visa application site harvested and exposed about 100,000 passport scans on an unprotected AWS server. The case highlights both phishing-site sophistication and the downstream identity-fraud risk that often feeds business email compromise campaigns.</p>
       <a href="https://securityaffairs.com/192809/security/a-fake-uk-visa-site-left-100000-passports-wide-open-then-sent-lawyers-instead-of-a-fix.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-20">
-    <summary class="item-header">
-      <span class="item-title">Carnival Cruise confirms ShinyHunters breach affecting nearly 6 million people</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Carnival Corporation, the world's largest cruise line operator, confirmed a data breach affecting close to 6 million customers and attributed to the ShinyHunters extortion group. The disclosure is part of an ongoing ShinyHunters campaign against Salesforce and cloud-CRM tenants, and SMBs using similar SaaS platforms should harden third-party app access.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/carnival-cruise-confirms-data-breach-affecting-nearly-6-million-people/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-21">
-    <summary class="item-header">
-      <span class="item-title">Integris announces intent to acquire First Focus to form largest SMB-focused MSP</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Integris announced its intent to acquire First Focus, the largest MSP serving SMBs across Australia, New Zealand, and the Philippines, in a deal that would make Integris the largest SMB-focused MSP globally. The move underscores continued private-equity-driven MSP consolidation in the channel.</p>
-      <a href="https://www.prnewswire.com/news-releases/integris-announces-intent-to-acquire-msp-first-focus-expanding-smb-focused-managed-services-presence-across-australia-new-zealand-and-the-philippines-302753753.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-22">
-    <summary class="item-header">
-      <span class="item-title">Romanian sentenced to 5 years for hacking Oregon government network</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 6/11</span>
-    </summary>
-    <div class="item-body">
-      <p>A Romanian national received a 56-month federal prison sentence for breaching an Oregon state government computer network. The case underscores continued law-enforcement focus on state and municipal intrusion actors, relevant context for SMBs and contractors handling public-sector data.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/romanian-gets-5-years-in-prison-for-hacking-oregon-govt-network/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-23">
-    <summary class="item-header">
-      <span class="item-title">HP customer says firmware update pushed printer off the support cliff</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 6/11</span>
-    </summary>
-    <div class="item-body">
-      <p>The Register published a May 26, 2026 report describing a customer whose HP printer became unusable after a firmware update that effectively ended supported functionality. The piece highlights ongoing concerns about HP auto-firmware-update behavior on consumer and small-office inkjets; a reminder to evaluate firmware auto-update policy on deployed HP inkjet fleets.</p>
-      <a href="https://www.theregister.com/personal-tech/2026/05/26/hp-customer-claims-firmware-update-shoved-printer-off-support-cliff/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 </div>
 
-<div class="footer">Generated Thursday, May 28, 2026 at 6:36 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-05-28.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
+<div class="footer">Generated Friday, May 29, 2026 at 6:30 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-05-29.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
 
 </main>
 </body>
