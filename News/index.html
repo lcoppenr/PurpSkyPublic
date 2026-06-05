@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<title>Morning Briefing -- Thursday, June 4, 2026</title>
+<title>Morning Briefing -- Friday, June 5, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -14,445 +14,222 @@
 <main class="briefing-content">
 
 <div class="page-header">
-  <h1>Morning Briefing -- Thursday, June 4, 2026</h1>
+  <h1>Morning Briefing -- Friday, June 5, 2026</h1>
   <p class="page-meta">Microsoft &bull; Security &amp; Compliance &bull; Firewall / VPN / Networking &bull; Servers/NAS &bull; Workstations &amp; Mobile &bull; Peripherals &amp; AV &bull; RMM &amp; Remote Access &bull; Construction &amp; Specialty Software &bull; General Tech &amp; AI &bull; Pacific Time</p>
 </div>
 
 <div class="section-actions">
   <h2>Today's Actions</h2>
-  <p class="section-transparency">Showing 3 of 12</p>
+  <p class="section-transparency">Showing 3 of 9</p>
   <ol class="action-list">
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Patch SonicOS on all Gen 7 TZ firewalls (SNWLID-2026-0004) to close an unauthenticated management interface access flaw (CVE-2026-0204, CVSS 8.0) plus path traversal and stack buffer overflow DoS; disable HTTP/HTTPS management and SSL-VPN until updated. <a href="#item-1" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Update or remove the Kirki WordPress plugin (versions 6.0.0-6.0.6) on any managed WordPress sites &mdash; Wordfence has blocked 222+ attempts in 24 hours against this CVSS 9.8 unauthenticated privilege escalation flaw (CVE-2026-8206). <a href="#item-2" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Upgrade any customer-managed Citrix ShareFile Storage Zones Controllers to v5.12.4 or v6 immediately &mdash; CISA warns CVE-2026-2699 (CVSS 9.8) is being actively exploited in chained unauthenticated RCE attacks. <a href="#item-3" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Patch any Cisco Catalyst SD-WAN Manager deployments immediately &mdash; CVE-2026-20245 is being actively exploited to gain root access by chaining with CVE-2026-20182 or CVE-2026-20127, with no patches or workarounds available at disclosure. <a href="#item-1" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Update VS Code on every developer endpoint &mdash; Microsoft shipped a fix June 3 for a zero-day that lets a malicious extension steal GitHub OAuth tokens via github.dev, and the researcher dropped public details after a coordinated-disclosure dispute. <a href="#item-2" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> File CISA KEV additions CVE-2025-48595 (Android Framework integer overflow, Android 14-16) and CVE-2022-0492 (Linux kernel cgroups privilege escalation) &mdash; no clients run Android or container Linux hosts, but watch for inherited environments. <a href="#item-3" class="detail-link">details</a></li>
   </ol>
-  <details class="section-overflow"><summary>Show 9 more actions</summary><ol class="action-list" start="4">
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> File the Cisco Unified CM CVE-2026-20230 unauthenticated SSRF (public PoC code, chainable to root file write) &mdash; no current clients run Cisco UCM, but flag for any future engagement that includes it. <a href="#item-4" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Apply the Secure Boot dbx certificate updates across all Windows 11 and Windows Server endpoints before June 26, 2026 &mdash; Intune's new Secure Boot Certificate Expiration advisory enforces a 14-day grace period before auto-remediation, and missing updates risk boot-level failures. <a href="#item-5" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Warn users across M365 tenants about the FBI PSA on Kali365, a Telegram-distributed phishing-as-a-service kit that captures M365 OAuth tokens and bypasses MFA without credential interception; reinforce training and review Conditional Access for token binding and CAE. <a href="#item-6" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> File CVE-2026-49975 HTTP/2 Bomb DoS &mdash; NGINX (April) and Apache (late May) shipped fixes, but IIS, Envoy, and Cloudflare Pingora remain unpatched at disclosure; no clients run public-facing web servers, but watch for inherited workloads. <a href="#item-7" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Verify WinRAR is patched against CVE-2025-8088 or removed across endpoints &mdash; Russia-linked Gamaredon is delivering nearly-fileless modular spyware via NTFS Alternate Data Streams in active Ukrainian campaigns, and spillover is plausible. <a href="#item-8" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> File the Acer Wave 7 router maximum-severity unauthenticated zero-days &mdash; no clients use Acer SOHO routers, but watch for similar router-firmware advisories on other consumer/SMB brands. <a href="#item-9" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-yellow">This Week</span> Monitor mailbox audit logs for slow-drip Outlook exfiltration patterns described in the stock-exchange exec espionage campaign (150 days of access via Dropbox/OneDrive uploads with rotating persistence) and apply the indicators to any high-value M365 account. <a href="#item-10" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-yellow">This Week</span> Push HP EliteBook BIOS updates that add the 2023 Microsoft Secure Boot CA before the June 9 Patch Tuesday rollover &mdash; verify EliteBook 840 G6 units are NOT on BIOS 01.15 (reported to hang during the rollout) before deploying. <a href="#item-11" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-yellow">This Week</span> Schedule Intel 2026.1 IPU BIOS/firmware updates for the Intel-based Dell PowerEdge fleet per advisories DSA-2026-027, DSA-2026-012, and DSA-2026-014 &mdash; coordinate with the DSA-2026-154 iDRAC9/10 window flagged yesterday. <a href="#item-12" class="detail-link">details</a></li>
+  <details class="section-overflow"><summary>Show 6 more actions</summary><ol class="action-list" start="4">
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Apply the May 12 Windows Netlogon patch (CVE-2026-41089) on every domain controller this week &mdash; the Centre for Cybersecurity Belgium confirms active exploitation of the stack-based buffer overflow for unauthenticated RCE against DCs. <a href="#item-4" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> Audit any recent npm installs across managed environments and rotate AWS/OpenAI/Anthropic/SSH keys if exposed &mdash; the IronWorm Rust infostealer compromised 36 packages, hides behind an eBPF rootkit, and self-propagates via stolen Trusted Publishing secrets. <a href="#item-5" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Verify Microsoft Defender is patched for CVE-2026-41091 (RedSun LPE) and CVE-2026-45498 (UnDefend blocks definition updates) &mdash; CISA set a June 3 KEV deadline and both are in active exploitation across the Nightmare-Eclipse zero-day series. <a href="#item-6" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> File the Exchange Server CVE-2026-42897 active-exploit warning &mdash; all clients are on Exchange Online (not affected), but flag any future migrations from Exchange 2016/2019/SE and watch for the June 9 Patch Tuesday fix. <a href="#item-7" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-yellow">This Week</span> Hunt for Hola Browser 1.251.91.0 installs and the hola_monitor_svc Windows service &mdash; Sophos X-Ops confirmed a supply-chain compromise that drops an XMRig Monero miner via a hidden HolaMonitorService.exe binary. <a href="#item-8" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-yellow">This Week</span> File the Magecart-via-Stripe campaign &mdash; attackers abuse Google Tag Manager containers and api.stripe.com to bypass CSP and exfiltrate Magento/Adobe Commerce checkout data, traced back to December 2025; no clients run e-commerce sites. <a href="#item-9" class="detail-link">details</a></li>
   </ol></details>
 </div>
 
 <div class="section-new">
   <h2>What's New</h2>
-  <p class="section-transparency">Showing 3 of 11</p>
+  <p class="section-transparency">Showing 3 of 4</p>
   <ul class="new-list">
-    <li><strong><a href="#item-13">Microsoft Entra tightens identity defaults, blocks hard-match attribute takeover</a></strong> -- Microsoft outlined Entra ID updates emphasizing passkey adoption and tightened defaults. Beginning June 1, 2026, hard-match operations from Entra Connect/Cloud Sync to cloud-managed users holding directory roles are blocked to prevent privilege takeover via AD attribute manipulation. Conditional Access policies targeting All resources will be enforced even when resource exclusions exist starting June 15, 2026. <a href="https://www.helpnetsecurity.com/2026/06/02/microsoft-entra-latest-security-updates/" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-14">Windows Autopatch auto-enrolls eligible Win11 to hotpatch channel June 15</a></strong> -- Windows Autopatch will automatically switch eligible Windows 11 Enterprise E3/E5 and Windows 365 Enterprise clients to the hotpatch update channel starting June 15, 2026. Hotpatching applies security fixes in-memory without reboot, cutting reboot burden by up to 50% for quality updates. <a href="https://windowsnews.ai/article/windows-june-2026-secure-boot-rollover-autopatch-hotpatching-intune-updates.421350" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-15">Intune becomes sole supported path for Windows Update for Business policy</a></strong> -- Microsoft Intune-based management becomes the only supported path for Windows Update for Business policy configuration, including driver and firmware updates now managed through the Driver updates for Windows blade in Intune. Admins gain individual driver approval granularity. <a href="https://learn.microsoft.com/en-us/intune/whats-new/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-10">Microsoft Entra June 2026 release adds passkey campaigns, device soft delete, and group sensitivity labels</a></strong> -- The June 2026 Entra release adds Passkey (FIDO2) support in Registration Campaigns to drive passwordless adoption, Device Soft Delete with recoverable retention, public preview of Microsoft Purview sensitivity labels on Entra cloud security groups, and Cross-Tenant Group Synchronization. Updated My Account portal pages also roll out automatically by end of June. <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/whats-new-in-microsoft-entra-june-2026/4517885" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-11">Microsoft 365 E3/E5 packaging bundles Intune Suite, Cloud PKI, and Defender for Office 365 P1</a></strong> -- Beginning June 2026 (with 30-day tenant notice), Microsoft is bundling Intune Remote Help, Intune Advanced Analytics, Intune Plan 2, Endpoint Privilege Management, Enterprise Application Management, Microsoft Cloud PKI, and Defender for Office 365 Plan 1 into M365 E3/E5. Rollout completes by August 1, 2026; pricing changes take effect July 1, 2026. <a href="https://www.microsoft.com/en-us/licensing/news/2026-M365-Packaging-Pricing-Updates" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-12">Atera bundles AI Copilot into every plan at no extra cost</a></strong> -- As of June 2026, every Atera plan now includes AI Copilot, a technician-facing AI assistant, at no additional cost. It helps techs resolve tickets faster, generate scripts, draft KB articles, and automate routine work. Bundling follows Atera's May announcement of an autonomy guarantee for its Robin agent. <a href="https://www.atera.com/roadmap/" target="_blank">Source &rarr;</a></li>
   </ul>
-  <details class="section-overflow"><summary>Show 8 more updates</summary><ul class="new-list">
-    <li><strong><a href="#item-16">M365 packaging adds Defender for Office 365 Plan 1 and +50GB Exchange storage</a></strong> -- Starting mid-June 2026, Microsoft 365, Office 365, and EMS suites receive Defender for Office 365 Plan 1 (Safe Links, Safe Attachments, URL time-of-click), additional Intune capabilities, and +50GB Exchange Online storage. Rollout completes August 1, 2026; built-in protection policies will be applied to all users by default. <a href="https://mc.merill.net/message/MC1304290" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-17">UniFi OS 5.1.15 ships UniFi Network 10.4.57 with IPv6 DNS and DHCP fixes</a></strong> -- Ubiquiti released UniFi OS 5.1.15 bundling UniFi Network 10.4.57. The update fixes a DNS failure when Content Filtering is enabled over IPv6 and resolves a WAN-IP acquisition failure when receiving malformed DHCP Option 3. Being rolled out gradually over a few days. <a href="https://community.ui.com/releases" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-18">KnowBe4 launches Messaging Security to extend threat detection to Teams chat</a></strong> -- KnowBe4 announced general availability in June 2026 of KnowBe4 Messaging Security, extending its email threat detection platform to Microsoft Teams chat. The company also released Prevent DLP rule builder and misdirected content analysis for outbound email protection. <a href="https://www.businesswire.com/news/home/20260528429866/en/KnowBe4-Unifies-Email-and-Chat-Security-by-Extending-High-Performance-Threat-Detection-to-Microsoft-Teams" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-19">Apple WWDC 2026 keynote June 8 unveils iOS 27, iPadOS 27, macOS 27 with revamped Siri</a></strong> -- Apple's WWDC 2026 keynote on June 8 (10am PT) will unveil iOS 27, iPadOS 27, macOS 27, watchOS 27, tvOS 27, and visionOS 27. Expected highlights include a redesigned Siri with Extensions, on-screen context awareness, a ChatGPT/Claude-style Siri chatbot, plus AI features in Health, Shortcuts, Safari, and Wallet. macOS 27 reportedly drops pre-M1 Mac support. First developer betas land immediately after the keynote. <a href="https://www.macrumors.com/roundup/wwdc/" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-20">Bluebeam Revu 21.10 ships with Autodesk 2027 plugin support</a></strong> -- Bluebeam shipped Revu 21.10 on June 2, 2026, adding Autodesk 2027 plugin support (AutoCAD, Revit, Navisworks), Connected Sessions Revit 2027 support, Studio Session Restoration for deleted sessions and files, expanded MCP workflows, Smart Review door checks, and localized QTO profiles for Spanish, Norwegian, and Polish. <a href="https://support.bluebeam.com/revu/resources/revu-21-release-notes.html" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-21">Anthropic ships Claude Opus 4.8 with dynamic workflows and a 3x cheaper fast mode</a></strong> -- Anthropic released Claude Opus 4.8 in late May 2026, adding a dynamic workflows feature to Claude Code for large-scale problem solving, effort control in claude.ai, and a fast mode that runs at 2.5x speed and is 3x cheaper than prior models. Anthropic also said Mythos-class models will reach all customers in the coming weeks. <a href="https://techcrunch.com/2026/05/28/anthropic-releases-opus-4-8-with-new-dynamic-workflow-tool/" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-22">Teams will auto-detect and label external meeting assistant bots</a></strong> -- Microsoft Teams will automatically detect and label external meeting assistant bots joining meetings, giving organizers controls to approve, deny, or remove them. A new admin policy governs bot handling, with detection enabled by default during the mid-May to mid-June 2026 rollout. <a href="https://learn.microsoft.com/en-us/officeupdates/teams-admin" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-23">Teams meeting recording expiration notification emails disabled June 1</a></strong> -- Microsoft disabled Teams meeting recording expiration notification emails for all M365 tenants on June 1, 2026 to reduce notification noise. Recording expiration and deletion behavior itself is unchanged; admins should communicate the change to end users. <a href="https://support.microsoft.com/en-us/office/what-s-new-in-microsoft-teams-d7092a6d-c896-424c-b362-a472d5f105de" target="_blank">Source &rarr;</a></li>
+  <details class="section-overflow"><summary>Show 1 more updates</summary><ul class="new-list">
+    <li><strong><a href="#item-13">Apple ships iOS 26.5.1 and macOS Tahoe 26.5.1 ahead of WWDC keynote</a></strong> -- On June 1 Apple issued iOS 26.5.1 and macOS Tahoe 26.5.1 with no published CVE entries, addressing iPhone 17 charging issues and M5 Mac shutdown problems. The release lands a week before the June 8 WWDC keynote that will preview iOS 27 and macOS 27. <a href="https://support.apple.com/en-us/100100" target="_blank">Source &rarr;</a></li>
   </ul></details>
 </div>
 
 <div class="section-security">
   <h2>Security &amp; Patches</h2>
-  <p class="section-transparency">Showing 3 of 8</p>
+  <p class="section-transparency"></p>
   <div class="security-cards">
-    <div class="security-card"><a href="#item-24" class="security-headline">CISA warns of cyberattacks targeting fuel tank monitoring systems</a><span class="urgency-yellow">This Week</span><span class="security-summary">CISA issued an advisory warning of active attacks against internet-exposed automatic tank gauge systems monitoring fuel storage across critical infrastructure.</span></div>
-    <div class="security-card"><a href="#item-25" class="security-headline">Chinese hackers use new Atlas RAT malware in European cyberattacks</a><span class="urgency-yellow">This Week</span><span class="security-summary">Chinese-speaking threat actors have broadened operations into Europe, deploying a previously undocumented RAT dubbed Atlas alongside other backdoor tooling.</span></div>
-    <div class="security-card"><a href="#item-26" class="security-headline">Dell PowerEdge 12G and 13G excluded from Secure Boot 2023 BIOS rollover</a><span class="urgency-yellow">This Week</span><span class="security-summary">Dell confirmed it will issue BIOS updates adding the 2023 Microsoft Secure Boot certificates for 14th, 15th, and 16th Generation PowerEdge platforms ahead of the June 2026 rollover.</span></div>
+    <div class="security-card"><a href="#item-14" class="security-headline">DoD AI cybersecurity framework status report to Congress due June 16, framework slated for CMMC/DFARS integration</a><span class="urgency-yellow">This Week</span><span class="security-summary">Under NDAA Section 1513, DoD must report to Congress by June 16, 2026 with an implementation plan and timeline for an AI/ML cybersecurity framework to be incorporated into CMMC and DFARS.</span></div>
   </div>
-  <details class="section-overflow"><summary>Show 5 more security items</summary><div class="security-cards">
-    <div class="security-card"><a href="#item-27" class="security-headline">Microsoft June 9 Patch Tuesday is final Secure Boot deployment window</a><span class="urgency-yellow">This Week</span><span class="security-summary">Microsoft's June 9, 2026 Patch Tuesday is the last opportunity to deploy Secure Boot certificate validation before the hard cutoff of June 26, 2026.</span></div>
-    <div class="security-card"><a href="#item-28" class="security-headline">Barracuda 2026 Email Threats Report flags AI social engineering and PhaaS growth</a><span class="urgency-green">FYI</span><span class="security-summary">Barracuda released its 2026 Email Threats Report on June 3, 2026, highlighting AI-powered social engineering and rapid growth of phishing-as-a-service as the dominant drivers of credential phishing at scale.</span></div>
-    <div class="security-card"><a href="#item-29" class="security-headline">CMMC Phase 2 mandatory C3PAO certification deadline November 10</a><span class="urgency-yellow">This Week</span><span class="security-summary">CMMC Phase 2 begins November 10, 2026, requiring third-party C3PAO certification for any new DoD contract involving CUI.</span></div>
-    <div class="security-card"><a href="#item-30" class="security-headline">US sanctions Iranian Nobitex crypto exchange used by ransomware operators</a><span class="urgency-green">FYI</span><span class="security-summary">The US Treasury sanctioned Iranian crypto exchange Nobitex for facilitating ransomware payouts.</span></div>
-    <div class="security-card"><a href="#item-31" class="security-headline">Russia FSB claims foreign spies infected officials' phones with malware</a><span class="urgency-green">FYI</span><span class="security-summary">Russia's FSB claimed foreign intelligence services planted malware on officials' phones for espionage without providing technical evidence or attribution.</span></div>
-  </div></details>
 </div>
 
 <div class="section-details">
   <h2>Details</h2>
   <details class="item" id="item-1">
     <summary class="item-header">
-      <span class="item-title">SonicWall Gen 7 TZ critical SonicOS flaws (SNWLID-2026-0004) &mdash; unauthenticated mgmt access</span>
+      <span class="item-title">Cisco Catalyst SD-WAN Manager zero-day CVE-2026-20245 exploited for root access</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>SonicWall disclosed three SonicOS flaws bundled as SNWLID-2026-0004 affecting Gen 7 TZ 270-670 running 7.0.1-5169 and prior, and 7.3.1-7013 and prior. CVE-2026-0204 (CVSS 8.0 HIGH) enables unauthenticated management interface access; the others allow path traversal and stack buffer overflow DoS. Patches are available; mitigations include disabling HTTP/HTTPS management and SSL-VPN until updated.</p>
-      <a href="https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0004" target="_blank" class="src">Source &rarr;</a>
+      <p>Cisco confirmed CVE-2026-20245 in the Catalyst SD-WAN Manager CLI is being actively exploited to escalate to root after attackers chain it with prior bugs CVE-2026-20182 or CVE-2026-20127 to gain netadmin access. No patches or workarounds are available and limited real-world cases pushed unauthorized configuration changes to SD-WAN edge devices. Restrict management plane access and audit administrative activity.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/new-cisco-sd-wan-flaw-exploited-in-zero-day-attacks-to-gain-root/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-2">
     <summary class="item-header">
-      <span class="item-title">Critical Kirki WordPress plugin flaw (CVE-2026-8206) under active exploitation</span>
+      <span class="item-title">VS Code zero-day steals GitHub OAuth tokens; Microsoft fix shipped June 3 after disclosure dispute</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>A CVSS 9.8 unauthenticated privilege escalation flaw in the Kirki WordPress plugin (versions 6.0.0 through 6.0.6) is being actively exploited, with Wordfence blocking 222+ attempts within 24 hours of disclosure. The flaw lets attackers abuse the password reset mechanism to hijack admin accounts on an estimated 150,000 vulnerable sites out of 500,000+ installations. SMB site owners should update immediately.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/critical-kirki-flaw-exploited-to-hijack-wordpress-admin-accounts/" target="_blank" class="src">Source &rarr;</a>
+      <p>Researcher Ammar Askar publicly dropped a VS Code zero-day after losing trust in Microsoft's disclosure process; a malicious extension can steal GitHub OAuth tokens via github.dev and obtain full read/write to private repos. Microsoft rolled out a fix on June 3, 2026; users should update VS Code and clear github.dev site data as mitigation.</p>
+      <a href="https://securityaffairs.com/193128/security/researcher-drops-a-new-vs-code-zero-day-after-losing-trust-in-microsofts-disclosure-process.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-3">
     <summary class="item-header">
-      <span class="item-title">Citrix ShareFile critical RCE chain (CVE-2026-2699) actively exploited</span>
+      <span class="item-title">CISA adds Android Framework integer overflow and Linux cgroups LPE to Known Exploited Vulnerabilities</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>Two critical ShareFile vulnerabilities, including CVE-2026-2699 (CVSS 9.8), can be chained for unauthenticated remote code execution on customer-managed Storage Zones Controllers. CISA has issued warnings as exploitation spikes; Citrix urges upgrade to v5.12.4 or any v6 version, which is unaffected.</p>
-      <a href="https://www.securityweek.com/exploitation-of-citrix-sharefile-vulnerability-spikes-as-cisa-issues-warning/" target="_blank" class="src">Source &rarr;</a>
+      <p>CISA added CVE-2025-48595 (Android Framework integer overflow affecting Android 14-16, fixed in June 2026 Android patches) and CVE-2022-0492 (Linux kernel cgroups privilege escalation enabling container escape) to its Known Exploited Vulnerabilities catalog after observing active exploitation. Federal agencies face patching deadlines; SMBs should prioritize Android mobile fleet updates and Linux container host patching.</p>
+      <a href="https://securityaffairs.com/193067/security/u-s-cisa-adds-android-and-linux-kernel-flaws-to-its-known-exploited-vulnerabilities-catalog.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-4">
     <summary class="item-header">
-      <span class="item-title">Cisco Unified CM CVE-2026-20230 patched as public PoC code emerges</span>
+      <span class="item-title">Windows Netlogon CVE-2026-41089 RCE actively exploited against domain controllers</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
+      <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>Cisco published CVE-2026-20230, an unauthenticated SSRF in Unified Communications Manager and Unified CM SME (CVSS 8.6 High, rated Critical by Cisco) that can be chained to write arbitrary files as root. Exploitation requires the WebDialer service to be enabled (off by default). Cisco warned a public PoC has emerged; patch immediately on affected UC clusters.</p>
-      <a href="https://securityaffairs.com/193142/hacking/critical-cisco-unified-cm-bug-patched-as-public-exploit-code-emerges.html" target="_blank" class="src">Source &rarr;</a>
+      <p>A stack-based buffer overflow in Windows Netlogon (CVE-2026-41089), originally disclosed in the May 12 Patch Tuesday, is now under active exploitation in the wild per the Centre for Cybersecurity Belgium. Attackers can send crafted network requests to domain controllers for remote code execution; any domain-joined Windows Server must be patched, with priority on internet-facing servers and DCs.</p>
+      <a href="https://www.helpnetsecurity.com/2026/06/01/windows-netlogon-rce-exploited-cve-2026-41089/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-5">
     <summary class="item-header">
-      <span class="item-title">Secure Boot dbx certificate hard deadline June 26 &mdash; Intune surfaces advisory</span>
+      <span class="item-title">IronWorm Rust infostealer compromises 36 npm packages with eBPF rootkit and self-propagation</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft is warning that devices failing to receive Secure Boot dbx certificate updates before June 26, 2026 face boot-level security failures or degraded security states. Intune's Security Recommendation dashboard now surfaces a Secure Boot Certificate Expiration advisory with a 14-day grace period before automatic remediation. Coordinate the rollout with the June 9 Patch Tuesday window.</p>
-      <a href="https://learn.microsoft.com/en-us/windows/release-health/windows-message-center" target="_blank" class="src">Source &rarr;</a>
+      <p>A new Rust-based infostealer called IronWorm has compromised 36 npm packages, hiding behind an eBPF kernel rootkit and communicating over Tor. It targets 86 env vars and 20 credential files including AWS, OpenAI, Anthropic, npm, SSH keys, and Exodus wallets, and self-propagates by abusing stolen npm Trusted Publishing secrets to publish trojanized package versions. Developers should upgrade fixed releases, rotate keys, and enable 2FA.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/new-ironworm-malware-hits-36-packages-in-npm-supply-chain-attack/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-6">
     <summary class="item-header">
-      <span class="item-title">FBI warns Kali365 phishing-as-a-service kit steals M365 OAuth tokens and bypasses MFA</span>
+      <span class="item-title">CISA KEV deadline June 3 for Microsoft Defender zero-days CVE-2026-41091 and CVE-2026-45498</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>The FBI's IC3 issued a PSA on Kali365, a Phishing-as-a-Service platform distributed via Telegram that captures Microsoft 365 OAuth access tokens and bypasses MFA without intercepting credentials. The kit provides AI-generated lures and real-time tracking dashboards, lowering the bar for less-technical attackers and likely to drive a wave of M365 token-theft incidents.</p>
-      <a href="https://www.ic3.gov/PSA/2026/PSA260521" target="_blank" class="src">Source &rarr;</a>
+      <p>CISA added CVE-2026-41091 (RedSun, Defender local privilege escalation) and CVE-2026-45498 (UnDefend, blocks Defender definition updates) to the Known Exploited Vulnerabilities catalog with a June 3, 2026 remediation deadline for federal agencies. Both flaws are part of the ongoing Nightmare-Eclipse zero-day series and are being exploited in the wild; SMBs running Windows endpoints should patch immediately.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/microsoft-warns-of-new-defender-zero-days-exploited-in-attacks/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-7">
     <summary class="item-header">
-      <span class="item-title">HTTP/2 Bomb (CVE-2026-49975) crashes NGINX, Apache, IIS, Envoy, Cloudflare Pingora in seconds</span>
+      <span class="item-title">Exchange Server spoofing flaw CVE-2026-42897 actively exploited ahead of June 9 Patch Tuesday</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>A new HTTP/2 Bomb attack combining HPACK compression bombing with Slowloris-style holds can exhaust server memory and take down default NGINX, Apache httpd, Microsoft IIS, Envoy, and Cloudflare Pingora deployments from a single 100 Mbps client. NGINX fixed it in April; Apache shipped a fix in late May as CVE-2026-49975; IIS, Envoy, and Pingora remain unpatched at disclosure. The technique affects an estimated 880,000+ sites.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/new-http-2-bomb-dos-attack-crashes-web-servers-in-under-a-minute/" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft confirmed in-the-wild exploitation of CVE-2026-42897, a critical spoofing vulnerability in Exchange Server 2016, 2019, and Subscription Edition. A fix is expected in the June 9, 2026 Patch Tuesday release; admins should monitor mailflow for spoofing indicators and prepare for emergency deployment. Exchange Online tenants are not directly affected.</p>
+      <a href="https://thehackernews.com/2026/02/microsoft-patches-59-vulnerabilities.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-8">
     <summary class="item-header">
-      <span class="item-title">Gamaredon abuses WinRAR CVE-2025-8088 in modular spy campaign on Ukrainian targets</span>
+      <span class="item-title">Hola Browser for Windows supply-chain compromise drops XMRig Monero miner</span>
       <span class="item-type type-security">security</span>
-      <span class="urgency-red">Act Today</span>
+      <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Russia-linked Gamaredon is actively exploiting WinRAR vulnerability CVE-2025-8088 to deliver nearly-fileless malware using NTFS Alternate Data Streams against Ukrainian targets. The campaign features modular components resolving command infrastructure through Telegram with sophisticated evasion. SMBs running unpatched WinRAR are at risk from broader campaign spillover.</p>
-      <a href="https://securityaffairs.com/193112/intelligence/gamaredon-uses-winrar-vulnerability-to-launch-modular-spy-campaign-on-ukrainian-targets.html" target="_blank" class="src">Source &rarr;</a>
+      <p>Sophos X-Ops found an undeclared me.exe in Hola Browser 1.251.91.0 that installs itself as C:\Program Files\Hola\HolaMonitorService.exe and registers the hola_monitor_svc Windows service to run XMRig Monero mining when idle. Hola confirmed the supply-chain compromise via Sygnia's investigation; no user data exfiltration was identified. Hunt for the binary and service across managed endpoints.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/hola-browser-for-windows-compromised-to-deliver-cryptominer/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-9">
     <summary class="item-header">
-      <span class="item-title">Acer Wave 7 routers hit by max-severity unauthenticated zero-days</span>
+      <span class="item-title">Magecart skimmer abuses Stripe API and Google Tag Manager to host stolen card data</span>
       <span class="item-type type-security">security</span>
-      <span class="urgency-red">Act Today</span>
+      <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Acer warned of maximum-severity zero-day vulnerabilities affecting Wave 7 routers that can be exploited by unauthenticated attackers. Customers using Acer-branded Wave 7 SOHO/SMB routers should review the advisory and apply firmware updates or mitigations as released.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/acer-warns-of-max-severity-zero-days-affecting-wave-7-routers/" target="_blank" class="src">Source &rarr;</a>
+      <p>Sansec researchers uncovered a Magecart campaign loading skimmer code via a Google Tag Manager container on Magento/Adobe Commerce checkout pages, then exfiltrating card numbers, CVV, billing, and contact data to api.stripe.com as fake customer records. Because both googletagmanager.com and api.stripe.com are implicitly trusted, the skimmer bypasses CSP and network filtering. Activity traces back to at least December 24, 2025.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/credit-card-theft-campaign-abuses-stripe-to-host-stolen-payment-info/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-10">
     <summary class="item-header">
-      <span class="item-title">Cyber espionage campaign targeted a stock exchange executive's Outlook account for 150 days</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
+      <span class="item-title">Microsoft Entra June 2026 release adds passkey campaigns, device soft delete, and group sensitivity labels</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
       <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Attackers maintained access to a stock exchange executive's mailbox for approximately 150 days, incrementally exfiltrating emails via Dropbox and OneDrive. The operation used legitimate tools, rotating persistence mechanisms, and avoided attribution linkage &mdash; a strong template for monitoring slow-drip Outlook exfiltration patterns in any high-value M365 mailbox.</p>
-      <a href="https://securityaffairs.com/193086/intelligence/cyber-espionage-campaign-targeted-stock-exchange-executives-outlook-account.html" target="_blank" class="src">Source &rarr;</a>
+      <p>The June 2026 Entra release adds Passkey (FIDO2) support in Registration Campaigns to drive passwordless adoption, Device Soft Delete with recoverable retention, public preview of Microsoft Purview sensitivity labels on Entra cloud security groups, and Cross-Tenant Group Synchronization. Updated My Account portal pages also roll out automatically by end of June. Plan tenant communications around the rollout.</p>
+      <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/whats-new-in-microsoft-entra-june-2026/4517885" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-11">
     <summary class="item-header">
-      <span class="item-title">Microsoft Secure Boot 2011 cert expiry: HP EliteBook needs BIOS update; 840 G6 BIOS 01.15 hang reported</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
+      <span class="item-title">Microsoft 365 E3/E5 packaging bundles Intune Suite, Cloud PKI, and Defender for Office 365 P1</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
       <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>The Microsoft Windows UEFI CA 2011 Secure Boot certificate expires on July 27, 2026, with Microsoft pushing the rollover via the June 9 Patch Tuesday. HP business PCs including EliteBook require firmware/BIOS updates first; HP EliteBook 840 G6 units on BIOS 01.15 are reported to hang on the rollout. Confirm minimum required BIOS versions from HP's guidance before applying the June update.</p>
-      <a href="https://support.hp.com/us-en/document/ish_13070353-13070429-16" target="_blank" class="src">Source &rarr;</a>
+      <p>Beginning June 2026 (with 30-day tenant notice), Microsoft is bundling Intune Remote Help, Intune Advanced Analytics, Intune Plan 2, Endpoint Privilege Management, Enterprise Application Management, Microsoft Cloud PKI, and Defender for Office 365 Plan 1 into M365 E3/E5. Rollout completes by August 1, 2026; pricing changes take effect July 1, 2026.</p>
+      <a href="https://www.microsoft.com/en-us/licensing/news/2026-M365-Packaging-Pricing-Updates" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-12">
     <summary class="item-header">
-      <span class="item-title">Dell DSA-2026-027 and DSA-2026-012 address Intel 2026.1 IPU vulnerabilities</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
+      <span class="item-title">Atera bundles AI Copilot into every plan at no extra cost</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>Dell published DSA-2026-027 and DSA-2026-012 covering Intel 2026.1 Platform Update (IPU) firmware vulnerabilities for Intel-based PowerEdge servers that could allow compromise of affected systems. DSA-2026-014 separately addresses additional Intel Server Firmware flaws. Coordinate with the DSA-2026-154 iDRAC9/10 window flagged yesterday.</p>
-      <a href="https://www.dell.com/support/kbdoc/en-us/000426748/dsa-2026-027-security-update-for-dell-poweredge-server-for-intel-2026-security-advisories-2026-1-ipu" target="_blank" class="src">Source &rarr;</a>
+      <p>As of June 2026, every Atera plan now includes AI Copilot, a technician-facing AI assistant, at no additional cost. It helps techs resolve tickets faster, generate scripts, draft KB articles, and automate routine work. Bundling follows Atera's May announcement of an autonomy guarantee for its Robin agent.</p>
+      <a href="https://www.atera.com/roadmap/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-13">
     <summary class="item-header">
-      <span class="item-title">Microsoft Entra tightens identity defaults, blocks hard-match attribute takeover</span>
+      <span class="item-title">Apple ships iOS 26.5.1 and macOS Tahoe 26.5.1 ahead of WWDC keynote</span>
       <span class="item-type type-feature">feature</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft outlined Entra ID updates emphasizing passkey adoption and tightened defaults. Beginning June 1, 2026, hard-match operations from Entra Connect/Cloud Sync to cloud-managed users holding directory roles are blocked to prevent privilege takeover via AD attribute manipulation. Conditional Access policies targeting All resources will be enforced even when resource exclusions exist starting June 15, 2026.</p>
-      <a href="https://www.helpnetsecurity.com/2026/06/02/microsoft-entra-latest-security-updates/" target="_blank" class="src">Source &rarr;</a>
+      <p>On June 1 Apple issued iOS 26.5.1 and macOS Tahoe 26.5.1 with no published CVE entries, addressing iPhone 17 charging issues and M5 Mac shutdown problems. The release lands a week before the June 8 WWDC keynote that will preview iOS 27 and macOS 27.</p>
+      <a href="https://support.apple.com/en-us/100100" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-14">
     <summary class="item-header">
-      <span class="item-title">Windows Autopatch auto-enrolls eligible Win11 to hotpatch channel June 15</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Windows Autopatch will automatically switch eligible Windows 11 Enterprise E3/E5 and Windows 365 Enterprise clients to the hotpatch update channel starting June 15, 2026. Hotpatching applies security fixes in-memory without reboot, cutting reboot burden by up to 50% for quality updates.</p>
-      <a href="https://windowsnews.ai/article/windows-june-2026-secure-boot-rollover-autopatch-hotpatching-intune-updates.421350" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-15">
-    <summary class="item-header">
-      <span class="item-title">Intune becomes sole supported path for Windows Update for Business policy</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Microsoft Intune-based management becomes the only supported path for Windows Update for Business policy configuration, including driver and firmware updates now managed through the Driver updates for Windows blade in Intune. Admins gain individual driver approval granularity, with WSUS/Group Policy paths sunsetting on the WUfB side.</p>
-      <a href="https://learn.microsoft.com/en-us/intune/whats-new/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-16">
-    <summary class="item-header">
-      <span class="item-title">M365 packaging update adds Defender for Office 365 Plan 1 and +50GB Exchange storage</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Starting mid-June 2026, Microsoft 365, Office 365, and EMS suites receive Defender for Office 365 Plan 1 (Safe Links, Safe Attachments, URL time-of-click), additional Intune capabilities, and +50GB Exchange Online storage. Rollout completes August 1, 2026; built-in protection policies will be applied to all users by default.</p>
-      <a href="https://mc.merill.net/message/MC1304290" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-17">
-    <summary class="item-header">
-      <span class="item-title">UniFi OS 5.1.15 ships UniFi Network 10.4.57 with IPv6 DNS and DHCP Option 3 fixes</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Ubiquiti released UniFi OS 5.1.15 bundling UniFi Network 10.4.57. The update fixes a DNS failure when Content Filtering is enabled over IPv6 and resolves a WAN-IP acquisition failure when receiving malformed DHCP Option 3. Rollout is gradual across all UniFi deployments on the 10.3+ branch.</p>
-      <a href="https://community.ui.com/releases" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-18">
-    <summary class="item-header">
-      <span class="item-title">KnowBe4 launches Messaging Security to extend threat detection to Microsoft Teams chat</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>KnowBe4 announced general availability in June 2026 of KnowBe4 Messaging Security, extending its email threat detection platform to Microsoft Teams chat. The company also released Prevent DLP rule builder and misdirected content analysis for outbound email protection &mdash; relevant for SMBs already on KnowBe4 PhishER/Defend.</p>
-      <a href="https://www.businesswire.com/news/home/20260528429866/en/KnowBe4-Unifies-Email-and-Chat-Security-by-Extending-High-Performance-Threat-Detection-to-Microsoft-Teams" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-19">
-    <summary class="item-header">
-      <span class="item-title">Apple WWDC 2026 keynote June 8 unveils iOS 27, iPadOS 27, macOS 27 with revamped Siri</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Apple's WWDC 2026 keynote on Monday June 8 at 10am PT will unveil iOS 27, iPadOS 27, macOS 27, watchOS 27, tvOS 27, and visionOS 27. Expected highlights include a redesigned Siri with Extensions, on-screen context awareness, a ChatGPT/Claude-style Siri chatbot, plus AI features in Health, Shortcuts, Safari, and Wallet. macOS 27 reportedly drops pre-M1 Mac support; first developer betas land immediately after the keynote.</p>
-      <a href="https://www.macrumors.com/roundup/wwdc/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-20">
-    <summary class="item-header">
-      <span class="item-title">Bluebeam Revu 21.10 ships with Autodesk 2027 plugin support and Studio session restoration</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Bluebeam shipped Revu 21.10 on June 2, 2026, adding Autodesk 2027 plugin support (AutoCAD, Revit, Navisworks), Connected Sessions Revit 2027 support, Studio Session Restoration for deleted sessions and files, expanded MCP workflows, Smart Review door checks, and localized QTO profiles for Spanish, Norwegian, and Polish. Construction-focused shops running Bluebeam alongside AutoCAD should plan a coordinated 2027 toolchain update.</p>
-      <a href="https://support.bluebeam.com/revu/resources/revu-21-release-notes.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-21">
-    <summary class="item-header">
-      <span class="item-title">Anthropic ships Claude Opus 4.8 with dynamic workflows and 3x cheaper fast mode</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Anthropic released Claude Opus 4.8 in late May 2026, adding a dynamic workflows feature to Claude Code for large-scale problem solving, effort control in claude.ai, and a fast mode that runs at 2.5x speed and is 3x cheaper than prior models. Anthropic also said Mythos-class models will reach all customers in the coming weeks &mdash; relevant for IT pros evaluating AI assistants and coding tools.</p>
-      <a href="https://techcrunch.com/2026/05/28/anthropic-releases-opus-4-8-with-new-dynamic-workflow-tool/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-22">
-    <summary class="item-header">
-      <span class="item-title">Teams will auto-detect and label external meeting assistant bots</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Microsoft Teams will automatically detect and label external meeting assistant bots joining meetings, giving organizers controls to approve, deny, or remove them. A new admin policy governs bot handling, with detection enabled by default during the mid-May to mid-June 2026 rollout.</p>
-      <a href="https://learn.microsoft.com/en-us/officeupdates/teams-admin" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-23">
-    <summary class="item-header">
-      <span class="item-title">Teams meeting recording expiration notification emails disabled June 1</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Microsoft disabled Teams meeting recording expiration notification emails for all M365 tenants on June 1, 2026 to reduce notification noise. Recording expiration and deletion behavior itself is unchanged; admins should communicate the change to end users.</p>
-      <a href="https://support.microsoft.com/en-us/office/what-s-new-in-microsoft-teams-d7092a6d-c896-424c-b362-a472d5f105de" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-24">
-    <summary class="item-header">
-      <span class="item-title">CISA warns of cyberattacks targeting fuel tank monitoring systems</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>CISA issued an advisory warning of active attacks against internet-exposed automatic tank gauge systems monitoring fuel storage across critical infrastructure sectors. SMBs in fuel and logistics should review ICS exposure and credential hygiene.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/cisa-warns-of-cyberattacks-targeting-fuel-tank-monitoring-systems/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-25">
-    <summary class="item-header">
-      <span class="item-title">Chinese hackers use new Atlas RAT malware in European cyberattacks</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Chinese-speaking threat actors have broadened operations into Europe, deploying a previously undocumented RAT dubbed Atlas alongside other backdoor tooling. The campaign focuses on Windows endpoints and persistent espionage access.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/chinese-hackers-use-new-atlas-rat-malware-in-european-cyberattacks/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-26">
-    <summary class="item-header">
-      <span class="item-title">Dell PowerEdge 12G and 13G excluded from Secure Boot 2023 BIOS rollover</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Dell confirmed it will issue BIOS updates adding the 2023 Microsoft Secure Boot certificates for 14th, 15th, and 16th Generation PowerEdge platforms ahead of the June 2026 rollover. 12th and 13th Generation servers will NOT receive updates due to end-of-service, leaving those fleets unable to continue Secure Boot after the cutover.</p>
-      <a href="https://www.dell.com/support/kbdoc/en-us/000362511/microsoft-secure-boot-2011-certificate-expiration-impact-on-dell-poweredge-servers" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-27">
-    <summary class="item-header">
-      <span class="item-title">Microsoft June 9 Patch Tuesday is final Secure Boot deployment window</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Microsoft's June 9, 2026 Patch Tuesday is the last opportunity to deploy security patches and complete Secure Boot certificate validation before the hard cutoff of June 26, 2026. SMB IT teams managing Windows fleets should plan rollout this week to avoid devices falling out of trust after the deadline.</p>
-      <a href="https://zecurit.com/endpoint-management/patch-tuesday/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-28">
-    <summary class="item-header">
-      <span class="item-title">Barracuda 2026 Email Threats Report flags AI social engineering and PhaaS growth</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Barracuda released its 2026 Email Threats Report on June 3, 2026, highlighting AI-powered social engineering and rapid growth of phishing-as-a-service as the dominant drivers of credential phishing at scale. The report informs email security posture and user-training priorities.</p>
-      <a href="https://www.barracuda.com/reports/2026-email-threats-report" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-29">
-    <summary class="item-header">
-      <span class="item-title">CMMC Phase 2 mandatory C3PAO certification deadline November 10 approaches</span>
+      <span class="item-title">DoD AI cybersecurity framework status report to Congress due June 16; framework slated for CMMC/DFARS</span>
       <span class="item-type type-industry">industry</span>
       <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>CMMC Phase 2 begins November 10, 2026, requiring third-party C3PAO certification for any new DoD contract involving CUI. About 100 authorized C3PAOs serve roughly 118,000 organizations needing Level 2 certification, and most assessors are booked through end of 2026, creating significant capacity pressure for the DIB &mdash; your construction client should already have an assessor slot reserved.</p>
-      <a href="https://www.preveil.com/blog/list-of-cmmc-contracts/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-30">
-    <summary class="item-header">
-      <span class="item-title">US sanctions Iranian Nobitex crypto exchange used by ransomware operators</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>The US Treasury sanctioned Iran's largest cryptocurrency exchange Nobitex for facilitating ransomware payouts. The action raises OFAC compliance considerations for any SMB evaluating a ransom payment, but requires no direct technical mitigation.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/the-us-sanctions-nobitex-crypto-exchange-used-by-ransomware/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-31">
-    <summary class="item-header">
-      <span class="item-title">Russia FSB claims foreign spies infected officials' phones with malware</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 6/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Russia's FSB claimed foreign intelligence services planted malware on officials' phones for espionage without providing technical evidence or attribution. The announcement is FYI-level signal on ongoing mobile espionage tooling without SMB action items.</p>
-      <a href="https://securityaffairs.com/193076/security/russias-fsb-says-foreign-spies-infected-officials-phones-with-malware.html" target="_blank" class="src">Source &rarr;</a>
+      <p>Under NDAA Section 1513, DoD must report to Congress by June 16, 2026 with an implementation plan and timeline for an AI/ML cybersecurity framework to be incorporated into CMMC and DFARS. DIB contractors handling AI workloads should monitor the report for forthcoming compliance requirements and begin preparing for Revision 3 alignment of NIST SP 800-171 in future rulemaking.</p>
+      <a href="https://www.crowell.com/en/insights/client-alerts/cmmc-for-ai-defense-policy-law-imposes-ai-security-framework-and-requirements-on-contractors" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 </div>
 
-<div class="footer">Generated Thursday, June 4, 2026 at 6:42 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-06-04.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
+<div class="footer">Generated Friday, June 5, 2026 at 6:45 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-06-05.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
 
 </main>
 </body>
