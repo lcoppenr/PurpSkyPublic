@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<title>Morning Briefing -- Monday, June 15, 2026</title>
+<title>Morning Briefing -- Tuesday, June 16, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -14,390 +14,315 @@
 <main class="briefing-content">
 
 <div class="page-header">
-  <h1>Morning Briefing -- Monday, June 15, 2026</h1>
+  <h1>Morning Briefing -- Tuesday, June 16, 2026</h1>
   <p class="page-meta">Microsoft &bull; Security &amp; Compliance &bull; Firewall / VPN / Networking &bull; Servers/NAS &bull; Workstations &amp; Mobile &bull; Peripherals &amp; AV &bull; RMM &amp; Remote Access &bull; Construction &amp; Specialty Software &bull; General Tech &amp; AI &bull; Pacific Time</p>
 </div>
 
 <div class="section-actions">
-  <h2>Today&#39;s Actions</h2>
-  <p class="section-transparency">Showing 3 of 14</p>
+  <h2>Today's Actions</h2>
+  <p class="section-transparency">Showing 3 of 9</p>
   <ol class="action-list">
-    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Brief your construction and small-business clients on the new Microsoft 365 Copilot &ldquo;SearchLeak&rdquo; chain &mdash; a single malicious URL can drain mailboxes, OneDrive, and SharePoint via Copilot Enterprise; warn users on URL handling until Microsoft&#39;s mitigation lands. <a href="#item-1" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Roll the June 2026 Patch Tuesday cumulative (KB5094126) across all client Windows endpoints and servers this week &mdash; six zero-days are fixed, including CVE-2026-45657, a CVSS 9.8 unauthenticated Windows Kernel RCE on Windows 11 23H2&ndash;26H1 and Server 2022/2025. <a href="#item-2" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Prioritize the June 2026 RDP cumulative on your construction client&#39;s RDP Gateway hosts &mdash; CVE-2026-42908 is an unauthenticated out-of-bounds read leaking data over a bare RDP socket, with RDP client RCEs CVE-2026-42909/42913 alongside. <a href="#item-3" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Alert IT teams at your construction and small-business clients to inspect Microsoft Teams relay traffic for anomalies &mdash; DragonForce ransomware is hiding command-and-control inside Teams relay systems via a custom 'Backdoor.Turn' implant. <a href="#item-1" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> File the CISA KEV addition of CVE-2026-54420 (LiteSpeed cPanel plugin) and CVE-2026-20262 (Cisco Catalyst SD-WAN) &mdash; neither runs at any of your clients, but federal remediation deadlines and confirmed in-the-wild exploitation make these worth tracking. <a href="#item-2" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> File the Palo Alto Networks PAN-OS GlobalProtect VPN bypass advisory (CVE-2026-0257) &mdash; no client runs Palo Alto, but active exploitation against pre-auth VPN cookies reinforces VPN-cookie monitoring as a general SMB practice. <a href="#item-3" class="detail-link">details</a></li>
   </ol>
-  <details class="section-overflow"><summary>Show 11 more actions</summary><ol class="action-list" start="4">
-    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Notify any client or internal users relying on Claude Fable 5 or Mythos 5 &mdash; Anthropic disabled both models worldwide on June 12 under a US export-control directive; fail over to Opus 4.8 or earlier tiers. <a href="#item-4" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Confirm BitLocker Security Feature Bypass CVE-2026-50507 is included in the June cumulative push on all encrypted laptops at your construction and small-business clients &mdash; local attackers can otherwise reach encrypted drives on lost or stolen devices. <a href="#item-5" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Push a phishing-awareness note through KnowBe4 to your construction client warning end users about the Browser-in-the-Browser fake Microsoft 365 sign-in popup &mdash; and verify phishing-resistant MFA (passkeys/hardware keys) is enforced where possible. <a href="#item-6" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> File the CISA KEV addition of CVE-2026-35273 in Oracle PeopleSoft PeopleTools &mdash; no client runs PeopleSoft, but it&#39;s an active ShinyHunters zero-day with CVSS 9.8 carrying a federal remediation deadline. <a href="#item-7" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Stage UniFi OS Server 5.0.8+ on your construction client&#39;s UniFi controllers per Ubiquiti Bulletin 064 &mdash; CVE-2026-33000 is a critical command injection in UniFi OS Server &lt;=5.0.6, plus path traversal CVE-2026-47367 (CVSS 9.9) in UID Enterprise Agent. <a href="#item-8" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> Confirm none of your clients run the affected WordPress plugins (OptinMonster, TrustPulse, PushEngage) &mdash; Awesome Motive&#39;s CDN was compromised, pushing malicious JavaScript to millions of installs. <a href="#item-9" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Hold off on HP April 2026 commercial BIOS updates across any client EliteBook/ProBook/ZBook fleets until HP&#39;s revised package ships &mdash; the original push is still triggering BitLocker recovery loops by clearing TPM key storage. <a href="#item-10" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Audit Windows UEFI Secure Boot 2023 CA replacement status across your construction and small-business client fleets &mdash; the 2011 UEFI CA and KEK CA expire this month, after which Secure Boot devices stop receiving boot-level updates. <a href="#item-11" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-yellow">This Week</span> Schedule BIOS/iDRAC firmware updates on any Intel-based PowerEdge servers per Dell DSA-2026-027/012/014 this week &mdash; Intel 2026.1 IPU advisories cover multiple PowerEdge generations including R660/R760/R860/R960. <a href="#item-12" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-yellow">This Week</span> File the FBI takedown of Outsider Enterprise phishing-as-a-service and refresh Barracuda IOC feeds at your construction client with Google&#39;s published indicators &mdash; the operation generated roughly one million AI-built attacker URLs. <a href="#item-13" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-yellow">This Week</span> Stage Autodesk Shared Components 2026.6 on AutoCAD 2026 workstations at your construction client &mdash; adsk-sa-2026-0004 covers CVE-2026-0874, an out-of-bounds write triggered by malicious CATPART files. <a href="#item-14" class="detail-link">details</a></li>
+  <details class="section-overflow"><summary>Show 6 more actions</summary><ol class="action-list" start="4">
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> File the Check Point Remote Access VPN zero-day (CVE-2026-50751, CVSS 9.3) &mdash; no client uses Check Point, but Qilin-affiliated exploitation of legacy IKEv1 is a reminder to audit any deprecated VPN protocols in client edge configs. <a href="#item-4" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> Confirm no client web-hosting environment runs the LiteSpeed cPanel plugin (CVE-2026-54420) &mdash; CISA gave federal agencies three days to remediate after confirming active in-the-wild exploitation. <a href="#item-5" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-yellow">This Week</span> Add SprySOCKS Windows IOCs to your construction and small-business clients' detection rules &mdash; the previously Linux-only backdoor has been ported to Windows, and the SOCKS proxy + interactive shell pattern is broadly applicable to threat hunting. <a href="#item-6" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-yellow">This Week</span> Stage Autodesk Shared Components 2026.6 on AutoCAD 2026 workstations at your construction client &mdash; adsk-sa-2026-0005 covers CVE-2026-0875, an out-of-bounds write triggered by malicious MODEL files, distinct from yesterday's CATPART advisory. <a href="#item-7" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-yellow">This Week</span> File the Mandiant UNC6508 report &mdash; the China-linked actor sat inside medical-research networks for two years using the INFINITERED backdoor; no client matches the target profile, but the long-window detection lesson applies broadly. <a href="#item-8" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-yellow">This Week</span> Confirm none of your clients run on-prem Exchange Server or Exchange Management Tools workstations &mdash; the June 2026 Exchange Server SU has shipped, but all client mailboxes ride Exchange Online and are already protected. <a href="#item-9" class="detail-link">details</a></li>
   </ol></details>
 </div>
 
 <div class="section-new">
-  <h2>What&#39;s New</h2>
-  <p class="section-transparency">Showing 3 of 10</p>
+  <h2>What's New</h2>
+  <p class="section-transparency">Showing 3 of 8</p>
   <ul class="new-list">
-    <li><strong><a href="#item-15">Windows 11 KB5094126 cumulative update ships June 2026 Patch Tuesday with new Shared Audio and NPU monitoring</a></strong> -- KB5094126 ships the June 2026 Patch Tuesday fixes to Windows 11 25H2 (build 26200.8655) and 24H2 (build 26100.8655), including the BitLocker bypass fix via the Windows Recovery Environment. New features include Shared Audio support, low-latency performance mode, camera enhancements, improved Windows Search, expanded NPU monitoring, and Windows Hello optimizations. <a href="https://support.microsoft.com/en-us/topic/june-9-2026-kb5094126-os-builds-26200-8655-and-26100-8655-1a9bcba6-5f53-4075-8156-fe11ac631737" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-16">Microsoft Entra June 2026 expands Security Operator role, blocks AD hard-match, adds Linux MFA</a></strong> -- Microsoft extended the Entra Security Operator role so SOC analysts can disable users, revoke sessions, mark users as compromised, force password resets, and delete authentication methods directly from Defender unified RBAC. Beginning June 1, Entra Connect Sync/Cloud Sync blocks hard-matching new AD users to existing cloud Entra users that hold Entra roles. Phishing-resistant MFA is now available on Linux desktops (Ubuntu 24.04/26.04, RHEL 8/9/10). <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/whats-new-in-microsoft-entra-june-2026/4517885" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-17">KnowBe4 launches Messaging Security for Microsoft Teams and Prevent DLP rule builder</a></strong> -- KnowBe4 announced general availability in June 2026 of Messaging Security for Microsoft Teams, extending its email threat detection to Teams chat, plus a new Prevent DLP rule builder and misdirected-content analysis aimed at SMBs without premium licensing add-ons. Both are positioned to unify chat and email defense within the KnowBe4 platform &mdash; relevant for your construction client&#39;s existing KnowBe4 deployment. <a href="https://www.businesswire.com/news/home/20260528429866/en/KnowBe4-Unifies-Email-and-Chat-Security-by-Extending-High-Performance-Threat-Detection-to-Microsoft-Teams" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-10">Windows 11 June 2026 update begins auto-delivery of 2023 Secure Boot certificates</a></strong> -- The June 2026 cumulative for Windows 11 (KB5094126, builds 26200.8655 and 26100.8655) is now auto-rolling the 2023 Secure Boot certificates to eligible devices ahead of the 2011 UEFI CA expiry this month. IT teams should verify firmware compatibility and watch for devices that fail the certificate update before expiry &mdash; particularly EliteBook fleets still on the regressed April HP BIOS package. <a href="https://www.windowslatest.com/2026/06/11/all-major-features-in-windows-11-june-2026-patch-tuesday-update/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-11">Synology DSM 7.4-90075 ships in today's global rollout with security fix and third-party SSD cache block</a></strong> -- Synology released DSM 7.4-90075 today (June 16, 2026) as the global rolling release begins, addressing a security vulnerability plus multiple stability issues. As of today, all third-party SSDs (including those on the compatibility list) can no longer be used to create SSD cache and are limited to SSD storage pools. Your hospitality client's DS723+ falls within the supported x20-generation range, but cache-pool dependencies should be reviewed before upgrading from deployed 7.3.2. <a href="https://mariushosting.com/synology-dsm-7-4-90075-released/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-12">Microsoft Entra SSPR will only accept registered authentication methods starting September 7</a></strong> -- Microsoft is tightening Self-Service Password Reset so only explicitly registered authentication methods qualify &mdash; directory-stored phone or email properties will no longer be accepted. A registration campaign begins July 6, 2026 and enforcement starts September 7, 2026. Drive users at your construction client through SSPR re-registration over the summer to avoid lockouts. <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/microsoft-entra-id-security-updates-what-organizations-need-to-do-now/4522024" target="_blank">Source &rarr;</a></li>
   </ul>
-  <details class="section-overflow"><summary>Show 7 more updates</summary><ul class="new-list">
-    <li><strong><a href="#item-18">Apple WWDC 2026 unveils iOS 27, iPadOS 27, macOS 27 &quot;Golden Gate&quot; with conversational Siri</a></strong> -- At WWDC 2026 (June 8-12), Apple introduced iOS 27, iPadOS 27, macOS 27 &quot;Golden Gate,&quot; watchOS 27, visionOS 27, and tvOS 27. iOS 27 is described as a &quot;Snow Leopard-style&quot; performance release with up to 30% faster app launches and 70% quicker photo loading. A dedicated Siri app with conversation history sync and expanded Apple Intelligence features were also unveiled. Developer betas are out now; public release expected this fall. <a href="https://www.apple.com/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more/" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-19">Synology DSM 7.4 rolling release begins June 16 &mdash; review compatibility before upgrading from deployed 7.3.2</a></strong> -- Synology confirmed DSM 7.4 begins its rolling global release tomorrow (June 16, 2026) for new and manual installs, with regional automatic upgrades completing by August 18. Notable change: third-party SSDs (listed or unlisted) can no longer create SSD cache after June 16. DSM 7.4 will not support devices older than the x20 generation; verify your hospitality client&#39;s DS723+ falls within the supported range. <a href="https://www.blackvoid.club/synology-dsm-7-4-and-ai-future/" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-20">Bluebeam Revu 21.10 ships with Autodesk 2027 plugin support and MCP workflow expansions</a></strong> -- Bluebeam released Revu 21.10 on June 2, 2026, adding Autodesk 2027 plugin support for AutoCAD, Revit, and Navisworks, plus Connected Sessions with Revit 2027 support. The release also expands MCP workflows with targeted search and markup editing, introduces Studio Session Restoration for hosts, refreshes the User Account experience, and adds localized QTO/worksite planning profiles for Spanish, Norwegian, and Polish. Relevant for your construction client&#39;s Bluebeam users. <a href="https://support.bluebeam.com/release-notes-all.html" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-21">Anthropic ships Claude Opus 4.8 with Dynamic Workflows in Claude Code and effort control</a></strong> -- Anthropic released Claude Opus 4.8, which took the #1 spot on the Artificial Analysis Intelligence Index, alongside Dynamic Workflows (hundreds of parallel subagents inside Claude Code), effort control across all claude.ai plans, and a Messages API update. With Fable 5/Mythos 5 suspended, Opus 4.8 is currently Anthropic&#39;s top accessible model and a viable replacement tier for MSP automation and agentic workflows. <a href="https://releasebot.io/updates/anthropic" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-22">Atera June 2026 adds credential-prompt Network Discovery, AI ticket flow breakdown, child tickets</a></strong> -- Atera&#39;s June 2026 platform update expands Network Discovery so technicians can request admin or domain credentials from end-users when initiating a scan, and adds agent deployment for workgroup environments. The AI Center gains a Ticket Flow Breakdown that maps a ticket&#39;s full journey from intake channel to outcome, and ticket-automation rules can now spawn child tickets automatically &mdash; useful for onboarding and recurring processes. <a href="https://support.atera.com/hc/en-us/articles/25381421604124-Release-Notes-2026" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-23">Microsoft Intune June 2026 expands Remote Help, Advanced Analytics, Plan 2 at no added cost</a></strong> -- Microsoft began rolling out expanded Intune capabilities in June 2026 at no additional cost to many plans, including Intune Remote Help, Advanced Analytics, Plan 2, Privilege Management, and Application Management; rollout completes by August 1. ESR (Enterprise State Roaming) policies move out of the Entra portal into Intune by end of June &mdash; worth checking for both your construction client (hybrid Entra/Intune) and your small-business client&#39;s in-progress Intune enrollment. <a href="https://learn.microsoft.com/en-us/intune/whats-new/" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-24">Microsoft Teams June 2026: redesigned toolbar, 1,000-attendee breakout rooms, External Domains Anomalies Report</a></strong> -- June 2026 Teams updates include a redesigned meeting toolbar with customizable controls and a relocated Leave button, breakout rooms supporting up to 1,000 attendees, organizer-controlled access to recordings/transcripts/AI summaries, a new Efficiency Mode reducing resource usage on constrained hardware, and an External Domains Anomalies Report for admins to surface risky external interactions. <a href="https://techcommunity.microsoft.com/blog/microsoftteamsblog/what%E2%80%99s-new-in-microsoft-teams--march-2026/4506985" target="_blank">Source &rarr;</a></li>
+  <details class="section-overflow"><summary>Show 5 more updates</summary><ul class="new-list">
+    <li><strong><a href="#item-13">Synced passkeys reach GA in Entra ID, tenant capacity raised from 3 to 10 profiles</a></strong> -- Synced passkeys are now generally available in Microsoft Entra, and the per-user passkey profile limit went from 3 to 10. Combined with the refreshed My Account portal and Devices page that surfaces BitLocker recovery keys, this simplifies passwordless rollouts and end-user self-service &mdash; relevant for both your construction and small-business clients' Entra environments. <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/whats-new-in-microsoft-entra-june-2026/4517885" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-14">Microsoft Defender adds Agent 365 asset context mapping in public preview</a></strong> -- Microsoft Defender now provides asset context mapping for AI agents, including the devices they run on, configured MCP servers, associated identities, and reachable cloud resources. Policy-based controls plus runtime blocking and alerts are available through Intune and Defender in public preview from June 2026, giving SMBs early levers to govern agentic AI exposure. <a href="https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-15">Microsoft Teams adds organizer self-service deletion of meeting recap content</a></strong> -- Meeting organizers can now permanently delete meeting-generated content (recordings, transcripts, AI summaries, meeting notes) directly from the Recap page; files shared in the meeting are unaffected. The control simplifies data-minimization workflows for compliance-conscious SMBs &mdash; useful for your construction client's CMMC Level 2 work. <a href="https://releasebot.io/updates/microsoft/microsoft-teams" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-16">Microsoft Teams introduces AI meeting recap without recording or transcript</a></strong> -- Teams is rolling out an AI-powered meeting recap for Copilot users that produces a recap without saving a recording or transcript, configurable by the organizer before or during the meeting. The capability addresses recording-policy concerns while preserving Copilot value, and pairs with a new video recap clipped to highlights. <a href="https://www.shu.edu/technology/news/m365-june-2026-updates.html" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-17">Apple ships iOS 26.5.1 / iPadOS 26.5.1 / macOS Tahoe 26.5.1 pre-WWDC patches</a></strong> -- Apple released iOS 26.5.1, iPadOS 26.5.1, and macOS Tahoe 26.5.1 ahead of WWDC to fix iPhone 17 charging issues and M5 Mac unexpected shutdowns. The point releases are the current shipping versions for fleet devices and supersede the 26.5 baseline pushed in May, which patched 60+ CVEs across WebKit and the kernel. <a href="https://www.macrumors.com/2026/05/11/apple-releases-ios-26-5/" target="_blank">Source &rarr;</a></li>
   </ul></details>
 </div>
 
 <div class="section-security">
   <h2>Security &amp; Patches</h2>
+  <p class="section-transparency">Showing 3 of 4</p>
   <div class="security-cards">
-    <div class="security-card"><a href="#item-25" class="security-headline">&quot;The Gentlemen&quot; ransomware crew scales to 483 victims with infostealers and 90% affiliate cut</a><span class="urgency-yellow">This Week</span><span class="security-summary">The Gentlemen ransomware crew has claimed 483 victims across 66 countries, fueled by infostealer-driven access, AI-assisted intrusion tooling, and a 90% affiliate revenue cut that draws affiliates from LockBit, Qilin, and Medusa.</span></div>
-    <div class="security-card"><a href="#item-26" class="security-headline">Iran-linked Handala group breaches California Water Service, exposing 2M customer records</a><span class="urgency-yellow">This Week</span><span class="security-summary">Iran-linked Handala group breached California Water Service and exfiltrated billing data on roughly 2 million customers, claiming it could have caused operational damage.</span></div>
-    <div class="security-card"><a href="#item-27" class="security-headline">Infinite Campus breach exposes 137,000 K-12 staff accounts via Salesforce attack chain</a><span class="urgency-yellow">This Week</span><span class="security-summary">Student information system vendor Infinite Campus disclosed a breach tied to the ShinyHunters Salesforce-targeted intrusion campaign, affecting roughly 137,000 school staff accounts.</span></div>
+    <div class="security-card"><a href="#item-18" class="security-headline">iRhythm discloses data breach exposing cardiac-monitoring patient information</a><span class="urgency-yellow">This Week</span><span class="security-summary">Digital healthcare company iRhythm Holdings disclosed a data breach after attackers stole patients' personal and health information.</span></div>
+    <div class="security-card"><a href="#item-19" class="security-headline">Novo Nordisk confirms data theft, details scope of attacker access</a><span class="urgency-green">FYI</span><span class="security-summary">Pharmaceutical giant Novo Nordisk confirmed attackers stole specific data sets while ruling out access to clinical trial systems.</span></div>
+    <div class="security-card"><a href="#item-20" class="security-headline">Mackay Sugar discloses cyber incident attributed to Gentlemen ransomware</a><span class="urgency-green">FYI</span><span class="security-summary">Australian sugar producer Mackay Sugar reported a cyber incident attributed to the Gentlemen ransomware group, which posted the victim on its dark-web leak site on June 15.</span></div>
   </div>
+  <details class="section-overflow"><summary>Show 1 more security item</summary><div class="security-cards">
+    <div class="security-card"><a href="#item-21" class="security-headline">Anthropic-Trump administration talks on Claude Fable 5 reach no resolution at June 15 meeting</a><span class="urgency-green">FYI</span><span class="security-summary">Anthropic senior leaders met with Trump administration officials on June 15, 2026 but reached no resolution on disagreements over the risk profile of Claude Fable 5.</span></div>
+  </div></details>
 </div>
 
 <div class="section-details">
   <h2>Details</h2>
   <details class="item" id="item-1">
     <summary class="item-header">
-      <span class="item-title">SearchLeak attack turns Microsoft 365 Copilot into 1-click data theft tool</span>
+      <span class="item-title">DragonForce ransomware abuses Microsoft Teams relays to hide command-and-control</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>A newly disclosed vulnerability chain in Microsoft 365 Copilot Enterprise lets an attacker exfiltrate data from a victim&#39;s mailbox, OneDrive, and connected SharePoint Online content via a single malicious URL. The chain abuses Copilot&#39;s search and rendering pipeline. Defenders should review Copilot exposure, audit recent Copilot prompts/logs, and monitor Microsoft&#39;s mitigation guidance.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/new-attack-turned-microsoft-365-copilot-into-1-click-data-theft-tool/" target="_blank" class="src">Source &rarr;</a>
+      <p>DragonForce ransomware operators are abusing Microsoft Teams relay infrastructure to mask command-and-control communications as legitimate Teams traffic, bypassing perimeter defenses that whitelist Microsoft services. The custom implant is named 'Backdoor.Turn'. Defenders should inspect Teams traffic anomalies and tighten endpoint controls.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/ransomware-gang-abuses-microsoft-teams-relays-to-hide-malicious-traffic/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-2">
     <summary class="item-header">
-      <span class="item-title">Microsoft June 2026 Patch Tuesday fixes 6 zero-days and ~200 flaws including wormable kernel RCE</span>
+      <span class="item-title">CISA adds LiteSpeed cPanel (CVE-2026-54420) and Cisco Catalyst SD-WAN (CVE-2026-20262) to KEV catalog</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft&#39;s June 2026 Patch Tuesday addresses around 200 vulnerabilities including six zero-days (five publicly disclosed, one exploited). CVE-2026-45657 is a critical CVSS 9.8 unauthenticated Windows Kernel RCE affecting Windows 11 23H2&ndash;26H1 and Windows Server 2022/2025, requiring no user interaction. Patch immediately.</p>
-      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-june-2026-patch-tuesday-fixes-6-zero-days-200-flaws/" target="_blank" class="src">Source &rarr;</a>
+      <p>CISA added two actively exploited vulnerabilities to its Known Exploited Vulnerabilities catalog on June 16: CVE-2026-54420 in the LiteSpeed cPanel plugin and CVE-2026-20262 in Cisco Catalyst SD-WAN. Federal agencies must remediate per BOD 22-01 deadlines; SMBs running either should patch immediately as exploitation is confirmed in the wild.</p>
+      <a href="https://securityaffairs.com/193684/security/u-s-cisa-adds-cisco-catalyst-and-litespeed-cpanel-plugin-flaws-to-its-known-exploited-vulnerabilities-catalog.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-3">
     <summary class="item-header">
-      <span class="item-title">June 2026 Patch Tuesday RDP cumulative &mdash; CVE-2026-42908 unauthenticated info disclosure plus client RCEs</span>
+      <span class="item-title">Palo Alto PAN-OS GlobalProtect VPN bypass CVE-2026-0257 under active exploitation</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft&#39;s June 9, 2026 Patch Tuesday addressed several RDP flaws, most notably CVE-2026-42908, an unauthenticated out-of-bounds read in Windows Remote Desktop Services that leaks sensitive data over a bare RDP socket with no handshake required. CVE-2026-42909 and CVE-2026-42913 are RDP client RCEs (the latter rated high severity on Windows 11, Server 2022, and Server 2025). Prioritize patching internet-facing hosts and RDP Gateway servers immediately.</p>
-      <a href="https://msrc.microsoft.com/update-guide/en-US/advisory/CVE-2026-42908" target="_blank" class="src">Source &rarr;</a>
+      <p>Palo Alto Networks confirmed active exploitation of CVE-2026-0257, an authentication bypass in GlobalProtect allowing attackers to forge VPN cookies and establish unauthorized connections without credentials. Organizations running PAN-OS firewalls should apply the vendor's mitigations and patches immediately and audit VPN logs for anomalous access.</p>
+      <a href="https://securityaffairs.com/193638/security/palo-alto-warns-of-exploitation-of-vpn-bypass-exploits-cve-2026-0257-in-pan-os-flaw.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-4">
     <summary class="item-header">
-      <span class="item-title">Anthropic suspends Claude Fable 5 and Mythos 5 globally under US export-control directive</span>
-      <span class="item-type type-industry">industry</span>
+      <span class="item-title">Check Point Remote Access VPN zero-day CVE-2026-50751 (CVSS 9.3) actively exploited via IKEv1</span>
+      <span class="item-type type-security">security</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>At 5:21 p.m. ET on June 12, 2026, Anthropic disabled Claude Fable 5 and Mythos 5 worldwide to comply with a legally binding US export-control directive from Commerce Secretary Howard Lutnick that bars foreign-national access to either model. The two models had launched only three days earlier on June 9. Anthropic cited the technical impossibility of real-time nationality filtering across cloud platforms and enforced a universal shutdown; the trigger was a government-flagged jailbreak. IT teams relying on Fable 5/Mythos 5 via API or claude.ai must fail over to Opus 4.8 or earlier tiers.</p>
-      <a href="https://www.anthropic.com/news/fable-mythos-access" target="_blank" class="src">Source &rarr;</a>
+      <p>Check Point disclosed active exploitation of CVE-2026-50751, a critical 9.3 CVSS pre-authentication bypass affecting Remote Access VPN and Mobile Access deployments still using the deprecated IKEv1 protocol. A few dozen organizations have been hit globally, with at least one case attributed to a Qilin ransomware affiliate. MSPs should audit edge appliances and disable IKEv1 immediately.</p>
+      <a href="https://substack.cpf-coaching.com/p/this-weeks-smb-risk-signals-a-vpn" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-5">
     <summary class="item-header">
-      <span class="item-title">Windows BitLocker Security Feature Bypass CVE-2026-50507 patched in June 2026</span>
+      <span class="item-title">CISA warns of actively exploited LiteSpeed cPanel plugin flaw (CVE-2026-54420)</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>CVE-2026-50507 is a Windows BitLocker Security Feature Bypass that allows local attackers to access encrypted drives, addressed in the June 2026 Patch Tuesday release. Particularly relevant for laptops and lost/stolen device scenarios; pair with KB5094126 deployment to close the gap.</p>
-      <a href="https://www.tenable.com/blog/microsofts-june-2026-patch-tuesday-addresses-198-cves-cve-2026-49160-cve-2026-50507" target="_blank" class="src">Source &rarr;</a>
+      <p>CISA issued a fresh advisory for CVE-2026-54420 in the LiteSpeed cPanel user-end plugin and gave federal agencies three days to remediate, confirming active in-the-wild exploitation against shared-hosting environments. MSPs and SMBs using cPanel-managed servers must patch or disable the affected plugin to prevent webshell deployment and lateral compromise.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/cisa-warns-of-another-actively-exploited-cpanel-plugin-flaw/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-6">
     <summary class="item-header">
-      <span class="item-title">Browser-in-the-Browser phishing campaign harvests Microsoft 365 credentials</span>
+      <span class="item-title">Windows variant of SprySOCKS backdoor used to attack government organizations</span>
       <span class="item-type type-security">security</span>
-      <span class="urgency-red">Act Today</span>
+      <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>Unit 42 disclosed a Browser-in-the-Browser (BitB) phishing campaign on June 9, 2026 targeting Microsoft 365 users with a near-perfect fake OAuth login popup embedded inside malicious webpages. Recommended defenses include enforcing phishing-resistant MFA (hardware keys/passkeys) and using password managers that refuse to autofill on mismatched domains.</p>
-      <a href="https://www.helpnetsecurity.com/2026/06/10/browser-in-the-browser-phishing-microsoft-365-users/" target="_blank" class="src">Source &rarr;</a>
+      <p>Threat actors have ported the previously Linux-only SprySOCKS backdoor to Windows and are using it to compromise government organizations in at least four countries. The malware provides interactive shell, file management, and SOCKS proxy capabilities; defenders should hunt for unusual outbound SOCKS proxy patterns and unsigned binaries with persistence mechanisms.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/windows-version-of-sprysocks-linux-malware-used-to-attack-govt-orgs/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-7">
     <summary class="item-header">
-      <span class="item-title">CISA adds Oracle PeopleSoft PeopleTools zero-day CVE-2026-35273 to KEV catalog</span>
+      <span class="item-title">Autodesk adsk-sa-2026-0005 covers new AutoCAD 2026 MODEL-file out-of-bounds write CVE-2026-0875</span>
       <span class="item-type type-security">security</span>
-      <span class="urgency-red">Act Today</span>
+      <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>CISA added CVE-2026-35273, a CVSS 9.8 vulnerability in Oracle PeopleSoft Enterprise PeopleTools, to its Known Exploited Vulnerabilities catalog after ShinyHunters exploited it as a zero-day. Federal agencies face a remediation deadline; SMBs running PeopleSoft should patch immediately.</p>
-      <a href="https://securityaffairs.com/193574/security/u-s-cisa-adds-oracle-peoplesoft-enterprise-peopletools-flaw-to-its-known-exploited-vulnerabilities-catalog.html" target="_blank" class="src">Source &rarr;</a>
+      <p>A new Autodesk advisory covers CVE-2026-0875, an out-of-bounds write in Autodesk Shared Components 2026.5 or earlier triggered by a maliciously crafted MODEL file, leading to crash, data corruption, or arbitrary code execution. AutoCAD 2026 and its specialized toolsets are affected. Fix is Autodesk Shared Components 2026.6 via Autodesk Access; distinct from yesterday's adsk-sa-2026-0004 (CATPART/CVE-2026-0874).</p>
+      <a href="https://www.autodesk.com/trust/security-advisories/adsk-sa-2026-0005" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-8">
     <summary class="item-header">
-      <span class="item-title">Ubiquiti Security Advisory Bulletins 064 and 065 &mdash; critical UniFi OS Server command injection</span>
+      <span class="item-title">China-linked UNC6508 spent two years inside medical research networks</span>
       <span class="item-type type-security">security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Ubiquiti&#39;s recent Security Advisory Bulletin 064 covers a critical command injection in UniFi OS (CVE-2026-33000, CVSS 9.1) with related CVEs 2026-34908/34909/34910/34911, plus a path traversal in UID Enterprise Agent (CVE-2026-47367, CVSS 9.9). Bulletin 065 has also been released. UniFi OS Server through 5.0.6 is affected; admins running deployed UniFi Network Application 10.3+ should patch to UniFi OS Server 5.0.8 or later immediately.</p>
-      <a href="https://community.ui.com/releases/Security-Advisory-Bulletin-064-064/84811c09-4cf4-42ab-bd61-cc994445963b" target="_blank" class="src">Source &rarr;</a>
+      <p>Google/Mandiant reported UNC6508, a Chinese espionage group, breached medical research organizations from September 2023 to November 2025 using the INFINITERED backdoor to steal credentials and forward emails to external accounts. The case underscores the need for long-window threat hunting and detection of low-and-slow lateral movement.</p>
+      <a href="https://securityaffairs.com/193667/apt/china-linked-actor-unc6508-spent-two-years-inside-medical-research-networks.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-9">
     <summary class="item-header">
-      <span class="item-title">Awesome Motive CDN supply-chain attack hits OptinMonster, TrustPulse, PushEngage WordPress plugins</span>
+      <span class="item-title">Microsoft ships June 2026 Exchange Server security updates; Exchange Online already protected</span>
       <span class="item-type type-security">security</span>
-      <span class="urgency-red">Act Today</span>
+      <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Attackers compromised the Awesome Motive content delivery network and pushed malicious code through popular WordPress plugins OptinMonster, TrustPulse, and PushEngage. SMBs running these plugins should audit installations, rotate credentials, and review web logs for IOCs.</p>
-      <a href="https://securityaffairs.com/193616/malware/supply-chain-attack-hits-popular-wordpress-plugins-through-awesome-motive-cdn.html" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft released the June 2026 Exchange Server security updates and confirmed Exchange Online customers are already protected. Hybrid environments and on-prem admins running Exchange Management Tools workstations must still apply the SU; review hot/cold standby and DAG members in any hybrid topology.</p>
+      <a href="https://techcommunity.microsoft.com/blog/exchange/released-june-2026-exchange-server-security-updates/4524491" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-10">
     <summary class="item-header">
-      <span class="item-title">HP April 2026 commercial BIOS updates still causing BitLocker recovery loops on EliteBook</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-red">Act Today</span>
+      <span class="item-title">Windows 11 June 2026 update begins auto-delivery of 2023 Secure Boot certificates</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Reports continue this week about HP&#39;s April 2026 commercial BIOS updates triggering BitLocker recovery loops and blocking the Secure Boot 2023 certificate fix on EliteBook, ProBook, and ZBook systems. HP has acknowledged the issue; the BIOS updates inadvertently cleared TPM key storage or triggered new TPM ownership, invalidating BitLocker protectors. Suspending BitLocker before the BIOS update or rolling back via HP&#39;s revised package is the recommended workaround. This intersects the hard June 2026 deadline for the Windows UEFI CA 2011/KEK CA 2011 certificate replacement.</p>
-      <a href="https://windowsnews.ai/article/dell-supportassist-and-hp-bios-updates-cause-bitlocker-recovery-loops-on-windows-11-june-2026.424069" target="_blank" class="src">Source &rarr;</a>
+      <p>The June 2026 cumulative for Windows 11 (KB5094126, builds 26200.8655 and 26100.8655) is now auto-rolling the 2023 Secure Boot certificates to eligible devices ahead of the 2011 UEFI CA expiry this month. IT teams should verify firmware compatibility and watch for devices that fail the certificate update before expiry &mdash; particularly EliteBook fleets still on the regressed April HP BIOS package.</p>
+      <a href="https://www.windowslatest.com/2026/06/11/all-major-features-in-windows-11-june-2026-patch-tuesday-update/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-11">
     <summary class="item-header">
-      <span class="item-title">Windows UEFI Secure Boot CA 2011 and KEK CA 2011 certificates expire June 2026</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-red">Act Today</span>
+      <span class="item-title">Synology DSM 7.4-90075 ships in today's global rollout with security fix and third-party SSD cache block</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft&#39;s Windows UEFI CA 2011 and KEK CA 2011 expire in June 2026, requiring every Secure Boot-enabled device including HP EliteBook fleets to receive the 2023 replacement certificates in firmware or eventually stop receiving boot-level security updates. HP customers should verify their EliteBook BIOS/firmware has applied the 2023 Secure Boot certificates, balancing this against the known April BIOS BitLocker regression.</p>
-      <a href="https://h30434.www3.hp.com/t5/Desktop-Hardware-and-Upgrade-Questions/SecureBoot-update-before-June-2026/td-p/9470701" target="_blank" class="src">Source &rarr;</a>
+      <p>Synology released DSM 7.4-90075 today (June 16, 2026) as the global rolling release begins, addressing a security vulnerability plus multiple stability issues. As of today, all third-party SSDs (including those on the compatibility list) can no longer be used to create SSD cache and are limited to SSD storage pools. Your hospitality client's DS723+ falls within the supported x20-generation range, but cache-pool dependencies should be reviewed before upgrading from deployed 7.3.2.</p>
+      <a href="https://mariushosting.com/synology-dsm-7-4-90075-released/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-12">
     <summary class="item-header">
-      <span class="item-title">Dell PowerEdge DSA-2026-027 patches Intel 2026.1 IPU firmware vulnerabilities</span>
-      <span class="item-type type-security">security</span>
+      <span class="item-title">Microsoft Entra SSPR will only accept registered authentication methods starting September 7</span>
+      <span class="item-type type-feature">feature</span>
       <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 10/11</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>Dell published DSA-2026-027 (and related DSA-2026-012 and DSA-2026-014) addressing Intel Server Firmware vulnerabilities under the 2026.1 Intel Platform Update. Affected models include Intel-based PowerEdge R470, R570, R660, R670, R760, R770, R860, R960, T560, and XE7740. Dell recommends applying the BIOS/firmware remediation to prevent local privilege escalation and DoS conditions.</p>
-      <a href="https://www.dell.com/support/kbdoc/en-us/000426748/dsa-2026-027-security-update-for-dell-poweredge-server-for-intel-2026-security-advisories-2026-1-ipu" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft is tightening Self-Service Password Reset so only explicitly registered authentication methods qualify &mdash; directory-stored phone or email properties will no longer be accepted. A registration campaign begins July 6, 2026 and enforcement starts September 7, 2026. Drive users at your construction client through SSPR re-registration over the summer to avoid lockouts.</p>
+      <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/microsoft-entra-id-security-updates-what-organizations-need-to-do-now/4522024" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-13">
     <summary class="item-header">
-      <span class="item-title">FBI dismantles AI-powered phishing-as-a-service Outsider Enterprise using one million URLs</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
+      <span class="item-title">Synced passkeys reach GA in Entra ID, tenant capacity raised from 3 to 10 profiles</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>FBI, Google, and Black Lotus Labs dismantled Outsider Enterprise, a Chinese phishing-as-a-service operation that generated roughly one million attacker URLs using AI. SMB defenders should refresh email gateway IOC feeds and brief end users; Google has published indicators tied to the takedown.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/fbi-disrupts-massive-ai-powered-phishing-service-using-a-million-urls/" target="_blank" class="src">Source &rarr;</a>
+      <p>Synced passkeys are now generally available in Microsoft Entra, and the per-user passkey profile limit went from 3 to 10. Combined with the refreshed My Account portal and Devices page that surfaces BitLocker recovery keys, this simplifies passwordless rollouts and end-user self-service &mdash; relevant for both your construction and small-business clients' Entra environments.</p>
+      <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/whats-new-in-microsoft-entra-june-2026/4517885" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-14">
     <summary class="item-header">
-      <span class="item-title">Autodesk adsk-sa-2026-0004 covers AutoCAD 2026 CATPART out-of-bounds write flaw CVE-2026-0874</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
+      <span class="item-title">Microsoft Defender adds Agent 365 asset context mapping in public preview</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>Autodesk published advisory adsk-sa-2026-0004 for CVE-2026-0874, an out-of-bounds write triggered by maliciously crafted CATPART files in AutoCAD 2026 and several specialized toolsets. The bug lives in Autodesk Shared Components 2026.5 and earlier; fix is in Shared Components 2026.6, installable independently via Autodesk Access or the Accounts Portal. Exploitation requires user interaction.</p>
-      <a href="https://www.autodesk.com/trust/security-advisories/adsk-sa-2026-0004" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft Defender now provides asset context mapping for AI agents, including the devices they run on, configured MCP servers, associated identities, and reachable cloud resources. Policy-based controls plus runtime blocking and alerts are available through Intune and Defender in public preview from June 2026, giving SMBs early levers to govern agentic AI exposure.</p>
+      <a href="https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-15">
     <summary class="item-header">
-      <span class="item-title">Windows 11 KB5094126 cumulative update released (builds 26200.8655 / 26100.8655)</span>
+      <span class="item-title">Microsoft Teams adds organizer self-service deletion of meeting recap content</span>
       <span class="item-type type-feature">feature</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>KB5094126 ships the June 2026 Patch Tuesday fixes to Windows 11 25H2 and 24H2, including a fix for BitLocker security bypass CVE-2026-45585 via the Windows Recovery Environment. New features include Shared Audio support, low-latency performance mode, camera enhancements, improved Windows Search, expanded NPU monitoring, and Windows Hello optimizations.</p>
-      <a href="https://support.microsoft.com/en-us/topic/june-9-2026-kb5094126-os-builds-26200-8655-and-26100-8655-1a9bcba6-5f53-4075-8156-fe11ac631737" target="_blank" class="src">Source &rarr;</a>
+      <p>Meeting organizers can now permanently delete meeting-generated content (recordings, transcripts, AI summaries, meeting notes) directly from the Recap page; files shared in the meeting are unaffected. The control simplifies data-minimization workflows for compliance-conscious SMBs &mdash; useful for your construction client's CMMC Level 2 work.</p>
+      <a href="https://releasebot.io/updates/microsoft/microsoft-teams" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-16">
     <summary class="item-header">
-      <span class="item-title">Microsoft Entra June 2026 &mdash; Security Operator role expansion, hard-match block, Linux MFA</span>
+      <span class="item-title">Microsoft Teams introduces AI meeting recap without recording or transcript</span>
       <span class="item-type type-feature">feature</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft extended the Entra Security Operator role so SOC analysts can disable users, revoke sessions, mark users as compromised, force password resets, and delete authentication methods directly from Defender unified RBAC. Beginning June 1, 2026, Entra Connect Sync/Cloud Sync will block hard-matching new AD users to existing cloud Entra ID users that hold Entra roles. Phishing-resistant MFA is now available on Linux desktops (Ubuntu 24.04/26.04, RHEL 8/9/10).</p>
-      <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/whats-new-in-microsoft-entra-june-2026/4517885" target="_blank" class="src">Source &rarr;</a>
+      <p>Teams is rolling out an AI-powered meeting recap for Copilot users that produces a recap without saving a recording or transcript, configurable by the organizer before or during the meeting. The capability addresses recording-policy concerns while preserving Copilot value, and pairs with a new video recap clipped to highlights.</p>
+      <a href="https://www.shu.edu/technology/news/m365-june-2026-updates.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-17">
     <summary class="item-header">
-      <span class="item-title">KnowBe4 launches Messaging Security for Microsoft Teams and Prevent DLP rule builder</span>
+      <span class="item-title">Apple ships iOS 26.5.1 / iPadOS 26.5.1 / macOS Tahoe 26.5.1 pre-WWDC patches</span>
       <span class="item-type type-feature">feature</span>
       <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>KnowBe4 announced general availability in June 2026 of Messaging Security for Microsoft Teams, extending its email threat detection to Teams chat, plus a new Prevent DLP rule builder and misdirected-content analysis aimed at SMBs without premium licensing add-ons. Both are positioned to unify chat and email defense within the KnowBe4 platform.</p>
-      <a href="https://www.businesswire.com/news/home/20260528429866/en/KnowBe4-Unifies-Email-and-Chat-Security-by-Extending-High-Performance-Threat-Detection-to-Microsoft-Teams" target="_blank" class="src">Source &rarr;</a>
+      <p>Apple released iOS 26.5.1, iPadOS 26.5.1, and macOS Tahoe 26.5.1 ahead of WWDC to fix iPhone 17 charging issues and M5 Mac unexpected shutdowns. The point releases are the current shipping versions for fleet devices and supersede the 26.5 baseline pushed in May, which patched 60+ CVEs across WebKit and the kernel.</p>
+      <a href="https://www.macrumors.com/2026/05/11/apple-releases-ios-26-5/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-18">
     <summary class="item-header">
-      <span class="item-title">Apple WWDC 2026 unveils iOS 27, iPadOS 27, macOS 27 &quot;Golden Gate&quot; with conversational Siri</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
+      <span class="item-title">iRhythm discloses data breach exposing cardiac-monitoring patient information</span>
+      <span class="item-type type-industry">industry</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>Apple held its WWDC 2026 keynote on June 8 introducing iOS 27, iPadOS 27, macOS 27 &quot;Golden Gate,&quot; watchOS 27, visionOS 27, and tvOS 27. iOS 27 is described as a &quot;Snow Leopard-style&quot; performance-focused release with up to 30% faster app launches and 70% quicker photo loading. A new dedicated Siri app with conversation history sync and expanded Apple Intelligence features were also unveiled. Developer betas are available now; public release expected in fall.</p>
-      <a href="https://www.apple.com/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more/" target="_blank" class="src">Source &rarr;</a>
+      <p>Digital healthcare company iRhythm Holdings disclosed a data breach after attackers stole patients' personal and health information. The incident adds to a string of healthcare-sector breaches and reinforces the need for SMB healthcare partners to review vendor risk management and BAA obligations.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/irhythm-discloses-data-breach-says-hackers-stole-patient-info/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-19">
     <summary class="item-header">
-      <span class="item-title">Synology DSM 7.4 scheduled rolling release begins June 16, 2026</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
+      <span class="item-title">Novo Nordisk confirms data theft, details scope of attacker access</span>
+      <span class="item-type type-industry">industry</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>Following Computex 2026, Synology confirmed DSM 7.4 will begin its rolling global release on June 16, 2026 for new and manual installs, with regional automatic upgrades completing by August 18. Notable change: after June 16, third-party SSDs (listed or unlisted) cannot be used to create SSD cache. DSM 7.4 will not support devices older than the x20 generation, so admins running deployed DSM 7.3.2 should review compatibility before upgrading.</p>
-      <a href="https://www.blackvoid.club/synology-dsm-7-4-and-ai-future/" target="_blank" class="src">Source &rarr;</a>
+      <p>Pharmaceutical giant Novo Nordisk confirmed attackers stole specific data sets while ruling out access to clinical trial systems. Patient data is pseudonymized; no ransomware group has claimed responsibility. The disclosure provides useful template language for breach communications and highlights segmenting research environments from corporate IT.</p>
+      <a href="https://securityaffairs.com/193650/security/novo-nordisk-confirms-data-theft-what-attackers-took-and-what-they-didnt.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-20">
     <summary class="item-header">
-      <span class="item-title">Bluebeam Revu 21.10 ships with Autodesk 2027 plugin support and MCP workflow expansions</span>
-      <span class="item-type type-feature">feature</span>
+      <span class="item-title">Mackay Sugar reports cyber incident attributed to Gentlemen ransomware</span>
+      <span class="item-type type-industry">industry</span>
       <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>Bluebeam released Revu 21.10 on June 2, 2026, adding Autodesk 2027 plugin support for AutoCAD, Revit, and Navisworks, plus Connected Sessions with Revit 2027 support. The release also expands MCP workflows with targeted search and markup editing, introduces Studio Session Restoration for hosts, refreshes the User Account experience, and adds localized QTO/worksite planning profiles for Spanish, Norwegian, and Polish.</p>
-      <a href="https://support.bluebeam.com/release-notes-all.html" target="_blank" class="src">Source &rarr;</a>
+      <p>Australian sugar producer Mackay Sugar reported a cyber incident attributed to the Gentlemen ransomware group, which attacked during crushing season and forced mill shutdowns. The group posted the victim on its dark-web leak site on June 15. The case reinforces the targeting of OT-adjacent SMBs and the need for offline backups and tabletop exercises.</p>
+      <a href="https://securityaffairs.com/193657/data-breach/australian-sugar-producer-mackay-sugar-reports-cyber-incident.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-21">
     <summary class="item-header">
-      <span class="item-title">Anthropic ships Claude Opus 4.8 with Dynamic Workflows in Claude Code and effort control</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Anthropic released Claude Opus 4.8, which took the #1 spot on the Artificial Analysis Intelligence Index, alongside Dynamic Workflows (hundreds of parallel subagents inside Claude Code), effort control across all claude.ai plans, and a Messages API update. With Fable 5/Mythos 5 suspended, Opus 4.8 is currently Anthropic&#39;s top accessible model and a viable replacement tier for MSP automation and agentic workflows.</p>
-      <a href="https://releasebot.io/updates/anthropic" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-22">
-    <summary class="item-header">
-      <span class="item-title">Atera June 2026 adds credential-prompt Network Discovery, AI ticket flow breakdown, child tickets</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Atera&#39;s June 2026 platform update expands Network Discovery so technicians can request admin or domain credentials from end-users when initiating a scan, and adds agent deployment for workgroup environments. The AI Center gains a Ticket Flow Breakdown that maps a ticket&#39;s full journey from intake channel to outcome, and ticket-automation rules can now spawn child tickets automatically &mdash; useful for onboarding, multi-step requests, and recurring processes.</p>
-      <a href="https://support.atera.com/hc/en-us/articles/25381421604124-Release-Notes-2026" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-23">
-    <summary class="item-header">
-      <span class="item-title">Microsoft Intune June 2026 rollout &mdash; Remote Help, Advanced Analytics, P2 capabilities expanded</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Microsoft began rolling out expanded Intune capabilities in June 2026 at no additional cost to many plans, including Intune Remote Help, Advanced Analytics, Plan 2, Privilege Management, and Application Management; rollout completes by August 1, 2026. ESR policies move out of the Entra portal into Intune by end of June.</p>
-      <a href="https://learn.microsoft.com/en-us/intune/whats-new/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-24">
-    <summary class="item-header">
-      <span class="item-title">Microsoft Teams June 2026: redesigned toolbar, 1,000-attendee breakout rooms, External Domains Anomalies Report</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>June 2026 Teams updates include a redesigned meeting toolbar with customizable controls and a relocated Leave button, breakout rooms supporting up to 1,000 attendees, organizer-controlled access to recordings/transcripts/AI summaries, a new Efficiency Mode reducing resource usage on constrained hardware, and an External Domains Anomalies Report for admins to surface risky external interactions.</p>
-      <a href="https://techcommunity.microsoft.com/blog/microsoftteamsblog/what%E2%80%99s-new-in-microsoft-teams--march-2026/4506985" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-25">
-    <summary class="item-header">
-      <span class="item-title">&quot;The Gentlemen&quot; ransomware group scales to 483 victims across 66 countries</span>
+      <span class="item-title">Anthropic-Trump administration talks on Claude Fable 5 reach no resolution at June 15 meeting</span>
       <span class="item-type type-industry">industry</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 6/11</span>
     </summary>
     <div class="item-body">
-      <p>The Gentlemen ransomware crew has claimed 483 victims across 66 countries, fueled by infostealer-driven access, AI-assisted intrusion tooling, and a 90% affiliate revenue cut that draws affiliates from LockBit, Qilin, and Medusa. The group&#39;s worm-like spread makes infostealer hygiene and credential rotation priorities for SMB defenders.</p>
-      <a href="https://securityaffairs.com/193622/uncategorized/infostealers-ai-and-a-90-affiliate-cut-fuel-the-gentlemen-groups-rise.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-26">
-    <summary class="item-header">
-      <span class="item-title">Iran-linked Handala group breaches California Water Service, exposing 2M customers</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Iran-linked Handala group breached California Water Service and exfiltrated billing data on roughly 2 million customers, claiming it could have caused operational damage. Critical-infrastructure SMBs and MSPs should review Iranian-nexus TTPs and OT/IT segmentation.</p>
-      <a href="https://securityaffairs.com/193565/uncategorized/iran-linked-handala-breached-a-california-water-utility-it-could-have-done-worse-and-it-knows-that.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-27">
-    <summary class="item-header">
-      <span class="item-title">Infinite Campus breach exposes 137,000 K-12 staff accounts via Salesforce attack chain</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Student information system vendor Infinite Campus disclosed a breach tied to the ShinyHunters Salesforce-targeted intrusion campaign, affecting roughly 137,000 school staff accounts. SMB MSPs serving K-12 districts should review SSO/Salesforce-connected integrations, rotate exposed credentials, and watch for downstream phishing of school staff.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/infinite-campus-data-breach-affects-137-000-school-staff-accounts/" target="_blank" class="src">Source &rarr;</a>
+      <p>Anthropic senior leaders met with Trump administration officials on June 15, 2026 but reached no resolution on disagreements over the risk profile of Claude Fable 5. The continuing standoff could foreshadow regulatory or export-control friction affecting enterprise availability of Anthropic models, on top of the June 12 worldwide suspension.</p>
+      <a href="https://llm-stats.com/ai-news" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 </div>
 
-<div class="footer">Generated Monday, June 15, 2026 at 6:30 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-06-15.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
+<div class="footer">Generated Tuesday, June 16, 2026 at 6:30 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-06-16.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
 
 </main>
 </body>
