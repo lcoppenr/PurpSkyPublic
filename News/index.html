@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<title>Morning Briefing -- Wednesday, July 1, 2026</title>
+<title>Morning Briefing -- Thursday, July 2, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -14,65 +14,38 @@
 <main class="briefing-content">
 
 <div class="page-header">
-  <h1>Morning Briefing -- Wednesday, July 1, 2026</h1>
+  <h1>Morning Briefing -- Thursday, July 2, 2026</h1>
   <p class="page-meta">Microsoft &bull; Security &amp; Compliance &bull; Firewall / VPN / Networking &bull; Servers/NAS &bull; Workstations &amp; Mobile &bull; Peripherals &amp; AV &bull; RMM &amp; Remote Access &bull; Construction &amp; Specialty Software &bull; General Tech &amp; AI &bull; Pacific Time</p>
 </div>
 
 <div class="section-actions">
   <h2>Today's Actions</h2>
-  <p class="section-transparency">Showing 3 of 8</p>
   <ol class="action-list">
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Patch Microsoft Defender across every Windows endpoint this week &mdash; CISA confirms ransomware gangs are exploiting BlueHammer (CVE-2026-33825) for SYSTEM access. <a href="#item-1" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> File the CISA SimpleHelp RMM advisory (CVE-2026-48558, KEV deadline July 2) &mdash; active exploitation is real but you run Atera and Splashtop, not SimpleHelp. <a href="#item-2" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> File the Oracle E-Business Suite CVE-2026-46817 alert &mdash; 900+ EBS instances are under active takeover but no client runs Oracle EBS. <a href="#item-3" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Audit every Entra tenant for OAuth ROPC usage and disable the deprecated flow &mdash; an 81M-attempt password spray (LSHIY) hit Azure CLI across 64 orgs and compromised 78 accounts by slipping past MFA and Conditional Access. <a href="#item-1" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-yellow">This Week</span> Watch Entra Connect sync-error alerts and switch to the new Graph API for OnPremisesObjectIdentifier remaps &mdash; Microsoft&rsquo;s July 1 hardening enforcement now blocks the attribute change that enabled hard-match takeovers. <a href="#item-2" class="detail-link">details</a></li>
   </ol>
-  <details class="section-overflow"><summary>Show 5 more actions</summary>
-  <ol class="action-list" start="4">
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> File Adobe APSB26-68 covering seven max-severity ColdFusion and Campaign flaws &mdash; no client stack includes ColdFusion. <a href="#item-4" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-yellow">This Week</span> Tell iPhone, iPad, and Mac users to install 26.5.2 today &mdash; 29 fixes including WebKit memory corruption, four flaws found via AI-assisted research. <a href="#item-5" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-yellow">This Week</span> Patch AutoCAD 2026 to Shared Components 2026.6 at your construction client this week &mdash; CVE-2026-0875 lets a crafted MODEL file trigger RCE across the entire 2026 family. <a href="#item-6" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-yellow">This Week</span> File the State Department's $10M bounty on Russian actors phishing Signal and WhatsApp accounts &mdash; fold into messaging-app awareness training. <a href="#item-7" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-yellow">This Week</span> Monitor the GuardFall shell-injection disclosure affecting 10 of 11 open-source AI coding agents &mdash; audit any dev-team AI tooling for exposure. <a href="#item-8" class="detail-link">details</a></li>
-  </ol>
-  </details>
 </div>
 
 <div class="section-new">
   <h2>What's New</h2>
-  <p class="section-transparency">Showing 3 of 12</p>
   <ul class="new-list">
-    <li><strong><a href="#item-9">Windows 11 July 2026 update ships Point-in-time Restore and IPP printing</a></strong> -- Microsoft's July 14 Windows 11 update adds Point-in-time Restore (automatic VSS-based rollback on Home/Pro with 200GB+ storage), indefinite Windows Update pause, expanded Magnifier controls, and defaults new printer installs to IPP. Plan test-ring validation before the ring hits production. <a href="https://www.windowscentral.com/microsoft/windows-11/windows-11s-july-2026-update-is-packed-with-new-features-and-these-are-the-top-ones" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-10">Entra ID applies Conditional Access to registration July 6; SSPR method changes coming</a></strong> -- Beginning July 6, 2026, CA policies scoped to the &quot;Register security information&quot; action will apply during Windows Hello for Business and macOS Platform SSO registration. Microsoft is also launching a registration campaign ahead of the September 7 SSPR change that stops accepting directory-sourced contact info. <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/whats-new-in-microsoft-entra-june-2026/4517885" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-11">Exchange Online blocks EWS on mailboxes without EWS usage rights (effective today)</a></strong> -- Starting June 30, 2026, Microsoft blocks Exchange Web Services access for mailboxes whose licenses don't include EWS rights. Validate that any remaining EWS-dependent apps target properly licensed mailboxes or migrate to Microsoft Graph. <a href="https://releasebot.io/updates/microsoft" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-3">Claude Fable 5 hits general availability worldwide</a></strong> -- Anthropic's Fable 5 opened to global users on July 1 across Claude.ai, the API, Claude Code, and Claude Cowork after June 30 export controls lifted. Ships with always-on adaptive thinking, a 1M-token context window, 128K output, and auto-fallback to Opus 4.8 for flagged requests. <a href="https://www.anthropic.com/news/claude-fable-5-mythos-5" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-4">Copilot Chat button restored in Classic Outlook for Windows</a></strong> -- Microsoft resolved a bug that removed the Copilot Chat button from Classic Outlook for users on Copilot Chat Basic. Icon returns without admin action; verify at your internal ops before closing any related tickets. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-bug-that-removed-copilot-button-in-outlook/" target="_blank">Source &rarr;</a></li>
   </ul>
-  <details class="section-overflow"><summary>Show 9 more updates</summary>
-  <ul class="new-list">
-    <li><strong><a href="#item-12">Defender for Office 365 P1 rolls into M365 Business Standard/Basic through August 1</a></strong> -- Microsoft is bundling Defender for Office 365 Plan 1 into Business Standard, Business Basic, and Office 365 E1 tenants, rollout starting June 2026 and completing August 1. Business Standard also sees a $3/user/month price increase effective July 1; Business Premium pricing is unchanged. <a href="https://www.microsoft.com/en-us/licensing/news/2026-m365-packaging-pricing-updates" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-13">Anthropic launches Claude Sonnet 5 with near-Opus performance at cheaper pricing</a></strong> -- Anthropic released Claude Sonnet 5 on June 30 with improved agentic reasoning, tool use, and coding performance &mdash; reportedly outperforming Opus 4.8 on knowledge-work benchmarks. Available across Claude.ai, API, and Claude Code. Introductory API pricing $2/$10 per M input/output tokens through Aug 31. <a href="https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-14">Atera 2026 adds credential prompts, workgroup deploy, Copilot SNMP monitoring</a></strong> -- Atera's 2026 release adds on-demand end-user credential prompts for network scans, automatic agent deployment for workgroup Windows devices, a dedicated SNMP scan type with auto-monitoring, and Copilot-generated OIDs with or without MIB files. Ticket automation now supports auto-created child tickets. <a href="https://support.atera.com/hc/en-us/articles/25381421604124-Release-Notes-2026" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-15">Intune 2606 enforces MAA on automation; adds Windows 11 STIG baseline</a></strong> -- Service release 2606 requires Intune Android app 2025.11.01+, enforces Multi-Admin Approval on automation-driven API calls, mandates HTTPS delivery for managed Win32 app content, and adds a Windows 11 STIG SCAP audit baseline plus a Block Bluetooth sharing setting in the Android Enterprise catalog. Enrollment-time grouping for Apple ADE is GA. <a href="https://learn.microsoft.com/en-us/intune/whats-new/" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-16">Teams enables external meeting bot detection by default</a></strong> -- The June 2026 wave adds automatic detection of external meeting assistant bots (on by default at GA, mid-June), tightens bot admission controls, adds BYOD peripheral health reporting, CSV breakout room assignment, and turns live-captions profanity filtering off by default. Review meeting policies before rollout completes. <a href="https://releasebot.io/updates/microsoft/microsoft-teams" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-17">Splashtop Business Access renamed to Splashtop Remote Access with new tier structure</a></strong> -- Splashtop introduced a new flexible licensing model. Business Access is now Splashtop Remote Access with Solo/Pro/Performance/Enterprise tiers. Review license mappings before renewals to avoid surprise re-tiering. <a href="https://www.splashtop.com/blog/introducing-easy-flexible-licensing" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-18">Bluebeam Revu 21.9 ships; Bluebeam Max premium tier with Claude AI on the way</a></strong> -- Bluebeam released Revu 21.9 with fixes following 21.6.1's AutoCAD/Revit/Navisworks 2026 support. Bluebeam Max, a premium subscription tier incorporating Claude-powered AI Chat, AI-assisted submittals/RFIs, geometry capabilities, and multi-sheet stitching, is rolling out Q1 2026. <a href="https://www.bluebeam.com/whats-new/" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-19">Trimble Spectrum adds Lumber workforce integration and Trimble Assistant AI beta</a></strong> -- Lumber's AI-native construction workforce management platform is now available on the Trimble Marketplace for Spectrum and Vista users. Spectrum also ships a beta Trimble Assistant chat agent for in-app task help alongside 2025 R2 reporting/AP/payroll enhancements. <a href="https://www.constructionowners.com/press-release/lumber-the-ai-native-construction-workforce-management-platform-now-available-on-trimble-marketplace" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-20">Microsoft restores GIF functionality in Windows 11 Emoji Panel</a></strong> -- Microsoft re-enabled GIF search in the Emoji Panel after the previous provider shut down; the panel now sources GIFs from a replacement service. Purely cosmetic end-user experience note. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-gif-functionality-in-the-windows-emoji-panel/" target="_blank">Source &rarr;</a></li>
-  </ul>
-  </details>
 </div>
 
 <div class="section-security">
   <h2>Security &amp; Patches</h2>
-  <p class="section-transparency">Showing 3 of 6</p>
+  <p class="section-transparency">Showing 3 of 5</p>
   <div class="security-cards">
-    <div class="security-card"><a href="#item-21" class="security-headline">FY2026 NDAA imposes AI security framework on DoD contractors</a><span class="urgency-green">FYI</span><span class="security-summary">Section 1513 of the FY2026 NDAA requires DoD to develop a CMMC-style AI/ML security framework for contractors, with implementation plan due to Congress by June 16, 2026.</span></div>
-    <div class="security-card"><a href="#item-22" class="security-headline">RustDuck botnet targets routers, cameras, Android with Rust rewrite</a><span class="urgency-green">FYI</span><span class="security-summary">A DDoS botnet migrating to Rust with advanced encryption and evasion is recruiting routers, IP cameras, Android devices, and servers.</span></div>
-    <div class="security-card"><a href="#item-23" class="security-headline">XSS.is cybercrime forum administrator arrested</a><span class="urgency-green">FYI</span><span class="security-summary">Police arrested the alleged administrator of XSS.is, a Russian-language cybercrime forum brokering ransomware initial access.</span></div>
+    <div class="security-card"><a href="#item-5" class="security-headline">M365 commercial price hikes live; new Business + Copilot SKUs launch</a><span class="urgency-yellow">This Week</span><span class="security-summary">July 1 marked Microsoft's commercial M365 price increases and the launch of permanent Business + Copilot SKUs ($252 Basic / $282 Standard per user/year with 25% intro discount).</span></div>
+    <div class="security-card"><a href="#item-6" class="security-headline">Alleged Scattered Spider member extradited from Finland to the US</a><span class="urgency-green">FYI</span><span class="security-summary">DOJ extradited 19-year-old Peter Stokes on charges tied to Scattered Spider intrusions including a $8M jewelry-retailer ransom &mdash; a reminder to harden help-desk MFA-reset flows.</span></div>
+    <div class="security-card"><a href="#item-7" class="security-headline">Microsoft Sentinel 50 GB commitment tier promo extended to Dec 31</a><span class="urgency-green">FYI</span><span class="security-summary">The 50 GB commitment tier promotion originally set to expire June 30, 2026 now runs through December 31, giving partners more runway on SMB SIEM/MDR offers.</span></div>
   </div>
-  <details class="section-overflow"><summary>Show 3 more security items</summary>
+  <details class="section-overflow"><summary>Show 2 more security items</summary>
   <div class="security-cards">
-    <div class="security-card"><a href="#item-24" class="security-headline">Aflac Japan breach exposes 4.38M customer records</a><span class="urgency-green">FYI</span><span class="security-summary">Attackers maintained access to Aflac Japan systems for ten days and exfiltrated 4.38M customer personal records.</span></div>
-    <div class="security-card"><a href="#item-25" class="security-headline">Integris to acquire Australian MSP First Focus</a><span class="urgency-green">FYI</span><span class="security-summary">Integris intends to acquire First Focus, the largest SMB-focused MSP in Australia/NZ/Philippines, continuing PE-backed MSP consolidation.</span></div>
-    <div class="security-card"><a href="#item-26" class="security-headline">FTC fines Amazon $2.25M for withholding fraud evidence</a><span class="urgency-green">FYI</span><span class="security-summary">Amazon will pay a $2.25M civil penalty to settle FTC charges that it blocked identity-theft victims' access to account records.</span></div>
+    <div class="security-card"><a href="#item-8" class="security-headline">SuperOps and Guardz partner on IT ops + agentic MDR bundle</a><span class="urgency-green">FYI</span><span class="security-summary">Two SMB-focused vendors combine SuperOps' IT operations platform with Guardz's agentic security ops, targeting MSPs bundling security services.</span></div>
+    <div class="security-card"><a href="#item-9" class="security-headline">Medtronic notifying customers hit by April ShinyHunters breach</a><span class="urgency-green">FYI</span><span class="security-summary">Medtronic began breach notifications tied to an April intrusion by ShinyHunters, who claim ~9M records; useful reference case for SMB incident-response playbooks.</span></div>
   </div>
   </details>
 </div>
@@ -82,345 +55,124 @@
 
   <details class="item" id="item-1">
     <summary class="item-header">
-      <span class="item-title">CISA warns Microsoft Defender BlueHammer flaw (CVE-2026-33825) now exploited in ransomware</span>
+      <span class="item-title">Azure CLI hit by LSHIY password spray -- 81M attempts, 78 accounts compromised via deprecated OAuth ROPC</span>
       <span class="item-type type-security">SECURITY</span>
       <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 11/11</span>
+      <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>CISA added CVE-2026-33825 to its KEV catalog after ransomware operators began exploiting the Microsoft Defender race-condition privilege escalation flaw (&quot;BlueHammer&quot;) to gain SYSTEM-level access on fully patched Windows 10 and Windows 11 systems. Microsoft patched the CVSS 7.8 issue in April; federal agencies must remediate immediately, and SMB fleets should validate patch state on every Windows endpoint.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/cisa-windows-bluehammer-flaw-now-exploited-by-ransomware-gangs/" target="_blank" class="src">Source &rarr;</a>
+      <p>A large-scale password spray campaign dubbed LSHIY targeted Azure CLI endpoints, generating over 81 million login attempts across 64 organizations and compromising 78 accounts. Attackers abused the deprecated OAuth 2.0 Resource Owner Password Credentials (ROPC) flow, which bypasses modern MFA and Conditional Access policies. Admins should audit for ROPC usage in sign-in logs, disable the legacy flow via Conditional Access or app-registration policy, and alert on unusual Azure CLI sign-in patterns &mdash; particularly relevant for your construction client's hybrid Entra tenant and your internal ops.</p>
+      <a href="https://securityaffairs.com/194588/uncategorized/azure-cli-targeted-in-lshiy-password-spray-campaign-across-64-orgs.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-2">
     <summary class="item-header">
-      <span class="item-title">CISA adds SimpleHelp RMM authentication bypass (CVE-2026-48558) to KEV; deadline July 2</span>
+      <span class="item-title">Entra Connect OnPremisesObjectIdentifier hardening enforcement live as of July 1</span>
       <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 11/11</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>A critical OIDC authentication bypass in SimpleHelp RMM (5.5.15 and earlier; 6.0 pre-release) lets unauthenticated attackers forge technician sessions, bypass MFA, and pivot into managed endpoints. Active exploitation is delivering TaskWeaver loader and Djinn Stealer. Fixed in 5.5.16 and 6.0 RC2; CISA remediation deadline July 2, 2026. File-only for your stack &mdash; you use Atera RMM, Splashtop, and OCC RDP Gateway, not SimpleHelp.</p>
-      <a href="https://securityaffairs.com/194503/security/u-s-cisa-adds-simplehelp-flaw-to-its-known-exploited-vulnerabilities-catalog.html" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft is now enforcing a hardening change that blocks Entra Connect from modifying the OnPremisesObjectIdentifier attribute after it has been mapped to a synced user, closing a hard-match account-takeover technique. Audit logs now capture changes to OnPremisesObjectIdentifier and DirSyncEnabled, and a new Microsoft Graph API supports controlled remapping for legitimate recovery scenarios. Review Entra Connect sync error alerts at your construction client and internal ops, and use the Graph API rather than legacy workarounds when a remap is required.</p>
+      <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/microsoft-entra-id-security-updates-what-organizations-need-to-do-now/4522024" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-3">
     <summary class="item-header">
-      <span class="item-title">Oracle E-Business Suite CVE-2026-46817 under active exploitation; 900+ instances exposed</span>
-      <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 11/11</span>
+      <span class="item-title">Claude Fable 5 becomes globally available after export controls lifted</span>
+      <span class="item-type type-feature">FEATURE</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>Attackers are actively exploiting a critical (CVSS 9.8) unauthenticated takeover flaw in the Oracle Payments component of Oracle E-Business Suite. Over 900 EBS instances remain exposed online. Oracle released fixes in its May 2026 Critical Patch Update; versions 12.2.3 through 12.2.15 are impacted. No client in your book runs Oracle EBS &mdash; file for reference and reuse for peer/partner conversations.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/over-900-oracle-e-business-instances-exposed-to-ongoing-attacks/" target="_blank" class="src">Source &rarr;</a>
+      <p>Anthropic's Claude Fable 5 became generally available to global users starting July 1, 2026 across the Claude Platform, Claude.ai, Claude Code, and Claude Cowork after export controls were lifted on June 30. Fable 5 features always-on adaptive thinking, a 1M-token context window, 128K output tokens, and safety classifiers that automatically fall back to Claude Opus 4.8 for flagged requests. Relevant for any client evaluating agentic tooling and your own consulting automation.</p>
+      <a href="https://www.anthropic.com/news/claude-fable-5-mythos-5" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-4">
     <summary class="item-header">
-      <span class="item-title">Adobe patches seven max-severity ColdFusion and Campaign Classic flaws (APSB26-68)</span>
-      <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
+      <span class="item-title">Microsoft fixes Copilot Chat button disappearance in Classic Outlook for Windows</span>
+      <span class="item-type type-feature">FEATURE</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 6/11</span>
     </summary>
     <div class="item-body">
-      <p>Adobe emergency bulletin APSB26-68 patches 11 vulnerabilities across ColdFusion 2025 and 2023, six rated CVSS 10.0. Flaws enable unauthenticated RCE via file upload, directory traversal, and input validation bugs. Priority Rating 1 &mdash; patch now if applicable. Fix is ColdFusion 2025 Update 10 / ColdFusion 2023 Update 21. No client runs ColdFusion &mdash; file only.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/adobe-patches-seven-max-severity-coldfusion-campaign-flaws/" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft resolved a bug that removed the Copilot Chat button from Classic Outlook on Windows for users licensed with Copilot Chat Basic. Affected tenants should see the icon return without admin action. Confirm end-users see the restored icon before dismissing related tickets.</p>
+      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-bug-that-removed-copilot-button-in-outlook/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-5">
     <summary class="item-header">
-      <span class="item-title">Apple ships iOS/iPadOS/macOS 26.5.2 with 29 security fixes, several found via AI</span>
-      <span class="item-type type-security">SECURITY</span>
+      <span class="item-title">M365 commercial price increases take effect July 1; new Business + Copilot SKUs launch</span>
+      <span class="item-type type-industry">INDUSTRY</span>
       <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 10/11</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Apple shipped out-of-cycle 26.5.2 updates for iOS, iPadOS, macOS, and Safari, addressing 29 vulnerabilities. Approximately 23 fixes target WebKit memory corruption, use-after-free, and cross-origin data leaks; four flaws were discovered with AI tools including Claude and Codex Security. No in-the-wild exploitation reported, but WebKit bugs are historically high-value. Push updates to your construction client's iPhones and any Mac in your internal ops fleet.</p>
-      <a href="https://securityaffairs.com/194476/security/apple-fixes-webkit-flaws-in-ios-and-macos-with-help-from-ai-tools.html" target="_blank" class="src">Source &rarr;</a>
+      <p>July 1, 2026 marked the effective date of Microsoft's commercial Microsoft 365 suite price increases and the launch of new permanent Microsoft 365 Business with Copilot SKUs. Business Basic + Copilot Business is priced at $252 USD/user/year (25% promotional discount) and Business Standard + Copilot at $282 USD/user/year, giving MSPs standardized SKUs to sell into SMB customers. Review renewals at your small-business client and internal ops for pricing impact and Copilot bundling opportunities.</p>
+      <a href="https://learn.microsoft.com/en-us/partner-center/announcements/2026-june" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-6">
     <summary class="item-header">
-      <span class="item-title">Autodesk AutoCAD 2026 out-of-bounds write (CVE-2026-0875) allows RCE via crafted MODEL file</span>
-      <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 10/11</span>
+      <span class="item-title">Alleged Scattered Spider member extradited from Finland to face US hacking charges</span>
+      <span class="item-type type-industry">INDUSTRY</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>Autodesk advisory ADSK-SA-2026-0004 covers CVE-2026-0875, an out-of-bounds write in Shared Components enabling crash, data corruption, or arbitrary code execution when opening a malicious MODEL file. Affects AutoCAD 2026 and toolsets (Architecture, Electrical, Mechanical, MEP, Plant 3D, Map 3D) plus Revit, Civil 3D, Inventor, 3ds Max, Vault Client 2026. Fixed in Shared Components 2026.6. Push the update at your construction client this week.</p>
-      <a href="https://www.autodesk.com/trust/security-advisories/adsk-sa-2026-0004" target="_blank" class="src">Source &rarr;</a>
+      <p>The DOJ announced the extradition of Peter Stokes, a 19-year-old US-Estonian dual citizen, from Finland on charges of conspiracy, computer intrusion, and fraud tied to Scattered Spider (also tracked as Octo Tempest / UNC3944 / 0ktapus). Charges include a May 2025 breach of a luxury jewelry retailer with an $8M crypto ransom demand. The group is known for social-engineering help-desk and MFA-reset flows &mdash; a reminder to tighten identity-verification for account recovery at every client.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/alleged-scattered-spider-hacker-extradited-to-the-united-states/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-7">
     <summary class="item-header">
-      <span class="item-title">US offers $10M bounty for Russian actors phishing Signal and WhatsApp accounts</span>
-      <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
+      <span class="item-title">Microsoft Sentinel 50 GB commitment tier promo extended through December 31, 2026</span>
+      <span class="item-type type-industry">INDUSTRY</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>The US State Department is offering $10 million for information on Russian-linked threat actors phishing Signal and WhatsApp accounts belonging to government officials and journalists. Signals continued escalation of messaging-app social-engineering campaigns; incorporate messaging-app awareness into user training and phishing simulations.</p>
-      <a href="https://securityaffairs.com/194441/security/u-s-offers-10-million-reward-for-russian-hackers-behind-signal-and-whatsapp-phishing.html" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft extended its Microsoft Sentinel 50 GB commitment tier promotion, originally scheduled to expire June 30, 2026, through December 31, 2026. The extension gives partners more runway to expand SIEM/security services into SMB and mid-market segments and build recurring security revenue.</p>
+      <a href="https://learn.microsoft.com/en-us/partner-center/announcements/2026-june" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-8">
     <summary class="item-header">
-      <span class="item-title">GuardFall shell-injection flaw hits 10 of 11 popular open-source AI coding agents</span>
-      <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
+      <span class="item-title">SuperOps and Guardz launch strategic partnership combining IT operations with agentic MDR</span>
+      <span class="item-type type-industry">INDUSTRY</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>Researchers disclosed shell injection vulnerabilities in ten major open-source AI coding agents allowing attackers to bypass command filters through bash expansion techniques. IT teams using open-source AI agents in dev workflows should audit exposure and update to patched versions where available.</p>
-      <a href="https://securityaffairs.com/194546/ai/guardfall-flaw-hits-10-of-11-popular-open-source-ai-agents.html" target="_blank" class="src">Source &rarr;</a>
+      <p>SuperOps and Guardz announced a strategic partnership that pairs SuperOps' IT operations platform with Guardz's agentic security operations and MDR capabilities, aimed at SMB-focused MSPs looking to bundle security services. The tie-up was highlighted in ChannelPro's June 30 MSP roundup.</p>
+      <a href="https://www.channelpronetwork.com/2026/06/30/msp-trends-quick-bytes/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-9">
     <summary class="item-header">
-      <span class="item-title">Windows 11 July 2026 update ships Point-in-time Restore and IPP default printing</span>
-      <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Microsoft's July 14, 2026 Windows 11 security update introduces Point-in-time Restore (automatic VSS-based rollback on Home/Pro with 200GB+ storage), indefinite Windows Update pause, expanded Magnifier controls up to 400%, and defaults new printer installs to Internet Printing Protocol (IPP) on supported devices. Plan test-ring validation before the update reaches production endpoints.</p>
-      <a href="https://www.windowscentral.com/microsoft/windows-11/windows-11s-july-2026-update-is-packed-with-new-features-and-these-are-the-top-ones" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-10">
-    <summary class="item-header">
-      <span class="item-title">Entra ID enforces Conditional Access on registration July 6; SSPR method changes ahead</span>
-      <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Beginning July 6, 2026, Conditional Access policies assigned to the &quot;Register security information&quot; action will apply during Windows Hello for Business and macOS Platform SSO registration, requiring users to meet MFA, network, or device-compliance requirements. Microsoft will also launch a registration campaign prompting users to explicitly register auth methods ahead of the September 7 SSPR change that stops accepting directory-sourced contact info.</p>
-      <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/whats-new-in-microsoft-entra-june-2026/4517885" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-11">
-    <summary class="item-header">
-      <span class="item-title">Exchange Online blocks EWS access for mailboxes without EWS usage rights (effective today)</span>
-      <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Starting June 30, 2026, Microsoft blocks Exchange Web Services (EWS) access for mailboxes whose licenses do not include EWS usage rights. Admins should validate that any remaining EWS-dependent apps target properly licensed mailboxes or migrate to Microsoft Graph. Legacy scripts and older third-party integrations most at risk.</p>
-      <a href="https://releasebot.io/updates/microsoft" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-12">
-    <summary class="item-header">
-      <span class="item-title">Defender for Office 365 P1 rolls into M365 Business Standard/Basic through August 1</span>
-      <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Microsoft is bundling Defender for Office 365 Plan 1 into Microsoft 365 Business Standard, Business Basic, and Office 365 E1 tenants, with rollout starting June 2026 and completing by August 1, 2026. Business Standard also sees a $3/user/month price increase effective July 1, 2026; Business Premium pricing is unchanged. Review third-party email-security overlap at your small-business client and internal ops for potential savings.</p>
-      <a href="https://www.microsoft.com/en-us/licensing/news/2026-m365-packaging-pricing-updates" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-13">
-    <summary class="item-header">
-      <span class="item-title">Anthropic launches Claude Sonnet 5 with near-Opus performance at cheaper pricing</span>
-      <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Anthropic launched Claude Sonnet 5 on June 30, 2026, with improved agentic reasoning, tool use, and coding performance &mdash; reportedly outperforming Opus 4.8 on knowledge-work benchmarks. Available across Claude.ai, the API, and Claude Code. Introductory API pricing is $2 in / $10 out per million tokens through August 31. Relevant for any tenant evaluating agentic tooling or MSP-facing automation.</p>
-      <a href="https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-14">
-    <summary class="item-header">
-      <span class="item-title">Atera 2026 adds credential prompts, workgroup deploy, Copilot SNMP monitoring</span>
-      <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Atera's 2026 release notes add on-demand end-user credential prompts for network scans, automatic agent deployment for workgroup Windows devices, a dedicated SNMP scan type with auto-monitoring, and Copilot-generated OIDs (with or without MIB files). Ticket automation now supports auto-created child tickets and an AI Center ticket-flow breakdown. Direct impact on your RMM workflow.</p>
-      <a href="https://support.atera.com/hc/en-us/articles/25381421604124-Release-Notes-2026" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-15">
-    <summary class="item-header">
-      <span class="item-title">Intune service release 2606 enforces MAA on automation; adds Windows 11 STIG baseline</span>
-      <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Intune service release 2606 requires the Intune Android app 2025.11.01+, enforces Multi-Admin Approval on automation-driven API calls, mandates HTTPS delivery for managed Win32 app content, and adds a Windows 11 STIG SCAP audit baseline plus a Block Bluetooth sharing setting in the Android Enterprise catalog. Enrollment-time grouping for Apple ADE is now GA. Relevant to your construction client's hybrid Entra/Intune posture.</p>
-      <a href="https://learn.microsoft.com/en-us/intune/whats-new/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-16">
-    <summary class="item-header">
-      <span class="item-title">Microsoft Teams enables external meeting bot detection by default</span>
-      <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Teams' June 2026 wave adds automatic detection of external meeting assistant bots (on by default at GA, mid-June 2026), tightens meeting bot admission controls, adds BYOD peripheral health reporting, CSV breakout room assignment, and turns live-captions profanity filtering off by default. Admins should review bot admission policies before rollout completes.</p>
-      <a href="https://releasebot.io/updates/microsoft/microsoft-teams" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-17">
-    <summary class="item-header">
-      <span class="item-title">Splashtop restructures licensing; Business Access renamed Splashtop Remote Access</span>
-      <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Splashtop introduced a new flexible licensing model (announced June 5, updated June 16 client release). Splashtop Business Access is now Splashtop Remote Access, with Solo/Pro/Performance/Enterprise tiers. Review license mappings before renewals to avoid surprise re-tiering.</p>
-      <a href="https://www.splashtop.com/blog/introducing-easy-flexible-licensing" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-18">
-    <summary class="item-header">
-      <span class="item-title">Bluebeam Revu 21.9 ships; Bluebeam Max premium tier with Claude-powered AI on the way</span>
-      <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Bluebeam has released Revu 21.9 with fixes following 21.6.1's AutoCAD, Revit, and Navisworks 2026 support. Bluebeam Max, a premium subscription tier incorporating Claude-powered AI Chat, AI-assisted submittals/RFIs, geometry capabilities, and multi-sheet stitching, is rolling out through Q1 2026. Track for your construction client's takeoff/markup workflow.</p>
-      <a href="https://www.bluebeam.com/whats-new/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-19">
-    <summary class="item-header">
-      <span class="item-title">Trimble Spectrum adds Lumber workforce integration and Trimble Assistant AI beta</span>
-      <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Lumber's AI-native construction workforce management platform is now available on the Trimble Marketplace for Spectrum and Vista users. Spectrum also includes a beta Trimble Assistant chat agent for in-app task help, alongside 2025 R2 reporting/AP/payroll enhancements. Relevant to your construction client's Spectrum footprint.</p>
-      <a href="https://www.constructionowners.com/press-release/lumber-the-ai-native-construction-workforce-management-platform-now-available-on-trimble-marketplace" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-20">
-    <summary class="item-header">
-      <span class="item-title">Microsoft restores GIF functionality in Windows 11 Emoji Panel</span>
-      <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 6/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Microsoft has re-enabled GIF search in the Windows 11 Emoji Panel after the previous provider shut down; the panel now sources GIFs from a replacement service. Purely cosmetic FYI for end-user experience.</p>
-      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-gif-functionality-in-the-windows-emoji-panel/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-21">
-    <summary class="item-header">
-      <span class="item-title">FY2026 NDAA imposes AI security framework on DoD contractors; DoD plan due June 16</span>
-      <span class="item-type type-industry">INDUSTRY</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Section 1513 of the FY2026 National Defense Authorization Act requires DoD to develop a CMMC-style AI/ML security framework for contractors, with an implementation plan and timeline reportable to Congress by June 16, 2026. Meanwhile, CMMC levels remain keyed to NIST SP 800-171 Rev. 2; DoD will incorporate Rev. 3 via future rulemaking. Track for your construction client's CMMC Level 2 program.</p>
-      <a href="https://www.crowell.com/en/insights/client-alerts/cmmc-for-ai-defense-policy-law-imposes-ai-security-framework-and-requirements-on-contractors" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-22">
-    <summary class="item-header">
-      <span class="item-title">RustDuck botnet targets routers, cameras, and Android devices with Rust rewrite</span>
-      <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>A DDoS botnet migrating to Rust with advanced encryption and anti-analysis evasion techniques is actively recruiting routers, IP cameras, Android devices, and servers. Small footprint today, but the engineering pattern signals growth intent; SMB IT should verify network gear firmware is current and default credentials are removed on internet-exposed edge devices.</p>
-      <a href="https://securityaffairs.com/194556/malware/rustduck-the-botnet-thats-still-small-but-engineering-like-it-plans-to-grow.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-23">
-    <summary class="item-header">
-      <span class="item-title">XSS.is cybercrime forum administrator arrested; ransomware supply chain disrupted</span>
-      <span class="item-type type-industry">INDUSTRY</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Police arrested the alleged administrator of XSS.is, a Russian-language cybercrime forum that served as a major broker for ransomware initial access and affiliate recruitment. The takedown is a temporary disruption; other underground markets are expected to absorb activity.</p>
-      <a href="https://securityaffairs.com/194524/security/xss-is-the-forum-that-ran-the-ransomware-supply-chain-is-down-the-market-isnt.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-24">
-    <summary class="item-header">
-      <span class="item-title">Aflac Japan breach exposes personal data of 4.38 million customers</span>
-      <span class="item-type type-industry">INDUSTRY</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Attackers maintained access to Aflac Japan systems for ten days and exfiltrated customer personal information affecting 4.38 million individuals. Illustrates the dwell-time risk that undetected intrusions pose even to well-resourced targets; validate EDR coverage and log retention across your fleet.</p>
-      <a href="https://securityaffairs.com/194488/data-breach/hackers-steal-data-of-4-38-million-aflac-japan-customers.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-25">
-    <summary class="item-header">
-      <span class="item-title">Integris to acquire Australian MSP First Focus, expanding SMB-focused services in APAC</span>
-      <span class="item-type type-industry">INDUSTRY</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Integris announced intent to acquire First Focus, the largest SMB-focused MSP in Australia, New Zealand, and the Philippines. Once closed, the deal is billed as making Integris the largest MSP for SMBs worldwide, continuing the aggressive PE-backed consolidation trend in the MSP market.</p>
-      <a href="https://www.prnewswire.com/news-releases/integris-announces-intent-to-acquire-msp-first-focus-expanding-smb-focused-managed-services-presence-across-australia-new-zealand-and-the-philippines-302753753.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-26">
-    <summary class="item-header">
-      <span class="item-title">FTC fines Amazon $2.25M for withholding evidence from identity theft victims</span>
+      <span class="item-title">Medtronic begins notifying customers hit by April ShinyHunters breach (~9M records)</span>
       <span class="item-type type-industry">INDUSTRY</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 6/11</span>
     </summary>
     <div class="item-body">
-      <p>Amazon will pay a $2.25 million civil penalty to settle FTC charges that it blocked identity-theft victims' access to account records needed to prove fraud. Peripheral to core IT security but useful context for fraud-response playbooks and client fraud advisories.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/amazon-fined-225m-for-withholding-evidence-from-fraud-victims/" target="_blank" class="src">Source &rarr;</a>
+      <p>Medtronic has started sending breach notifications tied to an April 13-19, 2026 intrusion by the ShinyHunters extortion crew, who claim to hold roughly 9M records containing PII and internal corporate data. Affected recipients get 24 months of credit monitoring and identity-theft protection. Useful as a fresh reference case for ShinyHunters TTPs and vendor-notification handling in SMB incident-response playbooks.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/medtronic-notifies-customers-impacted-by-shinyhunters-data-breach/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
 </div>
 
-<div class="footer">Generated Wednesday, July 1, 2026 at 6:36 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-07-01.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
+<div class="footer">Generated Thursday, July 2, 2026 at 6:36 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-07-02.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
 
 </main>
 </body>
