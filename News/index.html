@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<title>Morning Briefing -- Monday, July 6, 2026</title>
+<title>Morning Briefing -- Tuesday, July 7, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -14,223 +14,274 @@
 <main class="briefing-content">
 
 <div class="page-header">
-  <h1>Morning Briefing -- Monday, July 6, 2026</h1>
+  <h1>Morning Briefing -- Tuesday, July 7, 2026</h1>
   <p class="page-meta">Microsoft &bull; Security &amp; Compliance &bull; Firewall / VPN / Networking &bull; Servers/NAS &bull; Workstations &amp; Mobile &bull; Peripherals &amp; AV &bull; RMM &amp; Remote Access &bull; Construction &amp; Specialty Software &bull; General Tech &amp; AI &bull; Pacific Time</p>
 </div>
 
 <div class="section-actions">
   <h2>Today's Actions</h2>
-  <p class="section-transparency">Showing 3 of 6</p>
+  <p class="section-transparency">Showing 3 of 9</p>
   <ol class="action-list">
-    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Rotate any AWS/Azure/GCP keys used with build pipelines running Trivy or LiteLLM in the last two weeks and audit those tools for tampering &mdash; the FBI has flagged criminal group TeamPCP for poisoning both open-source developer tools and pushing self-replicating malware across open-source registries to harvest cloud credentials. <a href="#item-1" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Confirm none of your clients or their tenants run internet-facing Adobe ColdFusion &mdash; CVE-2026-48282 is a max-severity flaw now under active exploitation and any exposed server should be patched immediately per Adobe's advisory or taken offline pending remediation. <a href="#item-2" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Verify no client relies on Citrix NetScaler ADC/Gateway (ShareFile SaaS is unaffected) &mdash; Citrix's July 1 patch bundle includes CVE-2026-8451, a SAML memory-overread bug (CVSS 8.8) that was exploited within 24 hours of disclosure and requires NetScaler 14.1-72.61 or 13.1-63.18. <a href="#item-3" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Patch every UniFi controller across your construction client and internal ops today &mdash; Ubiquiti's Security Advisory Bulletin 066 (July 2) discloses 25 CVEs across UniFi OS, Network, Protect, Access, Talk, and Connect, including three CVSS 9.9 command-injection and auth-bypass bugs, with fixes at UniFi Protect 7.1.83+, Access 4.2.29+, Talk 5.2.2+, and Connect 3.4.20+. <a href="#item-1" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Warn users at your construction client, small-business client, hospitality client, and internal ops today that a live campaign is impersonating IT support over Microsoft Teams calls to push EtherRAT malware &mdash; reinforce the KnowBe4 message that no real Purplesky tech will cold-call over Teams and to hang up and call back through a known channel. <a href="#item-2" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Confirm every managed endpoint has the April 14, 2026 Microsoft Defender update installed &mdash; CISA added CVE-2026-33825 (BlueHammer, CVSS 7.8) to KEV after ransomware gangs began exploiting the file-remediation race for SYSTEM privileges, and tens of thousands of hosts remain unpatched. <a href="#item-3" class="detail-link">details</a></li>
   </ol>
-  <details class="section-overflow"><summary>Show 3 more actions</summary><ol class="action-list" start="4">
-    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-yellow">This Week</span> Push iOS 26.5.2, iPadOS 26.5.2, and macOS Tahoe 26.5.2 to every Apple device at your construction client this week and warn users a restart is required &mdash; Apple shipped 37 security fixes covering 26 WebKit bugs, kernel, IOGPUFamily, libxslt, Web Extensions, and WebRTC that can allow sandbox escape and kernel memory disclosure from a malicious web page. <a href="#item-4" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-yellow">This Week</span> Include Macs in the same 26.5.2 push at your construction client and internal ops &mdash; Macworld's coverage confirms the 37-CVE bundle applies verbatim to macOS Tahoe 26.5.2 with WebKit-triggered kernel corruption and IOGPUFamily privilege paths, and Apple accelerated the release citing AI-assisted exploit development timelines. <a href="#item-5" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-yellow">This Week</span> Update your incident-response playbook and KnowBe4 phishing-awareness cadence for the JadePuffer pattern &mdash; BleepingComputer confirmed the first documented ransomware operation run end-to-end by an autonomous LLM agent, and SMB defenders should assume attack scale and speed will increase quickly. <a href="#item-6" class="detail-link">details</a></li>
+  <details class="section-overflow"><summary>Show 6 more actions</summary><ol class="action-list" start="4">
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Audit Conditional Access at your construction client, small-business client, and internal ops today to block the ROPC OAuth flow and legacy auth &mdash; Huntress documented an 81M-login M365 password-spray campaign that already compromised 78 accounts across 64 tenants where ROPC was not blocked, bypassing MFA entirely. <a href="#item-4" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Verify no client uses BeyondTrust Remote Support or Privileged Remote Access appliances (Splashtop and Atera are unaffected) &mdash; BT26-02 discloses two CVSS 9.2 pre-auth bypass bugs (CVE-2026-40138, -40139) with early in-the-wild reports; on-prem customers must upgrade to RS/PRA 25.3.3+. <a href="#item-5" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-yellow">This Week</span> Push iOS 26.5.2 and iPadOS 26.5.2 to every iPhone and iPad at your construction client this week and remind users a restart is required &mdash; Apple's emergency release closes 37 CVEs including 26 WebKit bugs that can leak process memory, hijack the clipboard, or escape the web-content sandbox from a crafted page. <a href="#item-6" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-yellow">This Week</span> Ship macOS Tahoe 26.5.2 to every managed Mac at your construction client and internal ops this week &mdash; the same 37-CVE bundle covers kernel, IOGPUFamily, and WebKit sandbox-escape paths, and Apple accelerated the release citing AI-assisted exploit development timelines. <a href="#item-7" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-yellow">This Week</span> Schedule the Intel 2026.1 IPU BIOS/firmware update on any Intel-based Dell PowerEdge server in the fleet &mdash; Dell published DSA-2026-014, DSA-2026-012, and DSA-2026-027 covering an Intel Server Firmware vulnerability that impacts R470/R570/R660/R760/R860/R960/C6620 and other Intel PowerEdge models. <a href="#item-8" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-yellow">This Week</span> Update DSM on the Synology DS723+ at your hospitality client this week &mdash; Synology-SA-26:06 covers eight CVEs including a MitM variant (CVE-2026-40539) that allows arbitrary file read/write without valid credentials, plus authenticated file-manipulation and info-disclosure primitives up to CVSS 8.0. <a href="#item-9" class="detail-link">details</a></li>
   </ol></details>
 </div>
 
 <div class="section-new">
   <h2>What's New</h2>
-  <p class="section-transparency">Showing 3 of 4</p>
+  <p class="section-transparency">Showing 3 of 9</p>
   <ul class="new-list">
-    <li><strong><a href="#item-7">UniFi Network Application 10.5.54 released with Safe Ops, Test &amp; Commit, and PPPoE MTU 1500</a></strong> -- Ubiquiti published UniFi Network Application 10.5.54 on July 2. Highlights include support for RFC 4638 PPPoE MTU 1500 (removing the historical 1492 cap) and Safe Ops with a Test &amp; Commit workflow that stages configuration changes and automatically rolls them back if they cause disruption. <a href="https://community.ui.com/releases/UniFi-Network-Application-10-5-54/fdfe1b15-091c-410b-9cb9-3de3acfc1255" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-8">Windows Server 2025 hotpatch cycle resumes with July 2026 baseline cumulative</a></strong> -- Microsoft confirmed hotpatch updates on Windows Server 2025 resume after the July 2026 baseline cumulative, which requires a restart to install. Admins should schedule the reboot to re-enable hotpatching for the quarter, and note that prior OOB fixes (post-April KB5082063 install failures) remain relevant if not yet applied. <a href="https://learn.microsoft.com/en-us/windows/release-health/status-windows-server-2025" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-9">Windows 11 July 14 cumulative brings Point-in-Time Restore, indefinite update pause, and IPP-default printer installs</a></strong> -- Microsoft's Windows 11 July 14, 2026 update for 24H2 and 25H2 introduces Point-in-Time Restore, a VSS-based rollback of settings, files, and apps, together with the ability to pause Windows Update indefinitely, IPP-default new-printer installs, Magnifier accessibility improvements, and File Explorer/Bluetooth performance fixes. Rollout is on the same servicing branch for both channels. <a href="https://www.windowscentral.com/microsoft/windows-11/windows-11s-july-2026-update-is-packed-with-new-features-and-these-are-the-top-ones" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-10">Kerberos RC4 hardening reaches full Enforcement with July 2026 Windows update</a></strong> -- The July 2026 Windows security update completes the Kerberos RC4 hardening rollout, removing Audit mode and leaving Enforcement as the only supported behavior on Windows domain controllers. Environments still using RC4 for Kerberos authentication risk broken auth after applying the July cumulative update. <a href="https://zecurit.com/endpoint-management/patch-tuesday/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-11">Entra ID Conditional Access credential-registration enforcement completes by July 13, 2026</a></strong> -- Conditional Access policies targeting credential registration enforcement are now in effect and complete enforcement by July 13, 2026. Admins should verify policies covering security-info registration to avoid unexpected registration failures for end users. <a href="https://learn.microsoft.com/en-us/entra/fundamentals/whats-new" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-12">Windows 11 26H2 will enable Windows settings backup by default for orgs</a></strong> -- Microsoft will automatically enable Windows settings backup and restore on enterprise systems after upgrading to Windows 11 version 26H2. Admins who want to keep settings backup off will need to explicitly disable the policy before the upgrade lands on managed devices. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-to-enable-windows-backup-for-organizations-by-default/" target="_blank">Source &rarr;</a></li>
   </ul>
-  <details class="section-overflow"><summary>Show 1 more update</summary><ul class="new-list">
-    <li><strong><a href="#item-10">Claude Enterprise adds admin analytics, model entitlements, and spend alerts</a></strong> -- Anthropic rolled out richer admin analytics, per-model entitlements, and configurable spend alerts for Claude Enterprise on July 2, giving IT admins deeper visibility into usage and cost while letting them control which models each team can invoke. Useful for MSPs and IT leaders managing Claude deployments and seat sprawl. <a href="https://releasebot.io/updates/anthropic/claude" target="_blank">Source &rarr;</a></li>
+  <details class="section-overflow"><summary>Show 6 more updates</summary><ul class="new-list">
+    <li><strong><a href="#item-13">Microsoft 365 Business Standard/Premium with Copilot SKUs generally available July 1, 2026</a></strong> -- Microsoft made Business Standard with Copilot and Business Premium with Copilot SKUs generally available on July 1, 2026, converting the previous promotional bundles into permanent offerings. Anthropic's Claude is also now selectable in Copilot Chat for complex analysis and document work. <a href="https://www.microsoft.com/en-us/microsoft-365/blog/2026/05/28/introducing-microsoft-365-business-with-copilot-the-new-standard-for-small-business/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-14">Intune adds STIG audit baseline and folds Endpoint Privilege Management into M365 E5</a></strong> -- Intune now ships a STIG audit baseline that assesses Windows 11 devices against the DISA Windows 11 STIG SCAP Benchmark v2 R7, useful for CMMC and DoD-adjacent environments. Endpoint Privilege Management (EPM) is now bundled in Microsoft 365 E5 starting July 1, 2026, and Multi Admin Approval now applies to Graph API automation. <a href="https://learn.microsoft.com/en-us/intune/whats-new/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-15">Microsoft 365 admin center rolls out Anthropic model access controls, GA July 15</a></strong> -- Microsoft is rolling out a new Microsoft 365 admin center setting, GA July 15, 2026, that lets tenants enable Anthropic Claude as a model provider in Copilot and scope access to specific users and groups. The rollout also extends Anthropic model availability to non-federal GCC customers. <a href="https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-16">Windows Server DirectAccess deprecated in favor of Always On VPN</a></strong> -- Microsoft confirmed DirectAccess is deprecated and will be removed in a future Windows Server release, with Always On VPN positioned as the replacement remote-access solution. SMB environments still relying on DirectAccess should begin planning migration. <a href="https://techcommunity.microsoft.com/blog/windows-itpro-blog/windows-news-you-can-use-june-2026/4532288" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-17">UniFi Network Application 10.5 adds RFC 4638 PPPoE MTU 1500 and Safe Ops Test &amp; Commit</a></strong> -- Ubiquiti shipped UniFi Network Application 10.5, adding RFC 4638 support so PPPoE WAN connections can run a full 1500-byte MTU, plus a Safe Ops / Test &amp; Commit workflow that validates config changes with automatic rollback if the router loses reachability. <a href="https://dongknows.com/unifi-network-10-5-released/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-18">Windows 11 Insider Preview adds Cloud Rebuild recovery option</a></strong> -- Microsoft released four new Windows 11 Insider Preview builds on July 6, 2026. The Experimental Preview introduces Cloud Rebuild, a recovery option that reinstalls the OS by pulling the image and drivers directly from Windows Update, reducing reliance on local recovery partitions. <a href="https://www.ntcompatible.com/story/windows-11-insider-preview-july-2026-cloud-rebuild-taskbar-options-and-new-builds-released" target="_blank">Source &rarr;</a></li>
   </ul></details>
 </div>
 
 <div class="section-security">
   <h2>Security &amp; Patches</h2>
-  <p class="section-transparency">Showing 3 of 5</p>
+  <p class="section-transparency"></p>
   <div class="security-cards">
-    <div class="security-card"><a href="#item-11" class="security-headline">Microsoft Teams meeting scheduling from classic Outlook broken (July 3 incident)</a><span class="urgency-yellow">This Week</span><span class="security-summary">On July 3, 2026, users reported an inability to schedule Microsoft Teams meetings via the classic Outlook desktop client.</span></div>
-    <div class="security-card"><a href="#item-12" class="security-headline">NIST SP 1800-41 manufacturing cyber response/recovery draft closes public comment July 8</a><span class="urgency-yellow">This Week</span><span class="security-summary">NIST NCCoE's initial public draft of SP 1800-41, "Responding to and Recovering from a Cyber Attack: Cybersecurity for the Manufacturing Sector," has public comments due July 8.</span></div>
-    <div class="security-card"><a href="#item-13" class="security-headline">Hidden web prompts hijack AI agents into unauthorized payments via indirect prompt injection</a><span class="urgency-yellow">This Week</span><span class="security-summary">Researchers documented malicious websites embedding hidden instructions that manipulate autonomous AI browsing agents into sending money without user authorization.</span></div>
+    <div class="security-card"><a href="#item-19" class="security-headline">Bad Epoll Linux kernel race grants local root on Linux and Android</a><span class="urgency-yellow">This Week</span><span class="security-summary">A use-after-free triggered by a race condition in the Linux kernel's epoll subsystem allows a local attacker to obtain root on affected Linux and Android systems.</span></div>
+    <div class="security-card"><a href="#item-20" class="security-headline">Januscape: 16-year-old Linux KVM bug enables guest-to-host VM escape</a><span class="urgency-yellow">This Week</span><span class="security-summary">A newly disclosed KVM use-after-free lets code inside a guest VM corrupt host kernel memory, enabling arbitrary code execution on the hypervisor host on both Intel and AMD.</span></div>
   </div>
-  <details class="section-overflow"><summary>Show 2 more security items</summary><div class="security-cards">
-    <div class="security-card"><a href="#item-14" class="security-headline">Ohio county paid $1M ransom to Kairos data-extortion group</a><span class="urgency-yellow">This Week</span><span class="security-summary">A U.S. county government paid $1M to the Kairos data-extortion group, underscoring the continuing viability of extortion-only (non-encrypting) operations against small public-sector and SMB-scale targets.</span></div>
-    <div class="security-card"><a href="#item-15" class="security-headline">Bad Epoll Linux kernel race condition grants root on Linux and Android</a><span class="urgency-yellow">This Week</span><span class="security-summary">A newly disclosed epoll race condition in the Linux kernel enables local root escalation on Linux and Android hosts.</span></div>
-  </div></details>
 </div>
 
 <div class="section-details">
   <h2>Details</h2>
   <details class="item" id="item-1">
     <summary class="item-header">
-      <span class="item-title">FBI: TeamPCP compromised Trivy and LiteLLM to steal AWS/Azure/GCP credentials</span>
+      <span class="item-title">Ubiquiti Security Advisory Bulletin 066 fixes 25 CVEs across UniFi OS, Network, Protect, Access, Talk, and Connect</span>
       <span class="item-type type-security">SECURITY</span>
       <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
+      <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>The FBI issued an alert that criminal group TeamPCP poisoned popular open-source developer tools Trivy and LiteLLM to steal AWS, Azure, and GCP credentials and deploy self-replicating malware across open-source registries. SMBs using these tools in build pipelines should audit for compromise and rotate cloud keys. Any client with a CI/CD pipeline touching these tools in the past two weeks should assume credential exposure.</p>
-      <a href="https://securityaffairs.com/194741/cyber-crime/fbi-teampcp-compromised-dev-tools-to-steal-cloud-credentials.html" target="_blank" class="src">Source &rarr;</a>
+      <p>Ubiquiti published Security Advisory Bulletin 066 on July 2, 2026 disclosing 25 CVEs across the UniFi ecosystem, including three CVSS 9.9 issues (command injection, SQL injection, SSRF, path traversal, auth bypass, privilege escalation). Fixes span UniFi Network Application, UniFi Protect (update to 7.1.83+), Access (4.2.29+), Talk (5.2.2+), and Connect (3.4.20+). Administrators should patch all UniFi Applications immediately.</p>
+      <a href="https://community.ui.com/releases/Security-Advisory-Bulletin-066/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-2">
     <summary class="item-header">
-      <span class="item-title">Max-severity Adobe ColdFusion CVE-2026-48282 exploited in active attacks</span>
+      <span class="item-title">Fake IT support calls on Microsoft Teams push EtherRAT malware</span>
       <span class="item-type type-security">SECURITY</span>
       <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 9/11</span>
+      <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>A max-severity Adobe ColdFusion vulnerability (CVE-2026-48282) is now under active exploitation, per the Canadian Center for Cyber Security. Any SMB running ColdFusion on internet-facing servers should patch immediately per Adobe's advisory or take the servers offline pending remediation. No known client currently runs ColdFusion but confirm before moving on.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/max-severity-adobe-coldfusion-flaw-now-exploited-in-attacks/" target="_blank" class="src">Source &rarr;</a>
+      <p>Threat actors impersonate corporate IT staff via Microsoft Teams calls to deceive employees into installing EtherRAT malware. The social engineering campaign leverages inbound Teams calls to establish trust before delivering the RAT payload, targeting SMB helpdesk workflows. Users at all four Purplesky client tenants should be notified via KnowBe4 messaging.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/fake-it-support-calls-on-microsoft-teams-push-etherrat-malware/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-3">
     <summary class="item-header">
-      <span class="item-title">Citrix patches six NetScaler flaws; CVE-2026-8451 exploited within 24 hours</span>
+      <span class="item-title">CISA adds BlueHammer Microsoft Defender flaw (CVE-2026-33825) to KEV after ransomware exploitation</span>
+      <span class="item-type type-security">SECURITY</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 10/11</span>
+    </summary>
+    <div class="item-body">
+      <p>CISA added Microsoft Defender vulnerability CVE-2026-33825 (BlueHammer, CVSS 7.8) to KEV after ransomware gangs began exploiting the race condition in Defender's file remediation logic to gain SYSTEM privileges. Microsoft patched the flaw April 14, 2026, but tens of thousands of systems remain unpatched. Verify every managed endpoint has the April 2026 or later Defender platform update installed.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/cisa-windows-bluehammer-flaw-now-exploited-by-ransomware-gangs/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-4">
+    <summary class="item-header">
+      <span class="item-title">Microsoft 365 password-spray campaign generates 81M login attempts and bypasses MFA via ROPC</span>
+      <span class="item-type type-security">SECURITY</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 10/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Huntress documented a password-spraying campaign against Microsoft 365 tenants using Azure CLI and the ROPC OAuth flow, generating over 81 million login attempts and compromising 78 accounts across 64 organizations. The attack bypassed MFA where Conditional Access policies did not block ROPC. SMB admins should audit Conditional Access to block legacy auth flows and ROPC-issuing client apps.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/hackers-target-microsoft-365-accounts-with-81-million-login-attempts/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-5">
+    <summary class="item-header">
+      <span class="item-title">BeyondTrust discloses two critical auth-bypass flaws in Remote Support and Privileged Remote Access</span>
       <span class="item-type type-security">SECURITY</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Citrix disclosed six NetScaler ADC/Gateway vulnerabilities on July 1, 2026, including CVE-2026-8451 (CVSS 8.8, SAML IDP memory overread). Active exploitation of CVE-2026-8451 was observed within 24 hours. Upgrade paths are NetScaler ADC/Gateway 14.1-72.61, 13.1-63.18, or the corresponding FIPS builds; Citrix ShareFile SaaS is unaffected.</p>
-      <a href="https://thehackernews.com/2026/07/citrix-patches-six-netscaler-flaws.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-4">
-    <summary class="item-header">
-      <span class="item-title">Apple ships iOS/iPadOS/macOS 26.5.2 with 37 fixes, including 26 WebKit bugs</span>
-      <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 10/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Apple released iOS 26.5.2, iPadOS 26.5.2, and macOS Tahoe 26.5.2 covering 37 CVEs across IOGPUFamily, kernel, libxslt, Web Extensions, WebKit, and WebRTC. 26 WebKit issues can be triggered by malicious web content to leak process memory, hijack the clipboard, corrupt memory, or escape the sandbox. Apple accelerated the release, citing AI-assisted exploit development shortening attacker timelines.</p>
-      <a href="https://support.apple.com/en-us/127594" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-5">
-    <summary class="item-header">
-      <span class="item-title">Macworld: macOS Tahoe 26.5.2 patches kernel, WebKit, and WebRTC on Mac</span>
-      <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 10/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Macworld's coverage confirms the macOS Tahoe 26.5.2 companion release closes 37 vulnerabilities on Mac, with WebKit bugs exploitable via crafted web content plus fixes in the kernel and IOGPUFamily. Admins with Macs on the deployed cadence should push the update via MDM this week alongside the iOS/iPadOS rollout.</p>
-      <a href="https://www.macworld.com/article/3180118/apple-os-26-5-2-is-out-now-to-fix-dozens-of-security-vulnerabilities.html" target="_blank" class="src">Source &rarr;</a>
+      <p>BeyondTrust advisory BT26-02 covers CVE-2026-40138 and CVE-2026-40139 (both CVSS 9.2), pre-auth authentication-bypass vulnerabilities in the Remote Support (RS) and Privileged Remote Access (PRA) appliances that let a network-positioned attacker gain unauthorized access, including to elevated accounts. Cloud-hosted instances have been remediated; on-prem customers must apply the security rollup or upgrade to RS/PRA 25.3.3+. No Purplesky client currently uses BeyondTrust (Splashtop and Atera are unaffected) but confirm before moving on.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/beyondtrust-warns-of-critical-flaws-in-remote-access-software/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-6">
     <summary class="item-header">
-      <span class="item-title">JadePuffer becomes first documented ransomware operation run end-to-end by LLM agent</span>
+      <span class="item-title">Apple ships iOS 26.5.2 and iPadOS 26.5.2 with 37 security fixes including 26 WebKit bugs</span>
       <span class="item-type type-security">SECURITY</span>
       <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
+      <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>BleepingComputer reports JadePuffer as the first documented ransomware operation conducted entirely by an autonomous LLM agent, from intrusion through negotiation. Signals a step-change in attack scale/speed that SMB defenders should factor into IR playbooks, KnowBe4 phishing simulations, and EDR tuning.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/jadepuffer-ransomware-used-ai-agent-to-automate-entire-attack/" target="_blank" class="src">Source &rarr;</a>
+      <p>Apple pushed iOS 26.5.2 and iPadOS 26.5.2 earlier than the planned 26.6 cycle, patching 37 vulnerabilities across IOGPUFamily, kernel, libxslt, Web Extensions, WebKit, and WebRTC. The 26 WebKit issues can be triggered by a malicious website to leak data, corrupt memory, hijack the clipboard, or escape the web-content sandbox. Apple cited AI-accelerated exploit development as the reason for the accelerated release.</p>
+      <a href="https://support.apple.com/en-us/127594" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-7">
     <summary class="item-header">
-      <span class="item-title">UniFi Network Application 10.5.54 released with Safe Ops, Test &amp; Commit, and PPPoE MTU 1500</span>
-      <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
+      <span class="item-title">macOS Tahoe 26.5.2 emergency patch also lands for Mac</span>
+      <span class="item-type type-security">SECURITY</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>Ubiquiti published UniFi Network Application 10.5.54 on July 2. Highlights include support for RFC 4638 PPPoE MTU 1500 (removing the historical 1492 cap) and Safe Ops with a Test &amp; Commit workflow that stages configuration changes and automatically rolls them back if they cause disruption. Applies to Cloud Gateways and self-hosted controllers on 10.3+.</p>
-      <a href="https://community.ui.com/releases/UniFi-Network-Application-10-5-54/fdfe1b15-091c-410b-9cb9-3de3acfc1255" target="_blank" class="src">Source &rarr;</a>
+      <p>macOS Tahoe 26.5.2 ships as part of Apple's cross-platform July 1 emergency update, closing the same 37 CVEs including kernel, IOGPUFamily, and WebKit sandbox escapes. Recommended immediately for all managed Macs via System Settings &gt; Software Update or an MDM push at your construction client and internal ops.</p>
+      <a href="https://www.malwarebytes.com/blog/news/2026/06/update-time-apple-releases-security-patches-for-ios-macos-tahoe-safari" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-8">
     <summary class="item-header">
-      <span class="item-title">Windows Server 2025 hotpatch cycle resumes with July 2026 baseline cumulative</span>
+      <span class="item-title">Dell publishes DSA-2026-014 for Intel Server Firmware flaw affecting PowerEdge</span>
+      <span class="item-type type-security">SECURITY</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 10/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Dell released DSA-2026-014 covering an Intel Server Firmware vulnerability that can be exploited by a malicious user to compromise affected Intel-based PowerEdge servers. Dell also shipped DSA-2026-012 and DSA-2026-027 tied to the Intel 2026.1 IPU affecting a wide slate of models (R470/R570/R660/R670/R760/R860/R960, C6620, etc.). Apply the Dell-provided BIOS/firmware updates on affected PowerEdge fleets.</p>
+      <a href="https://www.dell.com/support/kbdoc/en-us/000426775/dsa-2026-014-security-update-for-dell-poweredge-server-for-intel-server-firmware-vulnerability" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-9">
+    <summary class="item-header">
+      <span class="item-title">Synology DSM update fixes cluster of file-manipulation and info-disclosure flaws (CVSS up to 8.0)</span>
+      <span class="item-type type-security">SECURITY</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 9/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Synology issued Synology-SA-26:06 covering CVE-2026-40530, -4036, -40531, -40532, -40534, -40536, -40537, and -40539 in DSM. Authenticated remote users can read or write arbitrary files, trigger DoS, or exfiltrate sensitive data; a MitM variant (CVE-2026-40539) allows the same primitives without valid creds. Synology rated the bundle Important and recommends updating DSM immediately &mdash; relevant to the DS723+ at your hospitality client.</p>
+      <a href="https://www.synology.com/en-eu/security/advisory/Synology_SA_26_06" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-10">
+    <summary class="item-header">
+      <span class="item-title">Kerberos RC4 hardening reaches full Enforcement (Phase 2) with July 2026 Windows update</span>
+      <span class="item-type type-feature">FEATURE</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 10/11</span>
+    </summary>
+    <div class="item-body">
+      <p>The July 2026 Windows security update completes the Kerberos RC4 hardening rollout, removing Audit mode and leaving Enforcement as the only supported behavior on Windows domain controllers. Environments still using RC4 for Kerberos authentication risk broken auth after applying the July cumulative update. Review DC event logs for RC4 fallback and address before rollout.</p>
+      <a href="https://zecurit.com/endpoint-management/patch-tuesday/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-11">
+    <summary class="item-header">
+      <span class="item-title">Entra ID Conditional Access credential-registration enforcement completes by July 13, 2026</span>
+      <span class="item-type type-feature">FEATURE</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 10/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Conditional Access policies targeting credential registration enforcement are now in effect and complete enforcement by July 13, 2026. Admins should verify policies covering security-info registration to avoid unexpected registration failures for end users at your construction client, small-business client, and internal ops.</p>
+      <a href="https://learn.microsoft.com/en-us/entra/fundamentals/whats-new" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-12">
+    <summary class="item-header">
+      <span class="item-title">Microsoft to enable Windows settings backup by default for organizations on Windows 11 26H2</span>
       <span class="item-type type-feature">FEATURE</span>
       <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft confirmed hotpatch updates on Windows Server 2025 resume after the July 2026 baseline cumulative, which requires a restart to install. Admins should schedule the reboot to re-enable hotpatching for the quarter and note that prior OOB fixes (post-April KB5082063 install failures) remain relevant if not yet applied.</p>
-      <a href="https://learn.microsoft.com/en-us/windows/release-health/status-windows-server-2025" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-9">
-    <summary class="item-header">
-      <span class="item-title">Windows 11 July 14 cumulative brings Point-in-Time Restore, indefinite update pause, and IPP-default printer installs</span>
-      <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Microsoft's Windows 11 July 14, 2026 update for 24H2 and 25H2 introduces Point-in-Time Restore, a VSS-based rollback of settings, files, and apps, together with the ability to pause Windows Update indefinitely, IPP-default new-printer installs, Magnifier accessibility improvements, and File Explorer/Bluetooth performance fixes. Rollout is on the same servicing branch for both channels.</p>
-      <a href="https://www.windowscentral.com/microsoft/windows-11/windows-11s-july-2026-update-is-packed-with-new-features-and-these-are-the-top-ones" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-10">
-    <summary class="item-header">
-      <span class="item-title">Claude Enterprise adds admin analytics, model entitlements, and spend alerts</span>
-      <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Anthropic rolled out richer admin analytics, per-model entitlements, and configurable spend alerts for Claude Enterprise on July 2, giving IT admins deeper visibility into usage and cost while letting them control which models each team can invoke. Useful for MSPs and IT leaders managing Claude deployments and seat sprawl.</p>
-      <a href="https://releasebot.io/updates/anthropic/claude" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-11">
-    <summary class="item-header">
-      <span class="item-title">Microsoft Teams meeting scheduling from classic Outlook broken (July 3 incident)</span>
-      <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>On July 3, 2026, users reported an inability to schedule Microsoft Teams meetings via the classic Outlook desktop client. Help desks should expect user reports and steer affected users to New Outlook or Teams web/desktop for scheduling until Microsoft posts an all-clear.</p>
-      <a href="https://digital.nhs.uk/cyber-alerts/2026/cc-4785" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-12">
-    <summary class="item-header">
-      <span class="item-title">NIST SP 1800-41 manufacturing cyber response/recovery draft closes public comment July 8</span>
-      <span class="item-type type-industry">INDUSTRY</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>NIST NCCoE's initial public draft of SP 1800-41, "Responding to and Recovering from a Cyber Attack: Cybersecurity for the Manufacturing Sector," has public comments due July 8. Defense-industrial-base SMBs on the CMMC track should review since ICS-focused response guidance often flows into CMMC assessor expectations. Relevant to your construction client's CMMC Level 2 track.</p>
-      <a href="https://csrc.nist.gov/news/2026" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft will automatically enable Windows settings backup and restore on enterprise systems after upgrading to Windows 11 version 26H2. Admins who want to keep settings backup off will need to explicitly disable the policy before the upgrade lands on managed devices. Review the Intune configuration profile now to set the desired state before the rollout hits.</p>
+      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-to-enable-windows-backup-for-organizations-by-default/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-13">
     <summary class="item-header">
-      <span class="item-title">Hidden web prompts hijack AI agents into unauthorized payments via indirect prompt injection</span>
-      <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 7/11</span>
+      <span class="item-title">Microsoft 365 Business Standard/Premium with Copilot SKUs generally available July 1, 2026</span>
+      <span class="item-type type-feature">FEATURE</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Researchers documented malicious websites embedding hidden instructions that manipulate autonomous AI browsing agents into sending money without user authorization. As SMB staff pilot agentic browsers and mail assistants, treat agent-initiated transactions as a new email/web threat vector requiring explicit approval gates.</p>
-      <a href="https://securityaffairs.com/194822/ai/hidden-web-prompts-trick-ai-agents-into-sending-money.html" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft made Business Standard with Copilot and Business Premium with Copilot SKUs generally available on July 1, 2026, converting the previous promotional bundles into permanent offerings. Anthropic's Claude is also now selectable in Copilot Chat for complex analysis and document work. Relevant when evaluating Copilot for the small-business client or internal ops.</p>
+      <a href="https://www.microsoft.com/en-us/microsoft-365/blog/2026/05/28/introducing-microsoft-365-business-with-copilot-the-new-standard-for-small-business/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-14">
     <summary class="item-header">
-      <span class="item-title">Ohio county paid $1M ransom to Kairos data-extortion group</span>
-      <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 7/11</span>
+      <span class="item-title">Intune adds STIG audit baseline and includes Endpoint Privilege Management in M365 E5</span>
+      <span class="item-type type-feature">FEATURE</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>A U.S. county government paid $1M to the Kairos data-extortion group, underscoring the continuing viability of extortion-only (non-encrypting) operations against small public-sector and SMB-scale targets. Reinforces the value of tabletop exercises covering data-only extortion scenarios at your construction client.</p>
-      <a href="https://securityaffairs.com/194750/security/u-s-government-agency-paid-1m-to-data-extortion-group-kairos.html" target="_blank" class="src">Source &rarr;</a>
+      <p>Intune now ships a STIG audit baseline that assesses Windows 11 devices against the DISA Windows 11 STIG SCAP Benchmark v2 R7, useful for CMMC and DoD-adjacent environments. Endpoint Privilege Management (EPM) is now bundled in Microsoft 365 E5 starting July 1, 2026. Multi Admin Approval also now applies to Graph API automation. Directly relevant to your construction client's CMMC Level 2 track.</p>
+      <a href="https://learn.microsoft.com/en-us/intune/whats-new/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-15">
+    <summary class="item-header">
+      <span class="item-title">Microsoft 365 admin center rolls out Anthropic model access controls, GA July 15</span>
+      <span class="item-type type-feature">FEATURE</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Microsoft is rolling out a new Microsoft 365 admin center setting, GA July 15, 2026, that lets tenants enable Anthropic Claude as a model provider in Copilot and scope access to specific users and groups. The rollout also extends Anthropic model availability to non-federal GCC customers. IT admins should review the new provider toggle, group-scoping options, and data-flow disclosures before enabling for end users.</p>
+      <a href="https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-16">
+    <summary class="item-header">
+      <span class="item-title">Windows Server DirectAccess deprecated in favor of Always On VPN</span>
+      <span class="item-type type-feature">FEATURE</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 8/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Microsoft confirmed DirectAccess is deprecated and will be removed in a future Windows Server release, with Always On VPN positioned as the replacement remote-access solution. SMB environments still relying on DirectAccess should begin planning migration to Always On VPN.</p>
+      <a href="https://techcommunity.microsoft.com/blog/windows-itpro-blog/windows-news-you-can-use-june-2026/4532288" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-17">
+    <summary class="item-header">
+      <span class="item-title">UniFi Network Application 10.5 released with RFC 4638 PPPoE MTU 1500 support and Safe Ops Test &amp; Commit</span>
+      <span class="item-type type-feature">FEATURE</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 8/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Ubiquiti shipped UniFi Network Application 10.5 adding RFC 4638 Maximum Packet Size support so PPPoE WAN connections can run a full 1500-byte MTU, plus a Safe Ops / Test &amp; Commit workflow that lets admins validate config changes with automatic rollback if the router loses reachability. Relevant to sites on 10.3+ that use PPPoE uplinks or want safer change management &mdash; apply after the SAB 066 patches land.</p>
+      <a href="https://dongknows.com/unifi-network-10-5-released/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-18">
+    <summary class="item-header">
+      <span class="item-title">Windows 11 Insider Preview adds Cloud Rebuild recovery option</span>
+      <span class="item-type type-feature">FEATURE</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 7/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Microsoft released four new Windows 11 Insider Preview builds on July 6, 2026 across current and 26H1 channels. The Experimental Preview introduces Cloud Rebuild, a recovery option that reinstalls the OS by pulling the image and drivers directly from Windows Update, reducing reliance on local recovery partitions for SMB fleets.</p>
+      <a href="https://www.ntcompatible.com/story/windows-11-insider-preview-july-2026-cloud-rebuild-taskbar-options-and-new-builds-released" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-19">
     <summary class="item-header">
       <span class="item-title">Bad Epoll Linux kernel race condition grants root on Linux and Android</span>
       <span class="item-type type-security">SECURITY</span>
@@ -238,13 +289,25 @@
       <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>A newly disclosed epoll race condition in the Linux kernel enables local root escalation on Linux and Android hosts. Relevant for SMBs running Linux servers, VMs, or containers alongside Windows/M365 estates; monitor distro advisories and patch when kernel updates land.</p>
+      <p>A use-after-free triggered by a race condition in the Linux kernel's epoll subsystem allows a local attacker to obtain root on affected Linux and Android systems. Patches are propagating through distro channels; SMB IT admins running Linux servers, containers, or MDM-managed Android fleets should schedule kernel updates this week.</p>
       <a href="https://securityaffairs.com/194795/hacking/bad-epoll-flaw-gives-attackers-root-access-on-linux-and-android.html" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-20">
+    <summary class="item-header">
+      <span class="item-title">Januscape - 16-year-old Linux KVM use-after-free enables guest-to-host VM escape on Intel and AMD</span>
+      <span class="item-type type-industry">INDUSTRY</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 7/11</span>
+    </summary>
+    <div class="item-body">
+      <p>A newly disclosed KVM use-after-free (dubbed Januscape) has lived in the Linux kernel for ~16 years and lets malicious code inside a guest VM corrupt host kernel memory, enabling arbitrary code execution on the hypervisor host. Impact spans both Intel and AMD hosts and is most acute for multi-tenant / cloud VM stacks; on-prem PowerEdge or Synology Virtual Machine Manager hosts running untrusted guests should track their distro's kernel patch.</p>
+      <a href="https://www.bleepingcomputer.com/news/linux/new-januscape-linux-kernel-flaw-allows-vm-escape-on-intel-amd-devices/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 </div>
 
-<div class="footer">Generated Monday, July 6, 2026 at 6:20 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-07-06.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
+<div class="footer">Generated Tuesday, July 7, 2026 at 6:30 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-07-07.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
 
 </main>
 </body>
