@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<title>Morning Briefing -- Wednesday, July 8, 2026</title>
+<title>Morning Briefing -- Thursday, July 9, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -14,59 +14,52 @@
 <main class="briefing-content">
 
 <div class="page-header">
-  <h1>Morning Briefing -- Wednesday, July 8, 2026</h1>
+  <h1>Morning Briefing -- Thursday, July 9, 2026</h1>
   <p class="page-meta">Microsoft &bull; Security &amp; Compliance &bull; Firewall / VPN / Networking &bull; Servers/NAS &bull; Workstations &amp; Mobile &bull; Peripherals &amp; AV &bull; RMM &amp; Remote Access &bull; Construction &amp; Specialty Software &bull; General Tech &amp; AI &bull; Pacific Time</p>
 </div>
 
 <div class="section-actions">
   <h2>Today's Actions</h2>
-  <p class="section-transparency">Showing 3 of 12</p>
+  <p class="section-transparency">Showing 3 of 6</p>
   <ol class="action-list">
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Patch every UniFi OS controller at your construction client and internal ops today &mdash; Ubiquiti disclosed 25 vulnerabilities including CVE-2026-54402 (CVSS 9.9) allowing network-adjacent unauthenticated command injection on UniFi OS. <a href="#item-1" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Update UniFi Network Application to 10.4.57 today at your construction client and internal ops &mdash; CVE-2026-50747 (CVSS 9.9) lets a network-adjacent attacker DoS the controller, and a companion path-traversal escalates to host privileges on self-hosted deployments (10.3+ deployed base is affected). <a href="#item-2" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Confirm no client tenant runs an on-prem Citrix ShareFile Storage Zones Controller today and, if any exist, upgrade to v5.12.4 or migrate to v6 immediately &mdash; CVE-2026-3055 and CVE-2026-4368 are being actively exploited per CISA. <a href="#item-3" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Verify Defender for Business engine auto-update completed at your small-business client and internal ops today &mdash; Microsoft shipped the RoguePlanet Defender zero-day patch (CVE-2026-50656) for a local SYSTEM privilege escalation in the Malware Protection Engine. <a href="#item-1" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Confirm every Windows 10/11 client and Windows Server host at your construction client, small-business client, and internal ops has the CVE-2025-33073 SMB client patch installed today &mdash; CISA added it to KEV after confirmed exploitation chains to SYSTEM and pivots into Active Directory. <a href="#item-2" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Alert users at your construction client, small-business client, and internal ops today about an Entra passkey-enrollment vishing campaign &mdash; attackers walk M365 users through registering an attacker-owned passkey, so restrict passkey registration to compliant devices and enforce Authentication Strengths in Conditional Access. <a href="#item-3" class="detail-link">details</a></li>
   </ol>
-  <details class="section-overflow"><summary>Show 9 more actions</summary><ol class="action-list" start="4">
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Update UniFi Protect at your construction client and internal ops today &mdash; CVE-2026-55115 (CVSS 9.9) is an SSRF-driven privilege-escalation path against the 7.5+ deployed base disclosed alongside 24 other UniFi bugs. <a href="#item-4" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> Note the CISA emergency directive on Langflow CVE-2026-55255 &mdash; no Purplesky client runs Langflow today, so this is awareness-only, but flag it if any client stands up a self-hosted AI flow builder. <a href="#item-5" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> Note CISA's Friday deadline on Adobe ColdFusion CVE-2026-48282 &mdash; no Purplesky client runs ColdFusion so this is read-and-file, but treat any inherited legacy web-app engagements accordingly. <a href="#item-6" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-yellow">This Week</span> Stage the July 2026 Patch Tuesday rollout at your construction client, small-business client, and internal ops this week &mdash; CVE-2026-55952 (Windows Server TLS 1.3 DoS) is already disclosed and Microsoft is expected to ship 100+ additional CVEs on Tuesday. <a href="#item-7" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-yellow">This Week</span> Alert users at your construction client, small-business client, and internal ops that WHfB and macOS Platform SSO registration now go through the Register-Security-Information Conditional Access gate &mdash; enrollments will fail if the CA policy hasn't been updated, so audit report-only results and adjust before the week's device turnover. <a href="#item-8" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-yellow">This Week</span> Restrict Web Config exposure on any Epson printer or MFP in the fleet this week and watch Epson PSIRT for patched firmware &mdash; CVE-2026-58315 is a browser-side CSRF that lets an attacker change device settings if an admin visits a malicious page while logged in. <a href="#item-9" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-yellow">This Week</span> Push Splashtop Streamer 3.8.0.0 to every managed endpoint this week &mdash; the release bundles OpenSSL 3.5.2 and closes multiple CVEs that touch the remote-access channel used across your client fleet. <a href="#item-10" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-yellow">This Week</span> Update Autodesk Shared Components to 2026.6 on any AutoCAD 2026 install at your construction client this week &mdash; CVE-2026-0875 is an out-of-bounds write triggered by opening a crafted MODEL file, affecting the base product and every specialized toolset. <a href="#item-11" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-yellow">This Week</span> Verify any Canon MFP in scope has firmware current against the CVE-2026-1789 advisory this week and confirm its management interface is not internet-exposed &mdash; Canon's PSIRT lists model-specific fixed firmware. <a href="#item-12" class="detail-link">details</a></li>
+  <details class="section-overflow"><summary>Show 3 more actions</summary><ol class="action-list" start="4">
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Verify no client site exposes SMB (TCP 139/445) to the internet today and audit local-account password strength at your construction client and internal ops &mdash; Sophos reports WantToCry operators are brute-forcing exposed SMB and remotely encrypting files over the same session. <a href="#item-4" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-yellow">This Week</span> Note the July 1 Entra Connect change blocking post-mapping edits to OnPremisesObjectIdentifier &mdash; hybrid admins at your construction client and internal ops should audit any planned re-mapping operations before scheduling them, as those changes will now be rejected server-side. <a href="#item-5" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-yellow">This Week</span> Push a phishing-awareness note to users at your construction client, small-business client, and internal ops this week about fake Interpol investigation emails carrying password-protected archives &mdash; opening the archive drops ransomware, and mail-filter policy should quarantine password-protected attachments. <a href="#item-6" class="detail-link">details</a></li>
   </ol></details>
 </div>
 
 <div class="section-new">
   <h2>What's New</h2>
-  <p class="section-transparency">Showing 3 of 8</p>
+  <p class="section-transparency">Showing 3 of 6</p>
   <ul class="new-list">
-    <li><strong><a href="#item-13">Entra SSPR registration campaign begins &mdash; unregistered phone/email will stop working September 7</a></strong> -- A Self-Service Password Reset registration campaign launched July 6, 2026. From September 7, SSPR will accept only formally registered methods &mdash; directory-sourced phone numbers and email addresses never registered will be rejected. Notify users at your construction client, small-business client, and internal ops and drive registration now. <a href="https://learn.microsoft.com/en-us/entra/fundamentals/whats-new" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-14">Microsoft folding Intune Suite (Remote Help, EPM, Cloud PKI) into M365 E3/E5 in July</a></strong> -- Starting July 2026, premium Intune Suite capabilities are being folded into M365 E3 and E5 subscriptions. E3 gains Remote Help, Advanced Analytics, and Intune Plan 2; E5 additionally gains Endpoint Privilege Management, Enterprise App Management, and Microsoft Cloud PKI at no extra cost &mdash; directly relevant to CMMC tooling at your construction client. <a href="https://learn.microsoft.com/en-us/intune/whats-new/" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-15">Microsoft enabling Windows Settings Backup by default for organizations on Windows 11</a></strong> -- Microsoft announced Windows settings backup and Microsoft Store app backup will be on by default for organizational Windows 11 devices. IT admins who want to disable this for compliance reasons need to configure policy before the rollout lands on managed devices at your construction client and internal ops. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-to-enable-windows-backup-for-organizations-by-default/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-7">Microsoft Teams July 2026 update ships Efficiency mode, Windows DND sync, and Meeting AI toggle</a></strong> -- Teams rolled out several updates this week: an in-meeting toggle for organizers/presenters to disable Copilot, Facilitator, and Recap; a new Efficiency mode that lowers RAM use on Windows PCs; syncing of Teams notifications with Windows Do Not Disturb; sensitivity-label inheritance on recordings; and apps in private channels. Rollout completes end of July. <a href="https://www.windowslatest.com/2026/07/09/microsoft-teams-just-added-7-new-features-but-paused-the-one-that-fixed-multitasking-in-meetings/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-8">Windows Server 2025 hotpatch quarter resumes with July 2026 baseline cumulative update</a></strong> -- The July 2026 Patch Tuesday delivers the Q3 baseline cumulative update for Windows Server 2025, requiring a reboot before hotpatching resumes for August and September. Admins on the hotpatch channel should schedule the restart window this Patch Tuesday cycle to preserve reboot-free updates for the rest of Q3. <a href="https://learn.microsoft.com/en-us/windows/release-health/status-windows-server-2025" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-9">OpenAI launches GPT-5.6 Sol, Terra, and Luna to the general public July 9</a></strong> -- OpenAI is publicly releasing all three GPT-5.6 models &mdash; Sol, Terra, and Luna &mdash; starting Thursday, July 9, after U.S. Department of Commerce approval. Sol is the top-tier model ($5/$30 per 1M tokens), Terra is mid-tier at $2.50/$15, and Luna is the low-cost option at $1/$6. OpenAI also released gpt-realtime-2.1 voice models with 25% lower p95 latency. <a href="https://dataconomy.com/2026/07/08/openai-gpt-5-6-launch-july-9/" target="_blank">Source &rarr;</a></li>
   </ul>
-  <details class="section-overflow"><summary>Show 5 more updates</summary><ul class="new-list">
-    <li><strong><a href="#item-16">Defender July monthly news &mdash; local AI-agent discovery, new Entra ID identity alerts, Salesforce connector</a></strong> -- Microsoft's July 2026 Defender monthly post details new Defender for Identity alerts tied to Entra ID/AD, automatic discovery of local AI agents on onboarded Windows devices (Public Preview), an upgraded Defender for Cloud Apps Salesforce connector, and completion of Defender for Office 365 Plan 1 rollout to M365/Office 365 E3 by August 1. <a href="https://techcommunity.microsoft.com/blog/microsoftthreatprotectionblog/monthly-news---july-2026/4532402" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-17">Claude Cowork expands to web and mobile with remote sessions</a></strong> -- Anthropic announced Claude Cowork is now generally available on web and mobile in addition to desktop, with sessions running remotely in beta so files and work persist when devices sleep. Claude Code also released Claude in Chrome as GA and added Microsoft 365 write tools for email, calendars, and OneDrive/SharePoint files. <a href="https://releasebot.io/updates/anthropic/claude" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-18">Microsoft testing Cloud Rebuild recovery feature for Windows 11</a></strong> -- Microsoft is testing a new Cloud Rebuild recovery capability in Windows 11 that lets admins reinstall Windows and restore key settings/apps from the cloud, targeted at faster remediation of broken devices. Currently in Insider testing. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-testing-new-cloud-rebuild-windows-11-recovery-feature/" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-19">Apple seeds iOS 26.6 and iPadOS 26.6 developer beta 4</a></strong> -- Apple released the fourth developer beta of iOS 26.6 and iPadOS 26.6 on July 6, 2026. This is a preview build for developers; no public rollout yet. Track for imminent GA release given the beta cadence &mdash; final security-content list will be published with GA. <a href="https://www.macrumors.com/2026/07/06/apple-seeds-ios-26-6-beta-4/" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-20">OpenAI launches GPT-5.6 Sol on Cerebras at up to 750 tokens per second</a></strong> -- OpenAI is rolling out GPT-5.6 Sol on Cerebras infrastructure at up to 750 tokens per second this month, initially to select customers. GPT-5.6 family pricing: Sol $5/$30, Terra $2.50/$15, Luna $1/$6 per 1M tokens. OpenAI also released gpt-realtime-2.1 for voice with 25% lower p95 latency. <a href="https://openai.com/index/previewing-gpt-5-6-sol/" target="_blank">Source &rarr;</a></li>
+  <details class="section-overflow"><summary>Show 3 more updates</summary><ul class="new-list">
+    <li><strong><a href="#item-10">Anthropic launches Claude Sonnet 5 with 1M context, Claude for Government beta</a></strong> -- Anthropic rolled out Claude Cowork on web and mobile (Max plan) with synced files and shared chats/projects across devices, and the Microsoft 365 connector now supports write operations for email, calendar, and OneDrive/SharePoint files. Claude Sonnet 5 launched with a 1M token context window and 128k max output. Claude for Government (FedRAMP High) entered public beta. <a href="https://www.anthropic.com/news" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-11">Microsoft to retire OWA Light client in upcoming Exchange Server update</a></strong> -- Microsoft announced Outlook Web Access Light will be disabled in an upcoming Exchange Server cumulative update. Organizations still relying on OWA Light for low-bandwidth or accessibility scenarios should test standard OWA and plan a migration path before the update ships. No impact on Exchange Online users. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-announces-owa-light-retirement-in-exchange-server/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-12">Blackpoint Cyber unveils AI SOC Agent for identity threat detection in M365 and Google Workspace</a></strong> -- Blackpoint Cyber launched an AI SOC Agent for Identity Threat Detection and Response on July 8, giving MSPs an autonomous, human-guided way to contain high-confidence credential-based attacks in Microsoft 365 and Google Workspace at machine speed. Aimed at reducing analyst load for credential-abuse incidents. <a href="https://www.msptoday.com/" target="_blank">Source &rarr;</a></li>
   </ul></details>
 </div>
 
 <div class="section-security">
   <h2>Security &amp; Patches</h2>
-  <p class="section-transparency">Showing 3 of 5</p>
+  <p class="section-transparency">Showing 3 of 6</p>
   <div class="security-cards">
-    <div class="security-card"><a href="#item-21" class="security-headline">Hidden web prompts trick AI agents into sending money</a><span class="urgency-yellow">This Week</span><span class="security-summary">Researchers disclosed a class of prompt-injection attacks where malicious sites embed hidden instructions that manipulate AI agents (including agentic browsers and shopping assistants) into initiating payments or leaking data.</span></div>
-    <div class="security-card"><a href="#item-22" class="security-headline">KnowBe4 2026 benchmarking &mdash; security awareness training cuts phishing susceptibility 79%</a><span class="urgency-green">FYI</span><span class="security-summary">KnowBe4's 2026 Phishing by Industry Benchmarking Report, based on 42M simulations across 14.8M users at 64,000 orgs, found baseline Phish-prone Percentage of 33.2% dropping to 4.2% after 12 months of continuous training.</span></div>
-    <div class="security-card"><a href="#item-23" class="security-headline">CISA deploys Anthropic's Mythos AI to hunt vulnerabilities in U.S. government code</a><span class="urgency-green">FYI</span><span class="security-summary">CISA is running Anthropic's Mythos AI model against federal code repositories to identify security flaws before attackers.</span></div>
+    <div class="security-card"><a href="#item-13" class="security-headline">DoD interim rule to move CMMC to NIST SP 800-171 Rev 3 expected this month</a><span class="urgency-yellow">This Week</span><span class="security-summary">DoD is preparing an interim final rule that sets the deadline for CMMC to shift from NIST SP 800-171 Rev 2 to Rev 3, updating and reorganizing the 110 CUI protection controls.</span></div>
+    <div class="security-card"><a href="#item-14" class="security-headline">C3PAO wait times projected past 18 months as CMMC Phase 2 approaches November 10</a><span class="urgency-yellow">This Week</span><span class="security-summary">With fewer than 100 fully authorized C3PAOs in the U.S. and CMMC Phase 2 taking effect November 10, 2026, wait times for a Level 2 assessment are projected to exceed 18 months by Q3 2026.</span></div>
+    <div class="security-card"><a href="#item-15" class="security-headline">AI-powered service desk impersonation attacks bypass helpdesk verification</a><span class="urgency-yellow">This Week</span><span class="security-summary">Attackers are using AI voice cloning and real-time deepfakes to impersonate employees during service-desk calls and trigger password resets or MFA re-enrollment.</span></div>
   </div>
-  <details class="section-overflow"><summary>Show 2 more security items</summary><div class="security-cards">
-    <div class="security-card"><a href="#item-24" class="security-headline">Microsoft 365 Business with Copilot SKUs generally available for partners</a><span class="urgency-green">FYI</span><span class="security-summary">As of July 1, Microsoft made the Microsoft 365 Business with Copilot SKUs GA, turning the promotional bundle into a permanent offer MSPs can standardize on for SMB customers.</span></div>
-    <div class="security-card"><a href="#item-25" class="security-headline">Accenture confirms breach after hacker offers stolen data for sale</a><span class="urgency-green">FYI</span><span class="security-summary">Accenture confirmed a security incident after a threat actor advertised stolen corporate data for sale.</span></div>
+  <details class="section-overflow"><summary>Show 3 more security items</summary><div class="security-cards">
+    <div class="security-card"><a href="#item-16" class="security-headline">Fake VPN and 7-Zip installers hijack Windows PCs into residential proxy botnet</a><span class="urgency-yellow">This Week</span><span class="security-summary">The Lurking Lizard operation is distributing trojanized VPN and 7-Zip installers across 230+ typosquatted domains, converting infected Windows endpoints into residential proxy nodes for downstream fraud.</span></div>
+    <div class="security-card"><a href="#item-17" class="security-headline">Barracuda acquires Evo Security to add MSP-focused IAM/PAM to BarracudaONE</a><span class="urgency-green">FYI</span><span class="security-summary">Barracuda announced the acquisition of Evo Security on July 8, expanding the BarracudaONE platform with identity access management and privileged access management capabilities aimed at MSPs.</span></div>
+    <div class="security-card"><a href="#item-18" class="security-headline">Microsoft July 2026 Patch Tuesday scheduled July 14 amid pledged Windows zero-day drop</a><span class="urgency-yellow">This Week</span><span class="security-summary">Microsoft's July 14 Patch Tuesday is expected to include 100-140 CVEs, following the record-breaking June release.</span></div>
   </div></details>
 </div>
 
@@ -74,307 +67,223 @@
   <h2>Details</h2>
   <details class="item" id="item-1">
     <summary class="item-header">
-      <span class="item-title">Ubiquiti UniFi OS max-severity command injection (CVE-2026-54402) among 25 disclosed flaws</span>
+      <span class="item-title">Microsoft patches actively exploited Defender zero-day CVE-2026-50656 (RoguePlanet)</span>
       <span class="item-type type-security">SECURITY</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>Ubiquiti disclosed 25 vulnerabilities across the UniFi ecosystem, including seven critical bugs. UniFi OS is directly affected by CVE-2026-54402 (CVSS 9.9) allowing command injection by a network-adjacent unauthenticated attacker. More than 100,000 UniFi OS instances are exposed online.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/ubiquiti-warns-of-new-max-severity-unifi-os-vulnerability/" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft released an out-of-band patch for a Defender zero-day (local privilege escalation in the Malware Protection Engine) disclosed after the June 2026 Patch Tuesday. The flaw, dubbed RoguePlanet, allows attackers with local access to gain SYSTEM privileges via the Defender engine. Admins should confirm Defender engine auto-updates have deployed the fix.</p>
+      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-patches-rogueplanet-defender-zero-day-vulnerability/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-2">
     <summary class="item-header">
-      <span class="item-title">UniFi Network Application 10.4.57 patches critical DoS flaw affecting 10.3.58 and earlier</span>
+      <span class="item-title">CISA warns Windows SMB flaw CVE-2025-33073 actively exploited for SYSTEM access</span>
       <span class="item-type type-security">SECURITY</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>The UniFi disclosure batch includes an Improper Input Validation vulnerability (CVE-2026-50747, CVSS 9.9) in UniFi Network Application 10.3.58 and earlier that lets a network-adjacent attacker crash the application via DoS. A separate path traversal in self-hosted instances allows privilege escalation on the host. Fixed in 10.4.57.</p>
-      <a href="https://community.ui.com/releases/UniFi-Network-Application-10-4-57/92694b29-fd78-4d52-906a-3211136610e2" target="_blank" class="src">Source &rarr;</a>
+      <p>CISA added a high-severity Windows SMB client privilege escalation vulnerability (CVE-2025-33073) to the KEV catalog after confirming active exploitation. Attackers can chain the flaw to obtain SYSTEM-level access and pivot to Active Directory. Federal agencies must patch; SMBs running unpatched Windows clients and servers are at elevated risk.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/cisa-high-severity-windows-smb-flaw-now-exploited-in-attacks/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-3">
     <summary class="item-header">
-      <span class="item-title">Critical Citrix ShareFile flaws (CVE-2026-3055/CVE-2026-4368) under active exploitation</span>
+      <span class="item-title">Entra passkey enrollment vishing campaign targets Microsoft 365 tenants</span>
       <span class="item-type type-security">SECURITY</span>
       <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 11/11</span>
+      <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>CISA is warning of active exploitation of critical Citrix ShareFile vulnerabilities tracked as CVE-2026-3055 and CVE-2026-4368, with a "huge spike" in attacks reported this week. Citrix security bulletin CTX696300 covers the patches; ShareFile Storage Zones Controller v5 deployments should upgrade to v5.12.4 or migrate to v6.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-citrix-sharefile-flaw-exploited-in-the-wild/" target="_blank" class="src">Source &rarr;</a>
+      <p>Attackers are placing voice-phishing calls to M365 users and walking them through enrolling attacker-controlled passkeys into their Entra ID accounts, bypassing traditional MFA. Once enrolled, the attacker owns a phishing-resistant credential on the victim account. Admins should restrict passkey registration to compliant devices and enforce Authentication Strengths in Conditional Access.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/entra-passkey-enrollment-vishing-targets-microsoft-365-users/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-4">
     <summary class="item-header">
-      <span class="item-title">UniFi Protect SSRF-driven privilege escalation (CVE-2026-55115) disclosed in bulk advisory</span>
+      <span class="item-title">WantToCry ransomware brute-forces internet-exposed SMB for remote encryption</span>
       <span class="item-type type-security">SECURITY</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>Ubiquiti disclosed CVE-2026-55115 (CVSS 9.9), an SSRF that enables privilege escalation in UniFi Protect. It was published alongside 24 other UniFi bugs. Verify your 7.5+ Protect deployment against the vendor's fixed-version chart and update if any Protect component is behind.</p>
-      <a href="https://cybersecuritynews.com/ubiquiti-disclosed-25-flaws/" target="_blank" class="src">Source &rarr;</a>
+      <p>Sophos reports WantToCry operators are automating brute-force attacks against SMB services exposed on TCP 139/445, then exfiltrating and remotely encrypting files over the same SMB session. The campaign targets small businesses with weak SMB credentials and internet-facing file shares. Block SMB at the perimeter and enforce strong local account passwords.</p>
+      <a href="https://www.sophos.com/en-us/blog/wanttocry-ransomware-remotely-encrypts-files" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-5">
     <summary class="item-header">
-      <span class="item-title">CISA orders federal agencies to patch actively exploited Langflow auth bypass (CVE-2026-55255)</span>
+      <span class="item-title">Entra Connect blocks post-mapping changes to OnPremisesObjectIdentifier to stop hard-match abuse</span>
       <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-red">Act Today</span>
+      <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>CISA added CVE-2026-55255 to its KEV catalog with a July 10 patching deadline. The IDOR flaw in Langflow's /api/v1/responses endpoint lets authenticated attackers access other tenants' flows; Sysdig observed active exploitation on June 25 stealing LLM provider and AWS keys. Upgrade to Langflow 1.9.2 or later.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-prioritize-patching-langflow-auth-bypass-flaw/" target="_blank" class="src">Source &rarr;</a>
+      <p>As of July 1, 2026, Entra ID blocks Entra Connect attempts to modify a synced user's OnPremisesObjectIdentifier after initial mapping, closing an account-takeover path where an attacker with on-prem AD control could re-map a cloud user to an attacker-owned identity. Hybrid admins should audit any planned re-mapping operations for breakage.</p>
+      <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/microsoft-entra-id-security-updates-what-organizations-need-to-do-now/4522024" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-6">
     <summary class="item-header">
-      <span class="item-title">CISA orders federal patch of max-severity Adobe ColdFusion RCE (CVE-2026-48282) by Friday</span>
+      <span class="item-title">Attackers use fake Interpol warning emails to deliver ransomware to SMBs</span>
       <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-red">Act Today</span>
+      <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>CISA added CVE-2026-48282 (Adobe ColdFusion) plus Langflow and SP Page Builder flaws to the KEV catalog following confirmed active exploitation, and issued an emergency directive giving federal agencies until Friday to patch. SMBs running ColdFusion, especially internet-exposed instances, should treat this as immediate.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-max-severity-coldfusion-flaw-by-friday/" target="_blank" class="src">Source &rarr;</a>
+      <p>A phishing wave impersonating Interpol investigation notices is targeting small and mid-sized businesses. Recipients receive a password-protected archive under the guise of case documents; opening it drops ransomware. Reinforce user training on unsolicited law-enforcement lures and flag password-protected attachments in mail-filter policy.</p>
+      <a href="https://securityboulevard.com/2026/07/attackers-using-fake-interpol-warning-in-ransomware-attacks-on-smbs/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-7">
     <summary class="item-header">
-      <span class="item-title">Microsoft July 2026 Patch Tuesday preview &mdash; CVE-2026-55952 TLS 1.3 DoS disclosed</span>
-      <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 10/11</span>
+      <span class="item-title">Microsoft Teams July 2026 update ships Efficiency mode, Windows DND sync, and Meeting AI toggle</span>
+      <span class="item-type type-feature">FEATURE</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Ahead of July Patch Tuesday, CVE-2026-55952 was published July 7 &mdash; a TLS 1.3 server denial-of-service via malformed ClientHello pre-shared key extension. Analysts project 100-140 CVEs monthly following June's record 206-CVE release, so admins should stage rapid deployment pipelines this week.</p>
-      <a href="https://msrc.microsoft.com/update-guide" target="_blank" class="src">Source &rarr;</a>
+      <p>Teams rolled out several updates this week: an in-meeting toggle for organizers/presenters to disable Copilot, Facilitator, and Recap; a new Efficiency mode that lowers RAM use on Windows PCs; syncing of Teams notifications with Windows Do Not Disturb; sensitivity-label inheritance on recordings; and apps in private channels. Rollout completes end of July.</p>
+      <a href="https://www.windowslatest.com/2026/07/09/microsoft-teams-just-added-7-new-features-but-paused-the-one-that-fixed-multitasking-in-meetings/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-8">
     <summary class="item-header">
-      <span class="item-title">Entra Conditional Access begins enforcing on security-info registration for WHfB and macOS PSSO</span>
-      <span class="item-type type-security">SECURITY</span>
+      <span class="item-title">Windows Server 2025 hotpatch quarter resumes with July 2026 baseline cumulative update</span>
+      <span class="item-type type-feature">FEATURE</span>
       <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 10/11</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Starting July 6, 2026, Conditional Access policies targeting the "Register security information" action also apply to Windows Hello for Business provisioning and macOS Platform Single Sign-on registration. Admins who did not test in report-only mode risk breaking passkey/WHfB enrollments today.</p>
-      <a href="https://learn.microsoft.com/en-us/entra/fundamentals/whats-new" target="_blank" class="src">Source &rarr;</a>
+      <p>The July 2026 Patch Tuesday delivers the Q3 baseline cumulative update for Windows Server 2025, requiring a reboot before hotpatching resumes for August and September. Admins on the hotpatch channel should schedule the restart window this Patch Tuesday cycle to preserve reboot-free updates for the rest of Q3.</p>
+      <a href="https://learn.microsoft.com/en-us/windows/release-health/status-windows-server-2025" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-9">
     <summary class="item-header">
-      <span class="item-title">Epson Web Config CSRF vulnerability (CVE-2026-58315) published July 7</span>
-      <span class="item-type type-security">SECURITY</span>
+      <span class="item-title">OpenAI launches GPT-5.6 Sol, Terra, and Luna to the general public July 9</span>
+      <span class="item-type type-feature">FEATURE</span>
       <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 10/11</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>A cross-site request forgery flaw in SEIKO EPSON Web Config (CVE-2026-58315, CVSS 5.1) was published July 7, 2026. If a logged-in admin views an attacker-controlled page, the attacker can change product settings without consent. Affects Epson printers/MFPs exposing Web Config.</p>
-      <a href="https://basefortify.eu/cve_reports/2026/07/cve-2026-58315.html" target="_blank" class="src">Source &rarr;</a>
+      <p>OpenAI is publicly releasing all three GPT-5.6 models &mdash; Sol, Terra, and Luna &mdash; starting Thursday, July 9, after U.S. Department of Commerce approval. Sol is the top-tier model tuned for biology, chemistry, and cybersecurity ($5/$30 per M tokens). Terra matches GPT-5.5 performance at $2.50/$15, and Luna is the low-cost option at $1/$6. OpenAI also released gpt-realtime-2.1 voice models with 25% lower p95 latency.</p>
+      <a href="https://dataconomy.com/2026/07/08/openai-gpt-5-6-launch-july-9/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-10">
     <summary class="item-header">
-      <span class="item-title">Splashtop 3.8.0.0 released addressing multiple CVEs via OpenSSL 3.5.2 update</span>
-      <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 10/11</span>
+      <span class="item-title">Anthropic launches Claude Sonnet 5 with 1M context, Claude for Government beta</span>
+      <span class="item-type type-feature">FEATURE</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Splashtop shipped Streamer version 3.8.0.0 upgrading its bundled OpenSSL to 3.5.2, remediating several CVEs. Splashtop also opened a new Vulnerability Page on July 2 giving IT admins a centralized view of CVEs affecting managed endpoints with AI-evaluated risk levels.</p>
-      <a href="https://support-splashtopbusiness.splashtop.com/hc/en-us/articles/43014222816027-The-Addressed-CVEs-in-Splashtop-Version-3-8-0-0" target="_blank" class="src">Source &rarr;</a>
+      <p>Anthropic rolled out Claude Cowork on web and mobile (starting with Max plan) with synced files and shared chats/projects across devices. The Microsoft 365 connector now supports write operations for email, calendar, and OneDrive/SharePoint files. Claude Sonnet 5 launched with a 1M token context window and 128k max output. Claude for Government (FedRAMP High) entered public beta with tamper-evident audit logs and spend governance.</p>
+      <a href="https://www.anthropic.com/news" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-11">
     <summary class="item-header">
-      <span class="item-title">Autodesk advisory ADSK-SA-2026-0004 &mdash; AutoCAD MODEL file RCE via Shared Components</span>
-      <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 10/11</span>
+      <span class="item-title">Microsoft to retire OWA Light client in upcoming Exchange Server update</span>
+      <span class="item-type type-feature">FEATURE</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>Autodesk published advisory ADSK-SA-2026-0004 (CVE-2026-0875), an out-of-bounds write in Autodesk Shared Components triggered by a maliciously crafted MODEL file. Impacts AutoCAD 2026 and all specialized toolsets (Architecture, Electrical, Mechanical, MEP, Plant 3D, Map 3D). Fixed in Shared Components 2026.6.</p>
-      <a href="https://www.autodesk.com/trust/security-advisories/adsk-sa-2026-0004" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft announced Outlook Web Access Light will be disabled in an upcoming Exchange Server cumulative update. Organizations still relying on OWA Light for low-bandwidth or accessibility scenarios should test standard OWA and plan a migration path before the update ships. No impact on Exchange Online users.</p>
+      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-announces-owa-light-retirement-in-exchange-server/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-12">
     <summary class="item-header">
-      <span class="item-title">Canon MFP browser management interface info-disclosure (CVE-2026-1789)</span>
-      <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
+      <span class="item-title">Blackpoint Cyber unveils AI SOC Agent for identity threat detection in M365 and Google Workspace</span>
+      <span class="item-type type-feature">FEATURE</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>CVE-2026-1789 (CVSS 6.9) affects the browser-based remote management interface on certain Canon production printers and office/small-office multifunctional printers, allowing an administrator to access sensitive information via crafted requests. Canon recommends private IP addressing and firewalling management access.</p>
-      <a href="https://psirt.canon/advisory-information/" target="_blank" class="src">Source &rarr;</a>
+      <p>Blackpoint Cyber launched an AI SOC Agent for Identity Threat Detection and Response on July 8, giving MSPs an autonomous, human-guided way to contain high-confidence credential-based attacks in Microsoft 365 and Google Workspace at machine speed. Aimed at reducing analyst load for credential-abuse incidents.</p>
+      <a href="https://www.msptoday.com/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-13">
     <summary class="item-header">
-      <span class="item-title">Entra SSPR registration campaign begins &mdash; unregistered phone/email will stop working September 7</span>
-      <span class="item-type type-feature">FEATURE</span>
+      <span class="item-title">DoD interim rule to move CMMC to NIST SP 800-171 Rev 3 expected this month</span>
+      <span class="item-type type-industry">INDUSTRY</span>
       <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>A Self-Service Password Reset registration campaign launched July 6, 2026. From September 7, SSPR will accept only formally registered methods &mdash; directory-sourced phone numbers and email addresses never registered will be rejected. Notify users at your construction client, small-business client, and internal ops and drive registration now.</p>
-      <a href="https://learn.microsoft.com/en-us/entra/fundamentals/whats-new" target="_blank" class="src">Source &rarr;</a>
+      <p>DoD is preparing an interim final rule that sets the deadline for CMMC to shift from NIST SP 800-171 Rev 2 to Rev 3 (published May 2024), which updates and reorganizes the 110 CUI protection controls. Contractors should begin gap analyses against Rev 3 now; Phase 2 of CMMC enforcement begins November 10, 2026.</p>
+      <a href="https://federalnewsnetwork.com/commentary/2026/04/rev-3-is-coming-start-preparing-for-the-next-cmmc-requirement/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-14">
     <summary class="item-header">
-      <span class="item-title">Microsoft folding Intune Suite (Remote Help, EPM, Cloud PKI) into M365 E3/E5 in July</span>
-      <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-green">FYI</span>
+      <span class="item-title">C3PAO wait times projected past 18 months as CMMC Phase 2 approaches November 10</span>
+      <span class="item-type type-industry">INDUSTRY</span>
+      <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Starting July 2026, premium Intune Suite capabilities are being folded into M365 E3 and E5 subscriptions. E3 gains Remote Help, Advanced Analytics, and Intune Plan 2; E5 additionally gains Endpoint Privilege Management, Enterprise App Management, and Microsoft Cloud PKI at no extra cost &mdash; directly relevant to CMMC tooling at your construction client.</p>
-      <a href="https://learn.microsoft.com/en-us/intune/whats-new/" target="_blank" class="src">Source &rarr;</a>
+      <p>With fewer than 100 fully authorized C3PAOs in the U.S. and CMMC Phase 2 taking effect November 10, 2026, wait times for a Level 2 assessment are projected to exceed 18 months by Q3 2026. Contractors that delay engagement risk missing option-year awards; Lockheed, Boeing, and Northrop are already demanding documented compliance from suppliers.</p>
+      <a href="https://invitenetworks.com/cmmc-phase-2/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-15">
     <summary class="item-header">
-      <span class="item-title">Microsoft enabling Windows Settings Backup by default for organizations on Windows 11</span>
-      <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Microsoft announced Windows settings backup and Microsoft Store app backup will be on by default for organizational Windows 11 devices. IT admins who want to disable this for compliance reasons need to configure policy before the rollout lands on managed devices at your construction client and internal ops.</p>
-      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-to-enable-windows-backup-for-organizations-by-default/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-16">
-    <summary class="item-header">
-      <span class="item-title">Defender July monthly news &mdash; local AI-agent discovery, new Entra ID identity alerts, Salesforce connector</span>
-      <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Microsoft's July 2026 Defender monthly post details new Defender for Identity alerts tied to Entra ID/AD, automatic discovery of local AI agents on onboarded Windows devices (Public Preview), an upgraded Defender for Cloud Apps Salesforce connector, and completion of Defender for Office 365 Plan 1 rollout to M365/Office 365 E3 by August 1.</p>
-      <a href="https://techcommunity.microsoft.com/blog/microsoftthreatprotectionblog/monthly-news---july-2026/4532402" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-17">
-    <summary class="item-header">
-      <span class="item-title">Claude Cowork expands to web and mobile with remote sessions</span>
-      <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Anthropic announced Claude Cowork is now generally available on web and mobile in addition to desktop, with sessions running remotely in beta so files and work persist when devices sleep. Claude Code also released Claude in Chrome as GA and added Microsoft 365 write tools for email, calendars, and OneDrive/SharePoint files.</p>
-      <a href="https://releasebot.io/updates/anthropic/claude" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-18">
-    <summary class="item-header">
-      <span class="item-title">Microsoft testing Cloud Rebuild recovery feature for Windows 11</span>
-      <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Microsoft is testing a new Cloud Rebuild recovery capability in Windows 11 that lets admins reinstall Windows and restore key settings/apps from the cloud, targeted at faster remediation of broken devices. Currently in Insider testing.</p>
-      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-testing-new-cloud-rebuild-windows-11-recovery-feature/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-19">
-    <summary class="item-header">
-      <span class="item-title">Apple seeds iOS 26.6 and iPadOS 26.6 developer beta 4</span>
-      <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Apple released the fourth developer beta of iOS 26.6 and iPadOS 26.6 on July 6, 2026. This is a preview build for developers; no public rollout yet. Track for imminent GA release given the beta cadence &mdash; final security-content list will be published with GA.</p>
-      <a href="https://www.macrumors.com/2026/07/06/apple-seeds-ios-26-6-beta-4/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-20">
-    <summary class="item-header">
-      <span class="item-title">OpenAI launches GPT-5.6 Sol on Cerebras at up to 750 tokens per second</span>
-      <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>OpenAI is rolling out GPT-5.6 Sol on Cerebras infrastructure at up to 750 tokens per second this month, initially to select customers. GPT-5.6 family pricing: Sol $5/$30, Terra $2.50/$15, Luna $1/$6 per 1M tokens. OpenAI also released gpt-realtime-2.1 for voice with 25% lower p95 latency.</p>
-      <a href="https://openai.com/index/previewing-gpt-5-6-sol/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-21">
-    <summary class="item-header">
-      <span class="item-title">Hidden web prompts trick AI agents into sending money</span>
+      <span class="item-title">AI-powered service desk impersonation attacks bypass helpdesk verification</span>
       <span class="item-type type-security">SECURITY</span>
       <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>Researchers disclosed a class of prompt-injection attacks where malicious sites embed hidden instructions that manipulate AI agents (including agentic browsers and shopping assistants) into initiating payments or leaking data. Relevant when rolling out agentic AI tooling to SMB clients.</p>
-      <a href="https://securityaffairs.com/194822/ai/hidden-web-prompts-trick-ai-agents-into-sending-money.html" target="_blank" class="src">Source &rarr;</a>
+      <p>Attackers are using AI voice cloning and real-time deepfakes to impersonate employees during service-desk calls and trigger password resets or MFA re-enrollment. Recommended mitigations include callback verification, video confirmation for high-privilege resets, and out-of-band identity proofing. Directly relevant to M365 helpdesk workflows.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/3-ways-ai-powers-service-desk-attacks-and-how-to-prevent-them/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
-  <details class="item" id="item-22">
+  <details class="item" id="item-16">
     <summary class="item-header">
-      <span class="item-title">KnowBe4 2026 benchmarking &mdash; security awareness training cuts phishing susceptibility 79%</span>
+      <span class="item-title">Fake VPN and 7-Zip installers hijack Windows PCs into residential proxy botnet</span>
+      <span class="item-type type-security">SECURITY</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 7/11</span>
+    </summary>
+    <div class="item-body">
+      <p>The Lurking Lizard operation is distributing trojanized VPN and 7-Zip installers across 230+ typosquatted domains, converting infected Windows endpoints into residential proxy nodes for downstream fraud. SMB IT should block the identified domains, restrict software installation to allowlists, and educate users on downloading utilities from official sites.</p>
+      <a href="https://securityaffairs.com/194990/malware/fake-vpn-and-7-zip-apps-turn-victims-into-residential-proxy-nodes.html" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-17">
+    <summary class="item-header">
+      <span class="item-title">Barracuda acquires Evo Security to add MSP-focused IAM/PAM to BarracudaONE</span>
       <span class="item-type type-industry">INDUSTRY</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>KnowBe4's 2026 Phishing by Industry Benchmarking Report, based on 42M simulations across 14.8M users at 64,000 orgs, found baseline Phish-prone Percentage of 33.2% dropping to 4.2% after 12 months of continuous training. Phishing volume rose 17.1% YoY driven by generative AI &mdash; useful evidence for renewing the training program at your construction client.</p>
-      <a href="https://www.businesswire.com/news/home/20260707723389/en/KnowBe4-Research-Finds-Global-Phishing-Susceptibility-Drops-79-After-One-Year-of-Security-Awareness-Training" target="_blank" class="src">Source &rarr;</a>
+      <p>Barracuda announced the acquisition of Evo Security on July 8, expanding the BarracudaONE platform with identity access management and privileged access management capabilities aimed at MSPs. The move highlights identity resilience &mdash; managing human and non-human identities &mdash; as the emerging core security challenge for MSP partners.</p>
+      <a href="https://www.msptoday.com/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
-  <details class="item" id="item-23">
+  <details class="item" id="item-18">
     <summary class="item-header">
-      <span class="item-title">CISA deploys Anthropic's Mythos AI to hunt vulnerabilities in U.S. government code</span>
-      <span class="item-type type-industry">INDUSTRY</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>CISA is running Anthropic's Mythos AI model against federal code repositories to identify security flaws before attackers. A notable public-sector adoption of agentic AI security tooling, relevant to how MSPs and SMB IT should evaluate AI code-security offerings.</p>
-      <a href="https://securityaffairs.com/194913/ai/cisa-deploys-anthropics-mythos-ai-to-hunt-vulnerabilities-in-u-s-government-code.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-24">
-    <summary class="item-header">
-      <span class="item-title">Microsoft 365 Business with Copilot SKUs generally available for partners</span>
-      <span class="item-type type-industry">INDUSTRY</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>As of July 1, Microsoft made the Microsoft 365 Business with Copilot SKUs GA, turning the promotional bundle into a permanent offer MSPs can standardize on for SMB customers. Microsoft also expanded EA-to-CSP for Azure tool access for partners holding Cloud &amp; AI Solutions Partner designations.</p>
-      <a href="https://learn.microsoft.com/en-us/partner-center/announcements/2026-july" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-25">
-    <summary class="item-header">
-      <span class="item-title">Accenture confirms breach after hacker offers stolen data for sale</span>
-      <span class="item-type type-industry">INDUSTRY</span>
-      <span class="urgency-green">FYI</span>
+      <span class="item-title">Microsoft July 2026 Patch Tuesday scheduled July 14 amid pledged Windows zero-day drop</span>
+      <span class="item-type type-security">SECURITY</span>
+      <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 6/11</span>
     </summary>
     <div class="item-body">
-      <p>Accenture confirmed a security incident after a threat actor advertised stolen corporate data for sale. Details on scope and access vector remain limited; SMBs relying on Accenture-managed services should watch for downstream notifications and validate third-party access controls.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/accenture-confirms-breach-after-hacker-offers-stolen-data-for-sale/" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft's July 14 Patch Tuesday is expected to include 100-140 CVEs, following the record-breaking June release of 200 flaws and 6 zero-days. Security researcher 'Nightmare Eclipse' has publicly pledged to release additional Windows zero-day exploits on the same day, so IT teams should prepare escalation procedures and 24-48 hour patch-deployment testing for potential out-of-band releases.</p>
+      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-june-2026-patch-tuesday-fixes-6-zero-days-200-flaws/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 </div>
 
-<div class="footer">Generated Wednesday, July 8, 2026 at 6:30 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-07-08.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
+<div class="footer">Generated Thursday, July 9, 2026 at 6:00 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-07-09.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
 
 </main>
 </body>
