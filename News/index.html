@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<title>Morning Briefing -- Monday, July 13, 2026</title>
+<title>Morning Briefing -- Tuesday, July 14, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -14,47 +14,54 @@
 <main class="briefing-content">
 
 <div class="page-header">
-  <h1>Morning Briefing -- Monday, July 13, 2026</h1>
+  <h1>Morning Briefing -- Tuesday, July 14, 2026</h1>
   <p class="page-meta">Microsoft &bull; Security &amp; Compliance &bull; Firewall / VPN / Networking &bull; Servers/NAS &bull; Workstations &amp; Mobile &bull; Peripherals &amp; AV &bull; RMM &amp; Remote Access &bull; Construction &amp; Specialty Software &bull; General Tech &amp; AI &bull; Pacific Time</p>
 </div>
 
 <div class="section-actions">
   <h2>Today's Actions</h2>
-  <p class="section-transparency">Showing 3 of 7</p>
+  <p class="section-transparency">Showing 3 of 8</p>
   <ol class="action-list">
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Confirm every M365 tenant (your construction client's hybrid Entra, your small-business client, your internal ops) has a Conditional Access policy scoped to the "Register security information" user action before end of day &mdash; Entra ID reaches full enforcement TODAY (July 13), and any tenant without a CA policy covering that action is exposed to attacker-registered passkeys after a password-only compromise. <a href="#item-1" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Prioritize deploying the CISA-listed CVE-2026-33825 (BlueHammer) fix across your construction client's endpoints, your internal ops, and your small-business client's Defender for Business rollout this week &mdash; the exploit chain also blinds Microsoft Defender, so any endpoint still awaiting the update is at elevated risk of ransomware detonation. <a href="#item-2" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Verify no client is running an on-prem Citrix ShareFile Storage Zone Controller and, if one is found, take it offline immediately per Progress's July 12 emergency notice &mdash; Progress asked customers to keep Storage Zone Controllers shut down while it investigates a credible external threat; ShareFile cloud is unaffected. <a href="#item-3" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Deploy Microsoft's July 14, 2026 Patch Tuesday (127 CVEs) across your construction client, small-business client, hospitality client, and internal ops fleets this week &mdash; CVE-2025-47981 is a wormable heap-based buffer overflow in Windows SPNEGO Extended Negotiation (NEGOEX) rated CVSS 9.8, network-exploitable with no credentials or user interaction. <a href="#item-1" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Before deploying today's cumulative update to your construction client's hybrid AD domain controllers, audit every service account, printer, and NAS auth path for lingering Kerberos RC4 dependency &mdash; Phase 2 permanently removes the RC4DefaultDisablementPhase rollback registry key and any lingering RC4 negotiation will break silently after install. <a href="#item-2" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Reconfirm no client (or prospect) still runs an on-prem Progress ShareFile Storage Zone Controller and keep any that turn up shut down &mdash; Progress restored cloud access Sunday but on-prem Storage Zone Controllers must stay offline while the credible external threat is under investigation, with no patch or CVE yet published. <a href="#item-3" class="detail-link">details</a></li>
   </ol>
-  <details class="section-overflow"><summary>Show 4 more actions</summary><ol class="action-list" start="4">
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Audit any self-hosted Gitea instance across your client base (including internal ops repos) and patch or take offline today &mdash; attackers are actively exploiting a critical auth-bypass in the official Gitea Docker image that impersonates any user including administrators. <a href="#item-4" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Confirm no client environment runs Adobe ColdFusion; if any exposure exists, remediate immediately &mdash; CISA's July 10 KEV deadline covered four actively exploited flaws including a CVSS 10.0 Adobe ColdFusion vulnerability (CVE-2026-48282). <a href="#item-5" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-yellow">This Week</span> Stage Microsoft's July 14 Patch Tuesday (100-140 CVEs expected) across your construction client, small-business client, hospitality client, and internal ops fleets this week, with special attention to Kerberos RC4 full enforcement &mdash; any lingering RC4 dependency in legacy hybrid AD, printers, or NAS auth will break silently after install. <a href="#item-6" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-yellow">This Week</span> Push a KnowBe4 template and plain-language warning to end users at your construction client, small-business client, and internal ops today about a live SMB-targeted phishing wave using fake Interpol "under investigation" notices with password-protected ransomware archives &mdash; the authority-plus-fear lure is bypassing untrained users. <a href="#item-7" class="detail-link">details</a></li>
+  <details class="section-overflow"><summary>Show 5 more actions</summary><ol class="action-list" start="4">
+    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Push a KnowBe4 template and plain-language alert to end users at your construction client, small-business client, and internal ops today about Jalisco and OmegaLord phishing kits actively targeting M365 credentials &mdash; both adversary-in-the-middle kits proxy real M365 login sessions and steal tokens after MFA completes, making passkey/FIDO2 enrollment and Conditional Access hardening urgent. <a href="#item-4" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Warn Mac users at all clients to reject any "Apple crash reporter" prompt or installer &mdash; the new CrashStealer infostealer ships in Apple-notarized packages that bypass Gatekeeper and then harvests Keychain contents, browser credentials, and crypto wallets from macOS devices. <a href="#item-5" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Audit any client-facing Joomla site for the iCagenda or Balbooa Forms extensions today and patch or disable them &mdash; CISA added both active-exploitation RCE flaws to the KEV catalog, and any SMB running Joomla for marketing sites or extranets is directly exposed. <a href="#item-6" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Verify your construction client's SonicWall TZs, your small-business client's UCG Fiber firewall, and your hospitality client's edge device are on current firmware today &mdash; CISA plus eight allied agencies issued a joint advisory detailing Russian state-hacker campaigns actively targeting vulnerable and end-of-life routers and edge devices for critical-infrastructure persistence. <a href="#item-7" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Audit any WordPress or Joomla site under management (including internal ops marketing) for outstanding plugin and theme updates today &mdash; the Australian Cyber Security Centre warned of large-scale mass exploitation of 17 known CMS vulnerabilities being chained to deploy webshells and pivot into hosting environments. <a href="#item-8" class="detail-link">details</a></li>
   </ol></details>
 </div>
 
 <div class="section-new">
   <h2>What's New</h2>
-  <p class="section-transparency"></p>
+  <p class="section-transparency">Showing 3 of 6</p>
   <ul class="new-list">
-    <li><strong><a href="#item-8">Windows 11 July 2026 Update (KB5095093) ships Point-in-time Restore and IPP-by-default printer install</a></strong> -- The July 14, 2026 Windows 11 quality update (KB5095093, build 26200.8737) introduces Point-in-time Restore, a VSS-backed one-click recovery for settings, files, and installed apps, along with calendar-based Windows Update pause end dates (up to 35 days), Screen Tint accessibility overlay, and Magnifier granular zoom to 400%. It also switches default printer installation to Internet Printing Protocol (IPP); print-server admins should validate compatibility with existing Canon/Epson queues before rollout. <a href="https://www.windowscentral.com/microsoft/windows-11/windows-11s-july-2026-update-is-packed-with-new-features-and-these-are-the-top-ones" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-9">Entra ID raises passkey (FIDO2) policy limit to 20 KB and per-tenant profile cap from 3 to 10</a></strong> -- Microsoft has expanded the Entra ID passkey (FIDO2) authentication method policy from a shared allocation to a dedicated 20 KB limit, and raised the maximum passkey profiles per tenant from 3 to 10. This gives admins headroom for granular passkey rollouts (separate profiles per business unit or attestation policy) as CMMC-track tenants standardize on phishing-resistant MFA. <a href="https://learn.microsoft.com/en-us/entra/fundamentals/whats-new" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-10">Entra Connect adds passkey/FIDO2 sign-in in setup wizard (preview)</a></strong> -- An Entra Connect release on July 7, 2026 added preview support for phishing-resistant authentication in the setup wizard: administrators can now sign in via passkeys or FIDO2 security keys through Windows Web Account Manager (WAM), removing reliance on password-based admin creds during hybrid identity setup. Useful for your construction client's hybrid Entra environment on the CMMC track. <a href="https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/reference-connect-version-history" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-9">Microsoft Intune July 2026: STIG audit baseline, EAM auto-updates GA, Vulnerability Remediation Agent in Security Copilot</a></strong> -- The July 2026 Intune release adds a STIG audit baseline that reports Windows device compliance against DoD Security Technical Implementation Guides without changing configuration, Enterprise App Management auto-updates hit general availability, and a Vulnerability Remediation Agent enters public preview in Security Copilot to prioritize CVEs across Intune-managed Windows devices. EPM and EAM are now bundled into Microsoft 365 E5 as of July 1 &mdash; directly useful for your construction client's CMMC track. <a href="https://learn.microsoft.com/en-us/intune/whats-new/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-10">Microsoft Teams July 2026 rollout: 1,000-attendee breakout rooms, sensitivity-label inheritance, apps in private channels</a></strong> -- Microsoft Teams' July 2026 rollout expands breakout rooms to meetings of up to 1,000 attendees with up to 200 rooms (on by default), auto-applies the meeting's sensitivity label to recordings/transcripts/notes when saved to SharePoint/OneDrive, and lets bots/tabs/message extensions install in private channels. Additional updates include a streamlined call-transfer workflow and a desktop file-download manager. <a href="https://releasebot.io/updates/microsoft/microsoft-teams" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-11">Ubiquiti UniFi Network Application 10.5.62 released with SD-WAN and stability fixes</a></strong> -- Ubiquiti released UniFi Network Application 10.5.62 on July 13, adding CyberSecure Safe Mode indicators, an option to clear Auto STP Edge status in Port Manager, improved SD-WAN Underlay resiliency, and stronger Network Lists / RADIUS Server validation. Bug fixes include a Port Manager STP column issue, a U-LTE adoption gateway config error, and a Network Application start failure after upgrading to 10.5.57 on sites with many Traffic Flows. Distribution is gradual over the coming days. <a href="https://community.ui.com/releases/UniFi-Network-Application-10-5-62/5068df72-8188-4778-909f-e3fa870b119a" target="_blank">Source &rarr;</a></li>
   </ul>
+  <details class="section-overflow"><summary>Show 3 more updates</summary><ul class="new-list">
+    <li><strong><a href="#item-12">Microsoft Entra ID to default to passkeys starting September 2026</a></strong> -- Microsoft announced Entra ID will make passkey-based authentication the default sign-in method for user sign-ins beginning September 2026, promoting passkeys ahead of passwords in the sign-in experience. Admins should begin passkey rollout planning, user registration campaigns, and Conditional Access review before the change lands &mdash; particularly relevant to your construction client's CMMC-track hardening. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-entra-id-gets-passkeys-default-authentication-starting-september/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-13">OpenAI temporarily relaxes GPT-5.6 Sol usage limits after demand spike</a></strong> -- OpenAI raised the caps on its top-tier GPT-5.6 Sol model after users hit limits following the July 9 general-availability launch of the GPT-5.6 family (Sol, Terra, Luna). The relaxation is temporary while OpenAI adds capacity; IT teams evaluating Sol for coding or agentic workloads can run more queries in the interim. <a href="https://www.bleepingcomputer.com/news/artificial-intelligence/openai-temporarily-relaxes-gpt-56-sol-usage-limits/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-14">Microsoft testing cleaner Windows Search experience without ads</a></strong> -- Microsoft is testing a redesigned Windows Search that removes promotional/ad content and reduces web-suggestion clutter, currently rolling to Insider channels. Watch for eventual GA and any new Group Policy/CSP controls to govern the behavior. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-starts-testing-cleaner-windows-search-without-ads/" target="_blank">Source &rarr;</a></li>
+  </ul></details>
 </div>
 
 <div class="section-security">
   <h2>Security &amp; Patches</h2>
-  <p class="section-transparency">Showing 3 of 5</p>
+  <p class="section-transparency">Showing 3 of 6</p>
   <div class="security-cards">
-    <div class="security-card"><a href="#item-11" class="security-headline">Microsoft patches Defender RoguePlanet SYSTEM-privilege flaw (CVE-2026-50656)</a><span class="urgency-yellow">This Week</span><span class="security-summary">Microsoft fixed a CVSS 7.8 race condition in the Malware Protection Engine (mpengine.dll) that could be abused via an SMB server to exhaust disk and spawn a SYSTEM shell.</span></div>
-    <div class="security-card"><a href="#item-12" class="security-headline">Six new U-Boot bootloader flaws could enable stealthy firmware attacks on NAS and embedded devices</a><span class="urgency-yellow">This Week</span><span class="security-summary">Binarly disclosed six flaws (BRLY-2026-037 through BRLY-2026-042) in U-Boot's FIT signature verification code, two of which allow pre-boot arbitrary code execution before signature check.</span></div>
-    <div class="security-card"><a href="#item-13" class="security-headline">U-Boot FIT signature bypass enables firmware-level persistence on networking gear</a><span class="urgency-yellow">This Week</span><span class="security-summary">Two of the six new U-Boot bugs (BRLY-2026-037/038) permit stack buffer overflow via unchecked fdt_get_name return value, allowing return-address rewrite before signature verification.</span></div>
+    <div class="security-card"><a href="#item-15" class="security-headline">Huntress uncovers AI-generated PowerShell malware performing Active Directory recon</a><span class="urgency-yellow">This Week</span><span class="security-summary">Huntress researchers identified custom PowerShell reconnaissance malware whose structure and comments indicate it was AI-generated, used by an attacker to enumerate Active Directory objects after initial access.</span></div>
+    <div class="security-card"><a href="#item-16" class="security-headline">US Treasury OFAC sanctions VPN and malware providers tied to ransomware gangs</a><span class="urgency-yellow">This Week</span><span class="security-summary">OFAC issued new sanctions against VPN and malware-as-a-service providers linked to ransomware operators, complicating payment/negotiation exposure for US organizations.</span></div>
+    <div class="security-card"><a href="#item-17" class="security-headline">Jscrambler npm package backdoored with infostealer in supply-chain compromise</a><span class="urgency-yellow">This Week</span><span class="security-summary">Attackers pushed a malicious Jscrambler npm update containing infostealer functionality that harvests credentials and browser data from developer machines and build agents.</span></div>
   </div>
-  <details class="section-overflow"><summary>Show 2 more security items</summary><div class="security-cards">
-    <div class="security-card"><a href="#item-14" class="security-headline">US and allies warn of Russian state edge-router campaign against critical infrastructure</a><span class="urgency-yellow">This Week</span><span class="security-summary">A joint advisory from cybersecurity agencies across nine countries warns that Russian state hackers are targeting vulnerable and end-of-life routers and edge devices to establish footholds in critical infrastructure networks.</span></div>
-    <div class="security-card"><a href="#item-15" class="security-headline">UK charges suspects behind 'Russian Coms' call-spoofing (vishing) platform</a><span class="urgency-green">FYI</span><span class="security-summary">UK NCA-led investigation charged five people linked to Russian Coms, a caller-ID spoofing platform used to make over 1.8 million scam calls.</span></div>
+  <details class="section-overflow"><summary>Show 3 more security items</summary><div class="security-cards">
+    <div class="security-card"><a href="#item-18" class="security-headline">UK charges suspects behind Russian Coms call-spoofing platform (1.8M vishing calls)</a><span class="urgency-green">FYI</span><span class="security-summary">UK authorities charged multiple suspects tied to Russian Coms, a vishing-as-a-service platform that enabled roughly 1.8 million fraudulent calls impersonating banks and government.</span></div>
+    <div class="security-card"><a href="#item-19" class="security-headline">Microsoft turns off AI features by default in productivity apps</a><span class="urgency-yellow">This Week</span><span class="security-summary">Microsoft is reversing course and disabling AI features by default across its productivity apps, requiring users to opt in rather than auto-activating them.</span></div>
+    <div class="security-card"><a href="#item-20" class="security-headline">Ryuk ransomware operator pleads guilty; ordered to pay $1.1M restitution</a><span class="urgency-green">FYI</span><span class="security-summary">An Armenian national linked to the Ryuk ransomware operation pleaded guilty in US federal court and was ordered to pay $1.1M in restitution for attacks on US organizations.</span></div>
   </div></details>
 </div>
 
@@ -62,187 +69,247 @@
   <h2>Details</h2>
   <details class="item" id="item-1">
     <summary class="item-header">
-      <span class="item-title">Entra ID Conditional Access reaches full enforcement on "Register security information" user action today</span>
+      <span class="item-title">Microsoft July 2026 Patch Tuesday delivers 127 CVE fixes including wormable NEGOEX flaw (CVE-2025-47981, CVSS 9.8)</span>
       <span class="item-type type-security">SECURITY</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>Starting July 6 with full enforcement today, July 13, 2026, Entra ID Conditional Access policies scoped to the "Register security information" user action are honored. Users must satisfy MFA, network/location, and device-compliance controls before enrolling or updating authentication methods, closing a long-standing gap that let attackers register their own MFA/passkey after phishing a password. Any tenant without a CA policy covering this user action is exposed &mdash; hybrid tenants like your construction client and your small-business client's M365 Business Premium environment should validate coverage this morning.</p>
-      <a href="https://learn.microsoft.com/en-us/entra/fundamentals/whats-new" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft released fixes for 127 vulnerabilities on July 14, 2026. Headline flaw is CVE-2025-47981, a heap-based buffer overflow in the Windows SPNEGO Extended Negotiation (NEGOEX) mechanism, network-exploitable with no credentials or user interaction and considered fully wormable. Release also includes CVE-2026-50656 (Malware Protection Engine privilege escalation) and multiple Visual Studio/.NET fixes. Priority patching across your construction client, small-business client, hospitality client, and internal ops fleets this week.</p>
+      <a href="https://msrc.microsoft.com/update-guide/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-2">
     <summary class="item-header">
-      <span class="item-title">CISA adds CVE-2026-33825 (BlueHammer) to KEV amid active ransomware exploitation</span>
+      <span class="item-title">July 14 cumulative update permanently removes Kerberos RC4 rollback key on Windows Server domain controllers</span>
       <span class="item-type type-security">SECURITY</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>CISA's July 2026 KEV update flagged CVE-2026-33825 (BlueHammer) as actively exploited in ransomware campaigns after Huntress documented intrusions. The toolkit chains BlueHammer for privilege escalation with UnDefend (Defender degradation) and BeigeBurrow (C2 tunneling). Prioritize patching across your construction client's endpoints, your internal ops, and any Defender for Business-managed fleet, since the Defender-tampering payload directly raises the impact for organizations relying on Microsoft's endpoint security.</p>
-      <a href="https://www.decryptiondigest.com/blog/bluehammer-cve-2026-33825-ransomware-active-exploitation" target="_blank" class="src">Source &rarr;</a>
+      <p>The July 2026 cumulative update completes Kerberos RC4 hardening (Phase 2) by removing the RC4DefaultDisablementPhase registry key from all supported Windows Server domain controllers, eliminating the rollback safety net that has existed since January 2026. Environments still relying on RC4 for authentication will break after this update. Validate service accounts, legacy printer auth, and any NAS/SMB integration on your construction client's hybrid AD and your hospitality client's Synology before rolling out.</p>
+      <a href="https://zecurit.com/endpoint-management/patch-tuesday/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-3">
     <summary class="item-header">
-      <span class="item-title">Progress urges emergency shutdown of ShareFile Storage Zone Controllers over credible external threat</span>
+      <span class="item-title">Progress ShareFile Storage Zone Controllers must remain offline as investigation of credible threat continues</span>
       <span class="item-type type-security">SECURITY</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>Progress Software emailed ShareFile customers on July 12 telling them to immediately shut down on-premises Storage Zone Controllers due to a credible external security threat targeting the servers. Progress temporarily disabled ShareFile accounts using Storage Zone Controllers, then restored cloud access late July 12 while asking customers to keep on-prem Storage Zone Controllers offline. No CVE, patch, or affected version has been disclosed; ShareFile cloud-only tenants are unaffected. Confirm none of your clients (or prospects) still operate an on-prem Storage Zone Controller.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/progress-urges-sharefile-customers-to-shut-down-servers-over-credible-threat/" target="_blank" class="src">Source &rarr;</a>
+      <p>Progress restored cloud access to ShareFile customers as of 5 p.m. ET Sunday July 12, but Storage Zone Controller Windows servers must remain shut down while Progress investigates a "credible external security threat." No CVE, patch, or attribution has been disclosed. Only on-prem Storage Zone Controller customers are affected; cloud-only ShareFile tenants are not. The Register published expanded coverage on July 13 confirming the emergency shutdown remains in effect. Reconfirm none of your clients or prospects still operate an on-prem Storage Zone Controller.</p>
+      <a href="https://www.theregister.com/security/2026/07/13/progress-orders-emergency-sharefile-server-shutdown-over-mystery-security-threat/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-4">
     <summary class="item-header">
-      <span class="item-title">Hackers actively exploit critical auth bypass in Gitea Docker image</span>
+      <span class="item-title">New Jalisco and OmegaLord phishing kits target Microsoft 365 accounts and bypass MFA</span>
       <span class="item-type type-security">SECURITY</span>
       <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 9/11</span>
+      <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>Attackers are actively exploiting a critical authentication-bypass flaw in the official Gitea Docker image that allows impersonation of any user, including administrators. SMBs running self-hosted Gitea for source control should patch, upgrade, or take instances off the internet immediately. Any internal ops development environment using Gitea should be audited today.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-auth-bypass-in-gitea-docker-image/" target="_blank" class="src">Source &rarr;</a>
+      <p>Two new phishing kits, Jalisco and OmegaLord, are actively targeting Microsoft 365 credentials with adversary-in-the-middle capabilities that evade multi-factor authentication. The kits proxy real M365 login sessions to steal tokens after MFA challenge completion. Any tenant still relying on password + push/OTP is exposed; accelerate passkey/FIDO2 enrollment and Conditional Access hardening across your construction client, small-business client, and internal ops, and push a plain-language KnowBe4 template today.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/new-phishing-kits-target-microsoft-365-accounts-evade-mfa/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-5">
     <summary class="item-header">
-      <span class="item-title">CISA KEV deadline July 10 covered four actively exploited flaws, including Adobe ColdFusion CVE-2026-48282 (CVSS 10.0)</span>
+      <span class="item-title">CrashStealer macOS infostealer poses as Apple crash reporting tool</span>
+      <span class="item-type type-security">SECURITY</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 10/11</span>
+    </summary>
+    <div class="item-body">
+      <p>A new macOS infostealer named CrashStealer masquerades as an Apple crash-reporting utility and harvests browser credentials, Keychain contents, and cryptocurrency wallets. Follow-up analysis on July 14 shows the malware ships in Apple-notarized installers that bypass Gatekeeper and encrypts exfiltrated data with AES-256-GCM. Mac fleets should watch for unsigned or newly notarized "crash reporter" apps and update EDR signatures; warn Mac-using clients not to accept any such installer.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/new-crashstealer-malware-poses-as-apple-crash-reporting-tool/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-6">
+    <summary class="item-header">
+      <span class="item-title">CISA adds actively exploited Joomla iCagenda and Balbooa RCE flaws to KEV catalog</span>
       <span class="item-type type-security">SECURITY</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>July 10 was CISA's remediation deadline for four actively exploited CVEs, most notably an Adobe ColdFusion flaw rated CVSS 10.0 (CVE-2026-48282). Federal agencies were required to patch by that date; SMBs with any ColdFusion exposure (legacy internal web apps, remnants of acquired systems) should verify remediation immediately. None of the current in-scope clients are known to run ColdFusion; note the pattern for prospects.</p>
-      <a href="https://threat-modeling.com/vulnerability-intelligence-report-july-10-2026/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-6">
-    <summary class="item-header">
-      <span class="item-title">Microsoft July 14, 2026 Patch Tuesday forecast: 100-140 CVEs plus Kerberos RC4 full enforcement</span>
-      <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Microsoft's July 14, 2026 Patch Tuesday is forecast to include 100-140 CVEs across Windows 11 and Windows Server. The release also completes Phase 2 of Kerberos RC4 hardening, disabling RC4 encryption in Kerberos by default. Audit for RC4 dependency in hybrid AD (your construction client), legacy printers, and NAS (your hospitality client's Synology) before deployment &mdash; older devices that still negotiate RC4 will break silently.</p>
-      <a href="https://www.helpnetsecurity.com/2026/07/10/july-2026-patch-tuesday-forecast/" target="_blank" class="src">Source &rarr;</a>
+      <p>CISA warned that remote code execution vulnerabilities in the Joomla iCagenda (event calendar) and Balbooa (forms) extensions are being actively exploited in the wild and added them to the Known Exploited Vulnerabilities catalog. SMBs running Joomla-based websites, event calendars, or extranets should patch or disable the affected extensions today.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/cisa-warns-of-actively-exploited-rce-flaws-in-joomla-extensions/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-7">
     <summary class="item-header">
-      <span class="item-title">Fake Interpol "investigation" phishing lure delivers ransomware to SMBs</span>
+      <span class="item-title">CISA and 8 allied agencies warn of Russian state hackers targeting vulnerable edge routers and critical infrastructure</span>
       <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-yellow">This Week</span>
+      <span class="urgency-red">Act Today</span>
       <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>A campaign flagged July 10 targets small businesses with emails posing as Interpol notifications alleging the company is under investigation. Victims are directed to a Proton Drive link hosting a password-protected archive that deploys ransomware once opened. The social-engineering angle (authority + fear + supposed "evidence video") is bypassing untrained users; push a KnowBe4 template and plain-language warning to end users at your construction client, small-business client, and internal ops today.</p>
-      <a href="https://securityboulevard.com/2026/07/attackers-using-fake-interpol-warning-in-ransomware-attacks-on-smbs/" target="_blank" class="src">Source &rarr;</a>
+      <p>The US and eight allied cyber agencies issued a joint advisory detailing ongoing Russian state-sponsored targeting of vulnerable and end-of-life routers and edge devices across critical infrastructure. The advisory calls for patching edge devices, disabling internet-exposed admin interfaces, and hardening authentication. Verify your construction client's SonicWall TZs are on 7.2+, your small-business client's UCG Fiber firewall is current, and your hospitality client's edge device is patched.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/us-and-allies-share-defense-tips-against-russian-hackers-targeting-critical-infrastructure/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-8">
     <summary class="item-header">
-      <span class="item-title">Windows 11 July 2026 Update (KB5095093) delivers Point-in-time Restore and IPP-by-default printer install</span>
-      <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-yellow">This Week</span>
+      <span class="item-title">Australia warns of large-scale exploitation of 17 CMS vulnerabilities across WordPress and Joomla</span>
+      <span class="item-type type-security">SECURITY</span>
+      <span class="urgency-red">Act Today</span>
       <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>The July 14, 2026 Windows 11 quality update (KB5095093, build 26200.8737) introduces Point-in-time Restore, a VSS-based recovery capability that captures settings, files, and installed apps for one-click rollback (Home/Pro requires ~200 GB storage). Also adds calendar-based Windows Update pause end dates up to 35 days, Screen Tint accessibility overlay, Magnifier granular zoom to 400%, IPP-by-default printer installation, and File Explorer performance improvements. Validate IPP compatibility with existing Canon/Epson queues before rollout.</p>
-      <a href="https://www.windowscentral.com/microsoft/windows-11/windows-11s-july-2026-update-is-packed-with-new-features-and-these-are-the-top-ones" target="_blank" class="src">Source &rarr;</a>
+      <p>The Australian Cyber Security Centre issued an alert about ongoing mass exploitation of 17 known vulnerabilities in WordPress and Joomla plugins and themes. Attackers are chaining these to deploy webshells and pivot into hosting environments. Audit any WordPress or Joomla marketing site under management (client-facing or internal ops) for outstanding plugin/theme updates and rotate hosting credentials if a webshell is found.</p>
+      <a href="https://securityaffairs.com/195208/security/australia-alerts-organizations-to-ongoing-cms-exploitation-attacks.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-9">
     <summary class="item-header">
-      <span class="item-title">Entra ID raises passkey (FIDO2) policy limit to 20 KB / 10 profiles per tenant</span>
+      <span class="item-title">Microsoft Intune July 2026: STIG audit baseline, EAM auto-updates GA, Vulnerability Remediation Agent in Security Copilot</span>
       <span class="item-type type-feature">FEATURE</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft has expanded the Entra ID passkey (FIDO2) authentication method policy from a shared allocation to a dedicated 20 KB limit, and raised the maximum passkey profiles per tenant from 3 to 10. Enables granular rollouts (e.g., separate profiles per business unit or attestation policy) for organizations standardizing on phishing-resistant auth. Useful headroom for CMMC-track tenants like your construction client.</p>
-      <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/whats-new-in-microsoft-entra-june-2026/4517885" target="_blank" class="src">Source &rarr;</a>
+      <p>The July 2026 Intune release includes a new STIG audit baseline that reports Windows device compliance against DoD Security Technical Implementation Guides without changing configuration &mdash; useful for CMMC/DoD-facing tenants. Enterprise App Management auto-updates hit general availability, and a Vulnerability Remediation Agent enters public preview in Security Copilot to prioritize CVEs across Intune-managed devices. EPM and EAM are now bundled into Microsoft 365 E5 as of July 1. Directly relevant to your construction client's CMMC track.</p>
+      <a href="https://learn.microsoft.com/en-us/intune/whats-new/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-10">
     <summary class="item-header">
-      <span class="item-title">Entra Connect adds phishing-resistant sign-in (passkeys, FIDO2) in setup wizard (preview)</span>
+      <span class="item-title">Microsoft Teams July 2026 rollout: 1,000-attendee breakout rooms, sensitivity-label inheritance, apps in private channels</span>
+      <span class="item-type type-feature">FEATURE</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Microsoft Teams' July 2026 rollout expands breakout rooms to meetings of up to 1,000 attendees with up to 200 rooms (on by default), auto-applies the meeting's sensitivity label to recordings/transcripts/notes when saved to SharePoint/OneDrive, and lets bots/tabs/message extensions install in private channels. Additional updates include a streamlined call-transfer workflow and a desktop file-download manager.</p>
+      <a href="https://releasebot.io/updates/microsoft/microsoft-teams" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-11">
+    <summary class="item-header">
+      <span class="item-title">Ubiquiti UniFi Network Application 10.5.62 released with SD-WAN and stability fixes</span>
+      <span class="item-type type-feature">FEATURE</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Ubiquiti released UniFi Network Application 10.5.62 on July 13, adding CyberSecure Safe Mode indicators, an option to clear Auto STP Edge status in Port Manager, improved SD-WAN Underlay resiliency, and better Network Lists / RADIUS Server validation. Bug fixes include a Port Manager Time Machine STP column issue, a U-LTE adoption gateway config error, and a Network Application start failure after upgrading to 10.5.57 on sites with many Traffic Flows. Distribution is gradual over the coming days.</p>
+      <a href="https://community.ui.com/releases/UniFi-Network-Application-10-5-62/5068df72-8188-4778-909f-e3fa870b119a" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-12">
+    <summary class="item-header">
+      <span class="item-title">Microsoft Entra ID to default to passkeys starting September 2026</span>
       <span class="item-type type-feature">FEATURE</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>An Entra Connect release on July 7, 2026 added preview support for phishing-resistant authentication methods in the setup wizard: administrators can sign in using passkeys or FIDO2 security keys via Windows Web Account Manager (WAM), removing reliance on password-based admin credentials during hybrid identity setup. Useful for your construction client's hybrid Entra environment where CMMC hardening is in progress.</p>
-      <a href="https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/reference-connect-version-history" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-11">
-    <summary class="item-header">
-      <span class="item-title">Microsoft patches Defender RoguePlanet flaw granting SYSTEM privileges (CVE-2026-50656)</span>
-      <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Microsoft fixed a CVSS 7.8 race condition in the Malware Protection Engine (mpengine.dll) that could be abused via an SMB server to exhaust disk and spawn a SYSTEM shell. Remediated in Microsoft Malware Protection Engine 1.1.26060.3008; verify the Defender engine version has rolled out across your small-business client's Defender for Business migration and your internal ops fleet.</p>
-      <a href="https://thehackernews.com/2026/07/microsoft-patches-rogueplanet-defender.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-12">
-    <summary class="item-header">
-      <span class="item-title">Six new U-Boot bootloader flaws could enable stealthy firmware attacks on NAS and embedded devices</span>
-      <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Binarly disclosed six vulnerabilities (BRLY-2026-037 through BRLY-2026-042) in U-Boot's FIT signature verification, two of which allow pre-boot arbitrary code execution before signature check and four causing denial of service. Affects U-Boot v2013.07+ across 50+ releases plus vendor firmwares (home routers, NAS units, smart cameras, server BMCs). Remediation depends on individual hardware vendors shipping firmware updates; no CVEs assigned yet. Monitor Synology and other NAS vendor advisories.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/new-u-boot-flaws-could-enable-stealthy-firmware-attacks/" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft announced Entra ID will make passkey-based authentication the default sign-in method for user sign-ins beginning September 2026, promoting passkeys ahead of passwords in the sign-in experience. Admins should begin passkey rollout planning, user registration campaigns, and Conditional Access review before the change lands. Particularly relevant to your construction client's CMMC-track hardening and your small-business client's M365 Business Premium environment.</p>
+      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-entra-id-gets-passkeys-default-authentication-starting-september/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-13">
     <summary class="item-header">
-      <span class="item-title">U-Boot FIT signature bypass could enable stealthy firmware-level persistence on networking gear</span>
-      <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-yellow">This Week</span>
+      <span class="item-title">OpenAI temporarily relaxes GPT-5.6 Sol usage limits after demand spike</span>
+      <span class="item-type type-feature">FEATURE</span>
+      <span class="urgency-green">FYI</span>
       <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>Two of the six new U-Boot bugs (BRLY-2026-037, BRLY-2026-038) reside in an unchecked return value from fdt_get_name, allowing stack buffer overflow and return-address rewrite before signature verification. Because exploitation occurs pre-OS, successful attackers could disable firmware security features and install persistent firmware malware. U-Boot is embedded in many networking-appliance stacks (routers, gateways); watch vendor advisories &mdash; SonicWall and UniFi exposure not directly confirmed but worth monitoring.</p>
-      <a href="https://thehackernews.com/2026/07/six-new-u-boot-flaws-could-let.html" target="_blank" class="src">Source &rarr;</a>
+      <p>OpenAI raised usage limits on the GPT-5.6 Sol model after users hit caps following the July 9 general-availability launch of the GPT-5.6 family (Sol, Terra, Luna). The relaxation is temporary while OpenAI adds capacity. IT teams evaluating Sol for coding or agentic workloads can run more queries in the interim.</p>
+      <a href="https://www.bleepingcomputer.com/news/artificial-intelligence/openai-temporarily-relaxes-gpt-56-sol-usage-limits/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-14">
     <summary class="item-header">
-      <span class="item-title">US and allies warn of Russian state edge-router campaign against critical infrastructure</span>
+      <span class="item-title">Microsoft testing cleaner Windows Search experience without ads</span>
+      <span class="item-type type-feature">FEATURE</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 6/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Microsoft is testing a redesigned Windows Search that removes promotional/ad content and reduces web-suggestion clutter, currently rolling to Insider channels. IT admins may want to track the flight for eventual GA and confirm any Group Policy/CSP changes to control the new behavior.</p>
+      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-starts-testing-cleaner-windows-search-without-ads/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-15">
+    <summary class="item-header">
+      <span class="item-title">Huntress uncovers AI-generated PowerShell malware performing Active Directory reconnaissance</span>
+      <span class="item-type type-security">SECURITY</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 8/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Huntress researchers identified custom PowerShell reconnaissance malware whose structure and comments indicate it was AI-generated, used by an attacker to enumerate Active Directory objects after initial access. The tradecraft lowers the bar for bespoke, evasive post-exploitation tooling and reinforces the need for PowerShell logging, constrained language mode, and EDR coverage on domain-joined hosts.</p>
+      <a href="https://securityaffairs.com/195321/hacking/attacker-used-ai-to-build-custom-powershell-recon-malware.html" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-16">
+    <summary class="item-header">
+      <span class="item-title">US Treasury OFAC sanctions VPN and malware providers tied to ransomware gangs</span>
+      <span class="item-type type-industry">INDUSTRY</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 7/11</span>
+    </summary>
+    <div class="item-body">
+      <p>OFAC issued new sanctions against a set of VPN and malware-as-a-service providers linked to ransomware operators. The action complicates payment/negotiation exposure for US organizations hit by these groups and signals continued pressure on the ransomware supply chain; legal/finance teams should review sanctions-check workflows in incident response playbooks.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/us-sanctions-vpn-malware-providers-linked-to-ransomware-gangs/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-17">
+    <summary class="item-header">
+      <span class="item-title">Jscrambler npm package backdoored with infostealer in supply-chain compromise</span>
       <span class="item-type type-security">SECURITY</span>
       <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>Cybersecurity agencies from nine countries issued a joint advisory warning that Russian state hackers are targeting vulnerable and end-of-life routers and edge devices to establish footholds in critical infrastructure networks. SMBs running unpatched SOHO routers, VPN concentrators, or firmware-lagged edge appliances are exposed to the same techniques; audit exposure and patch or replace vulnerable devices. Your small-business client's UCG Fiber firewall and your hospitality client's edge should be verified up to date.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/us-and-allies-share-defense-tips-against-russian-hackers-targeting-critical-infrastructure/" target="_blank" class="src">Source &rarr;</a>
+      <p>Attackers pushed a malicious update to the Jscrambler npm package containing infostealer functionality that harvests credentials and browser data from developer machines and build agents. Organizations using JavaScript build pipelines should audit npm lockfiles and rotate any credentials that touched affected build hosts.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/hackers-backdoor-jscrambler-npm-package-with-infostealer-malware/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
-  <details class="item" id="item-15">
+  <details class="item" id="item-18">
     <summary class="item-header">
-      <span class="item-title">UK charges suspects behind "Russian Coms" call-spoofing (vishing) platform</span>
+      <span class="item-title">UK charges suspects behind Russian Coms call-spoofing platform used for 1.8M vishing calls</span>
+      <span class="item-type type-industry">INDUSTRY</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 7/11</span>
+    </summary>
+    <div class="item-body">
+      <p>UK authorities charged multiple suspects tied to the Russian Coms call-spoofing service, which enabled roughly 1.8 million fraudulent vishing calls impersonating banks and government agencies. The takedown highlights the maturity of vishing-as-a-service and the need to include voice-based social engineering in SMB KnowBe4 training modules &mdash; useful data point when justifying vishing simulations to your construction client.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/uk-charges-suspects-linked-to-russian-coms-call-spoofing-platform/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-19">
+    <summary class="item-header">
+      <span class="item-title">Microsoft turns off AI features by default in productivity apps</span>
+      <span class="item-type type-industry">INDUSTRY</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 7/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Forbes' July 12 SMB tech roundup reports Microsoft is reversing course and disabling AI features by default across its productivity apps, requiring users to opt in rather than having them automatically activated. IT admins may see fewer help-desk requests about unexpected Copilot/AI behavior but should communicate opt-in steps to users at your construction client, small-business client, and internal ops who still want AI features on.</p>
+      <a href="https://www.forbes.com/sites/quickerbettertech/2026/07/12/small-business-technology-news-roundup-microsoft-makes-a-major-ai-u-turn/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-20">
+    <summary class="item-header">
+      <span class="item-title">Ryuk ransomware operator pleads guilty; ordered to pay $1.1M restitution</span>
       <span class="item-type type-industry">INDUSTRY</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 6/11</span>
     </summary>
     <div class="item-body">
-      <p>UK NCA-led investigation charged five people linked to Russian Coms, a caller-ID spoofing platform used to make over 1.8 million scam calls worldwide. Relevant to SMB IT because vishing is increasingly paired with phishing emails to socially engineer help-desk and finance staff for MFA bypass and wire fraud &mdash; useful data point when justifying KnowBe4 vishing training modules to your construction client.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/uk-charges-suspects-linked-to-russian-coms-call-spoofing-platform/" target="_blank" class="src">Source &rarr;</a>
+      <p>An Armenian national linked to the Ryuk ransomware operation pleaded guilty in US federal court to charges tied to attacks on US organizations and was ordered to pay $1.1 million in restitution. Another data point in law enforcement traction against ransomware affiliates &mdash; a reminder to review backup and incident-response readiness across all clients.</p>
+      <a href="https://securityaffairs.com/195216/uncategorized/ryuk-ransomware-member-pleads-guilty-over-attacks-on-u-s-organizations.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 </div>
 
-<div class="footer">Generated Monday, July 13, 2026 at 6:45 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-07-13.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
+<div class="footer">Generated Tuesday, July 14, 2026 at 6:45 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-07-14.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
 
 </main>
 </body>
