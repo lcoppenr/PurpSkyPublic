@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<title>Morning Briefing -- Thursday, July 16, 2026</title>
+<title>Morning Briefing -- Friday, July 17, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -14,328 +14,100 @@
 <main class="briefing-content">
 
 <div class="page-header">
-  <h1>Morning Briefing -- Thursday, July 16, 2026</h1>
+  <h1>Morning Briefing -- Friday, July 17, 2026</h1>
   <p class="page-meta">Microsoft &bull; Security &amp; Compliance &bull; Firewall / VPN / Networking &bull; Servers/NAS &bull; Workstations &amp; Mobile &bull; Peripherals &amp; AV &bull; RMM &amp; Remote Access &bull; Construction &amp; Specialty Software &bull; General Tech &amp; AI &bull; Pacific Time</p>
 </div>
 
 <div class="section-actions">
   <h2>Today's Actions</h2>
-  <p class="section-transparency">Showing 3 of 10</p>
+  <p class="section-transparency">Showing 3 of 13</p>
   <ol class="action-list">
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Confirm your construction client, small-business client, and internal ops M365 tenants have applied Microsoft's July fix for the Entra Provisioning Service SSRF (CVE-2026-57100, CVSS 9.9) &mdash; the unauthenticated privilege-escalation flaw affects every Entra tenant. <a href="#item-1" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Prioritize the July SMB Server driver RCE patch (CVE-2026-57089) across file servers and Windows endpoints at your construction client, small-business client, hospitality client, and internal ops this week. <a href="#item-2" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Review the LegacyHive IOCs published by Chaotic Eclipse and hunt for the exploit chain across your construction client and internal ops Windows fleets &mdash; the local privilege-escalation zero-day compromises fully-patched systems. <a href="#item-3" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> Confirm none of your clients run on-prem Citrix ShareFile Storage Zone Controller -- Progress shipped fixes in 5.12.5 and 6.0.2 for the July 10 zero-day, and cloud ShareFile tenants are not affected. <a href="#item-1" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Patch the CVSS 9.8 unauthenticated RDP RCE (CVE-2026-56190) at your construction client's RDP Gateway and any Windows 10/11 or Server 2012-2025 endpoint with RDP reachable at your small-business client, hospitality client, and internal ops this week. <a href="#item-2" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Continue ringing the record 570-CVE July Patch Tuesday (three zero-days including AD FS EoP CVE-2026-56155 and Entra Provisioning SSRF CVE-2026-57100 at CVSS 9.9) across your construction client, small-business client, hospitality client, and internal ops. <a href="#item-3" class="detail-link">details</a></li>
   </ol>
-  <details class="section-overflow"><summary>Show 7 more actions</summary><ol class="action-list" start="4">
-    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Verify offline backups, EDR alerting, and lateral-movement detection are current at your construction client, small-business client, hospitality client, and internal ops &mdash; the new Spirals ransomware operation is encrypting whole networks in under 24 hours from initial access. <a href="#item-4" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Disable Microsoft device-code authentication flow in your construction client's Entra tenant, your small-business client's tenant, and your internal ops today &mdash; an active campaign is stealing Microsoft Authentication Broker tokens through the real Microsoft.com login page. <a href="#item-5" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Continue ringing the record-breaking July Patch Tuesday rollout (570-plus CVEs, two exploited zero-days, plus 428 Chromium fixes) across your construction client, small-business client, hospitality client, and internal ops this week. <a href="#item-6" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Push a KnowBe4 template and quick alert to end users at your construction client, small-business client, and internal ops today warning against downloading Webex or Zoom installers from anywhere other than the vendor's own site &mdash; a Russian actor is distributing trojanized installers dropping Starland RAT. <a href="#item-7" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Roll out phish-resistant MFA and disable Microsoft device-code flow for interactive users at your construction client, small-business client, and internal ops to blunt the EvilTokens kit's AES-GCM-encrypted phishing pages that evade URL scanners. <a href="#item-8" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> Confirm none of your clients operate an Oracle E-Business Suite instance &mdash; CISA set a Saturday federal patch deadline on the actively exploited flaw and the accelerated KEV timeline is a signal to double-check any legacy business-app footprint at your construction client and small-business client. <a href="#item-9" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-yellow">This Week</span> File the joint US/allied guidance for hardening SMB edge devices (SNMPv3, disabling Cisco Smart Install, firmware currency) &mdash; useful next time you audit the SonicWall TZ fleet at your construction client or your small-business client's UCG Fiber firewall. <a href="#item-10" class="detail-link">details</a></li>
+  <details class="section-overflow"><summary>Show 10 more actions</summary><ol class="action-list" start="4">
+    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Monitor endpoints and restrict local code execution at your construction client and internal ops until Microsoft ships a fix for LegacyHive -- Chaotic Eclipse's public PoC elevates standard users to admin on fully-patched Windows 10, 11, and Server 2016/2019/2022. <a href="#item-4" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Apply the July KEV-catalog patches for the actively exploited Microsoft authentication flaw across your construction client, small-business client, and internal ops M365 tenants this week. <a href="#item-5" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> Confirm none of your clients operate a SonicWall SMA1000 appliance -- CISA gave a July 17 KEV deadline on CVE-2026-15409 (CVSS 10.0 SSRF) and CVE-2026-15410; your construction client's SonicWall TZ series is a separate product line and unaffected. <a href="#item-6" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Push a KnowBe4 template and quick end-user alert at your construction client, small-business client, and internal ops today about the Okta-flagged vishing campaign directing M365 users to fake Entra passkey-registration pages. <a href="#item-7" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Block Microsoft device-code sign-in flow via Conditional Access at your construction client, small-business client, and internal ops M365 tenants -- Forg365 and DEBULL phishing kits are actively hijacking accounts through AiTM token theft on the real Microsoft login page. <a href="#item-8" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Push the Zoom Windows client update at any endpoint still running Zoom at your construction client, small-business client, hospitality client, and internal ops -- CVE-2026-53412 is a CVSS 9.8 unauthenticated account-takeover flaw. <a href="#item-9" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> File the AsyncAPI npm supply-chain compromise (2M weekly downloads, info-stealer/RAT payload) and audit any Node projects touching internal ops for the affected package versions. <a href="#item-10" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-yellow">This Week</span> Apply Synology DSM 7.3.2-86009 Update 4 to your hospitality client's DS723+ NAS this week -- Synology patched authenticated arbitrary file read/write flaws (CVSS up to 8.0). <a href="#item-11" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-yellow">This Week</span> File a note on ClickLock macOS malware for the rare Mac users across your fleet -- the malware terminates visible apps to trigger a fake authentication prompt that harvests the login password. <a href="#item-12" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-yellow">This Week</span> Audit browser extensions at your construction client, small-business client, and internal ops for the Claude Chrome extension -- a flaw lets malicious extensions trigger AI actions against Gmail, Docs, and Calendar until Anthropic ships a fix. <a href="#item-13" class="detail-link">details</a></li>
   </ol></details>
 </div>
 
 <div class="section-new">
   <h2>What's New</h2>
-  <p class="section-transparency">Showing 3 of 6</p>
+  <p class="section-transparency">Showing 3 of 8</p>
   <ul class="new-list">
-    <li><strong><a href="#item-11">Windows 11 KB5101650 released with recovery overhaul, Bluetooth fixes, Secure Boot cert rollout</a></strong> -- Microsoft rolled out KB5101650 (OS Builds 26200.8875 and 26100.8875) for Windows 11 24H2/25H2 on July 14, delivering Point-in-time restore, faster File Explorer, Bluetooth fixes, Secure Boot certificate rollout, and calendar-based update pausing. Mandatory as it carries the July Patch Tuesday security patches for 571 vulnerabilities. <a href="https://support.microsoft.com/en-us/servicing/os/windows-11/2026/07/july-14-2026-kb5101650-os-builds-26200-8875-and-26100-8875" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-12">Windows Server 2025 KB5099536 adds Hyper-V container performance and post-quantum TLS 1.3</a></strong> -- The July Windows Server 2025 cumulative update (OS Build 26100.33158) delivers July Patch Tuesday security fixes plus improved startup performance for Hyper-V-isolated containers and support for hybrid post-quantum cryptography key exchange in TLS 1.3. <a href="https://support.microsoft.com/en-us/servicing/os/windows-server/2026/07/july-14-2026-kb5099536-os-build-26100-33158" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-13">Exchange Web Services (EWS) retirement in Exchange Online set for October 1, 2026</a></strong> -- Microsoft confirmed EWS retirement in Exchange Online begins October 1, 2026. Organizations must migrate active EWS applications to Microsoft Graph, Power Platform, or Copilot Declarative Agents. July 2026 Exchange Server SUs also released; Exchange Online tenants are automatically protected. <a href="https://techcommunity.microsoft.com/blog/exchange/released-july-2026-exchange-server-security-updates/4534146" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-14">Windows 11 KB5094126 delivers Point-in-Time Restore and calendar-based update pause</a></strong> -- The July 2026 Windows 11 25H2/24H2 cumulative update KB5094126 rolls up the July Patch Tuesday security fixes plus Point-in-Time Restore, calendar-based Windows Update pause (up to 35 days), File Explorer and Phone Link improvements, and Widgets/notification refinements. Deploy through your Intune/WSUS rings at your construction client, small-business client, and internal ops. Mandatory since it carries the July security patches. <a href="https://m365admin.handsontek.net/july-2026-windows-security-update-now-available/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-15">Entra ID Conditional Access now enforced during Windows Hello credential registration</a></strong> -- Starting July 6, 2026, Entra ID Conditional Access policies scoped to the 'Register security information' user action are now evaluated during Windows Hello credential registration. Users must satisfy MFA, network, or device-compliance controls before completing registration. Review CA policies at your construction client, small-business client, and internal ops before onboarding new users. <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/whats-new-in-microsoft-entra-june-2026/4517885" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-16">Bluebeam Revu 20 reaches end of support July 31 -- migrate to Revu 21.10</a></strong> -- Revu 20 hits end of support in two weeks (July 31, 2026); Bluebeam users must migrate to Revu 21 (current 21.10, released June 2, 2026) to keep receiving updates. Revu 21.10 adds Autodesk 2027 plugin support for AutoCAD, Revit, and Navisworks. Confirm your construction client's Revu install base is on 21. <a href="https://www.drawboard.com/blog/bluebeam-revu-20-end-of-life" target="_blank">Source &rarr;</a></li>
   </ul>
-  <details class="section-overflow"><summary>Show 3 more updates</summary><ul class="new-list">
-    <li><strong><a href="#item-14">Microsoft folds Intune Suite and Defender for Office 365 Plan 1 into M365 E3/E5</a></strong> -- Microsoft is adding Intune Remote Help, Advanced Analytics, Intune Plan 2, Privilege Management, Cloud PKI, and Application Management to M365 E3/E5. Defender for Office 365 Plan 1 (anti-phishing, Safe Links, Safe Attachments) also joins the E3 baseline. Rollout starts July and completes by August 1, 2026, with 30-day Message Center notices. <a href="https://www.applicable.com/knowledge-hub/what-microsofts-july-changes-mean-for-intune-and-endpoint-management/" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-15">Microsoft Teams July updates add external-bot admission, auto-record queues, meeting sensitivity labels</a></strong> -- July 2026 Teams roadmap includes organizers explicitly admitting external bots, streamlined call-transfer suggestions, meeting recordings inheriting meeting sensitivity labels, bulk breakout assignment via CSV, automatic recording/transcription for call queues, and profanity filter on live captions now off by default. <a href="https://it.osu.edu/news/2026/06/29/upcoming-microsoft-updates-key-changes-teams-planner-and-core-apps" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-16">UniFi Network Application 10.5.62 released with CyberSecure, SD-WAN and RADIUS improvements</a></strong> -- Ubiquiti published UniFi Network Application 10.5.62 on July 13, 2026 adding CyberSecure Safe Mode status, an option to clear Auto STP Edge assignments, improved SD-WAN Underlay resiliency, and better Network Lists and RADIUS server validation. Bug fixes cover STP state reporting, U-LTE adoption errors, and startup failures on sites with large Traffic Flow counts. Upgrades from 10.5.x may take up to 30 minutes; your construction client is deployed 10.3+. <a href="https://community.ui.com/releases/UniFi-Network-Application-10-5-62" target="_blank">Source &rarr;</a></li>
+  <details class="section-overflow"><summary>Show 5 more updates</summary><ul class="new-list">
+    <li><strong><a href="#item-17">UniFi Network Application 10.5.62 released with CyberSecure and SD-WAN improvements</a></strong> -- Ubiquiti released UniFi Network Application 10.5.62 with improvements to CyberSecure, Port Manager, SD-WAN Underlay, Network Lists, and RADIUS server validation. Bug fixes cover STP state reporting, U-LTE adoption errors, and startup failures on sites with large Traffic Flow counts. Your construction client is deployed 10.3+; upgrades from 10.5.x can take up to 30 minutes. <a href="https://community.ui.com/releases" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-18">Microsoft Intune EPM and Enterprise App Management now bundled into M365 E5</a></strong> -- As of July 1, 2026, Intune Endpoint Privilege Management (EPM) and Enterprise Application Management (EAM) are included in Microsoft 365 E5. EAM auto-updates went GA, keeping managed third-party apps on the latest release automatically. Consider evaluating EPM elevation policies at your construction client and internal ops to reduce standing local-admin rights. <a href="https://learn.microsoft.com/en-us/intune/whats-new/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-19">Microsoft Teams July update adds AI meeting notes in physical rooms and sensitivity-label inheritance</a></strong> -- Teams' July 2026 rollout brings AI-generated notes to in-room meetings, streamlined call transfer suggestions on Windows/Mac desktop, automatic spoken-language detection, chat quick views, code-block line numbers, and sensitivity-label inheritance on meeting recordings (MP4). Review DLP and sensitivity-label policies at your construction client and internal ops before broad rollout. <a href="https://www.windowslatest.com/2026/07/07/microsoft-teams-big-update-brings-ai-notes-to-physical-meetings-chat-sections-and-more/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-20">M365 Business plans gain Copilot Chat admin controls and +50 GB mailbox storage</a></strong> -- Effective July 1, 2026, all three Microsoft 365 Business plans include enhanced Copilot Chat with admin controls and usage analytics, plus an additional 50 GB of mailbox storage. Review Copilot governance and mailbox retention/archive policies at your construction client, small-business client, and internal ops. <a href="https://www.trustedtechteam.com/blogs/news/microsoft-365-plan-updates-new-features-2026" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-21">Atera July 2026 release adds workgroup agent deployment, SNMP AI monitoring, revamped Global Search</a></strong> -- Atera's July release adds agent deployment for workgroup (non-domain) environments, on-demand credential prompts during network scans, and a dedicated SNMP scan type. Copilot auto-generates OIDs for SNMP devices from device model or MIB file, and Global Search now covers custom fields, assets, KB articles, and ticket comments. Useful for your construction client and small-business client onboarding flows. <a href="https://support.atera.com/hc/en-us/articles/25381421604124-Release-Notes-2026" target="_blank">Source &rarr;</a></li>
   </ul></details>
 </div>
 
 <div class="section-security">
   <h2>Security &amp; Patches</h2>
-  <p class="section-transparency">Showing 3 of 6</p>
+  <p class="section-transparency">Showing 3 of 8</p>
   <div class="security-cards">
-    <div class="security-card"><a href="#item-17" class="security-headline">Windows 11 24H2 Home and Pro reach end of support in 90 days</a><span class="urgency-yellow">This Week</span><span class="security-summary">Windows 11 version 24H2 Home and Pro editions will fall out of servicing in 90 days from July 16.</span></div>
-    <div class="security-card"><a href="#item-18" class="security-headline">DoD publishes CMMC Reform Task Force details; RFI responses due August 14</a><span class="urgency-yellow">This Week</span><span class="security-summary">The Department of War announced immediate suspension of CMMC Phase 2 on July 13; a Reform Task Force reporting to the DoD CIO will report within 60 days.</span></div>
-    <div class="security-card"><a href="#item-19" class="security-headline">Chinese espionage campaign weaponizes Claude Code and DeepSeek to automate intrusions</a><span class="urgency-yellow">This Week</span><span class="security-summary">Researchers documented a Chinese-attributed espionage operation using Claude Code and DeepSeek LLMs to automate reconnaissance, exploit selection, and post-exploitation tooling against government and financial targets.</span></div>
+    <div class="security-card"><a href="#item-22" class="security-headline">DoD suspends CMMC Phase 2 pending 60-day reform review; NIST SP 800-171 obligations remain</a><span class="urgency-yellow">This Week</span><span class="security-summary">On July 13, DoD announced immediate suspension of CMMC Phase 2 (which was scheduled for Nov 10, 2026) and stood up a CMMC Reform Task Force due to report in 60 days.</span></div>
+    <div class="security-card"><a href="#item-23" class="security-headline">CISA, NSA and allies warn Russian FSB Center 16 exploiting weak router configurations</a><span class="urgency-yellow">This Week</span><span class="security-summary">Joint advisory AA26-194A warns that FSB Center 16 actors are opportunistically compromising poorly configured routers globally, targeting communications, energy, government, and healthcare sectors.</span></div>
+    <div class="security-card"><a href="#item-24" class="security-headline">Chinese cyber-espionage campaign automates intrusions with Claude Code and DeepSeek</a><span class="urgency-yellow">This Week</span><span class="security-summary">Chinese state-aligned operators are using Claude Code and DeepSeek to automate reconnaissance, exploit selection, and post-exploitation against government and financial targets across Taiwan, Thailand, Afghanistan, and global financial services.</span></div>
   </div>
-  <details class="section-overflow"><summary>Show 3 more security items</summary><div class="security-cards">
-    <div class="security-card"><a href="#item-20" class="security-headline">Scattered Spider members sentenced to five years for Transport for London hack</a><span class="urgency-green">FYI</span><span class="security-summary">UK courts sentenced Scattered Spider members to five-and-a-half years' prison for the 2024 Transport for London hack.</span></div>
-    <div class="security-card"><a href="#item-21" class="security-headline">US Treasury sanctions VPN provider and cryptor seller tied to billions in ransomware losses</a><span class="urgency-green">FYI</span><span class="security-summary">OFAC sanctioned 1VPNS and a cryptor-as-a-service operator whose infrastructure enabled ransomware crews responsible for billions in damages.</span></div>
-    <div class="security-card"><a href="#item-22" class="security-headline">Channel Futures 2026 MSP 501 rankings show cybersecurity as fastest-growing MSP segment</a><span class="urgency-green">FYI</span><span class="security-summary">The 2026 MSP 501 list averaged $32M revenue per firm and 10% growth, with recurring revenue near 60% of total.</span></div>
+  <details class="section-overflow"><summary>Show 5 more security items</summary><div class="security-cards">
+    <div class="security-card"><a href="#item-25" class="security-headline">Windows Server 2022 mainstream support ends in 90 days</a><span class="urgency-green">FYI</span><span class="security-summary">Microsoft's Windows Server 2022 mainstream support window closes in October 2026, at which point new features stop and only security/extended support continues for five more years.</span></div>
+    <div class="security-card"><a href="#item-26" class="security-headline">Microsoft launches Copilot in 30 partner-led CSP trial for SMBs on August 1</a><span class="urgency-green">FYI</span><span class="security-summary">Microsoft announced Copilot in 30, a partner-led CSP trial for Microsoft 365 Copilot Business aimed at organizations with fewer than 300 employees, available in CSP starting August 1.</span></div>
+    <div class="security-card"><a href="#item-27" class="security-headline">Fake Webex and Zoom installers deliver Starland RAT with crypto-wallet theft</a><span class="urgency-yellow">This Week</span><span class="security-summary">A Russian-speaking threat actor is distributing trojanized Webex and Zoom installers that drop the Starland RAT for espionage and cryptocurrency wallet theft.</span></div>
+    <div class="security-card"><a href="#item-28" class="security-headline">TuxBot v3 IoT botnet ships with LLM safety disclaimers intact</a><span class="urgency-green">FYI</span><span class="security-summary">Researchers documented TuxBot v3, an IoT botnet framework built with LLM assistance that shipped with the model's safety disclaimers left in the code and multiple functional bugs across 17 processor architectures.</span></div>
+    <div class="security-card"><a href="#item-29" class="security-headline">DoD post-quantum cryptography directive lands on defense contractors</a><span class="urgency-green">FYI</span><span class="security-summary">A new Pentagon directive begins spelling out post-quantum cryptography expectations for defense contractors, layered on top of CMMC reform.</span></div>
   </div></details>
 </div>
 
 <div class="section-details">
   <h2>Details</h2>
-  <details class="item" id="item-1">
-    <summary class="item-header">
-      <span class="item-title">Critical Entra ID Provisioning Service SSRF (CVE-2026-57100, CVSS 9.9) allows privilege escalation</span>
-      <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 11/11</span>
-    </summary>
-    <div class="item-body">
-      <p>A critical elevation-of-privilege vulnerability in Microsoft Entra Provisioning Service (CVE-2026-57100, CVSS 9.9) allows a low-privileged remote attacker to elevate privileges via server-side request forgery with no user interaction and low attack complexity. Changed scope impact means blast radius extends beyond the vulnerable component. Directly relevant to every Entra tenant &mdash; your construction client's hybrid Entra/Intune, your small-business client's tenant, and your internal ops.</p>
-      <a href="https://threatprotect.qualys.com/2026/07/15/microsoft-patch-tuesday-july-2026-security-update-review/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-2">
-    <summary class="item-header">
-      <span class="item-title">Windows SMB Server RCE (CVE-2026-57089) patched in July update</span>
-      <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 11/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Microsoft patched a high-severity remote code execution flaw in the Windows SMB Server Network Transport Driver (srvnet.sys), CVE-2026-57089. The use-after-free bug could allow an attacker who manipulates kernel memory to execute arbitrary code. Prioritize patching for file servers and endpoints at your construction client, small-business client, hospitality client, and internal ops.</p>
-      <a href="https://windowsnews.ai/article/microsofts-july-2026-patch-closes-high-severity-smb-server-rce-hole-whos-at-risk-and-what-to-do-now.438815" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-3">
-    <summary class="item-header">
-      <span class="item-title">Chaotic Eclipse LegacyHive local privilege-escalation zero-day compromises fully-patched Windows</span>
-      <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 11/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Security researcher Chaotic Eclipse published LegacyHive, a local privilege-escalation zero-day targeting the Windows User Profile Service that compromises fully-patched systems. The exploit requires code execution as a standard user but represents part of an ongoing dispute between the researcher and Microsoft over disclosure. Review the IOCs and hunt for the exploit chain across your construction client and internal ops fleets while awaiting a patch.</p>
-      <a href="https://securityaffairs.com/195418/hacking/chaotic-eclipse-unveils-legacyhive-exploit-affecting-fully-patched-windows-systems.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-4">
-    <summary class="item-header">
-      <span class="item-title">Spirals ransomware encrypts entire victim networks in under 24 hours from initial access</span>
-      <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 11/11</span>
-    </summary>
-    <div class="item-body">
-      <p>A new ransomware operation called Spirals is executing a full corporate intrusion &mdash; initial access, data theft, and full network encryption &mdash; in less than 24 hours, a dwell-time collapse that gives incident responders almost no window to act. SMBs must verify offline backups, EDR alerting, and lateral-movement detection are current across your construction client, small-business client, hospitality client, and internal ops.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/new-spirals-ransomware-encrypts-victim-network-in-under-24-hours/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-5">
-    <summary class="item-header">
-      <span class="item-title">Active M365 device-code phishing campaign hijacks accounts via legitimate Microsoft login flow</span>
-      <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 11/11</span>
-    </summary>
-    <div class="item-body">
-      <p>An active campaign between late June and early July 2026 uses collaboration-themed lures to push targets through Microsoft's legitimate device-code login while a backend broker mints Microsoft Authentication Broker tokens. Because the login page is genuine Microsoft.com, standard URL/link inspection misses it entirely. Disable device-code flow in your construction client's and small-business client's tenants and internal ops where possible, and monitor sign-in logs for anomalous device-code auth.</p>
-      <a href="https://thehackernews.com/2026/07/debull-tooling-abuses-microsoft-device.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-6">
-    <summary class="item-header">
-      <span class="item-title">Microsoft July 2026 Patch Tuesday: 570-plus CVEs including 2 exploited zero-days</span>
-      <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 11/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Microsoft's July 2026 Patch Tuesday is the largest single-month release in company history, addressing 570-plus CVEs (some coverage cites 621) plus 428 Chromium vulnerabilities. Two zero-days are already being exploited in the wild. Critical fixes span Windows, Office, Azure, BitLocker, and AD FS &mdash; continue ringing the rollout across your construction client, small-business client, hospitality client, and internal ops.</p>
-      <a href="https://redmondmag.com/articles/2026/07/15/microsoft-record-july-patch-tuesday-fixes-570-flaws.aspx" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-7">
-    <summary class="item-header">
-      <span class="item-title">Russian actor UAT-11795 trojanizes Webex and Zoom installers to deploy Starland RAT</span>
-      <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Threat actor UAT-11795 is distributing weaponized Webex and Zoom installers that carry the Starland RAT backdoor, designed to steal credentials and cryptocurrency. Targets include users tricked into downloading fake collaboration app installers via search-engine ads and typosquatted domains. Push a KnowBe4 template and user alert at your construction client, small-business client, and internal ops, and enforce app allowlisting where deployable.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/russian-hackers-trojanize-webex-zoom-apps-to-push-starland-malware/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-8">
-    <summary class="item-header">
-      <span class="item-title">EvilTokens phishing kit uses AES-GCM to hide M365 device-code phishing from URL scanners</span>
-      <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
-    </summary>
-    <div class="item-body">
-      <p>The EvilTokens phishing kit encrypts phishing HTML with AES-GCM so the malicious page stays invisible to URL scanners until it renders in the victim's browser. Campaigns target US and European organizations for M365 account compromise via device-code auth. Disable device-code flow for interactive users at your construction client, small-business client, and internal ops, and enforce phish-resistant MFA (FIDO2, Windows Hello for Business).</p>
-      <a href="https://securityboulevard.com/2026/07/ghost-phishing-campaign-exploits-browser-blind-spot-to-target-microsoft-365-accounts/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-9">
-    <summary class="item-header">
-      <span class="item-title">CISA orders federal agencies to patch actively exploited Oracle E-Business Suite flaw by Saturday</span>
-      <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
-    </summary>
-    <div class="item-body">
-      <p>CISA added an actively exploited Oracle E-Business Suite vulnerability to the KEV catalog with a same-week federal patch deadline. Your SMB clients are unlikely to run Oracle EBS but confirm none do at your construction client or small-business client. Even without EBS in the fleet, note the accelerated KEV timeline as a signal of active mass exploitation.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-oracle-flaw-by-saturday/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-10">
-    <summary class="item-header">
-      <span class="item-title">US and allied governments issue joint guidance on hardening network edge against Russian APTs</span>
-      <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>CISA, NSA, FBI and allied cyber agencies released consolidated guidance for hardening routers, VPN concentrators, and other edge devices against Russian FSB Center 16 actors' TTPs, which include SNMP scanning and Cisco Smart Install abuse. Recommendations: upgrade to SNMPv3, disable Cisco Smart Install, keep firmware current, and monitor configuration changes. File for your next SonicWall TZ audit at your construction client and your small-business client's UCG Fiber review.</p>
-      <a href="https://securityaffairs.com/195448/apt/us-and-allied-governments-recommendations-securing-network-devices-against-russian-apt-groups.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-11">
-    <summary class="item-header">
-      <span class="item-title">Windows 11 KB5101650 released with recovery overhaul and 571 security fixes</span>
-      <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 11/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Microsoft rolled out KB5101650 (OS Builds 26200.8875 and 26100.8875) for Windows 11 24H2/25H2, introducing Point-in-time restore full-system rollback, Bluetooth fixes, faster File Explorer, Secure Boot certificate rollout, and calendar-based update pausing. Mandatory as it contains July Patch Tuesday security patches for 571 vulnerabilities. Watch the Dell safeguard hold before broad deployment.</p>
-      <a href="https://support.microsoft.com/en-us/servicing/os/windows-11/2026/07/july-14-2026-kb5101650-os-builds-26200-8875-and-26100-8875" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-12">
-    <summary class="item-header">
-      <span class="item-title">Windows Server 2025 KB5099536 adds Hyper-V container performance and post-quantum TLS 1.3</span>
-      <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 10/11</span>
-    </summary>
-    <div class="item-body">
-      <p>The July Windows Server 2025 cumulative update (OS Build 26100.33158) delivers Patch Tuesday security fixes plus improved startup performance for Hyper-V-isolated containers and support for hybrid post-quantum cryptography key exchange in TLS 1.3. Nice-to-have on hardening timeline for internal ops.</p>
-      <a href="https://support.microsoft.com/en-us/servicing/os/windows-server/2026/07/july-14-2026-kb5099536-os-build-26100-33158" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-13">
-    <summary class="item-header">
-      <span class="item-title">Exchange Web Services (EWS) retirement in Exchange Online set for October 1, 2026</span>
-      <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Microsoft confirmed EWS retirement in Exchange Online begins October 1, 2026. Organizations must migrate active EWS applications to Microsoft Graph, Power Platform, or Copilot Declarative Agents. July 2026 Exchange Server SUs also released; Exchange Online tenants are automatically protected. Inventory EWS callers at your construction client and internal ops before September.</p>
-      <a href="https://techcommunity.microsoft.com/blog/exchange/released-july-2026-exchange-server-security-updates/4534146" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-14">
-    <summary class="item-header">
-      <span class="item-title">Microsoft folds Intune Suite and Defender for Office 365 Plan 1 into M365 E3/E5</span>
-      <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Microsoft is folding Intune Remote Help, Advanced Analytics, Intune Plan 2, Privilege Management, Cloud PKI, and Application Management into M365 E3/E5. Defender for Office 365 Plan 1 (anti-phishing, Safe Links, Safe Attachments) also joins the E3 baseline. Rollout starts July and completes by August 1, 2026. Worth a revisit of upsell suggestions at your construction client if any users are still on lower SKUs.</p>
-      <a href="https://www.applicable.com/knowledge-hub/what-microsofts-july-changes-mean-for-intune-and-endpoint-management/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-15">
-    <summary class="item-header">
-      <span class="item-title">Microsoft Teams July updates add external-bot admission, auto-record queues, meeting sensitivity labels</span>
-      <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>July 2026 Teams roadmap includes organizers explicitly admitting external bots, streamlined call-transfer suggestions, meeting recordings inheriting meeting sensitivity labels, bulk breakout assignment via CSV, automatic recording/transcription for call queues, and the profanity filter on live captions now off by default. FYI-level for admin awareness.</p>
-      <a href="https://it.osu.edu/news/2026/06/29/upcoming-microsoft-updates-key-changes-teams-planner-and-core-apps" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-16">
-    <summary class="item-header">
-      <span class="item-title">UniFi Network Application 10.5.62 released with CyberSecure, SD-WAN and RADIUS improvements</span>
-      <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Ubiquiti published UniFi Network Application 10.5.62 on July 13, 2026 with CyberSecure Safe Mode status information, an option to clear Auto STP Edge assignments in Port Manager, improved SD-WAN Underlay resiliency, better Network Lists and RADIUS server validation. Bug fixes cover STP state reporting, U-LTE adoption gateway errors, and startup failures on sites with large Traffic Flow counts. Your construction client is deployed 10.3+; upgrades from 10.5.x can take up to 30 minutes.</p>
-      <a href="https://community.ui.com/releases/UniFi-Network-Application-10-5-62" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-17">
-    <summary class="item-header">
-      <span class="item-title">Windows 11 24H2 Home and Pro reach end of support in 90 days</span>
-      <span class="item-type type-industry">INDUSTRY</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 10/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Windows 11 version 24H2 Home and Pro editions will fall out of servicing in 90 days from July 16. Businesses running 24H2 Pro should plan the 25H2 enablement package now to avoid losing security updates. Enterprise and Education SKUs get an extra year.</p>
-      <a href="https://www.bleepingcomputer.com/news/microsoft/windows-11-24h2-home-and-pro-reach-end-of-support-in-90-days/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-18">
-    <summary class="item-header">
-      <span class="item-title">DoD publishes CMMC Reform Task Force details; RFI responses due August 14</span>
-      <span class="item-type type-industry">INDUSTRY</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 10/11</span>
-    </summary>
-    <div class="item-body">
-      <p>The Department of War announced immediate suspension of CMMC Phase 2 on July 13; a Reform Task Force reporting to the DoD CIO will review the program and report within 60 days. Public RFI responses are due August 14, 2026. Phase 1 self-assessments and DFARS 252.204-7012 obligations remain in force. Your construction client's Level 2 assessment prep can pause pending the outcome, but do not descope underlying NIST SP 800-171 controls.</p>
-      <a href="https://defensescoop.com/2026/07/13/dod-halts-cmmc-cybersecurity-requirements-phase-2/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-19">
-    <summary class="item-header">
-      <span class="item-title">Chinese espionage campaign weaponizes Claude Code and DeepSeek to automate intrusions</span>
-      <span class="item-type type-industry">INDUSTRY</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Hunt.io researchers documented a Chinese-attributed espionage operation using Claude Code 2.1.165 and DeepSeek-v4-pro to automate reconnaissance, exploit selection, and post-exploitation tooling against government systems in Taiwan, Thailand, and Afghanistan plus financial-services firms globally. Signals that AI-assisted attackers are lowering the skill floor and increasing tempo &mdash; SMBs should assume adversaries are moving faster than manual playbooks assume.</p>
-      <a href="https://securityaffairs.com/195474/ai/claude-code-and-deepseek-powered-chinese-cyber-espionage-campaign.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-20">
-    <summary class="item-header">
-      <span class="item-title">Scattered Spider members sentenced to five years for Transport for London hack</span>
-      <span class="item-type type-industry">INDUSTRY</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>UK courts sentenced Scattered Spider members to five-and-a-half years' prison for the 2024 Transport for London hack. Continues enforcement pressure on the social-engineering-heavy ransomware collective, but the group's helpdesk-impersonation and MFA-fatigue TTPs remain a top SMB concern.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/scattered-spider-members-behind-transport-for-london-hack-get-five-years-in-prison/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-21">
-    <summary class="item-header">
-      <span class="item-title">US Treasury sanctions VPN provider and cryptor seller tied to billions in ransomware losses</span>
-      <span class="item-type type-industry">INDUSTRY</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>OFAC sanctioned 1VPNS VPN provider and cryptor seller Yegeniy Vladimirovich Silayev for supplying ransomware infrastructure that caused billions in losses to critical infrastructure. Follows a May 2026 European law-enforcement takedown. US persons cannot transact with sanctioned entities; MSPs should review payment and DFIR workflows if a ransom decision ever arises.</p>
-      <a href="https://securityaffairs.com/195336/security/u-s-treasury-sanctions-vpn-provider-and-cryptor-seller-behind-billions-in-ransomware-losses.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-22">
-    <summary class="item-header">
-      <span class="item-title">Channel Futures 2026 MSP 501 rankings show cybersecurity as fastest-growing MSP segment</span>
-      <span class="item-type type-industry">INDUSTRY</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 6/11</span>
-    </summary>
-    <div class="item-body">
-      <p>The 2026 MSP 501 list averaged $32M revenue per firm and 10% growth, with recurring revenue near 60% of total. Cybersecurity services are growing at 18% annually versus 14% for overall managed services; Kaseya's 2026 SaaS Security Report found 56% of monitored SMB SaaS accounts lack active MFA. Useful context for positioning security offerings at Purplesky.</p>
-      <a href="https://www.prnewswire.com/news-releases/corporate-technologies-ranked-on-2026-msp-501-tech-industrys-most-prestigious-list-of-global-managed-service-providers-302825585.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
+  <details class="item" id="item-1"><summary class="item-header"><span class="item-title">Confirm none of your clients run on-prem Citrix ShareFile Storage Zone Controller -- Progress shipped fixes in 5.12.5 and 6.0.2 for the July 10 zero-day, and cloud ShareFile tenants are not affected.</span><span class="item-type type-security">SECURITY</span><span class="urgency-red">Act Today</span><span class="score">Score: 11/11</span></summary><div class="item-body"><p>Progress confirmed a high-severity path-traversal zero-day in ShareFile Storage Zone Controller (versions 5.x and 6.x) was behind the July 10 emergency shutdown order, and lifted the shutdown on July 14 after shipping fixes in 5.12.5 and 6.0.2. On-prem Storage Zone Controller customers must apply the updates immediately; cloud-only ShareFile accounts are not affected. Confirm your clients are cloud-only.</p><a href="https://www.bleepingcomputer.com/news/security/progress-confirms-sharefile-zero-day-flaw-behind-storage-zone-shutdown/" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-2"><summary class="item-header"><span class="item-title">Patch the CVSS 9.8 unauthenticated RDP RCE (CVE-2026-56190) at your construction client's RDP Gateway and any Windows 10/11 or Server 2012-2025 endpoint with RDP reachable at your small-business client, hospitality client, and internal ops this week.</span><span class="item-type type-security">SECURITY</span><span class="urgency-red">Act Today</span><span class="score">Score: 11/11</span></summary><div class="item-body"><p>Microsoft's July 14 Patch Tuesday addressed CVE-2026-56190, a CVSS 9.8 unauthenticated remote-code-execution flaw affecting RDP across Windows 10/11 and Server 2012 through 2025. No active exploitation reported yet but these get weaponized within days. Install the July cumulative updates immediately, verify build numbers, and remove any internet-facing RDP at your construction client's RDP Gateway.</p><a href="https://windowsnews.ai/article/critical-98-rated-rdp-vulnerability-fixed-in-july-2026-patchwhat-you-need-to-do-now.438782" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-3"><summary class="item-header"><span class="item-title">Continue ringing the record 570-CVE July Patch Tuesday (three zero-days including AD FS EoP CVE-2026-56155 and Entra Provisioning SSRF CVE-2026-57100 at CVSS 9.9) across your construction client, small-business client, hospitality client, and internal ops.</span><span class="item-type type-security">SECURITY</span><span class="urgency-red">Act Today</span><span class="score">Score: 10/11</span></summary><div class="item-body"><p>Microsoft's July 2026 Patch Tuesday addresses a record 570 CVEs, including CVE-2026-56155 (actively exploited AD FS elevation-of-privilege), CVE-2026-57100 (Entra Provisioning Service EoP, CVSS 9.9), and CVE-2026-55008 (Exchange Server spoofing/XSS, CVSS 9.6). Prioritize identity infrastructure and Exchange patches immediately across your construction client, small-business client, hospitality client, and internal ops.</p><a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-july-2026-patch-tuesday-fixes-massive-570-flaws-3-zero-days/" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-4"><summary class="item-header"><span class="item-title">Monitor endpoints and restrict local code execution at your construction client and internal ops until Microsoft ships a fix for LegacyHive -- Chaotic Eclipse's public PoC elevates standard users to admin on fully-patched Windows 10, 11, and Server 2016/2019/2022.</span><span class="item-type type-security">SECURITY</span><span class="urgency-red">Act Today</span><span class="score">Score: 10/11</span></summary><div class="item-body"><p>Researcher Chaotic Eclipse publicly released a PoC exploit for a User Profile Service arbitrary hive load flaw that elevates a standard user to admin on fully-patched Windows 10, 11, and Windows Server 2016/2019/2022. No CVE or Microsoft patch available; requires local code execution. Monitor endpoints and restrict local user code execution at your construction client and internal ops until a fix ships.</p><a href="https://www.bleepingcomputer.com/news/security/new-windows-legacyhive-zero-day-exploit-grants-hackers-admin-access/" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-5"><summary class="item-header"><span class="item-title">Apply the July KEV-catalog patches for the actively exploited Microsoft authentication flaw across your construction client, small-business client, and internal ops M365 tenants this week.</span><span class="item-type type-security">SECURITY</span><span class="urgency-red">Act Today</span><span class="score">Score: 10/11</span></summary><div class="item-body"><p>CISA added Microsoft authentication flaws (alongside SonicWall SMA1000 zero-days) to the Known Exploited Vulnerabilities catalog with federal remediation deadlines. Confirms in-the-wild exploitation. Apply the corresponding July Patch Tuesday updates at your construction client, small-business client, and internal ops M365 tenants immediately.</p><a href="https://securityaffairs.com/195383/security/u-s-cisa-adds-sonicwall-and-microsoft-flaws-to-its-known-exploited-vulnerabilities-catalog.html" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-6"><summary class="item-header"><span class="item-title">Confirm none of your clients operate a SonicWall SMA1000 appliance -- CISA gave a July 17 KEV deadline on CVE-2026-15409 (CVSS 10.0 SSRF) and CVE-2026-15410; your construction client's SonicWall TZ series is a separate product line and unaffected.</span><span class="item-type type-security">SECURITY</span><span class="urgency-red">Act Today</span><span class="score">Score: 9/11</span></summary><div class="item-body"><p>CISA added CVE-2026-15409 (CVSS 10.0 SSRF, unauthenticated) and CVE-2026-15410 (CVSS 7.2 post-auth code injection) affecting SonicWall SMA1000 6210/7210/8200v appliances to the KEV catalog on July 14. Rapid7 MDR observed targeted exploitation of internet-facing SMA1000 devices as early as June 22. Federal remediation deadline was July 17. Your construction client's SonicWall TZ series is a separate product line and unaffected.</p><a href="https://www.cisa.gov/news-events/alerts/2026/07/14/cisa-adds-four-known-exploited-vulnerabilities-catalog" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-7"><summary class="item-header"><span class="item-title">Push a KnowBe4 template and quick end-user alert at your construction client, small-business client, and internal ops today about the Okta-flagged vishing campaign directing M365 users to fake Entra passkey-registration pages.</span><span class="item-type type-security">SECURITY</span><span class="urgency-red">Act Today</span><span class="score">Score: 9/11</span></summary><div class="item-body"><p>Okta warned in mid-July that a vishing campaign active since April is targeting Microsoft 365 customers across multiple sectors. Callers direct victims to fake Entra ID login pages under the pretense of registering a new passkey. Push a KnowBe4 template at your construction client, small-business client, and internal ops warning against unsolicited passkey/registration calls, and audit passkey enrollment events.</p><a href="https://www.securityweek.com/okta-warns-of-vishing-attacks-targeting-microsoft-365-customers/" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-8"><summary class="item-header"><span class="item-title">Block Microsoft device-code sign-in flow via Conditional Access at your construction client, small-business client, and internal ops M365 tenants -- Forg365 and DEBULL phishing kits are actively hijacking accounts through AiTM token theft on the real Microsoft login page.</span><span class="item-type type-security">SECURITY</span><span class="urgency-red">Act Today</span><span class="score">Score: 9/11</span></summary><div class="item-body"><p>Newly observed Telegram-distributed platforms Forg365 and DEBULL exploit Microsoft's device-code sign-in flow for adversary-in-the-middle token theft, mailbox operations, and session refresh against M365 tenants. Related Evilginx operations captured 218 corporate mailboxes across a dozen countries. Use Conditional Access to block device-code flow where not required at your construction client, small-business client, and internal ops.</p><a href="https://thehackernews.com/2026/07/debull-tooling-abuses-microsoft-device.html" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-9"><summary class="item-header"><span class="item-title">Push the Zoom Windows client update at any endpoint still running Zoom at your construction client, small-business client, hospitality client, and internal ops -- CVE-2026-53412 is a CVSS 9.8 unauthenticated account-takeover flaw.</span><span class="item-type type-security">SECURITY</span><span class="urgency-red">Act Today</span><span class="score">Score: 8/11</span></summary><div class="item-body"><p>Zoom released fixes for CVE-2026-53412, a critical Windows-client vulnerability that lets an unauthenticated attacker hijack Zoom accounts (CVSS 9.8). Even Teams-first shops with residual Zoom endpoints should push the update at your construction client, small-business client, hospitality client, and internal ops. Add to phishing-awareness comms since fake Zoom installers are also being weaponized.</p><a href="https://securityaffairs.com/195454/security/zoom-fixes-cve-2026-53412-a-critical-account-takeover-bug.html" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-10"><summary class="item-header"><span class="item-title">File the AsyncAPI npm supply-chain compromise (2M weekly downloads, info-stealer/RAT payload) and audit any Node projects touching internal ops for the affected package versions.</span><span class="item-type type-security">SECURITY</span><span class="urgency-red">Act Today</span><span class="score">Score: 8/11</span></summary><div class="item-body"><p>A sophisticated multi-stage malware payload functioning as an info-stealer and RAT was injected into popular AsyncAPI npm packages totaling roughly 2 million weekly downloads. Not core to SMB fleets but audit any Node projects touching internal ops for the affected package versions and check endpoints for indicators.</p><a href="https://securityaffairs.com/195395/security/asyncapi-npm-supply-chain-attack-malware-injected-into-packages-with-2-million-weekly-downloads.html" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-11"><summary class="item-header"><span class="item-title">Apply Synology DSM 7.3.2-86009 Update 4 to your hospitality client's DS723+ NAS this week -- Synology patched authenticated arbitrary file read/write flaws (CVSS up to 8.0).</span><span class="item-type type-security">SECURITY</span><span class="urgency-yellow">This Week</span><span class="score">Score: 10/11</span></summary><div class="item-body"><p>Synology released DSM 7.3.2-86009 Update 4 (also 7.2.2 Update 9 and 7.2.1 Update 12) to fix CVE-2026-40530 and CVE-2026-4036 (remote authenticated arbitrary file read/write and DoS) and CVE-2026-40539 (man-in-the-middle arbitrary file read/write). Highest CVSS is 8.0. Apply to your hospitality client's DS723+ this week.</p><a href="https://securityonline.info/synology-dsm-security-update-nas-vulnerabilities-2026/" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-12"><summary class="item-header"><span class="item-title">File a note on ClickLock macOS malware for the rare Mac users across your fleet -- the malware terminates visible apps to trigger a fake authentication prompt that harvests the login password.</span><span class="item-type type-security">SECURITY</span><span class="urgency-yellow">This Week</span><span class="score">Score: 9/11</span></summary><div class="item-body"><p>New macOS malware named ClickLock terminates visible user processes to induce panic, then presents a fake authentication prompt that captures the user's login password when they attempt to unlock or recover their session. Reinforce end-user awareness for the rare Mac users across your fleet.</p><a href="https://www.bleepingcomputer.com/news/security/new-clicklock-macos-malware-traps-users-into-revealing-login-password/" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-13"><summary class="item-header"><span class="item-title">Audit browser extensions at your construction client, small-business client, and internal ops for the Claude Chrome extension -- a flaw lets malicious extensions trigger AI actions against Gmail, Docs, and Calendar until Anthropic ships a fix.</span><span class="item-type type-security">SECURITY</span><span class="urgency-yellow">This Week</span><span class="score">Score: 9/11</span></summary><div class="item-body"><p>A flaw in the Claude Chrome extension allows malicious extensions to trigger AI actions accessing Gmail, Google Docs, and Calendar without explicit user intent. IT teams should audit browser extensions and restrict/uninstall the Claude Chrome extension at your construction client, small-business client, and internal ops until Anthropic ships a fix.</p><a href="https://www.bleepingcomputer.com/news/security/claude-chrome-extension-flaw-lets-malicious-extensions-trigger-ai-actions/" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-14"><summary class="item-header"><span class="item-title">Windows 11 KB5094126 delivers Point-in-Time Restore and calendar-based update pause</span><span class="item-type type-feature">FEATURE</span><span class="urgency-yellow">This Week</span><span class="score">Score: 10/11</span></summary><div class="item-body"><p>The July 2026 Windows 11 25H2/24H2 cumulative update KB5094126 rolls up the July Patch Tuesday security fixes plus Point-in-Time Restore, calendar-based Windows Update pause (up to 35 days), File Explorer and Phone Link improvements, and Widgets/notification refinements. Deploy through Intune/WSUS rings at your construction client, small-business client, and internal ops.</p><a href="https://m365admin.handsontek.net/july-2026-windows-security-update-now-available/" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-15"><summary class="item-header"><span class="item-title">Entra ID Conditional Access now enforced during Windows Hello credential registration</span><span class="item-type type-feature">FEATURE</span><span class="urgency-yellow">This Week</span><span class="score">Score: 10/11</span></summary><div class="item-body"><p>Starting July 6, 2026, Entra ID Conditional Access policies scoped to the 'Register security information' user action are now evaluated during Windows Hello credential registration. Users must satisfy MFA, network, or device-compliance controls before completing registration. Review CA policies at your construction client, small-business client, and internal ops to avoid blocking legitimate onboarding.</p><a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/whats-new-in-microsoft-entra-june-2026/4517885" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-16"><summary class="item-header"><span class="item-title">Bluebeam Revu 20 reaches end of support July 31 -- migrate to Revu 21.10</span><span class="item-type type-feature">FEATURE</span><span class="urgency-yellow">This Week</span><span class="score">Score: 10/11</span></summary><div class="item-body"><p>Revu 20 hits end of support in two weeks (July 31, 2026); users must migrate to Revu 21 (current 21.10, released June 2, 2026) to keep receiving updates. Revu 21.10 adds Autodesk 2027 plugin support for AutoCAD, Revit, and Navisworks plus expanded MCP workflows. Confirm your construction client's Bluebeam install base is on 21.</p><a href="https://www.drawboard.com/blog/bluebeam-revu-20-end-of-life" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-17"><summary class="item-header"><span class="item-title">UniFi Network Application 10.5.62 released with CyberSecure and SD-WAN improvements</span><span class="item-type type-feature">FEATURE</span><span class="urgency-green">FYI</span><span class="score">Score: 9/11</span></summary><div class="item-body"><p>Ubiquiti released UniFi Network Application 10.5.62 with improvements to CyberSecure, Port Manager, SD-WAN Underlay, Network Lists, and RADIUS. Bug fixes cover STP state reporting, U-LTE adoption errors, and startup failures on sites with large Traffic Flow counts. Your construction client is deployed 10.3+; upgrades from 10.5.x may take up to 30 minutes.</p><a href="https://community.ui.com/releases" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-18"><summary class="item-header"><span class="item-title">Microsoft Intune EPM and Enterprise App Management now bundled into M365 E5</span><span class="item-type type-feature">FEATURE</span><span class="urgency-green">FYI</span><span class="score">Score: 9/11</span></summary><div class="item-body"><p>As of July 1, 2026, Intune Endpoint Privilege Management (EPM) and Enterprise Application Management (EAM) are included with Microsoft 365 E5. EAM auto-updates went GA, keeping managed third-party apps on the latest release automatically. Evaluate turning EPM elevation policies on for standard-user endpoints at your construction client and internal ops.</p><a href="https://learn.microsoft.com/en-us/intune/whats-new/" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-19"><summary class="item-header"><span class="item-title">Microsoft Teams July update adds AI meeting notes in physical rooms and sensitivity-label inheritance</span><span class="item-type type-feature">FEATURE</span><span class="urgency-green">FYI</span><span class="score">Score: 9/11</span></summary><div class="item-body"><p>Teams' July 2026 rollout brings AI-generated notes to in-room/physical meetings, streamlined call transfer with suggestions on Windows/Mac desktop, automatic spoken-language detection, chat quick views, code-block line numbers, and sensitivity-label inheritance on meeting recordings (MP4). Review DLP/sensitivity-label policies at your construction client and internal ops before broad availability.</p><a href="https://www.windowslatest.com/2026/07/07/microsoft-teams-big-update-brings-ai-notes-to-physical-meetings-chat-sections-and-more/" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-20"><summary class="item-header"><span class="item-title">M365 Business plans gain Copilot Chat admin controls and +50 GB mailbox storage</span><span class="item-type type-feature">FEATURE</span><span class="urgency-green">FYI</span><span class="score">Score: 9/11</span></summary><div class="item-body"><p>Effective July 1, 2026, all three Microsoft 365 Business plans include enhanced Copilot Chat with admin controls and usage analytics, plus an additional 50 GB of mailbox storage. Review Copilot governance and update mailbox retention/archive policies accordingly at your construction client, small-business client, and internal ops.</p><a href="https://www.trustedtechteam.com/blogs/news/microsoft-365-plan-updates-new-features-2026" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-21"><summary class="item-header"><span class="item-title">Atera July 2026 release adds workgroup agent deployment, SNMP AI monitoring, revamped Global Search</span><span class="item-type type-feature">FEATURE</span><span class="urgency-green">FYI</span><span class="score">Score: 9/11</span></summary><div class="item-body"><p>Atera's July release adds agent deployment for workgroup (non-domain) environments, on-demand credential prompts during network scans, and a dedicated SNMP scan type. Copilot auto-generates OIDs for SNMP devices from device model or MIB file. Global Search now covers custom fields, assets, KB articles, and ticket comments.</p><a href="https://support.atera.com/hc/en-us/articles/25381421604124-Release-Notes-2026" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-22"><summary class="item-header"><span class="item-title">DoD suspends CMMC Phase 2 pending 60-day reform review; NIST SP 800-171 obligations remain</span><span class="item-type type-industry">INDUSTRY</span><span class="urgency-yellow">This Week</span><span class="score">Score: 10/11</span></summary><div class="item-body"><p>On July 13, 2026, DoD announced immediate suspension of CMMC Phase 2 (which had been scheduled to take effect Nov 10, 2026) and stood up a CMMC Reform Task Force due to report in 60 days. DFARS 252.204-7012, NIST SP 800-171 Rev. 2 compliance, cloud security, and cyber-incident reporting requirements remain in force. RFI responses are due August 14. Your construction client's Level 2 assessment prep can pause pending the outcome, but do not descope underlying NIST SP 800-171 controls.</p><a href="https://defensescoop.com/2026/07/13/dod-halts-cmmc-cybersecurity-requirements-phase-2/" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-23"><summary class="item-header"><span class="item-title">CISA, NSA and allies warn Russian FSB Center 16 exploiting weak router configurations</span><span class="item-type type-security">SECURITY</span><span class="urgency-yellow">This Week</span><span class="score">Score: 8/11</span></summary><div class="item-body"><p>Joint advisory AA26-194A warns that FSB Center 16 actors are opportunistically compromising poorly configured routers globally, targeting communications, energy, government and healthcare sectors. Actors scan for devices exposing SNMPv1/v2 with default community strings. Guidance: enforce SNMPv3, disable SNMPv1/v2 and Cisco Smart Install, block TFTP/SMI/SNMP at the firewall where not needed, and patch firmware. File for your construction client's next SonicWall TZ audit and your small-business client's UCG Fiber review.</p><a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-194a" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-24"><summary class="item-header"><span class="item-title">Chinese cyber-espionage campaign automates intrusions with Claude Code and DeepSeek</span><span class="item-type type-security">SECURITY</span><span class="urgency-yellow">This Week</span><span class="score">Score: 8/11</span></summary><div class="item-body"><p>Chinese state-aligned operators are using Claude Code 2.1.165 and DeepSeek-v4-pro to automate reconnaissance, exploit selection, and post-exploitation tooling against government systems in Taiwan, Thailand, and Afghanistan plus financial-services firms globally. Signals that AI-assisted attackers are lowering the skill floor and increasing tempo; SMB defenders should assume adversaries are moving faster than manual playbooks assume.</p><a href="https://securityaffairs.com/195474/ai/claude-code-and-deepseek-powered-chinese-cyber-espionage-campaign.html" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-25"><summary class="item-header"><span class="item-title">Windows Server 2022 mainstream support ends in 90 days</span><span class="item-type type-industry">INDUSTRY</span><span class="urgency-green">FYI</span><span class="score">Score: 8/11</span></summary><div class="item-body"><p>Microsoft's Windows Server 2022 mainstream support window closes in October 2026, at which point new features stop and only security/extended support continues for five more years. Plan Server 2025 upgrades for domain controllers, RDS, and file/print hosts before the transition at your construction client, small-business client, hospitality client, and internal ops.</p><a href="https://www.bleepingcomputer.com/news/microsoft/windows-server-2022-reach-end-of-mainstream-support-in-90-days/" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-26"><summary class="item-header"><span class="item-title">Microsoft launches Copilot in 30 partner-led CSP trial for SMBs on August 1</span><span class="item-type type-industry">INDUSTRY</span><span class="urgency-green">FYI</span><span class="score">Score: 8/11</span></summary><div class="item-body"><p>Microsoft announced Copilot in 30, a partner-led CSP trial for Microsoft 365 Copilot Business aimed at organizations with fewer than 300 employees, available in CSP August 1. A 5.5-hour on-demand partner course covers pitching Copilot 365 to SMB clients and CSP licensing. Worth a review for Purplesky's SMB Copilot offering.</p><a href="https://learn.microsoft.com/en-us/partner-center/announcements/2026-july" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-27"><summary class="item-header"><span class="item-title">Fake Webex and Zoom installers deliver Starland RAT with crypto-wallet theft</span><span class="item-type type-security">SECURITY</span><span class="urgency-yellow">This Week</span><span class="score">Score: 7/11</span></summary><div class="item-body"><p>A Russian-speaking threat actor is distributing trojanized Webex and Zoom installers that drop the Starland RAT for espionage and cryptocurrency wallet theft. Reinforce app-install allowlisting (Intune/AppLocker) and warn end users to install conferencing clients only from vendor sites or the M365 admin center.</p><a href="https://securityaffairs.com/195532/malware/new-russian-campaign-uses-fake-webex-and-zoom-installers-to-deploy-starland-rat.html" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-28"><summary class="item-header"><span class="item-title">TuxBot v3 IoT botnet ships with LLM safety disclaimers intact</span><span class="item-type type-industry">INDUSTRY</span><span class="urgency-green">FYI</span><span class="score">Score: 7/11</span></summary><div class="item-body"><p>Researchers documented TuxBot v3, an IoT botnet framework built with LLM assistance that shipped with the model's safety disclaimers left in the code and multiple functional bugs across 17 processor architectures. Low operational urgency but a useful data point on the current floor of AI-authored malware quality.</p><a href="https://securityaffairs.com/195486/ai/tuxbot-v3-the-iot-botnet-built-with-ai-bugs-disclaimers-and-all.html" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-29"><summary class="item-header"><span class="item-title">DoD post-quantum cryptography directive lands on defense contractors</span><span class="item-type type-industry">INDUSTRY</span><span class="urgency-green">FYI</span><span class="score">Score: 7/11</span></summary><div class="item-body"><p>A new Pentagon directive begins spelling out post-quantum cryptography (PQC) expectations for defense contractors, layered on top of the ongoing CMMC reform effort. Contractors should begin cryptographic inventories and PQC migration planning aligned to NIST's finalized standards. Relevant for your construction client's CMMC posture over the next 12-24 months.</p><a href="https://defensescoop.com/2026/07/10/cmmc-pqc-requirements-defense-contractors-cybersecurity/" target="_blank" class="src">Source &rarr;</a></div></details>
 </div>
 
-<div class="footer">Generated Thursday, July 16, 2026 at 6:30 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-07-16.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
+<div class="footer">Generated Friday, July 17, 2026 at 6:15 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-07-17.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
 
 </main>
 </body>
