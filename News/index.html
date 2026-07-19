@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<title>Morning Briefing -- Saturday, July 18, 2026</title>
+<title>Morning Briefing -- Sunday, July 19, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -14,59 +14,276 @@
 <main class="briefing-content">
 
 <div class="page-header">
-  <h1>Morning Briefing -- Saturday, July 18, 2026</h1>
+  <h1>Morning Briefing -- Sunday, July 19, 2026</h1>
   <p class="page-meta">Microsoft &bull; Security &amp; Compliance &bull; Firewall / VPN / Networking &bull; Servers/NAS &bull; Workstations &amp; Mobile &bull; Peripherals &amp; AV &bull; RMM &amp; Remote Access &bull; Construction &amp; Specialty Software &bull; General Tech &amp; AI &bull; Pacific Time</p>
 </div>
 
 <div class="section-actions">
   <h2>Today's Actions</h2>
-  <p class="section-transparency">Showing 3 of 4</p>
+  <p class="section-transparency">Showing 3 of 8</p>
   <ol class="action-list">
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-yellow">This Week</span> Deploy the July cumulative update to close CVE-2026-55011 and CVE-2026-55012 (Defender Malware Protection Engine RCE, CVSS 7.8) across managed endpoints at your construction client, small-business client, hospitality client, and internal ops. <a href="#item-1" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-yellow">This Week</span> Push the July Windows update to remediate CVE-2026-58531 (SMB elevation-of-privilege to SYSTEM) at your construction client, small-business client, hospitality client, and internal ops. <a href="#item-2" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-yellow">This Week</span> Apply the July cumulative to close the RDP client info-disclosure cluster (CVE-2026-50445, 50497, 55003, 57979, 57982) at your construction client's RDP Gateway jump hosts and any Windows endpoint using RDP at your small-business client, hospitality client, and internal ops. <a href="#item-3" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-monitor">Monitor</span> <span class="urgency-red">Act Today</span> Verify Defender AV/EDR block-and-report mode and hunt for ACR Stealer token-theft indicators in Entra ID sign-in logs at your construction client, small-business client, hospitality client, and internal ops. <a href="#item-1" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">Patch This Week</span> <span class="urgency-red">Act Today</span> Confirm the July 2026 cumulative update is deployed on any AD FS federation servers to close actively exploited CVE-2026-56155. <a href="#item-2" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-notify-users">Notify Users</span> <span class="urgency-red">Act Today</span> Block lastpassnewsletter.com and lastpasscompliance.com at email and URL filters and warn users of the active LastPass phishing campaign harvesting master passwords at your construction client, small-business client, and internal ops. <a href="#item-3" class="detail-link">details</a></li>
   </ol>
-  <details class="section-overflow"><summary>Show 1 more action</summary><ol class="action-list" start="4">
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-yellow">This Week</span> Roll the July update to file/print servers to close CVE-2026-57089 (srvnet.sys SMB server RCE) at your construction client, small-business client, hospitality client, and internal ops. <a href="#item-4" class="detail-link">details</a></li>
+  <details class="section-overflow"><summary>Show 5 more actions</summary><ol class="action-list" start="4">
+    <li><span class="action-tag tag-patch-this-week">Patch This Week</span> <span class="urgency-red">Act Today</span> Push 7-Zip 26.02 to any managed endpoint with 7-Zip installed to close the RCE fixed on July 18 at your construction client, small-business client, hospitality client, and internal ops. <a href="#item-4" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">Patch This Week</span> <span class="urgency-red">Act Today</span> Patch any managed WordPress sites immediately &mdash; public exploits for the wp2shell RCE cluster are now circulating. <a href="#item-5" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">Patch This Week</span> <span class="urgency-yellow">This Week</span> Apply Dell DSA-2026-027 firmware and BIOS updates to Intel-based PowerEdge servers at any site running deployed Dell PowerEdge hardware. <a href="#item-6" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">Patch This Week</span> <span class="urgency-yellow">This Week</span> Schedule Dell DSA-2026-014 firmware updates for the Intel Server Firmware vulnerability on Intel-based Dell PowerEdge servers at any site running deployed Dell PowerEdge hardware. <a href="#item-7" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">Patch This Week</span> <span class="urgency-yellow">This Week</span> Apply Synology DSM 7.3.2-86009 Update 4 (security-labeled) to the DiskStation at your hospitality client during a maintenance window. <a href="#item-8" class="detail-link">details</a></li>
   </ol></details>
 </div>
 
 <div class="section-new">
   <h2>What's New</h2>
-  <p class="section-transparency">Showing 3 of 4</p>
+  <p class="section-transparency">Showing 3 of 6</p>
   <ul class="new-list">
-    <li><strong><a href="#item-5">Defender for Office 365 Plan 1 folds into Office 365 / M365 E3 by August 1</a></strong> -- Microsoft's July 2026 packaging update integrates Defender for Office 365 Plan 1 (anti-phishing, Safe Links, Safe Attachments) directly into Office 365 E3 and Microsoft 365 E3 with no add-on SKU. Rollout began June 2026 and completes by August 1, 2026, with per-tenant dates in the Message Center. Review baseline email-security posture at your construction client, small-business client, and internal ops. <a href="https://www.microsoft.com/en-us/licensing/news/2026-m365-packaging-pricing-updates" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-6">Intune Plan 2, Remote Help, and Advanced Analytics roll into M365 E3</a></strong> -- The same July packaging refresh adds Intune Plan 2, Intune Remote Help, and Intune Advanced Analytics to Microsoft 365 E3 tenants at no extra cost, distinct from yesterday's E5 EPM/EAM bundling. Expands endpoint-management capabilities available to E3-tier SMB customers at your construction client, small-business client, and internal ops. <a href="https://blog-en.topedia.com/2026/04/microsoft-365-e3-and-e5-customers-get-intune-suite-and-defender-capabilities-in-july-2026/" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-7">OpenAI ships GPT-5.6 family and ChatGPT Work agent GA</a></strong> -- OpenAI launched the GPT-5.6 models (Sol, Terra, Luna) in general availability across ChatGPT, Codex, and the API, alongside ChatGPT Work, a "non-technical office colleague" agent positioned for line-of-business tasks. Worth evaluating for staff productivity and helpdesk pilots at your construction client, small-business client, and internal ops. <a href="https://www.aiapps.com/blog/july-ai-mega-update-major-breakthroughs-launches/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-9">Microsoft bundles Intune Suite capabilities into M365 E3 and E5 through August 1</a></strong> -- Microsoft is rolling Intune Suite capabilities into Microsoft 365 E3 (Remote Help, Advanced Analytics, Intune Plan 2, Defender for Office 365 Plan 1) and E5 (adds Endpoint Privilege Management, Enterprise App Management, Cloud PKI, Security Copilot) with rollout that started July 1, 2026 and completes by August 1, 2026. Tenants receive a 30-day Message Center notice before per-tenant activation. Plan to turn on EPM and EAM where applicable at your construction client, small-business client, and internal ops. <a href="https://sra.io/blog/intune-suite-is-included-in-e3-e5-starting-july-2026/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-10">UniFi Network Application 10.5.62 ships with CyberSecure, SD-WAN, and Port Manager improvements</a></strong> -- Ubiquiti released UniFi Network Application 10.5.62 with CyberSecure Safe Mode indication, Port Manager Auto STP Edge clearing, SD-WAN Underlay resiliency, Network Lists UX and validation upgrades, and RADIUS Server validation. Bug fixes cover STP Time Machine issues, U-LTE adoption gateway errors, and startup failures after upgrade on sites with many Traffic Flows. Upgrade may take up to 30 minutes on large sites &mdash; relevant to your construction client's SonicWall-fronted UniFi environment and any other UniFi-managed site. <a href="https://community.ui.com/releases/UniFi-Network-Application-10-4-57/92694b29-fd78-4d52-906a-3211136610e2" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-11">UniFi Protect iOS 3.8.0 adds Sensor Manager, Webhook Shortcuts, PTZ digital zoom</a></strong> -- Ubiquiti released UniFi Protect iOS app 3.8.0 adding Sensor Manager Dashboard support, Webhook Shortcuts, PTZ digital zoom, Timeline improvements, IdP/SAML login for Fabric and MSP Group admins, Spotlight pinning, Alarm Selection in Alarm Profiles, and Person/Vehicle filters in Find Anything. Bug fixes address Fabric Sites filter with offline consoles and navigation bar issues on latest iOS &mdash; deploy to your construction client's iPhone-carrying users who use Protect. <a href="https://community.ui.com/releases/" target="_blank">Source &rarr;</a></li>
   </ul>
-  <details class="section-overflow"><summary>Show 1 more update</summary><ul class="new-list">
-    <li><strong><a href="#item-8">Anthropic adds self-serve HIPAA, Claude for Teachers, and Claude Code stability release</a></strong> -- Anthropic shipped July updates including self-serve HIPAA configuration for Enterprise and API orgs with BAA review, free premium access for verified US K-12 educators via Claude for Teachers, and a broad Claude Code stability release covering subagent streaming, permission and upload handling, background agent reporting, and fixes across Chrome, Windows, Bedrock, Vertex, hooks, and session recovery. <a href="https://releasebot.io/updates/anthropic/claude" target="_blank">Source &rarr;</a></li>
+  <details class="section-overflow"><summary>Show 3 more updates</summary><ul class="new-list">
+    <li><strong><a href="#item-12">Claude Code stability release tightens permissions and PowerShell handling</a></strong> -- Anthropic pushed a broad Claude Code update with tighter permission checks, safer Bash and PowerShell handling, and improved background session cleanup. Notably it fixes a permission-check bypass in Windows PowerShell 5.1 sessions and a rule-scope bug where single-segment dir/** allow rules auto-approved writes to nested directories. Relevant to your internal ops if you run Claude Code with elevated tool access. <a href="https://releasebot.io/updates/anthropic/claude-code" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-13">Entra ID SSPR and authentication-method registration enforcement tightens ahead of September deadline</a></strong> -- A Microsoft registration campaign that started July 6, 2026 requires users to explicitly register authentication methods; starting September 7, 2026, SSPR will only accept registered methods, and directory-sourced phone/email numbers that were never formally registered stop working. Conditional Access on the "Register security information" action now also enforces during Windows Hello and macOS Platform SSO setup &mdash; audit method-registration coverage at your construction client, small-business client, and internal ops before September. <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/microsoft-entra-id-security-updates-what-organizations-need-to-do-now/4522024" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-14">Barracuda launches Integrated Email Protection platform with post-delivery clawback and unified quarantine</a></strong> -- Barracuda unveiled Integrated Email Protection, a cloud-based platform that consolidates automated threat investigation and remediation, post-delivery message clawback, unified quarantine management, and tenant-wide response actions in response to AI-accelerated phishing chains. Worth reviewing for your construction client, currently on Barracuda Email Protection, as a consolidation option. <a href="https://www.channelinsider.com/security/tools-and-platforms/barracuda-integrated-email-protection-ai-phishing/" target="_blank">Source &rarr;</a></li>
   </ul></details>
 </div>
 
 <div class="section-security">
   <h2>Security &amp; Patches</h2>
+  <p class="section-transparency">Showing 3 of 4</p>
   <div class="security-cards">
-    <div class="security-card"><a href="#item-9" class="security-headline">Progress lifts July 10 ShareFile Storage Zone Controller shutdown order after 5.12.5 / 6.0.2 fixes</a><span class="urgency-yellow">This Week</span><span class="security-summary">Progress has lifted the emergency shutdown order it issued on July 10 for on-prem ShareFile Storage Zone Controllers and restored access, saying it has no indication of unauthorized account or data access.</span></div>
-    <div class="security-card"><a href="#item-10" class="security-headline">DoD schedules CMMC listening sessions during Phase 2 reform review; RFI due August 14</a><span class="urgency-green">FYI</span><span class="security-summary">Following the July 13 CMMC Phase 2 suspension, DoD/DoW will hold public listening sessions during the 60-day Reform Task Force review and takes RFI responses through August 14, 2026.</span></div>
+    <div class="security-card"><a href="#item-15" class="security-headline">DoD suspends CMMC Phase 2 and launches 60-day reform review; RFI responses due August 14</a><span class="urgency-yellow">This Week</span><span class="security-summary">The Department of Defense suspended CMMC Phase 2 (which would have required C3PAO Level 2 certification as a condition of award starting November 10, 2026) and launched a 60-day reform review by a new CMMC Reform Task Force reporting to the DoD CIO.</span></div>
+    <div class="security-card"><a href="#item-16" class="security-headline">Microsoft 365 device code phishing campaign targets Entra ID users</a><span class="urgency-yellow">This Week</span><span class="security-summary">A device code phishing campaign observed from late June into early July 2026 tricked Microsoft 365 users into pasting attacker-generated device codes and granting persistent access.</span></div>
+    <div class="security-card"><a href="#item-17" class="security-headline">SMB ransomware campaign impersonates Interpol with fake evidence lure</a><span class="urgency-yellow">This Week</span><span class="security-summary">Attackers are targeting small and mid-sized businesses with phishing messages spoofing Interpol warnings; opening the linked evidence file triggers ransomware deployment.</span></div>
   </div>
+  <details class="section-overflow"><summary>Show 1 more security item</summary><div class="security-cards">
+    <div class="security-card"><a href="#item-18" class="security-headline">OpenSSL patches HollowByte 11-byte memory-exhaustion DoS bug</a><span class="urgency-yellow">This Week</span><span class="security-summary">Okta disclosed an OpenSSL flaw dubbed HollowByte where an 11-byte input lets a remote attacker exhaust server memory, enabling denial of service.</span></div>
+  </div></details>
 </div>
 
 <div class="section-details">
   <h2>Details</h2>
-  <details class="item" id="item-1"><summary class="item-header"><span class="item-title">Deploy the July cumulative update to close CVE-2026-55011 and CVE-2026-55012 (Defender Malware Protection Engine RCE, CVSS 7.8) across managed endpoints at your construction client, small-business client, hospitality client, and internal ops.</span><span class="item-type type-security">SECURITY</span><span class="urgency-yellow">This Week</span><span class="score">Score: 10/11</span></summary><div class="item-body"><p>Microsoft's July 2026 Patch Tuesday addressed two critical RCE vulnerabilities in Microsoft Defender's Malware Protection Engine: CVE-2026-55011 (integer underflow) and CVE-2026-55012 (integer overflow), both CVSS 7.8. Unauthenticated attackers can execute arbitrary code locally on any endpoint the engine scans. The engine typically auto-updates, but admins should verify definition versions across managed endpoints at your construction client, small-business client, hospitality client, and internal ops.</p><a href="https://threatprotect.qualys.com/2026/07/15/microsoft-patch-tuesday-july-2026-security-update-review/" target="_blank" class="src">Source &rarr;</a></div></details>
-  <details class="item" id="item-2"><summary class="item-header"><span class="item-title">Push the July Windows update to remediate CVE-2026-58531 (SMB elevation-of-privilege to SYSTEM) at your construction client, small-business client, hospitality client, and internal ops.</span><span class="item-type type-security">SECURITY</span><span class="urgency-yellow">This Week</span><span class="score">Score: 10/11</span></summary><div class="item-body"><p>Microsoft's July 2026 updates fix CVE-2026-58531, an SMB race-condition elevation-of-privilege flaw that lets any authenticated low-privileged user leapfrog to SYSTEM on unpatched Windows 11 (24H2/25H2) and Windows Server hosts. No public PoC or active exploitation reported yet, but the low bar for exploitation and the ubiquity of authenticated access make this a priority for managed fleets.</p><a href="https://windowsnews.ai/article/from-low-privilege-to-system-critical-smb-bug-fixed-in-latest-windows-updates.438843" target="_blank" class="src">Source &rarr;</a></div></details>
-  <details class="item" id="item-3"><summary class="item-header"><span class="item-title">Apply the July cumulative to close the RDP client info-disclosure cluster (CVE-2026-50445, 50497, 55003, 57979, 57982) at your construction client's RDP Gateway jump hosts and any Windows endpoint using RDP at your small-business client, hospitality client, and internal ops.</span><span class="item-type type-security">SECURITY</span><span class="urgency-yellow">This Week</span><span class="score">Score: 10/11</span></summary><div class="item-body"><p>Microsoft patched a cluster of RDP information-disclosure vulnerabilities (CVE-2026-50445, 50497, 55003, 57979, 57982) that can leak sensitive memory contents from a Windows machine when its RDP client connects to a malicious or compromised RDP server. Roll the July cumulative updates to all RDP-using endpoints, including your construction client's RDP Gateway jump hosts and any Windows client using RDP at your small-business client, hospitality client, and internal ops.</p><a href="https://cybersecuritynews.com/windows-remote-desktop-protocol-vulnerabilities-2/" target="_blank" class="src">Source &rarr;</a></div></details>
-  <details class="item" id="item-4"><summary class="item-header"><span class="item-title">Roll the July update to file/print servers to close CVE-2026-57089 (srvnet.sys SMB server RCE) at your construction client, small-business client, hospitality client, and internal ops.</span><span class="item-type type-security">SECURITY</span><span class="urgency-yellow">This Week</span><span class="score">Score: 9/11</span></summary><div class="item-body"><p>The July Patch Tuesday also closes CVE-2026-57089, a use-after-free flaw in srvnet.sys that allows remote code execution over SMB with limited user interaction. File servers and any endpoint with SMB reachable on the LAN should be prioritized at your construction client, small-business client, hospitality client, and internal ops. Pair with the CVE-2026-58531 SMB EoP patch in the same rollout.</p><a href="https://windowsnews.ai/article/microsofts-july-2026-patch-closes-high-severity-smb-server-rce-hole-whos-at-risk-and-what-to-do-now.438815" target="_blank" class="src">Source &rarr;</a></div></details>
-  <details class="item" id="item-5"><summary class="item-header"><span class="item-title">Defender for Office 365 Plan 1 folds into Office 365 / M365 E3 by August 1</span><span class="item-type type-feature">FEATURE</span><span class="urgency-green">FYI</span><span class="score">Score: 8/11</span></summary><div class="item-body"><p>Microsoft's July 2026 packaging update integrates Defender for Office 365 Plan 1 (anti-phishing, Safe Links, Safe Attachments) directly into Office 365 E3 and Microsoft 365 E3 with no add-on SKU. Rollout began June 2026 and completes by August 1, 2026, with per-tenant dates published in the Message Center. Review email-security baseline posture at your construction client, small-business client, and internal ops so the new inclusions are turned on.</p><a href="https://www.microsoft.com/en-us/licensing/news/2026-m365-packaging-pricing-updates" target="_blank" class="src">Source &rarr;</a></div></details>
-  <details class="item" id="item-6"><summary class="item-header"><span class="item-title">Intune Plan 2, Remote Help, and Advanced Analytics roll into M365 E3</span><span class="item-type type-feature">FEATURE</span><span class="urgency-green">FYI</span><span class="score">Score: 8/11</span></summary><div class="item-body"><p>As part of Microsoft's 2026 packaging changes rolling out through August 1, Microsoft 365 E3 tenants gain Intune Plan 2, Intune Remote Help, and Intune Advanced Analytics without a separate SKU. This is distinct from yesterday's E5 EPM/EAM bundling and expands endpoint-management capabilities to E3-tier SMB customers. Plan to enable Remote Help and Advanced Analytics at your construction client, small-business client, and internal ops.</p><a href="https://blog-en.topedia.com/2026/04/microsoft-365-e3-and-e5-customers-get-intune-suite-and-defender-capabilities-in-july-2026/" target="_blank" class="src">Source &rarr;</a></div></details>
-  <details class="item" id="item-7"><summary class="item-header"><span class="item-title">OpenAI ships GPT-5.6 family and ChatGPT Work agent GA</span><span class="item-type type-feature">FEATURE</span><span class="urgency-green">FYI</span><span class="score">Score: 8/11</span></summary><div class="item-body"><p>OpenAI launched the GPT-5.6 family (Sol, Terra, Luna) in general availability across ChatGPT, Codex, and the API, alongside ChatGPT Work, a new agent positioned as the "non-technical office colleague" version of Codex. Worth evaluating for AI-assisted staff productivity and helpdesk pilots at your construction client, small-business client, and internal ops.</p><a href="https://www.aiapps.com/blog/july-ai-mega-update-major-breakthroughs-launches/" target="_blank" class="src">Source &rarr;</a></div></details>
-  <details class="item" id="item-8"><summary class="item-header"><span class="item-title">Anthropic adds self-serve HIPAA, Claude for Teachers, and Claude Code stability release</span><span class="item-type type-feature">FEATURE</span><span class="urgency-green">FYI</span><span class="score">Score: 8/11</span></summary><div class="item-body"><p>Anthropic shipped several July updates: self-serve HIPAA configuration for Enterprise and API orgs (with BAA review and one-step enablement), Claude for Teachers giving verified US K-12 educators free premium access, and a broad Claude Code stability release covering subagent text streaming, permission and upload handling, background agent reporting, faster terminal rendering, and fixes across Chrome, Windows, Bedrock, Vertex, hooks, and session recovery. Relevant for AI tool selection across your construction client, small-business client, and internal ops.</p><a href="https://releasebot.io/updates/anthropic/claude" target="_blank" class="src">Source &rarr;</a></div></details>
-  <details class="item" id="item-9"><summary class="item-header"><span class="item-title">Progress lifts July 10 ShareFile Storage Zone Controller shutdown order after 5.12.5 / 6.0.2 fixes</span><span class="item-type type-industry">INDUSTRY</span><span class="urgency-yellow">This Week</span><span class="score">Score: 9/11</span></summary><div class="item-body"><p>Progress has lifted the emergency shutdown order it issued on July 10 for on-prem ShareFile Storage Zone Controllers and restored access, saying it has no indication of unauthorized access to any ShareFile account or data. Progress has not disclosed the nature of the threat or the actor. Any on-prem Storage Zone Controller customers should confirm they are on the fixed 5.12.5 / 6.0.2 builds before resuming full production use; cloud-only ShareFile tenants remain unaffected.</p><a href="https://support.sharefile.com/s/article/Citrix-ShareFile-Storage-Zones-Controller-Security-Update" target="_blank" class="src">Source &rarr;</a></div></details>
-  <details class="item" id="item-10"><summary class="item-header"><span class="item-title">DoD schedules CMMC listening sessions during Phase 2 reform review; RFI due August 14</span><span class="item-type type-industry">INDUSTRY</span><span class="urgency-green">FYI</span><span class="score">Score: 8/11</span></summary><div class="item-body"><p>Following the July 13 suspension of CMMC Phase 2, the DoD/DoW announced it will hold public listening sessions during the 60-day Reform Task Force review, alongside a formal Request for Information due August 14, 2026. Contractors handling CUI are still expected to maintain NIST SP 800-171 compliance and SPRS scores per existing DFARS clauses; only the phased CMMC assessment rollout is paused. Your construction client's Level 2 prep can stay paused pending outcome, without descoping NIST controls.</p><a href="https://federalnewsnetwork.com/defense-news/2026/07/dod-plans-cmmc-listening-sessions-as-questions-swirl-around-review/" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-1">
+    <summary class="item-header">
+      <span class="item-title">Verify Defender AV/EDR block-and-report mode and hunt for ACR Stealer token-theft indicators in Entra ID sign-in logs at your construction client, small-business client, hospitality client, and internal ops.</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 10/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Microsoft observed a surge of attacks using ACR Stealer malware against enterprise customers, harvesting browser-stored passwords, authentication tokens, and sensitive documents. Defender telemetry indicates active campaigns. Admins should verify Defender AV and EDR block-and-report modes and check for token-theft indicators (unusual sign-in locations, session reuse) in Entra ID sign-in logs.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/microsoft-warns-of-surge-in-acr-stealer-attacks-on-customers/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-2">
+    <summary class="item-header">
+      <span class="item-title">Confirm the July 2026 cumulative update is deployed on any AD FS federation servers to close actively exploited CVE-2026-56155.</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 10/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Microsoft's July 2026 Patch Tuesday addressed a record 570 vulnerabilities including CVE-2026-56155, an actively exploited zero-day in Active Directory Federation Services. Any SMB or DoD contractor running AD FS should confirm the July cumulative update (KB5101650 for Windows 11 24H2/25H2) is deployed on all federation servers immediately.</p>
+      <a href="https://petri.com/microsoft-july-2026-patch-tuesday-63-critical-flaws/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-3">
+    <summary class="item-header">
+      <span class="item-title">Block lastpassnewsletter.com and lastpasscompliance.com at email and URL filters and warn users of the active LastPass phishing campaign harvesting master passwords at your construction client, small-business client, and internal ops.</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 9/11</span>
+    </summary>
+    <div class="item-body">
+      <p>LastPass Threat Intelligence flagged an active phishing campaign using lookalike domains lastpassnewsletter.com and lastpasscompliance.com, sending fake security-policy notices designed to harvest master passwords. Add both domains to email and URL blocklists and warn users. No LastPass systems were compromised.</p>
+      <a href="https://blog.lastpass.com/posts/july-2026-phishing-campaign-compliance" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-4">
+    <summary class="item-header">
+      <span class="item-title">Push 7-Zip 26.02 to any managed endpoint with 7-Zip installed to close the RCE fixed on July 18 at your construction client, small-business client, hospitality client, and internal ops.</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 9/11</span>
+    </summary>
+    <div class="item-body">
+      <p>7-Zip 26.02 addresses a remote code execution vulnerability that can be triggered by opening a crafted archive. Because 7-Zip is bundled in countless IT toolkits and end-user desktops, this patch should be rolled out across managed fleets immediately.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/update-now-7-zip-fixes-rce-flaw-exploitable-with-malicious-archives/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-5">
+    <summary class="item-header">
+      <span class="item-title">Patch any managed WordPress sites immediately &mdash; public exploits for the wp2shell RCE cluster are now circulating.</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 8/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Public proof-of-concept exploits have dropped for critical WordPress Core wp2shell RCE vulnerabilities (CVE-2026-63030 and CVE-2026-60137), enabling unauthenticated site takeover on default installations. Any SMB or client running WordPress on managed infrastructure should be patched before mass scanning turns into mass compromise.</p>
+      <a href="https://securityaffairs.com/195597/hacking/attackers-can-take-over-wordpress-sites-using-newly-released-wp2shell-exploits.html" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-6">
+    <summary class="item-header">
+      <span class="item-title">Apply Dell DSA-2026-027 firmware and BIOS updates to Intel-based PowerEdge servers at any site running deployed Dell PowerEdge hardware.</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 10/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Dell released remediation for multiple 2026.1 Intel Platform Update (IPU) component vulnerabilities affecting Intel-based PowerEdge servers that could be exploited to compromise the affected systems. Customers should apply the firmware and BIOS updates listed in the DSA-2026-027 advisory during scheduled maintenance windows.</p>
+      <a href="https://www.dell.com/support/kbdoc/en-us/000426748/dsa-2026-027-security-update-for-dell-poweredge-server-for-intel-2026-security-advisories-2026-1-ipu" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-7">
+    <summary class="item-header">
+      <span class="item-title">Schedule Dell DSA-2026-014 firmware updates for the Intel Server Firmware vulnerability on Intel-based Dell PowerEdge servers at any site running deployed Dell PowerEdge hardware.</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 10/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Dell issued a security update for an Intel Server Firmware vulnerability that could be exploited by malicious users to compromise Intel-based PowerEdge servers. Remediation firmware is available; customers running deployed 14th/15th/16th gen Intel PowerEdge hardware should review DSA-2026-014 and schedule updates alongside DSA-2026-027.</p>
+      <a href="https://www.dell.com/support/kbdoc/en-us/000426775/dsa-2026-014-security-update-for-dell-poweredge-server-for-intel-server-firmware-vulnerability" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-8">
+    <summary class="item-header">
+      <span class="item-title">Apply Synology DSM 7.3.2-86009 Update 4 (security-labeled) to the DiskStation at your hospitality client during a maintenance window.</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 9/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Synology pushed DSM 7.3.2-86009 Update 4 (alongside 7.2.2-72806 Update 9 and 7.2.1-69057 Update 12) as an important security-labeled update requiring device restart. The staged rollout began in early July 2026 and continues through mid-July. Devices on the deployed 7.3.2-86009 baseline should apply Update 4 to remain patched.</p>
+      <a href="https://www.synoforum.com/threads/versions-7-3-2-86009-update-4-7-2-2-72806-update-9-7-2-1-69057-update-12-important-updates.16169/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-9">
+    <summary class="item-header">
+      <span class="item-title">Microsoft bundles Intune Suite capabilities into M365 E3 and E5 through August 1</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Microsoft is rolling Intune Suite capabilities into Microsoft 365 E3 (Remote Help, Advanced Analytics, Intune Plan 2, Defender for Office 365 Plan 1) and E5 (adds Endpoint Privilege Management, Enterprise App Management, Cloud PKI, Security Copilot) with rollout that started July 1, 2026 and completes by August 1, 2026. Tenants receive a 30-day Message Center notice before per-tenant activation. Plan to turn on EPM and EAM where applicable at your construction client, small-business client, and internal ops.</p>
+      <a href="https://sra.io/blog/intune-suite-is-included-in-e3-e5-starting-july-2026/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-10">
+    <summary class="item-header">
+      <span class="item-title">UniFi Network Application 10.5.62 ships with CyberSecure, SD-WAN, and Port Manager improvements</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Ubiquiti released UniFi Network Application 10.5.62 with CyberSecure Safe Mode indication, Port Manager Auto STP Edge clearing, SD-WAN Underlay resiliency, Network Lists UX and validation upgrades, and RADIUS Server validation. Bug fixes cover STP Time Machine issues, U-LTE adoption gateway errors, and startup failures after upgrade on sites with many Traffic Flows. Upgrade may take up to 30 minutes on large sites.</p>
+      <a href="https://community.ui.com/releases/UniFi-Network-Application-10-4-57/92694b29-fd78-4d52-906a-3211136610e2" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-11">
+    <summary class="item-header">
+      <span class="item-title">UniFi Protect iOS 3.8.0 adds Sensor Manager, Webhook Shortcuts, PTZ digital zoom</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Ubiquiti released UniFi Protect iOS app 3.8.0 adding Sensor Manager Dashboard support, Webhook Shortcuts, PTZ digital zoom, Timeline improvements, IdP/SAML login for Fabric and MSP Group admins, Spotlight pinning, Alarm Selection in Alarm Profiles, and Person/Vehicle filters in Find Anything. Bug fixes address Fabric Sites filter with offline consoles and navigation bar issues on latest iOS.</p>
+      <a href="https://community.ui.com/releases/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-12">
+    <summary class="item-header">
+      <span class="item-title">Claude Code stability release tightens permissions and PowerShell handling</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 9/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Anthropic pushed a broad Claude Code update with tighter permission checks, safer Bash and PowerShell handling, and improved background session cleanup. Notably it fixes a permission-check bypass in Windows PowerShell 5.1 sessions and a rule-scope bug where single-segment dir/** allow rules auto-approved writes to nested directories.</p>
+      <a href="https://releasebot.io/updates/anthropic/claude-code" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-13">
+    <summary class="item-header">
+      <span class="item-title">Entra ID SSPR and authentication-method registration enforcement tightens ahead of September deadline</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 8/11</span>
+    </summary>
+    <div class="item-body">
+      <p>A Microsoft registration campaign that started July 6, 2026 requires users to explicitly register authentication methods; starting September 7, 2026, SSPR will only accept registered methods, and directory-sourced phone or email numbers that were never formally registered will stop working. Conditional Access on the "Register security information" action now also enforces during Windows Hello and macOS Platform SSO setup. Audit method-registration coverage at your construction client, small-business client, and internal ops before September.</p>
+      <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/microsoft-entra-id-security-updates-what-organizations-need-to-do-now/4522024" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-14">
+    <summary class="item-header">
+      <span class="item-title">Barracuda launches Integrated Email Protection platform with post-delivery clawback and unified quarantine</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 8/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Barracuda unveiled Integrated Email Protection, a cloud-based platform that consolidates automated threat investigation and remediation, post-delivery message clawback, unified quarantine management, and tenant-wide response actions in response to AI-accelerated phishing chains. Relevant for shops running Barracuda Email Protection or evaluating consolidation from separate quarantine and remediation tools.</p>
+      <a href="https://www.channelinsider.com/security/tools-and-platforms/barracuda-integrated-email-protection-ai-phishing/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-15">
+    <summary class="item-header">
+      <span class="item-title">DoD suspends CMMC Phase 2 and launches 60-day reform review; RFI responses due August 14</span>
+      <span class="item-type type-industry">industry</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 10/11</span>
+    </summary>
+    <div class="item-body">
+      <p>The Department of Defense suspended CMMC Phase 2 (which would have required C3PAO Level 2 certification as a condition of award starting November 10, 2026) and launched a 60-day reform review by a new CMMC Reform Task Force reporting to the DoD CIO. Existing DFARS 252.204-7012 obligations and current CMMC clauses remain enforceable; a public RFI response is due August 14, 2026 and DoD has announced listening sessions during the review.</p>
+      <a href="https://federalnewsnetwork.com/cybersecurity/2026/07/pentagon-suspends-cmmc-phase-two-requirements-launches-review-of-program/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-16">
+    <summary class="item-header">
+      <span class="item-title">Microsoft 365 device code phishing campaign targets Entra ID users</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 8/11</span>
+    </summary>
+    <div class="item-body">
+      <p>A device code phishing campaign observed from late June into early July 2026 tricked Microsoft 365 users into pasting attacker-generated device codes and granting persistent access. Mitigation: block or scope the OAuth device code grant flow via Conditional Access, and monitor for unusual device code sign-ins in Entra ID logs at your construction client, small-business client, and internal ops.</p>
+      <a href="https://www.cysecurity.news/2026/07/microsoft-365-users-targeted-in-new.html" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-17">
+    <summary class="item-header">
+      <span class="item-title">SMB ransomware campaign impersonates Interpol with fake evidence lure</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 8/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Attackers are targeting small and mid-sized businesses with phishing messages spoofing Interpol warnings; opening the linked evidence file triggers ransomware deployment. Reinforce user training on law-enforcement impersonation and confirm EDR blocks common initial-access payloads at your construction client, small-business client, hospitality client, and internal ops.</p>
+      <a href="https://securityboulevard.com/2026/07/attackers-using-fake-interpol-warning-in-ransomware-attacks-on-smbs/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-18">
+    <summary class="item-header">
+      <span class="item-title">OpenSSL patches HollowByte 11-byte memory-exhaustion DoS bug</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 7/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Okta disclosed an OpenSSL flaw dubbed HollowByte where an 11-byte input lets a remote attacker exhaust server memory, enabling denial of service. Patch any internet-facing services that ship their own OpenSSL (load balancers, VPN endpoints, appliances) rather than waiting on OS-bundled updates.</p>
+      <a href="https://securityaffairs.com/195588/hacking/openssl-fixes-hollowbyte-memory-exhaustion-bug.html" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
 </div>
 
-<div class="footer">Generated Saturday, July 18, 2026 at 6:30 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-07-18.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
+<div class="footer">Generated Sunday, July 19, 2026 at 6:37 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-07-19.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
 
 </main>
 </body>
