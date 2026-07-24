@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<title>Morning Briefing -- Thursday, July 23, 2026</title>
+<title>Morning Briefing -- Friday, July 24, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -14,53 +14,40 @@
 <main class="briefing-content">
 
 <div class="page-header">
-  <h1>Morning Briefing -- Thursday, July 23, 2026</h1>
+  <h1>Morning Briefing -- Friday, July 24, 2026</h1>
   <p class="page-meta">Microsoft &bull; Security &amp; Compliance &bull; Firewall / VPN / Networking &bull; Servers/NAS &bull; Workstations &amp; Mobile &bull; Peripherals &amp; AV &bull; RMM &amp; Remote Access &bull; Construction &amp; Specialty Software &bull; General Tech &amp; AI &bull; Pacific Time</p>
 </div>
 
 <div class="section-actions">
   <h2>Today's Actions</h2>
-  <p class="section-transparency">Showing 3 of 5</p>
+  <p class="section-transparency">Showing 3 of 4</p>
   <ol class="action-list">
-    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Confirm mail flow at your construction client, small-business client, hospitality client, and internal ops -- Microsoft is fixing an Exchange Online defect that has been mistakenly quarantining tenant mailboxes since Sunday. <a href="#item-1" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Update any scripts, agents, or automations pinned to Anthropic's Opus 4.7 fast mode before it retires tomorrow (July 24) in favor of Opus 4.8 fast mode. <a href="#item-2" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Patch any managed WordPress marketing sites and audit for DD-WRT-based consumer routers or Langflow AI-agent deployments -- CISA added all three to the KEV catalog with confirmed active exploitation. <a href="#item-3" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Follow up with users at your construction client, small-business client, and internal ops on Thursday's Microsoft 365 outage (Teams, SharePoint, Outlook, Excel) &mdash; Microsoft rolled back the offending network config change and restored service, but verify no lingering sync or mailflow issues heading into the weekend. <a href="#item-1" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Warn users at all four monitored environments not to install Claude from Bing search results &mdash; a malvertising campaign is pushing a fake Anthropic Claude desktop installer that appears to come from claude.ai but drops the SectopRAT credential stealer; direct them to claude.ai directly. <a href="#item-2" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> Confirm no Check Point firewalls are in scope &mdash; your construction client runs SonicWall TZ and your small-business client runs UCG Fiber &mdash; then file the actively-exploited SmartConsole authentication-bypass CVE-2026-16232 (CISA KEV, federal deadline July 25) for awareness on any inherited environments. <a href="#item-3" class="detail-link">details</a></li>
   </ol>
-  <details class="section-overflow"><summary>Show 2 more actions</summary><ol class="action-list" start="4">
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> Confirm no Check Point firewalls are in scope -- your construction client uses SonicWall TZ -- but file the actively exploited SmartConsole zero-day for awareness and check any inherited environments. <a href="#item-4" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> Confirm no ServiceNow AI Platform instances are in scope for any client and file CVE-2026-6875 for awareness -- SMBs typically don't run ServiceNow but active exploitation continues. <a href="#item-5" class="detail-link">details</a></li>
-  </ol></details>
+  <details class="section-overflow"><summary>Show 1 more action</summary><ol class="action-list" start="4"><li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> Confirm no Zimbra mail servers are in scope &mdash; all four monitored environments run M365 &mdash; and file CISA's Laundry Bear Zimbra advisory for awareness; the phish-plus-mail-server-exploit pattern is a good reason to spot-check MFA on M365 admin accounts and Barracuda tenant policies at your construction client. <a href="#item-4" class="detail-link">details</a></li></ol></details>
 </div>
 
 <div class="section-new">
   <h2>What's New</h2>
-  <p class="section-transparency">Showing 3 of 5</p>
   <ul class="new-list">
-    <li><strong><a href="#item-6">UniFi Network Application 10.5.62 released with CyberSecure and Port Manager improvements</a></strong> -- Ubiquiti released UniFi Network Application 10.5.62 on July 20 with Auto STP Edge auto-detection, a CyberSecure Safe Mode indicator, and Port Manager device model/firmware detail. Fixes cover ghost clients from failed auth, duplicate wired clients on wireless mesh with multiple VLANs, and U-LTE gateway config errors. Applies to the Network Application line deployed at your construction client (10.3+); plan the upgrade for a low-traffic window. <a href="https://www.ui.com/download/releases/network-application" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-7">Apple seeds iOS 26.6, iPadOS 26.6, and macOS 26.6 release candidates</a></strong> -- Apple issued Release Candidates for iOS 26.6, iPadOS 26.6, and macOS Tahoe 26.6 on July 20-21, with public release expected around July 27. Update ships bug fixes, security patches, performance improvements, and a Spotlight index optimization ahead of iOS 27. Plan MDM validation and staged rollout at your construction client (iPhones) and any Apple devices at your other clients. <a href="https://www.macrumors.com/2026/07/20/apple-seeds-ios-26-6-beta-6/" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-8">Google DeepMind releases Gemini 3.5 Flash Cyber AI for vulnerability hunting</a></strong> -- Google DeepMind unveiled Gemini 3.5 Flash Cyber, a specialized model built for vulnerability discovery and patch generation, with access initially limited to governments and trusted partners. Signals further specialization of frontier models into defensive security workflows relevant to IT teams evaluating AI-assisted vuln management. <a href="https://securityaffairs.com/195869/security/google-released-gemini-3-5-flash-cyber-ai-a-specialized-ai-model-for-vulnerability-hunting.html" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-5">Synology releases DSM 7.4.1-90080, a new branch above the deployed 7.3.2 line</a></strong> -- Synology published DSM 7.4.1-90080 on July 23, 2026, moving the DSM branch up from the 7.3.2-86009 line currently deployed on your hospitality client's DS723+. Community coverage (SynoForum) flags it as a fresh release; review Synology's official release notes for changes and any prerequisites before scheduling a maintenance window at your hospitality client &mdash; no security-critical CVE has been tied to this build in reporting, so this is planning-track, not an emergency. <a href="https://www.synoforum.com/threads/version-7-4-1-90080.16209/" target="_blank">Source &rarr;</a></li>
   </ul>
-  <details class="section-overflow"><summary>Show 2 more updates</summary><ul class="new-list">
-    <li><strong><a href="#item-9">Google releases Gemini 3.6 Flash</a></strong> -- Google released Gemini 3.6 Flash on July 21, its latest fast-tier frontier model. Worth benchmarking against current Sonnet 5 / Opus 4.8 workflows for cost and latency if your team uses AI tooling in the daily loop. <a href="https://llmgateway.io/timeline" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-10">Moonshot AI announces Kimi K3, a 2.8T-parameter frontier LLM with weights due July 27</a></strong> -- Moonshot AI announced Kimi K3, a 2.8 trillion-parameter frontier-scale model with a 1M-token context window and native vision. Weights are scheduled to publish July 27, expanding open-weight options for IT teams evaluating on-prem or private-cloud AI deployments. <a href="https://aireleasetracker.com/latest" target="_blank">Source &rarr;</a></li>
-  </ul></details>
 </div>
 
 <div class="section-security">
   <h2>Security &amp; Patches</h2>
-  <p class="section-transparency">Showing 3 of 9</p>
+  <p class="section-transparency">Showing 3 of 6</p>
   <div class="security-cards">
-    <div class="security-card"><a href="#item-11" class="security-headline">DoD plans CMMC listening sessions as 60-day Phase II review continues</a><span class="urgency-yellow">This Week</span><span class="security-summary">The Department of War announced nationwide listening sessions with contractors and cybersecurity operators after suspending CMMC Phase II on July 13, targeting late-September completion of the review.</span></div>
-    <div class="security-card"><a href="#item-12" class="security-headline">Adobe Acrobat Chrome extension bug enabled silent WhatsApp Web data theft</a><span class="urgency-yellow">This Week</span><span class="security-summary">A flaw in the widely deployed Adobe Acrobat Chrome extension allowed attackers to silently exfiltrate WhatsApp Web data; confirm users are on the patched extension version.</span></div>
-    <div class="security-card"><a href="#item-13" class="security-headline">RefluXFS Linux kernel XFS flaw enables local root -- potential NAS impact</a><span class="urgency-yellow">This Week</span><span class="security-summary">A nine-year-old XFS race condition lets local attackers escalate to root; XFS is used across some Linux-based NAS platforms so monitor Synology PSIRT for a DSM advisory.</span></div>
+    <div class="security-card"><a href="#item-6" class="security-headline">Ukraine CERT: UAC-0099 hiding malware inside fake Notepad++ plugins (LunchPoke)</a><span class="urgency-yellow">This Week</span><span class="security-summary">Ukraine's CERT reports a phishing campaign delivering the legitimate Notepad++ installer bundled with a malicious utility called LunchPoke disguised as a plugin, giving Russia-aligned attackers stealthy code execution on Windows endpoints.</span></div>
+    <div class="security-card"><a href="#item-7" class="security-headline">Chaos ransomware's new msaRAT tunnels C2 through Chrome and Edge</a><span class="urgency-yellow">This Week</span><span class="security-summary">Cisco Talos disclosed msaRAT, a Rust backdoor used by the Chaos ransomware gang that abuses Chrome DevTools Protocol and WebRTC to route command-and-control traffic through legitimate browser processes, evading network-based detection.</span></div>
+    <div class="security-card"><a href="#item-8" class="security-headline">New Dolphin X RAT uses AI to rank high-value infected targets</a><span class="urgency-yellow">This Week</span><span class="security-summary">A newly documented remote access trojan called Dolphin X uses AI-powered profiling to score infected hosts and prioritize high-value victims for follow-on attacks.</span></div>
   </div>
-  <details class="section-overflow"><summary>Show 6 more security items</summary><div class="security-cards">
-    <div class="security-card"><a href="#item-14" class="security-headline">Qilin ransomware affiliates abuse CVE-2026-0257 to gain VPN access</a><span class="urgency-yellow">This Week</span><span class="security-summary">Qilin affiliates are exploiting the PAN-OS GlobalProtect flaw for unauthorized VPN access; not a watchlist vendor, but the perimeter-VPN-to-ransomware pattern is worth flagging.</span></div>
-    <div class="security-card"><a href="#item-15" class="security-headline">EU fines Google $1 billion for Digital Markets Act breaches in Search and Play Store</a><span class="urgency-green">FYI</span><span class="security-summary">The European Commission fined Google approximately $1 billion under the DMA, potentially driving further product changes in the EU with downstream implications for Workspace and Android app distribution.</span></div>
-    <div class="security-card"><a href="#item-16" class="security-headline">Zimbra 10.1.20 patches critical command-injection bug and other flaws</a><span class="urgency-yellow">This Week</span><span class="security-summary">Zimbra 10.1.20 fixes multiple security issues including a critical SNMP command-injection flaw; SMBs still running self-hosted Zimbra should upgrade promptly.</span></div>
-    <div class="security-card"><a href="#item-17" class="security-headline">Upbound discloses $13M in fraudulent Acima leases stemming from cyberattack</a><span class="urgency-green">FYI</span><span class="security-summary">Upbound disclosed roughly $13M in fraudulent lease-to-own transactions on its Acima platform after a cyberattack, highlighting financial-fraud follow-on from identity-driven intrusions.</span></div>
-    <div class="security-card"><a href="#item-18" class="security-headline">OpenAI models exploit zero-days to reach Hugging Face in benchmark test</a><span class="urgency-green">FYI</span><span class="security-summary">A benchmark showed OpenAI models chaining zero-day exploits to reach Hugging Face resources, a notable data point for agentic-AI risk reviews.</span></div>
-    <div class="security-card"><a href="#item-19" class="security-headline">ChannelCon 2026 highlights AI adoption gap for MSPs</a><span class="urgency-green">FYI</span><span class="security-summary">Pax8 data reported at ChannelCon 2026 shows strong SMB interest in AI while many buyers remain stuck in pilot mode -- opening a strategy/governance advisory lane for MSPs.</span></div>
+  <details class="section-overflow"><summary>Show 3 more security items</summary><div class="security-cards">
+    <div class="security-card"><a href="#item-9" class="security-headline">Clop extorting orgs via Internet-exposed PTC Windchill/FlexPLM instances</a><span class="urgency-yellow">This Week</span><span class="security-summary">The Clop ransomware/extortion group is actively exploiting Internet-exposed PTC Windchill and FlexPLM instances for data theft and extortion.</span></div>
+    <div class="security-card"><a href="#item-10" class="security-headline">AI trust paradox: 93% of businesses plan AI deployment, only 23% of consumers trust it</a><span class="urgency-green">FYI</span><span class="security-summary">New industry data shows a widening gap between enterprise AI adoption intent and consumer confidence, with 93% of businesses planning AI rollouts versus 23% consumer trust.</span></div>
+    <div class="security-card"><a href="#item-11" class="security-headline">Thailand Ministry of Finance targeted by autonomous AI agent (Hermes) with Hades implant</a><span class="urgency-yellow">This Week</span><span class="security-summary">A cyber-espionage operation used an autonomous AI agent, Hermes, running unattended to stage the Hades implant against Thailand's Ministry of Finance.</span></div>
   </div></details>
 </div>
 
@@ -68,235 +55,139 @@
   <h2>Details</h2>
   <details class="item" id="item-1">
     <summary class="item-header">
-      <span class="item-title">Confirm mail flow at your construction client, small-business client, hospitality client, and internal ops -- Microsoft is fixing an Exchange Online defect that has been mistakenly quarantining tenant mailboxes since Sunday.</span>
-      <span class="item-type type-security">security</span>
+      <span class="item-title">Follow up with users at your construction client, small-business client, and internal ops on Thursday's Microsoft 365 outage (Teams, SharePoint, Outlook, Excel) &mdash; Microsoft rolled back the offending network config change and restored service, but verify no lingering sync or mailflow issues heading into the weekend.</span>
+      <span class="item-type type-industry">industry</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft has confirmed an active Exchange Online defect that has been mistakenly placing customer mailboxes into quarantine since Sunday, blocking mail flow for affected tenants. Engineering is deploying a fix; admins should watch the Microsoft 365 Admin Center advisory for tenant-specific impact and mitigation guidance. All four of your monitored environments run on M365, so a spot-check on mail flow is warranted this morning.</p>
-      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-working-to-fix-exchange-online-mailbox-quarantine-issue/" target="_blank" class="src">Source &rarr;</a>
+      <p>A widespread Microsoft 365 outage on July 23 knocked out Teams, SharePoint, Outlook, Excel, and the M365 Admin Center primarily in North America. Microsoft traced it to a recent network configuration change and reverted it; service was restored the same day with no data loss reported. All three M365-using environments (your construction client, small-business client, and internal ops) were in the affected North America footprint &mdash; follow up with users to confirm no lingering sync or mailflow issues.</p>
+      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-365-outage-affects-teams-sharepoint-and-other-services/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-2">
     <summary class="item-header">
-      <span class="item-title">Update any scripts, agents, or automations pinned to Anthropic's Opus 4.7 fast mode before it retires tomorrow (July 24) in favor of Opus 4.8 fast mode.</span>
-      <span class="item-type type-feature">feature</span>
+      <span class="item-title">Warn users at all four monitored environments not to install Claude from Bing search results &mdash; a malvertising campaign is pushing a fake Anthropic Claude desktop installer that appears to come from claude.ai but drops the SectopRAT credential stealer; direct them to claude.ai directly.</span>
+      <span class="item-type type-security">security</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>Anthropic is removing fast mode for Opus 4.7 on July 24, 2026, migrating users to Opus 4.8 fast mode. Anyone pinned to Opus 4.7 fast in scripts, agents, or integrations should update model references or switch to Opus 4.8 before the cutover to avoid failed runs. This affects your internal ops directly if any Purplesky-side automations use pinned model references.</p>
-      <a href="https://releasebot.io/updates/anthropic/claude-developer-platform" target="_blank" class="src">Source &rarr;</a>
+      <p>A malvertising campaign on Bing is promoting a spoofed Claude desktop app installer that appears to be hosted on the legitimate claude.ai domain but drops SectopRAT for credential and info-stealing. The lure exploits current AI-tool hype; end users at all four monitored environments should be reminded that search-ad results are not a trust signal and that Claude installers should come from claude.ai directly.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/fake-claude-app-promoted-by-bing-ads-pushes-sectoprat-malware/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-3">
     <summary class="item-header">
-      <span class="item-title">Patch any managed WordPress marketing sites and audit for DD-WRT-based consumer routers or Langflow AI-agent deployments -- CISA added all three to the KEV catalog with confirmed active exploitation.</span>
+      <span class="item-title">Confirm no Check Point firewalls are in scope &mdash; your construction client runs SonicWall TZ and your small-business client runs UCG Fiber &mdash; then file the actively-exploited SmartConsole authentication-bypass CVE-2026-16232 (CISA KEV, federal deadline July 25) for awareness on any inherited environments.</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 8/11</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>CISA added actively exploited vulnerabilities in DD-WRT firmware, Langflow, and WordPress to the KEV catalog, requiring federal remediation and flagging all three as high risk for SMBs. WordPress is ubiquitous on small-business sites and warrants immediate patching or plugin review; DD-WRT should be replaced on any managed consumer routers; Langflow is worth checking on any internal AI-agent stacks. Applies broadly across your construction client, small-business client, hospitality client, and internal ops.</p>
-      <a href="https://securityaffairs.com/195782/security/u-s-cisa-adds-dd-wrt-langflow-and-wordpress-flaws-to-its-known-exploited-vulnerabilities-catalog.html" target="_blank" class="src">Source &rarr;</a>
+      <p>Check Point patched CVE-2026-16232, a critical (CVSS 9.1) authentication-bypass in the SmartConsole login process that lets an unauthenticated remote attacker obtain an application login token and gain full admin control of a Check Point management server. Exploitation is confirmed in the wild against Internet-exposed management interfaces. CISA added the flaw to KEV with a federal remediation deadline of July 25, 2026. Not a watchlist product at any client (your construction client runs SonicWall TZ, small-business client runs UCG Fiber), but apply the July 22 Jumbo Hotfix (sk185169) immediately on any inherited Check Point environments.</p>
+      <a href="https://support.checkpoint.com/results/sk/sk185169/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-4">
     <summary class="item-header">
-      <span class="item-title">Confirm no Check Point firewalls are in scope -- your construction client uses SonicWall TZ -- but file the actively exploited SmartConsole zero-day for awareness and check any inherited environments.</span>
+      <span class="item-title">Confirm no Zimbra mail servers are in scope &mdash; all four monitored environments run M365 &mdash; and file CISA's Laundry Bear Zimbra advisory for awareness; the phish-plus-mail-server-exploit pattern is a good reason to spot-check MFA on M365 admin accounts and Barracuda tenant policies at your construction client.</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>Check Point issued an emergency patch for a zero-day flaw in the SmartConsole admin GUI that is being exploited in the wild against firewall administrators. None of your monitored clients run Check Point (your construction client is SonicWall TZ), but any SMB or MSP-managed environment running Check Point management should apply the fix immediately and audit admin activity.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/check-point-patches-smartconsole-zero-day-exploited-in-attacks/" target="_blank" class="src">Source &rarr;</a>
+      <p>CISA and allied agencies published a joint advisory that Russian state-sponsored actor Laundry Bear is combining phishing with active exploitation of a patched zero-click Zimbra vulnerability (CVE-2025-66376) to steal email from unpatched Zimbra Collaboration servers. All four monitored environments are on Microsoft 365, not Zimbra, so file for awareness &mdash; but the phish-plus-email-server-exploit pattern is a reminder to keep MFA hard on M365 admin accounts and to review Barracuda tenant policies at your construction client.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/russian-hackers-exploit-zimbra-zero-click-flaw-for-email-theft/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-5">
     <summary class="item-header">
-      <span class="item-title">Confirm no ServiceNow AI Platform instances are in scope for any client and file CVE-2026-6875 for awareness -- SMBs typically don't run ServiceNow but active exploitation continues.</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 7/11</span>
+      <span class="item-title">Synology releases DSM 7.4.1-90080, a new branch above the deployed 7.3.2 line</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>Threat actors are exploiting a critical pre-authentication remote code execution flaw in the ServiceNow AI Platform (CVE-2026-6875) in live attacks. Organizations running ServiceNow (including managed instances) should confirm the vendor patch is applied and review authentication logs for suspicious activity. None of your monitored clients run ServiceNow, so file for awareness.</p>
-      <a href="https://securityaffairs.com/195723/ai/attackers-exploit-critical-servicenow-rce-flaw-cve-2026-6875.html" target="_blank" class="src">Source &rarr;</a>
+      <p>Synology published DSM 7.4.1-90080 on July 23, 2026, moving the DSM branch up from the 7.3.2-86009 line currently deployed on your hospitality client's DS723+. Community coverage (SynoForum) flags it as a fresh release; review Synology's official release notes for changes and any prerequisites before scheduling a maintenance window at your hospitality client &mdash; no security-critical CVE has been tied to this build in reporting, so this is planning-track, not an emergency.</p>
+      <a href="https://www.synoforum.com/threads/version-7-4-1-90080.16209/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-6">
     <summary class="item-header">
-      <span class="item-title">UniFi Network Application 10.5.62 released with CyberSecure and Port Manager improvements</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
+      <span class="item-title">Ukraine CERT: UAC-0099 hiding malware inside fake Notepad++ plugins (LunchPoke)</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>Ubiquiti released UniFi Network Application 10.5.62 on July 20 with Auto STP Edge auto-detection for end-device ports, a CyberSecure Safe Mode indicator, and Port Manager device model/firmware details. Fixes cover ghost clients from failed auth, duplicate wired clients on wireless mesh with multiple VLANs, and U-LTE gateway config errors. Applies to the Network Application line deployed at your construction client (10.3+); plan the upgrade during a low-traffic window as large sites can take up to 30 minutes.</p>
-      <a href="https://www.ui.com/download/releases/network-application" target="_blank" class="src">Source &rarr;</a>
+      <p>Ukraine's CERT reports a phishing campaign delivering the legitimate Notepad++ installer bundled with a malicious utility called LunchPoke disguised as a plugin, giving Russia-aligned attackers stealthy code execution on Windows endpoints. Worth mentioning to any construction client devs or estimators who install Notepad++, and worth an EDR hunt for anomalous Notepad++ plugin loads.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/hackers-abuse-notepad-plus-plus-plugins-to-stealthily-install-malware/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-7">
     <summary class="item-header">
-      <span class="item-title">Apple seeds iOS 26.6, iPadOS 26.6, and macOS 26.6 release candidates</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
+      <span class="item-title">Chaos ransomware's new msaRAT tunnels C2 through Chrome and Edge</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>Apple issued Release Candidates for iOS 26.6, iPadOS 26.6, and macOS Tahoe 26.6 on July 20-21, 2026, with public release expected around July 27. This final iOS 26 update ships bug fixes, security patches, performance improvements, and a Spotlight index optimization in preparation for iOS 27. Plan MDM validation and staged rollout next week at your construction client (iPhones) and any Apple devices at your other clients.</p>
-      <a href="https://www.macrumors.com/2026/07/20/apple-seeds-ios-26-6-beta-6/" target="_blank" class="src">Source &rarr;</a>
+      <p>Cisco Talos disclosed msaRAT, a Rust backdoor used by the Chaos ransomware gang that abuses Chrome DevTools Protocol and WebRTC to route command-and-control traffic through legitimate browser processes, evading network-based detection. SMBs relying primarily on perimeter/network telemetry &mdash; including your monitored environments &mdash; should tighten browser-process monitoring and egress inspection at the endpoint.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/new-msarat-malware-uses-chrome-edge-browsers-to-route-c2-traffic/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-8">
     <summary class="item-header">
-      <span class="item-title">Google DeepMind releases Gemini 3.5 Flash Cyber AI for vulnerability hunting</span>
-      <span class="item-type type-feature">feature</span>
+      <span class="item-title">New Dolphin X RAT uses AI to rank high-value infected targets</span>
+      <span class="item-type type-security">security</span>
       <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>Google DeepMind unveiled Gemini 3.5 Flash Cyber, a specialized AI model built for vulnerability discovery and patch generation. Access is limited to governments and trusted partners, signaling further specialization of frontier models into defensive security workflows relevant to IT teams evaluating AI-assisted vulnerability management. Worth tracking for future SMB availability.</p>
-      <a href="https://securityaffairs.com/195869/security/google-released-gemini-3-5-flash-cyber-ai-a-specialized-ai-model-for-vulnerability-hunting.html" target="_blank" class="src">Source &rarr;</a>
+      <p>A newly documented remote access trojan called Dolphin X uses AI-powered profiling to score infected hosts and prioritize high-value victims for follow-on attacks. The technique signals continued weaponization of AI in the commodity malware ecosystem and reinforces the case for tighter EDR tuning and phishing-resistant MFA across all client environments.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/new-dolphin-x-malware-uses-ai-to-rank-high-value-targets/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-9">
     <summary class="item-header">
-      <span class="item-title">Google releases Gemini 3.6 Flash</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 8/11</span>
+      <span class="item-title">Clop extorting orgs via Internet-exposed PTC Windchill/FlexPLM instances</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 6/11</span>
     </summary>
     <div class="item-body">
-      <p>Google released Gemini 3.6 Flash on July 21, 2026, its latest fast-tier frontier model. IT professionals evaluating AI tooling should compare it against current Sonnet 5 and Opus 4.8 workflows for cost and latency before committing to a stack.</p>
-      <a href="https://llmgateway.io/timeline" target="_blank" class="src">Source &rarr;</a>
+      <p>The Clop ransomware/extortion group is actively exploiting Internet-exposed PTC Windchill and FlexPLM instances for data theft and extortion. None of your monitored clients run Windchill/FlexPLM, but the pattern is worth flagging in your construction client's compliance/documentation conversations about restricting management interfaces to VPN-only.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/clop-ransomware-targets-windchill-flexplm-in-data-theft-attacks/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-10">
     <summary class="item-header">
-      <span class="item-title">Moonshot AI announces Kimi K3, a 2.8T-parameter frontier LLM with weights due July 27</span>
-      <span class="item-type type-feature">feature</span>
+      <span class="item-title">AI trust paradox: 93% of businesses plan AI deployment, only 23% of consumers trust it</span>
+      <span class="item-type type-industry">industry</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 6/11</span>
     </summary>
     <div class="item-body">
-      <p>Moonshot AI announced Kimi K3, a 2.8 trillion-parameter frontier-scale LLM with a 1M-token context window and native vision. Weights are slated to release July 27, expanding open-weight options for IT teams evaluating on-prem or private-cloud AI deployments.</p>
-      <a href="https://aireleasetracker.com/latest" target="_blank" class="src">Source &rarr;</a>
+      <p>New industry data shows a widening gap between enterprise AI adoption intent and consumer confidence, with 93% of businesses planning AI rollouts versus 23% consumer trust. Useful framing for how Purplesky packages AI-related services to SMBs &mdash; expect increased pressure to demonstrate governance, opt-outs, and transparency in customer-facing AI.</p>
+      <a href="https://securityaffairs.com/195915/ai/the-ai-trust-paradox-businesses-are-racing-ahead-but-consumers-are-hesitating.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-11">
     <summary class="item-header">
-      <span class="item-title">DoD plans CMMC listening sessions as 60-day Phase II review continues</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Following the July 13 suspension of CMMC Phase II, the Department of War announced nationwide listening sessions with defense contractors and cybersecurity operators to gather feedback for the CMMC Reform Task Force. A 60-day review plus 15-day report cycle targets late-September completion; DFARS 252.204-7012 and NIST SP 800-171 obligations remain in force in the meantime. Directly relevant to CMMC Level 2 work at your construction client -- keep the compliance program moving on the assumption certification requirements return substantially unchanged.</p>
-      <a href="https://federalnewsnetwork.com/defense-news/2026/07/dod-plans-cmmc-listening-sessions-as-questions-swirl-around-review/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-12">
-    <summary class="item-header">
-      <span class="item-title">Adobe Acrobat Chrome extension bug enabled silent WhatsApp Web data theft</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>A flaw in the widely deployed Adobe Acrobat Chrome extension allowed attackers to silently exfiltrate WhatsApp Web data from users' browsers. Because the extension is auto-installed on many M365/Windows endpoints, SMBs should confirm users are on the patched extension version and treat as a browser-attack-surface reminder for phishing chains.</p>
-      <a href="https://securityaffairs.com/195805/hacking/adobe-acrobat-chrome-extension-bug-enabled-silent-whatsapp-data-theft.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-13">
-    <summary class="item-header">
-      <span class="item-title">RefluXFS Linux kernel XFS flaw enables local root -- potential NAS impact</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>A nine-year-old race condition in the Linux kernel XFS filesystem, dubbed RefluXFS, lets local attackers overwrite protected files and escalate to root. XFS is used across many Linux-based NAS platforms including some Synology configurations; monitor Synology PSIRT for a DSM advisory and treat as a watch-item pending vendor guidance for your hospitality client's DS723+.</p>
-      <a href="https://www.bleepingcomputer.com/news/linux/new-refluxfs-linux-flaw-lets-attackers-gain-root-privileges/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-14">
-    <summary class="item-header">
-      <span class="item-title">Qilin ransomware affiliates abuse CVE-2026-0257 to gain VPN access</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Qilin ransomware affiliates are exploiting CVE-2026-0257 in Palo Alto GlobalProtect VPN to gain unauthorized access to unpatched networks. Not a watchlist vendor at any client, but the pattern mirrors recent SonicWall SSLVPN campaigns -- worth a quick review of SSLVPN posture, MFA enforcement, and unused-account cleanup on the SonicWall TZ devices at your construction client.</p>
-      <a href="https://securityaffairs.com/195730/cyber-crime/qilin-ransomware-affiliates-abuse-cve-2026-0257-to-gain-unauthorized-vpn-access.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-15">
-    <summary class="item-header">
-      <span class="item-title">EU fines Google $1 billion for Digital Markets Act breaches in Search and Play Store</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>The European Commission fined Google approximately EUR 890 million ($1 billion) under the Digital Markets Act for antitrust violations tied to Google Search and the Play Store. The ruling may drive further changes to how Google products operate in the EU, with downstream implications for SMBs using Google Workspace and Android app distribution.</p>
-      <a href="https://www.bleepingcomputer.com/news/google/eu-fines-google-1-billion-for-digital-markets-act-breaches-in-search-and-play-store/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-16">
-    <summary class="item-header">
-      <span class="item-title">Zimbra 10.1.20 patches critical command-injection bug and other security issues</span>
+      <span class="item-title">Thailand Ministry of Finance targeted by autonomous AI agent (Hermes) with Hades implant</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 6/11</span>
     </summary>
     <div class="item-body">
-      <p>Zimbra Collaboration Suite 10.1.20 fixes nine security issues including a critical SNMP command-injection flaw enabling arbitrary command execution. None of your monitored clients run Zimbra, but any inherited environments should upgrade promptly; the release is also a reminder to prioritize migration off aging on-prem mail platforms where feasible.</p>
-      <a href="https://securityaffairs.com/195752/security/zimbra-10-1-20-patches-multiple-security-issues-including-a-critical-command-injection-bug.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-17">
-    <summary class="item-header">
-      <span class="item-title">Upbound discloses $13M in fraudulent Acima leases stemming from cyberattack</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 6/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Upbound (parent of Rent-A-Center/Acima) disclosed that a recent cyberattack led to roughly $13M in fraudulent lease-to-own transactions on its Acima platform. Case highlights the growing trend of financial-fraud follow-on from identity-driven intrusions and is a useful reference when discussing MFA and account-monitoring controls with SMB clients.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/upbound-says-hack-caused-13-million-in-fraudulent-acima-leases/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-18">
-    <summary class="item-header">
-      <span class="item-title">OpenAI models exploit zero-days to reach Hugging Face in benchmark test</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 6/11</span>
-    </summary>
-    <div class="item-body">
-      <p>A benchmark test showed OpenAI models successfully exploiting zero-day vulnerabilities to reach Hugging Face resources, highlighting the growing offensive-security capability of frontier LLMs. Relevant to IT pros weighing agentic AI risk and vendor policies for autonomous coding and agent tools rolling into SMB stacks.</p>
-      <a href="https://securityaffairs.com/195774/ai/openai-ai-models-exploited-zero-days-to-reach-hugging-face-in-benchmark-test.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-19">
-    <summary class="item-header">
-      <span class="item-title">ChannelCon 2026 highlights AI adoption gap for MSPs</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 6/11</span>
-    </summary>
-    <div class="item-body">
-      <p>ChannelPro coverage of ChannelCon 2026 (July 22) notes that Pax8 data shows strong SMB interest in AI but many buyers remain stuck in pilot mode, opening a strategy/governance/ROI advisory role for MSPs. Useful positioning input for how Purplesky packages AI offerings to construction, small-business, and hospitality clients.</p>
-      <a href="https://www.channelpronetwork.com/2026/07/22/what-msps-can-gain-at-channelcon-2026/" target="_blank" class="src">Source &rarr;</a>
+      <p>A cyber-espionage operation used an autonomous AI agent, Hermes, running unattended to stage the Hades implant against Thailand's Ministry of Finance. This is an early real-world example of agentic AI deployed as an offensive intrusion tool, foreshadowing similar tradecraft against private-sector targets over the next 12 months.</p>
+      <a href="https://securityaffairs.com/195941/hacking/thailands-ministry-of-finance-targeted-with-hermes-ai-agent-running-unattended-hades-implant-staged.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 </div>
 
-<div class="footer">Generated Thursday, July 23, 2026 at 6:00 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-07-23.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
+<div class="footer">Generated Friday, July 24, 2026 at 6:36 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-07-24.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
 
 </main>
 </body>
