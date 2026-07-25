@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<title>Morning Briefing -- Friday, July 24, 2026</title>
+<title>Morning Briefing -- Saturday, July 25, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -14,180 +14,205 @@
 <main class="briefing-content">
 
 <div class="page-header">
-  <h1>Morning Briefing -- Friday, July 24, 2026</h1>
+  <h1>Morning Briefing -- Saturday, July 25, 2026</h1>
   <p class="page-meta">Microsoft &bull; Security &amp; Compliance &bull; Firewall / VPN / Networking &bull; Servers/NAS &bull; Workstations &amp; Mobile &bull; Peripherals &amp; AV &bull; RMM &amp; Remote Access &bull; Construction &amp; Specialty Software &bull; General Tech &amp; AI &bull; Pacific Time</p>
 </div>
 
 <div class="section-actions">
   <h2>Today's Actions</h2>
-  <p class="section-transparency">Showing 3 of 4</p>
   <ol class="action-list">
-    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Follow up with users at your construction client, small-business client, and internal ops on Thursday's Microsoft 365 outage (Teams, SharePoint, Outlook, Excel) &mdash; Microsoft rolled back the offending network config change and restored service, but verify no lingering sync or mailflow issues heading into the weekend. <a href="#item-1" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Warn users at all four monitored environments not to install Claude from Bing search results &mdash; a malvertising campaign is pushing a fake Anthropic Claude desktop installer that appears to come from claude.ai but drops the SectopRAT credential stealer; direct them to claude.ai directly. <a href="#item-2" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> Confirm no Check Point firewalls are in scope &mdash; your construction client runs SonicWall TZ and your small-business client runs UCG Fiber &mdash; then file the actively-exploited SmartConsole authentication-bypass CVE-2026-16232 (CISA KEV, federal deadline July 25) for awareness on any inherited environments. <a href="#item-3" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Warn traveling users at your construction client, small-business client, and internal ops that a live campaign is hijacking DNS on hotel and conference-center Wi-Fi to steal Microsoft 365 credentials &mdash; require VPN on hotel networks, and remind them MFA alone will not stop the device-code phishing variant already observed since June. <a href="#item-1" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Confirm whether your construction client (or any takeoff/PDF-heavy shop you inherited) is still running Bluebeam Revu 20 &mdash; End of Support is Friday July 31, six days out, and after that there are no more patches or security updates; plan migration to Revu 21 or the new Bluebeam Max subscription this week. <a href="#item-2" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Track OpenAI's global ChatGPT outage this morning &mdash; if any user at your construction client, small-business client, or internal ops relies on ChatGPT for weekend work, point them at Claude or Copilot as a fallback and keep an eye on OpenAI's status page until service is restored. <a href="#item-3" class="detail-link">details</a></li>
   </ol>
-  <details class="section-overflow"><summary>Show 1 more action</summary><ol class="action-list" start="4"><li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> Confirm no Zimbra mail servers are in scope &mdash; all four monitored environments run M365 &mdash; and file CISA's Laundry Bear Zimbra advisory for awareness; the phish-plus-mail-server-exploit pattern is a good reason to spot-check MFA on M365 admin accounts and Barracuda tenant policies at your construction client. <a href="#item-4" class="detail-link">details</a></li></ol></details>
 </div>
 
 <div class="section-new">
   <h2>What's New</h2>
+  <p class="section-transparency">Showing 3 of 7</p>
   <ul class="new-list">
-    <li><strong><a href="#item-5">Synology releases DSM 7.4.1-90080, a new branch above the deployed 7.3.2 line</a></strong> -- Synology published DSM 7.4.1-90080 on July 23, 2026, moving the DSM branch up from the 7.3.2-86009 line currently deployed on your hospitality client's DS723+. Community coverage (SynoForum) flags it as a fresh release; review Synology's official release notes for changes and any prerequisites before scheduling a maintenance window at your hospitality client &mdash; no security-critical CVE has been tied to this build in reporting, so this is planning-track, not an emergency. <a href="https://www.synoforum.com/threads/version-7-4-1-90080.16209/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-4">Anthropic ships Claude Opus 5 with a per-prompt effort toggle</a></strong> -- Anthropic released Claude Opus 5 on Friday July 24, positioned as near-frontier capability at $5/$25 per million tokens (same pricing as Opus 4.8) and adding a low/medium/high effort toggle so users can balance cost against depth per prompt. Relevant to internal ops &mdash; you can start testing Opus 5 in place of Opus 4.7 for morning briefing and IT workflow tasks. <a href="https://fortune.com/2026/07/24/anthropic-debuts-claude-opus-5-with-feature-that-lets-users-toggle-between-cost-and-capability/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-5">Microsoft Entra: Custom Controls retire Sept 30, SSPR tightens Sept 7</a></strong> -- Microsoft's current Entra rollout guidance reminds admins that Conditional Access Custom Controls are being retired September 30, 2026 (external MFA path ends May 2027), and that Self-Service Password Reset will only accept explicitly registered authentication methods starting September 7, 2026 &mdash; directory-sourced phone numbers/emails that were never formally registered will stop working. Affects all four monitored M365 environments; a registration campaign began July 6. <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/microsoft-entra-id-security-updates-what-organizations-need-to-do-now/4522024" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-6">UniFi Network Application 10.5.67 released (safe upgrade over deployed 10.3+)</a></strong> -- Ubiquiti pushed 10.5.67 as a maintenance release addressing a Network Server loading issue on local connections and expanding UniFi OS Server / native Network guidance; follows 10.5.66 which improved Auto STP Edge detection. Both are safe upgrades above the 10.3+ baseline deployed at your construction client. <a href="https://community.ui.com/rss/releases/UniFi-Network-Application/e6712595-81bb-4829-8e42-9e2630fabcfe" target="_blank">Source &rarr;</a></li>
   </ul>
+  <details class="section-overflow"><summary>Show 4 more updates</summary><ul class="new-list">
+    <li><strong><a href="#item-7">Bluebeam launches Max subscription with AI reviews and workflow automation</a></strong> -- Bluebeam Max debuted this week as a premium subscription extending Revu with workflow automation, intelligent markups, and AI-powered document review at introductory pricing of $590/user/year. Positioned as the upgrade path from Revu 20 ahead of its July 31 EOL &mdash; worth quoting to your construction client alongside a Revu 21 quote for comparison. <a href="https://aecmag.com/collaboration/bluebeam-brings-ai-powered-workflows-to-revu/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-8">Autodesk pushes AutoCAD 2026.1.1 cumulative update</a></strong> -- AutoCAD 2026.1.1 rolled out this week bundling prior 2026 fixes including Smart Blocks enhancements, real-time status for block detection, and multi-user collaboration improvements; the 2026.1 base delivered up to 11x faster file open and 4x faster app startup vs 2025 on network-stored DWGs. Push to any construction client seat on AutoCAD 2026 during the next maintenance window. <a href="https://www.autodesk.com/blogs/autocad/autocad-2026-1/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-9">Google releases Gemini 3.5 Flash Cyber for vulnerability hunting</a></strong> -- Google DeepMind announced Gemini 3.5 Flash Cyber, a security-tuned AI model for vulnerability discovery and patching, currently limited to governments and trusted partners via the CodeMender program. FYI for AI-assisted vuln-management planning &mdash; not yet available to SMB MSPs. <a href="https://securityaffairs.com/195869/security/google-released-gemini-3-5-flash-cyber-ai-a-specialized-ai-model-for-vulnerability-hunting.html" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-10">Druva launches AI Resilience; ThreatDown adds MSP AI visibility</a></strong> -- Help Net Security's Friday product roundup highlights Druva AI Resilience (recover/govern/defend AI-powered work) and ThreatDown's new AI-visibility features for MSP teams plus extended ITDR for non-human identities. Both target the widening gap between AI adoption and security controls in SMB environments. <a href="https://www.helpnetsecurity.com/2026/07/24/new-infosec-products-of-the-week-july-24-2026/" target="_blank">Source &rarr;</a></li>
+  </ul></details>
 </div>
 
 <div class="section-security">
   <h2>Security &amp; Patches</h2>
-  <p class="section-transparency">Showing 3 of 6</p>
   <div class="security-cards">
-    <div class="security-card"><a href="#item-6" class="security-headline">Ukraine CERT: UAC-0099 hiding malware inside fake Notepad++ plugins (LunchPoke)</a><span class="urgency-yellow">This Week</span><span class="security-summary">Ukraine's CERT reports a phishing campaign delivering the legitimate Notepad++ installer bundled with a malicious utility called LunchPoke disguised as a plugin, giving Russia-aligned attackers stealthy code execution on Windows endpoints.</span></div>
-    <div class="security-card"><a href="#item-7" class="security-headline">Chaos ransomware's new msaRAT tunnels C2 through Chrome and Edge</a><span class="urgency-yellow">This Week</span><span class="security-summary">Cisco Talos disclosed msaRAT, a Rust backdoor used by the Chaos ransomware gang that abuses Chrome DevTools Protocol and WebRTC to route command-and-control traffic through legitimate browser processes, evading network-based detection.</span></div>
-    <div class="security-card"><a href="#item-8" class="security-headline">New Dolphin X RAT uses AI to rank high-value infected targets</a><span class="urgency-yellow">This Week</span><span class="security-summary">A newly documented remote access trojan called Dolphin X uses AI-powered profiling to score infected hosts and prioritize high-value victims for follow-on attacks.</span></div>
+    <div class="security-card"><a href="#item-11" class="security-headline">Microsoft blames Thursday's global M365 outage on a maintenance-bug that pulled too many network routes</a><span class="urgency-yellow">This Week</span><span class="security-summary">Microsoft's post-incident review of the July 23 Microsoft 365 disruption (Teams, SharePoint, Outlook, Exchange, Intune) traces the outage to an automated maintenance-request conversion system that removed IP routes from more devices than intended in the Azure West US region.</span></div>
+    <div class="security-card"><a href="#item-12" class="security-headline">"Slopsquatting", phantom domains, and HalluSquatting are the same AI-hallucination attack</a><span class="urgency-yellow">This Week</span><span class="security-summary">Security researchers report vendors have coined several names for the same pattern: adversaries register domains and packages that LLMs and AI assistants hallucinate when giving links or code recommendations, so users and developers following AI output land on attacker-controlled infrastructure.</span></div>
+    <div class="security-card"><a href="#item-13" class="security-headline">Google fined &euro;890M under EU Digital Markets Act</a><span class="urgency-green">FYI</span><span class="security-summary">The European Commission imposed &euro;890 million in penalties on Google for self-preferencing its own services in Search and restricting Play Store developers from directing users to cheaper alternatives; a signal of continued regulatory pressure on major platform providers.</span></div>
   </div>
-  <details class="section-overflow"><summary>Show 3 more security items</summary><div class="security-cards">
-    <div class="security-card"><a href="#item-9" class="security-headline">Clop extorting orgs via Internet-exposed PTC Windchill/FlexPLM instances</a><span class="urgency-yellow">This Week</span><span class="security-summary">The Clop ransomware/extortion group is actively exploiting Internet-exposed PTC Windchill and FlexPLM instances for data theft and extortion.</span></div>
-    <div class="security-card"><a href="#item-10" class="security-headline">AI trust paradox: 93% of businesses plan AI deployment, only 23% of consumers trust it</a><span class="urgency-green">FYI</span><span class="security-summary">New industry data shows a widening gap between enterprise AI adoption intent and consumer confidence, with 93% of businesses planning AI rollouts versus 23% consumer trust.</span></div>
-    <div class="security-card"><a href="#item-11" class="security-headline">Thailand Ministry of Finance targeted by autonomous AI agent (Hermes) with Hades implant</a><span class="urgency-yellow">This Week</span><span class="security-summary">A cyber-espionage operation used an autonomous AI agent, Hermes, running unattended to stage the Hades implant against Thailand's Ministry of Finance.</span></div>
-  </div></details>
 </div>
 
 <div class="section-details">
   <h2>Details</h2>
   <details class="item" id="item-1">
     <summary class="item-header">
-      <span class="item-title">Follow up with users at your construction client, small-business client, and internal ops on Thursday's Microsoft 365 outage (Teams, SharePoint, Outlook, Excel) &mdash; Microsoft rolled back the offending network config change and restored service, but verify no lingering sync or mailflow issues heading into the weekend.</span>
-      <span class="item-type type-industry">industry</span>
+      <span class="item-title">Warn traveling users at your construction client, small-business client, and internal ops that a live campaign is hijacking DNS on hotel and conference-center Wi-Fi to steal Microsoft 365 credentials &mdash; require VPN on hotel networks, and remind them MFA alone will not stop the device-code phishing variant already observed since June.</span>
+      <span class="item-type type-security">security</span>
       <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
+      <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>A widespread Microsoft 365 outage on July 23 knocked out Teams, SharePoint, Outlook, Excel, and the M365 Admin Center primarily in North America. Microsoft traced it to a recent network configuration change and reverted it; service was restored the same day with no data loss reported. All three M365-using environments (your construction client, small-business client, and internal ops) were in the affected North America footprint &mdash; follow up with users to confirm no lingering sync or mailflow issues.</p>
-      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-365-outage-affects-teams-sharepoint-and-other-services/" target="_blank" class="src">Source &rarr;</a>
+      <p>Attackers are compromising captive-portal appliances at hotels and conference centers in the US, India, and Saudi Arabia, then poisoning DNS so guests connecting to legitimate Microsoft login URLs land on attacker-controlled pages. In some cases the attackers use a device-code authentication flow that yields a legitimate OAuth token to the attacker's client, bypassing MFA without stealing credentials. Traffic to the malicious infrastructure has been observed from finance, healthcare, legal, energy, retail, and professional-services organizations since at least June 2026 &mdash; every M365 tenant you touch is exposed via any traveling user.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/hackers-hijack-hotel-wi-fi-dns-to-steal-microsoft-365-accounts/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-2">
     <summary class="item-header">
-      <span class="item-title">Warn users at all four monitored environments not to install Claude from Bing search results &mdash; a malvertising campaign is pushing a fake Anthropic Claude desktop installer that appears to come from claude.ai but drops the SectopRAT credential stealer; direct them to claude.ai directly.</span>
-      <span class="item-type type-security">security</span>
+      <span class="item-title">Confirm whether your construction client (or any takeoff/PDF-heavy shop you inherited) is still running Bluebeam Revu 20 &mdash; End of Support is Friday July 31, six days out, and after that there are no more patches or security updates; plan migration to Revu 21 or the new Bluebeam Max subscription this week.</span>
+      <span class="item-type type-industry">industry</span>
       <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
+      <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>A malvertising campaign on Bing is promoting a spoofed Claude desktop app installer that appears to be hosted on the legitimate claude.ai domain but drops SectopRAT for credential and info-stealing. The lure exploits current AI-tool hype; end users at all four monitored environments should be reminded that search-ad results are not a trust signal and that Claude installers should come from claude.ai directly.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/fake-claude-app-promoted-by-bing-ads-pushes-sectoprat-malware/" target="_blank" class="src">Source &rarr;</a>
+      <p>Bluebeam Revu 20 reaches End of Support on July 31, 2026 &mdash; six days from today. After that date Bluebeam stops shipping bug fixes and security updates for Revu 20. The transition options are Revu 21 (perpetual/term) or the new Bluebeam Max subscription (introductory $590/user/year, launched this week). Confirm your construction client's Revu version and pull a quote comparison this weekend so you can have the conversation Monday.</p>
+      <a href="https://www.bluebeam.com/upgrade-from-revu-20/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-3">
     <summary class="item-header">
-      <span class="item-title">Confirm no Check Point firewalls are in scope &mdash; your construction client runs SonicWall TZ and your small-business client runs UCG Fiber &mdash; then file the actively-exploited SmartConsole authentication-bypass CVE-2026-16232 (CISA KEV, federal deadline July 25) for awareness on any inherited environments.</span>
-      <span class="item-type type-security">security</span>
+      <span class="item-title">Track OpenAI's global ChatGPT outage this morning &mdash; if any user at your construction client, small-business client, or internal ops relies on ChatGPT for weekend work, point them at Claude or Copilot as a fallback and keep an eye on OpenAI's status page until service is restored.</span>
+      <span class="item-type type-industry">industry</span>
       <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 9/11</span>
+      <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>Check Point patched CVE-2026-16232, a critical (CVSS 9.1) authentication-bypass in the SmartConsole login process that lets an unauthenticated remote attacker obtain an application login token and gain full admin control of a Check Point management server. Exploitation is confirmed in the wild against Internet-exposed management interfaces. CISA added the flaw to KEV with a federal remediation deadline of July 25, 2026. Not a watchlist product at any client (your construction client runs SonicWall TZ, small-business client runs UCG Fiber), but apply the July 22 Jumbo Hotfix (sk185169) immediately on any inherited Check Point environments.</p>
-      <a href="https://support.checkpoint.com/results/sk/sk185169/" target="_blank" class="src">Source &rarr;</a>
+      <p>OpenAI confirmed a worldwide ChatGPT outage on Saturday morning affecting connectivity for users globally. No public estimate yet on restoration. Any user relying on ChatGPT for weekend work should have a fallback (Claude, Microsoft Copilot) queued and be reminded not to paste sensitive data into unfamiliar services in the rush to keep working.</p>
+      <a href="https://www.bleepingcomputer.com/news/artificial-intelligence/openai-confirms-chatgpt-is-down-worldwide/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-4">
     <summary class="item-header">
-      <span class="item-title">Confirm no Zimbra mail servers are in scope &mdash; all four monitored environments run M365 &mdash; and file CISA's Laundry Bear Zimbra advisory for awareness; the phish-plus-mail-server-exploit pattern is a good reason to spot-check MFA on M365 admin accounts and Barracuda tenant policies at your construction client.</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 8/11</span>
+      <span class="item-title">Anthropic ships Claude Opus 5 with a per-prompt effort toggle</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>CISA and allied agencies published a joint advisory that Russian state-sponsored actor Laundry Bear is combining phishing with active exploitation of a patched zero-click Zimbra vulnerability (CVE-2025-66376) to steal email from unpatched Zimbra Collaboration servers. All four monitored environments are on Microsoft 365, not Zimbra, so file for awareness &mdash; but the phish-plus-email-server-exploit pattern is a reminder to keep MFA hard on M365 admin accounts and to review Barracuda tenant policies at your construction client.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/russian-hackers-exploit-zimbra-zero-click-flaw-for-email-theft/" target="_blank" class="src">Source &rarr;</a>
+      <p>Anthropic released Claude Opus 5 on Friday July 24, positioned as near-frontier capability at $5/$25 per million tokens (same pricing as Opus 4.8) and adding a low/medium/high effort toggle so users can balance cost against depth per prompt. Relevant to internal ops &mdash; you can start testing Opus 5 in place of Opus 4.7 for morning briefing generation and general IT workflow tasks, and use the effort toggle to reserve high-effort runs for the harder writeups.</p>
+      <a href="https://fortune.com/2026/07/24/anthropic-debuts-claude-opus-5-with-feature-that-lets-users-toggle-between-cost-and-capability/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-5">
     <summary class="item-header">
-      <span class="item-title">Synology releases DSM 7.4.1-90080, a new branch above the deployed 7.3.2 line</span>
+      <span class="item-title">Microsoft Entra: Custom Controls retire Sept 30, SSPR tightens Sept 7</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 9/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Microsoft's current Entra rollout guidance reminds admins that Conditional Access Custom Controls are being retired September 30, 2026 in favor of External MFA (end-of-life May 2027), and that Self-Service Password Reset will only accept explicitly registered authentication methods starting September 7, 2026 &mdash; directory-sourced phone numbers/emails that were never formally registered will stop working. A registration campaign began July 6. Tenants using third-party MFA via Custom Controls, or leaning on directory-only contact info for SSPR, need a migration plan now; this affects all four monitored M365 environments.</p>
+      <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/microsoft-entra-id-security-updates-what-organizations-need-to-do-now/4522024" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-6">
+    <summary class="item-header">
+      <span class="item-title">UniFi Network Application 10.5.67 released (safe upgrade over deployed 10.3+)</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Ubiquiti pushed UniFi Network Application 10.5.67 as a maintenance release addressing a Network Server loading issue on local connections and expanding UniFi OS Server / native Network guidance. Follows 10.5.66 which improved Auto STP Edge detection and Control Plane protection detection. Both are safe upgrades above the 10.3+ baseline deployed at your construction client &mdash; queue it into the next off-hours window; no urgency.</p>
+      <a href="https://community.ui.com/rss/releases/UniFi-Network-Application/e6712595-81bb-4829-8e42-9e2630fabcfe" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-7">
+    <summary class="item-header">
+      <span class="item-title">Bluebeam launches Max subscription with AI reviews and workflow automation</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 9/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Bluebeam Max debuted this week as a premium subscription extending Revu with workflow automation, intelligent markups, and AI-powered document review at introductory pricing of $590/user/year. Positioned as the upgrade path from Revu 20 ahead of its July 31 EOL &mdash; worth quoting to your construction client alongside a Revu 21 quote for a side-by-side comparison of subscription versus perpetual costs over three years.</p>
+      <a href="https://aecmag.com/collaboration/bluebeam-brings-ai-powered-workflows-to-revu/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-8">
+    <summary class="item-header">
+      <span class="item-title">Autodesk pushes AutoCAD 2026.1.1 cumulative update</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
+    </summary>
+    <div class="item-body">
+      <p>AutoCAD 2026.1.1 rolled out this week bundling prior 2026 fixes including Smart Blocks enhancements, real-time status for block detection, and multi-user collaboration improvements. The 2026.1 base delivered up to 11x faster file open and 4x faster app startup versus 2025 on network-stored DWGs. Push to any construction client seat on AutoCAD 2026 during the next scheduled maintenance window.</p>
+      <a href="https://www.autodesk.com/blogs/autocad/autocad-2026-1/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-9">
+    <summary class="item-header">
+      <span class="item-title">Google releases Gemini 3.5 Flash Cyber for vulnerability hunting</span>
       <span class="item-type type-feature">feature</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>Synology published DSM 7.4.1-90080 on July 23, 2026, moving the DSM branch up from the 7.3.2-86009 line currently deployed on your hospitality client's DS723+. Community coverage (SynoForum) flags it as a fresh release; review Synology's official release notes for changes and any prerequisites before scheduling a maintenance window at your hospitality client &mdash; no security-critical CVE has been tied to this build in reporting, so this is planning-track, not an emergency.</p>
-      <a href="https://www.synoforum.com/threads/version-7-4-1-90080.16209/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-6">
-    <summary class="item-header">
-      <span class="item-title">Ukraine CERT: UAC-0099 hiding malware inside fake Notepad++ plugins (LunchPoke)</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Ukraine's CERT reports a phishing campaign delivering the legitimate Notepad++ installer bundled with a malicious utility called LunchPoke disguised as a plugin, giving Russia-aligned attackers stealthy code execution on Windows endpoints. Worth mentioning to any construction client devs or estimators who install Notepad++, and worth an EDR hunt for anomalous Notepad++ plugin loads.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/hackers-abuse-notepad-plus-plus-plugins-to-stealthily-install-malware/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-7">
-    <summary class="item-header">
-      <span class="item-title">Chaos ransomware's new msaRAT tunnels C2 through Chrome and Edge</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Cisco Talos disclosed msaRAT, a Rust backdoor used by the Chaos ransomware gang that abuses Chrome DevTools Protocol and WebRTC to route command-and-control traffic through legitimate browser processes, evading network-based detection. SMBs relying primarily on perimeter/network telemetry &mdash; including your monitored environments &mdash; should tighten browser-process monitoring and egress inspection at the endpoint.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/new-msarat-malware-uses-chrome-edge-browsers-to-route-c2-traffic/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-8">
-    <summary class="item-header">
-      <span class="item-title">New Dolphin X RAT uses AI to rank high-value infected targets</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>A newly documented remote access trojan called Dolphin X uses AI-powered profiling to score infected hosts and prioritize high-value victims for follow-on attacks. The technique signals continued weaponization of AI in the commodity malware ecosystem and reinforces the case for tighter EDR tuning and phishing-resistant MFA across all client environments.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/new-dolphin-x-malware-uses-ai-to-rank-high-value-targets/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-9">
-    <summary class="item-header">
-      <span class="item-title">Clop extorting orgs via Internet-exposed PTC Windchill/FlexPLM instances</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 6/11</span>
-    </summary>
-    <div class="item-body">
-      <p>The Clop ransomware/extortion group is actively exploiting Internet-exposed PTC Windchill and FlexPLM instances for data theft and extortion. None of your monitored clients run Windchill/FlexPLM, but the pattern is worth flagging in your construction client's compliance/documentation conversations about restricting management interfaces to VPN-only.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/clop-ransomware-targets-windchill-flexplm-in-data-theft-attacks/" target="_blank" class="src">Source &rarr;</a>
+      <p>Google DeepMind announced Gemini 3.5 Flash Cyber, a security-tuned AI model for vulnerability discovery and patching, currently limited to governments and trusted partners through the CodeMender program. FYI for AI-assisted vulnerability management planning &mdash; not yet available to SMB MSPs, but worth tracking as competition to Anthropic and OpenAI's security-focused agent efforts.</p>
+      <a href="https://securityaffairs.com/195869/security/google-released-gemini-3-5-flash-cyber-ai-a-specialized-ai-model-for-vulnerability-hunting.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-10">
     <summary class="item-header">
-      <span class="item-title">AI trust paradox: 93% of businesses plan AI deployment, only 23% of consumers trust it</span>
+      <span class="item-title">Druva launches AI Resilience; ThreatDown adds MSP AI visibility</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 7/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Help Net Security's Friday product roundup highlights Druva AI Resilience (recover/govern/defend AI-powered work) and ThreatDown's new AI-visibility features for MSP teams plus extended ITDR for non-human identities. Both target the widening gap between AI adoption and security controls in SMB environments &mdash; useful to have on the radar as clients start asking about AI-tool governance.</p>
+      <a href="https://www.helpnetsecurity.com/2026/07/24/new-infosec-products-of-the-week-july-24-2026/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-11">
+    <summary class="item-header">
+      <span class="item-title">Microsoft blames Thursday's global M365 outage on a maintenance-bug that pulled too many network routes</span>
+      <span class="item-type type-industry">industry</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 10/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Microsoft's post-incident review of the July 23 Microsoft 365 disruption (Teams, SharePoint, Outlook, Exchange, Intune) traces the outage to an automated maintenance-request conversion system that removed IP routes from more devices than intended in the Azure West US region. Impact ran roughly 14:44 to 19:41 UTC on July 23 before Microsoft reverted the change. No customer action required, but the follow-up is a good prompt to review your construction client's, small-business client's, and internal ops' dependency on regional egress and internal-comms fallback plans.</p>
+      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-blames-massive-microsoft-365-outage-on-maintenance-bug/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-12">
+    <summary class="item-header">
+      <span class="item-title">"Slopsquatting", phantom domains, and HalluSquatting are the same AI-hallucination attack</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 9/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Security researchers report vendors have coined several names for the same attack: adversaries register domains and packages that LLMs and AI coding assistants hallucinate when giving links or code recommendations, so users and developers who follow AI output land on attacker-controlled infrastructure. Practical impact for SMBs is that a user treating an AI answer as authoritative can be routed to credential-harvesting sites or install poisoned packages. Reinforce awareness training that AI-suggested URLs and package names still need verification.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/slopsquatting-phantom-domains-and-hallusquatting-are-the-same-ai-attack/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-13">
+    <summary class="item-header">
+      <span class="item-title">Google fined &euro;890M under EU Digital Markets Act</span>
       <span class="item-type type-industry">industry</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 6/11</span>
     </summary>
     <div class="item-body">
-      <p>New industry data shows a widening gap between enterprise AI adoption intent and consumer confidence, with 93% of businesses planning AI rollouts versus 23% consumer trust. Useful framing for how Purplesky packages AI-related services to SMBs &mdash; expect increased pressure to demonstrate governance, opt-outs, and transparency in customer-facing AI.</p>
-      <a href="https://securityaffairs.com/195915/ai/the-ai-trust-paradox-businesses-are-racing-ahead-but-consumers-are-hesitating.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-11">
-    <summary class="item-header">
-      <span class="item-title">Thailand Ministry of Finance targeted by autonomous AI agent (Hermes) with Hades implant</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 6/11</span>
-    </summary>
-    <div class="item-body">
-      <p>A cyber-espionage operation used an autonomous AI agent, Hermes, running unattended to stage the Hades implant against Thailand's Ministry of Finance. This is an early real-world example of agentic AI deployed as an offensive intrusion tool, foreshadowing similar tradecraft against private-sector targets over the next 12 months.</p>
-      <a href="https://securityaffairs.com/195941/hacking/thailands-ministry-of-finance-targeted-with-hermes-ai-agent-running-unattended-hades-implant-staged.html" target="_blank" class="src">Source &rarr;</a>
+      <p>The European Commission imposed &euro;890 million in penalties on Google for self-preferencing its own services in Search and restricting Play Store developers from directing users to cheaper alternatives outside the store. Marginally relevant to SMB IT, but a signal of continued regulatory pressure on the major platform providers your clients depend on for search, mobile app distribution, and identity.</p>
+      <a href="https://securityaffairs.com/195963/laws-and-regulations/google-fined-e890m-under-eu-digital-markets-act-over-search-and-play-store-practices.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 </div>
 
-<div class="footer">Generated Friday, July 24, 2026 at 6:36 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-07-24.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
+<div class="footer">Generated Saturday, July 25, 2026 at 6:36 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-07-25.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
 
 </main>
 </body>
