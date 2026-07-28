@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<title>Morning Briefing -- Monday, July 27, 2026</title>
+<title>Morning Briefing -- Tuesday, July 28, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -14,354 +14,73 @@
 <main class="briefing-content">
 
 <div class="page-header">
-  <h1>Morning Briefing -- Monday, July 27, 2026</h1>
+  <h1>Morning Briefing -- Tuesday, July 28, 2026</h1>
   <p class="page-meta">Microsoft &bull; Security &amp; Compliance &bull; Firewall / VPN / Networking &bull; Servers/NAS &bull; Workstations &amp; Mobile &bull; Peripherals &amp; AV &bull; RMM &amp; Remote Access &bull; Construction &amp; Specialty Software &bull; General Tech &amp; AI &bull; Pacific Time</p>
 </div>
 
 <div class="section-actions">
   <h2>Today's Actions</h2>
-  <p class="section-transparency">Showing 3 of 7</p>
+  <p class="section-transparency">Showing 3 of 8</p>
   <ol class="action-list">
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Deploy SonicWall SNWLID-2026-0004 firmware to your construction client's TZ series firewalls this week &mdash; the advisory covers three CVEs including a high-severity access-control bypass; as interim mitigation, disable HTTP/HTTPS management and SSL-VPN on any device not yet patched. <a href="#item-1" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Disable SonicWall SSL VPN or restrict its access at your construction client today &mdash; Akira ransomware is actively exploiting Gen 7 firewalls with MFA bypass observed, and the fix is the SNWLID-2026-0004 firmware in action 1. <a href="#item-2" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Schedule this week's UniFi patching cycle at your construction client &mdash; Ubiquiti Bulletin 066 covers 25 CVEs across UniFi products, including a CVSS 10.0 unauthenticated command injection in UniFi Connect. <a href="#item-3" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Patch Windows Server AD CS at your monitored environments this week -- public "Certighost" PoC for CVE-2026-54121 lets any low-privileged domain user impersonate a Domain Controller and DCSync krbtgt, so any server not on July 2026 Patch Tuesday is directly exposed. <a href="#item-1" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Ask iPhone users at your construction client, and Mac/iPad/iPhone users at your internal ops, to install Apple's 26.6 update today -- it patches 87 CVEs on iOS/iPadOS and 155 on macOS Tahoe including a kernel-level AVEVideoEncoder RCE. <a href="#item-2" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> Confirm none of your monitored environments have internet-exposed PTC Windchill or FlexPLM instances -- Cl0p is chaining pre-auth zero-days (suspected CVE-2026-12569, CVSS 9.3) for unauthenticated RCE and data-theft double extortion. <a href="#item-3" class="detail-link">details</a></li>
   </ol>
-  <details class="section-overflow"><summary>Show 4 more actions</summary><ol class="action-list" start="4">
-    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Ask iPhone users at your construction client (and any Mac/iPad/iPhone users at your internal ops) to install Apple's out-of-band 26.5.2 update today &mdash; it patches 37 CVEs including web-triggerable WebKit issues. <a href="#item-4" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Apply the July 2026 Exchange Server Security Updates to any on-prem Exchange servers and Exchange Management Tools workstations this week &mdash; Exchange Online tenants at your monitored environments are already protected. <a href="#item-5" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> Confirm none of your monitored environments have internet-exposed PTC Windchill or FlexPLM instances &mdash; Clop ransomware is actively targeting these platforms for data theft, so move any behind SSO/VPN if you find them. <a href="#item-6" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Upgrade UniFi Protect to 7.1.83 or later at your construction client &mdash; recent patches address CVE-2026-55115 (SSRF-driven privilege escalation rated 9.9) among other issues in the Protect line. <a href="#item-7" class="detail-link">details</a></li>
+  <details class="section-overflow"><summary>Show 5 more actions</summary><ol class="action-list" start="4">
+    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Tune EDR and RMM alerting to catch MedusaHVNC-style hidden-desktop sessions -- the new trojan silently hijacks browsers to steal M365 cookies and session tokens on Windows endpoints across your monitored environments. <a href="#item-4" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> Confirm none of your monitored environments run self-hosted JetBrains TeamCity -- CVE-2026-63077 is a CVSS 9.8 unauthenticated RCE that historically weaponizes into ransomware within days, so patch immediately if any TeamCity instance surfaces. <a href="#item-5" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> Review CISA's July 27 KEV additions and cross-check patch status at all monitored environments -- federal patch deadlines are the fastest signal that a vulnerability is being actively exploited in the wild. <a href="#item-6" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> Inventory any Java apps at your construction client for the FastJson library and follow vendor mitigations -- attackers are actively exploiting a FastJson RCE zero-day against US firms for unauthenticated code execution. <a href="#item-7" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-yellow">This Week</span> Watch how AI-agent misuse is developing after Reuters confirmed an OpenAI agent operated undetected inside Hugging Face for days -- factor autonomous-agent risk into tabletop exercises as your clients adopt agentic tools. <a href="#item-8" class="detail-link">details</a></li>
   </ol></details>
 </div>
 
 <div class="section-new">
   <h2>What's New</h2>
-  <p class="section-transparency">Showing 3 of 4</p>
   <ul class="new-list">
-    <li><strong><a href="#item-8">UniFi Network Application 10.5.66 and 10.5.67 released with stability and startup fixes</a></strong> -- Ubiquiti shipped UniFi Network Application 10.5.66 (improved Auto STP Edge detection, Control Plane protection, restored dashboard speed indicators, downgrade-startup fix) followed by 10.5.67, which resolves a Network Server load failure over local connections. Follow-on to 10.5.62 released July 20 with SD-WAN Underlay and RADIUS improvements &mdash; a routine update for your construction client's deployed 10.3+ baseline. <a href="https://community.ui.com/releases" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-9">Anthropic releases Claude Opus 5 with 1M context window at Opus 4.8 pricing</a></strong> -- Anthropic launched Claude Opus 5 on July 24, 2026, marketed as near-Fable performance at half the price ($5/M input, $25/M output). It ships with a 1M-token context window, 128K output tokens, thinking on by default, and is available on the API as claude-opus-5. It's now the default model on Claude Max and the strongest on Claude Pro &mdash; a plausible upgrade for internal ops workflows already on Opus 4.7. <a href="https://www.anthropic.com/news/claude-opus-5" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-10">HP launches EliteBook 6 G2q with Snapdragon X2 Elite/Plus and 28-hour battery</a></strong> -- HP's July 2026 EliteBook refresh introduces the 14-inch EliteBook 6 G2q built on Qualcomm Snapdragon X2 Elite and X2 Plus, with configurations up to 64 GB LPDDR5X-9600 and 2 TB PCIe Gen 5 SSD, targeting up to 28 hours battery life. The broader 2026 lineup also spans Intel Panther Lake and AMD Gorgon Point EliteBook/ZBook variants announced alongside HP Imagine 2026. <a href="https://www.hp.com/us-en/newsroom/press-releases/2026/hp-enables-best-work-in-more-places.html" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-9">UniFi Network Application 10.5.67 adds Client Observability timeline</a></strong> -- Ubiquiti released UniFi Network Application 10.5.67 with a new Client Observability feature providing a 24-hour client activity timeline correlating connectivity, roaming, application usage, and network health, plus a fix for a Network Server loading issue on local connections. Useful for troubleshooting Wi-Fi complaints at your construction client. <a href="https://community.ui.com/rss/releases/UniFi-Network-Application/e6712595-81bb-4829-8e42-9e2630fabcfe" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-10">Anthropic Claude Opus 5 available across all platforms at Opus 4.8 pricing</a></strong> -- Anthropic's Claude Opus 5 is now the default for Claude Max subscribers and selectable on Claude Pro and the API at $5/$25 per million tokens. New features include a five-level effort slider trading cost for capability, 1M-token context, 128K output, mid-conversation tool changes, and automatic safety fallbacks -- a plausible upgrade for internal ops Claude Code workflows. <a href="https://www.technology.org/2026/07/27/anthropic-claude-opus-5-launch-half-price/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-11">HP EliteBook 6 G2q availability opens on HP.com</a></strong> -- The HP EliteBook 6 G2q, a 14-inch Snapdragon X2 Elite/Plus commercial AI PC announced at HP Imagine 2026, is beginning availability on HP.com in July. HP claims up to 28 hours battery life on a single charge -- worth evaluating as an Arm option for future construction-client refresh cycles alongside Intel EliteBooks. <a href="https://www.hp.com/us-en/newsroom/press-releases/2026/hp-enables-best-work-in-more-places.html" target="_blank">Source &rarr;</a></li>
   </ul>
-  <details class="section-overflow"><summary>Show 1 more update</summary><ul class="new-list">
-    <li><strong><a href="#item-11">GitHub and PyPI add time-based Dependabot defenses against supply chain attacks</a></strong> -- GitHub and PyPI introduced time-based mechanisms in Dependabot that delay adoption of newly-published package versions, giving the ecosystem a window to catch malicious releases before automated updates pull them in. Passive defense against fast-moving supply chain compromises with no config changes required. <a href="https://www.bleepingcomputer.com/news/security/github-pypi-add-time-absed-defenses-against-supply-chain-attacks/" target="_blank">Source &rarr;</a></li>
-  </ul></details>
 </div>
 
 <div class="section-security">
   <h2>Security &amp; Patches</h2>
-  <p class="section-transparency">Showing 3 of 13</p>
+  <p class="section-transparency">Showing 3 of 6</p>
   <div class="security-cards">
-    <div class="security-card"><a href="#item-12" class="security-headline">Hotel Wi-Fi DNS hijacks target Microsoft 365 credentials</a><span class="urgency-yellow">This Week</span><span class="security-summary">Attackers are modifying DNS settings on hotel and conference center Wi-Fi networks to redirect guests to fake Microsoft 365 login pages that harvest credentials and session tokens.</span></div>
-    <div class="security-card"><a href="#item-13" class="security-headline">Synology publishes DSM 7.3.2-86009 Update 4 with high-severity file-manipulation fixes</a><span class="urgency-yellow">This Week</span><span class="security-summary">Synology released DSM 7.3.2-86009 Update 4 (alongside 7.2.2-72806 Update 9 and 7.2.1-69057 Update 12) classified as Important, addressing high-severity file manipulation vulnerabilities.</span></div>
-    <div class="security-card"><a href="#item-14" class="security-headline">Synology stale-DNS flaw enables practical DSM client traffic interception</a><span class="urgency-yellow">This Week</span><span class="security-summary">A stale-DNS vulnerability disclosed via Full Disclosure allows practical interception of traffic from vulnerable DSM clients.</span></div>
+    <div class="security-card"><a href="#item-12" class="security-headline">Over 24,000 exposed server BMCs leak password hashes via decades-old flaw</a><span class="urgency-yellow">This Week</span><span class="security-summary">More than 24,000 baseboard management controllers (BMCs) exposed on the public internet are leaking Redfish/IPMI password hashes due to a long-known flaw.</span></div>
+    <div class="security-card"><a href="#item-13" class="security-headline">Arista patches VeloCloud Orchestrator zero-day exploited in the wild</a><span class="urgency-yellow">This Week</span><span class="security-summary">Arista released fixes for a VeloCloud Orchestrator zero-day already being exploited in attacks.</span></div>
+    <div class="security-card"><a href="#item-14" class="security-headline">n8n patches high-severity sandbox escape (CVSS 8.7)</a><span class="urgency-yellow">This Week</span><span class="security-summary">n8n patched a high-severity expression-sandbox escape that allowed an authenticated workflow editor to execute OS commands on the host server.</span></div>
   </div>
-  <details class="section-overflow"><summary>Show 10 more security items</summary><div class="security-cards">
-    <div class="security-card"><a href="#item-15" class="security-headline">ShinyHunters leaks fuel a $2,000 sextortion email wave</a><span class="urgency-yellow">This Week</span><span class="security-summary">Threat actors are cross-referencing email addresses from recent ShinyHunters breach dumps to send targeted sextortion messages demanding roughly $2,000 in Bitcoin.</span></div>
-    <div class="security-card"><a href="#item-16" class="security-headline">Slopsquatting, phantom domains, and HalluSquatting exploit AI coding agents</a><span class="urgency-yellow">This Week</span><span class="security-summary">Researchers detail how multiple attack patterns all abuse the same core weakness: AI coding assistants and agents that trust hallucinated package or domain names.</span></div>
-    <div class="security-card"><a href="#item-17" class="security-headline">Microsoft blames massive Microsoft 365 outage on maintenance bug</a><span class="urgency-green">FYI</span><span class="security-summary">Microsoft's post-incident review attributes last week's widespread Azure and Microsoft 365 disruption to a bug in the maintenance system that mistakenly removed IP routes.</span></div>
-    <div class="security-card"><a href="#item-18" class="security-headline">OpenAI confirms worldwide ChatGPT outage</a><span class="urgency-yellow">This Week</span><span class="security-summary">OpenAI confirmed a global ChatGPT outage on July 25, 2026, with users worldwide unable to connect or receive responses.</span></div>
-    <div class="security-card"><a href="#item-19" class="security-headline">Malicious sites use JavaScript to assemble malware in browser memory</a><span class="urgency-yellow">This Week</span><span class="security-summary">A malvertising campaign is using fake cryptocurrency and trading pages that run JavaScript to build malware payloads directly in browser memory, evading traditional file-based AV.</span></div>
-    <div class="security-card"><a href="#item-20" class="security-headline">Hermes AI agent weaponized in automated attack on Thai Finance Ministry</a><span class="urgency-yellow">This Week</span><span class="security-summary">Threat actors deployed the open-source Hermes AI agent in automated mode during an alleged breach of Thailand's Finance Ministry, marking a notable case of an autonomous AI agent being used offensively at scale.</span></div>
-    <div class="security-card"><a href="#item-21" class="security-headline">LockBit 5 and Qilin lead ransomware attacks on Italian organizations</a><span class="urgency-yellow">This Week</span><span class="security-summary">Recent tracking shows LockBit 5 and Qilin dominating ransomware activity against Italian SMBs and mid-market enterprises, indicating LockBit's rebuild after last year's disruptions is progressing.</span></div>
-    <div class="security-card"><a href="#item-22" class="security-headline">Steam forum ClickFix attacks push XMRig cryptominers</a><span class="urgency-yellow">This Week</span><span class="security-summary">Steam forum posts are being weaponized in ClickFix-style social engineering that tricks users into pasting attacker-supplied commands into Run, dropping XMRig cryptominers.</span></div>
-    <div class="security-card"><a href="#item-23" class="security-headline">Europol flags 4,340 URLs for removal in 'The Com' crackdown</a><span class="urgency-green">FYI</span><span class="security-summary">Europol coordinated the takedown of 4,340 URLs tied to 'The Com' cybercriminal ecosystem, which fuels SIM-swap, sextortion, and social-engineering campaigns often reaching SMB employees.</span></div>
-    <div class="security-card"><a href="#item-24" class="security-headline">DentaQuest discloses data breach impacting 23 million individuals</a><span class="urgency-green">FYI</span><span class="security-summary">Insurer DentaQuest notified regulators of a breach affecting more than 23 million individuals, one of the larger US healthcare-adjacent incidents of the year.</span></div>
+  <details class="section-overflow"><summary>Show 3 more security items</summary><div class="security-cards">
+    <div class="security-card"><a href="#item-15" class="security-headline">Cruciferra Crypter-as-a-Service fuels stealthy malware campaigns worldwide</a><span class="urgency-yellow">This Week</span><span class="security-summary">A new Crypter-as-a-Service offering called Cruciferra is helping commodity malware operators evade AV/EDR detection, lowering the bar for infostealers and loaders reaching SMB endpoints.</span></div>
+    <div class="security-card"><a href="#item-16" class="security-headline">LockBit5 and Qilin lead ransomware attacks against Italian organizations</a><span class="urgency-yellow">This Week</span><span class="security-summary">New telemetry shows LockBit5 and Qilin dominating recent ransomware activity against Italian firms, with SMBs disproportionately hit.</span></div>
+    <div class="security-card"><a href="#item-17" class="security-headline">MSPs adopting AI faster than they can govern or monetize it</a><span class="urgency-green">FYI</span><span class="security-summary">ChannelE2E reports MSPs have rapidly deployed AI tools but most still lack governance frameworks, operating-model changes, and commercial strategy needed to convert adoption into measurable customer value and recurring revenue.</span></div>
   </div></details>
 </div>
 
 <div class="section-details">
   <h2>Details</h2>
-  <details class="item" id="item-1">
-    <summary class="item-header">
-      <span class="item-title">Deploy SonicWall SNWLID-2026-0004 firmware to your construction client's TZ series firewalls this week &mdash; the advisory covers three CVEs including a high-severity access-control bypass; as interim mitigation, disable HTTP/HTTPS management and SSL-VPN on any device not yet patched.</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 11/11</span>
-    </summary>
-    <div class="item-body">
-      <p>SonicWall released a security advisory covering three CVEs (CVE-2026-0204 high-severity access-control bypass, CVE-2026-0205 path traversal, CVE-2026-0206 remote crash) affecting Gen 6, Gen 7 and Gen 8 firewalls including the TZ series. Patched firmware is on MySonicWall; SonicWall recommends immediate deployment on internet-facing devices with SSL VPN enabled. Interim mitigation: disable HTTP/HTTPS management and SSL-VPN on all interfaces.</p>
-      <a href="https://www.sonicwall.com/support/notices/security-advisory-firmware-update-required-gen-6-gen-7-and-gen-8-firewalls/kA1VN000001F03x0AC" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-2">
-    <summary class="item-header">
-      <span class="item-title">Disable SonicWall SSL VPN or restrict its access at your construction client today &mdash; Akira ransomware is actively exploiting Gen 7 firewalls with MFA bypass observed, and the fix is the SNWLID-2026-0004 firmware in action 1.</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Bleeping Computer and Huntress report ongoing exploitation of SonicWall SSL VPN on Gen 7 firewalls by the Akira ransomware group, with MFA bypass observed. SonicWall is urging administrators to disable SSL VPN or restrict access until the SNWLID-2026-0004 patches are deployed. TZ series with SSL VPN exposed to the internet are directly in scope.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/sonicwall-urges-admins-to-disable-sslvpn-amid-rising-attacks/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-3">
-    <summary class="item-header">
-      <span class="item-title">Schedule this week's UniFi patching cycle at your construction client &mdash; Ubiquiti Bulletin 066 covers 25 CVEs across UniFi products, including a CVSS 10.0 unauthenticated command injection in UniFi Connect.</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Ubiquiti Security Advisory Bulletin 066 disclosed 25 vulnerabilities across the UniFi ecosystem (Network Application, Protect, Connect, Talk, Access, UniFi OS). Top severity is CVE-2026-50746 (CVSS 10.0, unauthenticated command injection in UniFi Connect &le;3.4.16); additional 9.9-rated flaws in UniFi Talk (SQLi), Access, UniFi OS command injection (CVE-2026-54402), and Protect SSRF (CVE-2026-55115). No in-the-wild exploitation reported yet but patching is a priority for internet-accessible deployments.</p>
-      <a href="https://thehackernews.com/2026/07/ubiquiti-patches-critical-unifi-flaws.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-4">
-    <summary class="item-header">
-      <span class="item-title">Ask iPhone users at your construction client (and any Mac/iPad/iPhone users at your internal ops) to install Apple's out-of-band 26.5.2 update today &mdash; it patches 37 CVEs including web-triggerable WebKit issues.</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Apple released iOS 26.5.2, iPadOS 26.5.2 and macOS Tahoe 26.5.2 ahead of schedule, patching 37 CVEs across IOGPUFamily, kernel, libxslt, Web Extensions, WebKit and WebRTC. Apple cited AI-accelerated exploit development as the reason for the shortened patch cadence. Many issues are web-triggerable via WebKit; update all iPhone, iPad and Mac fleet devices promptly.</p>
-      <a href="https://www.securityweek.com/apple-patches-dozens-of-vulnerabilities-across-ios-macos-and-safari/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-5">
-    <summary class="item-header">
-      <span class="item-title">Apply the July 2026 Exchange Server Security Updates to any on-prem Exchange servers and Exchange Management Tools workstations this week &mdash; Exchange Online tenants at your monitored environments are already protected.</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Microsoft published July 2026 Security Updates for Exchange Server addressing vulnerabilities reported through coordinated disclosure and internal research. Exchange Online tenants are already protected; on-prem Exchange servers and Exchange Management Tools workstations should be patched promptly.</p>
-      <a href="https://techcommunity.microsoft.com/blog/exchange/released-july-2026-exchange-server-security-updates/4534146" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-6">
-    <summary class="item-header">
-      <span class="item-title">Confirm none of your monitored environments have internet-exposed PTC Windchill or FlexPLM instances &mdash; Clop ransomware is actively targeting these platforms for data theft, so move any behind SSO/VPN if you find them.</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>The Clop ransomware group is exploiting internet-exposed PTC Windchill and FlexPLM instances to steal product lifecycle and manufacturing data. Organizations running these PLM platforms should confirm they are behind SSO/VPN and patched to the latest fixed versions. None of your monitored environments are known to use Windchill or FlexPLM, but worth a quick confirmation.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/clop-ransomware-targets-windchill-flexplm-in-data-theft-attacks/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-7">
-    <summary class="item-header">
-      <span class="item-title">Upgrade UniFi Protect to 7.1.83 or later at your construction client &mdash; recent patches address CVE-2026-55115 (SSRF-driven privilege escalation rated 9.9) among other issues in the Protect line.</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Ubiquiti addressed multiple vulnerabilities affecting UniFi Protect (including SSRF-driven privilege escalation CVE-2026-55115 rated 9.9) and advised upgrading Protect to 7.1.83 or later. Recent patch releases also include RTSPS stream fixes, multi-sensor camera playback fixes, and Alarm Manager scope corrections.</p>
-      <a href="https://fieldeffect.com/blog/ubiquiti-patches-multiple-critical-vulnerabilities-in-unifi-products" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-8">
-    <summary class="item-header">
-      <span class="item-title">UniFi Network Application 10.5.66 and 10.5.67 released with stability and startup fixes</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Ubiquiti shipped UniFi Network Application 10.5.66 (improved Auto STP Edge detection, Control Plane protection, restored dashboard speed indicators, downgrade-startup fix) followed by 10.5.67, which resolves a Network Server load failure over local connections. Follow-on to 10.5.62 released July 20 with SD-WAN Underlay and RADIUS improvements. Applies to your construction client's deployed 10.3+ baseline.</p>
-      <a href="https://community.ui.com/releases" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-9">
-    <summary class="item-header">
-      <span class="item-title">Anthropic releases Claude Opus 5 with 1M context window at Opus 4.8 pricing</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Anthropic launched Claude Opus 5 on July 24, 2026, marketed as near-Fable performance at half the price ($5/M input, $25/M output). It ships with a 1M-token context window, 128K output tokens, thinking on by default, and is available on the API as claude-opus-5. It's now the default model on Claude Max and the strongest on Claude Pro &mdash; a plausible upgrade for internal ops workflows already on Opus 4.7.</p>
-      <a href="https://www.anthropic.com/news/claude-opus-5" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-10">
-    <summary class="item-header">
-      <span class="item-title">HP launches EliteBook 6 G2q with Snapdragon X2 Elite/Plus and 28-hour battery</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>HP's July 2026 EliteBook refresh introduces the 14-inch EliteBook 6 G2q built on Qualcomm Snapdragon X2 Elite and X2 Plus, with configurations up to 64 GB LPDDR5X-9600 and 2 TB PCIe Gen 5 SSD, targeting up to 28 hours battery life. The broader 2026 lineup also spans Intel Panther Lake and AMD Gorgon Point EliteBook/ZBook variants announced alongside HP Imagine 2026.</p>
-      <a href="https://www.hp.com/us-en/newsroom/press-releases/2026/hp-enables-best-work-in-more-places.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-11">
-    <summary class="item-header">
-      <span class="item-title">GitHub and PyPI add time-based Dependabot defenses against supply chain attacks</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>GitHub and PyPI introduced time-based mechanisms in Dependabot that delay adoption of newly-published package versions, giving the ecosystem a window to catch malicious releases before automated updates pull them in. SMB IT and MSP teams running CI/CD pipelines get a passive defense against fast-moving supply chain compromises with no config changes required.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/github-pypi-add-time-absed-defenses-against-supply-chain-attacks/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-12">
-    <summary class="item-header">
-      <span class="item-title">Hotel Wi-Fi DNS hijacks target Microsoft 365 credentials</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Attackers are modifying DNS settings on hotel and conference center Wi-Fi networks to redirect guests to fake Microsoft 365 login pages that harvest credentials and session tokens. Traveling users and executives on the road are the primary risk; VPN-first policies and phishing-resistant MFA mitigate the exposure across your construction client, small-business client, and internal ops.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/hackers-hijack-hotel-wi-fi-dns-to-steal-microsoft-365-accounts/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-13">
-    <summary class="item-header">
-      <span class="item-title">Synology publishes DSM 7.3.2-86009 Update 4 with high-severity file-manipulation fixes</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Synology released DSM 7.3.2-86009 Update 4 (alongside 7.2.2-72806 Update 9 and 7.2.1-69057 Update 12) classified as Important, addressing high-severity file manipulation vulnerabilities. This is the direct successor to the v7.3.2-86009-3 baseline deployed at your hospitality client's DS723+. Synology recommends administrators audit and update immediately.</p>
-      <a href="https://www.synoforum.com/threads/versions-7-3-2-86009-update-4-7-2-2-72806-update-9-7-2-1-69057-update-12-important-updates.16169/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-14">
-    <summary class="item-header">
-      <span class="item-title">Synology stale-DNS flaw enables practical DSM client traffic interception</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>A stale-DNS vulnerability disclosed via Full Disclosure allows practical interception of traffic from vulnerable DSM clients. Synology confirmed TLS certificate-validation behavior was fixed in later DSM versions and on July 22, 2026 stated it would adjust relayinfo.synology.com configuration to further reduce risk. Update DSM clients and QuickConnect components at your hospitality client to the latest release.</p>
-      <a href="https://seclists.org/fulldisclosure/2026/Jul/28" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-15">
-    <summary class="item-header">
-      <span class="item-title">ShinyHunters leaks fuel a $2,000 sextortion email wave</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Attackers are cross-referencing email addresses from recent ShinyHunters breach dumps to send targeted sextortion messages demanding roughly $2,000 in Bitcoin. The personalization &mdash; real passwords the recipient once used &mdash; is increasing click-through and payment rates. Reminder for users at all four monitored environments: a legitimate-looking password reference in a threatening email does NOT mean their device is compromised, and the correct response is to delete and change the referenced password if still in use.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/shinyhunters-data-leaks-fuel-2-000-sextortion-email-scam/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-16">
-    <summary class="item-header">
-      <span class="item-title">Slopsquatting, phantom domains, and HalluSquatting exploit AI coding agents</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Researchers detail how multiple attack patterns (slopsquatting, phantom domains, HalluSquatting) all abuse the same core weakness: AI coding assistants and agents that trust hallucinated package or domain names. Attackers pre-register those hallucinated names and wait for developers or agents to pull malicious code. IT teams using AI-assisted dev workflows should tighten dependency review and pinning.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/slopsquatting-phantom-domains-and-hallusquatting-are-the-same-ai-attack/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-17">
-    <summary class="item-header">
-      <span class="item-title">Microsoft blames massive Microsoft 365 outage on maintenance bug</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Microsoft's post-incident review attributes last week's widespread Azure and Microsoft 365 disruption to a bug in the maintenance system that mistakenly removed IP routes. Services are restored; Microsoft says it is adding safeguards to the route-management workflow to prevent recurrence.</p>
-      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-blames-massive-microsoft-365-outage-on-maintenance-bug/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-18">
-    <summary class="item-header">
-      <span class="item-title">OpenAI confirms worldwide ChatGPT outage</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>OpenAI confirmed a global ChatGPT outage on July 25, 2026, with users worldwide unable to connect or receive responses. IT teams relying on ChatGPT for daily workflows should have fallback AI tooling in place; the incident is a reminder that dependency on a single AI provider carries operational risk.</p>
-      <a href="https://www.bleepingcomputer.com/news/artificial-intelligence/openai-confirms-chatgpt-is-down-worldwide/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-19">
-    <summary class="item-header">
-      <span class="item-title">Malicious sites use JavaScript to assemble malware in browser memory</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>A malvertising campaign is using fake cryptocurrency and trading pages that run JavaScript to build malware payloads directly in browser memory, evading traditional file-based AV. Defender for Business and modern EDR with in-memory behavioral detection catch most variants; block malvertising domains at DNS. Worth reinforcing at your construction client and small-business client if any users research investments or crypto during work hours.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/malicious-sites-use-javascript-to-build-malware-in-browser-memory/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-20">
-    <summary class="item-header">
-      <span class="item-title">Hermes AI agent weaponized in automated attack on Thai Finance Ministry</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Researchers report threat actors deployed the open-source Hermes AI agent in automated mode during an alleged breach of Thailand's Finance Ministry, one of the first documented cases of an autonomous AI agent driving a full intrusion. The incident signals a shift in how attackers are chaining LLM agents into intrusion tooling and is worth factoring into detection tuning and tabletop exercises.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/hermes-ai-agent-used-to-automate-attack-on-thai-finance-ministry/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-21">
-    <summary class="item-header">
-      <span class="item-title">LockBit 5 and Qilin lead ransomware attacks on Italian organizations</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Recent tracking shows LockBit 5 and Qilin dominating ransomware activity against Italian SMBs and mid-market enterprises, indicating LockBit's rebuild after last year's disruptions is progressing. Both affiliates continue to exploit exposed remote access and unpatched perimeter appliances for initial entry &mdash; a reminder to keep SonicWall SSL VPN closed until item-1 is patched.</p>
-      <a href="https://securityaffairs.com/196045/security/lockbit5-and-qilin-lead-ransomware-attacks-against-italian-organizations.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-22">
-    <summary class="item-header">
-      <span class="item-title">Steam forum ClickFix attacks push XMRig cryptominers</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 6/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Steam forum posts are being weaponized in ClickFix-style social engineering that trick users into pasting attacker-supplied commands into the Run dialog, ultimately deploying the XMRig cryptominer. The same ClickFix social-engineering pattern is being used in business-targeted campaigns &mdash; blocking Win+R via GPO/Intune for standard users and training on paste-to-run prompts remain worthwhile defenses.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/steam-forum-clickfix-attacks-infect-gamers-with-xmrig-cryptominers/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-23">
-    <summary class="item-header">
-      <span class="item-title">Europol flags 4,340 URLs for removal in 'The Com' crackdown</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 6/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Europol coordinated the takedown of 4,340 URLs tied to 'The Com' cybercriminal ecosystem, which fuels SIM-swap, sextortion, and social-engineering campaigns often reaching SMB employees. Actionable takeaway: expect displaced actors to spin up new infrastructure quickly.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/europol-flags-4-340-urls-for-removal-in-the-com-crackdown/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-24">
-    <summary class="item-header">
-      <span class="item-title">DentaQuest discloses data breach impacting 23 million individuals</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 6/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Insurer DentaQuest notified regulators of a breach affecting more than 23 million individuals, one of the larger US healthcare-adjacent incidents of the year. Impacted parties should watch for downstream phishing lures referencing dental benefits or claims.</p>
-      <a href="https://securityaffairs.com/196100/data-breach/dentaquest-disclosed-a-data-breach-that-impacted-23-million-individuals.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
+  <details class="item" id="item-1"><summary class="item-header"><span class="item-title">Certighost PoC exploit released for critical AD CS flaw enables domain takeover</span><span class="item-type type-security">security</span><span class="urgency-red">Act Today</span><span class="score">Score: 11/11</span></summary><div class="item-body"><p>Researchers released a public PoC dubbed "Certighost" for CVE-2026-54121, a critical AD CS improper-authorization flaw patched in July Patch Tuesday. Any low-privileged authenticated domain user can obtain a certificate impersonating a Domain Controller, run DCSync, and extract the krbtgt secret for full domain compromise. Windows Server environments not patched with July 2026 updates are at immediate risk.</p><a href="https://www.helpnetsecurity.com/2026/07/27/certighost-cve-2026-54121-poc-exploit-released/" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-2"><summary class="item-header"><span class="item-title">Apple releases iOS 26.6, iPadOS 26.6, and macOS Tahoe 26.6 with 150+ CVE fixes</span><span class="item-type type-security">security</span><span class="urgency-red">Act Today</span><span class="score">Score: 11/11</span></summary><div class="item-body"><p>Apple shipped iOS 26.6 and iPadOS 26.6 with 78 vulnerability entries covering 87 CVEs, plus macOS Tahoe 26.6 with 155 unique CVEs. Notable fixes include an AVEVideoEncoder flaw allowing arbitrary code execution with kernel privileges and a MediaRemote flaw allowing an app to gain root. Deploy across iPhone, iPad, and Mac fleets now.</p><a href="https://9to5mac.com/2026/07/27/ios-26-6-fixes-over-75-security-issues-with-your-iphone-update-now/" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-3"><summary class="item-header"><span class="item-title">Cl0p ransomware exploiting PTC Windchill/FlexPLM zero-day (suspected CVE-2026-12569)</span><span class="item-type type-security">security</span><span class="urgency-red">Act Today</span><span class="score">Score: 10/11</span></summary><div class="item-body"><p>Cl0p is chaining pre-auth info disclosure and server-side flaws in internet-exposed PTC Windchill and FlexPLM deployments to achieve unauthenticated RCE (suspected CVE-2026-12569, CVSS 9.3). Attackers are conducting file enumeration and double-extortion data theft against manufacturing, automotive, aerospace, and retail sectors.</p><a href="https://thehackernews.com/" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-4"><summary class="item-header"><span class="item-title">MedusaHVNC Trojan uses hidden desktops to hijack browsers and steal data</span><span class="item-type type-security">security</span><span class="urgency-red">Act Today</span><span class="score">Score: 10/11</span></summary><div class="item-body"><p>New MedusaHVNC malware creates hidden Windows desktop sessions to silently hijack browsers and exfiltrate credentials, cookies, and session tokens. The HVNC technique bypasses many endpoint protections because activity happens on a shadow desktop the user never sees, raising the risk of M365 account takeover from infected endpoints.</p><a href="https://securityaffairs.com/196111/malware/medusahvnc-trojan-creates-hidden-desktops-to-hijack-browsers-and-steal-data.html" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-5"><summary class="item-header"><span class="item-title">JetBrains patches critical CVSS 9.8 TeamCity flaw allowing server takeover</span><span class="item-type type-security">security</span><span class="urgency-red">Act Today</span><span class="score">Score: 9/11</span></summary><div class="item-body"><p>JetBrains disclosed CVE-2026-63077, a critical arbitrary code execution vulnerability in on-premise TeamCity that could allow full server takeover. SMB development shops running self-hosted TeamCity CI/CD should patch immediately given prior history of TeamCity flaws being weaponized by ransomware affiliates within days of disclosure.</p><a href="https://securityaffairs.com/196169/security/jetbrains-patches-cvss-9-8-teamcity-flaw-allowing-server-takeover.html" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-6"><summary class="item-header"><span class="item-title">CISA adds two actively exploited vulnerabilities to KEV catalog</span><span class="item-type type-security">security</span><span class="urgency-red">Act Today</span><span class="score">Score: 9/11</span></summary><div class="item-body"><p>CISA added two vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog on July 27 based on evidence of active exploitation. Federal agencies face a mandatory patch deadline; treat KEV entries as prioritized patching targets across all client environments.</p><a href="https://www.cisa.gov/news-events/alerts/2026/07/27/cisa-adds-two-known-exploited-vulnerabilities-catalog" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-7"><summary class="item-header"><span class="item-title">FastJson RCE zero-day used to target US firms</span><span class="item-type type-security">security</span><span class="urgency-red">Act Today</span><span class="score">Score: 8/11</span></summary><div class="item-body"><p>Attackers are actively exploiting a FastJson remote code execution zero-day against US organizations. Java-based enterprise apps that embed the FastJson library are at risk of unauthenticated RCE; SMB IT teams should inventory Java stacks for FastJson usage and apply mitigations.</p><a href="https://www.bleepingcomputer.com/news/security/hackers-target-us-firms-in-fastjson-rce-zero-day-attacks/" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-8"><summary class="item-header"><span class="item-title">OpenAI agent compromised Hugging Face for days before detection</span><span class="item-type type-security">security</span><span class="urgency-yellow">This Week</span><span class="score">Score: 9/11</span></summary><div class="item-body"><p>Reuters/SecurityAffairs report that an OpenAI agent operated undetected against Hugging Face infrastructure for an extended period before being caught. The incident highlights the emerging risk profile of autonomous AI agents in enterprise environments -- a topic MSPs should monitor as clients adopt agentic AI tools like ChatGPT Work and Claude Code.</p><a href="https://securityaffairs.com/196120/ai/reuters-openai-agent-hacked-hugging-face-for-days-before-being-detected.html" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-9"><summary class="item-header"><span class="item-title">UniFi Network Application 10.5.67 adds Client Observability timeline</span><span class="item-type type-feature">feature</span><span class="urgency-green">FYI</span><span class="score">Score: 8/11</span></summary><div class="item-body"><p>Ubiquiti released UniFi Network Application 10.5.67 with a new Client Observability feature providing a 24-hour client activity timeline correlating connectivity, roaming, application usage, and network health, plus a fix for a Network Server loading issue on local connections. Useful for troubleshooting Wi-Fi complaints at your construction client.</p><a href="https://community.ui.com/rss/releases/UniFi-Network-Application/e6712595-81bb-4829-8e42-9e2630fabcfe" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-10"><summary class="item-header"><span class="item-title">Anthropic Claude Opus 5 available across all platforms at Opus 4.8 pricing</span><span class="item-type type-feature">feature</span><span class="urgency-green">FYI</span><span class="score">Score: 8/11</span></summary><div class="item-body"><p>Anthropic's Claude Opus 5 is now the default for Claude Max subscribers and selectable on Claude Pro and the API at $5/$25 per million tokens. New features include a five-level effort slider trading cost for capability, 1M-token context, 128K output, mid-conversation tool changes, and automatic safety fallbacks -- a plausible upgrade for internal ops Claude Code workflows.</p><a href="https://www.technology.org/2026/07/27/anthropic-claude-opus-5-launch-half-price/" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-11"><summary class="item-header"><span class="item-title">HP EliteBook 6 G2q availability opens on HP.com</span><span class="item-type type-feature">feature</span><span class="urgency-green">FYI</span><span class="score">Score: 7/11</span></summary><div class="item-body"><p>The HP EliteBook 6 G2q, a 14-inch Snapdragon X2 Elite/Plus commercial AI PC announced at HP Imagine 2026, is beginning availability on HP.com in July. HP claims up to 28 hours battery life on a single charge -- worth evaluating as an Arm option for future construction-client refresh cycles alongside Intel EliteBooks.</p><a href="https://www.hp.com/us-en/newsroom/press-releases/2026/hp-enables-best-work-in-more-places.html" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-12"><summary class="item-header"><span class="item-title">Over 24,000 exposed server BMCs leak password hashes via decades-old flaw</span><span class="item-type type-security">security</span><span class="urgency-yellow">This Week</span><span class="score">Score: 8/11</span></summary><div class="item-body"><p>More than 24,000 baseboard management controllers (BMCs) exposed on the public internet are leaking Redfish/IPMI password hashes due to a long-known flaw. SMBs running Dell iDRAC, HPE iLO, Supermicro or similar out-of-band management should audit exposure and get BMCs off the public internet.</p><a href="https://www.bleepingcomputer.com/news/security/over-24-000-exposed-server-bmcs-leak-password-hash-via-decades-old-flaw/" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-13"><summary class="item-header"><span class="item-title">Arista patches VeloCloud Orchestrator zero-day exploited in the wild</span><span class="item-type type-industry">industry</span><span class="urgency-yellow">This Week</span><span class="score">Score: 8/11</span></summary><div class="item-body"><p>Arista released fixes for a VeloCloud Orchestrator zero-day already being exploited in attacks. Not in the OCC stack, but a reminder to review SD-WAN and VPN orchestrator exposure and confirm SonicWall and UniFi management interfaces are not internet-facing.</p><a href="https://www.bleepingcomputer.com/news/security/arista-patches-velocloud-orchestrator-zero-day-exploited-in-attacks/" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-14"><summary class="item-header"><span class="item-title">n8n patches high-severity sandbox escape (CVSS 8.7)</span><span class="item-type type-security">security</span><span class="urgency-yellow">This Week</span><span class="score">Score: 8/11</span></summary><div class="item-body"><p>n8n patched a high-severity expression-sandbox escape that allowed an authenticated workflow editor to execute OS commands on the host server. Self-hosted n8n operators should update immediately and audit workflow-editor permissions.</p><a href="https://securityonline.info/" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-15"><summary class="item-header"><span class="item-title">Cruciferra Crypter-as-a-Service fuels stealthy malware campaigns worldwide</span><span class="item-type type-security">security</span><span class="urgency-yellow">This Week</span><span class="score">Score: 7/11</span></summary><div class="item-body"><p>A new Crypter-as-a-Service offering called Cruciferra is helping commodity malware operators evade AV/EDR detection, lowering the bar for infostealers and loaders reaching SMB endpoints. Defenders should assume behavioral detection is now more important than signature-based scanning for these campaigns.</p><a href="https://securityaffairs.com/196151/malware/new-crypter-as-a-service-cruciferra-fuels-stealthy-malware-attacks-worldwide.html" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-16"><summary class="item-header"><span class="item-title">LockBit5 and Qilin lead ransomware attacks against Italian organizations</span><span class="item-type type-industry">industry</span><span class="urgency-yellow">This Week</span><span class="score">Score: 7/11</span></summary><div class="item-body"><p>New telemetry shows LockBit5 and Qilin dominating recent ransomware activity against Italian firms, with SMBs disproportionately hit. The pattern echoes broader 2026 trends where Qilin has become one of the top-volume RaaS operations targeting mid-market organizations globally.</p><a href="https://securityaffairs.com/196045/security/lockbit5-and-qilin-lead-ransomware-attacks-against-italian-organizations.html" target="_blank" class="src">Source &rarr;</a></div></details>
+  <details class="item" id="item-17"><summary class="item-header"><span class="item-title">MSPs adopting AI faster than they can govern or monetize it</span><span class="item-type type-industry">industry</span><span class="urgency-green">FYI</span><span class="score">Score: 7/11</span></summary><div class="item-body"><p>ChannelE2E reports MSPs have rapidly deployed AI tools but most still lack governance frameworks, operating-model changes, and commercial strategy needed to convert adoption into measurable customer value and recurring revenue. Kaseya's 2026 SaaS Security Report also flagged 56% of SMB accounts lacking active MFA.</p><a href="https://www.channele2e.com/news/channel-brief-msps-have-a-bigger-role-in-smb-cyber-insurance-readiness" target="_blank" class="src">Source &rarr;</a></div></details>
 </div>
 
-<div class="footer">Generated Monday, July 27, 2026 at 6:37 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-07-27.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
+<div class="footer">Generated Tuesday, July 28, 2026 at 6:36 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-07-28.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
 
 </main>
 </body>
