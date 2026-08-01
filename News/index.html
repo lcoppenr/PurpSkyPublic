@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<title>Morning Briefing -- Friday, July 31, 2026</title>
+<title>Morning Briefing -- Saturday, August 1, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -14,286 +14,164 @@
 <main class="briefing-content">
 
 <div class="page-header">
-  <h1>Morning Briefing -- Friday, July 31, 2026</h1>
+  <h1>Morning Briefing -- Saturday, August 1, 2026</h1>
   <p class="page-meta">Microsoft &bull; Security &amp; Compliance &bull; Firewall / VPN / Networking &bull; Servers/NAS &bull; Workstations &amp; Mobile &bull; Peripherals &amp; AV &bull; RMM &amp; Remote Access &bull; Construction &amp; Specialty Software &bull; General Tech &amp; AI &bull; Pacific Time</p>
 </div>
 
 <div class="section-actions">
   <h2>Today's Actions</h2>
-  <p class="section-transparency">Showing 3 of 9</p>
   <ol class="action-list">
-    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Push the Apple 26.6 updates (iOS 26.6, iPadOS 26.6, macOS Tahoe 26.6) to all iPhone, iPad, and Mac users this week -- the release closes about 200 CVEs including a wormable ImageIO code-execution bug (CVE-2026-43818) and a kernel-level AVEVideoEncoder flaw (CVE-2026-64747) that can be triggered just by previewing a crafted image. <a href="#item-1" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Warn all users that Chaos ransomware crews are impersonating IT support over Microsoft Teams calls to bait remote-access grants, and lock down external Teams federation in tenants where cross-org calls are not required. <a href="#item-2" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Push phishing-resistant MFA (FIDO2 / passkeys) and Conditional Access session controls to Microsoft 365 tenants -- a new Teams-themed phishing campaign hits the real login.microsoftonline.com pages, bypasses URL filters, and has already hijacked Outlook, SharePoint Online, and OneDrive at over 120 organizations. <a href="#item-3" class="detail-link">details</a></li>
+    <li style="color:#b0aea5;">Nothing urgent today.</li>
   </ol>
-  <details class="section-overflow"><summary>Show 6 more actions</summary><ol class="action-list" start="4">
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Patch UniFi Protect Application at your construction client immediately -- CVE-2026-55115 (CVSS 9.9) is a Server-Side Request Forgery that lets a low-privileged, network-adjacent attacker escalate privileges on the host device, and Ubiquiti shipped critical fixes across Connect, Talk, Access, and UniFi OS in the same round. <a href="#item-4" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> File the VMware VMSA-2026-0006 advisory (vCenter auth bypass CVE-2026-59309, syslog RCE CVE-2026-59310, VMXNET3 VM escape CVE-2026-47876) -- no monitored client runs VMware today, but keep it top-of-mind if a prospect inherits a vSphere stack. <a href="#item-5" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> Confirm no monitored environment runs Ruflo AI meta-harness -- CVE-2026-59726 (CVSS 10.0) allows unauthenticated RCE and full takeover of any Claude Code or Codex agent orchestrated through it. <a href="#item-6" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> File the Cisco Secure FMC hard-coded password advisory (CVE-2026-20316, CISA KEV, August 1 federal deadline) -- no monitored client runs Cisco firewall management, but this is a live-exploit story worth naming in security conversations. <a href="#item-7" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> File the JetBrains TeamCity critical RCE -- no monitored client hosts TeamCity today, but if a prospect surfaces a self-hosted CI/CD server this is the first patch to ask about. <a href="#item-8" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-yellow">This Week</span> Schedule SonicOS 7.3.2-7010 upgrades on your construction client's TZ firewalls this week -- SonicWall's Gen 6/7/8 advisory covers three CVEs including CVE-2026-0204 (CVSS 8.0) in the management interface, and the fleet currently sits on the affected 7.2 branch. <a href="#item-9" class="detail-link">details</a></li>
-  </ol></details>
 </div>
 
 <div class="section-new">
   <h2>What's New</h2>
+  <p class="section-transparency">Showing 3 of 4</p>
   <ul class="new-list">
-    <li><strong><a href="#item-10">Microsoft publishes "What's new in Microsoft Security: July 2026"</a></strong> -- Microsoft's monthly security roundup posted July 30 covers new Defender XDR capabilities, Security Copilot integrations across Intune, and Entra passkey defaults becoming GA. Defender for Office 365 Plan 1 and several Intune Suite features are now bundled into M365 E3/E5 at no added cost, with rollout completing August 1, 2026. <a href="https://www.microsoft.com/en-us/security/blog/2026/07/30/whats-new-in-microsoft-security-july-2026/" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-11">UniFi Protect 7.0.73 general release adds off-site archiving UI, AI Intelligence panel, and movement-path overlay</a></strong> -- Ubiquiti published UniFi Protect Application 7.0.73 introducing inline Off-Site Archiving configuration (including a changeable NAS shared drive), an Intelligence section consolidating AI-related settings, custom camera layouts on the Dashboard, version update/revert controls, storage I/O load warnings, and a movement-path overlay in playback for non-PTZ cameras. Requires UniFi OS 5.1.0 or later. <a href="https://community.ui.com/releases/UniFi-Protect-Application-7-0-73/128d7f05-7605-4cd2-8b28-659439be1418" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-12">OpenAI cuts GPT-5.6 Luna price 80% and Terra 20%, launches Fast mode in API</a></strong> -- OpenAI dropped GPT-5.6 Luna pricing by 80% and Terra by 20% effective July 30, and introduced a new Fast mode in the API that replaces Priority Processing. Meaningful cost reduction for IT teams using GPT-5.6 in automation, ticket triage, or documentation workflows. <a href="https://developers.openai.com/api/docs/changelog" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-1">What's new in Microsoft Intune -- July 2026 (Service Release 2607)</a></strong> -- Microsoft published July's Intune release recap. Highlights include support for multiple managed accounts in Outlook for iOS/iPadOS (v5.2626.0+), expanded Samsung firmware update controls, general availability of custom compliance settings for macOS, and a revamped single-pass sync that pulls policy, app, and script changes together for easier troubleshooting. <a href="https://techcommunity.microsoft.com/blog/microsoftintuneblog/what%E2%80%99s-new-in-microsoft-intune-%E2%80%93-july/4537392" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-2">What's New in Microsoft Entra -- July 2026</a></strong> -- Microsoft's monthly Entra roundup highlights an improved backup and restore experience for device-bound Authenticator passkeys on iOS starting August 2026. The update removes the requirement for a Microsoft personal account and automatically restores account names when setting up a new iOS device. <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/whats-new-in-microsoft-entra-july-2026/4534631" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-3">Ubiquiti releases UniFi Network Application 10.5.67 with Network Server fix and stability improvements</a></strong> -- Ubiquiti released UniFi Network Application 10.5.67 with a fix for a Network Server loading issue on local connections, expanded guidance for UniFi OS Server and native UniFi Network support across compatible OS consoles, and improvements to Network Lists UX, RADIUS Server validation, and application stability. The release also increases the EFG IDS/IPS VLAN limit from 25 to 64 and restores maximum download/upload speed indicators on the Dashboard. <a href="https://community.ui.com/releases/UniFi-Network-Application-10-5-67/375288b9-a4b4-46f1-a19d-5c787d342c2b" target="_blank">Source &rarr;</a></li>
   </ul>
+  <details class="section-overflow"><summary>Show 1 more update</summary><ul class="new-list"><li><strong><a href="#item-4">Ubiquiti releases UniFi Switch firmware 7.5.9 with PoE and stability fixes</a></strong> -- Ubiquiti released UniFi Switch firmware 7.5.9 with new safeguards, improved PoE startup behavior, Link Debounce for more stable switching, improved management reliability, SFP auto-negotiation, EEE power savings on select models, and fixes for VLAN, RADIUS, 802.1X, and aggregation issues. <a href="https://releasebot.io/updates/ubiquiti" target="_blank">Source &rarr;</a></li></ul></details>
 </div>
 
 <div class="section-security">
   <h2>Security &amp; Patches</h2>
-  <p class="section-transparency">Showing 3 of 7</p>
+  <p class="section-transparency">Showing 3 of 6</p>
   <div class="security-cards">
-    <div class="security-card"><a href="#item-13" class="security-headline">Anthropic reports Claude used to breach 3 orgs and push malware to PyPI in red-team tests</a><span class="urgency-yellow">This Week</span><span class="security-summary">Anthropic disclosed that during red-team security evaluations, its Claude model successfully breached three real organizations and uploaded malicious packages to PyPI.</span></div>
-    <div class="security-card"><a href="#item-14" class="security-headline">Amazon ties Debug and Chalk npm supply-chain attacks to North Korean actors</a><span class="urgency-yellow">This Week</span><span class="security-summary">Amazon's threat intelligence team attributed the recent Debug and Chalk npm package compromises to a North Korean cluster, elevating the incident from opportunistic crime to state-sponsored supply-chain intrusion.</span></div>
-    <div class="security-card"><a href="#item-15" class="security-headline">Brand impersonation emerging as a top initial-access vector</a><span class="urgency-yellow">This Week</span><span class="security-summary">Security Affairs highlights a shift where phishing crews impersonate Microsoft, DocuSign, and shipping brands not just for credential theft but as the initial-access step for ransomware deployment.</span></div>
+    <div class="security-card"><a href="#item-5" class="security-headline">Adobe patches CVSS 10.0 unauthenticated RCE in Campaign Classic (CVE-2026-48449)</a><span class="urgency-yellow">This Week</span><span class="security-summary">Adobe issued a patch for CVE-2026-48449, a maximum-severity incorrect-authorization flaw in Adobe Campaign Classic that allows unauthenticated remote code execution with no user interaction.</span></div>
+    <div class="security-card"><a href="#item-6" class="security-headline">CISA, FBI, and EPA warn of coordinated PLC attacks disrupting U.S. water utilities</a><span class="urgency-yellow">This Week</span><span class="security-summary">CISA issued sector-wide guidance after coordinated attacks against internet-facing PLCs at 30+ Minnesota water systems (one plant taken offline), with FBI/EPA reporting similar activity across at least seven states.</span></div>
+    <div class="security-card"><a href="#item-7" class="security-headline">Chinese threat actor pairs DeepSeek AI with Hermes Agent for autonomous server attacks</a><span class="urgency-yellow">This Week</span><span class="security-summary">A Chinese-speaking threat actor has been observed pairing DeepSeek's AI model with a custom Hermes Agent framework to autonomously discover, exploit, and pivot from vulnerable internet-facing servers.</span></div>
   </div>
-  <details class="section-overflow"><summary>Show 4 more security items</summary><div class="security-cards">
-    <div class="security-card"><a href="#item-16" class="security-headline">Cybercriminals leveraging autonomous AI offensive-security agents</a><span class="urgency-yellow">This Week</span><span class="security-summary">Security Affairs reports threat actors are chaining LLMs into fully autonomous offensive-security agents that enumerate, exploit, and pivot without operator input.</span></div>
-    <div class="security-card"><a href="#item-17" class="security-headline">ShinyHunters claims Brinks Home breach, threatens data leak</a><span class="urgency-green">FYI</span><span class="security-summary">The ShinyHunters extortion group claims to have exfiltrated data from Brinks Home Security and is threatening publication if a ransom is not paid.</span></div>
-    <div class="security-card"><a href="#item-18" class="security-headline">Google says AI helped Chrome fix 1,072 security bugs in two releases</a><span class="urgency-green">FYI</span><span class="security-summary">Google reported that AI-assisted fuzzing and code analysis contributed to fixing 1,072 security bugs across two recent Chrome releases.</span></div>
-    <div class="security-card"><a href="#item-19" class="security-headline">Practical LLM-driven code-level threat discovery guide published</a><span class="urgency-green">FYI</span><span class="security-summary">Security Affairs published a walkthrough of using LLMs for cheap code-level vulnerability discovery, with methodology security teams can adapt for internal code reviews.</span></div>
-  </div></details>
+  <details class="section-overflow"><summary>Show 3 more security items</summary><div class="security-cards"><div class="security-card"><a href="#item-8" class="security-headline">ESET H1 2026 threat report tracks surge in malicious AI skills, adaptable malware, and ClickFix</a><span class="urgency-yellow">This Week</span><span class="security-summary">ESET's H1 2026 threat report highlights a sharp rise in AI-assisted malware development, adaptable malware families, and continued growth of ClickFix social engineering attacks.</span></div><div class="security-card"><a href="#item-9" class="security-headline">Arch Linux disables AUR package adoption after malware flood</a><span class="urgency-yellow">This Week</span><span class="security-summary">Arch Linux temporarily disabled orphaned-package adoption in the Arch User Repository after a wave of attackers claimed abandoned packages and pushed malicious updates to downstream users.</span></div><div class="security-card"><a href="#item-10" class="security-headline">Amgen discloses third-party cloud breach exposing patient and proprietary data</a><span class="urgency-green">FYI</span><span class="security-summary">Amgen says a breach at an unnamed third-party cloud provider exposed patient health information and proprietary research data.</span></div></div></details>
 </div>
 
 <div class="section-details">
   <h2>Details</h2>
   <details class="item" id="item-1">
     <summary class="item-header">
-      <span class="item-title">Apple ships iOS 26.6, iPadOS 26.6, and macOS Tahoe 26.6 patching ~200 CVEs including wormable ImageIO flaw</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 11/11</span>
+      <span class="item-title">What's new in Microsoft Intune -- July 2026 (Service Release 2607)</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Apple released iOS 26.6, iPadOS 26.6, macOS Tahoe 26.6, Sequoia 15.7.8, Sonoma 14.8.8, and Safari 26.6 on July 27 fixing 210 unique CVEs. Notable: CVE-2026-43818 in ImageIO (arbitrary code execution from crafted images auto-parsed by Messages/previews) and CVE-2026-64747 in AVEVideoEncoder (kernel-level code execution). macOS Tahoe alone resolves 155 flaws including root-priv escalation, sandbox escape, and Gatekeeper bypass.</p>
-      <a href="https://www.thezdi.com/blog/2026/7/29/the-july-2026-apple-security-update-review" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft published July's Intune release recap. Highlights include support for multiple managed accounts in Outlook for iOS/iPadOS (v5.2626.0+), expanded Samsung firmware update controls, general availability of custom compliance settings for macOS, and a revamped single-pass sync that pulls policy, app, and script changes together for easier troubleshooting.</p>
+      <a href="https://techcommunity.microsoft.com/blog/microsoftintuneblog/what%E2%80%99s-new-in-microsoft-intune-%E2%80%93-july/4537392" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-2">
     <summary class="item-header">
-      <span class="item-title">Microsoft Teams vishing attacks deliver Chaos ransomware</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
+      <span class="item-title">What's New in Microsoft Entra -- July 2026</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Threat actors are impersonating IT support over Microsoft Teams voice calls to trick employees into granting remote access, then deploying Chaos ransomware on the network. The campaign targets SMB and mid-market users through external federated Teams calls, which are enabled by default in most tenants. Admins should restrict external Teams communication and enable "Do not allow anyone" for external federation where not needed.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/microsoft-teams-vishing-attacks-lead-to-chaos-ransomware-attacks/" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft's monthly Entra roundup highlights an improved backup and restore experience for device-bound Authenticator passkeys on iOS starting August 2026. The update removes the requirement for a Microsoft personal account and automatically restores account names when setting up a new iOS device.</p>
+      <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/whats-new-in-microsoft-entra-july-2026/4534631" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-3">
     <summary class="item-header">
-      <span class="item-title">Teams-themed phishing abuses legitimate Microsoft login pages to hit 120 orgs</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
+      <span class="item-title">Ubiquiti releases UniFi Network Application 10.5.67 with Network Server fix and stability improvements</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Check Point disclosed a campaign that impersonates Microsoft Teams notifications and abuses Microsoft's own authentication infrastructure (rather than fake login pages) to compromise Outlook, SharePoint Online, and OneDrive accounts. Roughly 120 organizations across manufacturing, legal, and healthcare have been hit since late June, and traditional URL-based email filters miss it because the login flow ends on real login.microsoftonline.com. Enforce phishing-resistant MFA (FIDO2/passkeys) and Conditional Access session controls.</p>
-      <a href="https://www.infosecurity-magazine.com/news/teams-phishing-abused-legit/" target="_blank" class="src">Source &rarr;</a>
+      <p>Ubiquiti released UniFi Network Application 10.5.67 with a fix for a Network Server loading issue on local connections, expanded guidance for UniFi OS Server and native UniFi Network support across compatible OS consoles, and improvements to Network Lists UX, RADIUS Server validation, and application stability. The release also increases the EFG IDS/IPS VLAN limit from 25 to 64 and restores maximum download/upload speed indicators on the Dashboard.</p>
+      <a href="https://community.ui.com/releases/UniFi-Network-Application-10-5-67/375288b9-a4b4-46f1-a19d-5c787d342c2b" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-4">
     <summary class="item-header">
-      <span class="item-title">Ubiquiti patches critical CVSS 9.9 SSRF in UniFi Protect plus flaws across Connect, Talk, Access, and OS</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
+      <span class="item-title">Ubiquiti releases UniFi Switch firmware 7.5.9 with PoE and stability fixes</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>Ubiquiti issued a coordinated round of critical patches across the UniFi product line. The headline flaw, CVE-2026-55115 (CVSS 9.9), is a Server-Side Request Forgery in UniFi Protect Application that lets a low-privileged, network-adjacent attacker escalate privileges on the host device. Additional critical fixes cover UniFi Connect, Talk, Access, and UniFi OS.</p>
-      <a href="https://thehackernews.com/2026/07/ubiquiti-patches-critical-unifi-flaws.html" target="_blank" class="src">Source &rarr;</a>
+      <p>Ubiquiti released UniFi Switch firmware 7.5.9 with new safeguards, improved PoE startup behavior, Link Debounce for more stable switching, improved management reliability, SFP auto-negotiation, EEE power savings on select models, and fixes for VLAN, RADIUS, 802.1X, and aggregation issues.</p>
+      <a href="https://releasebot.io/updates/ubiquiti" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-5">
     <summary class="item-header">
-      <span class="item-title">VMware/Broadcom VMSA-2026-0006 patches three critical flaws -- vCenter auth bypass, RCE, and ESXi VM escape</span>
+      <span class="item-title">Adobe patches CVSS 10.0 unauthenticated RCE in Campaign Classic (CVE-2026-48449)</span>
       <span class="item-type type-security">security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 9/11</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>Broadcom published VMSA-2026-0006 on July 29 patching five vulnerabilities. CVE-2026-59309 (CVSS 9.8) is an unauthenticated vCenter Directory Service auth bypass; CVE-2026-59310 (CVSS 9.8) is a Syslog directory traversal enabling unauthenticated RCE; CVE-2026-47876 is an out-of-bounds write in the VMXNET3 vNIC allowing a local-admin guest to escape to the ESX host. Broadcom explicitly says there are no workarounds for either critical vCenter vulnerability -- patch is the only remediation.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/vmware-fixes-three-critical-flaws-allowing-auth-bypass-vm-escapes/" target="_blank" class="src">Source &rarr;</a>
+      <p>Adobe issued a patch for CVE-2026-48449, a maximum-severity incorrect-authorization flaw in Adobe Campaign Classic that allows unauthenticated remote code execution with no user interaction. Fixed in ACC v7 build 7.4.3 (build 9398) for Windows and Linux. Adobe reports no in-the-wild exploitation observed but says exposed instances should be patched immediately.</p>
+      <a href="https://securityaffairs.com/196429/security/adobe-fixed-a-maximum-severity-vulnerability-flaw-in-campaign-classic.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-6">
     <summary class="item-header">
-      <span class="item-title">Critical CVE-2026-59726 (CVSS 10.0) in Ruflo AI agent meta-harness enables unauthenticated RCE</span>
+      <span class="item-title">CISA, FBI, and EPA warn of coordinated PLC attacks disrupting U.S. water utilities</span>
       <span class="item-type type-security">security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 9/11</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>Researchers disclosed a maximum-severity unauthenticated RCE in Ruflo, an open-source meta-harness used with Anthropic Claude Code and OpenAI Codex. Exploitation gives attackers control of AI automation workflows and memory, creating supply-chain risk for teams running AI coding agents; audit for any Ruflo MCP instances and take offline until patched.</p>
-      <a href="https://techmaniacs.com/2026/07/30/ai-security-daily-briefing-july-30-2026/" target="_blank" class="src">Source &rarr;</a>
+      <p>CISA issued sector-wide guidance after coordinated attacks against internet-facing PLCs at 30+ Minnesota water systems (one plant taken offline), with FBI/EPA reporting similar activity across at least seven states. Recommendations include logging cellular modem connections, restricting controller access to authorized systems, and inspecting running project files for unauthorized changes.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/cisa-warns-of-cyberattacks-disrupting-us-water-utilities/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-7">
     <summary class="item-header">
-      <span class="item-title">CISA adds actively-exploited Cisco Secure FMC hard-coded credential flaw (CVE-2026-20316) to KEV -- Aug 1 federal deadline</span>
+      <span class="item-title">Chinese threat actor pairs DeepSeek AI with Hermes Agent for autonomous server attacks</span>
       <span class="item-type type-security">security</span>
-      <span class="urgency-red">Act Today</span>
+      <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>CISA added CVE-2026-20316 to its Known Exploited Vulnerabilities catalog on July 29 after Cisco confirmed active exploitation. The flaw is a hard-coded password (CWE-259) in Cisco Secure Firewall Management Center Software allowing an unauthenticated remote attacker to log in with a low-privilege account and potentially chain with other FMC bugs to escalate. CVSS is 5.3 but Cisco rates it high severity; federal remediation deadline is August 1, 2026.</p>
-      <a href="https://securityaffairs.com/196289/security/u-s-cisa-adds-a-cisco-secure-firewall-management-center-fmc-flaw-to-its-known-exploited-vulnerabilities-catalog.html" target="_blank" class="src">Source &rarr;</a>
+      <p>A Chinese-speaking threat actor has been observed pairing DeepSeek's AI model with a custom Hermes Agent framework to autonomously discover, exploit, and pivot from vulnerable internet-facing servers. The attack chain demonstrates a working end-to-end autonomous offensive AI workflow rather than the theoretical scenarios prior reports described.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/hacker-uses-deepseek-ai-to-autonomously-attack-vulnerable-servers/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-8">
     <summary class="item-header">
-      <span class="item-title">JetBrains warns of critical TeamCity remote code execution flaw</span>
+      <span class="item-title">ESET H1 2026 threat report tracks surge in malicious AI skills, adaptable malware, and ClickFix</span>
       <span class="item-type type-security">security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 8/11</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>JetBrains disclosed a critical remote code execution vulnerability in TeamCity CI/CD server and urged customers to patch immediately. SMB dev shops and MSPs hosting internal build servers should apply the fix and audit exposure of TeamCity instances to the internet.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/jetbrains-warns-of-critical-teamcity-remote-code-execution-flaw/" target="_blank" class="src">Source &rarr;</a>
+      <p>ESET's H1 2026 threat report highlights a sharp rise in AI-assisted malware development, adaptable malware families, and continued growth of ClickFix social engineering attacks. Ransomware operators are increasingly using generative AI to automate lure creation and code obfuscation, raising the baseline threat level for SMB endpoints.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/eset-tracks-rise-in-malicious-ai-skills-and-adaptable-malware/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-9">
     <summary class="item-header">
-      <span class="item-title">SonicWall issues Gen 6/7/8 firewall advisory including high-severity CVE-2026-0204 in SonicOS management interface</span>
+      <span class="item-title">Arch Linux disables AUR package adoption after malware flood</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>SonicWall published a security advisory covering three CVEs affecting Gen 6, Gen 7, and Gen 8 firewall platforms -- one High and two Medium. CVE-2026-0204 (CVSS 8.0) is an improper-access-control flaw that may expose management interface functions under specific conditions. For Gen 7 Series TZ firewalls, affected versions are SonicOS 7.0.1-5169 and prior and 7.3.1-7013 and prior; the fix is 7.3.2-7010. Deployed 7.2 fleet is in scope.</p>
-      <a href="https://www.sonicwall.com/support/notices/security-advisory-firmware-update-required-gen-6-gen-7-and-gen-8-firewalls/kA1VN000001F03x0AC" target="_blank" class="src">Source &rarr;</a>
+      <p>Arch Linux temporarily disabled orphaned-package adoption in the Arch User Repository after a wave of attackers claimed abandoned packages and pushed malicious updates to downstream users. The incident is another data point on how community repositories can become supply-chain vectors for Linux workstations and servers.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/arch-linux-disables-aur-package-adoption-to-stop-malware-flood/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-10">
     <summary class="item-header">
-      <span class="item-title">Microsoft publishes "What's new in Microsoft Security: July 2026"</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Microsoft's monthly security roundup posted July 30 covers new Defender XDR capabilities, Security Copilot integrations across Intune, and Entra passkey defaults becoming GA. Notable for SMB admins: Defender for Office 365 Plan 1 and several Intune Suite features are now bundled into M365 E3/E5 at no added cost, with rollout completing August 1, 2026.</p>
-      <a href="https://www.microsoft.com/en-us/security/blog/2026/07/30/whats-new-in-microsoft-security-july-2026/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-11">
-    <summary class="item-header">
-      <span class="item-title">UniFi Protect 7.0.73 general release adds off-site archiving UI, AI Intelligence panel, and movement-path overlay</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Ubiquiti published UniFi Protect Application 7.0.73 introducing inline Off-Site Archiving configuration (including a changeable NAS shared drive), an Intelligence section consolidating AI-related settings, custom camera layouts on the Dashboard, version update/revert controls, storage I/O load warnings, and a movement-path overlay in playback for non-PTZ cameras. Requires UniFi OS 5.1.0 or later.</p>
-      <a href="https://community.ui.com/releases/UniFi-Protect-Application-7-0-73/128d7f05-7605-4cd2-8b28-659439be1418" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-12">
-    <summary class="item-header">
-      <span class="item-title">OpenAI cuts GPT-5.6 Luna price 80% and Terra 20%, launches Fast mode in API</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>OpenAI dropped GPT-5.6 Luna pricing by 80% and Terra by 20% effective July 30, and introduced a new Fast mode in the API that replaces Priority Processing. Meaningful cost reduction for IT teams using GPT-5.6 in automation, ticket triage, or documentation workflows.</p>
-      <a href="https://developers.openai.com/api/docs/changelog" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-13">
-    <summary class="item-header">
-      <span class="item-title">Anthropic reports Claude used to breach 3 orgs and push malware to PyPI in red-team tests</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Anthropic disclosed that during red-team security evaluations, its Claude model successfully breached three real organizations and uploaded malicious packages to PyPI. The incident highlights growing concerns about autonomous AI agents used offensively, and adds pressure on IT teams to monitor for AI-generated supply-chain attacks.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/anthropics-claude-breached-3-orgs-uploaded-pypi-malware-during-tests/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-14">
-    <summary class="item-header">
-      <span class="item-title">Amazon ties Debug and Chalk npm supply-chain attacks to North Korean actors</span>
+      <span class="item-title">Amgen discloses third-party cloud breach exposing patient and proprietary data</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Amazon's threat intelligence team attributed the recent Debug and Chalk npm package compromises to a North Korean cluster, elevating the incident from opportunistic crime to state-sponsored supply-chain intrusion. The malicious versions harvested developer credentials and cloud tokens. Any Windows/M365 shop with in-house dev or build pipelines should audit lockfiles from the affected window and rotate NPM/CI secrets.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/amazon-links-debug-chalk-npm-supply-chain-attacks-to-north-korean-hackers/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-15">
-    <summary class="item-header">
-      <span class="item-title">Brand impersonation emerging as a top initial-access vector</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Security Affairs highlights a shift where phishing crews impersonate Microsoft, DocuSign, and shipping brands not just for credential theft but as the initial-access step for ransomware deployment. Look-alike domains and legitimate-sender abuse (SendGrid, Mailchimp) are bypassing SPF/DKIM checks. Recommend enabling DMARC quarantine/reject and Microsoft Defender for Office 365 impersonation protection with priority-account tagging.</p>
-      <a href="https://securityaffairs.com/196359/hacking/why-brand-impersonation-is-becoming-an-initial-access-vector.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-16">
-    <summary class="item-header">
-      <span class="item-title">Cybercriminals leveraging autonomous AI offensive-security agents</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>SecurityAffairs reports that threat actors are increasingly using autonomous AI agents to run offensive security operations, chaining recon, exploitation, and lateral movement without human input. SMB defenders should assume attacker tempo has increased and prioritize patch velocity and EDR tuning accordingly.</p>
-      <a href="https://securityaffairs.com/196331/ai/cybercriminals-are-leveraging-autonomous-ai-offensive-security-agents.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-17">
-    <summary class="item-header">
-      <span class="item-title">ShinyHunters claims Brinks Home breach, threatens to leak stolen data</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-green">FYI</span>
       <span class="score">Score: 6/11</span>
     </summary>
     <div class="item-body">
-      <p>The ShinyHunters extortion group claims to have exfiltrated data from Brinks Home Security and is threatening publication if a ransom is not paid. No customer-facing IOCs yet, but the group's recent pattern (Snowflake, Salesforce customer instances) means downstream SMBs using Brinks-linked identity or integration accounts should monitor for anomalous logins.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/shinyhunters-claims-brinks-home-breach-threatens-to-leak-stolen-data/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-18">
-    <summary class="item-header">
-      <span class="item-title">Google says AI helped Chrome fix 1,072 security bugs in two releases</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 6/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Google reported that AI-assisted fuzzing and code analysis contributed to fixing 1,072 security bugs across two recent Chrome releases. Signals continued maturation of AI-in-the-loop vulnerability discovery, relevant context for IT pros evaluating similar tooling.</p>
-      <a href="https://www.bleepingcomputer.com/news/google/google-says-ai-helped-chrome-fix-1-072-security-bugs-in-two-releases/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-19">
-    <summary class="item-header">
-      <span class="item-title">Practical LLM-driven code-level threat discovery guide published</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 6/11</span>
-    </summary>
-    <div class="item-body">
-      <p>SecurityAffairs published a practical walkthrough of using LLMs for cheap code-level vulnerability discovery, with methodology IT and security teams can adapt for internal code reviews. FYI-level reading for anyone piloting AI-assisted appsec workflows.</p>
-      <a href="https://securityaffairs.com/196395/ai/what-an-llm-can-find-a-practical-cheap-path-to-code-level-threat-discovery.html" target="_blank" class="src">Source &rarr;</a>
+      <p>Amgen says a breach at an unnamed third-party cloud provider exposed patient health information and proprietary research data. The disclosure is a reminder for SMBs to review vendor risk management and data-sharing agreements with cloud service providers holding regulated data.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/amgen-says-cloud-data-breach-exposed-patient-health-proprietary-info/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 </div>
 
-<div class="footer">Generated Friday, July 31, 2026 at 6:40 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-07-31.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
+<div class="footer">Generated Saturday, August 1, 2026 at 6:45 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-08-01.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
 
 </main>
 </body>
