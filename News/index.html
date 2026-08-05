@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<title>Morning Briefing -- Tuesday, August 4, 2026</title>
+<title>Morning Briefing -- Wednesday, August 5, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -14,260 +14,207 @@
 <main class="briefing-content">
 
 <div class="page-header">
-  <h1>Morning Briefing -- Tuesday, August 4, 2026</h1>
+  <h1>Morning Briefing -- Wednesday, August 5, 2026</h1>
   <p class="page-meta">Microsoft &bull; Security &amp; Compliance &bull; Firewall / VPN / Networking &bull; Servers/NAS &bull; Workstations &amp; Mobile &bull; Peripherals &amp; AV &bull; RMM &amp; Remote Access &bull; Construction &amp; Specialty Software &bull; General Tech &amp; AI &bull; Pacific Time</p>
 </div>
 
 <div class="section-actions">
   <h2>Today's Actions</h2>
-  <p class="section-transparency">Showing 3 of 7</p>
+  <p class="section-transparency">Showing 3 of 4</p>
   <ol class="action-list">
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Verify SonicWall TZ firmware and rotate SSL VPN passwords -- INC ransomware is actively exploiting CVE-2024-40766 against Gen 7 firewalls, especially post Gen 6 migrations. <a href="#item-1" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Warn traveling staff off hotel Wi-Fi for M365 sign-ins -- Microsoft says APT29 (Midnight Blizzard) is deploying custom malware over hospitality networks to steal Microsoft 365 credentials. <a href="#item-2" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Watch RMM tooling: N-able N-central auth bypass (CVE-2026-18577) is under active exploitation with FCEB Aug 6 patch deadline -- confirm Atera admin MFA and endpoint segmentation as a precaution. <a href="#item-3" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Watch tomorrow's Aug 6 FCEB deadline for N-able N-central CVE-2026-18577 as the operational RMM benchmark -- Atera isn't affected, but 55.6% of exposed N-central instances remain unpatched. <a href="#item-1" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Watch for the SMOKE#SCREEN pattern that plants signed ConnectWise ScreenConnect MSIs via fake Zoom/Adobe update lures and Cloudflare tunnels -- alert on Defender being disabled, C:\ exclusions added, or MSIs launched from %TEMP%/AppData. <a href="#item-2" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Track INC Ransomware's escalating SonicWall SMA 1000 campaign -- attackers are now phoning victims to pressure payment; TZ-series clients are unaffected, but confirm no SMA gear is deployed and management interfaces stay off the public internet. <a href="#item-3" class="detail-link">details</a></li>
   </ol>
-  <details class="section-overflow"><summary>Show 4 more actions</summary><ol class="action-list" start="4">
-    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> CISA lists CVE-2026-18577 in KEV -- treat as the operational benchmark to check MSP-adjacent RMM hygiene this week. <a href="#item-4" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Note the attack pattern -- N-central attackers pivot into managed endpoints via the built-in Take Control remote-support feature. <a href="#item-5" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Patch or coordinate hosting-provider updates for any cPanel-managed websites -- CVE-2026-58048 (CVSS 9.4) grants full DB admin access on all supported cPanel versions. <a href="#item-6" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Awareness only: INC Ransomware has claimed 885 victims exploiting SonicWall SMA 1000 CVEs -- SMA appliances are not in your client stack, but SMB peers are being hit. <a href="#item-7" class="detail-link">details</a></li>
-  </ol></details>
+  <details class="section-overflow"><summary>Show 1 more action</summary><ol class="action-list" start="4"><li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-yellow">This Week</span> Warn users about a new RingCentral-voicemail phishing lure from the Greatness platform that uses adversary-in-the-middle to bypass standard MFA on Microsoft 365 sign-ins. <a href="#item-4" class="detail-link">details</a></li></ol></details>
 </div>
 
 <div class="section-new">
   <h2>What's New</h2>
-  <p class="section-transparency">Showing 3 of 7</p>
+  <p class="section-transparency">Showing 3 of 4</p>
   <ul class="new-list">
-    <li><strong><a href="#item-8">Intune Suite and Defender for Office 365 Plan 1 fold into baseline M365 licensing</a></strong> -- As of August 1, 2026, Microsoft has completed rolling Intune Suite (formerly $10/user/month) into M365 E5 at no additional charge, with a subset also extended to M365 E3 and EMS E3. Defender for Office 365 Plan 1, Intune Remote Help, and Cloud PKI have also moved to baseline. SMB admins should review current add-on line items and rightsize renewals. <a href="https://www.microsoft.com/en-us/licensing/news/2026-m365-packaging-pricing-updates" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-9">Entra ID adds Purview sensitivity labels for cloud security groups (public preview)</a></strong> -- Microsoft Entra ID now supports applying Microsoft Purview sensitivity labels to Entra cloud security groups in public preview, letting admins govern settings like guest access with the same labels used for Microsoft 365 groups. Companion August release: improved iCloud Keychain-based backup and restore for Microsoft Authenticator on iOS covering passkeys and third-party TOTP accounts. <a href="https://learn.microsoft.com/en-us/entra/fundamentals/whats-new" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-10">Intune wave adds Shadow AI detection, Strict Tunnel Mode, Purview DLP for MAM</a></strong> -- The August 2026 Intune wave introduces Shadow AI detection and blocking via the properties catalog, device query, and a new public-preview security baseline; Strict Tunnel Mode for Microsoft Tunnel on Android; a Block Bluetooth sharing setting in the Android Enterprise catalog; and integrated Microsoft Purview DLP for MAM-protected mobile apps. The Vulnerability Remediation Agent now uses Microsoft Entra agentic identity. <a href="https://learn.microsoft.com/en-us/entra/fundamentals/whats-new" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-5">Microsoft Intune drops Ubuntu 22.04 LTS support this month; adds Ubuntu 26.04 LTS</a></strong> -- Microsoft Intune ends support for Ubuntu 22.04 LTS in August 2026 and adds enrollment and compliance support for Ubuntu 26.04 LTS. Admins managing any Linux endpoints in Intune should inventory 22.04 devices and plan in-place upgrades before enrollment breaks. <a href="https://learn.microsoft.com/en-us/intune/whats-new/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-6">Teams Copilot gains real-time analysis of shared meeting content</a></strong> -- Copilot in Microsoft Teams meetings is rolling out in August 2026 with the ability to analyze content shared during a meeting in real time -- documents, slides, and spreadsheets on screen share -- to answer participant questions on the fly. Requires Microsoft 365 Copilot licensing. <a href="https://www.utwente.nl/en/service-portal/workplace-support/phone-services-incl.-teams/microsoft-teams/new-features-in-teams-and-microsoft-365-monthly-updates" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-7">UniFi OS 5.1.27 released with bundled UniFi Network 10.4.57</a></strong> -- Ubiquiti released UniFi OS 5.1.27 bundled with UniFi Network 10.4.57, focused on device stability and expanded app availability for UCK-G2-Plus, UCK-G2, and UCK-Enterprise consoles. Rollout is staged so not all sites will see it immediately; light/dark theme now syncs with the user account across UI apps. <a href="https://ui.com/whats-new" target="_blank">Source &rarr;</a></li>
   </ul>
-  <details class="section-overflow"><summary>Show 4 more updates</summary><ul class="new-list">
-    <li><strong><a href="#item-11">UniFi Network Application update improves Blueprint, WiFi Orchestration, and multi-site admin</a></strong> -- The latest UniFi Network Application release adds a confirmation dialog when adding sites to a Blueprint, Pause/Resume for WiFi Orchestration, aligned Orchestration/Network Application settings, better overlapping-subnet handling in SD-WAN, faster People-page loads on large multi-site deployments, and a fix for the 'Unknown Permission' error on multi-site role assignment. Requires UniFi OS 5.0 or newer. <a href="https://ui.com/download/releases/firmware" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-12">Microsoft Teams adds 'Report a concern' button and external bot detection in August 2026</a></strong> -- Teams is rolling out a 'Report a concern' button letting meeting participants flag suspicious behavior, phishing, impersonation, and AI-deepfake meetings to admins via Microsoft Defender and the Teams admin experiences. A companion feature detects external meeting bots and hands organizers new controls over them. Full availability expected in August 2026. <a href="https://www.windowslatest.com/2026/08/04/microsoft-teams-is-fighting-ai-deepfake-meetings-with-a-new-report-button-rolling-out-august-2026/" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-13">Windows 11 August 2026 preview update KB5101684 lands with security and Copilot+ changes</a></strong> -- Microsoft released the KB5101684 preview for Windows 11 (build 26200.8973) ahead of the August 11 Patch Tuesday. Highlights: option to remove Image Generation AI on Copilot+ PCs, Windows Hello ESS support for external plug-in fingerprint readers, and File Explorer showing sizes in KB/MB/GB. Note Windows 11 24H2 Home/Pro reaches end of updates October 13, 2026. <a href="https://pureinfotech.com/kb5101684-windows-11-august-2026-update/" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-14">Alibaba releases Qwen3.8 Max amid record 2026 model release pace</a></strong> -- Alibaba released Qwen3.8 Max on August 2, 2026, part of an unprecedented pace of frontier-model releases (337+ tracked this year to date). For SMB IT, the trend matters more than any single model -- reasoning models, multimodal defaults, and GPT-4-class performance at falling API prices continue to reshape which AI tools are viable for internal ops. <a href="https://llm-stats.com/llm-updates" target="_blank">Source &rarr;</a></li>
-  </ul></details>
+  <details class="section-overflow"><summary>Show 1 more update</summary><ul class="new-list"><li><strong><a href="#item-8">Claude Code adds VSCode Focus view and tightened sandbox/MCP permissions</a></strong> -- Anthropic shipped a Claude Code update introducing a VSCode Focus view (Ctrl+Alt+F) that collapses tool activity into per-turn summaries, plus stronger sandbox credential masking and improved plugin/MCP permission handling. Auto mode, stats, Windows startup, background sessions, and browser tab cleanup also got fixes. <a href="https://releasebot.io/updates/anthropic/claude-code" target="_blank">Source &rarr;</a></li></ul></details>
 </div>
 
 <div class="section-security">
   <h2>Security &amp; Patches</h2>
+  <p class="section-transparency">Showing 3 of 5</p>
   <div class="security-cards">
-    <div class="security-card"><a href="#item-15" class="security-headline">CMMC Phase 2 suspended; DoD RFI comment window closes August 14, 2026</a><span class="urgency-yellow">This Week</span><span class="security-summary">The DoD's suspension of CMMC Phase 2 (C3PAO certification, previously set for November 10, 2026) remains in effect while a Reform Task Force reviews the program.</span></div>
-    <div class="security-card"><a href="#item-16" class="security-headline">Pass-ta-key attacks let Windows malware hijack Google-synced passkeys</a><span class="urgency-yellow">This Week</span><span class="security-summary">Researchers disclosed three attacks that let malware on Windows abuse Google Password Manager's synced passkeys and extract private keys.</span></div>
-    <div class="security-card"><a href="#item-17" class="security-headline">DOUBLECUP ClickFix loader-as-a-service hides malware in browser cache PNGs</a><span class="urgency-yellow">This Week</span><span class="security-summary">A Russian loader-as-a-service called DOUBLECUP uses ClickFix social-engineering attacks to conceal malicious code in cached PNG images, delivering CountLoader and DeviceManager RAT.</span></div>
+    <div class="security-card"><a href="#item-9" class="security-headline">CMMC Reform Task Force public RFI closes August 14, 2026</a><span class="urgency-yellow">This Week</span><span class="security-summary">Following the July 13 suspension of CMMC Phase 2, the new CMMC Reform Task Force reporting to the DoD CIO is collecting industry input via a public RFI due August 14, 2026, and will report back within 60 days.</span></div>
+    <div class="security-card"><a href="#item-10" class="security-headline">ChainDrop npm supply-chain attack infects hundreds of packages</a><span class="urgency-yellow">This Week</span><span class="security-summary">A large-scale supply-chain attack dubbed ChainDrop has compromised over 1,300 npm packages with a combined 2 billion monthly downloads, delivering self-propagating malicious payloads to downstream Node.js apps and build pipelines.</span></div>
+    <div class="security-card"><a href="#item-11" class="security-headline">TP-Link Omada ZTP flaws chain to full network takeover; 15 vulns disclosed</a><span class="urgency-yellow">This Week</span><span class="security-summary">Forescout disclosed 15 vulnerabilities in TP-Link Omada's zero-touch provisioning framework -- 11 received CVEs and combine with prior flaws to enable network infiltration via controllers, gateways, switches, APs, and OLTs.</span></div>
   </div>
+  <details class="section-overflow"><summary>Show 2 more security items</summary><div class="security-cards">
+    <div class="security-card"><a href="#item-12" class="security-headline">77 malicious Open VSX extensions caught harvesting developer credentials</a><span class="urgency-yellow">This Week</span><span class="security-summary">Researchers reported 77 extensions on the Open VSX registry (used by VS Code forks like Cursor, Windsurf, and VSCodium) exfiltrating developer credentials, environment variables, and machine info.</span></div>
+    <div class="security-card"><a href="#item-13" class="security-headline">New XCSSET macOS variant spreads through compromised Xcode projects</a><span class="urgency-yellow">This Week</span><span class="security-summary">A new XCSSET variant targets macOS developers by piggybacking on shared Xcode projects, expanding its data-theft and browser-stealer capabilities.</span></div>
+  </div></details>
 </div>
 
 <div class="section-details">
   <h2>Details</h2>
   <details class="item" id="item-1">
     <summary class="item-header">
-      <span class="item-title">SonicWall SSL VPN INC ransomware campaign traced to CVE-2024-40766</span>
+      <span class="item-title">N-able N-central auth bypass (CVE-2026-18577) -- FCEB patch deadline tomorrow, Aug 6</span>
       <span class="item-type type-security">Security</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>SonicWall says with high confidence that the current wave of ransomware incidents targeting Gen 7 firewalls with SSL VPN enabled is not a zero-day but exploitation of CVE-2024-40766. Huntress and other responders continue to see MFA bypass and ransomware deployment against unpatched or improperly migrated devices. Verify patch status on TZ series and rotate all local user passwords after any Gen 6 to Gen 7 migration.</p>
-      <a href="https://www.huntress.com/blog/exploitation-of-sonicwall-vpn" target="_blank" class="src">Source &rarr;</a>
+      <p>CISA added CVE-2026-18577 (CVSS 8.2), an incomplete-patch authentication bypass in N-able N-central, to the KEV catalog after confirmed exploitation in the wild. Successful attacks give remote admin access to the RMM server, then leverage the built-in Take Control feature to pivot into managed endpoints. Fixed in version 2026.3 HF1; FCEB agencies and any MSP using N-central must remediate by August 6, 2026. Reports indicate 55.6% of reachable cloud instances remain unpatched.</p>
+      <a href="https://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-2">
     <summary class="item-header">
-      <span class="item-title">APT29 (Midnight Blizzard) uses custom malware on hotel Wi-Fi to breach M365 accounts</span>
+      <span class="item-title">SMOKE#SCREEN campaign weaponizes ConnectWise ScreenConnect for persistent remote control</span>
       <span class="item-type type-security">Security</span>
       <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft has attributed a global campaign targeting hospitality Wi-Fi networks to Russian threat actor Midnight Blizzard (APT29). The group deploys custom malware to compromise Microsoft 365 user accounts of guests connecting through hotel networks -- a direct risk for traveling SMB staff. Advise traveling users to avoid hotel Wi-Fi for M365 sign-ins or enforce VPN plus conditional access.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/hotel-wi-fi-attacks-use-custom-malware-to-breach-microsoft-365-accounts/" target="_blank" class="src">Source &rarr;</a>
+      <p>Securonix and Security Affairs detailed a multi-wave campaign using fake Zoom/Adobe update lures, VBScript droppers, and Cloudflare tunnels to silently install signed ConnectWise ScreenConnect MSI agents, giving attackers persistent legitimate-looking remote access. All MSIs carry valid Authenticode certs, so many EDRs give them reduced scrutiny. Defenders should alert on processes stopping WinDefend, adding C:\ as a Defender exclusion, or installing MSIs from %TEMP%/AppData; the staging server observed is 207.174.0.143:8080.</p>
+      <a href="https://www.securonix.com/blog/smoke-screen-screenconnect-rmm-abuse-cloudflare-tunnels/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-3">
     <summary class="item-header">
-      <span class="item-title">N-able warns of actively exploited N-central auth bypass (CVE-2026-18577)</span>
+      <span class="item-title">INC ransomware exploits SonicWall SMA 1000 and calls victims to pressure payment</span>
       <span class="item-type type-security">Security</span>
       <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 9/11</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>N-able is alerting customers that attackers are actively exploiting an authentication bypass in N-central RMM servers (CVE-2026-18577, CVSS 8.2), an incomplete patch for CVE-2026-18556 that allows account takeover. Fixed in version 2026.3 HF1. Not Atera, but industry-adjacent -- SMBs care about active RMM exploitation trends.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/n-able-warns-of-n-central-auth-bypass-flaw-exploited-in-attacks/" target="_blank" class="src">Source &rarr;</a>
+      <p>INC ransomware is actively exploiting CVE-2026-15409 and CVE-2026-15410 on SonicWall SMA 1000 appliances, adding phone-call pressure tactics against victims -- a new development beyond the 885-victim claim reported earlier this week. TZ-series admins should verify their SMA exposure, ensure SSL-VPN patches are current, and restrict management interfaces.</p>
+      <a href="https://securityaffairs.com/196607/malware/inc-ransomware-is-calling-victims-pressure-tactics-post-sonicwall-zero-day-exploit.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-4">
     <summary class="item-header">
-      <span class="item-title">CISA adds N-able N-central flaw to KEV; FCEB deadline Aug 6</span>
+      <span class="item-title">Greatness phishing-as-a-service spoofs RingCentral to harvest Microsoft 365 credentials</span>
       <span class="item-type type-security">Security</span>
-      <span class="urgency-red">Act Today</span>
+      <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>CISA added CVE-2026-18577 to the Known Exploited Vulnerabilities catalog after Huntress reported active exploitation across multiple organizations, including attackers pivoting from N-central into managed endpoints via the Take Control feature. FCEB agencies must patch by August 6, 2026 -- a useful deadline benchmark for MSPs to align internal patch cadence.</p>
-      <a href="https://securityaffairs.com/196585/security/u-s-cisa-adds-a-n-able-n-central-flaw-to-its-known-exploited-vulnerabilities-catalog.html" target="_blank" class="src">Source &rarr;</a>
+      <p>The Greatness phishing platform has expanded to include adversary-in-the-middle (AiTM) and device-code phishing tactics, now impersonating RingCentral voicemail notifications to steal M365 credentials and session tokens. The AiTM component bypasses standard MFA. SMB tenants should verify Conditional Access enforces phishing-resistant MFA and blocks unmanaged device sign-ins.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/phishing-service-spoofs-ringcentral-to-steal-microsoft-365-accounts/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-5">
     <summary class="item-header">
-      <span class="item-title">Attackers pivot from N-central into managed endpoints via Take Control abuse</span>
-      <span class="item-type type-security">Security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 9/11</span>
+      <span class="item-title">Microsoft Intune drops Ubuntu 22.04 LTS support this month; adds Ubuntu 26.04 LTS</span>
+      <span class="item-type type-feature">Feature</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>Help Net Security details how attackers exploiting CVE-2026-18577 gain administrative access to N-central and then abuse the built-in Take Control remote support feature to reach downstream managed endpoints, deploying persistence and moving laterally to domain controllers. A cautionary case study for anyone operating an RMM with remote-control capability.</p>
-      <a href="https://www.helpnetsecurity.com/2026/08/03/cve-2026-18577-n-able-n-central-vulnerability/" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft Intune ends support for Ubuntu 22.04 LTS in August 2026 and adds enrollment and compliance support for Ubuntu 26.04 LTS. Admins managing any Linux endpoints in Intune should inventory 22.04 devices and plan in-place upgrades before enrollment breaks.</p>
+      <a href="https://learn.microsoft.com/en-us/intune/whats-new/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-6">
     <summary class="item-header">
-      <span class="item-title">cPanel CVE-2026-58048 (CVSS 9.4) exposes full database administrator access</span>
-      <span class="item-type type-security">Security</span>
-      <span class="urgency-red">Act Today</span>
+      <span class="item-title">Teams Copilot gains real-time analysis of shared meeting content</span>
+      <span class="item-type type-feature">Feature</span>
+      <span class="urgency-green">FYI</span>
       <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>A critical cPanel flaw lets authenticated users execute SQL commands and obtain full database administrator privileges. All supported versions are affected. SMBs with cPanel-managed web hosting should patch immediately or coordinate emergency patching with their hosting provider.</p>
-      <a href="https://securityaffairs.com/196595/security/cve-2026-58048-cpanel-bug-enables-full-database-administrator-access.html" target="_blank" class="src">Source &rarr;</a>
+      <p>Copilot in Microsoft Teams meetings is rolling out in August 2026 with the ability to analyze content shared during a meeting in real time -- documents, slides, and spreadsheets on screen share -- to answer participant questions on the fly. Requires Microsoft 365 Copilot licensing.</p>
+      <a href="https://www.utwente.nl/en/service-portal/workplace-support/phone-services-incl.-teams/microsoft-teams/new-features-in-teams-and-microsoft-365-monthly-updates" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-7">
     <summary class="item-header">
-      <span class="item-title">INC Ransomware group accelerates SonicWall SMA 1000 exploitation, 885 victims claimed</span>
-      <span class="item-type type-security">Security</span>
-      <span class="urgency-red">Act Today</span>
+      <span class="item-title">UniFi OS 5.1.27 released with bundled UniFi Network 10.4.57</span>
+      <span class="item-type type-feature">Feature</span>
+      <span class="urgency-green">FYI</span>
       <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>INC Ransomware has become the dominant actor exploiting SonicWall SMA 1000 flaws CVE-2026-15409 and CVE-2026-15410, chaining them for arbitrary command execution and device takeover. Activity accelerated at the start of August 2026, with the most recent victim listed August 2. SMBs running SonicWall SMA 1000 appliances should verify patch status and check for indicators of compromise.</p>
-      <a href="https://thehackernews.com/2026/08/inc-ransomware-emerges-as-dominant.html" target="_blank" class="src">Source &rarr;</a>
+      <p>Ubiquiti released UniFi OS 5.1.27 bundled with UniFi Network 10.4.57, focused on device stability and expanded app availability for UCK-G2-Plus, UCK-G2, and UCK-Enterprise consoles. Rollout is staged so not all sites will see it immediately; light/dark theme now syncs with the user account across UI apps.</p>
+      <a href="https://ui.com/whats-new" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-8">
     <summary class="item-header">
-      <span class="item-title">Intune Suite and Defender for Office 365 Plan 1 fold into baseline M365 licensing by August 1, 2026</span>
+      <span class="item-title">Claude Code adds VSCode Focus view and tightened sandbox/MCP permissions</span>
       <span class="item-type type-feature">Feature</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 10/11</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>As of August 1, 2026, Microsoft has completed rolling Intune Suite (formerly $10/user/month) into M365 E5 at no additional charge, with a subset also extended to M365 E3 and EMS E3. Intune Plan 2 capabilities, Defender for Office 365 Plan 1, Intune Remote Help, and Cloud PKI have all moved to baseline. SMB admins should review current add-on line items and rightsize renewals.</p>
-      <a href="https://www.microsoft.com/en-us/licensing/news/2026-m365-packaging-pricing-updates" target="_blank" class="src">Source &rarr;</a>
+      <p>Anthropic shipped a Claude Code update introducing a VSCode Focus view (Ctrl+Alt+F) that collapses tool activity into per-turn summaries, plus stronger sandbox credential masking and improved plugin/MCP permission handling. Auto mode, stats, Windows startup, background sessions, and browser tab cleanup also got fixes.</p>
+      <a href="https://releasebot.io/updates/anthropic/claude-code" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-9">
     <summary class="item-header">
-      <span class="item-title">Entra ID adds Purview sensitivity labels for cloud security groups (public preview)</span>
-      <span class="item-type type-feature">Feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
+      <span class="item-title">CMMC Reform Task Force public RFI closes August 14, 2026</span>
+      <span class="item-type type-industry">Industry</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft Entra ID now supports applying Microsoft Purview sensitivity labels to Entra cloud security groups in public preview. Admins can govern security group settings like guest access using the same labels and policies applied to Microsoft 365 groups. Also rolling out this August: improved iCloud Keychain-based backup and restore for Microsoft Authenticator on iOS, covering passkeys and third-party TOTP accounts.</p>
-      <a href="https://learn.microsoft.com/en-us/entra/fundamentals/whats-new" target="_blank" class="src">Source &rarr;</a>
+      <p>Following the July 13 suspension of CMMC Phase 2, the new CMMC Reform Task Force reporting to the DoD CIO is collecting industry input via a public RFI due August 14, 2026, and will report back within 60 days. DoD-cited SBA data suggests future phases could cost SMBs more than $7B annually. Contractors should submit comment now to influence the rewrite; NIST SP 800-171 Rev 2 self-assessment obligations remain unchanged.</p>
+      <a href="https://www.morganlewis.com/pubs/2026/07/department-of-war-suspends-cmmc-phase-ii-requirements-but-cybersecurity-obligations-remain" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-10">
     <summary class="item-header">
-      <span class="item-title">Intune adds Shadow AI detection, Strict Tunnel Mode, and Purview DLP for MAM</span>
-      <span class="item-type type-feature">Feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
+      <span class="item-title">ChainDrop npm supply-chain attack infects hundreds of packages</span>
+      <span class="item-type type-security">Security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>New Intune capabilities in the August 2026 wave include Shadow AI detection and blocking via the properties catalog, device query, and a new security baseline (public preview); Strict Tunnel Mode for Microsoft Tunnel on Android; a Block Bluetooth sharing setting in the Android Enterprise catalog; and integrated Microsoft Purview DLP for MAM-protected mobile apps. The Vulnerability Remediation Agent now uses Microsoft Entra agentic identity.</p>
-      <a href="https://learn.microsoft.com/en-us/entra/fundamentals/whats-new" target="_blank" class="src">Source &rarr;</a>
+      <p>A large-scale supply-chain attack dubbed ChainDrop has compromised over 1,300 npm packages with a combined 2 billion monthly downloads, delivering self-propagating malicious payloads to downstream Node.js apps and build pipelines. Relevant for any SMB running in-house Node/JavaScript development or CI/CD; audit lockfiles and rotate any tokens exposed in build environments.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/massive-chaindrop-npm-supply-chain-attack-infects-hundreds-of-packages/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-11">
     <summary class="item-header">
-      <span class="item-title">Ubiquiti UniFi Network Application update improves Blueprint, WiFi Orchestration, and multi-site admin</span>
-      <span class="item-type type-feature">Feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
+      <span class="item-title">TP-Link Omada ZTP flaws chain to full network takeover; 15 vulns disclosed</span>
+      <span class="item-type type-security">Security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>The latest UniFi Network Application release adds a confirmation dialog when adding sites to a Blueprint, Pause/Resume for WiFi Orchestration, aligned Orchestration/Network Application settings, better overlapping-subnet handling in SD-WAN, faster People-page loads on large multi-site deployments, and a fix for the 'Unknown Permission' error on multi-site role assignment. Requires UniFi OS 5.0 or newer.</p>
-      <a href="https://ui.com/download/releases/firmware" target="_blank" class="src">Source &rarr;</a>
+      <p>Forescout disclosed 15 vulnerabilities in TP-Link Omada's zero-touch provisioning framework -- 11 received CVEs and combine with prior flaws to enable network infiltration via controllers, gateways, switches, APs, and OLTs. Weaknesses extend to VIGI IP cameras, Festa routers, and Tapo/Kasa. Not on the client watchlist, but a cautionary parallel for anyone running vendor-managed provisioning frameworks like UniFi.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/tp-link-patches-omada-ztp-flaws-allowing-hackers-to-breach-networks/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-12">
     <summary class="item-header">
-      <span class="item-title">Microsoft Teams adds 'Report a concern' and external bot detection in August 2026 rollout</span>
-      <span class="item-type type-feature">Feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 8/11</span>
+      <span class="item-title">77 malicious Open VSX extensions caught harvesting developer credentials</span>
+      <span class="item-type type-security">Security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft Teams is rolling out a 'Report a concern' button so meeting participants can flag suspicious behavior, phishing, impersonation, and AI-deepfake meetings to admins via Microsoft Defender and the Teams admin experiences. A companion feature detects external meeting bots and gives organizers new controls over them. Full availability expected in August 2026.</p>
-      <a href="https://www.windowslatest.com/2026/08/04/microsoft-teams-is-fighting-ai-deepfake-meetings-with-a-new-report-button-rolling-out-august-2026/" target="_blank" class="src">Source &rarr;</a>
+      <p>Researchers reported 77 extensions on the Open VSX registry (used by VS Code forks like Cursor, Windsurf, and VSCodium) exfiltrating developer credentials, environment variables, and machine info. Any shop whose users run non-Microsoft VS Code forks should audit installed extensions and rotate any secrets exposed on those workstations.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/77-open-vsx-extensions-found-harvesting-developer-info/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-13">
     <summary class="item-header">
-      <span class="item-title">Windows 11 August 2026 preview update KB5101684 lands with security and Copilot+ changes</span>
-      <span class="item-type type-feature">Feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Microsoft has released the KB5101684 preview for Windows 11 (build 26200.8973) ahead of the August 11 Patch Tuesday. New in the update: option to remove the Image Generation AI on Copilot+ PCs, Windows Hello ESS support for external plug-in fingerprint readers, and File Explorer showing sizes in KB/MB/GB. Note that Windows 11 24H2 Home/Pro reaches end of updates October 13, 2026.</p>
-      <a href="https://pureinfotech.com/kb5101684-windows-11-august-2026-update/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-14">
-    <summary class="item-header">
-      <span class="item-title">Alibaba releases Qwen3.8 Max, adding to accelerating frontier-model release cadence</span>
-      <span class="item-type type-feature">Feature</span>
-      <span class="urgency-green">FYI</span>
+      <span class="item-title">New XCSSET macOS variant spreads through compromised Xcode projects</span>
+      <span class="item-type type-security">Security</span>
+      <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 6/11</span>
     </summary>
     <div class="item-body">
-      <p>Alibaba released Qwen3.8 Max on August 2, 2026, part of an unprecedented pace of frontier-model releases (337+ tracked in 2026). For SMB IT, the trend matters more than any single model: reasoning models, multimodal defaults, and GPT-4-class performance at steadily falling API prices are reshaping which AI tools are viable for internal ops.</p>
-      <a href="https://llm-stats.com/llm-updates" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-15">
-    <summary class="item-header">
-      <span class="item-title">CMMC Phase 2 suspended; DoD RFI comment window closes August 14, 2026</span>
-      <span class="item-type type-industry">Industry</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>The Department of Defense's suspension of CMMC Phase 2 (C3PAO certification, previously set for November 10, 2026) remains in effect while a Reform Task Force reviews the program. The public RFI comment window closes August 14, 2026, giving contractors a narrow window to submit input. In the interim, DoD is enforcing NIST SP 800-171 Rev. 2 through self-assessments and select government-led assessments. New solicitations can only designate Level 1 (Self) or Level 2 (Self).</p>
-      <a href="https://defensescoop.com/2026/07/13/dod-halts-cmmc-cybersecurity-requirements-phase-2/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-16">
-    <summary class="item-header">
-      <span class="item-title">Pass-ta-key attacks let Windows malware hijack Google-synced passkeys</span>
-      <span class="item-type type-security">Security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Researchers disclosed three attack techniques that let malware on Windows abuse Google Password Manager's synced passkeys and extract private keys. This weakens passkey-based authentication assumptions for users who sync credentials across devices. Reinforces the need for endpoint protection on Windows devices used for M365 or business sign-ins.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/new-pass-ta-key-attacks-let-malware-hijack-google-synced-passkeys/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-17">
-    <summary class="item-header">
-      <span class="item-title">DOUBLECUP ClickFix loader-as-a-service hides malware in browser cache PNGs</span>
-      <span class="item-type type-security">Security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>A new Russian loader-as-a-service called DOUBLECUP uses ClickFix social-engineering attacks to conceal malicious code inside cached PNG images in browsers, delivering CountLoader and DeviceManager RAT. ClickFix attacks trick users into pasting attacker-supplied commands into Windows Run dialogs. User awareness training should specifically call out ClickFix and paste-into-Run lures.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/new-doublecup-clickfix-service-hides-malware-in-browser-cache-images/" target="_blank" class="src">Source &rarr;</a>
+      <p>A new XCSSET variant targets macOS developers by piggybacking on shared Xcode projects, expanding its data-theft and browser-stealer capabilities. Relevant for any SMB with Mac developers pulling third-party Xcode workspaces from Git or archives; audit for unexpected build phases in shared projects.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/new-xcsset-variant-targets-macos-devs-via-compromised-xcode-projects/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 </div>
 
-<div class="footer">Generated Tuesday, August 4, 2026 at 7:15 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-08-04.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
+<div class="footer">Generated Wednesday, August 5, 2026 at 6:00 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-08-05.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
 
 </main>
 </body>
