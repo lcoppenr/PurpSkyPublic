@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<title>Morning Briefing -- Saturday, August 8, 2026</title>
+<title>Morning Briefing -- Sunday, August 9, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -14,47 +14,49 @@
 <main class="briefing-content">
 
 <div class="page-header">
-  <h1>Morning Briefing -- Saturday, August 8, 2026</h1>
+  <h1>Morning Briefing -- Sunday, August 9, 2026</h1>
   <p class="page-meta">Microsoft &bull; Security &amp; Compliance &bull; Firewall / VPN / Networking &bull; Servers/NAS &bull; Workstations &amp; Mobile &bull; Peripherals &amp; AV &bull; RMM &amp; Remote Access &bull; Construction &amp; Specialty Software &bull; General Tech &amp; AI &bull; Pacific Time</p>
 </div>
 
 <div class="section-actions">
   <h2>Today's Actions</h2>
-  <p class="section-transparency">Showing 3 of 8</p>
+  <p class="section-transparency">Showing 3 of 5</p>
   <ol class="action-list">
-    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Confirm no client or internal environment runs N-able N-central RMM -- Hotfix 2 for CVE-2026-18577 released Aug 6 patches an actively exploited RCE that bypasses the earlier July fix and grants full admin console access equivalent to NOC staff. <a href="#item-1" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Verify no client environment runs self-hosted Metabase -- a CVSS 10.0 SQL injection zero-day is being actively exploited to gain admin access, with confirmed data theft at Framework and Tally. <a href="#item-2" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Verify no client runs a Progress LoadMaster appliance -- CISA added CVE-2026-8037 (CVSS 9.6 OS command injection) to KEV on Aug 8 with in-the-wild exploitation confirmed. <a href="#item-3" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Warn all client staff about the active Payroll Pirates / Storm-2755 voicemail-lure phishing campaign that hijacks M365 sessions after MFA and redirects payroll payments -- hundreds of organizations have been compromised despite having MFA enabled. <a href="#item-1" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Push macOS Tahoe 26.6.1, Sequoia 15.7.9, or Sonoma 14.8.9 to every managed Mac -- Apple's emergency update fixes CVE-2026-65400, a Screen Sharing authentication bypass exploitable by an unauthenticated attacker on the same network. <a href="#item-2" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Patch the SonicWall TZ fleet against SNWLID-2026-0004 (CVE-2026-0204, CVSS 8.0 improper access control) or, if the maintenance window slips, disable HTTP/HTTPS management and SSLVPN and restrict admin access to SSH in the interim. <a href="#item-3" class="detail-link">details</a></li>
   </ol>
-  <details class="section-overflow"><summary>Show 5 more actions</summary><ol class="action-list" start="4">
-    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Confirm the SonicWall fleet is TZ/NSa only and does not include any SMA 1000 remote-access appliances -- INC Ransomware is chaining CVE-2026-15409 and CVE-2026-15410 in SMA 1000 devices with 885 victims claimed to date. <a href="#item-4" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-yellow">This Week</span> Remind all client staff that IT support will never call to request MFA codes or credentials -- UNC6671 is running voice-phishing campaigns impersonating helpdesks to bypass MFA at financial firms. <a href="#item-5" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-yellow">This Week</span> Reinforce social engineering awareness with staff -- Levi Strauss disclosed on Aug 7 that attackers stole corporate data after tricking three employees, matching the same tradecraft seen across UNC6671 activity. <a href="#item-6" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-yellow">This Week</span> Read Gen's H1 2026 Threat Report on real-email hijacking and clipboard payment redirection and update out-of-band payment verification with clients -- both attack chains bypass traditional URL and attachment filters. <a href="#item-7" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-yellow">This Week</span> Watch Dell PowerEdge and Linux kernel advisories for TONTOU mitigations -- a new speculative-execution attack disclosed Aug 6 bypasses Spectre v2 fixes on Intel CPUs and demonstrated /etc/shadow hash leaks. <a href="#item-8" class="detail-link">details</a></li>
+  <details class="section-overflow"><summary>Show 2 more actions</summary><ol class="action-list" start="4">
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Confirm no client environment still runs Active Directory Federation Services -- CVE-2026-56155 (CVSS 7.8) was added to CISA's KEV this week and is being actively exploited to compromise federated M365 and SaaS logins. <a href="#item-4" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-yellow">This Week</span> Watch for vendor advisories from Microsoft, Google, and Fastmail addressing the newly disclosed webmail CSS sanitization bypass that lets crafted emails steal credentials and manipulate AI-powered email assistants. <a href="#item-5" class="detail-link">details</a></li>
   </ol></details>
 </div>
 
 <div class="section-new">
   <h2>What's New</h2>
-  <p class="section-transparency">Showing 3 of 5</p>
+  <p class="section-transparency">Showing 3 of 10</p>
   <ul class="new-list">
-    <li><strong><a href="#item-9">Windows 11 August 2026 update (KB5101684) ships Aug 12 with external fingerprint sign-in and Copilot AI removal</a></strong> -- Microsoft's Aug 12 Patch Tuesday delivers KB5101684 (builds 26100.8973 / 26200.8973) for Windows 11 with the ability to uninstall the Image Generation AI on Copilot+ PCs, Windows Hello ESS support for external plug-in fingerprint readers, File Explorer size units in KB/MB/GB, and Windows Search typo tolerance. Reminder: 24H2 Home/Pro reaches end of updates Oct 13, 2026, so start planning the 25H2 move. <a href="https://techjournal.org/windows-11-august-2026-update-kb5101684" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-10">Intune Service Release 2608 adds Shadow AI detection, Windows 11 STIG baseline, and agentic identity for remediation</a></strong> -- Intune's August 2026 release brings a Windows 11 STIG SCAP audit baseline, Shadow AI detection and blocking via the properties catalog and a new security baseline (public preview), the Vulnerability Remediation Agent switched to Entra agentic identity (public preview), Strict Tunnel Mode for Microsoft Tunnel on Android, and DDM management of Apple Intelligence settings on macOS/iOS 26.4+. Directly relevant for your construction client's CMMC track and your small-business client's Intune enrollment in progress. <a href="https://learn.microsoft.com/en-us/intune/whats-new/" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-11">Entra ID adds Purview sensitivity labels on cloud security groups and improved iOS passkey restore</a></strong> -- Entra ID now supports applying Microsoft Purview sensitivity labels to cloud security groups in public preview so admins can govern guest access and settings by label. The Authenticator app device-bound passkey restore experience for iOS is also rolling out this month. Note that several premium features -- Intune Plan 2, Defender for Office 365 P1, Remote Help, and Cloud PKI -- moved to baseline licensing effective Aug 1. <a href="https://learn.microsoft.com/en-us/entra/fundamentals/whats-new" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-6">Exchange Online cross-tenant message recall rolls out mid-August (disabled by default, opt-in required)</a></strong> -- Starting mid-August 2026, Exchange Online lets senders recall messages that landed in a different M365 tenant, provided the receiving tenant has opted in via PowerShell and a trusted-tenant allow list. Disabled by default -- admins should decide whether to accept recalls from partner tenants and document a policy before enabling. <a href="https://changepilot.cloud/blog/top-microsoft-365-message-center-roadmap-updates-august-2026" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-7">Exchange Online flips EWS off by default in August for tenants without an opt-in</a></strong> -- Microsoft is now setting EWSEnabled to False by default in Exchange Online tenants that have not explicitly kept it on via an Allow List. Any remaining EWS-dependent apps -- older backup tools, third-party mail utilities, some line-of-business integrations -- will break unless the tenant opts in or migrates to Microsoft Graph. Worth a quick inventory in each tenant. <a href="https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-8">Windows 11 KB5101684 preview (builds 26200.8973 / 26100.8973) starts general rollout Aug 11</a></strong> -- The August 2026 optional preview for Windows 11 24H2 and 25H2 adds Voice Isolation, new touchpad gestures, Windows Hello ESS support for external plug-in fingerprint readers, and the ability to uninstall AI components on Copilot+ PCs, plus fixes across File Explorer, Search, Widgets, Start menu, Windows Update, power, and accessibility. General rollout begins August 11. <a href="https://pureinfotech.com/kb5101684-windows-11-august-2026-update/" target="_blank">Source &rarr;</a></li>
   </ul>
-  <details class="section-overflow"><summary>Show 2 more updates</summary><ul class="new-list">
-    <li><strong><a href="#item-12">Microsoft Teams August rollout retires Together mode, moves Efficiency Mode to GA, adds Planner meeting integration</a></strong> -- Rollouts completing by end of August: Together mode meeting view is being retired, Efficiency Mode goes GA to reduce Teams CPU and memory usage on constrained devices, and meetings can now be linked to existing Planner plans for consolidated task tracking. GCC High and DoD tenants also get explicit consent prompts for call recording and transcription. <a href="https://changepilot.cloud/blog/top-microsoft-365-message-center-roadmap-updates-august-2026" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-13">Exchange Online adds cross-tenant message recall and External-email condition in Inbox Rules</a></strong> -- New Exchange Online capabilities rolling out include cross-tenant message recall, which lets users recall messages sent to other M365 tenants when the receiving tenant opts in, and enhanced Outlook Inbox Rules with an External email tag as a rule condition so users can auto-categorize or move external messages. <a href="https://changepilot.cloud/blog/top-microsoft-365-message-center-roadmap-updates-august-2026" target="_blank">Source &rarr;</a></li>
+  <details class="section-overflow"><summary>Show 7 more updates</summary><ul class="new-list">
+    <li><strong><a href="#item-9">Microsoft Teams extends custom recording and transcription notifications to 1:1 calls</a></strong> -- Early-August 2026 rollout: admins can now apply custom notification banners for recording and transcription to 1:1 calls, not just meetings. Useful for compliance-sensitive orgs (including CMMC-track environments) that need consistent notice language across all Teams interactions. <a href="https://changepilot.cloud/blog/top-microsoft-365-message-center-roadmap-updates-august-2026" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-10">Teams Android device management removal from Teams Admin Center begins August, completes September</a></strong> -- Microsoft is deprecating Android device management capabilities in the Teams Admin Center starting August 2026, with removal complete by September. Any org still managing Teams Android hardware (phones, panels, displays) through TAC must transition management workflows before the September cutoff. <a href="https://changepilot.cloud/blog/top-microsoft-365-message-center-roadmap-updates-august-2026" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-11">Entra ID improves iOS Authenticator restore for device-bound passkeys</a></strong> -- Starting August 2026, iOS users with iCloud Keychain backup enabled for the Microsoft Authenticator app get an updated restore flow that automatically routes them through the correct recovery path for device-bound passkeys, cutting help-desk load during iPhone upgrades or resets. <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/whats-new-in-microsoft-entra-july-2026/4534631" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-12">Defender for Business Streaming API enters public preview</a></strong> -- The Defender for Endpoint Streaming API is now available in preview for Defender for Business tenants, letting SMBs and partner SOCs stream raw event data to Event Hub or Azure Storage for custom analytics, SIEM ingestion, or building their own detection pipelines. Useful upgrade path if a client outgrows the default MDB console for hunting. <a href="https://learn.microsoft.com/en-us/defender-business/mdb-whats-new" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-13">Ubiquiti releases UniFi OS 5.1.27 bundling UniFi Network 10.4.57 with stability fixes</a></strong> -- Ubiquiti pushed UniFi OS 5.1.27 with bundled UniFi Network 10.4.57, focused on improved device stability. Rollout is staged and may not appear on every controller immediately. No security CVEs called out; treat as scheduled maintenance for your construction client's UniFi environment. <a href="https://community.ui.com/RELEASES" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-14">UniFi Protect iOS 3.9.0 adds Timeline scrubber, PPE and Point of Sale event views</a></strong> -- Ubiquiti released UniFi Protect iOS 3.9.0 with a horizontal Timeline event scrubber, new PPE safety-violation and Point of Sale event categories in Timeline and Find Anything, expanded third-party camera settings, and Floodlight controls via Siri and Shortcuts. Requires UniFi Protect application 7.2.72 or newer on the console side. <a href="https://community.ui.com/releases" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-15">OpenAI rolls out GPT-5.6 Sol tuned for everyday chat and removes ChatGPT text limits</a></strong> -- OpenAI is releasing a GPT-5.6 Sol variant tuned for conversational ChatGPT use, producing more focused answers, adapting detail level per question, and dropping unnecessary formatting. Text-chat limits for ChatGPT are also removed. Separately, o3 retires from ChatGPT on Aug 26, 2026, and GPT-5.4/mini leave Codex signed-in sessions on Aug 31 (API access continues). <a href="https://9to5mac.com/2026/08/06/openai-updating-chatgpt-with-a-smarter-gpt-5-6-sol-and-unlimited-free-chats/" target="_blank">Source &rarr;</a></li>
   </ul></details>
 </div>
 
 <div class="section-security">
   <h2>Security &amp; Patches</h2>
   <div class="security-cards">
-    <div class="security-card"><a href="#item-14" class="security-headline">DoD suspends CMMC Phase II and C3PAO/DIBCAC requirements pending 60-day reform review</a><span class="urgency-yellow">This Week</span><span class="security-summary">The Department of Defense (now Department of War) has suspended the Nov 10, 2026 CMMC Phase II rollout, citing prohibitive compliance costs and severe C3PAO assessor shortages.</span></div>
-    <div class="security-card"><a href="#item-15" class="security-headline">WordPress XSS2Shell technique escalates a login-form XSS into full server takeover</a><span class="urgency-yellow">This Week</span><span class="security-summary">Researchers detailed an XSS2Shell chain that turns a simple XSS bug on a WordPress login page into a full server compromise by hijacking an admin session and installing a malicious plugin.</span></div>
-    <div class="security-card"><a href="#item-16" class="security-headline">Unlimited Technology Systems breach exposes data of 3.8 million people</a><span class="urgency-green">FYI</span><span class="security-summary">Healthcare software vendor Unlimited Technology Systems disclosed a breach impacting 3.8 million individuals from an October 2025 intrusion.</span></div>
+    <div class="security-card"><a href="#item-16" class="security-headline">Security Affairs Malware Newsletter flags ScreenConnect RMM abuse and malicious npm packages</a><span class="urgency-yellow">This Week</span><span class="security-summary">Weekly roundup covers active operator activity worth flagging to SMB techs: DarkSword operators, Java-based infostealers, npm packages shipping RAT capabilities, ScreenConnect RMM abuse for lateral movement, and a new XCSSET variant.</span></div>
+    <div class="security-card"><a href="#item-17" class="security-headline">August 2026 Patch Tuesday forecast warns of heavy Microsoft update cycle on Aug 12</a><span class="urgency-yellow">This Week</span><span class="security-summary">Help Net Security's Aug 7 forecast previews a heavy August 12 Microsoft update cycle across Windows, browsers, and productivity suites, and advises SMB IT teams to stage patch rings and confirm backups before deployment.</span></div>
+    <div class="security-card"><a href="#item-18" class="security-headline">Palo Alto Networks faces China cybersecurity review amid rising tech tensions</a><span class="urgency-green">FYI</span><span class="security-summary">China's Cyberspace Administration opened a cybersecurity review of Palo Alto Networks on Aug 8, adding another US security vendor to Beijing's scrutiny list.</span></div>
   </div>
 </div>
 
@@ -62,199 +64,223 @@
   <h2>Details</h2>
   <details class="item" id="item-1">
     <summary class="item-header">
-      <span class="item-title">N-able releases N-central Hotfix 2 for actively exploited CVE-2026-18577 bypassing earlier patch</span>
+      <span class="item-title">Payroll Pirates AitM campaign hijacks M365 accounts to steal payroll and finance emails, bypasses MFA</span>
       <span class="item-type type-security">Security</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>N-able disclosed that threat actors bypassed the earlier patch for CVE-2026-18556 and began actively exploiting a new variant, tracked as CVE-2026-18577, in late July with confirmed exploitation on August 2. Successful exploitation grants full administrative access to the N-central console -- the same privilege level as NOC and engineering staff -- enabling attackers to reach every managed endpoint. Hotfix 2 supersedes Hotfix 1 with additional hardening and must be applied even by MSPs who already installed the earlier hotfix. Purplesky uses Atera, not N-central, but confirm no client environment inherited an N-central install.</p>
-      <a href="https://www.n-able.com/blog/n-central-security-update-august-6-2026" target="_blank" class="src">Source &rarr;</a>
+      <p>Arctic Wolf Labs and Microsoft (tracking as Storm-2755) report an active widespread AitM phishing campaign using voicemail-themed lures and residential proxies to hijack Microsoft 365 sessions post-MFA. Attackers target payroll and finance personnel and redirect salary payments to attacker-controlled accounts. Hundreds of organizations across US, Canada, and Europe (healthcare, education, manufacturing, government, professional services) have been hit -- every compromised account had MFA enabled, which is why phish-resistant methods (FIDO2 / passkeys / certificate-based) matter more than ever for M365 Business tenants.</p>
+      <a href="https://thehackernews.com/2026/08/microsoft-365-aitm-phishing-hijacks.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-2">
     <summary class="item-header">
-      <span class="item-title">Metabase zero-day CVE (CVSS 10.0) exploited in the wild for admin takeover</span>
+      <span class="item-title">Apple ships emergency macOS updates fixing Screen Sharing authentication bypass (CVE-2026-65400)</span>
       <span class="item-type type-security">Security</span>
       <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 9/11</span>
+      <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>A critical SQL injection zero-day in self-hosted Metabase is being actively exploited to gain administrator access and steal sensitive data. Framework and Tally have confirmed data theft attacks against their instances. Any SMB running self-hosted Metabase should patch immediately.</p>
-      <a href="https://securityaffairs.com/196874/hacking/metabase-zero-day-exploited-in-the-wild-exposing-admin-access-and-sensitive-data.html" target="_blank" class="src">Source &rarr;</a>
+      <p>Apple released macOS Tahoe 26.6.1, Sequoia 15.7.9, and Sonoma 14.8.9 to close CVE-2026-65400, a Screen Sharing flaw that lets an unauthenticated attacker on the same network gain access without valid credentials. Apple corrected the flaw via improved state management. A follow-up macOS Tahoe 26.6.2 was released within the same news cycle. Push these to every managed Mac client this week -- any Mac on shared client Wi-Fi or a coworking network is exposed until patched.</p>
+      <a href="https://support.apple.com/en-us/100100" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-3">
     <summary class="item-header">
-      <span class="item-title">CISA adds Progress LoadMaster CVE-2026-8037 (CVSS 9.6) to KEV catalog</span>
+      <span class="item-title">SonicWall issues SNWLID-2026-0004 mandating firmware update across Gen 6/7/8 firewalls</span>
       <span class="item-type type-security">Security</span>
       <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 9/11</span>
+      <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>CISA added a Progress LoadMaster OS command injection flaw (CVSS 9.6) to its Known Exploited Vulnerabilities catalog on Aug 8, confirming in-the-wild exploitation. LoadMaster is a common SMB load balancer and ADC. Federal agencies have a 21-day patch deadline; SMBs should treat it as urgent and verify no client environment runs an exposed LoadMaster.</p>
-      <a href="https://securityaffairs.com/196863/hacking/u-s-cisa-adds-a-progress-loadmaster-flaw-to-its-known-exploited-vulnerabilities-catalog.html" target="_blank" class="src">Source &rarr;</a>
+      <p>SonicWall released patches for three SonicOS vulnerabilities, headlined by CVE-2026-0204 (CVSS 8.0) improper access control that can expose management functions, plus CVE-2026-0206 a stack-based buffer overflow enabling remote DoS. TZ series is in the affected Gen 7 range. PSIRT strongly recommends immediate patching or, as a compensating control, disabling HTTP/HTTPS management and SSLVPN and restricting management to SSH. This is a fleet-wide action for your construction client's SonicWall estate.</p>
+      <a href="https://psirt.global.sonicwall.com/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-4">
     <summary class="item-header">
-      <span class="item-title">INC Ransomware chains SonicWall SMA 1000 exploits (CVE-2026-15409/15410) with 885 victims</span>
+      <span class="item-title">CISA KEV adds actively exploited ADFS (CVE-2026-56155) and Windows Shell (CVE-2026-32202) vulnerabilities</span>
       <span class="item-type type-security">Security</span>
       <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 9/11</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>INC Ransomware is chaining CVE-2026-15409 and CVE-2026-15410 in SonicWall SMA 1000 remote access appliances for arbitrary command execution and full takeover, with 885 victims claimed to date and new listings through Aug 2. Note that your construction client runs SonicWall TZ firewalls, not SMA 1000; still worth a confirmation pass across the fleet.</p>
-      <a href="https://thehackernews.com/2026/08/inc-ransomware-emerges-as-dominant.html" target="_blank" class="src">Source &rarr;</a>
+      <p>CISA added CVE-2026-56155 in Active Directory Federation Services (CVSS 7.8) and CVE-2026-32202 Windows Shell Spoofing (CVSS 4.3) to the Known Exploited Vulnerabilities catalog this week. Any SMB still running ADFS for federated M365 or third-party SaaS logins should prioritize patching or migrate remaining relying parties to Entra ID. The Windows Shell flaw is being used in phishing chains that spoof file types and reinforces the case for pushing the current cumulative to workstations before Patch Tuesday hits.</p>
+      <a href="https://senserva.com/exploited-this-week.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-5">
     <summary class="item-header">
-      <span class="item-title">UNC6671 impersonates IT support to breach major financial firms</span>
+      <span class="item-title">Webmail CSS attacks expose Outlook, Gmail, Fastmail to credential theft and AI-tool manipulation</span>
       <span class="item-type type-security">Security</span>
       <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Extortion group UNC6671, linked to BlackFile, is running social engineering campaigns where attackers phone employees posing as IT support to obtain credentials and deploy extortion tooling at hedge funds and financial companies. Voice and help-desk phishing continues to bypass MFA at well-defended orgs -- reinforce that Purplesky and client IT will never call to request codes.</p>
-      <a href="https://securityaffairs.com/196800/security/hackers-impersonate-it-support-to-breach-leading-financial-companies.html" target="_blank" class="src">Source &rarr;</a>
+      <p>Researchers disclosed CSS-based sanitization bypasses that let crafted emails perform credential theft, session hijacking, and manipulation of AI-powered email assistants across Outlook, Gmail, and Fastmail. The technique abuses how webmail clients render styling to smuggle attacker-controlled instructions into user context or LLM context. No patches yet from the affected vendors; monitor for advisories and, where possible, reinforce that clients should not act on payment or credential instructions from email alone.</p>
+      <a href="https://securityaffairs.com/196899/hacking/webmail-css-attacks-expose-a-new-risk-for-ai-powered-email-tools.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-6">
     <summary class="item-header">
-      <span class="item-title">Levi Strauss confirms data theft after social-engineering attack on three employees</span>
-      <span class="item-type type-security">Security</span>
+      <span class="item-title">Exchange Online cross-tenant message recall rolls out mid-August (disabled by default, opt-in required)</span>
+      <span class="item-type type-feature">Feature</span>
       <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
+      <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>Levi Strauss disclosed on Aug 7 that attackers used social engineering to compromise three employees and steal corporate data stored on their machines. The tradecraft pattern matches UNC6671 activity and reinforces the case for MFA-resistant help-desk verification procedures at SMBs, particularly on password resets and MFA re-enrollment.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/levi-strauss-and-co-says-hackers-stole-corporate-data-in-cyberattack/" target="_blank" class="src">Source &rarr;</a>
+      <p>Starting mid-August 2026, Exchange Online lets senders recall messages that landed in a different M365 tenant, provided the receiving tenant has opted in via PowerShell and a trusted-tenant allow list. Disabled by default. Admins should decide whether to accept recalls from partner tenants and document a policy before enabling.</p>
+      <a href="https://changepilot.cloud/blog/top-microsoft-365-message-center-roadmap-updates-august-2026" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-7">
     <summary class="item-header">
-      <span class="item-title">Gen H1 2026 report flags real-email hijacking and payment redirection as top SMB threats</span>
-      <span class="item-type type-security">Security</span>
+      <span class="item-title">Exchange Online flips EWS off by default in August for tenants without an opt-in</span>
+      <span class="item-type type-feature">Feature</span>
       <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
+      <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>Gen's H1 2026 threat report highlights two attack chains hitting SMBs: adversaries hijacking existing email threads to redirect payments, and clipboard hijacking to swap cryptocurrency and payment details. Both bypass traditional URL and attachment filters and argue for stronger out-of-band payment verification with construction and hospitality clients.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/real-emails-hijacked-payments-two-h1-2026-attack-chains/" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft is now setting EWSEnabled to False by default in Exchange Online tenants that have not explicitly kept it on via an Allow List. Any remaining EWS-dependent apps (older backup tools, third-party mail utilities, some line-of-business integrations) will break unless the tenant opts in or migrates to Microsoft Graph. Worth a quick inventory across your M365 tenants -- especially anything still touching mail via legacy SDKs.</p>
+      <a href="https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-8">
     <summary class="item-header">
-      <span class="item-title">New TONTOU CPU attack bypasses Spectre v2 fixes, leaks Linux password hashes</span>
-      <span class="item-type type-security">Security</span>
+      <span class="item-title">Windows 11 KB5101684 preview (builds 26200.8973 / 26100.8973) rolling to stable Aug 11</span>
+      <span class="item-type type-feature">Feature</span>
       <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
+      <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>Researchers disclosed TONTOU, a new speculative-execution attack that bypasses existing Spectre v2 mitigations on Intel CPUs and demonstrated exfiltration of Linux /etc/shadow password hashes. Because it targets Intel processors, Dell PowerEdge Intel-based servers are in scope. Intel and OS vendors are expected to ship microcode and kernel updates; monitor Dell PowerEdge BIOS/iDRAC advisories and Linux kernel updates.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/new-tontou-cpu-attack-bypasses-spectre-v2-fixes-leaks-linux-password-hashes/" target="_blank" class="src">Source &rarr;</a>
+      <p>The August 2026 optional (D) preview for Windows 11 24H2 and 25H2 adds Voice Isolation, new touchpad gestures, Windows Hello ESS support for external plug-in fingerprint readers, and the ability to uninstall AI components on Copilot+ PCs, plus File Explorer, Search, Widgets, Start menu, Windows Update, power, accessibility, and reliability fixes. General rollout begins August 11 (a day before Patch Tuesday's mandatory bundle).</p>
+      <a href="https://pureinfotech.com/kb5101684-windows-11-august-2026-update/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-9">
     <summary class="item-header">
-      <span class="item-title">Windows 11 August 2026 update (KB5101684) ships Aug 12 with external fingerprint sign-in and Copilot AI removal</span>
+      <span class="item-title">Microsoft Teams extends custom recording/transcription notifications to 1:1 calls</span>
       <span class="item-type type-feature">Feature</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 10/11</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft's Aug 12 Patch Tuesday delivers KB5101684 (builds 26100.8973 / 26200.8973) for Windows 11. Notable changes include the ability to uninstall the Image Generation AI component on Copilot+ PCs, Windows Hello ESS support for external plug-in fingerprint readers, File Explorer size units in KB/MB/GB, and Windows Search typo tolerance. Reminder: Windows 11 24H2 Home/Pro reaches end of updates Oct 13, 2026, so start planning the 25H2 move.</p>
-      <a href="https://techjournal.org/windows-11-august-2026-update-kb5101684" target="_blank" class="src">Source &rarr;</a>
+      <p>Early-August 2026 rollout: admins can now apply custom notification banners for recording and transcription to 1:1 calls, not just meetings. Useful for compliance-sensitive orgs -- including your construction client's CMMC track -- that need consistent notice language across all Teams interactions.</p>
+      <a href="https://changepilot.cloud/blog/top-microsoft-365-message-center-roadmap-updates-august-2026" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-10">
     <summary class="item-header">
-      <span class="item-title">Intune Service Release 2608 adds Shadow AI detection, Windows 11 STIG baseline, and agentic identity for remediation</span>
+      <span class="item-title">Teams Android device management removal from Teams Admin Center begins August, completes September</span>
       <span class="item-type type-feature">Feature</span>
-      <span class="urgency-green">FYI</span>
+      <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Intune's August 2026 release (SR 2608) brings a Windows 11 STIG SCAP audit baseline, Shadow AI detection and blocking via the properties catalog, device query, and a new security baseline (public preview), the Vulnerability Remediation Agent switched to Entra agentic identity (public preview), Strict Tunnel Mode for Microsoft Tunnel on Android, and DDM management of Apple Intelligence settings on macOS/iOS 26.4+. Directly relevant for your construction client's CMMC track and your small-business client's Intune enrollment.</p>
-      <a href="https://learn.microsoft.com/en-us/intune/whats-new/" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft is deprecating Android device management capabilities in the Teams Admin Center starting August 2026, with removal complete by September. Orgs still managing Teams Android hardware (phones, panels, displays) through TAC must transition management workflows before the September cutoff. None of the current client fleets use Teams Android hardware, but flag on any future deployment planning.</p>
+      <a href="https://changepilot.cloud/blog/top-microsoft-365-message-center-roadmap-updates-august-2026" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-11">
     <summary class="item-header">
-      <span class="item-title">Entra ID adds Purview sensitivity labels on cloud security groups and improved iOS passkey restore</span>
+      <span class="item-title">Entra ID rolls out improved iOS Authenticator restore for device-bound passkeys</span>
       <span class="item-type type-feature">Feature</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Entra ID now supports applying Microsoft Purview sensitivity labels to cloud security groups in public preview, so admins can govern guest access and other settings by label as with M365 groups. The Authenticator app device-bound passkey restore experience for iOS is also rolling out this month. Note that several premium features -- Intune Plan 2, Defender for Office 365 P1, Remote Help, and Cloud PKI -- moved to baseline licensing effective Aug 1, 2026.</p>
-      <a href="https://learn.microsoft.com/en-us/entra/fundamentals/whats-new" target="_blank" class="src">Source &rarr;</a>
+      <p>Starting August 2026, iOS users with iCloud Keychain backup enabled for the Microsoft Authenticator app get an updated restore flow that automatically routes them through the correct recovery path for device-bound passkeys, cutting help-desk load during iPhone upgrades or resets. Directly useful for your construction client's iPhone-only workforce.</p>
+      <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/whats-new-in-microsoft-entra-july-2026/4534631" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-12">
     <summary class="item-header">
-      <span class="item-title">Microsoft Teams August rollout retires Together mode, moves Efficiency Mode to GA, adds Planner meeting integration</span>
+      <span class="item-title">Defender for Business Streaming API enters public preview</span>
       <span class="item-type type-feature">Feature</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Rollouts completing by end of August: Together mode meeting view is being retired, Efficiency Mode goes GA to reduce Teams CPU and memory usage on constrained devices, and meetings can be linked to existing Planner plans for consolidated task tracking. GCC High and DoD tenants also get explicit consent prompts for call recording and transcription.</p>
-      <a href="https://changepilot.cloud/blog/top-microsoft-365-message-center-roadmap-updates-august-2026" target="_blank" class="src">Source &rarr;</a>
+      <p>The Defender for Endpoint Streaming API is now available in preview for Defender for Business tenants, letting SMBs and partner SOCs stream raw event data to Event Hub or Azure Storage for custom analytics, SIEM ingestion, or building their own detection pipelines. Worth watching as your small-business client completes its Bitdefender-to-Defender migration.</p>
+      <a href="https://learn.microsoft.com/en-us/defender-business/mdb-whats-new" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-13">
     <summary class="item-header">
-      <span class="item-title">Exchange Online adds cross-tenant message recall and External-email condition in Inbox Rules</span>
+      <span class="item-title">Ubiquiti releases UniFi OS 5.1.27 bundling UniFi Network 10.4.57 with stability fixes</span>
       <span class="item-type type-feature">Feature</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>New Exchange Online capabilities rolling out this month include cross-tenant message recall, which lets users recall messages sent to other M365 tenants when the receiving tenant opts in via PowerShell and allow-lists the sender's Entra tenant ID, and enhanced Outlook Inbox Rules with the External email tag as a rule condition so users can auto-categorize or move external messages.</p>
-      <a href="https://changepilot.cloud/blog/top-microsoft-365-message-center-roadmap-updates-august-2026" target="_blank" class="src">Source &rarr;</a>
+      <p>Ubiquiti pushed UniFi OS 5.1.27 with bundled UniFi Network 10.4.57, focused on improved device stability. Rollout is staged and may not be visible to all users immediately. No security CVEs called out; treat as scheduled maintenance for your construction client's UniFi deployment (currently on 10.3+).</p>
+      <a href="https://community.ui.com/RELEASES" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-14">
     <summary class="item-header">
-      <span class="item-title">DoD suspends CMMC Phase II and C3PAO/DIBCAC requirements pending 60-day reform review</span>
-      <span class="item-type type-industry">Industry</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 10/11</span>
+      <span class="item-title">UniFi Protect iOS 3.9.0 adds Timeline scrubber, PPE and Point of Sale event views</span>
+      <span class="item-type type-feature">Feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>The Department of Defense (now Department of War) has suspended the Nov 10, 2026 CMMC Phase II rollout, citing prohibitive compliance costs and severe C3PAO assessor shortages. Level 2 (C3PAO) and Level 3 (DIBCAC) certification requirements are being removed as scheduled award conditions and no waivers are granted. A CMMC Reform Task Force reports within 60 days, drawing on RFI responses due Aug 14, 2026. Underlying DFARS 252.204-7012 obligations still apply. Directly relevant to your construction client's CMMC Level 2 track -- update the compliance roadmap accordingly.</p>
-      <a href="https://www.crowell.com/en/insights/client-alerts/department-of-war-immediately-suspends-cmmc-phase-ii-requirements-launches-60-day-reform-review" target="_blank" class="src">Source &rarr;</a>
+      <p>Ubiquiti released UniFi Protect iOS 3.9.0 with a horizontal Timeline event scrubber, new PPE safety-violation and Point of Sale event categories in Timeline and Find Anything, expanded third-party camera settings, and Floodlight controls via Siri and Shortcuts. Requires UniFi Protect application 7.2.72 or newer on the console side -- OCC's Protect is on 7.5+ so compatible.</p>
+      <a href="https://community.ui.com/releases" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-15">
     <summary class="item-header">
-      <span class="item-title">WordPress XSS2Shell technique escalates a login-form XSS into full server takeover</span>
+      <span class="item-title">OpenAI rolls out GPT-5.6 Sol tuned for everyday chat, removes ChatGPT text limits</span>
+      <span class="item-type type-feature">Feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 7/11</span>
+    </summary>
+    <div class="item-body">
+      <p>OpenAI is releasing a GPT-5.6 Sol variant tuned for conversational ChatGPT use, producing more focused answers, adapting detail level per question, and dropping unnecessary formatting. OpenAI is also removing text-chat limits for ChatGPT. Separately, OpenAI o3 retires from ChatGPT on Aug 26, 2026, and GPT-5.4/mini leave Codex signed-in sessions on Aug 31 (API access continues).</p>
+      <a href="https://9to5mac.com/2026/08/06/openai-updating-chatgpt-with-a-smarter-gpt-5-6-sol-and-unlimited-free-chats/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-16">
+    <summary class="item-header">
+      <span class="item-title">Security Affairs Malware Newsletter Round 109 - fake Roblox cheats, Java stealers, ScreenConnect RMM abuse, XCSSET, malicious npm</span>
       <span class="item-type type-security">Security</span>
       <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>Researchers detailed an XSS2Shell chain that turns a simple XSS bug on a WordPress login page into a full server compromise by hijacking an admin session and installing a malicious plugin. Any SMB running self-hosted WordPress should audit login-page customizations and admin plugin permissions.</p>
-      <a href="https://securityaffairs.com/196820/hacking/wordpress-xss2shell-flaw-turns-simple-login-bug-into-full-server-takeover.html" target="_blank" class="src">Source &rarr;</a>
+      <p>Weekly roundup covers active operator activity worth flagging to SMB techs: DarkSword operators, Java-based infostealers, npm packages shipping RAT capabilities, ScreenConnect RMM abuse for lateral movement, and a new XCSSET variant. Most relevant to SMB helpdesks are the RMM abuse and npm supply-chain items -- worth a quick sweep for unexpected ScreenConnect installs across managed endpoints.</p>
+      <a href="https://securityaffairs.com/196919/malware/security-affairs-malware-newsletter-round-109.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
-  <details class="item" id="item-16">
+  <details class="item" id="item-17">
     <summary class="item-header">
-      <span class="item-title">Unlimited Technology Systems breach exposes data of 3.8 million people</span>
+      <span class="item-title">August 2026 Patch Tuesday forecast warns of "patch apocalypse" ahead of Aug 12 release</span>
       <span class="item-type type-security">Security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 7/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Help Net Security published its August 2026 Patch Tuesday forecast on Aug 7, previewing a heavy update cycle for Microsoft's Aug 12 release. Analysts point to backlogs of critical fixes accumulating across Windows, browsers, and productivity suites, and advise SMB IT teams to stage patch rings and confirm backups before deployment.</p>
+      <a href="https://www.helpnetsecurity.com/2026/08/07/august-2026-patch-tuesday-forecast/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-18">
+    <summary class="item-header">
+      <span class="item-title">Palo Alto Networks faces China cybersecurity review amid rising tech tensions</span>
+      <span class="item-type type-industry">Industry</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 6/11</span>
     </summary>
     <div class="item-body">
-      <p>Healthcare software vendor Unlimited Technology Systems disclosed a breach impacting more than 3.8 million individuals from an October 2025 intrusion. Relevant as a supply-chain reminder for SMBs in healthcare who use third-party clinical or practice software.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/unlimited-technology-systems-breach-impacts-38-million-people/" target="_blank" class="src">Source &rarr;</a>
+      <p>China's Cyberspace Administration opened a cybersecurity review of Palo Alto Networks on Aug 8, adding another US security vendor to Beijing's scrutiny list. The move is unlikely to affect North American SMB deployments directly but signals continued fragmentation of the global security-vendor market that MSPs should track for supply-chain and roadmap risk.</p>
+      <a href="https://securityaffairs.com/196881/intelligence/palo-alto-networks-faces-china-cybersecurity-review-amid-rising-tech-tensions.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 </div>
 
-<div class="footer">Generated Saturday, August 8, 2026 at 6:00 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-08-08.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
+<div class="footer">Generated Sunday, August 9, 2026 at 6:00 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-08-09.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
 
 </main>
 </body>
