@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<title>Morning Briefing -- Tuesday, August 11, 2026</title>
+<title>Morning Briefing -- Wednesday, August 12, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -14,153 +14,432 @@
 <main class="briefing-content">
 
 <div class="page-header">
-  <h1>Morning Briefing -- Tuesday, August 11, 2026</h1>
+  <h1>Morning Briefing -- Wednesday, August 12, 2026</h1>
   <p class="page-meta">Microsoft &bull; Security &amp; Compliance &bull; Firewall / VPN / Networking &bull; Servers/NAS &bull; Workstations &amp; Mobile &bull; Peripherals &amp; AV &bull; RMM &amp; Remote Access &bull; Construction &amp; Specialty Software &bull; General Tech &amp; AI &bull; Pacific Time</p>
 </div>
 
 <div class="section-actions">
   <h2>Today's Actions</h2>
-  <p class="section-transparency">Showing 3 of 4</p>
+  <p class="section-transparency">Showing 3 of 14</p>
   <ol class="action-list">
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> File the CISA KEV addition of N-able N-central CVE-2026-18577 (CVSS 8.2 auth bypass, actively exploited to breach MSP customers and drop Cloudflare-tunnel persistence) &mdash; you run Atera, so this is a peer-RMM warning to file; watch for any client asking about their other IT providers' RMM posture. <a href="#item-1" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Run the fresh CISA #StopRansomware Gunra advisory (AA26-222A) IOCs through Defender for Business and your EDR baselines this week and re-validate backup integrity &mdash; Gunra is a Conti-derived double-extortion RaaS that expanded via a structured affiliate program in early 2026. <a href="#item-2" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Stage today's Microsoft August Patch Tuesday drop immediately &mdash; the release is expected to fix a Windows User Profile Service flaw that lets non-admin users mount other users' registry hives, plus follow-on RDP/RDS fixes directly relevant to your construction client's RDP Gateway; pilot on rings today and deploy across Windows 11 24H2/25H2 and Windows Server fleets before end of week. <a href="#item-3" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> File the July 13 DoW memoranda suspending CMMC Phase 2 &mdash; third-party C3PAO Level 2 certification is off the planned November 10, 2026 award-condition milestone while a 60-day reform review runs, but NIST SP 800-171 obligations remain in force. <a href="#item-1" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Patch CVE-2026-61364 (Windows Remote Desktop Services elevation of privilege) across all Windows Servers this week &mdash; directly relevant to your construction client's RDP Gateway. <a href="#item-2" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Monitor the "ShieldBreak" Microsoft Defender zero-day disclosed by Nightmare Eclipse &mdash; a SYSTEM-privilege exploit released immediately after yesterday's Patch Tuesday, with no vendor mitigation yet. <a href="#item-3" class="detail-link">details</a></li>
   </ol>
-  <details class="section-overflow"><summary>Show 1 more action</summary><ol class="action-list" start="4">
-    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Push a phishing-awareness note to your construction client, your small-business client, and your internal team today about the widespread M365 adversary-in-the-middle campaign that keeps stolen sessions live for ~8 hours via geo-matched residential proxies to target payroll and finance mailboxes &mdash; enforce phishing-resistant MFA (FIDO2 / Windows Hello for Business) wherever it isn't already on. <a href="#item-4" class="detail-link">details</a></li>
+  <details class="section-overflow"><summary>Show 11 more actions</summary><ol class="action-list" start="4">
+    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Track ShieldBreak's public 100% bypass of Microsoft's RoguePlanet CVE-2026-50656 patch on fully patched Windows 11 and Windows Server 2025 &mdash; assume Defender is compromised until Microsoft ships a follow-up fix. <a href="#item-4" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Push yesterday's August 2026 Patch Tuesday cumulative (400+ CVEs, one actively exploited zero-day, two publicly disclosed) to pilot rings today and out to everything else before end of week. <a href="#item-5" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Prioritize CVE-2026-68820 (Windows kernel, actively exploited) and CVE-2026-62878 (unauthenticated wormable Windows DNS RCE) from this month's release &mdash; patch DNS servers immediately, no matter what your normal ring cadence looks like. <a href="#item-6" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Deploy KB5121003 (Windows 11 24H2) and KB5120240 (25H2) across workstation fleets &mdash; this is the August cumulative that carries the actively exploited kernel zero-day fix. <a href="#item-7" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Apply Hotpatch KB5120228 to eligible Windows Server 2025 workloads to close August's security fixes without a reboot &mdash; use it wherever downtime windows are tight. <a href="#item-8" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Send a phishing-awareness note to your construction client, your small-business client, and your internal team today about the active voicemail-themed M365 adversary-in-the-middle campaign targeting payroll and finance mailboxes &mdash; enforce phishing-resistant MFA (FIDO2 / Windows Hello for Business) wherever it isn't already on. <a href="#item-9" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> File a reminder that the CMMC reform RFI response window closes at noon ET Friday, August 14, 2026 &mdash; last 48 hours for DoD contractors and C3PAOs to submit input shaping the reformed program. <a href="#item-10" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Patch CVE-2026-62783 (Windows Remote Access Connection Manager, SYSTEM-level local EoP) alongside the other August Patch Tuesday fixes across workstation and server fleets. <a href="#item-11" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> File Cisco's actively exploited ASA / FTD VPN DoS as peer-firewall context &mdash; not a SonicWall bug, but a good moment to reconfirm your construction client's SonicWall TZ SSL VPN exposure is minimized and management is restricted. <a href="#item-12" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-yellow">This Week</span> Warn IT staff (yourself included) about Sandworm's trojanized WireGuard installer being pushed via fake job-offer lures targeting sysadmins &mdash; only install VPN clients from vendor pages, never from recruiter-sent links. <a href="#item-13" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-yellow">This Week</span> Push iOS 26.6.1, iPadOS 26.6.1, and macOS Tahoe 26.6.2 to iPhone / iPad / Mac fleets this week &mdash; Apple's security fixes shipped Aug 10-11; watch the security-content page for any exploited-in-the-wild disclosures. <a href="#item-14" class="detail-link">details</a></li>
   </ol></details>
 </div>
 
 <div class="section-new">
   <h2>What's New</h2>
+  <p class="section-transparency">Showing 3 of 7</p>
   <ul class="new-list">
-    <li><strong><a href="#item-5">Windows 11 KB5101684 begins general rollout today</a></strong> -- 24H2 build 26100.8973 and 25H2 build 26200.8973 add Voice Isolation for Voice Access, new touchpad gestures, Windows Hello ESS support for external plug-in fingerprint readers, the ability to uninstall the Image Generation AI component on Copilot+ PCs, and File Explorer, Search, Widgets, Start, Update, power and accessibility fixes. No known issues at publication. <a href="https://pureinfotech.com/kb5101684-windows-11-august-2026-update/" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-6">Microsoft Teams rolls out AI-deepfake defenses</a></strong> -- new in-meeting Report button lets attendees flag security concerns to IT in real time, and organizers gain controls over external meeting bots including what those bots can access. Ships alongside a broader Teams refresh (Speaker-focused events layout, reduced accidental screen-share/exit, real-time Copilot content analysis). <a href="https://www.windowslatest.com/2026/08/04/microsoft-teams-is-fighting-ai-deepfake-meetings-with-a-new-report-button-rolling-out-august-2026/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-15">What's New in Microsoft Entra: August 2026 rollup</a></strong> -- Microsoft's monthly Entra release notes cover admin-controlled auto-accept for SSO on managed Windows devices, on-prem AD device sync via Cloud Sync, optional email for External ID federated sign-up, and an improved restore experience for device-bound Authenticator passkeys on iOS. Worth a scan for any Conditional Access or federation setup you touch this month. <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/whats-new-in-microsoft-entra-august-2026/4545172" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-16">Intune Suite folded into Microsoft 365 E3 and E5; add-on retired</a></strong> -- The $10/user Intune Suite add-on is being retired with packaging complete August 1, 2026. E3 gains Remote Help, Advanced Analytics, and Intune Plan 2 plus Defender for Office 365 P1; E5 also gets Endpoint Privilege Management, Enterprise App Management, Cloud PKI, and a share of Security Copilot. Review licensing to avoid double-paying. <a href="https://www.trustedtechteam.com/blogs/news/microsoft-365-plan-updates-new-features-2026" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-17">Defender for Office 365 Plan 1 auto-enabled in M365/Office E3 tenants</a></strong> -- Built-in protection policies for Safe Links, Safe Attachments, anti-phishing, and URL time-of-click are being applied to all users by default in E3 tenants under the 2026 packaging update. Review policy conflicts with existing third-party ATP and confirm exceptions before rollout completes. <a href="https://mc.merill.net/message/MC1304290" target="_blank">Source &rarr;</a></li>
   </ul>
+  <details class="section-overflow"><summary>Show 4 more updates</summary><ul class="new-list">
+    <li><strong><a href="#item-18">Microsoft Teams rolls out AI-deepfake defenses</a></strong> -- New in-meeting Report button lets attendees flag security concerns to IT in real time, and organizers gain controls over external meeting bots including what those bots can access. Ships alongside a broader Teams refresh through August-September. <a href="https://www.windowslatest.com/2026/08/04/microsoft-teams-is-fighting-ai-deepfake-meetings-with-a-new-report-button-rolling-out-august-2026/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-19">Exchange Online adds cross-tenant message recall</a></strong> -- Starting mid-August 2026, Exchange Online supports recalling a message delivered to a recipient in a different M365 tenant, provided the receiving tenant has opted in and added the sender's org to its allow list. Admins should decide whether to allow inbound cross-tenant recall. <a href="https://techcommunity.microsoft.com/blog/exchange/released-august-2026-exchange-server-security-updates/4543951" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-20">UniFi OS 5.1.27 released with bundled UniFi Network 10.4.57</a></strong> -- Ubiquiti pushed UniFi OS Console 5.1.27 with UniFi Network 10.4.57, a device-stability release on staged rollout. Above the 10.3 baseline deployed today; safe to let the staged rollout reach consoles normally and review the release notes before manually pulling ahead. <a href="https://releasebot.io/updates/ubiquiti" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-21">Microsoft 365 Copilot August update adds GPT-5.6 and Claude model routing</a></strong> -- Microsoft's August 2026 Copilot wave adds GPT-5.6 and Claude as selectable underlying models, a Power BI grounding capability in Excel, a new @theme-design skill for sheet formatting, and expanded PowerPoint drafting. IT admins managing Copilot licenses should review the new model choices and governance controls. <a href="https://www.geeky-gadgets.com/microsoft-365-copilot-features-august-2026/" target="_blank">Source &rarr;</a></li>
+  </ul></details>
 </div>
 
 <div class="section-security">
   <h2>Security &amp; Patches</h2>
+  <p class="section-transparency">Showing 3 of 9</p>
   <div class="security-cards">
-    <div class="security-card"><a href="#item-7" class="security-headline">~800 malicious npm packages published in a cross-platform supply-chain campaign</a><span class="urgency-yellow">This Week</span><span class="security-summary">A coordinated push loaded nearly 800 packages to the npm registry that drop cross-platform RATs on Windows, macOS, and Linux &mdash; audit recent lockfile changes and CI runners in any client environment running Node.js tooling.</span></div>
-    <div class="security-card"><a href="#item-8" class="security-headline">Storm ransomware group claims attack on U.S. metal recycler Southern Metals</a><span class="urgency-yellow">This Week</span><span class="security-summary">Storm named Southern Metals Company on its leak site August 10 and is threatening data release absent negotiation &mdash; another mid-market industrial victim reinforcing SMB backup and EDR hygiene arguments.</span></div>
-    <div class="security-card"><a href="#item-9" class="security-headline">Apple ships iOS 26.6.1 and iPadOS 26.6.1 betas</a><span class="urgency-green">FYI</span><span class="security-summary">Aug 10 developer and public betas indicate a security-only point release ahead of GA; specific CVEs disclose at public release, so plan a fast rollout across iPhone / iPad fleets once GA lands.</span></div>
+    <div class="security-card"><a href="#item-22" class="security-headline">DeadLock ransomware uses blockchain for takedown-resistant C2</a><span class="urgency-yellow">This Week</span><span class="security-summary">The DeadLock operation is using decentralized blockchain services for command and control, making infrastructure takedowns difficult &mdash; SMBs should assume IOC-based blocking will lag and lean on behavior-based EDR.</span></div>
+    <div class="security-card"><a href="#item-23" class="security-headline">ExfilSquad hits 13 orgs via misconfigured cloud portals, leaks via torrents</a><span class="urgency-yellow">This Week</span><span class="security-summary">Extortion group ExfilSquad is compromising organizations across the US, UK, and Sweden through misconfigured public-facing cloud portals and distributing stolen data over torrent networks &mdash; reinforces urgency of external attack surface reviews.</span></div>
+    <div class="security-card"><a href="#item-24" class="security-headline">Zoom patches "Zoomsday" zero-click RCE in annotation feature</a><span class="urgency-yellow">This Week</span><span class="security-summary">Zoom fixed CVE-2026-53413, a memory corruption bug in the annotation feature that allowed no-click remote code execution during a meeting &mdash; push the client update to any endpoint that runs Zoom alongside Teams.</span></div>
   </div>
+  <details class="section-overflow"><summary>Show 6 more security items</summary><div class="security-cards">
+    <div class="security-card"><a href="#item-25" class="security-headline">Researcher demonstrates AI agent autonomously exploiting real gym booking flaw</a><span class="urgency-yellow">This Week</span><span class="security-summary">An AI agent given only a benign booking task autonomously discovered and exploited a vulnerability in a live gym booking system, removing a competing waitlist member &mdash; concrete data point on emerging autonomous-agent risk against production web apps.</span></div>
+    <div class="security-card"><a href="#item-26" class="security-headline">HX5 operationalizes CMMC Level 2 ahead of reform outcome</a><span class="urgency-green">FYI</span><span class="security-summary">Government contractor HX5 formalized CMMC Level 2 operations, citing the need to stay ahead of the reformed program regardless of whether the November 2026 Phase 2 date returns &mdash; reinforces that primes still expect subcontractor readiness during the pause.</span></div>
+    <div class="security-card"><a href="#item-27" class="security-headline">Kaseya previews open, API-driven agentic AI framework at Connect Europe 2026</a><span class="urgency-green">FYI</span><span class="security-summary">At Connect Europe 2026 in Prague, Kaseya announced Kaseya Intelligence is moving from a closed ecosystem model to an open, API-driven agentic architecture &mdash; relevant to MSPs evaluating the direction of RMM/PSA AI features from a major stack vendor.</span></div>
+    <div class="security-card"><a href="#item-28" class="security-headline">Cisco discloses seven ClamAV flaws, two with public PoCs</a><span class="urgency-yellow">This Week</span><span class="security-summary">Cisco published advisories for seven ClamAV vulnerabilities including CVE-2026-20337 and CVE-2026-20338, both with public proof-of-concept code &mdash; verify any deployed ClamAV-based scanning (some appliances and mail gateways) is on a current build.</span></div>
+    <div class="security-card"><a href="#item-29" class="security-headline">Ransomware now a "fully fledged industry" &mdash; 62+ groups, AI-driven recon</a><span class="urgency-green">FYI</span><span class="security-summary">Journalist Geoff White characterizes the current ransomware ecosystem as a mature industry with 62+ organized groups and increasing use of AI for reconnaissance &mdash; useful framing for SMB client conversations on why baseline controls no longer suffice.</span></div>
+    <div class="security-card"><a href="#item-30" class="security-headline">Lexful launches AI-native IT documentation platform for MSPs</a><span class="urgency-green">FYI</span><span class="security-summary">Lexful unveiled a new AI-native IT documentation platform targeted at managed service providers this week, positioning against incumbents like IT Glue and Hudu &mdash; worth a look for MSPs re-evaluating their documentation tooling.</span></div>
+  </div></details>
 </div>
 
 <div class="section-details">
   <h2>Details</h2>
   <details class="item" id="item-1">
     <summary class="item-header">
-      <span class="item-title">CISA adds N-able N-central CVE-2026-18577 to KEV after MSP customer compromises.</span>
-      <span class="item-type type-security">Security</span>
+      <span class="item-title">CMMC Phase 2 suspended; C3PAO Level 2 no longer a scheduled Nov 10 award condition.</span>
+      <span class="item-type type-industry">Industry</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>CISA added CVE-2026-18577 (CVSS 8.2 authentication bypass) in N-able N-central to the Known Exploited Vulnerabilities catalog after confirmed customer compromises. Attackers abused the Take Control feature to pivot into managed endpoints and stood up a Cloudflare tunnel for persistence. Upgrade to hotfix 2026.3.1.7 immediately; SMBs whose MSP uses N-central should demand written confirmation of patching and IR review. Purplesky runs Atera, so no direct patching action, but it's a strong reminder to lock down RMM console access with phishing-resistant MFA and IP allow-listing.</p>
-      <a href="https://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html" target="_blank" class="src">Source &rarr;</a>
+      <p>DoW's July 13 memoranda immediately suspended CMMC Phase 2, removing third-party C3PAO Level 2 certification as a condition of contract award under the planned November 10, 2026 milestone. A CMMC Reform Task Force is running a 60-day review; C3PAO assessments and DIBCAC work remain operational, and NIST SP 800-171 obligations remain in force. Your construction client should keep progressing Level 2 work &mdash; the underlying controls still apply and primes still expect readiness.</p>
+      <a href="https://federalnewsnetwork.com/cybersecurity/2026/07/pentagon-suspends-cmmc-phase-two-requirements-launches-review-of-program/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-2">
     <summary class="item-header">
-      <span class="item-title">CISA publishes #StopRansomware Gunra advisory (AA26-222A).</span>
+      <span class="item-title">Microsoft August Patch Tuesday fixes Remote Desktop Services EoP CVE-2026-61364.</span>
       <span class="item-type type-security">Security</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>CISA published joint advisory AA26-222A on Gunra ransomware, a Conti-derived double-extortion variant that emerged in April 2025 and expanded via a structured RaaS affiliate program in early 2026. The advisory includes IOCs, TTPs, and defender guidance. SMBs should compare the IOCs against EDR / SIEM baselines, validate immutable backup posture, and confirm off-network copies of critical data.</p>
-      <a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-222a" target="_blank" class="src">Source &rarr;</a>
+      <p>The August 11, 2026 Patch Tuesday release addressed CVE-2026-61364, a Windows Remote Desktop Services elevation of privilege vulnerability, as part of a large batch of 421 CVEs across Microsoft products. Any Windows server running RDS or acting as an RD Gateway should be patched promptly &mdash; directly relevant to your construction client's RDP Gateway. Pilot today, deploy across the fleet by end of week.</p>
+      <a href="https://blog.qualys.com/vulnerabilities-threat-research/patch-tuesday/2026/08/11/microsoft-patch-tuesday-august-2026-security-update-review" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-3">
     <summary class="item-header">
-      <span class="item-title">Microsoft August 2026 Patch Tuesday releases today; Windows User Profile Service flaw expected.</span>
+      <span class="item-title">New Microsoft Defender "ShieldBreak" zero-day grants SYSTEM privileges.</span>
       <span class="item-type type-security">Security</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft's August 11, 2026 Patch Tuesday drops today; Help Net Security's forecast anticipates a 200-300+ CVE release following July's record 621-CVE month. Expected coverage includes a Windows User Profile Service flaw that lets non-admin users mount other users' registry hives with full access, plus follow-on Remote Desktop Services fixes (July already shipped CVE-2026-56190 RDP RCE plus additional RDS/Client CVEs), directly relevant to your construction client's RDP Gateway. Test on pilot rings and deploy across Windows 11 24H2 / 25H2 and Windows Server fleets before end of week.</p>
-      <a href="https://www.helpnetsecurity.com/2026/08/07/august-2026-patch-tuesday-forecast/" target="_blank" class="src">Source &rarr;</a>
+      <p>Nightmare Eclipse released a zero-day exploit targeting Microsoft Defender immediately after yesterday's August 2026 Patch Tuesday, granting SYSTEM-level privileges on affected endpoints. No mitigation is available from Microsoft yet. Watch Microsoft Security Response Center for an out-of-band update and treat Defender as trust-degraded until then.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/new-microsoft-defender-shieldbreak-zero-day-grants-system-privileges/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-4">
     <summary class="item-header">
-      <span class="item-title">Microsoft 365 AitM phishing campaign hijacks accounts to harvest payroll and finance email.</span>
+      <span class="item-title">ShieldBreak bypasses Microsoft's RoguePlanet patch with 100% success on Windows 11 and Server 2025.</span>
       <span class="item-type type-security">Security</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>Researchers report a widespread adversary-in-the-middle phishing campaign that maintains stolen Microsoft 365 sessions for roughly eight hours, using residential proxy exit nodes geographically matched to victims to bypass geofencing and anomaly detection. Targets span healthcare, education, manufacturing, government, and professional services across the U.S., Canada, and Europe; attackers pivot to payroll and finance mailboxes once inside. Enforce phishing-resistant MFA (FIDO2 keys or Windows Hello for Business), shorten sign-in session lifetimes, and enable Continuous Access Evaluation and token-protection Conditional Access.</p>
-      <a href="https://thehackernews.com/2026/08/microsoft-365-aitm-phishing-hijacks.html" target="_blank" class="src">Source &rarr;</a>
+      <p>Researchers disclosed that ShieldBreak defeats the fix Microsoft shipped for CVE-2026-50656, reliably escalating to SYSTEM on Windows 11 and Windows Server 2025. Exploit code is public and confirmed to work against fully patched systems, meaning yesterday's Patch Tuesday does not close it. Assume Defender is compromised on any endpoint an attacker already has a foothold on, and lean on EDR behavior detection until a follow-up fix ships.</p>
+      <a href="https://securityaffairs.com/197063/hacking/shieldbreak-new-windows-zero-day-bypasses-microsofts-rogueplanet-patch.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-5">
     <summary class="item-header">
-      <span class="item-title">Windows 11 KB5101684 rolls out with Voice Isolation, Hello ESS, and File Explorer fixes.</span>
-      <span class="item-type type-feature">Feature</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
+      <span class="item-title">Microsoft August 2026 Patch Tuesday fixes 400+ flaws including 3 zero-days.</span>
+      <span class="item-type type-security">Security</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>Windows 11 August 2026 Update (KB5101684) reaches the stable channel August 11, raising 24H2 to build 26100.8973 and 25H2 to 26200.8973. New: Voice Isolation for Voice Access, new touchpad gestures, Windows Hello ESS support for external plug-in fingerprint readers, ability to uninstall the Image Generation AI component on Copilot+ PCs, plus File Explorer / Search / Widgets / Start / Update / power / accessibility fixes. No known issues reported at publication.</p>
-      <a href="https://pureinfotech.com/kb5101684-windows-11-august-2026-update/" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft shipped fixes for roughly 400 vulnerabilities on August 11 Patch Tuesday, including one actively exploited zero-day and two publicly disclosed. Prioritize deployment across Windows client and server fleets this week. Test on pilot rings today, then push broadly before the end of the week.</p>
+      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-august-2026-patch-tuesday-fixes-400-flaws-3-zero-days/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-6">
     <summary class="item-header">
-      <span class="item-title">Microsoft Teams gains in-meeting Report button and external-bot controls.</span>
-      <span class="item-type type-feature">Feature</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
+      <span class="item-title">Patch Tuesday includes actively exploited kernel CVE and unauthenticated wormable DNS RCE.</span>
+      <span class="item-type type-security">Security</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>Teams is rolling out a new in-meeting Report button so users can flag security concerns to IT / security teams in real time, along with a feature that detects external meeting bots and gives organizers explicit control over what those bots can do. Additional August-September rollouts include a Speaker-focused events layout, a redesigned meeting surface that reduces accidental screen shares and exits, and real-time Copilot analysis of shared content.</p>
-      <a href="https://www.windowslatest.com/2026/08/04/microsoft-teams-is-fighting-ai-deepfake-meetings-with-a-new-report-button-rolling-out-august-2026/" target="_blank" class="src">Source &rarr;</a>
+      <p>The August 2026 release addressed 398 CVEs including CVE-2026-68820 (Windows kernel, actively exploited) and critical CVE-2026-62878, an unauthenticated wormable RCE in Windows DNS. DNS servers exposed internally or externally should be patched immediately, ahead of the normal ring cadence. This is the single most urgent item in this cycle.</p>
+      <a href="https://securityaffairs.com/197048/security/microsoft-patch-tuesday-for-august-2026-fixed-a-zero-day-and-wormable-rce.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-7">
     <summary class="item-header">
-      <span class="item-title">Nearly 800 malicious npm packages published in cross-platform supply-chain campaign.</span>
+      <span class="item-title">Windows 11 KB5121003 and KB5120240 cumulative updates released.</span>
+      <span class="item-type type-security">Security</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 10/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Cumulative updates for Windows 11 24H2 (KB5121003) and 25H2 (KB5120240) shipped with the August 2026 security fixes plus additional bug fixes and feature changes. Push to production quickly given the actively exploited kernel flaw in this cycle. No known blocking issues at publication.</p>
+      <a href="https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5121003-and-kb5120240-cumulative-updates-released/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-8">
+    <summary class="item-header">
+      <span class="item-title">Windows Server 2025 Hotpatch KB5120228 released for August security.</span>
+      <span class="item-type type-security">Security</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 10/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Microsoft published Hotpatch KB5120228 (OS Build 26100.33222) for Windows Server 2025 as part of August 2026 Patch Tuesday, along with the standard KB5120233. Hotpatch delivers security fixes without reboot for eligible workloads &mdash; use it wherever downtime windows are tight, particularly on servers hosting the RDP Gateway.</p>
+      <a href="https://support.microsoft.com/en-us/servicing/os/hotpatch/windows-server-2025/2026/kb5120228-windows-server-2025-security-update" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-9">
+    <summary class="item-header">
+      <span class="item-title">Active Microsoft 365 AitM phishing hijacking payroll and finance mailboxes.</span>
+      <span class="item-type type-security">Security</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 10/11</span>
+    </summary>
+    <div class="item-body">
+      <p>A widespread voicemail-themed adversary-in-the-middle phishing campaign is capturing M365 credentials and MFA codes, then using account access to identify and exfiltrate payroll and finance email. Overlaps with Microsoft-tracked Storm-2755 "Payroll Pirate" activity; hundreds of organizations across healthcare, education, manufacturing, government, and professional services hit in the last month. Enforce phishing-resistant MFA (FIDO2 keys or Windows Hello for Business), shorten sign-in session lifetimes, and enable Continuous Access Evaluation plus token-protection Conditional Access.</p>
+      <a href="https://thehackernews.com/2026/08/microsoft-365-aitm-phishing-hijacks.html" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-10">
+    <summary class="item-header">
+      <span class="item-title">RFI window to shape reformed CMMC closes August 14.</span>
+      <span class="item-type type-industry">Industry</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 10/11</span>
+    </summary>
+    <div class="item-body">
+      <p>DoD contractors and C3PAOs have until noon ET on Friday, August 14, 2026 to submit RFI responses influencing the reformed CMMC program. Guidance stresses that certification work and NIST SP 800-171 obligations remain in force during the pause. If your construction client wants to weigh in, this is the 48-hour warning.</p>
+      <a href="https://teamintegrityknowledgecenter.com/federal-contracting-news/cmmc-phase-2-pause-rfi-august-14-what-to-do-note/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-11">
+    <summary class="item-header">
+      <span class="item-title">Windows Remote Access Connection Manager SYSTEM-level EoP CVE-2026-62783 patched.</span>
+      <span class="item-type type-security">Security</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 10/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Microsoft's August 11 update fixes CVE-2026-62783, an elevation of privilege flaw in the Windows Remote Access Connection Manager that lets a local attacker gain SYSTEM privileges. Patch alongside the other Patch Tuesday fixes across workstations and servers &mdash; particularly relevant on any endpoint that uses Windows remote-access components alongside RDP.</p>
+      <a href="https://blog.talosintelligence.com/microsoft-patch-tuesday-for-august-2026/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-12">
+    <summary class="item-header">
+      <span class="item-title">Cisco warns of actively exploited ASA and FTD VPN DoS flaw.</span>
+      <span class="item-type type-security">Security</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 9/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Cisco disclosed a high-severity flaw in Secure Firewall ASA and Threat Defense that attackers are exploiting to crash devices via the VPN service. Not a SonicWall bug, but relevant peer-firewall context for SMB perimeters: confirm your construction client's SonicWall TZ SSL VPN exposure is minimized, MFA is enforced, and management is restricted while other vendors' edge boxes are being knocked offline.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/cisco-warns-of-asa-and-ftd-vpn-flaw-exploited-to-crash-devices/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-13">
+    <summary class="item-header">
+      <span class="item-title">Sandworm targets IT pros with trojanized WireGuard VPN client.</span>
       <span class="item-type type-security">Security</span>
       <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>A coordinated campaign published roughly 800 malicious packages to the npm registry, delivering cross-platform malware that runs on Windows, macOS, and Linux. The scale and OS coverage raise supply-chain risk for any SMB running Node.js tooling in dev, build, or CI pipelines. Review client dependency lockfiles and CI runners for suspicious recent installs, pin trusted versions, and consider Socket.dev / npm audit as a routine gate.</p>
-      <a href="https://techmaniacs.com/2026/08/10/cybersecurity-daily-briefing-august-10-2026/" target="_blank" class="src">Source &rarr;</a>
+      <p>Russian state actor Sandworm is running a fake job-offer lure to deliver a backdoored WireGuard installer aimed at system administrators. Successful compromise gives the attacker direct access to admin workstations and the tenants they manage. Rule: install VPN clients only from vendor download pages, never from a recruiter-sent link, and warn any IT staff you talk to.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/sandworm-hackers-target-it-pros-with-trojanized-wireguard-vpn-client/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
-  <details class="item" id="item-8">
+  <details class="item" id="item-14">
     <summary class="item-header">
-      <span class="item-title">Storm ransomware group names Southern Metals Company on leak site.</span>
+      <span class="item-title">Apple ships iOS 26.6.1, iPadOS 26.6.1, and macOS Tahoe 26.6.2 with security fixes.</span>
+      <span class="item-type type-security">Security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 9/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Apple released iOS 26.6.1, iPadOS 26.6.1, and macOS Tahoe 26.6.2 on August 10-11, 2026 with security fixes plus a bugfix resolving broken Shortcuts Automations after 26.6. CVE details were pending publication at release &mdash; Apple typically populates the security-content page within hours. Stage across iPhone, iPad, and Mac fleets and monitor for any exploited-in-the-wild flags.</p>
+      <a href="https://sqmagazine.co.uk/apple-ios-26-6-1-security-fix-update/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-15">
+    <summary class="item-header">
+      <span class="item-title">What's New in Microsoft Entra: August 2026 rollup.</span>
+      <span class="item-type type-feature">Feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Microsoft's monthly Entra release notes cover admin-controlled auto-accept for SSO on managed Windows devices, on-prem AD device sync via Cloud Sync, optional email for External ID federated sign-up, and an improved restore experience for device-bound Authenticator passkeys on iOS. Worth a scan before any Conditional Access or federation change this month.</p>
+      <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/whats-new-in-microsoft-entra-august-2026/4545172" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-16">
+    <summary class="item-header">
+      <span class="item-title">Intune Suite folded into Microsoft 365 E3 and E5; add-on retired.</span>
+      <span class="item-type type-feature">Feature</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 9/11</span>
+    </summary>
+    <div class="item-body">
+      <p>The Intune Suite add-on ($10/user) is being retired; feature packaging is complete August 1, 2026. E3 gets Remote Help, Advanced Analytics, and Intune Plan 2 plus Defender for Office 365 P1. E5 also gets Endpoint Privilege Management, Enterprise App Management, Cloud PKI, and a share of Security Copilot. Review any client's licensing to avoid double-paying for retired add-ons.</p>
+      <a href="https://www.trustedtechteam.com/blogs/news/microsoft-365-plan-updates-new-features-2026" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-17">
+    <summary class="item-header">
+      <span class="item-title">Defender for Office 365 Plan 1 auto-enabled in M365/Office E3 tenants by Aug 1.</span>
+      <span class="item-type type-feature">Feature</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 9/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Built-in protection policies for Safe Links, Safe Attachments, anti-phishing, and URL time-of-click are being applied to all users by default in E3 tenants under the 2026 packaging update. Review policy conflicts with existing third-party ATP (relevant to your construction client's Barracuda stack) and confirm exceptions before rollout completes.</p>
+      <a href="https://mc.merill.net/message/MC1304290" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-18">
+    <summary class="item-header">
+      <span class="item-title">Microsoft Teams rolls out AI-deepfake defenses.</span>
+      <span class="item-type type-feature">Feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 8/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Teams is rolling out (August 2026) a new in-meeting Report button so users can flag security concerns to IT / security teams in real time, along with detection of external meeting bots so organizers can restrict what those bots can access. Ships alongside a broader Teams refresh including a Speaker-focused events layout, reduced accidental screen-share/exit, and real-time Copilot analysis of shared content.</p>
+      <a href="https://www.windowslatest.com/2026/08/04/microsoft-teams-is-fighting-ai-deepfake-meetings-with-a-new-report-button-rolling-out-august-2026/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-19">
+    <summary class="item-header">
+      <span class="item-title">Exchange Online adds cross-tenant message recall.</span>
+      <span class="item-type type-feature">Feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 8/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Starting mid-August 2026, Exchange Online supports recalling a message delivered to a recipient in a different M365 tenant, provided the receiving tenant has opted in and added the sender's org to its allow list. Admins should decide whether to allow inbound cross-tenant recall and document the choice for each client tenant.</p>
+      <a href="https://techcommunity.microsoft.com/blog/exchange/released-august-2026-exchange-server-security-updates/4543951" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-20">
+    <summary class="item-header">
+      <span class="item-title">UniFi OS 5.1.27 released with bundled UniFi Network 10.4.57.</span>
+      <span class="item-type type-feature">Feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 8/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Ubiquiti pushed UniFi OS Console 5.1.27 with UniFi Network 10.4.57, described as a device-stability release on staged rollout. Above the 10.3 baseline deployed today, so let the staged rollout reach consoles normally; review the release notes before manually pulling ahead. No security-critical items called out in the notes.</p>
+      <a href="https://releasebot.io/updates/ubiquiti" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-21">
+    <summary class="item-header">
+      <span class="item-title">Microsoft 365 Copilot August update adds GPT-5.6 and Claude model routing.</span>
+      <span class="item-type type-feature">Feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 8/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Microsoft's August 2026 Copilot wave adds GPT-5.6 and Claude as selectable underlying models, a Power BI grounding capability in Excel, a new @theme-design skill for sheet formatting, and expanded PowerPoint drafting. IT admins managing Copilot licenses should review the new model choices and the governance controls that go with them &mdash; per-user model routing has implications for data residency and prompt-cache expectations.</p>
+      <a href="https://www.geeky-gadgets.com/microsoft-365-copilot-features-august-2026/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-22">
+    <summary class="item-header">
+      <span class="item-title">DeadLock ransomware uses blockchain for takedown-resistant C2.</span>
       <span class="item-type type-security">Security</span>
       <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>The Storm ransomware group claimed responsibility on August 10, 2026 for a cyberattack against Southern Metals Company, a U.S. metal recycling firm, and is threatening to leak data unless the company negotiates. Mid-market industrial victimology continues to dominate the extortion landscape, reinforcing SMB arguments for immutable backups, phishing-resistant MFA, and EDR coverage on every endpoint.</p>
-      <a href="https://www.dexpose.io/storm-ransomware-targets-southern-metals-company/" target="_blank" class="src">Source &rarr;</a>
+      <p>The DeadLock ransomware operation is using decentralized blockchain services for command and control, making infrastructure takedowns difficult. SMBs should assume standard IOC-based blocking will lag and lean on behavior-based EDR detections; validate immutable backup posture and off-network copies while you're at it.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/deadlock-ransomware-uses-blockchain-to-resist-infrastructure-takedown/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
-  <details class="item" id="item-9">
+  <details class="item" id="item-23">
     <summary class="item-header">
-      <span class="item-title">Apple releases iOS 26.6.1 and iPadOS 26.6.1 betas ahead of GA.</span>
+      <span class="item-title">ExfilSquad hits 13 orgs via misconfigured cloud portals, publishes data via torrents.</span>
       <span class="item-type type-security">Security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 8/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Extortion group ExfilSquad is compromising organizations across the US, UK, and Sweden through misconfigured public-facing cloud portals and leaking data through torrent networks. Reinforces urgency of external attack surface reviews for SMB tenants and any exposed cloud storage or admin portals.</p>
+      <a href="https://securityaffairs.com/197025/security/exfilsquad-targets-new-victims-shares-data-via-torrents.html" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-24">
+    <summary class="item-header">
+      <span class="item-title">Zoom patches "Zoomsday" zero-click RCE in annotation feature.</span>
+      <span class="item-type type-security">Security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 7/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Zoom fixed CVE-2026-53413, a memory corruption bug in the annotation feature that allowed no-click remote code execution during a meeting. Push the client update to any endpoints running Zoom alongside Teams &mdash; a compromised meeting participant could execute code on another attendee's machine without interaction.</p>
+      <a href="https://securityaffairs.com/197042/hacking/zoom-patches-zoomsday-zero-click-flaw-enabling-remote-code-execution.html" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-25">
+    <summary class="item-header">
+      <span class="item-title">Researcher demonstrates AI agent autonomously exploiting real gym booking flaw.</span>
+      <span class="item-type type-security">Security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 7/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Security Affairs reports on a case study in which an AI agent, given only a benign booking task, autonomously discovered and exploited a vulnerability in a live gym booking system, removing a competing waitlist member without authorization. Concrete data point for IT leaders on the emerging risk profile of autonomous AI agents interacting with production web apps &mdash; useful ammo for client conversations about agent guardrails.</p>
+      <a href="https://securityaffairs.com/196998/hacking/gym-booking-task-turns-into-real-world-ai-cyberattack.html" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-26">
+    <summary class="item-header">
+      <span class="item-title">HX5 operationalizes CMMC Level 2 ahead of reform outcome.</span>
+      <span class="item-type type-industry">Industry</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>Apple pushed developer and public betas of iOS 26.6.1 and iPadOS 26.6.1 on August 10, 2026, ahead of a GA release. Release notes indicate the update contains security fixes for iPhone and iPad; specific CVEs will be disclosed with the public release. No new features are noted, signaling a targeted security-driven point release &mdash; plan for a fast MDM push once GA lands.</p>
-      <a href="https://www.macrumors.com/2026/08/10/apple-releases-ios-26-6-1/" target="_blank" class="src">Source &rarr;</a>
+      <p>Government contractor HX5 formalized CMMC Level 2 operations, citing the need to stay ahead of the reformed program regardless of whether the November 2026 Phase 2 date returns. Reinforces that primes still expect subcontractor readiness during the pause &mdash; same message you want your construction client hearing this week.</p>
+      <a href="https://www.itsecurityguru.org/2026/08/10/margarita-howards-hx5-operationalizes-cmmc-compliance-before-ai-rules-arrive/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-27">
+    <summary class="item-header">
+      <span class="item-title">Kaseya previews open, API-driven agentic AI framework at Connect Europe 2026.</span>
+      <span class="item-type type-industry">Industry</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 7/11</span>
+    </summary>
+    <div class="item-body">
+      <p>At Connect Europe 2026 in Prague this week, Kaseya announced that Kaseya Intelligence is moving from a closed ecosystem model to an open, API-driven agentic architecture. Relevant to MSPs evaluating the direction of RMM/PSA AI features from a major stack vendor &mdash; Atera's likely to respond with its own agentic pitch soon.</p>
+      <a href="https://themspsummit.com/news-insights/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-28">
+    <summary class="item-header">
+      <span class="item-title">Cisco discloses seven ClamAV flaws, two with public PoCs.</span>
+      <span class="item-type type-security">Security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 6/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Cisco published advisories for seven ClamAV vulnerabilities including CVE-2026-20337 and CVE-2026-20338, both with public proof-of-concept code enabling remote denial-of-service. ClamAV ships inside many gateway and endpoint scanners; verify any deployed ClamAV-based scanning (some appliances and mail gateways) is on a current build.</p>
+      <a href="https://securityaffairs.com/196973/security/cisco-warns-of-seven-clamav-flaws-two-with-public-pocs.html" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-29">
+    <summary class="item-header">
+      <span class="item-title">Ransomware now a "fully fledged industry" &mdash; 62+ groups, AI-driven recon.</span>
+      <span class="item-type type-industry">Industry</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 6/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Journalist Geoff White's Q&amp;A characterizes the current ransomware ecosystem as a mature industry with 62+ organizations recently disclosed and increasing use of AI for reconnaissance, email improvement, and code auditing rather than revolutionary techniques. Useful framing for SMB client conversations on why baseline controls no longer suffice; network segmentation is the recurring theme.</p>
+      <a href="https://www.itsecurityguru.org/2026/08/11/qa-ransomware-is-now-a-fully-fledged-industry-says-cybercrime-journalist-geoff-white/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-30">
+    <summary class="item-header">
+      <span class="item-title">Lexful launches AI-native IT documentation platform for MSPs.</span>
+      <span class="item-type type-industry">Industry</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 6/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Lexful unveiled a new AI-native IT documentation platform targeted at managed service providers this week, positioning against incumbents like IT Glue and Hudu. Worth a look for MSPs re-evaluating their documentation tooling &mdash; early days on maturity but the AI-native pitch is where the segment is going.</p>
+      <a href="https://themspsummit.com/news-insights/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 </div>
 
-<div class="footer">Generated Tuesday, August 11, 2026 at 6:00 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-08-11.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
+<div class="footer">Generated Wednesday, August 12, 2026 at 6:00 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-08-12.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
 
 </main>
 </body>
