@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<title>Morning Briefing -- Friday, August 14, 2026</title>
+<title>Morning Briefing -- Saturday, August 15, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -14,47 +14,60 @@
 <main class="briefing-content">
 
 <div class="page-header">
-  <h1>Morning Briefing -- Friday, August 14, 2026</h1>
+  <h1>Morning Briefing -- Saturday, August 15, 2026</h1>
   <p class="page-meta">Microsoft &bull; Security &amp; Compliance &bull; Firewall / VPN / Networking &bull; Servers/NAS &bull; Workstations &amp; Mobile &bull; Peripherals &amp; AV &bull; RMM &amp; Remote Access &bull; Construction &amp; Specialty Software &bull; General Tech &amp; AI &bull; Pacific Time</p>
 </div>
 
 <div class="section-actions">
   <h2>Today's Actions</h2>
-  <p class="section-transparency">Showing 3 of 6</p>
+  <p class="section-transparency">Showing 3 of 10</p>
   <ol class="action-list">
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Push the August 11 Patch Tuesday to every Windows 11 build 26100/26200 host still unpatched -- CVE-2026-68820 (afd.sys use-after-free) is being weaponized by North Korean Lazarus with a kernel rootkit and CISA set a KEV patch-by date of August 25. <a href="#item-1" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Confirm CVE-2026-68820, the Metabase SQL injection (CVSS 10.0), and the Cisco Secure Firewall flaw are all remediated across your fleet -- CISA added all three to KEV on August 13 with mandated patch timelines. <a href="#item-2" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Prioritize the August 2026 Patch Tuesday afd.sys/WinSock zero-day fix on managed Windows fleets -- confirmed in-the-wild for privilege escalation and a common link in ransomware initial-access chains. <a href="#item-3" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Patch Metabase self-hosted, Windows AFD.sys (CVE-2026-68820), and Cisco Secure Firewall now -- CISA added all three to KEV on August 11 with the Windows deadline set for August 25 and the other two already past federal remediation dates. <a href="#item-1" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> File the N-able N-central CVE-2026-18577 auth-bypass Storm-1175 is chaining to drop StormEncryptor ransomware -- your fleet is on Atera not N-central, so track this as a broader RMM-as-lateral-movement pattern rather than an immediate action. <a href="#item-2" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Deploy Microsoft's out-of-band "LegacyHive" Windows zero-day patch across every managed Windows 10/11 and Windows Server host -- shipped after July Patch Tuesday disclosure and applies to all supported builds. <a href="#item-3" class="detail-link">details</a></li>
   </ol>
-  <details class="section-overflow"><summary>Show 3 more actions</summary><ol class="action-list" start="4">
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> File Adobe Commerce/Magento CVE-2026-71362 for awareness -- active exploitation of a CVSS 9.1 authentication flaw is ongoing; no client of yours runs Magento, but useful context for any e-commerce customer conversation. <a href="#item-4" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> File the GeoServer SQL injection zero-day (disclosed August 12, exploited within hours) -- no client of yours runs GeoServer, awareness only for any GIS or municipal/engineering customer conversation. <a href="#item-5" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-yellow">This Week</span> Warn any Mac users to be alert for GitHub "ClickFix" Terminal-paste lures -- AmnesiaStealer harvests Keychain, Chromium browser data, and Apple Notes, then hands operators live browser control at ~3fps via headless Chrome DevTools Protocol. <a href="#item-6" class="detail-link">details</a></li>
+  <details class="section-overflow"><summary>Show 7 more actions</summary><ol class="action-list" start="4">
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Confirm every managed Mac is on the latest macOS point release -- NCSC reports active in-the-wild exploitation of a Screen Sharing authentication bypass to gain root and install Monero cryptominers, with public PoC already circulating. <a href="#item-4" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> File the SecurityAffairs coverage of macOS Screen Sharing CVE-2026-65400 alongside the Bleeping Computer writeup -- same exploit and same fix, useful as a corroborating source for the patch push. <a href="#item-5" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Patch Progress ShareFile Storage Zones Controller immediately anywhere it runs self-hosted -- CVE-2026-2699 and CVE-2026-2701 chain to unauthenticated RCE (CVSS 9.8 + 9.1), a public PoC exists, and NHS England rates exploitation highly likely. <a href="#item-6" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> File the max-severity SAP Commerce Cloud RCE actively exploited days after patch -- no SAP customer in your portfolio, but useful context for any e-commerce conversation. <a href="#item-7" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-yellow">This Week</span> File the August 2026 Exchange Server security updates for the record -- all your tenants are Exchange Online only, but keep the CVE list handy if any hybrid mail-flow work surfaces at a prospect. <a href="#item-8" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-yellow">This Week</span> Push Autodesk Shared Components 2026.6 to any AutoCAD 2026 user via Autodesk Access -- advisories adsk-sa-2026-0004 and 0005 patch a PRT-file memory corruption in AutoCAD 2026 and specialized toolsets used by your construction client. <a href="#item-9" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-yellow">This Week</span> Monitor Akira ransomware's Safe Mode with Networking EDR-disable technique -- audit Defender for Business tamper protection and add detections for unexpected Safe Mode boot transitions across managed endpoints. <a href="#item-10" class="detail-link">details</a></li>
   </ol></details>
 </div>
 
 <div class="section-new">
   <h2>What's New</h2>
-  
+  <p class="section-transparency">Showing 3 of 7</p>
   <ul class="new-list">
-    <li><strong><a href="#item-7">Microsoft Entra August 2026 ships jailbreak/root detection and AD-to-Entra device sync via Cloud Sync</a></strong> -- August's Entra release adds jailbreak/root detection in the Authenticator app that blocks Entra credentials on compromised iOS and Android devices, plus a device-bound passkey restore flow on iOS that no longer requires a Microsoft personal account. Cloud Sync gains the ability to synchronize on-premises AD devices to Entra ID -- enabling Hybrid Azure AD Join and lifecycle management without Entra Connect Sync or AD FS. Entra External ID also now supports federation with IdPs that do not share user email. <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/whats-new-in-microsoft-entra-august-2026/4545172" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-8">Microsoft merges Copilot apps and kills Group Chats, Podcasts, Deep Research on August 18</a></strong> -- Microsoft is unifying its two consumer Copilot apps and discontinuing Group Chats, AI-generated Podcasts, Copilot Labs, and Deep Research on August 18, 2026 -- all Group Chat history and shared images will be wiped on that date. Merged mobile and web apps are rolling out mid-August; Windows and Mac desktop follow in mid-September. Warn any client staff using consumer Copilot Group Chats to export what they want to keep before Monday. <a href="https://techcrunch.com/2026/08/13/microsoft-kills-off-unsuccessful-ai-features-while-merging-its-separate-copilot-apps/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-11">Windows 11 KB5121003 lands with Voice Isolation, new touchpad gestures, and Enhanced Sign-in Security for peripheral fingerprint readers</a></strong> -- Microsoft shipped KB5121003 for Windows 11 25H2/24H2 (builds 26200.9168 / 26100.9168), KB5120240 for 23H2, and KB5121000 for 26H1 on August 11. The release bundles August security fixes with Voice Isolation for Voice Access, new touchpad gestures, and support for peripheral fingerprint sensors under Windows Hello Enhanced Sign-in Security. <a href="https://pureinfotech.com/kb5121003-windows-11-august-2026-update/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-12">Windows Server 2025 Hotpatch KB5120228 delivers August fixes without a reboot</a></strong> -- Microsoft published Hotpatch KB5120228 (OS Build 26100.33222) for Windows Server 2025 on August 11, applying August's security fixes with no reboot required on Hotpatch-enrolled machines. Servers not on the Hotpatch channel receive the standard cumulative update instead. <a href="https://support.microsoft.com/en-us/servicing/os/hotpatch/windows-server-2025/2026/kb5120228-windows-server-2025-security-update" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-13">Microsoft Entra August 2026 ships AD-device sync via Cloud Sync, managed-Windows auto-accept SSO, and email-optional External ID signup</a></strong> -- Entra's August release lets Cloud Sync synchronize on-premises AD devices to Entra ID (unlocking Hybrid Azure AD Join without Entra Connect Sync or AD FS), adds a registry-controlled auto-accept for SSO permissions on managed Windows, and lets External ID users complete federated or social signup without sharing email. The iOS Authenticator passkey restore experience also improved. <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/whats-new-in-microsoft-entra-august-2026/4545172" target="_blank">Source &rarr;</a></li>
   </ul>
-  
+  <details class="section-overflow"><summary>Show 4 more updates</summary><ul class="new-list">
+    <li><strong><a href="#item-14">Intune Service Release 2608 previews Shadow AI detection, adds Android Bluetooth-share block, and moves Vulnerability Remediation to Entra agentic identity</a></strong> -- Intune 2608 introduces a public-preview Shadow AI detect/block capability via the properties catalog, device query, and a new security baseline, plus a Block Bluetooth sharing setting in the Android Enterprise settings catalog. Improvements land on the new single-device page, and the Vulnerability Remediation Agent moves to Entra agentic identity. <a href="https://www.prajwaldesai.com/intune-updates-new-features/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-15">UniFi Network Application August 2026 update adds Spotlight search, UPS and Power Supervisor tooling</a></strong> -- Ubiquiti's August UniFi Network Application release adds Spotlight search across sites and devices, UPS settings with battery and outlet controls, a new Device Power Supervisor, saved Teleport VPN profiles on UTR consoles, and an in-update unavailability overlay. Deployed environments on 10.3+ should review the changelog before scheduling upgrade. <a href="https://releasebot.io/updates/ubiquiti" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-16">UniFi Protect August 2026 update adds PPE Detection, POS timeline events, and Second Stage AI Verification</a></strong> -- The August Protect release introduces PPE Detection (helmets, safety vests) with Timeline and Find Anything filters, Point of Sale and refund event tracking, Second Stage Verification to sharpen AI detections, Webhooks support in Shortcuts, and reliability improvements to AI inference and speech-to-text. Applies to Protect Application 7.5+ deployments -- notable for the construction client. <a href="https://releasebot.io/updates/ubiquiti" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-17">Exchange Online cross-tenant message recall opens mid-August 2026</a></strong> -- From mid-August 2026, senders can attempt to recall a message delivered to a recipient in a different Microsoft 365 tenant, provided the receiving tenant opts in and adds the sending organization to an allow list. Admins should decide whether to opt in and configure allow lists proactively. <a href="https://changepilot.cloud/blog/top-microsoft-365-message-center-roadmap-updates-august-2026" target="_blank">Source &rarr;</a></li>
+  </ul></details>
 </div>
 
 <div class="section-security">
   <h2>Security &amp; Patches</h2>
-  <p class="section-transparency">Showing 3 of 6</p>
+  <p class="section-transparency">Showing 3 of 9</p>
   <div class="security-cards">
-    <div class="security-card"><a href="#item-9" class="security-headline">Apple ships iOS 26.6.1 and iPadOS 26.6.1 release candidate; public release imminent</a><span class="urgency-yellow">This Week</span><span class="security-summary">Apple pushed the iOS 26.6.1 and iPadOS 26.6.1 Release Candidate on August 10 with a focus on late-cycle security fixes; public rollout was expected within days of August 13.</span></div>
-    <div class="security-card"><a href="#item-10" class="security-headline">China-linked hackers run first fully autonomous AI-agent hacking op against Taiwan</a><span class="urgency-yellow">This Week</span><span class="security-summary">A China-linked APT deployed eight coordinated AI agents in an autonomous four-day operation that compromised 85 accounts at Taiwan government targets -- described as the first fully autonomous government-targeted hacking op.</span></div>
-    <div class="security-card"><a href="#item-11" class="security-headline">CISA and FBI issue joint advisory on Gunra ransomware (Conti-derived double extortion)</a><span class="urgency-yellow">This Week</span><span class="security-summary">CISA, FBI, and partners released a joint #StopRansomware advisory on Gunra, a double-extortion ransomware variant derived from leaked Conti source code that first emerged in April 2025.</span></div>
+    <div class="security-card"><a href="#item-18" class="security-headline">DoW suspends CMMC Phase II certification; reform task force report due mid-September</a><span class="urgency-yellow">This Week</span><span class="security-summary">The Department of War has suspended CMMC Phase II (C3PAO certification), originally scheduled for November 10, 2026, and stood up a 60-day reform task force chartered on July 13.</span></div>
+    <div class="security-card"><a href="#item-19" class="security-headline">Apple sends new Threat Notification alerts over mercenary spyware attacks</a><span class="urgency-yellow">This Week</span><span class="security-summary">Apple has issued a fresh round of Threat Notifications warning targeted users that their iPhones may be under attack from mercenary spyware.</span></div>
+    <div class="security-card"><a href="#item-20" class="security-headline">Apple warned hundreds of users of mercenary spyware attacks across 110 countries</a><span class="urgency-yellow">This Week</span><span class="security-summary">Follow-up reporting notes Apple's latest wave of mercenary spyware notifications reached users in roughly 110 countries.</span></div>
   </div>
-  <details class="section-overflow"><summary>Show 3 more security items</summary><div class="security-cards">
-    <div class="security-card"><a href="#item-12" class="security-headline">RingCentral data breach exposes 1.6 million accounts via ShinyHunters</a><span class="urgency-yellow">This Week</span><span class="security-summary">RingCentral disclosed a data breach exposing information on 1.6 million accounts, attributed to the ShinyHunters extortion group.</span></div>
-    <div class="security-card"><a href="#item-13" class="security-headline">Channel leaders declare MSP AI gold rush over at ChannelCon 2026</a><span class="urgency-green">FYI</span><span class="security-summary">At ChannelCon 2026 top channel voices argued the initial MSP AI hype cycle is over and real productization work now begins -- guiding SMBs through practical AI adoption is the next margin opportunity.</span></div>
-    <div class="security-card"><a href="#item-14" class="security-headline">Trump memo authorizes private US cyber firms to hack transnational criminal networks</a><span class="urgency-green">FYI</span><span class="security-summary">A White House memo grants US private cybersecurity firms authority to conduct offensive operations against transnational criminal organizations under government oversight.</span></div>
+  <details class="section-overflow"><summary>Show 6 more security items</summary><div class="security-cards">
+    <div class="security-card"><a href="#item-21" class="security-headline">SonicWall, ConnectSecure, and Blumira roll out MSP-focused security offerings in same-day channel launch</a><span class="urgency-green">FYI</span><span class="security-summary">A channel news roundup covers three MSP-relevant releases on the same day: SonicWall expands EDR/MDR aimed at MSPs, ConnectSecure adds Microsoft 365 remediation with AI-assisted assessments, and Blumira debuts an AI command center for SecOps and compliance.</span></div>
+    <div class="security-card"><a href="#item-22" class="security-headline">RingCentral data breach exposes 1.6 million accounts via ShinyHunters</a><span class="urgency-yellow">This Week</span><span class="security-summary">RingCentral disclosed a data breach affecting roughly 1.6 million accounts, with the ShinyHunters extortion group claiming responsibility.</span></div>
+    <div class="security-card"><a href="#item-23" class="security-headline">OAuth token theft becoming primary attack path into Google Workspace and cloud mailboxes</a><span class="urgency-yellow">This Week</span><span class="security-summary">Analysis outlines how attackers are shifting from credential phishing to stolen OAuth tokens as a persistence and lateral-movement vector into Gmail and connected SaaS.</span></div>
+    <div class="security-card"><a href="#item-24" class="security-headline">Anthropic details plan to watermark Claude's AI-generated text</a><span class="urgency-green">FYI</span><span class="security-summary">Anthropic outlined how it plans to embed watermarks into Claude-generated text so downstream systems can identify AI output.</span></div>
+    <div class="security-card"><a href="#item-25" class="security-headline">CrowdStrike expands Project QuiltWorks to SMB channel via distributors and MSPs</a><span class="urgency-green">FYI</span><span class="security-summary">CrowdStrike is pushing its Project QuiltWorks cybersecurity initiative into the SMB market by bringing distributors, MSPs, and MSSPs into the program.</span></div>
+    <div class="security-card"><a href="#item-26" class="security-headline">Trump memorandum authorizes private US cyber firms to hack transnational criminal networks</a><span class="urgency-green">FYI</span><span class="security-summary">A White House memorandum authorizes designated private cybersecurity firms to conduct offensive actions against transnational criminal networks.</span></div>
   </div></details>
 </div>
 
@@ -62,175 +75,319 @@
   <h2>Details</h2>
   <details class="item" id="item-1">
     <summary class="item-header">
-      <span class="item-title">Lazarus exploits Windows zero-day CVE-2026-68820 in Operation Dream Job attacks on defense firms</span>
+      <span class="item-title">Patch Metabase, Windows AFD.sys, and Cisco Secure Firewall now -- CISA KEV additions</span>
       <span class="item-type type-security">Security</span>
       <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
+      <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>North Korean Lazarus Group exploited a use-after-free flaw in the Windows Ancillary Function Driver for WinSock (afd.sys) for roughly five weeks before Microsoft patched it on August 11 Patch Tuesday. Check Point observed the exploit built into a new FudModule kernel-mode rootkit specifically supporting Windows 11 builds 26100 and 26200, delivering SYSTEM privileges to targets in defense, aerospace, and aviation across Europe and India lured by fake recruitment offers. CISA has added CVE-2026-68820 to KEV with a patch-by date of August 25.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/lazarus-hackers-exploited-windows-zero-day-to-target-defense-firms/" target="_blank" class="src">Source &rarr;</a>
+      <p>CISA added three actively exploited CVEs to the KEV catalog on August 11 -- Metabase SQL injection CVE-2026-72898 (CVSS 10.0), Windows AFD.sys use-after-free CVE-2026-68820 (SYSTEM privilege escalation), and Cisco Secure Firewall CVE-2026-20349. Federal agencies were ordered to remediate by August 14 (August 25 for the Windows flaw). Self-hosted Metabase and unpatched Windows endpoints are the direct SMB exposure.</p>
+      <a href="https://securityaffairs.com/197110/hacking/u-s-cisa-adds-metabase-windows-and-cisco-secure-firewall-flaws-to-its-known-exploited-vulnerabilities-catalog.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-2">
     <summary class="item-header">
-      <span class="item-title">CISA adds Windows afd.sys, Metabase, and Cisco Secure Firewall flaws to KEV catalog</span>
+      <span class="item-title">N-able N-central CVE-2026-18577 chained by Storm-1175 to deploy StormEncryptor ransomware</span>
       <span class="item-type type-security">Security</span>
       <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 9/11</span>
+      <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>CISA added three actively exploited vulnerabilities to the Known Exploited Vulnerabilities catalog on August 13, including CVE-2026-68820 (Windows AFD.sys use-after-free used by Lazarus), a Metabase SQL injection flaw at CVSS 10.0, and a Cisco Secure Firewall heap inspection vulnerability. Federal agencies (and by policy many SMB partners) should patch within CISA's mandated timeline. Confirms exploitation in the wild for organizations still evaluating August Patch Tuesday priorities.</p>
-      <a href="https://securityaffairs.com/197110/hacking/u-s-cisa-adds-metabase-windows-and-cisco-secure-firewall-flaws-to-its-known-exploited-vulnerabilities-catalog.html" target="_blank" class="src">Source &rarr;</a>
+      <p>China-linked Storm-1175 is chaining CVE-2026-18577 (an N-central auth bypass that N-able first fixed incompletely as CVE-2026-18556) to seize administrative RMM access and pivot to managed endpoints, dropping a new C++ ransomware called StormEncryptor that appends .encrypted and demands payment within three days. N-able has shipped a second hotfix; MSPs and SMB customers of MSPs using N-central should confirm patching immediately.</p>
+      <a href="https://thehackernews.com/2026/08/china-linked-hackers-deploy-new.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-3">
     <summary class="item-header">
-      <span class="item-title">August 2026 Patch Tuesday ships in-the-wild WinSock (afd.sys) zero-day fix</span>
+      <span class="item-title">Microsoft patches "LegacyHive" Windows zero-day out-of-band</span>
       <span class="item-type type-security">Security</span>
       <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 9/11</span>
+      <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft's August 2026 Patch Tuesday includes a confirmed in-the-wild zero-day in the Windows WinSock driver (afd.sys) enabling privilege escalation on compromised hosts -- a high-value link in ransomware and espionage chains. ZDI's Patch Tuesday review flags it as one of the highest-priority items in the release. Prioritize deployment across managed Windows fleets this week.</p>
-      <a href="https://www.thezdi.com/blog/2026/8/11/the-august-2026-security-update-review" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft released out-of-band security patches for LegacyHive, a Windows zero-day vulnerability publicly disclosed after July 2026 Patch Tuesday. Deploy across Windows 10/11 and Windows Server fleets.</p>
+      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-patches-legacyhive-windows-zero-day-vulnerability/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-4">
     <summary class="item-header">
-      <span class="item-title">Adobe Commerce CVE-2026-71362 under active attack shortly after disclosure</span>
+      <span class="item-title">Hackers exploit macOS Screen Sharing flaw to deploy Monero miner (Bleeping Computer)</span>
       <span class="item-type type-security">Security</span>
       <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 8/11</span>
+      <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>A CVSS 9.1 authentication flaw in Adobe Commerce (Magento) is under active exploitation shortly after public disclosure. SMB e-commerce operators on self-hosted Magento or Commerce Cloud should apply Adobe's out-of-band patch immediately and check for indicators of compromise. Attack activity began within days of the technical writeup being published.</p>
-      <a href="https://securityaffairs.com/197149/hacking/adobe-commerce-cve-2026-71362-comes-under-attack-shortly-after-public-disclosure.html" target="_blank" class="src">Source &rarr;</a>
+      <p>The Netherlands NCSC warns of active in-the-wild exploitation of a macOS authentication bypass in Screen Sharing following public exploit release. Attackers are gaining root access on unpatched Macs and installing Monero cryptominers. Administrators should verify macOS is patched and audit Remote Management / Screen Sharing exposure.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/hackers-exploit-macos-screen-sharing-flaw-to-deploy-monero-miner/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-5">
     <summary class="item-header">
-      <span class="item-title">GeoServer zero-day SQL injection under active exploitation</span>
+      <span class="item-title">macOS Screen Sharing CVE-2026-65400 exploited to deploy Monero miners (SecurityAffairs)</span>
+      <span class="item-type type-security">Security</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 10/11</span>
+    </summary>
+    <div class="item-body">
+      <p>SecurityAffairs reports active exploitation of CVE-2026-65400 in the macOS Screen Sharing service, giving attackers root access to drop cryptocurrency miners. Public PoC code accelerated attacks. Patch macOS promptly and restrict Screen Sharing to trusted networks.</p>
+      <a href="https://securityaffairs.com/197234/uncategorized/macos-screen-sharing-flaw-exploited-to-deploy-monero-miners.html" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-6">
+    <summary class="item-header">
+      <span class="item-title">Progress ShareFile Storage Zones Controller pre-auth RCE chain (CVE-2026-2699 + CVE-2026-2701)</span>
+      <span class="item-type type-security">Security</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 10/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Progress ShareFile (formerly Citrix ShareFile) Storage Zones Controller has two critical flaws: CVE-2026-2699 (Execution After Redirect, CVSS 9.8) and CVE-2026-2701 (RCE, CVSS 9.1). Chained, they allow unauthenticated remote code execution; a public PoC exists and NHS England rates exploitation highly likely. Patch the SZC immediately if self-hosted.</p>
+      <a href="https://digital.nhs.uk/cyber-alerts/2026/cc-4767" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-7">
+    <summary class="item-header">
+      <span class="item-title">Max-severity SAP Commerce Cloud RCE now under active exploitation days after patch</span>
       <span class="item-type type-security">Security</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>A previously undisclosed SQL injection zero-day in GeoServer was disclosed on August 12, 2026 and is already seeing active exploitation attempts. IT teams supporting GIS or municipal/engineering clients running GeoServer should inventory exposure and apply mitigations immediately. GeoServer instances are commonly internet-exposed for map-tile hosting.</p>
-      <a href="https://senserva.com/exploited-this-week.html" target="_blank" class="src">Source &rarr;</a>
+      <p>A max-severity remote code execution flaw in SAP Commerce Cloud is being actively exploited in the wild only days after SAP released a patch. Not on the primary topic list but relevant to any SMB IT teams supporting SAP or e-commerce stacks. Immediate patching required.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/max-severity-sap-commerce-cloud-flaw-now-targeted-in-attacks/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
-  <details class="item" id="item-6">
+  <details class="item" id="item-8">
     <summary class="item-header">
-      <span class="item-title">AmnesiaStealer macOS infostealer hijacks Chromium browsers via fake GitHub ClickFix lure</span>
+      <span class="item-title">Exchange Server August 2026 security updates released</span>
       <span class="item-type type-security">Security</span>
       <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>Jamf Threat Labs disclosed a multi-stage Rust-based macOS infostealer distributed via a counterfeit GitHub page (github.aoitour[.]com) using ClickFix-style Terminal-paste social engineering. The malware exfiltrates Keychain, Chromium browser databases, and Apple Notes, attempts TCC bypasses, installs a LaunchDaemon, and uses a headless Chrome DevTools Protocol module to give operators live control of the victim's browser sessions at ~3fps. Affects any macOS user tricked into running the pasted install command.</p>
-      <a href="https://thehackernews.com/2026/08/amnesiastealer-hijacks-chromium.html" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft released August 2026 Exchange Server SUs addressing vulnerabilities disclosed on Patch Tuesday. Applies to on-prem Exchange (still relevant where hybrid mail flow exists into Exchange Online); admins running hybrid should validate coexistence after the update.</p>
+      <a href="https://techcommunity.microsoft.com/blog/exchange/released-august-2026-exchange-server-security-updates/4543951" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
-  <details class="item" id="item-7">
+  <details class="item" id="item-9">
     <summary class="item-header">
-      <span class="item-title">Microsoft Entra August 2026 ships jailbreak/root detection and AD-to-Entra device sync via Cloud Sync</span>
+      <span class="item-title">Autodesk publishes AutoCAD 2026 advisories adsk-sa-2026-0004 and 0005 covering Shared Components and PRT-file memory corruption</span>
+      <span class="item-type type-security">Security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 9/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Autodesk's Trust Center lists advisories affecting AutoCAD 2026 and specialized toolsets via vulnerabilities in Autodesk Shared Components 2026.5 and earlier, plus a memory-corruption issue triggered by a maliciously crafted PRT file. Fixed in Shared Components 2026.6; Autodesk recommends updating via Autodesk Access or the Accounts Portal.</p>
+      <a href="https://www.autodesk.com/trust/security-advisories/adsk-sa-2026-0004" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-10">
+    <summary class="item-header">
+      <span class="item-title">Akira ransomware disables EDR by rebooting into Safe Mode with Networking</span>
+      <span class="item-type type-security">Security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 9/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Akira operators bypassed endpoint detection by rebooting victim hosts into Safe Mode with Networking, exfiltrating data before the encryption stage failed. SMB defenders should audit Safe Mode boot restrictions, tamper-protection on Defender for Business, and detections on Safe Mode transitions.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/akira-hackers-disable-edr-with-safe-mode-steal-data-but-fail-to-encrypt/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-11">
+    <summary class="item-header">
+      <span class="item-title">Windows 11 KB5121003 (25H2/24H2) delivers August feature and security rollup</span>
+      <span class="item-type type-feature">Feature</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 10/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Microsoft shipped KB5121003 for Windows 11 25H2/24H2 (builds 26200.9168 / 26100.9168), KB5120240 for 23H2, and KB5121000 for 26H1 on August 11. Beyond August security fixes, the release adds Voice Isolation for Voice Access, new touchpad gestures, and support for peripheral fingerprint sensors under Windows Hello Enhanced Sign-in Security.</p>
+      <a href="https://pureinfotech.com/kb5121003-windows-11-august-2026-update/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-12">
+    <summary class="item-header">
+      <span class="item-title">Windows Server 2025 August hotpatch KB5120228 released</span>
+      <span class="item-type type-feature">Feature</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 10/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Microsoft published Hotpatch KB5120228 (OS Build 26100.33222) for Windows Server 2025 on August 11, delivering August security fixes without a reboot for eligible Hotpatch-enrolled servers. A standard cumulative alternative is available for non-Hotpatch machines.</p>
+      <a href="https://support.microsoft.com/en-us/servicing/os/hotpatch/windows-server-2025/2026/kb5120228-windows-server-2025-security-update" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-13">
+    <summary class="item-header">
+      <span class="item-title">Microsoft Entra August 2026 update: on-prem AD device sync via Cloud Sync, auto-accept SSO on managed Windows, External ID email-optional signup</span>
       <span class="item-type type-feature">Feature</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft's August 2026 Entra release notes add jailbreak/root detection that blocks Entra credentials on compromised iOS and Android devices in the Authenticator app, plus an improved device-bound passkey restore flow on iOS that no longer requires a Microsoft personal account. Cloud Sync gains the ability to synchronize on-premises AD devices to Entra ID, enabling Hybrid Azure AD Join and lifecycle management without Entra Connect Sync or AD FS. Entra External ID also now supports federation with IdPs that do not share user email.</p>
+      <p>Entra's August drop enables Cloud Sync to synchronize on-premises AD devices to Entra ID, adds a registry-controlled auto-accept for SSO permissions on managed Windows so Microsoft credentials flow to other Microsoft apps without prompts, and lets External ID users complete federated or social sign-up without sharing email. The iOS Authenticator passkey restore experience is also improved.</p>
       <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/whats-new-in-microsoft-entra-august-2026/4545172" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
-  <details class="item" id="item-8">
+  <details class="item" id="item-14">
     <summary class="item-header">
-      <span class="item-title">Microsoft merges Copilot apps and kills Group Chats, Podcasts, Deep Research on August 18</span>
+      <span class="item-title">Intune Service Release 2608 adds Shadow AI detection, Android Bluetooth-share block, agentic Vulnerability Remediation</span>
       <span class="item-type type-feature">Feature</span>
-      <span class="urgency-yellow">This Week</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Intune 2608 introduces a public-preview Shadow AI detect/block capability (properties catalog, device query, and security baseline), a new Block Bluetooth sharing setting in the Android Enterprise settings catalog, improvements to the new single device page, and moves the Vulnerability Remediation Agent to Entra agentic identity.</p>
+      <a href="https://www.prajwaldesai.com/intune-updates-new-features/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-15">
+    <summary class="item-header">
+      <span class="item-title">UniFi Network Application August 2026 update adds Spotlight search, UPS and Power Supervisor tooling</span>
+      <span class="item-type type-feature">Feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Ubiquiti's August UniFi Network Application release adds Spotlight search across sites and devices, UPS settings with battery/outlet controls, a new Device Power Supervisor, saved Teleport VPN profiles on UTR consoles, and an unavailability overlay during updates. Also ships bug fixes across WiFi, consoles, and navigation. Deployed environments on 10.3+ should review before scheduling upgrade.</p>
+      <a href="https://releasebot.io/updates/ubiquiti" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-16">
+    <summary class="item-header">
+      <span class="item-title">UniFi Protect August 2026 update adds PPE Detection, POS timeline events, and Second Stage AI Verification</span>
+      <span class="item-type type-feature">Feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
+    </summary>
+    <div class="item-body">
+      <p>The August Protect release introduces PPE Detection (helmets, safety vests) with Timeline and Find Anything filters, Point of Sale and refund event tracking, Second Stage Verification to sharpen AI detections, Webhooks support in Shortcuts, and reliability improvements to AI inference and speech-to-text. Applies to Protect Application 7.5+ deployments.</p>
+      <a href="https://releasebot.io/updates/ubiquiti" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-17">
+    <summary class="item-header">
+      <span class="item-title">Exchange Online enabling cross-tenant message recall from mid-August 2026</span>
+      <span class="item-type type-feature">Feature</span>
+      <span class="urgency-green">FYI</span>
       <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft is unifying its two consumer Copilot apps and discontinuing Group Chats, AI-generated Podcasts, Copilot Labs, and Deep Research on August 18, 2026. All Group Chat history and shared images will be wiped on that date. Merged mobile and web apps are rolling out mid-August; Windows and Mac desktop follow in mid-September -- warn any client staff using consumer Copilot Group Chats to export what they want to keep before Monday.</p>
-      <a href="https://techcrunch.com/2026/08/13/microsoft-kills-off-unsuccessful-ai-features-while-merging-its-separate-copilot-apps/" target="_blank" class="src">Source &rarr;</a>
+      <p>From mid-August 2026, senders can attempt to recall a message delivered to a recipient in a different Microsoft 365 tenant, provided the receiving tenant opts in and adds the sending organization to an allow list. Admins should decide whether to opt in and configure allow lists.</p>
+      <a href="https://changepilot.cloud/blog/top-microsoft-365-message-center-roadmap-updates-august-2026" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
-  <details class="item" id="item-9">
+  <details class="item" id="item-18">
     <summary class="item-header">
-      <span class="item-title">Apple iOS 26.6.1 and iPadOS 26.6.1 Release Candidate posted; public release imminent</span>
-      <span class="item-type type-security">Security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Apple pushed the iOS 26.6.1 / iPadOS 26.6.1 Release Candidate on August 10 with a focus on late-cycle security fixes; public rollout was expected within days of August 13. Companion RC builds for iOS 18.7.10 and iPadOS 18.7.10 target users still on the prior major train. IT teams should be ready to test and stage the update across managed fleets this week.</p>
-      <a href="https://www.macrumors.com/2026/08/10/apple-releases-ios-26-6-1/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-10">
-    <summary class="item-header">
-      <span class="item-title">China-linked hackers run first fully autonomous AI-agent hacking op against Taiwan</span>
-      <span class="item-type type-security">Security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>A China-linked APT deployed eight coordinated AI agents in an autonomous four-day operation that compromised 85 accounts at Taiwan government targets. Described as the first fully autonomous government-targeted hacking op, it signals that agentic offensive AI is now operational -- relevant threat context for IT teams evaluating AI-assisted defense and thinking about detection engineering.</p>
-      <a href="https://securityaffairs.com/197079/apt/china-linked-hackers-use-ai-agents-in-autonomous-attack-on-taiwan.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-11">
-    <summary class="item-header">
-      <span class="item-title">CISA and FBI issue joint advisory on Gunra ransomware (Conti-derived double extortion)</span>
-      <span class="item-type type-security">Security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>CISA, FBI, and partners released a joint #StopRansomware advisory on Gunra, a sophisticated double-extortion ransomware variant derived from leaked Conti source code that first emerged in April 2025. The advisory includes TTPs and IOCs -- feed the indicators into RMM detections and EDR tuning. Notable because Conti-derived families frequently target SMBs via managed service providers.</p>
-      <a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-222a" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-12">
-    <summary class="item-header">
-      <span class="item-title">RingCentral data breach exposes 1.6 million accounts via ShinyHunters</span>
+      <span class="item-title">DoW suspends CMMC Phase II certification; reform task force report due mid-September</span>
       <span class="item-type type-industry">Industry</span>
       <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 7/11</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>RingCentral disclosed a data breach exposing information on 1.6 million accounts, attributed to the ShinyHunters extortion group. Exposed data can seed targeted phishing and vishing campaigns against SMB customers who use RingCentral for business phones, meetings, and SMS. Customers should reset credentials, force MFA re-enrollment, and warn end users to expect follow-on social engineering.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/ringcentral-data-breach-exposed-info-of-16-million-accounts/" target="_blank" class="src">Source &rarr;</a>
+      <p>The Department of War has suspended CMMC Phase II (C3PAO certification), originally set for November 10, 2026, and stood up a 60-day reform task force chartered on July 13. The public RFI comment window closed August 14, 2026; a final report with recommendations for scalable SMB-friendly controls is expected around mid-September. DFARS 252.204-7012 and NIST SP 800-171 Rev 2 remain in effect; the interim rule is expected to move toward Rev 3.</p>
+      <a href="https://insidedefense.com/daily-news/dod-issue-cmmc-interim-final-rule-adopting-latest-nist-standards-cui" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
-  <details class="item" id="item-13">
+  <details class="item" id="item-19">
     <summary class="item-header">
-      <span class="item-title">Channel leaders declare MSP AI gold rush over at ChannelCon 2026</span>
+      <span class="item-title">Apple sends new Threat Notification alerts over mercenary spyware attacks</span>
+      <span class="item-type type-security">Security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 8/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Apple has issued a fresh round of Threat Notifications warning targeted users that their iPhones may be under attack from mercenary spyware. Recipients are urged to enable Lockdown Mode and update to the latest iOS. Notable for anyone in high-risk roles (executives, journalists, activists).</p>
+      <a href="https://www.bleepingcomputer.com/news/apple/apple-sends-new-threat-notification-alerts-over-mercenary-spyware-attacks/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-20">
+    <summary class="item-header">
+      <span class="item-title">Apple warned hundreds of users of mercenary spyware attacks across 110 countries</span>
+      <span class="item-type type-security">Security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 8/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Follow-up reporting notes Apple's latest wave of mercenary spyware notifications reached users in roughly 110 countries. Apple continues to recommend Lockdown Mode and prompt iOS updates for targeted individuals.</p>
+      <a href="https://securityaffairs.com/197208/malware/apple-warned-hundreds-of-users-of-mercenary-spyware-attacks.html" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-21">
+    <summary class="item-header">
+      <span class="item-title">SonicWall, ConnectSecure, and Blumira roll out MSP-focused security offerings on same day</span>
       <span class="item-type type-industry">Industry</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>At ChannelCon 2026, top channel voices argued the initial MSP AI hype cycle is over and real productization work now begins -- guiding SMBs through practical AI adoption is the next margin opportunity. Useful framing for MSP service-line planning and client conversations about AI. Notable given how many vendors are still pushing generic AI messaging into the SMB channel.</p>
-      <a href="https://www.channelpronetwork.com/2026/08/13/ai-opportunities-for-msps-channel-visionaries-offer-insights/" target="_blank" class="src">Source &rarr;</a>
+      <p>A channel news roundup covers three MSP-relevant releases on the same day. SonicWall expands its EDR/MDR portfolio aimed at MSPs, ConnectSecure adds Microsoft 365 remediation with AI-assisted assessments, and Blumira introduces an AI command center for SecOps and compliance. Relevant to SMB IT tool selection.</p>
+      <a href="https://www.channelpronetwork.com/2026/08/14/sonicwall-msp-focused-endpoint-security-leads-channel-headlines/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
-  <details class="item" id="item-14">
+  <details class="item" id="item-22">
     <summary class="item-header">
-      <span class="item-title">Trump memo authorizes private US cyber firms to hack transnational criminal networks</span>
+      <span class="item-title">RingCentral data breach exposes 1.6 million accounts; ShinyHunters claim theft</span>
+      <span class="item-type type-industry">Industry</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 7/11</span>
+    </summary>
+    <div class="item-body">
+      <p>RingCentral disclosed a data breach affecting roughly 1.6 million accounts, with the ShinyHunters extortion group claiming responsibility. SMBs using RingCentral for voice/UC should watch for account notification emails and rotate any tenant-admin credentials or SSO secrets tied to the platform.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/ringcentral-data-breach-exposed-info-of-16-million-accounts/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-23">
+    <summary class="item-header">
+      <span class="item-title">OAuth token theft becoming primary attack path into Google Workspace / cloud mailboxes</span>
+      <span class="item-type type-security">Security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 7/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Analysis outlines how attackers are shifting from credential phishing to stolen OAuth tokens as a persistence and lateral-movement vector into Gmail and connected SaaS. The technique translates directly to Microsoft 365 -- Entra admins should audit consented app permissions, enforce app consent policies, and hunt for anomalous refresh-token usage.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/the-modern-attack-chain-rethinking-google-workspace-security-in-the-age-of-ai/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-24">
+    <summary class="item-header">
+      <span class="item-title">Anthropic details plan to watermark Claude's AI-generated text</span>
       <span class="item-type type-industry">Industry</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 6/11</span>
     </summary>
     <div class="item-body">
-      <p>A White House memo grants US private cybersecurity firms authority to conduct offensive operations against transnational criminal networks. The policy shift may affect vendor risk posture, cyber insurance premiums, and MSP service definitions in the coming months. Worth flagging to any client operating in industries the memo scopes.</p>
+      <p>Anthropic outlined how it plans to embed watermarks into Claude-generated text so downstream systems can identify AI output. Companion coverage notes a wave of "watermark remover" tools with no credible evidence they work. Relevant background for IT teams building AI-use policies and detection.</p>
+      <a href="https://www.bleepingcomputer.com/news/artificial-intelligence/how-anthropic-plans-to-watermark-claudes-ai-generated-text/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-25">
+    <summary class="item-header">
+      <span class="item-title">CrowdStrike expands Project QuiltWorks to SMB channel via distributors and MSPs</span>
+      <span class="item-type type-industry">Industry</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 6/11</span>
+    </summary>
+    <div class="item-body">
+      <p>CrowdStrike is pushing its Project QuiltWorks cybersecurity initiative into the SMB market by bringing distributors, MSPs and MSSPs into the program. The effort is framed as helping smaller organizations address security risks associated with frontier AI. Signals continued vendor consolidation around MSP-delivered SMB security.</p>
+      <a href="https://telecomreseller.com/2026/08/13/crowdstrike-expands-quiltworks-to-smb-channel/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-26">
+    <summary class="item-header">
+      <span class="item-title">Trump memorandum authorizes private US cyber firms to hack transnational criminal networks</span>
+      <span class="item-type type-industry">Industry</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 6/11</span>
+    </summary>
+    <div class="item-body">
+      <p>A White House memorandum authorizes designated private cybersecurity firms to conduct offensive actions against transnational criminal networks, raising liability, attribution, and blast-radius questions for MSPs and SMBs whose infrastructure could be caught in third-party operations.</p>
       <a href="https://securityaffairs.com/197161/laws-and-regulations/us-authorizes-private-cyber-firms-to-hack-transnational-criminal-networks.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 </div>
 
-<div class="footer">Generated Friday, August 14, 2026 at 6:30 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-08-14.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
+<div class="footer">Generated Saturday, August 15, 2026 at 6:42 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-08-15.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
 
 </main>
 </body>
