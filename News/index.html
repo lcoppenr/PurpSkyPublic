@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<title>Morning Briefing -- Sunday, August 16, 2026</title>
+<title>Morning Briefing -- Monday, August 17, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -14,86 +14,184 @@
 <main class="briefing-content">
 
 <div class="page-header">
-  <h1>Morning Briefing -- Sunday, August 16, 2026</h1>
+  <h1>Morning Briefing -- Monday, August 17, 2026</h1>
   <p class="page-meta">Microsoft &bull; Security &amp; Compliance &bull; Firewall / VPN / Networking &bull; Servers/NAS &bull; Workstations &amp; Mobile &bull; Peripherals &amp; AV &bull; RMM &amp; Remote Access &bull; Construction &amp; Specialty Software &bull; General Tech &amp; AI &bull; Pacific Time</p>
 </div>
 
 <div class="section-actions">
   <h2>Today's Actions</h2>
+  <p class="section-transparency">Showing 3 of 5</p>
   <ol class="action-list">
-    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-yellow">This Week</span> Warn AutoCAD users at your construction client that Microsoft's August Windows 11 update (KB5063875/KB5063878) blocks the per-user MSI content configuration and triggers an admin-credential prompt on first launch of AutoCAD, AutoCAD Toolsets, and Civil 3D (2022-2026) -- Autodesk has published a workaround. <a href="#item-1" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-yellow">This Week</span> Track the new AmnesiaStealer Mac infostealer distributed via fake GitHub repositories -- it grants attackers live, interactive control of victims' authenticated browser sessions, so reinforce Mac EDR coverage and remind Mac users to verify GitHub sources before installing anything. <a href="#item-2" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Audit your construction client's SonicWall TZ SSL VPN accounts and confirm MFA is enforced on every one &mdash; Akira affiliates are entering via password-only VPN logins, then rebooting hosts into Safe Mode to disable EDR before encrypting. <a href="#item-1" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Confirm every Mac at your clients is on macOS 26.6.1 or later &mdash; the Netherlands NCSC has confirmed active exploitation of the Screen Sharing flaw for cryptomining now that public PoC code is available. <a href="#item-2" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Watch the Microsoft Defender advisory channel and prepare Defender for Business tenants for an emergency out-of-band patch &mdash; the actively exploited ShieldBreak zero-day (CVE-2026-69414) lets attackers disable real-time protection on Windows endpoints. <a href="#item-3" class="detail-link">details</a></li>
   </ol>
+  <details class="section-overflow"><summary>Show 2 more actions</summary><ol class="action-list" start="4">
+    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Verify none of your clients run SonicWall SMA 1000 appliances &mdash; INC ransomware is exploiting patched July flaws (CVE-2026-15409 / 15410) on unpatched SMAs, and the construction client's SonicWall TZ series is not affected. <a href="#item-4" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Track the GitHub status page and expect Actions, PRs, and repo API disruptions until Microsoft posts the all-clear on today's worldwide outage. <a href="#item-5" class="detail-link">details</a></li>
+  </ol></details>
 </div>
 
 <div class="section-new">
   <h2>What's New</h2>
+  <p class="section-transparency"></p>
   <ul class="new-list">
-    <li><strong><a href="#item-3">Ubiquiti releases UniFi Protect AI Key firmware 2.2.6 with Second Stage Verification and PPE Detection</a></strong> -- Ubiquiti published AI Key firmware 2.2.6 on August 14, delivering the on-device AI runtime that powers the recently announced Second Stage Verification (SSV) and Personal Protective Equipment detection features, along with improvements to stability, memory management, AI inference reliability, and speech-to-text. Requires UniFi Protect 7.2 or newer; the construction client's Protect deployment (7.5+) qualifies. <a href="https://releasebot.io/updates/ubiquiti" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-4">Alibaba ships Qwen3.8-27B and Z.ai ships GLM-5.3 as new frontier / open-weight LLM options</a></strong> -- Two notable model releases landed on August 14: Alibaba's Qwen3.8-27B and Z.ai's GLM-5.3, both tracked as frontier-tier options in the public LLM release trackers. Relevant background for IT pros evaluating self-hosted or API alternatives to Claude/OpenAI/Gemini for internal automation and RAG workloads. <a href="https://aireleasetracker.com/latest" target="_blank">Source &rarr;</a></li>
+    <li style="color:#b0aea5;">No product updates today.</li>
   </ul>
 </div>
 
 <div class="section-security">
   <h2>Security &amp; Patches</h2>
+  <p class="section-transparency">Showing 3 of 6</p>
   <div class="security-cards">
-    <div class="security-card"><span style="color:#b0aea5;">No security items today.</span></div>
+    <div class="security-card"><a href="#item-6" class="security-headline">Windows Server 2022 reaches end of mainstream support in 60 days</a><span class="urgency-yellow">This Week</span><span class="security-summary">Microsoft has notified administrators that Windows Server 2022 mainstream support ends October 13, 2026, moving into extended support until October 2031.</span></div>
+    <div class="security-card"><a href="#item-7" class="security-headline">CMMC Reform Task Force RFI window closes; Phase 2 remains suspended pending review</a><span class="urgency-yellow">This Week</span><span class="security-summary">The public comment window for the DoD's CMMC Reform Task Force RFI closed August 14, 2026.</span></div>
+    <div class="security-card"><a href="#item-8" class="security-headline">McDonald's Azure/Entra tenant breach exposes 1.7M employee records</a><span class="urgency-yellow">This Week</span><span class="security-summary">A threat actor claims to have exfiltrated 1.7 million employee records from a compromised McDonald's Azure/Entra tenant using compromised credentials, and is selling the data.</span></div>
   </div>
+  <details class="section-overflow"><summary>Show 3 more security items</summary><div class="security-cards">
+    <div class="security-card"><a href="#item-9" class="security-headline">First documented prompt injection attack lands in US court filings</a><span class="urgency-yellow">This Week</span><span class="security-summary">A litigant embedded hidden AI prompt injections in court filings &mdash; white-text or metadata instructions intended to manipulate LLM-based review tools used by opposing counsel.</span></div>
+    <div class="security-card"><a href="#item-10" class="security-headline">Threat actors registering expired domains to host malware C2</a><span class="urgency-yellow">This Week</span><span class="security-summary">Attackers are purchasing recently expired domains that still carry residual reputation and using them for malware command-and-control and phishing infrastructure.</span></div>
+    <div class="security-card"><a href="#item-11" class="security-headline">NIST SP 800-213r1 IoT cybersecurity draft public comment closes Aug 24</a><span class="urgency-green">FYI</span><span class="security-summary">NIST's initial public draft of SP 800-213r1, IoT Product Cybersecurity Guidelines for the Federal Government, is open for public comment through August 24, 2026.</span></div>
+  </div></details>
 </div>
 
 <div class="section-details">
   <h2>Details</h2>
   <details class="item" id="item-1">
     <summary class="item-header">
-      <span class="item-title">Windows 11 August update KB5063875/KB5063878 breaks AutoCAD first-launch for non-admin users</span>
+      <span class="item-title">Akira affiliates reboot into Safe Mode to bypass EDR; entry via MFA-less SonicWall VPN accounts</span>
       <span class="item-type type-security">Security</span>
-      <span class="urgency-yellow">This Week</span>
+      <span class="urgency-red">Act Today</span>
       <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft's August Windows 11 security update KB5063875/KB5063878 blocks portions of the per-user MSI content configuration that AutoCAD, AutoCAD Toolsets, and Civil 3D (versions 2022-2026) run on first launch, causing an admin credential prompt for non-admin end users in enterprise deployments. This affects any customer who deploys AutoCAD centrally and lets standard users open it -- a common SMB pattern. Autodesk's forum announcement documents the workaround; expect end-user tickets until it is applied.</p>
-      <a href="https://forums.autodesk.com/t5/announcements-and-meet-greet/share-autocad-amp-windows-11-security-update-admin-prompt-for/td-p/13791031" target="_blank" class="src">Source &rarr;</a>
+      <p>An Akira ransomware affiliate leveraged SonicWall SSL VPN accounts lacking MFA to gain initial access, then rebooted target Windows hosts into Safe Mode with Networking to disable EDR before deploying ransomware. The technique extends the ongoing Akira/SonicWall campaign linked to CVE-2024-40766 and highlights the risk of any TZ-series appliance still allowing password-only VPN logins. Your construction client's TZ deployment should be audited today.</p>
+      <a href="https://securityaffairs.com/197339/malware/akira-ransomware-uses-safe-mode-to-bypass-edr.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-2">
     <summary class="item-header">
-      <span class="item-title">AmnesiaStealer macOS infostealer distributed via fake GitHub repos, grants live browser control</span>
+      <span class="item-title">macOS Screen Sharing flaw under active exploitation to deploy Monero miner</span>
       <span class="item-type type-security">Security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>A new Rust-based macOS infostealer named AmnesiaStealer is being distributed via fake GitHub repositories impersonating legitimate projects. Unlike typical stealers, it gives operators live, interactive control over victims' authenticated macOS browser sessions -- cookies, saved credentials, session tokens -- enabling real-time account takeover of any logged-in site. Mac users who install unverified GitHub-hosted software are at highest risk; SMBs with Macs should reinforce EDR coverage and coach users to verify GitHub source repositories.</p>
-      <a href="https://securityaffairs.com/197190/malware/amnesiastealer-gives-attackers-live-control-of-victims-macos-browsers.html" target="_blank" class="src">Source &rarr;</a>
+      <p>The Netherlands NCSC warns of active exploitation of a macOS Screen Sharing vulnerability now that proof-of-concept code is public; attackers are using it to install XMRig-based Monero miners. Apple addressed the underlying issue via improved state management in macOS 26.6.1, so any Mac still on 26.6 or earlier is exposed until updated.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/hackers-exploit-macos-screen-sharing-flaw-to-deploy-monero-miner/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-3">
     <summary class="item-header">
-      <span class="item-title">Ubiquiti UniFi Protect AI Key firmware 2.2.6 released with Second Stage Verification and PPE Detection</span>
-      <span class="item-type type-feature">Feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
+      <span class="item-title">Microsoft Defender ShieldBreak zero-day (CVE-2026-69414) under active exploitation, patch in progress</span>
+      <span class="item-type type-security">Security</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>Ubiquiti published UniFi Protect AI Key firmware 2.2.6 on August 14, 2026, delivering the on-device AI runtime that powers the recently announced Second Stage Verification (SSV) and Personal Protective Equipment (PPE) detection features. The release also improves system stability, memory management, AI inference reliability, and speech-to-text transcription quality. Requires UniFi Protect 7.2 or newer; the construction client's Protect deployment (7.5+) qualifies and should schedule the update to activate the new detection features.</p>
-      <a href="https://releasebot.io/updates/ubiquiti" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft is developing an out-of-band patch for a Defender zero-day dubbed ShieldBreak (CVE-2026-69414) that allows attackers to disable real-time protection on Windows endpoints. Exploitation has been observed in the wild, disclosed by security researcher "Nightmare Eclipse." Defender for Business tenants at your small-business and internal clients should monitor advisories and prepare for an emergency deployment.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/microsoft-working-on-defender-patch-for-shieldbreak-zero-day/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-4">
     <summary class="item-header">
-      <span class="item-title">Alibaba Qwen3.8-27B and Z.ai GLM-5.3 released as frontier / open-weight LLM options</span>
-      <span class="item-type type-feature">Feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 6/11</span>
+      <span class="item-title">INC Ransomware weaponizes critical SonicWall SMA 1000 flaws</span>
+      <span class="item-type type-security">Security</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>Two notable model releases landed on August 14: Alibaba's Qwen3.8-27B and Z.ai's GLM-5.3, both tracked as frontier-tier options in the public LLM release trackers. Relevant for IT professionals evaluating self-hosted or API alternatives to Claude, OpenAI, and Gemini for internal automation, RAG, or agentic workloads.</p>
-      <a href="https://aireleasetracker.com/latest" target="_blank" class="src">Source &rarr;</a>
+      <p>INC Ransomware has accelerated activity in early August 2026, exploiting SonicWall SMA 1000 vulnerabilities CVE-2026-15409 (CVSS 10.0, unauthenticated WebSocket tunneling) and CVE-2026-15410 (CVSS 7.2, privilege escalation to root). SonicWall issued patches in mid-July; unpatched SMA 1000 appliances should be updated immediately. Your construction client's SonicWall TZ series is a different product line and is not affected.</p>
+      <a href="https://thehackernews.com/2026/08/inc-ransomware-emerges-as-dominant.html" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-5">
+    <summary class="item-header">
+      <span class="item-title">GitHub suffers global outage; Microsoft confirms multi-service disruption</span>
+      <span class="item-type type-industry">Industry</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 8/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Microsoft confirmed a worldwide GitHub outage affecting the website, API, Actions, Pull Requests, Issues, Codespaces, and other services. The incident began Monday morning and is disrupting CI/CD pipelines and developer workflows for organizations dependent on GitHub. SMB shops and MSPs using GitHub for source control or automation should expect delays until Microsoft posts an all-clear.</p>
+      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-github-is-down-worldwide/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-6">
+    <summary class="item-header">
+      <span class="item-title">Windows Server 2022 reaches end of mainstream support in 60 days</span>
+      <span class="item-type type-industry">Industry</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 9/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Microsoft has notified administrators that Windows Server 2022 mainstream support ends October 13, 2026, moving into extended support until October 2031. Non-security fixes and new features stop after that date; security updates continue. SMBs should plan roadmaps for Server 2025 migrations, especially for hosts running newer workloads.</p>
+      <a href="https://www.bleepingcomputer.com/news/microsoft/windows-server-2022-reaches-end-of-mainstream-support-in-60-days/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-7">
+    <summary class="item-header">
+      <span class="item-title">CMMC Reform Task Force RFI window closes; Phase 2 remains suspended pending review</span>
+      <span class="item-type type-industry">Industry</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 9/11</span>
+    </summary>
+    <div class="item-body">
+      <p>The public comment window for the DoD's CMMC Reform Task Force RFI closed August 14, 2026. Phase 2 (which would have required C3PAO Level 2 certification) remains suspended, with new solicitations limited to Level 1 (Self) or Level 2 (Self). The task force must report findings to the DoD CIO within 60 days of the July 13 suspension &mdash; directly relevant to your construction client's in-progress CMMC L2 work.</p>
+      <a href="https://federalnewsnetwork.com/cybersecurity/2026/07/pentagon-suspends-cmmc-phase-two-requirements-launches-review-of-program/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-8">
+    <summary class="item-header">
+      <span class="item-title">McDonald's Azure/Entra tenant breach exposes 1.7M employee records</span>
+      <span class="item-type type-security">Security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 8/11</span>
+    </summary>
+    <div class="item-body">
+      <p>A threat actor claims to have exfiltrated 1.7 million employee records from a compromised McDonald's Azure/Entra tenant using compromised credentials, and is selling the data. The incident underscores Azure/Entra identity hygiene risks &mdash; conditional access, admin MFA, and service-principal review &mdash; that apply equally to any SMB M365 tenant.</p>
+      <a href="https://securityaffairs.com/197322/cyber-crime/mcdonalds-employee-data-appears-in-leak-seller-claims-1-7m-records-stolen.html" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-9">
+    <summary class="item-header">
+      <span class="item-title">First documented prompt injection attack lands in US court filings</span>
+      <span class="item-type type-security">Security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 8/11</span>
+    </summary>
+    <div class="item-body">
+      <p>A litigant embedded hidden AI prompt injections in court filings &mdash; white-text or metadata instructions intended to manipulate LLM-based review tools used by opposing counsel. The judge caught the tactic and banned electronic filing. Serves as a warning for any SMB or MSP running LLMs over untrusted third-party documents.</p>
+      <a href="https://securityaffairs.com/197370/ai/invisible-ai-prompts-trigger-court-sanctions.html" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-10">
+    <summary class="item-header">
+      <span class="item-title">Threat actors registering expired domains to host malware C2</span>
+      <span class="item-type type-security">Security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 7/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Attackers are purchasing recently expired domains that still carry residual reputation and using them for malware command-and-control and phishing infrastructure. One actor spent $7M acquiring 10,000+ domains for C2, gambling, and streaming platforms. Email filters that rely on domain age or trust reputation may be less effective &mdash; renew corporate domains promptly and monitor for lookalike registrations.</p>
+      <a href="https://securityaffairs.com/197251/cyber-crime/crooks-are-buying-your-expired-domains-and-using-them-to-deliver-malware.html" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-11">
+    <summary class="item-header">
+      <span class="item-title">NIST SP 800-213r1 IoT cybersecurity draft public comment closes Aug 24</span>
+      <span class="item-type type-industry">Industry</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 7/11</span>
+    </summary>
+    <div class="item-body">
+      <p>NIST's initial public draft of SP 800-213r1, IoT Product Cybersecurity Guidelines for the Federal Government, is open for public comment through August 24, 2026. Contractors selling connected devices into federal supply chains should review the revised requirements for IoT product cybersecurity.</p>
+      <a href="https://csrc.nist.gov/News/2026/nist-releases-sp-800-213r1-ipd" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 </div>
 
-<div class="footer">Generated Sunday, August 16, 2026 at 6:45 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-08-16.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
+<div class="footer">Generated Monday, August 17, 2026 at 6:30 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-08-17.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
 
 </main>
 </body>
