@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<title>Morning Briefing -- Monday, August 17, 2026</title>
+<title>Morning Briefing -- Tuesday, August 18, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -14,21 +14,28 @@
 <main class="briefing-content">
 
 <div class="page-header">
-  <h1>Morning Briefing -- Monday, August 17, 2026</h1>
+  <h1>Morning Briefing -- Tuesday, August 18, 2026</h1>
   <p class="page-meta">Microsoft &bull; Security &amp; Compliance &bull; Firewall / VPN / Networking &bull; Servers/NAS &bull; Workstations &amp; Mobile &bull; Peripherals &amp; AV &bull; RMM &amp; Remote Access &bull; Construction &amp; Specialty Software &bull; General Tech &amp; AI &bull; Pacific Time</p>
 </div>
 
 <div class="section-actions">
   <h2>Today's Actions</h2>
-  <p class="section-transparency">Showing 3 of 5</p>
+  <p class="section-transparency">Showing 3 of 12</p>
   <ol class="action-list">
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Audit your construction client's SonicWall TZ SSL VPN accounts and confirm MFA is enforced on every one &mdash; Akira affiliates are entering via password-only VPN logins, then rebooting hosts into Safe Mode to disable EDR before encrypting. <a href="#item-1" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Confirm every Mac at your clients is on macOS 26.6.1 or later &mdash; the Netherlands NCSC has confirmed active exploitation of the Screen Sharing flaw for cryptomining now that public PoC code is available. <a href="#item-2" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Watch the Microsoft Defender advisory channel and prepare Defender for Business tenants for an emergency out-of-band patch &mdash; the actively exploited ShieldBreak zero-day (CVE-2026-69414) lets attackers disable real-time protection on Windows endpoints. <a href="#item-3" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Push macOS 26.6.2, iOS/iPadOS 26.6.1, and visionOS 26.6.1 to every eligible device this week &mdash; Apple shipped roughly 30 CVE fixes including a WebKit and kernel set worth active exploitation. <a href="#item-1" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Push iOS/iPadOS 18.7.10 to any iPhone or iPad that cannot run iOS 26 &mdash; the back-port bundles about 100 security fixes and is a mandatory update. <a href="#item-2" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Verify every Windows 11 and Windows Server 2025 host received the November 2025 patch &mdash; CISA has confirmed ransomware gangs are exploiting the Task Host flaw (CVE-2025-60710) to escalate to SYSTEM. <a href="#item-3" class="detail-link">details</a></li>
   </ol>
-  <details class="section-overflow"><summary>Show 2 more actions</summary><ol class="action-list" start="4">
-    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Verify none of your clients run SonicWall SMA 1000 appliances &mdash; INC ransomware is exploiting patched July flaws (CVE-2026-15409 / 15410) on unpatched SMAs, and the construction client's SonicWall TZ series is not affected. <a href="#item-4" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Track the GitHub status page and expect Actions, PRs, and repo API disruptions until Microsoft posts the all-clear on today's worldwide outage. <a href="#item-5" class="detail-link">details</a></li>
+  <details class="section-overflow"><summary>Show 9 more actions</summary><ol class="action-list" start="4">
+    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Track the M365 service health dashboard and warn users about failing search in Outlook/Teams/SharePoint Online until Microsoft posts recovery. <a href="#item-4" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> Note the reported sale of 3.6M Azure/Entra account records tied to major enterprises &mdash; audit privileged access, revoke stale refresh tokens, and enforce phishing-resistant MFA on your M365 tenants. <a href="#item-5" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> Review sign-in logs for anomalies and confirm admin MFA is phishing-resistant across all your Entra tenants &mdash; the McDonald's 1.7M-record leak came from an Azure tenant with compromised credentials. <a href="#item-6" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Confirm tamper protection is on in every Defender for Business tenant and restrict Safe Mode boot &mdash; Akira affiliates are rebooting hosts into Safe Mode to disable EDR before ransoming. <a href="#item-7" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Monitor Microsoft advisories for the Defender ShieldBreak fix (CVE-2026-69414) and prepare emergency deployment &mdash; the August Patch Tuesday shipped no fix and a public 100%-reliable PoC exists. <a href="#item-8" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Track the GitHub status page and expect residual Actions, PR, and repo API disruptions until Microsoft posts the all-clear on Monday's global outage. <a href="#item-9" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Note the Sunday Claude outage in your AI-workflow contingency plan and add a service-health check for Anthropic status alongside GitHub and M365. <a href="#item-10" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Patch every self-hosted GitLab CE/EE instance immediately &mdash; CVE-2026-19478 (CVSS 9.4) lets unauthenticated GraphQL attackers modify or delete public projects. <a href="#item-11" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Update Forminator Forms on any WordPress site you manage to 1.56.2 or later &mdash; pre-fix versions expose approximately 600K sites to unauthenticated RCE via file upload. <a href="#item-12" class="detail-link">details</a></li>
   </ol></details>
 </div>
 
@@ -36,22 +43,25 @@
   <h2>What's New</h2>
   <p class="section-transparency"></p>
   <ul class="new-list">
-    <li style="color:#b0aea5;">No product updates today.</li>
+    <li><strong><a href="#item-13">Microsoft removes WMIC LOLBin tool in Windows 11 beta builds</a></strong> -- Microsoft has started removing the deprecated wmic.exe utility from Windows 11 beta builds because attackers frequently abuse it as a living-off-the-land binary. Scripts and management tools still using WMIC should be migrated to PowerShell CIM cmdlets before the removal rolls to production channels. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-removes-wmic-lolbin-tool-in-windows-11-beta-builds/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-14">Microsoft tests faster Windows File Explorer with customizable context menu</a></strong> -- Microsoft is testing a rebuilt File Explorer in Windows 11 Insider builds with noticeably faster load times and a customizable right-click context menu. The change addresses long-standing performance complaints and would let users pin frequently used actions to the top level. Preview only, no production release date yet. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-faster-windows-explorer-customizable-context-menu/" target="_blank">Source &rarr;</a></li>
   </ul>
+  
 </div>
 
 <div class="section-security">
   <h2>Security &amp; Patches</h2>
-  <p class="section-transparency">Showing 3 of 6</p>
+  <p class="section-transparency">Showing 3 of 7</p>
   <div class="security-cards">
-    <div class="security-card"><a href="#item-6" class="security-headline">Windows Server 2022 reaches end of mainstream support in 60 days</a><span class="urgency-yellow">This Week</span><span class="security-summary">Microsoft has notified administrators that Windows Server 2022 mainstream support ends October 13, 2026, moving into extended support until October 2031.</span></div>
-    <div class="security-card"><a href="#item-7" class="security-headline">CMMC Reform Task Force RFI window closes; Phase 2 remains suspended pending review</a><span class="urgency-yellow">This Week</span><span class="security-summary">The public comment window for the DoD's CMMC Reform Task Force RFI closed August 14, 2026.</span></div>
-    <div class="security-card"><a href="#item-8" class="security-headline">McDonald's Azure/Entra tenant breach exposes 1.7M employee records</a><span class="urgency-yellow">This Week</span><span class="security-summary">A threat actor claims to have exfiltrated 1.7 million employee records from a compromised McDonald's Azure/Entra tenant using compromised credentials, and is selling the data.</span></div>
+    <div class="security-card"><a href="#item-15" class="security-headline">Windows Server 2022 reaches end of mainstream support in 60 days</a><span class="urgency-yellow">This Week</span><span class="security-summary">Microsoft's 60-day reminder notice confirms Windows Server 2022 exits mainstream support on October 13, 2026, after which only security updates continue (extended support runs through October 14, 2031).</span></div>
+    <div class="security-card"><a href="#item-16" class="security-headline">Certighost and the privilege hiding in your Certificate Authority</a><span class="urgency-yellow">This Week</span><span class="security-summary">Researchers detailed "Certighost," an abuse path in Active Directory Certificate Services where misconfigured templates and CA permissions let low-privileged users request certificates that grant domain-wide access.</span></div>
+    <div class="security-card"><a href="#item-17" class="security-headline">Philips and GE investigating Clop ransomware data theft claims</a><span class="urgency-yellow">This Week</span><span class="security-summary">Clop ransomware operators added Philips and GE to their leak site claiming to have exfiltrated data, and both companies confirmed investigations are underway.</span></div>
   </div>
-  <details class="section-overflow"><summary>Show 3 more security items</summary><div class="security-cards">
-    <div class="security-card"><a href="#item-9" class="security-headline">First documented prompt injection attack lands in US court filings</a><span class="urgency-yellow">This Week</span><span class="security-summary">A litigant embedded hidden AI prompt injections in court filings &mdash; white-text or metadata instructions intended to manipulate LLM-based review tools used by opposing counsel.</span></div>
-    <div class="security-card"><a href="#item-10" class="security-headline">Threat actors registering expired domains to host malware C2</a><span class="urgency-yellow">This Week</span><span class="security-summary">Attackers are purchasing recently expired domains that still carry residual reputation and using them for malware command-and-control and phishing infrastructure.</span></div>
-    <div class="security-card"><a href="#item-11" class="security-headline">NIST SP 800-213r1 IoT cybersecurity draft public comment closes Aug 24</a><span class="urgency-green">FYI</span><span class="security-summary">NIST's initial public draft of SP 800-213r1, IoT Product Cybersecurity Guidelines for the Federal Government, is open for public comment through August 24, 2026.</span></div>
+  <details class="section-overflow"><summary>Show 4 more security items</summary><div class="security-cards">
+    <div class="security-card"><a href="#item-18" class="security-headline">LiteLLM supply-chain attack exposes credentials across 2,038 repositories</a><span class="urgency-yellow">This Week</span><span class="security-summary">A compromised LiteLLM package leaked API keys and credentials from more than 2,000 downstream repositories in technology, banking, and healthcare organizations.</span></div>
+    <div class="security-card"><a href="#item-19" class="security-headline">New Mirai-based Evooo1Bot botnet weaponizes 18 CVEs against Linux routers and IoT</a><span class="urgency-yellow">This Week</span><span class="security-summary">Researchers disclosed a new Mirai variant, Evooo1Bot, that chains 18 CVEs to compromise Linux-based routers, DVRs, and other IoT gear for DDoS and proxy abuse.</span></div>
+    <div class="security-card"><a href="#item-20" class="security-headline">CISA adds Ray-Project Ray RCE (CVE-2025-62593) to KEV catalog</a><span class="urgency-yellow">This Week</span><span class="security-summary">CISA added a critical Ray flaw to its Known Exploited Vulnerabilities catalog after evidence of active exploitation in the wild.</span></div>
+    <div class="security-card"><a href="#item-21" class="security-headline">Court sanctions attorneys over invisible AI prompts smuggled into filings</a><span class="urgency-green">FYI</span><span class="security-summary">A court issued sanctions after invisible AI prompt injections were found embedded in legal filings intended to manipulate LLM-based review.</span></div>
   </div></details>
 </div>
 
@@ -59,65 +69,173 @@
   <h2>Details</h2>
   <details class="item" id="item-1">
     <summary class="item-header">
-      <span class="item-title">Akira affiliates reboot into Safe Mode to bypass EDR; entry via MFA-less SonicWall VPN accounts</span>
+      <span class="item-title">Apple ships iOS 26.6.1, iPadOS 26.6.1, macOS Tahoe 26.6.2, visionOS 26.6.1 with ~30 security fixes</span>
       <span class="item-type type-security">Security</span>
       <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
+      <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>An Akira ransomware affiliate leveraged SonicWall SSL VPN accounts lacking MFA to gain initial access, then rebooted target Windows hosts into Safe Mode with Networking to disable EDR before deploying ransomware. The technique extends the ongoing Akira/SonicWall campaign linked to CVE-2024-40766 and highlights the risk of any TZ-series appliance still allowing password-only VPN logins. Your construction client's TZ deployment should be audited today.</p>
-      <a href="https://securityaffairs.com/197339/malware/akira-ransomware-uses-safe-mode-to-bypass-edr.html" target="_blank" class="src">Source &rarr;</a>
+      <p>Apple released iOS 26.6.1, iPadOS 26.6.1, macOS Tahoe 26.6.2, and visionOS 26.6.1 on August 17, 2026, patching close to 30 CVEs. Fixes include an audio flaw that could leak sensitive user data, an image-parsing bug allowing arbitrary code execution, three kernel vulnerabilities, and 21 WebKit memory-corruption issues; nine of the CVEs were reported by OpenAI Codex Security. This is Apple's third rapid security release in three weeks.</p>
+      <a href="https://www.macrumors.com/2026/08/17/ios-26-6-1-security-fixes/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-2">
     <summary class="item-header">
-      <span class="item-title">macOS Screen Sharing flaw under active exploitation to deploy Monero miner</span>
+      <span class="item-title">Apple back-ports fixes to iOS 18.7.10 and iPadOS 18.7.10 for older iPhones/iPads (~100 CVEs)</span>
       <span class="item-type type-security">Security</span>
       <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
+      <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>The Netherlands NCSC warns of active exploitation of a macOS Screen Sharing vulnerability now that proof-of-concept code is public; attackers are using it to install XMRig-based Monero miners. Apple addressed the underlying issue via improved state management in macOS 26.6.1, so any Mac still on 26.6 or earlier is exposed until updated.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/hackers-exploit-macos-screen-sharing-flaw-to-deploy-monero-miner/" target="_blank" class="src">Source &rarr;</a>
+      <p>Alongside the iOS 26.6.1 release, Apple pushed iOS 18.7.10 and iPadOS 18.7.10 on August 17, 2026 for devices that cannot run iOS 26. The 18.7.10 update bundles the same headline WebKit, kernel, audio, and image-parsing fixes plus a much larger back-portable set &mdash; roughly 100 security patches in total &mdash; making it a mandatory update for any user still on the iOS 18 branch.</p>
+      <a href="https://www.macrumors.com/2026/08/17/apple-releases-ios-26-6-1-and-more/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-3">
     <summary class="item-header">
-      <span class="item-title">Microsoft Defender ShieldBreak zero-day (CVE-2026-69414) under active exploitation, patch in progress</span>
+      <span class="item-title">CISA: Windows Task Host flaw now exploited by ransomware gangs</span>
       <span class="item-type type-security">Security</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft is developing an out-of-band patch for a Defender zero-day dubbed ShieldBreak (CVE-2026-69414) that allows attackers to disable real-time protection on Windows endpoints. Exploitation has been observed in the wild, disclosed by security researcher "Nightmare Eclipse." Defender for Business tenants at your small-business and internal clients should monitor advisories and prepare for an emergency deployment.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/microsoft-working-on-defender-patch-for-shieldbreak-zero-day/" target="_blank" class="src">Source &rarr;</a>
+      <p>CISA confirmed that ransomware operators are actively exploiting CVE-2025-60710, a Windows Task Host privilege escalation flaw patched in November 2025. Successful exploitation lets a local attacker escalate from basic user to SYSTEM on unpatched Windows 11 and Windows Server 2025 machines. Verify the November 2025 cumulative updates are installed on every Windows host at your clients.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/cisa-windows-task-host-flaw-now-exploited-by-ransomware-gangs/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-4">
     <summary class="item-header">
-      <span class="item-title">INC Ransomware weaponizes critical SonicWall SMA 1000 flaws</span>
+      <span class="item-title">Microsoft confirms outage affecting search in Microsoft 365 apps</span>
+      <span class="item-type type-feature">Feature</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 10/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Microsoft is investigating a service issue causing search failures across Microsoft 365 apps for many tenants. The outage impacts search functionality in Outlook, Teams, and other M365 clients. Track status via the Microsoft 365 admin center service health dashboard.</p>
+      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-working-to-fix-bug-behind-microsoft-365-search-issues/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-5">
+    <summary class="item-header">
+      <span class="item-title">Hacker claims 3.6M Azure account records stolen from major companies</span>
       <span class="item-type type-security">Security</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>INC Ransomware has accelerated activity in early August 2026, exploiting SonicWall SMA 1000 vulnerabilities CVE-2026-15409 (CVSS 10.0, unauthenticated WebSocket tunneling) and CVE-2026-15410 (CVSS 7.2, privilege escalation to root). SonicWall issued patches in mid-July; unpatched SMA 1000 appliances should be updated immediately. Your construction client's SonicWall TZ series is a different product line and is not affected.</p>
-      <a href="https://thehackernews.com/2026/08/inc-ransomware-emerges-as-dominant.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-5">
-    <summary class="item-header">
-      <span class="item-title">GitHub suffers global outage; Microsoft confirms multi-service disruption</span>
-      <span class="item-type type-industry">Industry</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Microsoft confirmed a worldwide GitHub outage affecting the website, API, Actions, Pull Requests, Issues, Codespaces, and other services. The incident began Monday morning and is disrupting CI/CD pipelines and developer workflows for organizations dependent on GitHub. SMB shops and MSPs using GitHub for source control or automation should expect delays until Microsoft posts an all-clear.</p>
-      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-github-is-down-worldwide/" target="_blank" class="src">Source &rarr;</a>
+      <p>A threat actor is selling a database purportedly containing 3.6 million Azure/Entra account records from multiple large enterprises, including tokens and tenant metadata. If validated, tenants across affected orgs face account takeover, token replay, and lateral movement risk. SMBs should audit conditional access, revoke stale refresh tokens, and enforce phishing-resistant MFA.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/hacker-claims-36-million-azure-account-records-stolen-from-major-companies/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-6">
+    <summary class="item-header">
+      <span class="item-title">McDonald's Azure/Entra tenant breach exposes 1.7M employee records</span>
+      <span class="item-type type-security">Security</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 10/11</span>
+    </summary>
+    <div class="item-body">
+      <p>A seller is offering 1.7 million McDonald's employee records reportedly extracted from the company's Azure/Entra tenant. The incident reinforces the exposure risk when Entra tenants are inadequately segmented or when admin accounts lack phishing-resistant MFA. SMBs should verify privileged-access controls and review sign-in logs for anomalies.</p>
+      <a href="https://securityaffairs.com/197322/cyber-crime/mcdonalds-employee-data-appears-in-leak-seller-claims-1-7m-records-stolen.html" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-7">
+    <summary class="item-header">
+      <span class="item-title">Akira ransomware uses Safe Mode to bypass EDR</span>
+      <span class="item-type type-security">Security</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 10/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Akira ransomware affiliates are rebooting victims into Safe Mode to disable Microsoft Defender and other EDR agents before encryption, defeating runtime detection. Defender for Business customers should enable tamper protection, restrict Safe Mode boot via BitLocker/recovery policies, and monitor for unexpected reboots into Safe Mode.</p>
+      <a href="https://securityaffairs.com/197339/malware/akira-ransomware-uses-safe-mode-to-bypass-edr.html" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-8">
+    <summary class="item-header">
+      <span class="item-title">Microsoft working on Defender patch for ShieldBreak zero-day</span>
+      <span class="item-type type-security">Security</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 10/11</span>
+    </summary>
+    <div class="item-body">
+      <p>A researcher published a PoC for "ShieldBreak" (CVE-2026-69414), a Defender local privilege escalation to SYSTEM that bypasses the earlier RoguePlanet fix and works with 100% reliability on Windows 11 25H2 and Windows Server 2025. Microsoft has acknowledged the flaw but did not ship a fix in the August 2026 Patch Tuesday. Increase monitoring of privileged escalations until a patch is released.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/microsoft-working-on-defender-patch-for-shieldbreak-zero-day/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-9">
+    <summary class="item-header">
+      <span class="item-title">GitHub hit by worldwide outage disrupting SMB dev workflows</span>
+      <span class="item-type type-industry">Industry</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 10/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Microsoft confirmed a global GitHub outage on Monday August 17, affecting repositories, Actions, Copilot, and other services that MSPs and SMB dev teams rely on daily. The incident caused hours of degraded access before recovery.</p>
+      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-github-is-down-worldwide/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-10">
+    <summary class="item-header">
+      <span class="item-title">Anthropic Claude hit by major outage affecting API and consumer apps</span>
+      <span class="item-type type-industry">Industry</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 10/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Anthropic confirmed Claude went down on Sunday August 16 in a major outage affecting Claude.ai, the API, and downstream services embedding Claude. IT teams and MSPs building AI-assisted workflows around Claude experienced disruption during the incident.</p>
+      <a href="https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-confirms-claude-is-down-in-major-outage-affecting-multiple-services/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-11">
+    <summary class="item-header">
+      <span class="item-title">GitLab patches critical unauthenticated GraphQL flaw CVE-2026-19478 (CVSS 9.4)</span>
+      <span class="item-type type-security">Security</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 9/11</span>
+    </summary>
+    <div class="item-body">
+      <p>GitLab issued fixes for CVE-2026-19478, a critical unauthenticated GraphQL vulnerability rated CVSS 9.4 that lets remote attackers modify or delete public projects and user data in Community and Enterprise editions. Self-hosted GitLab operators should patch immediately.</p>
+      <a href="https://securityaffairs.com/197454/hacking/gitlab-patches-critical-unauthenticated-graphql-vulnerability.html" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-12">
+    <summary class="item-header">
+      <span class="item-title">Forminator WordPress plugin RCE (CVE-2026-15748, CVSS 9.8) puts 600K sites at risk</span>
+      <span class="item-type type-security">Security</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 9/11</span>
+    </summary>
+    <div class="item-body">
+      <p>A critical unrestricted file upload vulnerability in the Forminator Forms WordPress plugin (600,000+ active installs) allows unauthenticated attackers to upload PHP files and achieve RCE on sites that expose forms with both File Upload and Select fields. Fixed in version 1.56.2; SMB IT shops managing client WordPress sites should audit and update.</p>
+      <a href="https://thehackernews.com/2026/08/forminator-wordpress-flaw-can-enable.html" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-13">
+    <summary class="item-header">
+      <span class="item-title">Microsoft removes WMIC LOLBin tool in Windows 11 beta builds</span>
+      <span class="item-type type-feature">Feature</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 8/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Microsoft has started removing the deprecated wmic.exe utility from Windows 11 beta builds because attackers frequently abuse it as a living-off-the-land binary. Scripts and management tools still using WMIC should be migrated to PowerShell CIM cmdlets before the removal rolls to production channels.</p>
+      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-removes-wmic-lolbin-tool-in-windows-11-beta-builds/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-14">
+    <summary class="item-header">
+      <span class="item-title">Microsoft tests faster Windows File Explorer with customizable context menu</span>
+      <span class="item-type type-feature">Feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 7/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Microsoft is testing a rebuilt File Explorer in Windows 11 Insider builds with noticeably faster load times and a customizable right-click context menu. The change addresses long-standing performance complaints and would let users pin frequently used actions to the top level. Preview only, no production release date yet.</p>
+      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-faster-windows-explorer-customizable-context-menu/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-15">
     <summary class="item-header">
       <span class="item-title">Windows Server 2022 reaches end of mainstream support in 60 days</span>
       <span class="item-type type-industry">Industry</span>
@@ -125,73 +243,85 @@
       <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft has notified administrators that Windows Server 2022 mainstream support ends October 13, 2026, moving into extended support until October 2031. Non-security fixes and new features stop after that date; security updates continue. SMBs should plan roadmaps for Server 2025 migrations, especially for hosts running newer workloads.</p>
+      <p>Microsoft's 60-day reminder notice confirms Windows Server 2022 exits mainstream support on October 13, 2026, after which only security updates continue (extended support runs through October 14, 2031). No new features or non-security fixes will ship. Begin planning upgrades to Windows Server 2025 for customers who need ongoing feature work.</p>
       <a href="https://www.bleepingcomputer.com/news/microsoft/windows-server-2022-reaches-end-of-mainstream-support-in-60-days/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
-  <details class="item" id="item-7">
+  <details class="item" id="item-16">
     <summary class="item-header">
-      <span class="item-title">CMMC Reform Task Force RFI window closes; Phase 2 remains suspended pending review</span>
-      <span class="item-type type-industry">Industry</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>The public comment window for the DoD's CMMC Reform Task Force RFI closed August 14, 2026. Phase 2 (which would have required C3PAO Level 2 certification) remains suspended, with new solicitations limited to Level 1 (Self) or Level 2 (Self). The task force must report findings to the DoD CIO within 60 days of the July 13 suspension &mdash; directly relevant to your construction client's in-progress CMMC L2 work.</p>
-      <a href="https://federalnewsnetwork.com/cybersecurity/2026/07/pentagon-suspends-cmmc-phase-two-requirements-launches-review-of-program/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-8">
-    <summary class="item-header">
-      <span class="item-title">McDonald's Azure/Entra tenant breach exposes 1.7M employee records</span>
+      <span class="item-title">Certighost and the privilege hiding in your Certificate Authority</span>
       <span class="item-type type-security">Security</span>
       <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>A threat actor claims to have exfiltrated 1.7 million employee records from a compromised McDonald's Azure/Entra tenant using compromised credentials, and is selling the data. The incident underscores Azure/Entra identity hygiene risks &mdash; conditional access, admin MFA, and service-principal review &mdash; that apply equally to any SMB M365 tenant.</p>
-      <a href="https://securityaffairs.com/197322/cyber-crime/mcdonalds-employee-data-appears-in-leak-seller-claims-1-7m-records-stolen.html" target="_blank" class="src">Source &rarr;</a>
+      <p>Researchers detailed "Certighost," an abuse path in Active Directory Certificate Services where misconfigured templates and CA permissions let low-privileged users request certificates that grant domain-wide access. The technique parallels ESC-class escalations and often goes unnoticed by defenders. Review AD CS template permissions and enable auditing on issuing CAs.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/certighost-and-the-privilege-hiding-in-your-certificate-authority/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
-  <details class="item" id="item-9">
+  <details class="item" id="item-17">
     <summary class="item-header">
-      <span class="item-title">First documented prompt injection attack lands in US court filings</span>
-      <span class="item-type type-security">Security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>A litigant embedded hidden AI prompt injections in court filings &mdash; white-text or metadata instructions intended to manipulate LLM-based review tools used by opposing counsel. The judge caught the tactic and banned electronic filing. Serves as a warning for any SMB or MSP running LLMs over untrusted third-party documents.</p>
-      <a href="https://securityaffairs.com/197370/ai/invisible-ai-prompts-trigger-court-sanctions.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-10">
-    <summary class="item-header">
-      <span class="item-title">Threat actors registering expired domains to host malware C2</span>
+      <span class="item-title">Philips and GE investigating Clop ransomware data theft claims</span>
       <span class="item-type type-security">Security</span>
       <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>Attackers are purchasing recently expired domains that still carry residual reputation and using them for malware command-and-control and phishing infrastructure. One actor spent $7M acquiring 10,000+ domains for C2, gambling, and streaming platforms. Email filters that rely on domain age or trust reputation may be less effective &mdash; renew corporate domains promptly and monitor for lookalike registrations.</p>
-      <a href="https://securityaffairs.com/197251/cyber-crime/crooks-are-buying-your-expired-domains-and-using-them-to-deliver-malware.html" target="_blank" class="src">Source &rarr;</a>
+      <p>Clop ransomware operators added Philips and GE to their leak site claiming to have exfiltrated data, and both companies confirmed investigations are underway. Clop's recent activity has centered on file-transfer software supply-chain attacks; SMBs using managed file transfer or third-party data-sharing platforms should review vendor patch status.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/philips-and-ge-investigating-clop-ransomware-data-theft-claims/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
-  <details class="item" id="item-11">
+  <details class="item" id="item-18">
     <summary class="item-header">
-      <span class="item-title">NIST SP 800-213r1 IoT cybersecurity draft public comment closes Aug 24</span>
+      <span class="item-title">LiteLLM supply-chain attack exposes credentials across 2,038 repositories</span>
+      <span class="item-type type-security">Security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 7/11</span>
+    </summary>
+    <div class="item-body">
+      <p>A compromised LiteLLM package leaked API keys and credentials from more than 2,000 downstream repositories in technology, banking, and healthcare organizations. Any org integrating LLM proxies through LiteLLM should rotate exposed keys and audit CI/CD secret stores. Highlights the ongoing risk of AI-adjacent package supply-chain attacks.</p>
+      <a href="https://securityaffairs.com/197377/hacking/litellm-supply-chain-attack-technology-banking-and-healthcare-the-most-affected.html" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-19">
+    <summary class="item-header">
+      <span class="item-title">New Mirai-based Evooo1Bot botnet weaponizes 18 CVEs against Linux routers and IoT</span>
+      <span class="item-type type-security">Security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 7/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Researchers disclosed a new Mirai variant, Evooo1Bot, that chains 18 CVEs to compromise Linux-based routers, DVRs, and other IoT gear for DDoS and proxy abuse. The campaign is opportunistic and targets exposed management interfaces and default credentials on consumer/SOHO devices &mdash; a reminder to keep edge networking gear (including UniFi and other perimeter devices) fully patched and off the public internet where possible.</p>
+      <a href="https://securityaffairs.com/197434/malware/new-mirai-based-evooo1bot-botnet-targets-linux-devices.html" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-20">
+    <summary class="item-header">
+      <span class="item-title">CISA adds Ray-Project Ray RCE (CVE-2025-62593) to KEV catalog</span>
+      <span class="item-type type-security">Security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 7/11</span>
+    </summary>
+    <div class="item-body">
+      <p>CISA added a critical Ray flaw to its Known Exploited Vulnerabilities catalog after evidence of active exploitation in the wild. Ray is an open-source Python distributed compute framework widely used for AI/ML workloads; teams running Ray clusters should apply vendor guidance.</p>
+      <a href="https://securityaffairs.com/197419/security/u-s-cisa-adds-a-ray-project-ray-flaw-to-its-known-exploited-vulnerabilities-catalog.html" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-21">
+    <summary class="item-header">
+      <span class="item-title">Court sanctions attorneys over invisible AI prompts smuggled into filings</span>
       <span class="item-type type-industry">Industry</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>NIST's initial public draft of SP 800-213r1, IoT Product Cybersecurity Guidelines for the Federal Government, is open for public comment through August 24, 2026. Contractors selling connected devices into federal supply chains should review the revised requirements for IoT product cybersecurity.</p>
-      <a href="https://csrc.nist.gov/News/2026/nist-releases-sp-800-213r1-ipd" target="_blank" class="src">Source &rarr;</a>
+      <p>A court issued sanctions after invisible AI prompt injections were found embedded in legal filings intended to manipulate LLM-based review.  The case is a cautionary data point for IT and security teams as prompt-injection risk moves into everyday document workflows.</p>
+      <a href="https://securityaffairs.com/197370/ai/invisible-ai-prompts-trigger-court-sanctions.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 </div>
 
-<div class="footer">Generated Monday, August 17, 2026 at 6:30 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-08-17.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
+<div class="footer">Generated Tuesday, August 18, 2026 at 6:30 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-08-18.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
 
 </main>
 </body>
