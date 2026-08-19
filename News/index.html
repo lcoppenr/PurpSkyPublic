@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<title>Morning Briefing -- Tuesday, August 18, 2026</title>
+<title>Morning Briefing -- Wednesday, August 19, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -14,54 +14,41 @@
 <main class="briefing-content">
 
 <div class="page-header">
-  <h1>Morning Briefing -- Tuesday, August 18, 2026</h1>
+  <h1>Morning Briefing -- Wednesday, August 19, 2026</h1>
   <p class="page-meta">Microsoft &bull; Security &amp; Compliance &bull; Firewall / VPN / Networking &bull; Servers/NAS &bull; Workstations &amp; Mobile &bull; Peripherals &amp; AV &bull; RMM &amp; Remote Access &bull; Construction &amp; Specialty Software &bull; General Tech &amp; AI &bull; Pacific Time</p>
 </div>
 
 <div class="section-actions">
   <h2>Today's Actions</h2>
-  <p class="section-transparency">Showing 3 of 12</p>
+  <p class="section-transparency">Showing 3 of 4</p>
   <ol class="action-list">
-    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Push macOS 26.6.2, iOS/iPadOS 26.6.1, and visionOS 26.6.1 to every eligible device this week &mdash; Apple shipped roughly 30 CVE fixes including a WebKit and kernel set worth active exploitation. <a href="#item-1" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Push iOS/iPadOS 18.7.10 to any iPhone or iPad that cannot run iOS 26 &mdash; the back-port bundles about 100 security fixes and is a mandatory update. <a href="#item-2" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Verify every Windows 11 and Windows Server 2025 host received the November 2025 patch &mdash; CISA has confirmed ransomware gangs are exploiting the Task Host flaw (CVE-2025-60710) to escalate to SYSTEM. <a href="#item-3" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Push macOS Tahoe 26.6.2, iOS/iPadOS 26.6.1, visionOS 26.6.1, and iOS/iPadOS 18.7.10 to every eligible device today &mdash; Apple's rapid security release fixes 28 CVEs including 21 WebKit and multiple kernel flaws already highlighted by CISA. <a href="#item-1" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Confirm the August Patch Tuesday cumulative updates are deployed on every Windows host and patch Broadcom VMware vCenter now &mdash; CISA added both the Microsoft IKE double-free (CVE-2026-33824) and VMware vCenter path traversal (CVE-2026-59310) to KEV based on active exploitation. <a href="#item-2" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Patch any self-hosted GitLab CE/EE instance today &mdash; CVE-2026-19478 lets unauthenticated attackers execute privileged GraphQL operations on Community and Enterprise editions. <a href="#item-3" class="detail-link">details</a></li>
   </ol>
-  <details class="section-overflow"><summary>Show 9 more actions</summary><ol class="action-list" start="4">
-    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Track the M365 service health dashboard and warn users about failing search in Outlook/Teams/SharePoint Online until Microsoft posts recovery. <a href="#item-4" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> Note the reported sale of 3.6M Azure/Entra account records tied to major enterprises &mdash; audit privileged access, revoke stale refresh tokens, and enforce phishing-resistant MFA on your M365 tenants. <a href="#item-5" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> Review sign-in logs for anomalies and confirm admin MFA is phishing-resistant across all your Entra tenants &mdash; the McDonald's 1.7M-record leak came from an Azure tenant with compromised credentials. <a href="#item-6" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Confirm tamper protection is on in every Defender for Business tenant and restrict Safe Mode boot &mdash; Akira affiliates are rebooting hosts into Safe Mode to disable EDR before ransoming. <a href="#item-7" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Monitor Microsoft advisories for the Defender ShieldBreak fix (CVE-2026-69414) and prepare emergency deployment &mdash; the August Patch Tuesday shipped no fix and a public 100%-reliable PoC exists. <a href="#item-8" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Track the GitHub status page and expect residual Actions, PR, and repo API disruptions until Microsoft posts the all-clear on Monday's global outage. <a href="#item-9" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Note the Sunday Claude outage in your AI-workflow contingency plan and add a service-health check for Anthropic status alongside GitHub and M365. <a href="#item-10" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Patch every self-hosted GitLab CE/EE instance immediately &mdash; CVE-2026-19478 (CVSS 9.4) lets unauthenticated GraphQL attackers modify or delete public projects. <a href="#item-11" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Update Forminator Forms on any WordPress site you manage to 1.56.2 or later &mdash; pre-fix versions expose approximately 600K sites to unauthenticated RCE via file upload. <a href="#item-12" class="detail-link">details</a></li>
+  <details class="section-overflow"><summary>Show 1 more actions</summary><ol class="action-list" start="4">
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> Note the CISA KEV addition of Ray-Project Ray RCE (CVE-2025-62593) and audit whether any client environment runs Ray dashboards for ML workloads on internal infrastructure. <a href="#item-4" class="detail-link">details</a></li>
   </ol></details>
 </div>
 
 <div class="section-new">
   <h2>What's New</h2>
-  <p class="section-transparency"></p>
   <ul class="new-list">
-    <li><strong><a href="#item-13">Microsoft removes WMIC LOLBin tool in Windows 11 beta builds</a></strong> -- Microsoft has started removing the deprecated wmic.exe utility from Windows 11 beta builds because attackers frequently abuse it as a living-off-the-land binary. Scripts and management tools still using WMIC should be migrated to PowerShell CIM cmdlets before the removal rolls to production channels. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-removes-wmic-lolbin-tool-in-windows-11-beta-builds/" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-14">Microsoft tests faster Windows File Explorer with customizable context menu</a></strong> -- Microsoft is testing a rebuilt File Explorer in Windows 11 Insider builds with noticeably faster load times and a customizable right-click context menu. The change addresses long-standing performance complaints and would let users pin frequently used actions to the top level. Preview only, no production release date yet. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-faster-windows-explorer-customizable-context-menu/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-5">UniFi Network 10.5.67 and UniFi OS 5.1.30 released with Fabric Remote Access toggle and stability fixes</a></strong> -- Ubiquiti shipped UniFi Network 10.5.67 with a new option to disable Remote Access on Fabric-linked UniFi OS Server consoles, better Windows UAC install behavior, more reliable backups on large datasets, and Identity WiFi / device discovery fixes. UniFi OS 5.1.30 bundles Protect and Identity Sync updates plus WAN failover, WiFi, IPS/IDS, PPPoE MTU, and multicast blocking improvements. Rollout is gradual &mdash; review release notes before pushing to production sites. <a href="https://releasebot.io/updates/ubiquiti" target="_blank">Source &rarr;</a></li>
   </ul>
-  
 </div>
 
 <div class="section-security">
   <h2>Security &amp; Patches</h2>
-  <p class="section-transparency">Showing 3 of 7</p>
+  <p class="section-transparency">Showing 3 of 5</p>
   <div class="security-cards">
-    <div class="security-card"><a href="#item-15" class="security-headline">Windows Server 2022 reaches end of mainstream support in 60 days</a><span class="urgency-yellow">This Week</span><span class="security-summary">Microsoft's 60-day reminder notice confirms Windows Server 2022 exits mainstream support on October 13, 2026, after which only security updates continue (extended support runs through October 14, 2031).</span></div>
-    <div class="security-card"><a href="#item-16" class="security-headline">Certighost and the privilege hiding in your Certificate Authority</a><span class="urgency-yellow">This Week</span><span class="security-summary">Researchers detailed "Certighost," an abuse path in Active Directory Certificate Services where misconfigured templates and CA permissions let low-privileged users request certificates that grant domain-wide access.</span></div>
-    <div class="security-card"><a href="#item-17" class="security-headline">Philips and GE investigating Clop ransomware data theft claims</a><span class="urgency-yellow">This Week</span><span class="security-summary">Clop ransomware operators added Philips and GE to their leak site claiming to have exfiltrated data, and both companies confirmed investigations are underway.</span></div>
+    <div class="security-card"><a href="#item-6" class="security-headline">Microsoft Defender Experts publish behavioral hunting guidance for MacSync macOS infostealer</a><span class="urgency-yellow">This Week</span><span class="security-summary">Microsoft published research detailing how Defender Experts tracked the MacSync macOS infostealer by pivoting on recurring endpoint and network behaviors after operators rotated through 30+ domains.</span></div>
+    <div class="security-card"><a href="#item-7" class="security-headline">LiteLLM supply-chain attack exposes credentials across 2,038 repositories</a><span class="urgency-yellow">This Week</span><span class="security-summary">A supply-chain compromise in the widely used LiteLLM AI gateway leaked API keys and credentials from more than 2,000 downstream repositories in technology, banking, and healthcare organizations.</span></div>
+    <div class="security-card"><a href="#item-8" class="security-headline">CISA adds Apple macOS Screen Sharing improper-auth flaw (CVE-2026-65400) to KEV</a><span class="urgency-yellow">This Week</span><span class="security-summary">CISA's August 18 KEV update includes CVE-2026-65400, an improper-authentication vulnerability in Apple macOS Screen Sharing that is being exploited in the wild.</span></div>
   </div>
-  <details class="section-overflow"><summary>Show 4 more security items</summary><div class="security-cards">
-    <div class="security-card"><a href="#item-18" class="security-headline">LiteLLM supply-chain attack exposes credentials across 2,038 repositories</a><span class="urgency-yellow">This Week</span><span class="security-summary">A compromised LiteLLM package leaked API keys and credentials from more than 2,000 downstream repositories in technology, banking, and healthcare organizations.</span></div>
-    <div class="security-card"><a href="#item-19" class="security-headline">New Mirai-based Evooo1Bot botnet weaponizes 18 CVEs against Linux routers and IoT</a><span class="urgency-yellow">This Week</span><span class="security-summary">Researchers disclosed a new Mirai variant, Evooo1Bot, that chains 18 CVEs to compromise Linux-based routers, DVRs, and other IoT gear for DDoS and proxy abuse.</span></div>
-    <div class="security-card"><a href="#item-20" class="security-headline">CISA adds Ray-Project Ray RCE (CVE-2025-62593) to KEV catalog</a><span class="urgency-yellow">This Week</span><span class="security-summary">CISA added a critical Ray flaw to its Known Exploited Vulnerabilities catalog after evidence of active exploitation in the wild.</span></div>
-    <div class="security-card"><a href="#item-21" class="security-headline">Court sanctions attorneys over invisible AI prompts smuggled into filings</a><span class="urgency-green">FYI</span><span class="security-summary">A court issued sanctions after invisible AI prompt injections were found embedded in legal filings intended to manipulate LLM-based review.</span></div>
+  <details class="section-overflow"><summary>Show 2 more security items</summary><div class="security-cards">
+    <div class="security-card"><a href="#item-9" class="security-headline">New Mirai-based Evooo1Bot botnet weaponizes 18 CVEs against Linux routers and IoT</a><span class="urgency-yellow">This Week</span><span class="security-summary">Researchers disclosed a new Mirai variant, Evooo1Bot, that chains 18 CVEs to compromise Linux-based routers, DVRs, and IoT devices for DDoS, SSH brute-forcing, credential theft, and SOCKS5 proxy abuse.</span></div>
+    <div class="security-card"><a href="#item-10" class="security-headline">50,000 Stripe secret keys found leaked in public code repositories</a><span class="urgency-yellow">This Week</span><span class="security-summary">Researchers uncovered roughly 50,000 leaked Stripe secret keys committed to public code repositories, exposing merchants to fraudulent charges and account takeover.</span></div>
   </div></details>
 </div>
 
@@ -69,221 +56,101 @@
   <h2>Details</h2>
   <details class="item" id="item-1">
     <summary class="item-header">
-      <span class="item-title">Apple ships iOS 26.6.1, iPadOS 26.6.1, macOS Tahoe 26.6.2, visionOS 26.6.1 with ~30 security fixes</span>
+      <span class="item-title">Apple ships iOS 26.6.1, iPadOS 26.6.1, macOS Tahoe 26.6.2, and iOS/iPadOS 18.7.10 fixing 28 CVEs</span>
       <span class="item-type type-security">Security</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>Apple released iOS 26.6.1, iPadOS 26.6.1, macOS Tahoe 26.6.2, and visionOS 26.6.1 on August 17, 2026, patching close to 30 CVEs. Fixes include an audio flaw that could leak sensitive user data, an image-parsing bug allowing arbitrary code execution, three kernel vulnerabilities, and 21 WebKit memory-corruption issues; nine of the CVEs were reported by OpenAI Codex Security. This is Apple's third rapid security release in three weeks.</p>
+      <p>Apple released iOS 26.6.1, iPadOS 26.6.1, macOS Tahoe 26.6.2, and visionOS 26.6.1 on August 17 addressing 28 vulnerabilities including 21 WebKit flaws that could lead to data leakage, kernel memory access, and arbitrary code execution. Alongside the primary release Apple pushed iOS 18.7.10 and iPadOS 18.7.10 for iPhone XS/XR and 7th-gen iPad devices that cannot run iOS 26. Coverage spans iPhone 11 and newer, current iPad Pro/Air/mini, and Macs on Tahoe.</p>
       <a href="https://www.macrumors.com/2026/08/17/ios-26-6-1-security-fixes/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-2">
     <summary class="item-header">
-      <span class="item-title">Apple back-ports fixes to iOS 18.7.10 and iPadOS 18.7.10 for older iPhones/iPads (~100 CVEs)</span>
+      <span class="item-title">CISA adds Microsoft IKE double-free (CVE-2026-33824) and VMware vCenter path traversal (CVE-2026-59310) to KEV</span>
       <span class="item-type type-security">Security</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>Alongside the iOS 26.6.1 release, Apple pushed iOS 18.7.10 and iPadOS 18.7.10 on August 17, 2026 for devices that cannot run iOS 26. The 18.7.10 update bundles the same headline WebKit, kernel, audio, and image-parsing fixes plus a much larger back-portable set &mdash; roughly 100 security patches in total &mdash; making it a mandatory update for any user still on the iOS 18 branch.</p>
-      <a href="https://www.macrumors.com/2026/08/17/apple-releases-ios-26-6-1-and-more/" target="_blank" class="src">Source &rarr;</a>
+      <p>CISA added four flaws to the KEV catalog on August 18 based on active exploitation, including CVE-2026-33824 &mdash; a double-free in the Microsoft Internet Key Exchange (IKE) Service Extensions used by Windows IPsec/VPN clients &mdash; and CVE-2026-59310, a path traversal in Broadcom VMware vCenter. Federal agencies must remediate under BOD 22-01; private-sector defenders should prioritize the August Patch Tuesday update and vCenter fixed builds because both components are high-leverage footholds for ransomware operators.</p>
+      <a href="https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-3">
     <summary class="item-header">
-      <span class="item-title">CISA: Windows Task Host flaw now exploited by ransomware gangs</span>
+      <span class="item-title">GitLab patches critical unauthenticated GraphQL vulnerability CVE-2026-19478</span>
       <span class="item-type type-security">Security</span>
       <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>CISA confirmed that ransomware operators are actively exploiting CVE-2025-60710, a Windows Task Host privilege escalation flaw patched in November 2025. Successful exploitation lets a local attacker escalate from basic user to SYSTEM on unpatched Windows 11 and Windows Server 2025 machines. Verify the November 2025 cumulative updates are installed on every Windows host at your clients.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/cisa-windows-task-host-flaw-now-exploited-by-ransomware-gangs/" target="_blank" class="src">Source &rarr;</a>
+      <p>GitLab issued an emergency patch for CVE-2026-19478, a critical unauthenticated flaw in the GraphQL API that lets attackers execute privileged operations without credentials on self-managed Community and Enterprise Edition installations. Any org running on-prem GitLab for SCM/CI should update to the fixed release immediately and audit for suspicious project modifications since public exposure.</p>
+      <a href="https://securityaffairs.com/197454/hacking/gitlab-patches-critical-unauthenticated-graphql-vulnerability.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-4">
     <summary class="item-header">
-      <span class="item-title">Microsoft confirms outage affecting search in Microsoft 365 apps</span>
-      <span class="item-type type-feature">Feature</span>
+      <span class="item-title">CISA adds Ray-Project Ray flaw (CVE-2025-62593) to Known Exploited Vulnerabilities catalog</span>
+      <span class="item-type type-security">Security</span>
       <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft is investigating a service issue causing search failures across Microsoft 365 apps for many tenants. The outage impacts search functionality in Outlook, Teams, and other M365 clients. Track status via the Microsoft 365 admin center service health dashboard.</p>
-      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-working-to-fix-bug-behind-microsoft-365-search-issues/" target="_blank" class="src">Source &rarr;</a>
+      <p>CISA added CVE-2025-62593, an actively-exploited flaw in the Ray distributed AI compute framework, to its KEV catalog. The vulnerability enables remote code execution through DNS rebinding against developer machines and Ray clusters used for AI/ML workloads. SMB IT shops with Ray dashboards on internal infrastructure should patch on the KEV timeline &mdash; exposed Ray endpoints have been a repeated ransomware vector.</p>
+      <a href="https://securityaffairs.com/197419/security/u-s-cisa-adds-a-ray-project-ray-flaw-to-its-known-exploited-vulnerabilities-catalog.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-5">
     <summary class="item-header">
-      <span class="item-title">Hacker claims 3.6M Azure account records stolen from major companies</span>
-      <span class="item-type type-security">Security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
+      <span class="item-title">UniFi Network 10.5.67 and UniFi OS 5.1.30 released with Fabric Remote Access toggle and stability fixes</span>
+      <span class="item-type type-feature">Feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>A threat actor is selling a database purportedly containing 3.6 million Azure/Entra account records from multiple large enterprises, including tokens and tenant metadata. If validated, tenants across affected orgs face account takeover, token replay, and lateral movement risk. SMBs should audit conditional access, revoke stale refresh tokens, and enforce phishing-resistant MFA.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/hacker-claims-36-million-azure-account-records-stolen-from-major-companies/" target="_blank" class="src">Source &rarr;</a>
+      <p>Ubiquiti shipped UniFi Network 10.5.67 with a new option to disable Remote Access on Fabric-linked UniFi OS Server consoles, better Windows UAC install behavior, more reliable backups on large datasets, and Identity WiFi / device discovery fixes. UniFi OS 5.1.30 bundles Protect and Identity Sync updates plus WAN failover, WiFi, IPS/IDS, PPPoE MTU, and multicast blocking improvements. Rollout is gradual &mdash; review release notes before pushing to production sites.</p>
+      <a href="https://releasebot.io/updates/ubiquiti" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-6">
     <summary class="item-header">
-      <span class="item-title">McDonald's Azure/Entra tenant breach exposes 1.7M employee records</span>
+      <span class="item-title">Microsoft Defender Experts publish behavioral hunting guidance for MacSync macOS infostealer</span>
       <span class="item-type type-security">Security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>A seller is offering 1.7 million McDonald's employee records reportedly extracted from the company's Azure/Entra tenant. The incident reinforces the exposure risk when Entra tenants are inadequately segmented or when admin accounts lack phishing-resistant MFA. SMBs should verify privileged-access controls and review sign-in logs for anomalies.</p>
-      <a href="https://securityaffairs.com/197322/cyber-crime/mcdonalds-employee-data-appears-in-leak-seller-claims-1-7m-records-stolen.html" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft published research detailing how Defender Experts tracked the MacSync macOS infostealer by pivoting on recurring endpoint and network behaviors after operators rotated through 30+ domains. Initial access comes from ClickFix social-engineering lures that trick users into pasting curl commands into Terminal, followed by staged base64/gzip payload retrieval. Defenders should hunt on the behavioral chain rather than IOCs.</p>
+      <a href="https://www.microsoft.com/en-us/security/blog/2026/08/18/hunting-macsync-stealer-infrastructure-through-behavioral-pivots/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-7">
     <summary class="item-header">
-      <span class="item-title">Akira ransomware uses Safe Mode to bypass EDR</span>
+      <span class="item-title">LiteLLM supply-chain attack exposes credentials across 2,038 repositories</span>
       <span class="item-type type-security">Security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>Akira ransomware affiliates are rebooting victims into Safe Mode to disable Microsoft Defender and other EDR agents before encryption, defeating runtime detection. Defender for Business customers should enable tamper protection, restrict Safe Mode boot via BitLocker/recovery policies, and monitor for unexpected reboots into Safe Mode.</p>
-      <a href="https://securityaffairs.com/197339/malware/akira-ransomware-uses-safe-mode-to-bypass-edr.html" target="_blank" class="src">Source &rarr;</a>
+      <p>A supply-chain compromise in the widely used LiteLLM AI gateway leaked API keys and credentials from more than 2,000 downstream repositories in technology, banking, and healthcare organizations. Any org integrating LLM proxies through LiteLLM should rotate exposed keys, pin known-good versions, and audit CI/CD secret stores.</p>
+      <a href="https://securityaffairs.com/197377/hacking/litellm-supply-chain-attack-technology-banking-and-healthcare-the-most-affected.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-8">
     <summary class="item-header">
-      <span class="item-title">Microsoft working on Defender patch for ShieldBreak zero-day</span>
+      <span class="item-title">CISA adds Apple macOS Screen Sharing improper-auth flaw (CVE-2026-65400) to KEV</span>
       <span class="item-type type-security">Security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>A researcher published a PoC for "ShieldBreak" (CVE-2026-69414), a Defender local privilege escalation to SYSTEM that bypasses the earlier RoguePlanet fix and works with 100% reliability on Windows 11 25H2 and Windows Server 2025. Microsoft has acknowledged the flaw but did not ship a fix in the August 2026 Patch Tuesday. Increase monitoring of privileged escalations until a patch is released.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/microsoft-working-on-defender-patch-for-shieldbreak-zero-day/" target="_blank" class="src">Source &rarr;</a>
+      <p>CISA's August 18 KEV update includes CVE-2026-65400, an improper-authentication vulnerability in Apple macOS Screen Sharing that is being exploited in the wild. SMBs with Mac fleets should push Apple's corresponding security update and audit Screen Sharing exposure, particularly on devices reachable from the internet.</p>
+      <a href="https://securityaffairs.com/197490/hacking/u-s-cisa-adds-apple-macos-microsoft-sharepoint-broadcom-vmware-vcenter-and-microsoft-ike-flaws-to-its-known-exploited-vulnerabilities-catalog.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-9">
-    <summary class="item-header">
-      <span class="item-title">GitHub hit by worldwide outage disrupting SMB dev workflows</span>
-      <span class="item-type type-industry">Industry</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Microsoft confirmed a global GitHub outage on Monday August 17, affecting repositories, Actions, Copilot, and other services that MSPs and SMB dev teams rely on daily. The incident caused hours of degraded access before recovery.</p>
-      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-github-is-down-worldwide/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-10">
-    <summary class="item-header">
-      <span class="item-title">Anthropic Claude hit by major outage affecting API and consumer apps</span>
-      <span class="item-type type-industry">Industry</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Anthropic confirmed Claude went down on Sunday August 16 in a major outage affecting Claude.ai, the API, and downstream services embedding Claude. IT teams and MSPs building AI-assisted workflows around Claude experienced disruption during the incident.</p>
-      <a href="https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-confirms-claude-is-down-in-major-outage-affecting-multiple-services/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-11">
-    <summary class="item-header">
-      <span class="item-title">GitLab patches critical unauthenticated GraphQL flaw CVE-2026-19478 (CVSS 9.4)</span>
-      <span class="item-type type-security">Security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>GitLab issued fixes for CVE-2026-19478, a critical unauthenticated GraphQL vulnerability rated CVSS 9.4 that lets remote attackers modify or delete public projects and user data in Community and Enterprise editions. Self-hosted GitLab operators should patch immediately.</p>
-      <a href="https://securityaffairs.com/197454/hacking/gitlab-patches-critical-unauthenticated-graphql-vulnerability.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-12">
-    <summary class="item-header">
-      <span class="item-title">Forminator WordPress plugin RCE (CVE-2026-15748, CVSS 9.8) puts 600K sites at risk</span>
-      <span class="item-type type-security">Security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>A critical unrestricted file upload vulnerability in the Forminator Forms WordPress plugin (600,000+ active installs) allows unauthenticated attackers to upload PHP files and achieve RCE on sites that expose forms with both File Upload and Select fields. Fixed in version 1.56.2; SMB IT shops managing client WordPress sites should audit and update.</p>
-      <a href="https://thehackernews.com/2026/08/forminator-wordpress-flaw-can-enable.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-13">
-    <summary class="item-header">
-      <span class="item-title">Microsoft removes WMIC LOLBin tool in Windows 11 beta builds</span>
-      <span class="item-type type-feature">Feature</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Microsoft has started removing the deprecated wmic.exe utility from Windows 11 beta builds because attackers frequently abuse it as a living-off-the-land binary. Scripts and management tools still using WMIC should be migrated to PowerShell CIM cmdlets before the removal rolls to production channels.</p>
-      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-removes-wmic-lolbin-tool-in-windows-11-beta-builds/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-14">
-    <summary class="item-header">
-      <span class="item-title">Microsoft tests faster Windows File Explorer with customizable context menu</span>
-      <span class="item-type type-feature">Feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Microsoft is testing a rebuilt File Explorer in Windows 11 Insider builds with noticeably faster load times and a customizable right-click context menu. The change addresses long-standing performance complaints and would let users pin frequently used actions to the top level. Preview only, no production release date yet.</p>
-      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-faster-windows-explorer-customizable-context-menu/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-15">
-    <summary class="item-header">
-      <span class="item-title">Windows Server 2022 reaches end of mainstream support in 60 days</span>
-      <span class="item-type type-industry">Industry</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Microsoft's 60-day reminder notice confirms Windows Server 2022 exits mainstream support on October 13, 2026, after which only security updates continue (extended support runs through October 14, 2031). No new features or non-security fixes will ship. Begin planning upgrades to Windows Server 2025 for customers who need ongoing feature work.</p>
-      <a href="https://www.bleepingcomputer.com/news/microsoft/windows-server-2022-reaches-end-of-mainstream-support-in-60-days/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-16">
-    <summary class="item-header">
-      <span class="item-title">Certighost and the privilege hiding in your Certificate Authority</span>
-      <span class="item-type type-security">Security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Researchers detailed "Certighost," an abuse path in Active Directory Certificate Services where misconfigured templates and CA permissions let low-privileged users request certificates that grant domain-wide access. The technique parallels ESC-class escalations and often goes unnoticed by defenders. Review AD CS template permissions and enable auditing on issuing CAs.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/certighost-and-the-privilege-hiding-in-your-certificate-authority/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-17">
-    <summary class="item-header">
-      <span class="item-title">Philips and GE investigating Clop ransomware data theft claims</span>
-      <span class="item-type type-security">Security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Clop ransomware operators added Philips and GE to their leak site claiming to have exfiltrated data, and both companies confirmed investigations are underway. Clop's recent activity has centered on file-transfer software supply-chain attacks; SMBs using managed file transfer or third-party data-sharing platforms should review vendor patch status.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/philips-and-ge-investigating-clop-ransomware-data-theft-claims/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-18">
-    <summary class="item-header">
-      <span class="item-title">LiteLLM supply-chain attack exposes credentials across 2,038 repositories</span>
-      <span class="item-type type-security">Security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>A compromised LiteLLM package leaked API keys and credentials from more than 2,000 downstream repositories in technology, banking, and healthcare organizations. Any org integrating LLM proxies through LiteLLM should rotate exposed keys and audit CI/CD secret stores. Highlights the ongoing risk of AI-adjacent package supply-chain attacks.</p>
-      <a href="https://securityaffairs.com/197377/hacking/litellm-supply-chain-attack-technology-banking-and-healthcare-the-most-affected.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-19">
     <summary class="item-header">
       <span class="item-title">New Mirai-based Evooo1Bot botnet weaponizes 18 CVEs against Linux routers and IoT</span>
       <span class="item-type type-security">Security</span>
@@ -291,37 +158,25 @@
       <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>Researchers disclosed a new Mirai variant, Evooo1Bot, that chains 18 CVEs to compromise Linux-based routers, DVRs, and other IoT gear for DDoS and proxy abuse. The campaign is opportunistic and targets exposed management interfaces and default credentials on consumer/SOHO devices &mdash; a reminder to keep edge networking gear (including UniFi and other perimeter devices) fully patched and off the public internet where possible.</p>
+      <p>Researchers disclosed a new Mirai variant, Evooo1Bot, that chains 18 CVEs to compromise Linux-based routers, DVRs, and IoT devices for DDoS, SSH brute-forcing, credential theft, and SOCKS5 proxy abuse. The campaign is opportunistic and targets exposed management interfaces and default credentials &mdash; a reminder to keep edge networking gear fully patched and off the public internet.</p>
       <a href="https://securityaffairs.com/197434/malware/new-mirai-based-evooo1bot-botnet-targets-linux-devices.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
-  <details class="item" id="item-20">
+  <details class="item" id="item-10">
     <summary class="item-header">
-      <span class="item-title">CISA adds Ray-Project Ray RCE (CVE-2025-62593) to KEV catalog</span>
+      <span class="item-title">50,000 Stripe secret keys found leaked in public code repositories</span>
       <span class="item-type type-security">Security</span>
       <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>CISA added a critical Ray flaw to its Known Exploited Vulnerabilities catalog after evidence of active exploitation in the wild. Ray is an open-source Python distributed compute framework widely used for AI/ML workloads; teams running Ray clusters should apply vendor guidance.</p>
-      <a href="https://securityaffairs.com/197419/security/u-s-cisa-adds-a-ray-project-ray-flaw-to-its-known-exploited-vulnerabilities-catalog.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-21">
-    <summary class="item-header">
-      <span class="item-title">Court sanctions attorneys over invisible AI prompts smuggled into filings</span>
-      <span class="item-type type-industry">Industry</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>A court issued sanctions after invisible AI prompt injections were found embedded in legal filings intended to manipulate LLM-based review.  The case is a cautionary data point for IT and security teams as prompt-injection risk moves into everyday document workflows.</p>
-      <a href="https://securityaffairs.com/197370/ai/invisible-ai-prompts-trigger-court-sanctions.html" target="_blank" class="src">Source &rarr;</a>
+      <p>Researchers uncovered roughly 50,000 leaked Stripe secret keys committed to public code repositories, exposing merchants to fraudulent charges and account takeover. Active keys enabled fraudsters to access customer lists, create charges, and modify webhooks within hours of discovery. Rotate Stripe keys, enable restricted API keys, and add secret-scanning to CI pipelines.</p>
+      <a href="https://securityaffairs.com/197504/cyber-crime/50000-stripe-secrets-leaked-in-public-code.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 </div>
 
-<div class="footer">Generated Tuesday, August 18, 2026 at 6:30 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-08-18.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
+<div class="footer">Generated Wednesday, August 19, 2026 at 6:30 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-08-19.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
 
 </main>
 </body>
