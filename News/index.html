@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<title>Morning Briefing -- Thursday, August 20, 2026</title>
+<title>Morning Briefing -- Friday, August 21, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -14,302 +14,228 @@
 <main class="briefing-content">
 
 <div class="page-header">
-  <h1>Morning Briefing -- Thursday, August 20, 2026</h1>
+  <h1>Morning Briefing -- Friday, August 21, 2026</h1>
   <p class="page-meta">Microsoft &bull; Security &amp; Compliance &bull; Firewall / VPN / Networking &bull; Servers/NAS &bull; Workstations &amp; Mobile &bull; Peripherals &amp; AV &bull; RMM &amp; Remote Access &bull; Construction &amp; Specialty Software &bull; General Tech &amp; AI &bull; Pacific Time</p>
 </div>
 
 <div class="section-actions">
   <h2>Today's Actions</h2>
-  <p class="section-transparency">Showing 3 of 6</p>
+  <p class="section-transparency">Showing 3 of 4</p>
   <ol class="action-list">
-    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Push macOS Tahoe 26.6.2, iOS 26.6.1, iPadOS 26.6.1, visionOS 26.6.1, and iOS/iPadOS 18.7.10 to every eligible device today &mdash; Apple's Aug 17 release patches 28 CVEs including a large WebKit cluster, IPSec, Screen Sharing, and multiple kernel-level media flaws. <a href="#item-1" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Confirm the August Patch Tuesday cumulative is deployed on every Windows host and patch Broadcom VMware vCenter now &mdash; CISA added the Microsoft IKE (CVE-2026-33824) and VMware vCenter path-traversal (CVE-2026-59310) flaws to KEV on Aug 18 based on active exploitation. <a href="#item-2" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Warn users about the widespread M365 adversary-in-the-middle campaign hijacking payroll and finance mailboxes for wire fraud &mdash; enforce phishing-resistant MFA, audit inbox rules and OAuth grants, and hunt for suspicious session tokens across tenants. <a href="#item-3" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Review Entra sign-in and risk detection logs for signs of prior abuse of CVE-2026-69836 &mdash; Microsoft has patched the maximum-severity Entra ID deserialization RCE cloud-side, but hunting for prior exploitation attempts is still warranted. <a href="#item-1" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-yellow">This Week</span> Run the SANS ISC PowerShell/Microsoft Graph queries this week to find users missed in your MFA rollout, spot Entra password spray, and pull risk-detection reasons before the next audit cycle. <a href="#item-2" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-yellow">This Week</span> Warn users about the Russia-linked campaign hijacking accounts through Google OAuth consent and WhatsApp device-linking prompts &mdash; teach them to reject unfamiliar authorization or linking requests even when the sign-in page looks legitimate. <a href="#item-3" class="detail-link">details</a></li>
   </ol>
-  <details class="section-overflow"><summary>Show 3 more actions</summary><ol class="action-list" start="4">
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Patch any self-hosted GitLab CE/EE instance immediately &mdash; CVE-2026-19478 lets unauthenticated attackers execute privileged GraphQL operations against Community and Enterprise editions. <a href="#item-4" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Audit whether any client environment runs MLflow for ML workloads and upgrade to 3.15.0 or later &mdash; CISA added CVE-2026-64849 SSRF to KEV based on active exploitation. <a href="#item-5" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-yellow">This Week</span> Schedule Dell PowerEdge BIOS/firmware updates from DSA-2026-027 to remediate the Intel 2026.1 Platform Update advisories across R660, R760, R770, R860, R960, HS5610/5620, MX760c, T560, and multiple XE/XR models. <a href="#item-6" class="detail-link">details</a></li>
-  </ol></details>
+  <details class="section-overflow"><summary>Show 1 more action</summary><ol class="action-list" start="4"><li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-yellow">This Week</span> Send a phishing-awareness reminder covering the surging vishing (fake IT helpdesk calls) and device-code phishing attacks, and re-verify Conditional Access blocks the OAuth device-authorization flow for unmanaged devices. <a href="#item-4" class="detail-link">details</a></li></ol></details>
 </div>
 
 <div class="section-new">
   <h2>What's New</h2>
-  <p class="section-transparency">Showing 3 of 8</p>
+  <p class="section-transparency">Showing 3 of 7</p>
   <ul class="new-list">
-    <li><strong><a href="#item-7">Anthropic Claude Developer Platform: Files API and Admin API now GA, Sonnet 5 pricing frozen at $2/$10</a></strong> -- Anthropic made the Admin API user-management endpoints and the Files API generally available on the Claude Developer Platform, and confirmed the previously scheduled September 1 Sonnet 5 price increase will not occur. New Managed Agents controls for web access and self-hosted sandbox memory stores also shipped. <a href="https://releasebot.io/updates/anthropic/claude-developer-platform" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-8">Intune Service Release 2608 rolls out Shadow AI detection and Windows 11 STIG baseline</a></strong> -- The August Intune release adds a Windows 11 STIG SCAP audit baseline, Shadow AI detection/blocking via properties catalog and device query (public preview), Strict Tunnel Mode for Microsoft Tunnel on Android, DDM control for Apple Intelligence on macOS 26.4+, and Entra agentic identity for the Vulnerability Remediation Agent. <a href="https://www.prajwaldesai.com/intune-updates-new-features/" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-9">Entra ID August release adds Cloud Sync HAADJ and auto-accept SSO on managed Windows</a></strong> -- Microsoft's August Entra update lets admins use a supported registry setting to auto-accept SSO permissions on managed Windows devices, brings Hybrid Azure AD Join to Entra Cloud Sync (including disconnected forests), improves device-bound Authenticator passkey restore on iOS, and expands External ID federation to IdPs that don't share email. <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/whats-new-in-microsoft-entra-august-2026/4545172" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-5">Microsoft Teams Adds Report a Security Concern in Meetings Control</a></strong> -- Microsoft 365 Roadmap item 569207 introduces an in-meeting reporting control that lets attendees flag security or abuse concerns to admins directly from Teams. Useful for SMBs running external-facing meetings and wanting a documented user-reporting path for vishing or impersonation attempts. <a href="https://www.microsoft.com/microsoft-365/roadmap?id=569207" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-6">UniFi Protect Cameras firmware 5.4.132 fixes doorbell audio and PTZ bugs</a></strong> -- Ubiquiti released UniFi Protect Cameras firmware 5.4.132 on Aug 19 with memory-efficiency improvements and PTZ connectivity fixes, plus fixes for SD card formatting issues, G6 Entry speaker audio problems, and doorbell functionality bugs. Recommended for any site running UniFi Protect cameras regardless of application version. <a href="https://releasebot.io/updates/ubiquiti" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-7">M365 Copilot Adds Code Blocks in Chat Responses</a></strong> -- Roadmap item 569429 adds formatted code blocks to Microsoft 365 Copilot chat, improving readability of scripts and snippets returned by Copilot. Minor but useful quality-of-life for IT admins using Copilot for PowerShell/Graph queries. <a href="https://www.microsoft.com/microsoft-365/roadmap?id=569429" target="_blank">Source &rarr;</a></li>
   </ul>
-  <details class="section-overflow"><summary>Show 5 more updates</summary><ul class="new-list">
-    <li><strong><a href="#item-10">Defender for Business gains Streaming API preview and AI agent posture risk assessment</a></strong> -- The Streaming API is now in public preview in Defender for Business, letting partners and customers stream raw endpoint telemetry to a SIEM or custom SOC. Microsoft Defender also assesses posture risk for AI agents using configuration, access, runtime, and endpoint context signals so admins can prioritize risky agent identities. <a href="https://learn.microsoft.com/en-us/defender-business/mdb-whats-new" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-11">Windows 11 August update extends Windows Hello ESS to peripheral fingerprint readers</a></strong> -- KB5101684 extends Windows Hello Enhanced Sign-in Security to peripheral fingerprint sensors so desktops and Copilot+ PCs without built-in readers can use the hardened sign-in path. Also adds File Explorer KB/MB/GB display, uninstallable Copilot+ AI models, touchpad gestures, Voice Access voice isolation, and Fluid Dictation. <a href="https://www.windowscentral.com/microsoft/windows-11/biggest-changes-microsoft-is-rolling-out-in-august-for-windows-11" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-12">UniFi OS 5.1.30 ships with UniFi Network 10.5.67 stability and IPS/IDS fixes</a></strong> -- Ubiquiti released UniFi OS 5.1.30 bundling UniFi Network 10.5.67, Protect, and Identity Sync updates. Focus areas are device and WAN failover stability, WiFi and IPS/IDS reliability, and bug fixes for rule updates, WAN monitoring, PPPoE MTU, mDNS, multicast blocking, and Remember Me sessions. <a href="https://releasebot.io/updates/ubiquiti" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-13">Claude Code adds default model setting, cross-session idle notifications, and stronger macOS sandbox</a></strong> -- Claude Code updates over Aug 18-20 add a default model setting, cross-session idle notifications, hardened macOS sandbox protections, and improvements to auto mode, Remote Control, startup speed, and VS Code screen reader support. <a href="https://releasebot.io/updates/anthropic/claude-code" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-14">Microsoft Teams August rollout: Efficiency Mode, multi-line mobile calling, AI meeting archives</a></strong> -- Teams is rolling out an Efficiency Mode that reduces CPU/memory footprint on constrained devices, multi-line calling on mobile with unified call history, call delegation lock/warning-tone enhancements, Muted/Meeting chat system sections, a redesigned share panel with live previews, and AI meeting archives Copilot uses for context-aware answers. <a href="https://releasebot.io/updates/microsoft/microsoft-teams" target="_blank">Source &rarr;</a></li>
-  </ul></details>
+  <details class="section-overflow"><summary>Show 4 more updates</summary><ul class="new-list"><li><strong><a href="#item-8">Copilot Studio Rolls Out Improved Agent Evaluations</a></strong> -- Roadmap item 569607 adds improvements to Copilot Studio's evaluation tooling so makers can more systematically test agent quality and regressions before publishing. Relevant to SMBs beginning to deploy custom Copilot agents for internal workflows. <a href="https://www.microsoft.com/microsoft-365/roadmap?id=569607" target="_blank">Source &rarr;</a></li><li><strong><a href="#item-9">UniFi OS 5.1.31 rolled out across gateway lineup with bundled app refresh</a></strong> -- On Aug 20 Ubiquiti pushed UniFi OS 5.1.31 to Cloud Gateways, Dream Machines/Routers/Wall, Express, Enterprise Fortress Gateway, Enterprise Firewall, and Cloud Keys, bundling UniFi Network 10.5.67 and Identity Sync Service 1.8.4. UCK-G2-Plus specifically gained improved storage resiliency; rollout is gradual over several days. <a href="https://releasebot.io/updates/ubiquiti" target="_blank">Source &rarr;</a></li><li><strong><a href="#item-10">ChatGPT search now uses site: operator at scale (Promptwatch)</a></strong> -- Promptwatch tracking indicates ChatGPT's web search has significantly increased its use of the site: operator when retrieving results, changing how sites get surfaced to ChatGPT users and with implications for SEO/discoverability strategy. <a href="https://simonwillison.net/2026/Aug/20/chatgpt-search-now-uses-the-siteoperator-at-scale/" target="_blank">Source &rarr;</a></li><li><strong><a href="#item-11">Bun 1.4 released with Bun.WebView browser automation, 5x lower idle CPU</a></strong> -- Bun 1.4 ships Bun.WebView for scripted browser automation, cuts idle CPU roughly 5x, and reduces memory use about 35%. Useful for IT pros writing internal automation scripts or lightweight tooling. <a href="https://simonwillison.net/2026/Aug/20/bun-webview-json-api/" target="_blank">Source &rarr;</a></li></ul></details>
 </div>
 
 <div class="section-security">
   <h2>Security &amp; Patches</h2>
-  <p class="section-transparency">Showing 3 of 6</p>
+  <p class="section-transparency">Showing 3 of 4</p>
   <div class="security-cards">
-    <div class="security-card"><a href="#item-15" class="security-headline">DoD CMMC Reform Task Force review underway after Phase 2 suspension</a><span class="urgency-yellow">This Week</span><span class="security-summary">Following DoD's July suspension of CMMC Level 2 Phase II, a new CMMC Reform Task Force under the DoD CIO is reviewing the program and will report within 60 days.</span></div>
-    <div class="security-card"><a href="#item-16" class="security-headline">NIST SP 800-213r1 IoT cybersecurity draft comment period closes Aug 24</a><span class="urgency-yellow">This Week</span><span class="security-summary">NIST's initial public draft of SP 800-213r1, IoT Product Cybersecurity Guidelines for the Federal Government, is open for public comment through Aug 24, 2026.</span></div>
-    <div class="security-card"><a href="#item-17" class="security-headline">Microsoft tracks MacSync macOS infostealer via behavior after infrastructure churn</a><span class="urgency-yellow">This Week</span><span class="security-summary">Microsoft threat intel published detection guidance for MacSync Stealer, whose operators rotate 30+ domains rapidly, pushing defenders to rely on behavioral indicators over IOCs.</span></div>
+    <div class="security-card"><a href="#item-12" class="security-headline">Splashtop EU/OC stack maintenance scheduled for Aug 22 (may interrupt remote sessions)</a><span class="urgency-yellow">This Week</span><span class="security-summary">Splashtop has scheduled system maintenance for the EU and OC stack on Saturday, Aug 22, 1:00-4:00 AM UTC.</span></div>
+    <div class="security-card"><a href="#item-13" class="security-headline">Avatara Achieves Independent C3PAO CMMC Level 2 Assessment</a><span class="urgency-green">FYI</span><span class="security-summary">Managed platform provider Avatara passed an independent C3PAO CMMC Level 2 assessment, validating a platform-based approach to protecting CUI.</span></div>
+    <div class="security-card"><a href="#item-14" class="security-headline">IBM Report: One-Quarter of Breaches Now Enabled by AI-Driven Attacks</a><span class="urgency-green">FYI</span><span class="security-summary">KnowBe4 highlights IBM's latest breach research indicating roughly 25% of breaches now involve AI-assisted attacker tooling, most commonly AI-generated phishing lures and deepfake social engineering.</span></div>
   </div>
-  <details class="section-overflow"><summary>Show 3 more security items</summary><div class="security-cards">
-    <div class="security-card"><a href="#item-18" class="security-headline">StopAndProtect campaign turns 2,000 hacked WordPress sites into a criminal delivery network</a><span class="urgency-yellow">This Week</span><span class="security-summary">A cybercrime operation dubbed StopAndProtect has stitched roughly 2,000 compromised WordPress sites into a distribution network for malware delivery and traffic monetization.</span></div>
-    <div class="security-card"><a href="#item-19" class="security-headline">50,000 Stripe secret keys found exposed in public code repositories</a><span class="urgency-yellow">This Week</span><span class="security-summary">Researchers identified roughly 50,000 Stripe secret API keys leaked in public code repositories, exposing merchants to fraudulent charges and refunds.</span></div>
-    <div class="security-card"><a href="#item-20" class="security-headline">Rapid7 report: 8,539 critical/high vulnerabilities disclosed in Q2 2026, exploitation window shrinks to days</a><span class="urgency-green">FYI</span><span class="security-summary">Rapid7's Q2 2026 Threat Landscape Report counted 8,539 high- and critical-severity vulnerability disclosures and found the median time from disclosure to active exploitation has collapsed to days.</span></div>
-  </div></details>
+  <details class="section-overflow"><summary>Show 1 more security item</summary><div class="security-cards"><div class="security-card"><a href="#item-15" class="security-headline">Microsoft Named a Leader in Frost Radar Cloud Workload Protection Platforms 2026</a><span class="urgency-green">FYI</span><span class="security-summary">Frost &amp; Sullivan named Microsoft (Defender for Cloud) a Leader in its 2026 CWPP Frost Radar.</span></div></div></details>
 </div>
 
 <div class="section-details">
   <h2>Details</h2>
   <details class="item" id="item-1">
     <summary class="item-header">
-      <span class="item-title">Apple ships iOS 26.6.1, iPadOS 26.6.1, macOS Tahoe 26.6.2, and iOS/iPadOS 18.7.10 fixing 28 CVEs</span>
+      <span class="item-title">Microsoft Entra ID Flaw CVE-2026-69836 (CVSS 10.0) Exploited in Wild, Allows RCE</span>
       <span class="item-type type-security">Security</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>Apple shipped security updates on August 17, 2026 patching roughly 28 vulnerabilities across macOS Tahoe 26.6.2, iOS 26.6.1, iPadOS 26.6.1, plus iOS/iPadOS 18.7.10 for older devices. Fixes include a large WebKit cluster (eight-plus CVEs), IPSec authentication, Screen Sharing state handling, and multiple media/graphics code-execution flaws. Push through MDM to every managed iPhone, iPad, and Mac fleet today.</p>
-      <a href="https://www.macrumors.com/2026/08/17/ios-26-6-1-security-fixes/" target="_blank" class="src">Source &rarr;</a>
+      <p>A maximum-severity deserialization flaw in Microsoft Entra ID allows an unauthorized attacker to execute code over a network. Microsoft confirmed active exploitation but says no customer action is required because the fix was applied cloud-side. Administrators should still review Entra sign-in and risk detection logs for signs of prior abuse.</p>
+      <a href="https://thehackernews.com/2026/08/microsoft-entra-id-flaw-cvss-100.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-2">
     <summary class="item-header">
-      <span class="item-title">CISA KEV adds Apple macOS, Broadcom VMware vCenter, and Microsoft IKE zero-day flaws</span>
+      <span class="item-title">SANS ISC Publishes Entra ID Detection Recipes for MFA Gaps and Password Spray</span>
       <span class="item-type type-security">Security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>CISA added actively exploited vulnerabilities in Apple macOS Screen Sharing (CVE-2026-65400), Broadcom VMware vCenter path traversal (CVE-2026-59310), and the Microsoft IKE service extensions used by Windows IPsec/VPN clients (CVE-2026-33824) to its Known Exploited Vulnerabilities catalog on August 18. Federal agencies have short remediation deadlines under BOD 22-01; SMB defenders should prioritize the corresponding August Patch Tuesday updates and vCenter fixed builds because both are high-leverage footholds for ransomware operators.</p>
-      <a href="https://securityaffairs.com/197490/hacking/u-s-cisa-adds-apple-macos-microsoft-sharepoint-broadcom-vmware-vcenter-and-microsoft-ike-flaws-to-its-known-exploited-vulnerabilities-catalog.html" target="_blank" class="src">Source &rarr;</a>
+      <p>Three SANS ISC diaries walk through using Microsoft Graph beta and PowerShell to find users missed in an MFA rollout, detect password spray in Entra sign-in logs, and query risk detections. Practical hunting queries SMB admins can run today against tenants that lack a full SIEM.</p>
+      <a href="https://isc.sans.edu/diary/rss/33272" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-3">
     <summary class="item-header">
-      <span class="item-title">Microsoft 365 AiTM phishing campaign hijacks payroll and finance email for wire fraud</span>
+      <span class="item-title">Suspected Russian Hackers Abuse Google OAuth and WhatsApp Linking for Espionage</span>
       <span class="item-type type-security">Security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>A widespread adversary-in-the-middle phishing campaign is compromising Microsoft 365 accounts, then quietly rerouting payroll and finance-related email to attacker-controlled folders to enable wire fraud. Defenders should enforce phishing-resistant MFA, review inbox rules and OAuth grants for anomalies, and hunt for suspicious session tokens and impossible-travel sign-ins.</p>
-      <a href="https://thehackernews.com/2026/08/microsoft-365-aitm-phishing-hijacks.html" target="_blank" class="src">Source &rarr;</a>
+      <p>Google TAG reports a suspected Russian threat cluster abusing Google OAuth consent flows and WhatsApp device-linking to hijack accounts of targeted individuals. The technique bypasses password and MFA prompts by tricking victims into approving legitimate-looking authorization flows, and mirrors the device-code phishing patterns hitting M365 tenants.</p>
+      <a href="https://thehackernews.com/2026/08/suspected-russian-hackers-abuse-google.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-4">
     <summary class="item-header">
-      <span class="item-title">GitLab patches critical unauthenticated GraphQL vulnerability CVE-2026-19478</span>
+      <span class="item-title">CrowdStrike Report: Vishing and Device Code Phishing Are Surging</span>
       <span class="item-type type-security">Security</span>
-      <span class="urgency-red">Act Today</span>
+      <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>GitLab issued an emergency patch for CVE-2026-19478, a critical unauthenticated flaw in the GraphQL API that lets attackers execute privileged operations without credentials on self-managed Community and Enterprise Edition installations. Any org running on-prem GitLab for SCM/CI should update to the fixed release immediately and audit for suspicious project modifications since public exposure.</p>
-      <a href="https://securityaffairs.com/197454/hacking/gitlab-patches-critical-unauthenticated-graphql-vulnerability.html" target="_blank" class="src">Source &rarr;</a>
+      <p>KnowBe4 summarizes new CrowdStrike telemetry showing sharp growth in voice phishing (vishing) impersonating IT helpdesks and in device-code phishing that abuses Microsoft OAuth device-authorization flows to bypass MFA. Both techniques are landing against SMB Microsoft 365 tenants and warrant user-awareness reinforcement plus Conditional Access review.</p>
+      <a href="https://blog.knowbe4.com/report-vishing-and-device-code-phishing-are-surging" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-5">
     <summary class="item-header">
-      <span class="item-title">CISA adds MLflow critical SSRF flaw (CVE-2026-64849) to KEV catalog</span>
-      <span class="item-type type-security">Security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 8/11</span>
+      <span class="item-title">Microsoft Teams Adds Report a Security Concern in Meetings Control</span>
+      <span class="item-type type-feature">Feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>CISA added CVE-2026-64849, a critical server-side request forgery vulnerability in MLflow versions before 3.15.0, to its Known Exploited Vulnerabilities catalog after confirming in-the-wild exploitation. Attackers can abuse the flaw to reach cloud metadata services and steal temporary cloud credentials without authentication. SMBs running MLflow for ML workloads should upgrade immediately or restrict network exposure.</p>
-      <a href="https://securityaffairs.com/197558/hacking/u-s-cisa-adds-a-mlflow-flaw-to-its-known-exploited-vulnerabilities-catalog.html" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft 365 Roadmap item 569207 introduces an in-meeting reporting control that lets attendees flag security or abuse concerns to admins directly from Teams. Useful for SMBs running external-facing meetings and wanting a documented user-reporting path for vishing or impersonation attempts.</p>
+      <a href="https://www.microsoft.com/microsoft-365/roadmap?id=569207" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-6">
     <summary class="item-header">
-      <span class="item-title">Dell issues DSA-2026-027 for PowerEdge servers covering Intel 2026.1 IPU</span>
-      <span class="item-type type-security">Security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
+      <span class="item-title">UniFi Protect Cameras firmware 5.4.132 fixes doorbell audio and PTZ bugs</span>
+      <span class="item-type type-feature">Feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>Dell published DSA-2026-027 remediating Intel 2026.1 Platform Update vulnerabilities across a broad PowerEdge lineup including R660, R760, R770, R860, R960, HS5610/5620, MX760c, T560, and multiple XE and XR models. Fixes require BIOS or firmware updates from Dell's driver portal. Schedule during the next maintenance window &mdash; no active exploitation observed but standard Intel IPU coverage.</p>
-      <a href="https://www.dell.com/support/kbdoc/en-us/000426748/dsa-2026-027-security-update-for-dell-poweredge-server-for-intel-2026-security-advisories-2026-1-ipu" target="_blank" class="src">Source &rarr;</a>
+      <p>Ubiquiti released UniFi Protect Cameras firmware 5.4.132 on Aug 19 with memory-efficiency improvements and PTZ connectivity fixes, plus fixes for SD card formatting issues, G6 Entry speaker audio problems, and doorbell functionality bugs. Recommended for any site running UniFi Protect cameras regardless of application version.</p>
+      <a href="https://releasebot.io/updates/ubiquiti" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-7">
     <summary class="item-header">
-      <span class="item-title">Anthropic Claude Developer Platform: Files API and Admin API now GA, Sonnet 5 pricing frozen at $2/$10</span>
+      <span class="item-title">M365 Copilot Adds Code Blocks in Chat Responses</span>
       <span class="item-type type-feature">Feature</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 10/11</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>Anthropic made the Admin API user-management endpoints and the Files API generally available on the Claude Developer Platform. The company also confirmed the previously scheduled September 1 price increase for Claude Sonnet 5 will not occur &mdash; the introductory $2/$10 per MTok rate becomes the standard price. New Managed Agents controls for web access and self-hosted sandbox memory stores also shipped.</p>
-      <a href="https://releasebot.io/updates/anthropic/claude-developer-platform" target="_blank" class="src">Source &rarr;</a>
+      <p>Roadmap item 569429 adds formatted code blocks to Microsoft 365 Copilot chat, improving readability of scripts and snippets returned by Copilot. Minor but useful quality-of-life for IT admins using Copilot for PowerShell/Graph queries.</p>
+      <a href="https://www.microsoft.com/microsoft-365/roadmap?id=569429" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-8">
     <summary class="item-header">
-      <span class="item-title">Intune Service Release 2608 rolls out Shadow AI detection and Windows 11 STIG baseline</span>
+      <span class="item-title">Copilot Studio Rolls Out Improved Agent Evaluations</span>
       <span class="item-type type-feature">Feature</span>
       <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>Intune's August service release adds a Windows 11 STIG SCAP audit baseline, Shadow AI detection/blocking via properties catalog and device query (public preview), Strict Tunnel Mode for Microsoft Tunnel on Android, DDM control for Apple Intelligence on macOS 26.4+, and Entra agentic identity for the Vulnerability Remediation Agent. Admins can enable the new controls now via the Intune admin center.</p>
-      <a href="https://www.prajwaldesai.com/intune-updates-new-features/" target="_blank" class="src">Source &rarr;</a>
+      <p>Roadmap item 569607 adds improvements to Copilot Studio's evaluation tooling so makers can more systematically test agent quality and regressions before publishing. Relevant to SMBs beginning to deploy custom Copilot agents for internal workflows.</p>
+      <a href="https://www.microsoft.com/microsoft-365/roadmap?id=569607" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-9">
     <summary class="item-header">
-      <span class="item-title">Entra ID August release adds Cloud Sync HAADJ and auto-accept SSO on managed Windows</span>
+      <span class="item-title">UniFi OS 5.1.31 rolled out across gateway lineup with bundled app refresh</span>
       <span class="item-type type-feature">Feature</span>
       <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft's August Entra update lets admins use a supported registry setting to auto-accept SSO permissions on managed Windows devices, brings Hybrid Azure AD Join to Entra Cloud Sync (including disconnected forests), improves device-bound Authenticator passkey restore on iOS, and expands External ID federation to IdPs that don't share email. Reduces admin friction for hybrid identity and passkey deployments.</p>
-      <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/whats-new-in-microsoft-entra-august-2026/4545172" target="_blank" class="src">Source &rarr;</a>
+      <p>On Aug 20 Ubiquiti pushed UniFi OS 5.1.31 to Cloud Gateways, Dream Machines/Routers/Wall, Express, Enterprise Fortress Gateway, Enterprise Firewall, and Cloud Keys, bundling UniFi Network 10.5.67 and Identity Sync Service 1.8.4. UCK-G2-Plus specifically gained improved storage resiliency; rollout is gradual over several days.</p>
+      <a href="https://releasebot.io/updates/ubiquiti" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-10">
     <summary class="item-header">
-      <span class="item-title">Defender for Business gains Streaming API preview and AI agent posture risk assessment</span>
+      <span class="item-title">ChatGPT search now uses site: operator at scale (Promptwatch)</span>
       <span class="item-type type-feature">Feature</span>
       <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
+      <span class="score">Score: 6/11</span>
     </summary>
     <div class="item-body">
-      <p>The Streaming API is now available in Defender for Business (public preview), letting partners and customers stream raw endpoint telemetry to a SIEM or custom SOC. Microsoft Defender also assesses posture risk for AI agents in public preview using configuration, access, runtime, and endpoint context signals so admins can prioritize risky agent identities.</p>
-      <a href="https://learn.microsoft.com/en-us/defender-business/mdb-whats-new" target="_blank" class="src">Source &rarr;</a>
+      <p>Promptwatch tracking indicates ChatGPT's web search has significantly increased its use of the site: operator when retrieving results, changing how sites get surfaced to ChatGPT users and with implications for SEO/discoverability strategy.</p>
+      <a href="https://simonwillison.net/2026/Aug/20/chatgpt-search-now-uses-the-siteoperator-at-scale/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-11">
     <summary class="item-header">
-      <span class="item-title">Windows 11 August update extends Windows Hello ESS to peripheral fingerprint readers</span>
+      <span class="item-title">Bun 1.4 released with Bun.WebView browser automation, 5x lower idle CPU</span>
       <span class="item-type type-feature">Feature</span>
       <span class="urgency-green">FYI</span>
-      <span class="score">Score: 8/11</span>
+      <span class="score">Score: 6/11</span>
     </summary>
     <div class="item-body">
-      <p>The August 2026 Windows 11 update (KB5101684) extends Windows Hello Enhanced Sign-in Security (ESS) to peripheral fingerprint sensors so desktops and Copilot+ PCs without built-in readers can use the hardened sign-in path. The update also adds File Explorer KB/MB/GB size display, uninstallable Copilot+ AI models, touchpad gestures, Voice Access voice isolation, and Fluid Dictation.</p>
-      <a href="https://www.windowscentral.com/microsoft/windows-11/biggest-changes-microsoft-is-rolling-out-in-august-for-windows-11" target="_blank" class="src">Source &rarr;</a>
+      <p>Bun 1.4 ships Bun.WebView for scripted browser automation, cuts idle CPU roughly 5x, and reduces memory use about 35%. Useful for IT pros writing internal automation scripts or lightweight tooling.</p>
+      <a href="https://simonwillison.net/2026/Aug/20/bun-webview-json-api/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-12">
     <summary class="item-header">
-      <span class="item-title">UniFi OS 5.1.30 ships with UniFi Network 10.5.67 stability and IPS/IDS fixes</span>
-      <span class="item-type type-feature">Feature</span>
+      <span class="item-title">Splashtop EU/OC stack maintenance scheduled for Aug 22 (may interrupt remote sessions)</span>
+      <span class="item-type type-industry">Industry</span>
       <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
+      <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>Ubiquiti released UniFi OS 5.1.30 bundling UniFi Network 10.5.67 along with Protect and Identity Sync updates. The release focuses on device and WAN failover stability, WiFi and IPS/IDS reliability, and bug fixes for rule updates, WAN monitoring, PPPoE MTU, mDNS, multicast blocking, and Remember Me sessions. Recommended for consoles running the 10.3-10.5 lines.</p>
-      <a href="https://releasebot.io/updates/ubiquiti" target="_blank" class="src">Source &rarr;</a>
+      <p>Splashtop has scheduled system maintenance for the EU and OC stack on Saturday, Aug 22, 1:00-4:00 AM UTC. Service interruptions and account login failures are possible during the window; account holders using Splashtop for remote support should plan around it.</p>
+      <a href="https://status.splashtop.com/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-13">
     <summary class="item-header">
-      <span class="item-title">Claude Code adds default model setting, cross-session idle notifications, and stronger macOS sandbox</span>
-      <span class="item-type type-feature">Feature</span>
+      <span class="item-title">Avatara Achieves Independent C3PAO CMMC Level 2 Assessment</span>
+      <span class="item-type type-industry">Industry</span>
       <span class="urgency-green">FYI</span>
-      <span class="score">Score: 8/11</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>Claude Code shipped updates over Aug 18-20 adding a default model setting, cross-session idle notifications, stronger macOS sandbox protections, and improvements to auto mode, Remote Control, startup speed, and VS Code screen reader support. Also includes broad reliability and UI fixes plus optional prompt spellcheck.</p>
-      <a href="https://releasebot.io/updates/anthropic/claude-code" target="_blank" class="src">Source &rarr;</a>
+      <p>Managed platform provider Avatara passed an independent C3PAO CMMC Level 2 assessment, validating a platform-based approach to protecting CUI. Notable data point for defense-supplier SMBs weighing platform vs. in-house paths despite the current CMMC Phase 2 pause.</p>
+      <a href="https://soldiersystems.net/2026/08/19/independent-c3pao-assessment-provides-real-world-validation-of-avataras-platform-based-approach-to-cmmc-level-2/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-14">
     <summary class="item-header">
-      <span class="item-title">Microsoft Teams August rollout: Efficiency Mode, multi-line mobile calling, AI meeting archives</span>
-      <span class="item-type type-feature">Feature</span>
+      <span class="item-title">IBM Report: One-Quarter of Breaches Now Enabled by AI-Driven Attacks</span>
+      <span class="item-type type-industry">Industry</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>Teams is rolling out an Efficiency Mode that reduces CPU/memory footprint on constrained devices, multi-line calling on mobile with unified call history, call delegation lock/warning-tone enhancements (Aug-Sep), Muted/Meeting chat system sections, a redesigned share panel with live previews, and AI meeting archives that Copilot uses for context-aware answers.</p>
-      <a href="https://releasebot.io/updates/microsoft/microsoft-teams" target="_blank" class="src">Source &rarr;</a>
+      <p>KnowBe4 highlights IBM's latest breach research indicating roughly 25% of breaches now involve AI-assisted attacker tooling, most commonly AI-generated phishing lures and deepfake social engineering. Reinforces the case for phishing simulations and stricter identity controls in SMB environments.</p>
+      <a href="https://blog.knowbe4.com/report-one-quarter-of-breaches-are-enabled-by-ai-driven-attacks" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-15">
     <summary class="item-header">
-      <span class="item-title">DoD CMMC Reform Task Force review underway after Phase 2 suspension</span>
-      <span class="item-type type-industry">Industry</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Following DoD's July suspension of CMMC Level 2 Phase II, a new CMMC Reform Task Force under the DoD CIO is reviewing the program and will report within 60 days, drawing on RFI responses that closed Aug 14. New solicitations can currently only designate Level 1 (Self) or Level 2 (Self); C3PAO requirements are being removed from active solicitations and existing contracts during the review.</p>
-      <a href="https://www.governmentcontractslaw.com/2026/07/dod-suspends-cmmc-phase-2-what-happened-what-it-means-and-what-nobody-is-telling-you/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-16">
-    <summary class="item-header">
-      <span class="item-title">NIST SP 800-213r1 IoT cybersecurity draft comment period closes Aug 24</span>
-      <span class="item-type type-industry">Industry</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>NIST's initial public draft of SP 800-213r1, "IoT Product Cybersecurity Guidelines for the Federal Government: Establishing IoT Product Cybersecurity Requirements," is open for public comment through Aug 24, 2026. Vendors and integrators supplying IoT to federal buyers (including DIB contractors) should get comments in this week.</p>
-      <a href="https://csrc.nist.gov/News/2026/nist-releases-sp-800-213r1-ipd" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-17">
-    <summary class="item-header">
-      <span class="item-title">Microsoft tracks MacSync macOS infostealer via behavior after infrastructure churn</span>
-      <span class="item-type type-security">Security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Microsoft threat intel published detection guidance for MacSync Stealer, an information-stealing malware family whose operators rotate 30+ domains rapidly, forcing defenders to rely on behavioral indicators. Initial access comes from ClickFix social-engineering lures that trick users into pasting curl commands into Terminal, followed by staged base64/gzip payload retrieval. Defender for Endpoint/Business customers should verify behavioral detection is enabled and review recent stealer telemetry.</p>
-      <a href="https://securityaffairs.com/197514/malware/microsoft-tracks-macsync-stealer-by-its-behavior-not-its-domains.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-18">
-    <summary class="item-header">
-      <span class="item-title">StopAndProtect campaign turns 2,000 hacked WordPress sites into a criminal delivery network</span>
-      <span class="item-type type-security">Security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Researchers exposed StopAndProtect, a criminal operation that compromised roughly 2,000 WordPress sites and stitched them into a distribution network used for malware delivery and traffic monetization. The operation uses fake CAPTCHA tricks and ClickFix social engineering to infect victims. SMBs running WordPress should audit plugins, admin accounts, and outbound traffic; end users may hit these compromised sites via search results.</p>
-      <a href="https://securityaffairs.com/197537/hacking/stopandprotect-turns-2000-hacked-wordpress-sites-into-a-criminal-network.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-19">
-    <summary class="item-header">
-      <span class="item-title">50,000 Stripe secret keys found exposed in public code repositories</span>
-      <span class="item-type type-security">Security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Researchers uncovered roughly 50,000 leaked Stripe secret keys committed to public code repositories, exposing merchants to fraudulent charges and account takeover. Testing revealed attackers could access customer lists, create charges, and modify webhooks within 17 hours of discovery. Rotate Stripe keys, enable restricted API keys, and add secret-scanning to CI pipelines.</p>
-      <a href="https://securityaffairs.com/197504/cyber-crime/50000-stripe-secrets-leaked-in-public-code.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-20">
-    <summary class="item-header">
-      <span class="item-title">Rapid7 report: 8,539 critical/high vulnerabilities disclosed in Q2 2026, exploitation window shrinks to days</span>
+      <span class="item-title">Microsoft Named a Leader in Frost Radar Cloud Workload Protection Platforms 2026</span>
       <span class="item-type type-industry">Industry</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 6/11</span>
     </summary>
     <div class="item-body">
-      <p>Rapid7's Q2 2026 Threat Landscape Report counted 8,539 high- and critical-severity vulnerability disclosures &mdash; roughly double the prior year &mdash; and found the median time from disclosure to active exploitation has collapsed to days. Reinforces the case for compressing patch cycles across managed endpoints and boundary devices.</p>
-      <a href="https://www.helpnetsecurity.com/2026/08/20/rapid7-vulnerability-patch-cycles-report/" target="_blank" class="src">Source &rarr;</a>
+      <p>Frost &amp; Sullivan named Microsoft (Defender for Cloud) a Leader in its 2026 CWPP Frost Radar. Reference point for SMBs evaluating cloud workload protection alongside Defender for Business endpoint coverage.</p>
+      <a href="https://www.microsoft.com/en-us/security/blog/2026/08/19/microsoft-named-a-leader-in-the-frost-radar-cloud-workload-protection-platforms-2026/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 </div>
 
-<div class="footer">Generated Thursday, August 20, 2026 at 6:00 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-08-20.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
+<div class="footer">Generated Friday, August 21, 2026 at 6:00 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-08-21.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
 
 </main>
 </body>
