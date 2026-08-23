@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<title>Morning Briefing -- Saturday, August 22, 2026</title>
+<title>Morning Briefing -- Sunday, August 23, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -14,673 +14,274 @@
 <main class="briefing-content">
 
 <div class="page-header">
-  <h1>Morning Briefing -- Saturday, August 22, 2026</h1>
+  <h1>Morning Briefing -- Sunday, August 23, 2026</h1>
   <p class="page-meta">Microsoft &bull; Security &amp; Compliance &bull; Firewall / VPN / Networking &bull; Servers/NAS &bull; Workstations &amp; Mobile &bull; Peripherals &amp; AV &bull; RMM &amp; Remote Access &bull; Construction &amp; Specialty Software &bull; General Tech &amp; AI &bull; Pacific Time</p>
 </div>
 
 <div class="section-actions">
   <h2>Today's Actions</h2>
-  <p class="section-transparency">Showing 3 of 14</p>
+  <p class="section-transparency">Showing 3 of 4</p>
   <ol class="action-list">
-    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Alert users about an active Microsoft Teams phishing campaign delivering SynkLoader &mdash; restrict external Teams messaging where possible and enable Report a Message so staff can flag impersonation attempts. <a href="#item-1" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Verify Microsoft's Vulnerable Driver Blocklist is enforced across your Windows fleet and monitor for load events of the abused Defender remediation driver until Microsoft blocklists it. <a href="#item-2" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Confirm your Entra tenants received Microsoft's fix for the CVSS 10.0 Entra ID flaw and audit privileged role assignments and recent sign-ins for signs of prior abuse. <a href="#item-3" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Push the August Winsock AFD patch (CVE-2026-68820) to any unpatched Windows endpoints this week. <a href="#item-1" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> File the CISA TrueConf Server KEV entry &mdash; no client runs TrueConf, so no action required. <a href="#item-2" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> File the Zimbra SNMP command-injection alert &mdash; no client runs on-prem Zimbra, so no action required. <a href="#item-3" class="detail-link">details</a></li>
   </ol>
-  <details class="section-overflow"><summary>Show 11 more actions</summary><ol class="action-list" start="4">
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Patch TrueConf Server immediately (CVE-2026-72529/72530) and block TCP 4307 from the internet &mdash; both flaws are on the CISA KEV catalog and under active exploitation. <a href="#item-4" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Patch Zimbra Collaboration Suite for CVE-2026-73570 today or take the SNMP interface offline &mdash; Poland's CERT confirms an active RCE campaign and CISA added it to KEV. <a href="#item-5" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Schedule an emergency patch window for any Citrix NetScaler ADC or Gateway sitting in front of Exchange, VDI, or web apps &mdash; the new critical auth-bypass is likely to be weaponized within days. <a href="#item-6" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> Confirm with any managed service provider running Cisco Crosswork or Secure Workload that they've applied the nine August advisories (six at CVSS 10.0). <a href="#item-7" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> Inventory any AI/ML pilot workloads for MLflow deployments and patch or remove them &mdash; CISA reports active exploitation of the critical flaw. <a href="#item-8" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Upgrade any self-managed GitLab CE/EE instance to the fixed release for CVE-2026-19478 and audit runners for foothold artifacts &mdash; the CVSS 9.4 RCE is under active exploitation. <a href="#item-9" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> Check whether your construction client's aerospace/defense manufacturing supply chain touches PTC Windchill &mdash; Cl0p has breached 40+ manufacturers via a recent Windchill flaw. <a href="#item-10" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Update Elementor Pro on any client WordPress site today and check hosting for webshells &mdash; the critical unauthenticated RCE is being weaponized against SMB marketing sites. <a href="#item-11" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-yellow">This Week</span> Note Microsoft's correction that CVE-2026-69836 (Entra ID) is not exploited in the wild &mdash; the vulnerability is still critical but the emergency framing softens. <a href="#item-12" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-yellow">This Week</span> Run the SANS ISC Microsoft Graph queries this week to find users missed in your MFA rollout before the next audit cycle &mdash; useful compensating check while Conditional Access matures. <a href="#item-13" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-yellow">This Week</span> Send a phishing-awareness reminder covering voice phishing (fake IT helpdesk calls) and OAuth device-code phishing, and re-verify Conditional Access blocks the device-authorization flow for standard users. <a href="#item-14" class="detail-link">details</a></li>
-  </ol></details>
+  <details class="section-overflow"><summary>Show 1 more action</summary><ol class="action-list" start="4"><li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-yellow">This Week</span> Monitor the Entra ID CVE-2026-69836 correction &mdash; Microsoft downgraded exploited status to "no", so standard patch cadence is fine. <a href="#item-4" class="detail-link">details</a></li></ol></details>
 </div>
 
 <div class="section-new">
   <h2>What's New</h2>
-  <p class="section-transparency">Showing 4 of 17</p>
+  <p class="section-transparency">Showing 3 of 8</p>
   <ul class="new-list">
-    <li><strong><a href="#item-15">Trimble Viewpoint Jobpac Connect infrastructure upgrade (R2026.3.0) will interrupt service</a></strong> -- Trimble is running a major Jobpac Connect infrastructure upgrade during an AEST maintenance window, taking the service down. Any OCR invoices submitted during the window will be lost and must be re-submitted after the upgrade completes. <a href="https://status.viewpoint.com/incidents/pnbqrn5zc0tm" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-16">Windows 11 Insider Beta build 26220.9223 adds accessibility and search updates</a></strong> -- Microsoft's 21 August 2026 Insider release brings an Open apps maximized accessibility setting, faster Windows Search, and File Explorer file sizes in KB/MB/GB. Preview only; changes queue up for a future 24H2/25H2 servicing release. <a href="https://blogs.windows.com/windows-insider/2026/08/21/announcing-new-builds-for-21-august-2026/" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-17">Exchange Online rolls out cross-tenant message recall (opt-in)</a></strong> -- Microsoft is rolling out the ability to recall messages sent to recipients in external organizations via Exchange Online. The feature is disabled by default and managed through PowerShell; enable only after reviewing recall auditing and end-user expectations. <a href="https://techcommunity.microsoft.com/category/exchange/blog/exchange" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-18">UniFi Network Application 10.6.97 released with Drift Inspector and expanded Safe Ops</a></strong> -- Ubiquiti released UniFi Network Application 10.6.97 adding Drift Inspector for Blueprints, Topology Spotlight, expanded Safe Ops (Test &amp; Confirm for VPN, AI Nightly Channel Optimization), and Time Machine for radios and ports. Applies to sites already on 10.3+. <a href="https://community.ui.com/releases/UniFi-Network-Application-10-6-97/ef8cd545-b479-4fac-bdc5-cabdd91692de" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-5">UniFi Network Application 10.6.97 released with Drift Inspector and expanded SafeOps</a></strong> -- Ubiquiti released UniFi Network Application 10.6.97, adding Drift Inspector for configuration drift tracking, Topology Spotlight device filtering, and expanded SafeOps including Test &amp; Confirm for VPN networks and nightly channel optimization. Directly applicable to the deployed 10.3+ estate at your construction client. <a href="https://community.ui.com/releases/UniFi-Network-Application-10-6-97/ef8cd545-b479-4fac-bdc5-cabdd91692de" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-6">SANS ships a PowerShell/Graph script to find users missed in the MFA rollout</a></strong> -- SANS ISC published a PowerShell/Microsoft Graph script that flags Entra ID users who never registered for MFA. Practical hygiene check for tenants finishing MFA enforcement across your small-business and internal ops. <a href="https://isc.sans.edu/diary/rss/33272" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-7">SANS documents Microsoft Graph PowerShell risk-detection commands</a></strong> -- SANS diary walks through Microsoft Graph PowerShell commands to query Identity Protection risk detections and risky users. Enables scripted review of Entra risk signals for tenants without a P2 dashboard. <a href="https://isc.sans.edu/diary/rss/33266" target="_blank">Source &rarr;</a></li>
   </ul>
-  <details class="section-overflow"><summary>Show 13 more updates</summary><ul class="new-list">
-    <li><strong><a href="#item-19">Windows 11 August 2026 update drops WMIC and adds external fingerprint sign-in (KB5101684)</a></strong> -- KB5101684 (Windows 11 24H2/25H2) removes the WMIC command-line utility, adds Windows Hello ESS support for plug-in fingerprint readers, allows removing the Image Generation AI on Copilot+ PCs, and ships File Explorer fixes. Test any scripts still calling WMIC before deploying to fleets. <a href="https://techjournal.org/windows-11-august-2026-update-kb5101684" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-20">Intune Suite features now bundled with Microsoft 365 E3 and E5 (rollout complete)</a></strong> -- Microsoft's packaging change putting Intune Suite features (Endpoint Privilege Management, Remote Help, Advanced Endpoint Analytics) into qualifying M365 E3/E5 tenants finished rolling out on 1 August 2026. Review the Intune admin center; capabilities appear automatically without a license change. <a href="https://samexpert.com/intune-suite-microsoft-365-e5-2026/" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-21">Teams Report a Message and external-user reporting arrive in Gov Clouds</a></strong> -- Roadmap ID 569609 brings Teams end-user Report a Message and external-user reporting into GCC/GCC-H/DoD clouds, closing a long-standing parity gap. Relevant for any DoD-contractor Teams tenants. <a href="https://www.microsoft.com/microsoft-365/roadmap?id=569609" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-22">Exchange Online retiring TLS 1.0/1.1 for POP3 and IMAP4 by Dec 31, 2026</a></strong> -- Exchange Online will stop accepting TLS 1.0 and 1.1 connections for POP3 and IMAP4 in a phased rollout ending 31 December 2026. Inventory legacy scanners, MFPs, and line-of-business apps still using POP/IMAP and update TLS support or move to Graph. <a href="https://techcommunity.microsoft.com/category/exchange/blog/exchange" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-23">Intune ends support for Ubuntu 22.04 LTS this month; Ubuntu 26.04 added</a></strong> -- Microsoft Intune now supports Ubuntu 26.04 LTS; support for Ubuntu 22.04 LTS ends this month. Any managed Linux workstations should be upgraded before enrollment breaks. <a href="https://learn.microsoft.com/en-us/intune/whats-new/" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-24">Defender Exposure Management adds AI-agent posture risk scoring and OT connectors</a></strong> -- Microsoft Defender's Exposure Management now assesses AI agent risk (config, access, runtime, alerts) and ingests third-party OT telemetry from Armis, Dragos, and Forescout. Positions Defender for Business tenants for AI-agent visibility as workloads adopt Copilot connectors. <a href="https://techcommunity.microsoft.com/blog/microsoftthreatprotectionblog/monthly-news-august-2026/4544388" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-25">Outlook Purview DLP extends to calendar events in Outlook for Mac</a></strong> -- Roadmap ID 569717 extends Purview DLP evaluation to calendar events created in Outlook for Mac, letting policies inspect meeting bodies and attachments. Enables consistent DLP coverage for mixed macOS fleets. <a href="https://www.microsoft.com/microsoft-365/roadmap?id=569717" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-26">Microsoft 365 Copilot adds self-serve sync connectors for Jira and Confluence</a></strong> -- Roadmap ID 568788 lets end users configure Microsoft 365 Copilot to sync from Jira and Confluence without admin intervention. Review governance before enabling; end-user consent to third-party connectors may collide with data-classification policies. <a href="https://www.microsoft.com/microsoft-365/roadmap?id=568788" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-27">Teams rolls out AI Interpreter simultaneous mode and centralized Recap app</a></strong> -- Teams updates include AI Interpreter simultaneous translation with matching caption languages and voice-simulation admin control, plus a centralized Recap app with 30 days of meeting history. Review admin toggles for voice cloning before enabling for tenants with sensitive users. <a href="https://releasebot.io/updates/microsoft/microsoft-teams" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-28">Anthropic launches Claude Academy learning hub</a></strong> -- Anthropic released Claude Academy, a learning hub aimed at safe and effective AI use, offering courses, tutorials, badges, and personalized recommendations. Positioned around practical AI fluency and helping users delegate, verify, and learn with Claude. <a href="https://releasebot.io/updates/anthropic/claude" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-29">Microsoft rolls out Classic Outlook theme for new Outlook users</a></strong> -- Microsoft is delivering a Classic Outlook visual theme inside new Outlook, easing the transition for users pushed off classic Outlook.exe. Helpful talking point for change management with reluctant end users. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-rolls-out-classic-outlook-theme-for-new-outlook-users/" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-30">Microsoft attributes Windows 11 gaming glitches to RGB lighting utilities</a></strong> -- Microsoft says third-party RGB lighting control apps are behind recent Windows 11 gaming performance and crash reports, and is coordinating fixes with vendors. Worth flagging for any client using workstation-class PCs with RGB peripherals. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-blames-windows-gaming-issues-on-rgb-lighting-devices/" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-31">LLM CLI 0.32.1 patch fixes fresh installs broken by OpenAI dropping httpx</a></strong> -- Simon Willison shipped a patch release of the llm CLI resolving a fresh-install break caused by the OpenAI SDK dropping its httpx dependency. Admins scripting LLM CLI installs from scratch on new machines should pin or upgrade to 0.32.1. <a href="https://simonwillison.net/2026/Aug/21/llm/" target="_blank">Source &rarr;</a></li>
+  <details class="section-overflow"><summary>Show 5 more updates</summary><ul class="new-list">
+    <li><strong><a href="#item-8">Trimble Viewpoint runs Jobpac Connect infrastructure upgrade Aug 21-23</a></strong> -- Trimble Viewpoint scheduled a Jobpac Connect R2026.3.0 infrastructure upgrade with maintenance running August 21 through 23. Spectrum was not called out, but shared Viewpoint status infrastructure means your construction client may see intermittent portal impact through the weekend. <a href="https://status.viewpoint.com/incidents/pnbqrn5zc0tm" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-9">Anthropic adds Claude Mythos 5 to Claude Security for enterprise codebase scanning</a></strong> -- Anthropic expanded Claude Security with Claude Mythos 5, adding automated codebase scans, vulnerability findings, and suggested patches for enterprise customers. Worth an evaluation slot if you plan to offer secure-code review services. <a href="https://releasebot.io/updates/anthropic/claude" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-10">Claude adds support for MCP 2026-07-28 spec with OAuth/OIDC and private tunnels</a></strong> -- Claude now supports the new MCP 2026-07-28 specification with a stateless core, stronger OAuth/OIDC authorization, and versioned extensions. New connector features include embedded UI, enterprise-managed auth, observability, and private network tunnels &mdash; useful if you wire Claude into internal SMB systems. <a href="https://releasebot.io/updates/anthropic" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-11">Simon Willison ships llm 0.33 CLI update</a></strong> -- The llm command-line tool for querying LLMs from the terminal received a 0.33 release. Handy for scripting model calls or building lightweight AI workflows without an app. <a href="https://simonwillison.net/2026/Aug/22/llm/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-12">Word Copilot adds model choice including Anthropic Claude</a></strong> -- Word Copilot now lets users pick a model &mdash; including supported Anthropic Claude models &mdash; before rewriting, summarizing, restructuring, or refining a document. Notable for tenants standardizing on Copilot but wanting Claude quality on specific tasks. <a href="https://www.aguidetocloud.com/blog/microsoft-365-copilot-august-2026-updates/" target="_blank">Source &rarr;</a></li>
   </ul></details>
 </div>
 
 <div class="section-security">
   <h2>Security &amp; Patches</h2>
-  <p class="section-transparency">Showing 3 of 14</p>
+  <p class="section-transparency">Showing 3 of 6</p>
   <div class="security-cards">
-    <div class="security-card"><a href="#item-32" class="security-headline">DoD suspends CMMC Phase 2; C3PAO Level 2 conditions being pulled from active contracts</a><span class="urgency-yellow">This Week</span><span class="security-summary">DoD suspended CMMC Phase 2, which would have required C3PAO Level 2 assessments as a condition of award on Nov 10, 2026, and stood up a CMMC Reform Task Force.</span></div>
-    <div class="security-card"><a href="#item-33" class="security-headline">SANS ISC publishes Microsoft Graph and PowerShell recipes for Entra risk hunting</a><span class="urgency-green">FYI</span><span class="security-summary">Two ISC diaries walk through using Get-MgRiskDetection and Graph-based sign-in log queries so admins can mine Entra data without paying for a SIEM.</span></div>
-    <div class="security-card"><a href="#item-34" class="security-headline">Russia-linked actors abuse Google OAuth consent and WhatsApp linking for espionage</a><span class="urgency-yellow">This Week</span><span class="security-summary">Google TAG reports a Russia-linked campaign using fake conference invites plus OAuth consent phishing and WhatsApp lures to steal credentials and mailbox access.</span></div>
+    <div class="security-card"><a href="#item-13" class="security-headline">KnowBe4: vishing and device-code phishing are surging</a><span class="urgency-green">FYI</span><span class="security-summary">KnowBe4 report highlights sharp increases in voice phishing and Entra device-code phishing.</span></div>
+    <div class="security-card"><a href="#item-14" class="security-headline">KnowBe4: Americans lose an estimated $148B a year to scams</a><span class="urgency-green">FYI</span><span class="security-summary">KnowBe4 summarizes new figures putting annual U.S. scam losses at roughly $148B, far above previous estimates.</span></div>
+    <div class="security-card"><a href="#item-15" class="security-headline">CVE-2026-70335: GitHub Copilot / VS Code elevation of privilege</a><span class="urgency-green">FYI</span><span class="security-summary">Microsoft published an advisory for an elevation-of-privilege vulnerability in GitHub Copilot and Visual Studio Code.</span></div>
   </div>
-  <details class="section-overflow"><summary>Show 11 more security items</summary><div class="security-cards">
-    <div class="security-card"><a href="#item-35" class="security-headline">Hackers hide new Windows malware inside FTP server welcome banners</a><span class="urgency-yellow">This Week</span><span class="security-summary">A novel infection chain hides Windows loader stages inside FTP welcome banners, bypassing signature-based email and web filters.</span></div>
-    <div class="security-card"><a href="#item-36" class="security-headline">Agent Tesla BEC campaign delivers a fileless in-memory infostealer</a><span class="urgency-yellow">This Week</span><span class="security-summary">KnowBe4 breaks down a current BEC lure delivering a fileless Agent Tesla variant that harvests SMTP/Outlook credentials directly from memory, evading most AV.</span></div>
-    <div class="security-card"><a href="#item-37" class="security-headline">Windows Server 2025 KB5120233 security update ships (Build 26100.33296)</a><span class="urgency-yellow">This Week</span><span class="security-summary">Cumulative August security update for Windows Server 2025 includes servicing-stack improvements and a reminder that Secure Boot certificates begin expiring in June 2026 on non-managed devices.</span></div>
-    <div class="security-card"><a href="#item-38" class="security-headline">NIST SP 800-213r1 IoT cybersecurity draft open for comment through Aug 24</a><span class="urgency-yellow">This Week</span><span class="security-summary">NIST released the initial public draft of SP 800-213r1, updating IoT product cybersecurity requirements for federal use.</span></div>
-    <div class="security-card"><a href="#item-39" class="security-headline">Blog: how MSPs can catch phishing that email filters miss</a><span class="urgency-green">FYI</span><span class="security-summary">A BleepingComputer partner post covers layering behavioral analysis, browser isolation, and Teams-side monitoring on top of Microsoft 365 mail hygiene.</span></div>
-    <div class="security-card"><a href="#item-40" class="security-headline">Hundreds of leaked AWS keys grant full corporate account takeover</a><span class="urgency-yellow">This Week</span><span class="security-summary">Researchers found hundreds of AWS access keys leaked in public repos and container images, many with full administrative privileges.</span></div>
-    <div class="security-card"><a href="#item-41" class="security-headline">14 trojanized npm packages drop RedC2 4.0 Linux backdoor</a><span class="urgency-yellow">This Week</span><span class="security-summary">Fourteen typosquatted npm packages install a Linux backdoor (RedC2 4.0) on developer workstations and CI runners.</span></div>
-    <div class="security-card"><a href="#item-42" class="security-headline">Malicious versions of the arrayref Rust crate ship an infostealer</a><span class="urgency-yellow">This Week</span><span class="security-summary">Attackers poisoned the popular arrayref Rust crate (plus two others) to distribute an infostealer targeting developer credentials and cloud tokens.</span></div>
-    <div class="security-card"><a href="#item-43" class="security-headline">BleepingComputer explainer on securing Windows named pipes against attack</a><span class="urgency-green">FYI</span><span class="security-summary">An overview of how attackers abuse Windows named pipes for privilege escalation and lateral movement, with hardening recommendations.</span></div>
-    <div class="security-card"><a href="#item-44" class="security-headline">KnowBe4: roughly one-quarter of breaches now enabled by AI-driven attacks</a><span class="urgency-green">FYI</span><span class="security-summary">New research summarized by KnowBe4 finds roughly 25% of confirmed breaches involved AI-assisted phishing, deepfake voice, or automated recon.</span></div>
-    <div class="security-card"><a href="#item-45" class="security-headline">ChatGPT search site: operator usage jumps to 16-17% after GPT-5.6 rollout</a><span class="urgency-green">FYI</span><span class="security-summary">Following the GPT-5.6 rollout, use of the site: operator in ChatGPT search jumped from roughly 0.3-0.5% to 16-17% of queries.</span></div>
+  <details class="section-overflow"><summary>Show 3 more security items</summary><div class="security-cards">
+    <div class="security-card"><a href="#item-16" class="security-headline">SANS: PowerShell hunt queries for Entra password-spray detection</a><span class="urgency-green">FYI</span><span class="security-summary">Follow-up SANS diary walking through PowerShell/Graph queries to surface anomalous Entra sign-in patterns consistent with password spray.</span></div>
+    <div class="security-card"><a href="#item-17" class="security-headline">UK power plant disabled four days by Iran-linked hackers alongside US water attacks</a><span class="urgency-yellow">This Week</span><span class="security-summary">Security Affairs reports a UK power plant was knocked offline for four days by Iran-linked threat actors, concurrent with attacks on US water utilities.</span></div>
+    <div class="security-card"><a href="#item-18" class="security-headline">CVE-2026-54981: VS Code Python extension security-feature bypass</a><span class="urgency-green">FYI</span><span class="security-summary">MSRC published a security feature bypass advisory for the VS Code Python extension.</span></div>
   </div></details>
 </div>
 
 <div class="section-details">
   <h2>Details</h2>
-
   <details class="item" id="item-1">
     <summary class="item-header">
-      <span class="item-title">SynkLoader malware pushed through Microsoft Teams phishing campaign</span>
-      <span class="item-type type-security">Security</span>
+      <span class="item-title">Windows Winsock CVE-2026-68820</span>
+      <span class="item-type type-security">security</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>Attackers are impersonating IT staff over Microsoft Teams external chat to deliver a new loader named SynkLoader, which drops follow-on payloads on Windows endpoints. Restricting external Teams messaging and enabling Report a Message controls are the recommended short-term mitigations.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/new-synkloader-malware-pushed-in-microsoft-teams-phishing-campaign/" target="_blank" class="src">Source &rarr;</a>
+      <p>CISA and Microsoft confirmed active exploitation of CVE-2026-68820, a Winsock AFD elevation-of-privilege flaw patched in August Patch Tuesday. CISA gave federal agencies until August 25 to remediate; the vulnerability is in the KEV catalog, so any unpatched endpoints need the August Windows update this week.</p>
+      <a href="https://therecord.media/cisa-gives-federal-agencies-two-weeks-to-patch-dprk-microsoft-bug" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
-
   <details class="item" id="item-2">
     <summary class="item-header">
-      <span class="item-title">Microsoft Defender's own driver weaponized to delete security software</span>
-      <span class="item-type type-security">Security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Researchers demonstrated abuse of a Defender-signed driver to remove EDR agents from Windows hosts, joining the BYOVD trend. Microsoft has not yet blocklisted the driver; admins should verify Windows Vulnerable Driver Blocklist is enforced and monitor for the driver's load events.</p>
-      <a href="https://thehackernews.com/2026/08/microsoft-defenders-own-driver-can-be.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-3">
-    <summary class="item-header">
-      <span class="item-title">Max-severity Entra ID flaw prompts urgent patch guidance (CVSS 10.0)</span>
-      <span class="item-type type-security">Security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
-    </summary>
-    <div class="item-body">
-      <p>BleepingComputer and The Hacker News report on the CVSS 10.0 Entra ID vulnerability Microsoft patched this cycle; both initially reported it as exploited, later reflecting Microsoft's correction. Administrators should confirm tenants received the fix and audit privileged Entra role assignments.</p>
-      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-warns-of-max-severity-entra-id-flaw-exploited-in-attacks/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-4">
-    <summary class="item-header">
-      <span class="item-title">CISA adds TrueConf Server RCE flaws to Known Exploited Vulnerabilities catalog</span>
-      <span class="item-type type-security">Security</span>
+      <span class="item-title">CISA TrueConf Server actively exploited</span>
+      <span class="item-type type-security">security</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>CVE-2026-72529 and CVE-2026-72530 in TrueConf Server (RCE over TCP 4307) are under active exploitation; CISA gave federal agencies a hard patch deadline. SMBs running TrueConf for video conferencing should patch immediately and block TCP 4307 from the internet.</p>
+      <p>CISA added TrueConf Server vulnerabilities to the KEV catalog with a federal patch mandate after confirming active exploitation. No client of yours runs TrueConf, so this is awareness only; any SMB running TrueConf for video conferencing should patch or take the service offline immediately.</p>
       <a href="https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-trueconf-server-flaws/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
-
-  <details class="item" id="item-5">
+  <details class="item" id="item-3">
     <summary class="item-header">
-      <span class="item-title">CISA adds Zimbra Collaboration Suite SNMP flaw to KEV catalog</span>
-      <span class="item-type type-security">Security</span>
+      <span class="item-title">Zimbra Collaboration SNMP command injection</span>
+      <span class="item-type type-security">security</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>CVE-2026-73570 (CVSS 8.9) in Zimbra ZCS is being exploited for RCE via the SNMP handler; Poland's CERT confirms an active campaign. Any SMB still on Zimbra for mail should patch or take the SNMP interface offline today.</p>
-      <a href="https://securityaffairs.com/197693/security/u-s-cisa-adds-zimbra-collaboration-suite-zcs-flaw-to-its-known-exploited-vulnerabilities-catalog.html" target="_blank" class="src">Source &rarr;</a>
+      <p>The Hacker News reports attackers actively exploiting an SNMP command-injection flaw in Zimbra Collaboration to gain code execution on mail servers. All your clients are on M365, so no direct action; any SMB still running on-prem Zimbra should patch immediately and audit for compromise.</p>
+      <a href="https://thehackernews.com/2026/08/attackers-exploit-zimbra-snmp-flaw-for.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
-
-  <details class="item" id="item-6">
+  <details class="item" id="item-4">
     <summary class="item-header">
-      <span class="item-title">Citrix urges immediate NetScaler patch for critical auth-bypass flaw</span>
-      <span class="item-type type-security">Security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Citrix released fixes for a critical NetScaler ADC/Gateway authentication bypass and additional flaws; historically these are weaponized within days of disclosure. Any client with NetScaler in front of Exchange, Citrix VDI, or web apps should schedule an emergency patch window.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/citrix-urges-admins-to-patch-new-netscaler-flaws-as-soon-as-possible/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-7">
-    <summary class="item-header">
-      <span class="item-title">Cisco patches six CVSS 10.0 flaws across Crosswork and Secure Workload</span>
-      <span class="item-type type-security">Security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Nine Cisco advisories cover unauthenticated RCE and admin-takeover bugs in Crosswork Network Controller and Secure Workload; six carry maximum CVSS scores. Even SMBs are affected via managed service providers running these platforms.</p>
-      <a href="https://thehackernews.com/2026/08/cisco-patches-nine-crosswork-and-secure.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-8">
-    <summary class="item-header">
-      <span class="item-title">CISA warns of active exploitation of critical MLflow flaw</span>
-      <span class="item-type type-security">Security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>A critical MLflow vulnerability is being exploited in the wild; MLflow instances frequently sit exposed on internal networks and cloud subscriptions. Inventory any AI/ML pilots for MLflow deployments and patch or remove.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-exploiting-critical-mlflow-vulnerability/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-9">
-    <summary class="item-header">
-      <span class="item-title">GitLab CVE-2026-19478 under active exploitation (CVSS 9.4)</span>
-      <span class="item-type type-security">Security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Attackers are actively exploiting a critical GitLab flaw allowing remote code execution against self-managed instances. SMB dev shops running GitLab CE/EE should upgrade to the latest patched release and audit runners for foothold artifacts.</p>
-      <a href="https://thehackernews.com/2026/08/gitlab-cve-2026-19478-comes-under.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-10">
-    <summary class="item-header">
-      <span class="item-title">Cl0p ransomware exploits PTC Windchill flaw at 40+ organizations</span>
-      <span class="item-type type-security">Security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Cl0p has weaponized a recent PTC Windchill vulnerability to breach at least forty manufacturers and post them to its leak site. Relevant to any client in aerospace/defense manufacturing supply chains; audit Windchill patch level and internet exposure.</p>
-      <a href="https://securityaffairs.com/197587/cyber-crime/cl0p-targets-40-organizations-through-ptc-windchill-flaw.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-11">
-    <summary class="item-header">
-      <span class="item-title">Critical Elementor Pro flaw exposes WordPress sites to RCE</span>
-      <span class="item-type type-security">Security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>A critical Elementor Pro bug allows unauthenticated RCE on WordPress; the plugin is widely used on SMB marketing sites. Update Elementor Pro immediately and check hosting for webshells.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/critical-elementor-pro-bug-exposes-wordpress-sites-to-rce-attacks/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-12">
-    <summary class="item-header">
-      <span class="item-title">Microsoft corrects Entra ID CVE-2026-69836 exploitation status to No</span>
-      <span class="item-type type-security">Security</span>
+      <span class="item-title">Entra ID CVE-2026-69836 status corrected</span>
+      <span class="item-type type-security">security</span>
       <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft revised its advisory for the CVSS 10.0 Entra ID RCE flaw (CVE-2026-69836), correcting the Exploited status from Yes to No after early reports that it was under active attack. The bug is still critical and should be patched, but the emergency framing softens; expect follow-up press corrections through the day.</p>
+      <p>Microsoft corrected the exploitation status on this max-severity Entra ID remote code execution flaw to "not exploited in the wild" after initially marking it exploited. Bleeping Computer covered the original alarm. The patch remains critical and should be applied on the standard cycle; no urgent incident response required.</p>
       <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69836" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
-
-  <details class="item" id="item-13">
+  <details class="item" id="item-5">
     <summary class="item-header">
-      <span class="item-title">SANS ISC: hunt Entra tenants for users who slipped past MFA rollout</span>
-      <span class="item-type type-security">Security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>SANS Internet Storm Center published a diary with Graph/PowerShell queries to identify Entra accounts that were excluded from an MFA rollout or never registered a strong authentication method. Useful compensating check while conditional access policies mature.</p>
-      <a href="https://isc.sans.edu/diary/rss/33272" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-14">
-    <summary class="item-header">
-      <span class="item-title">Vishing and device-code phishing surging against Microsoft 365 tenants</span>
-      <span class="item-type type-security">Security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>CrowdStrike's latest report shows sharp growth in voice-based social engineering and OAuth device-code phishing against corporate M365 identities, often ending in Entra token theft. Conditional access blocking device-code flows for standard users is the leading mitigation.</p>
-      <a href="https://blog.knowbe4.com/report-vishing-and-device-code-phishing-are-surging" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-15">
-    <summary class="item-header">
-      <span class="item-title">Trimble Viewpoint Jobpac Connect infrastructure upgrade (R2026.3.0) will interrupt service</span>
-      <span class="item-type type-feature">Feature</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 10/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Trimble is running a major Jobpac Connect infrastructure upgrade during an AEST maintenance window, taking the service down. Any OCR invoices submitted during the window will be lost and must be re-submitted after the upgrade completes.</p>
-      <a href="https://status.viewpoint.com/incidents/pnbqrn5zc0tm" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-16">
-    <summary class="item-header">
-      <span class="item-title">Windows 11 Insider Beta build 26220.9223 adds accessibility and search updates</span>
-      <span class="item-type type-feature">Feature</span>
+      <span class="item-title">UniFi Network Application 10.6.97</span>
+      <span class="item-type type-feature">feature</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft's 21 August 2026 Insider release brings an Open apps maximized accessibility setting, faster Windows Search, and File Explorer file sizes in KB/MB/GB. Preview only; changes queue up for a future 24H2/25H2 servicing release.</p>
-      <a href="https://blogs.windows.com/windows-insider/2026/08/21/announcing-new-builds-for-21-august-2026/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-17">
-    <summary class="item-header">
-      <span class="item-title">Exchange Online rolls out cross-tenant message recall (opt-in)</span>
-      <span class="item-type type-feature">Feature</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Microsoft is rolling out the ability to recall messages sent to recipients in external organizations via Exchange Online. The feature is disabled by default and managed through PowerShell; enable only after reviewing recall auditing and end-user expectations.</p>
-      <a href="https://techcommunity.microsoft.com/category/exchange/blog/exchange" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-18">
-    <summary class="item-header">
-      <span class="item-title">UniFi Network Application 10.6.97 released with Drift Inspector and expanded Safe Ops</span>
-      <span class="item-type type-feature">Feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Ubiquiti released UniFi Network Application 10.6.97 adding Drift Inspector for Blueprints, Topology Spotlight, expanded Safe Ops (Test &amp; Confirm for VPN, AI Nightly Channel Optimization), and Time Machine for radios and ports. Applies to sites already on 10.3+.</p>
+      <p>Ubiquiti released UniFi Network Application 10.6.97, adding Drift Inspector for configuration drift tracking, Topology Spotlight for device filtering, and expanded SafeOps features including Test &amp; Confirm support for VPN networks and nightly channel optimization. Directly applicable to your construction client's deployed 10.3+ estate.</p>
       <a href="https://community.ui.com/releases/UniFi-Network-Application-10-6-97/ef8cd545-b479-4fac-bdc5-cabdd91692de" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
-
-  <details class="item" id="item-19">
+  <details class="item" id="item-6">
     <summary class="item-header">
-      <span class="item-title">Windows 11 August 2026 update drops WMIC and adds external fingerprint sign-in (KB5101684)</span>
-      <span class="item-type type-feature">Feature</span>
+      <span class="item-title">SANS MFA rollout script</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 7/11</span>
+    </summary>
+    <div class="item-body">
+      <p>SANS ISC published a PowerShell/Microsoft Graph script that flags Entra ID users who never registered for MFA. Practical hygiene tool for tenants finishing MFA enforcement across your small-business and internal ops.</p>
+      <a href="https://isc.sans.edu/diary/rss/33272" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-7">
+    <summary class="item-header">
+      <span class="item-title">SANS Microsoft Graph risk detection</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 7/11</span>
+    </summary>
+    <div class="item-body">
+      <p>SANS diary documenting Microsoft Graph PowerShell commands to query Identity Protection risk detections and risky users. Enables scripted review of Entra risk signals for tenants without a P2 dashboard.</p>
+      <a href="https://isc.sans.edu/diary/rss/33266" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-8">
+    <summary class="item-header">
+      <span class="item-title">Trimble Viewpoint Jobpac Connect upgrade</span>
+      <span class="item-type type-feature">feature</span>
       <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>KB5101684 (Windows 11 24H2/25H2) removes the WMIC command-line utility, adds Windows Hello ESS support for plug-in fingerprint readers, allows removing the Image Generation AI on Copilot+ PCs, and ships File Explorer fixes. Test any scripts still calling WMIC before deploying to fleets.</p>
-      <a href="https://techjournal.org/windows-11-august-2026-update-kb5101684" target="_blank" class="src">Source &rarr;</a>
+      <p>Trimble Viewpoint scheduled a Jobpac Connect R2026.3.0 infrastructure upgrade with maintenance running August 21 through 23. Spectrum was not called out in this incident, but shared Viewpoint status infrastructure means your construction client should expect intermittent portal impact through the weekend.</p>
+      <a href="https://status.viewpoint.com/incidents/pnbqrn5zc0tm" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
-
-  <details class="item" id="item-20">
+  <details class="item" id="item-9">
     <summary class="item-header">
-      <span class="item-title">Intune Suite features now bundled with Microsoft 365 E3 and E5 (rollout complete)</span>
-      <span class="item-type type-feature">Feature</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Microsoft's packaging change putting Intune Suite features (Endpoint Privilege Management, Remote Help, Advanced Endpoint Analytics) into qualifying M365 E3/E5 tenants finished rolling out on 1 August 2026. Review the Intune admin center; capabilities appear automatically without a license change.</p>
-      <a href="https://samexpert.com/intune-suite-microsoft-365-e5-2026/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-21">
-    <summary class="item-header">
-      <span class="item-title">Teams Report a Message and external-user reporting arrive in Gov Clouds</span>
-      <span class="item-type type-feature">Feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Roadmap ID 569609 brings Teams end-user Report a Message and external-user reporting into GCC/GCC-H/DoD clouds, closing a long-standing parity gap. Relevant for any DoD-contractor Teams tenants.</p>
-      <a href="https://www.microsoft.com/microsoft-365/roadmap?id=569609" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-22">
-    <summary class="item-header">
-      <span class="item-title">Exchange Online retiring TLS 1.0/1.1 for POP3 and IMAP4 by Dec 31, 2026</span>
-      <span class="item-type type-feature">Feature</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Exchange Online will stop accepting TLS 1.0 and 1.1 connections for POP3 and IMAP4 in a phased rollout ending 31 December 2026. Inventory legacy scanners, MFPs, and line-of-business apps still using POP/IMAP and update TLS support or move to Graph.</p>
-      <a href="https://techcommunity.microsoft.com/category/exchange/blog/exchange" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-23">
-    <summary class="item-header">
-      <span class="item-title">Intune ends support for Ubuntu 22.04 LTS this month; Ubuntu 26.04 added</span>
-      <span class="item-type type-feature">Feature</span>
+      <span class="item-title">Anthropic Claude Mythos 5 for enterprise security</span>
+      <span class="item-type type-feature">feature</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft Intune now supports Ubuntu 26.04 LTS; support for Ubuntu 22.04 LTS ends this month. Any managed Linux workstations should be upgraded before enrollment breaks.</p>
-      <a href="https://learn.microsoft.com/en-us/intune/whats-new/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-24">
-    <summary class="item-header">
-      <span class="item-title">Defender Exposure Management adds AI-agent posture risk scoring and OT connectors</span>
-      <span class="item-type type-feature">Feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Microsoft Defender's Exposure Management now assesses AI agent risk (config, access, runtime, alerts) and ingests third-party OT telemetry from Armis, Dragos, and Forescout. Positions Defender for Business tenants for AI-agent visibility as workloads adopt Copilot connectors.</p>
-      <a href="https://techcommunity.microsoft.com/blog/microsoftthreatprotectionblog/monthly-news-august-2026/4544388" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-25">
-    <summary class="item-header">
-      <span class="item-title">Outlook Purview DLP extends to calendar events in Outlook for Mac</span>
-      <span class="item-type type-feature">Feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Roadmap ID 569717 extends Purview DLP evaluation to calendar events created in Outlook for Mac, letting policies inspect meeting bodies and attachments. Enables consistent DLP coverage for mixed macOS fleets.</p>
-      <a href="https://www.microsoft.com/microsoft-365/roadmap?id=569717" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-26">
-    <summary class="item-header">
-      <span class="item-title">Microsoft 365 Copilot adds self-serve sync connectors for Jira and Confluence</span>
-      <span class="item-type type-feature">Feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Roadmap ID 568788 lets end users configure Microsoft 365 Copilot to sync from Jira and Confluence without admin intervention. Review governance before enabling; end-user consent to third-party connectors may collide with data-classification policies.</p>
-      <a href="https://www.microsoft.com/microsoft-365/roadmap?id=568788" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-27">
-    <summary class="item-header">
-      <span class="item-title">Teams rolls out AI Interpreter simultaneous mode and centralized Recap app</span>
-      <span class="item-type type-feature">Feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Teams updates include AI Interpreter simultaneous translation with matching caption languages and voice-simulation admin control, plus a centralized Recap app with 30 days of meeting history. Review admin toggles for voice cloning before enabling for tenants with sensitive users.</p>
-      <a href="https://releasebot.io/updates/microsoft/microsoft-teams" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-28">
-    <summary class="item-header">
-      <span class="item-title">Anthropic launches Claude Academy learning hub</span>
-      <span class="item-type type-feature">Feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Anthropic released Claude Academy, a learning hub aimed at safe and effective AI use, offering courses, tutorials, badges, and personalized recommendations. Positioned around practical AI fluency and helping users delegate, verify, and learn with Claude.</p>
+      <p>Anthropic expanded Claude Security with Claude Mythos 5, adding automated codebase scans, vulnerability findings, and suggested patches for enterprise customers. Positions Claude alongside Copilot-style security tooling MSPs may evaluate for internal or customer code review.</p>
       <a href="https://releasebot.io/updates/anthropic/claude" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
-
-  <details class="item" id="item-29">
+  <details class="item" id="item-10">
     <summary class="item-header">
-      <span class="item-title">Microsoft rolls out Classic Outlook theme for new Outlook users</span>
-      <span class="item-type type-feature">Feature</span>
+      <span class="item-title">Claude adopts MCP 2026-07-28 spec</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 7/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Claude now supports the new MCP 2026-07-28 specification with a stateless core, stronger OAuth/OIDC authorization, and versioned extensions. New connector features include embedded UI, enterprise-managed auth, observability, and private network tunnels &mdash; relevant if you wire Claude into internal SMB systems.</p>
+      <a href="https://releasebot.io/updates/anthropic" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-11">
+    <summary class="item-header">
+      <span class="item-title">llm 0.33 CLI released</span>
+      <span class="item-type type-feature">feature</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 6/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft is delivering a Classic Outlook visual theme inside new Outlook, easing the transition for users pushed off classic Outlook.exe. Helpful talking point for change management with reluctant end users.</p>
-      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-rolls-out-classic-outlook-theme-for-new-outlook-users/" target="_blank" class="src">Source &rarr;</a>
+      <p>The llm command-line tool for querying LLMs from the terminal received a 0.33 release. Useful for IT pros scripting model calls or building lightweight AI workflows without an app.</p>
+      <a href="https://simonwillison.net/2026/Aug/22/llm/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
-
-  <details class="item" id="item-30">
+  <details class="item" id="item-12">
     <summary class="item-header">
-      <span class="item-title">Microsoft attributes Windows 11 gaming glitches to RGB lighting utilities</span>
-      <span class="item-type type-feature">Feature</span>
+      <span class="item-title">Word Copilot adds model choice</span>
+      <span class="item-type type-feature">feature</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 6/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft says third-party RGB lighting control apps are behind recent Windows 11 gaming performance and crash reports, and is coordinating fixes with vendors. Worth flagging for any client using workstation-class PCs with RGB peripherals.</p>
-      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-blames-windows-gaming-issues-on-rgb-lighting-devices/" target="_blank" class="src">Source &rarr;</a>
+      <p>Word Copilot now lets users pick a model &mdash; including supported Anthropic Claude models &mdash; before rewriting, summarizing, restructuring, or refining a document. Meaningful for tenants standardizing on Copilot but wanting Claude quality on specific tasks.</p>
+      <a href="https://www.aguidetocloud.com/blog/microsoft-365-copilot-august-2026-updates/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
-
-  <details class="item" id="item-31">
+  <details class="item" id="item-13">
     <summary class="item-header">
-      <span class="item-title">LLM CLI 0.32.1 patch fixes fresh installs broken by OpenAI dropping httpx</span>
-      <span class="item-type type-feature">Feature</span>
+      <span class="item-title">KnowBe4 vishing surge</span>
+      <span class="item-type type-industry">industry</span>
       <span class="urgency-green">FYI</span>
-      <span class="score">Score: 6/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Simon Willison shipped a patch release of the llm CLI resolving a fresh-install break caused by the OpenAI SDK dropping its httpx dependency. Admins scripting LLM CLI installs from scratch on new machines should pin or upgrade to 0.32.1.</p>
-      <a href="https://simonwillison.net/2026/Aug/21/llm/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-32">
-    <summary class="item-header">
-      <span class="item-title">DoD suspends CMMC Phase 2; C3PAO Level 2 conditions being pulled from active contracts</span>
-      <span class="item-type type-industry">Industry</span>
-      <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>DoD suspended CMMC Phase 2, which would have required C3PAO Level 2 assessments as a condition of award on Nov 10, 2026, and stood up a CMMC Reform Task Force. New solicitations can only require Level 1 (Self) or Level 2 (Self); existing Level 2 (C3PAO) conditions are being removed from active contracts.</p>
-      <a href="https://federalnewsnetwork.com/cybersecurity/2026/07/pentagon-suspends-cmmc-phase-two-requirements-launches-review-of-program/" target="_blank" class="src">Source &rarr;</a>
+      <p>KnowBe4 report highlights sharp increases in voice phishing (vishing) and Entra device-code phishing attacks. Both bypass classic email filters and MFA prompts, warranting awareness training and Conditional Access review to block device-code flow where not needed.</p>
+      <a href="https://blog.knowbe4.com/report-vishing-and-device-code-phishing-are-surging" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
-
-  <details class="item" id="item-33">
+  <details class="item" id="item-14">
     <summary class="item-header">
-      <span class="item-title">SANS ISC publishes Microsoft Graph and PowerShell recipes for Entra risk hunting</span>
-      <span class="item-type type-security">Security</span>
+      <span class="item-title">KnowBe4 $148B scam losses</span>
+      <span class="item-type type-industry">industry</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>Two ISC diaries walk through using Get-MgRiskDetection and Graph-based sign-in log queries so admins can mine Entra data without paying for a SIEM. Solid SMB-friendly reference for a weekly risk review.</p>
+      <p>KnowBe4 summarizes new figures putting annual U.S. scam losses at roughly $148B, far above previously reported figures. Useful talking point for SMB security-awareness campaigns.</p>
+      <a href="https://blog.knowbe4.com/report-americans-lose-an-estimated-148-billion-to-scams-each-year" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-15">
+    <summary class="item-header">
+      <span class="item-title">CVE-2026-70335 Copilot/VS Code EoP</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 7/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Microsoft published an advisory for an elevation-of-privilege vulnerability in GitHub Copilot and Visual Studio Code. No exploitation reported; apply extension updates on developer endpoints.</p>
+      <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70335" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-16">
+    <summary class="item-header">
+      <span class="item-title">SANS Entra password-spray hunting</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 7/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Follow-up SANS diary walking through PowerShell/Graph queries to surface anomalous Entra sign-in patterns consistent with password spray. Useful detection recipe for SMB admins without a SIEM.</p>
       <a href="https://isc.sans.edu/diary/rss/33268" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
-
-  <details class="item" id="item-34">
+  <details class="item" id="item-17">
     <summary class="item-header">
-      <span class="item-title">Russia-linked actors abuse Google OAuth consent and WhatsApp linking for espionage</span>
-      <span class="item-type type-security">Security</span>
+      <span class="item-title">UK power plant disabled by Iran-linked hackers</span>
+      <span class="item-type type-industry">industry</span>
       <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
+      <span class="score">Score: 6/11</span>
     </summary>
     <div class="item-body">
-      <p>Google TAG reports a Russia-linked campaign using fake conference invites plus OAuth consent phishing and WhatsApp lures to steal credentials and mailbox access. The same OAuth consent tactics apply to Entra apps; audit app consents and disable user consent to unverified apps.</p>
-      <a href="https://thehackernews.com/2026/08/suspected-russian-hackers-abuse-google.html" target="_blank" class="src">Source &rarr;</a>
+      <p>Security Affairs reports a UK power plant was knocked offline for four days by Iran-linked threat actors, concurrent with attacks on US water utilities. Signals ongoing OT/critical-infrastructure targeting; SMB IT should reassess remote-access exposure on any ICS or building-control systems.</p>
+      <a href="https://securityaffairs.com/197734/cyber-warfare-2/uk-power-plant-disabled-for-four-days-by-iran-linked-hackers-concurrent-with-us-water-attacks.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
-
-  <details class="item" id="item-35">
+  <details class="item" id="item-18">
     <summary class="item-header">
-      <span class="item-title">Hackers hide new Windows malware inside FTP server welcome banners</span>
-      <span class="item-type type-security">Security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>A novel infection chain hides Windows loader stages inside FTP welcome banners, bypassing signature-based email and web filters. Blocking outbound FTP on standard workstations and alerting on FTP client processes on non-admin endpoints reduces exposure.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/hackers-abuse-ftp-server-banners-to-deliver-new-windows-malware/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-36">
-    <summary class="item-header">
-      <span class="item-title">Agent Tesla BEC campaign delivers a fileless in-memory infostealer</span>
-      <span class="item-type type-security">Security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>KnowBe4 breaks down a current BEC lure delivering a fileless Agent Tesla variant that harvests SMTP/Outlook credentials directly from memory, evading most AV. Watch for outbound SMTP from unusual processes and enforce MFA on all mailbox authentications.</p>
-      <a href="https://blog.knowbe4.com/anatomy-agent-tesla-bec-attack-in-memory-infostealer" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-37">
-    <summary class="item-header">
-      <span class="item-title">Windows Server 2025 KB5120233 security update ships (Build 26100.33296)</span>
-      <span class="item-type type-security">Security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Cumulative August security update for Windows Server 2025 includes servicing-stack improvements and a reminder that Secure Boot certificates begin expiring in June 2026 on non-managed devices. Verify Secure Boot certificate refresh on any unmanaged server or lab hardware.</p>
-      <a href="https://support.microsoft.com/en-us/servicing/os/windows-server/2026/08/kb5120233-windows-server-2025-security-update" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-38">
-    <summary class="item-header">
-      <span class="item-title">NIST SP 800-213r1 IoT cybersecurity draft open for comment through Aug 24</span>
-      <span class="item-type type-industry">Industry</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>NIST released the initial public draft of SP 800-213r1, updating IoT product cybersecurity requirements for federal use. Public comment period ends 24 August 2026; relevant for any DoD supplier shipping connected devices.</p>
-      <a href="https://csrc.nist.gov/News/2026/nist-releases-sp-800-213r1-ipd" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-39">
-    <summary class="item-header">
-      <span class="item-title">Blog: how MSPs can catch phishing that email filters miss</span>
-      <span class="item-type type-security">Security</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>A BleepingComputer partner post covers layering behavioral analysis, browser isolation, and Teams-side monitoring on top of Microsoft 365 mail hygiene. A reasonable checklist to benchmark current Barracuda and Defender for Office 365 configurations against.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/how-msps-can-catch-phishing-attacks-email-filters-miss/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-40">
-    <summary class="item-header">
-      <span class="item-title">Hundreds of leaked AWS keys grant full corporate account takeover</span>
-      <span class="item-type type-security">Security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Researchers found hundreds of AWS access keys leaked in public repos and container images, many with full administrative privileges. Reinforces the case for scoped IAM roles, secret scanning in CI, and rapid key rotation.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/hundreds-of-leaked-aws-keys-give-full-control-over-corporate-accounts/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-41">
-    <summary class="item-header">
-      <span class="item-title">14 trojanized npm packages drop RedC2 4.0 Linux backdoor</span>
-      <span class="item-type type-security">Security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Fourteen typosquatted npm packages install a Linux backdoor (RedC2 4.0) on developer workstations and CI runners. Audit npm lockfiles and consider blocking unknown package installs on shared build infrastructure.</p>
-      <a href="https://thehackernews.com/2026/08/14-trojanized-npm-packages-drop-redc2.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-42">
-    <summary class="item-header">
-      <span class="item-title">Malicious versions of the arrayref Rust crate ship an infostealer</span>
-      <span class="item-type type-security">Security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Attackers poisoned the popular arrayref Rust crate (plus two others) to distribute an infostealer targeting developer credentials and cloud tokens. Pin crate versions and rebuild affected projects with clean dependencies.</p>
-      <a href="https://thehackernews.com/2026/08/rust-supply-chain-attack-puts-build.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-43">
-    <summary class="item-header">
-      <span class="item-title">BleepingComputer explainer on securing Windows named pipes against attack</span>
-      <span class="item-type type-security">Security</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>An overview of how attackers abuse Windows named pipes for privilege escalation and lateral movement, with hardening recommendations. Useful backdrop for tuning Defender for Business ASR rules and hunting queries.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/named-pipes-under-attack-securing-windows-interprocess-communication/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-44">
-    <summary class="item-header">
-      <span class="item-title">KnowBe4: roughly one-quarter of breaches now enabled by AI-driven attacks</span>
-      <span class="item-type type-industry">Industry</span>
+      <span class="item-title">CVE-2026-54981 VS Code Python bypass</span>
+      <span class="item-type type-security">security</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 6/11</span>
     </summary>
     <div class="item-body">
-      <p>New research summarized by KnowBe4 finds roughly 25% of confirmed breaches involved AI-assisted phishing, deepfake voice, or automated recon. Useful data point for user-awareness training decks and management updates.</p>
-      <a href="https://blog.knowbe4.com/report-one-quarter-of-breaches-are-enabled-by-ai-driven-attacks" target="_blank" class="src">Source &rarr;</a>
+      <p>MSRC published a security feature bypass advisory for the VS Code Python extension. FYI-level; ensure developer workstations pull the fixed extension version.</p>
+      <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54981" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
-
-  <details class="item" id="item-45">
-    <summary class="item-header">
-      <span class="item-title">ChatGPT search site: operator usage jumps to 16-17% after GPT-5.6 rollout</span>
-      <span class="item-type type-industry">Industry</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 6/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Following the GPT-5.6 rollout, use of the site: operator in ChatGPT search jumped from roughly 0.3-0.5% to 16-17% of queries. Signals that AI search is beginning to lean on scoped web queries in a way IT admins should factor into how internal docs and vendor pages get discovered.</p>
-      <a href="https://simonwillison.net/2026/Aug/20/chatgpt-search-now-uses-the-siteoperator-at-scale/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
 </div>
 
-<div class="footer">Generated Saturday, August 22, 2026 at 6:00 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-08-22.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
+<div class="footer">Generated Sunday, August 23, 2026 at 6:00 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-08-23.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
 
 </main>
 </body>
