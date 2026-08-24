@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<title>Morning Briefing -- Sunday, August 23, 2026</title>
+<title>Morning Briefing -- Monday, August 24, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -14,50 +14,49 @@
 <main class="briefing-content">
 
 <div class="page-header">
-  <h1>Morning Briefing -- Sunday, August 23, 2026</h1>
+  <h1>Morning Briefing -- Monday, August 24, 2026</h1>
   <p class="page-meta">Microsoft &bull; Security &amp; Compliance &bull; Firewall / VPN / Networking &bull; Servers/NAS &bull; Workstations &amp; Mobile &bull; Peripherals &amp; AV &bull; RMM &amp; Remote Access &bull; Construction &amp; Specialty Software &bull; General Tech &amp; AI &bull; Pacific Time</p>
 </div>
 
 <div class="section-actions">
   <h2>Today's Actions</h2>
-  <p class="section-transparency">Showing 3 of 4</p>
   <ol class="action-list">
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Push the August Winsock AFD patch (CVE-2026-68820) to any unpatched Windows endpoints this week. <a href="#item-1" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> File the CISA TrueConf Server KEV entry &mdash; no client runs TrueConf, so no action required. <a href="#item-2" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> File the Zimbra SNMP command-injection alert &mdash; no client runs on-prem Zimbra, so no action required. <a href="#item-3" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> File the CISA Zimbra three-day patch order &mdash; no client runs Zimbra, so no direct action required. <a href="#item-1" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-yellow">This Week</span> Watch for WPF printing/PDF-export failures on endpoints that took the August Windows update; defer or roll back on affected line-of-business apps until Microsoft ships a fix. <a href="#item-2" class="detail-link">details</a></li>
   </ol>
-  <details class="section-overflow"><summary>Show 1 more action</summary><ol class="action-list" start="4"><li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-yellow">This Week</span> Monitor the Entra ID CVE-2026-69836 correction &mdash; Microsoft downgraded exploited status to "no", so standard patch cadence is fine. <a href="#item-4" class="detail-link">details</a></li></ol></details>
 </div>
 
 <div class="section-new">
   <h2>What's New</h2>
-  <p class="section-transparency">Showing 3 of 8</p>
+  <p class="section-transparency">Showing 3 of 6</p>
   <ul class="new-list">
-    <li><strong><a href="#item-5">UniFi Network Application 10.6.97 released with Drift Inspector and expanded SafeOps</a></strong> -- Ubiquiti released UniFi Network Application 10.6.97, adding Drift Inspector for configuration drift tracking, Topology Spotlight device filtering, and expanded SafeOps including Test &amp; Confirm for VPN networks and nightly channel optimization. Directly applicable to the deployed 10.3+ estate at your construction client. <a href="https://community.ui.com/releases/UniFi-Network-Application-10-6-97/ef8cd545-b479-4fac-bdc5-cabdd91692de" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-6">SANS ships a PowerShell/Graph script to find users missed in the MFA rollout</a></strong> -- SANS ISC published a PowerShell/Microsoft Graph script that flags Entra ID users who never registered for MFA. Practical hygiene check for tenants finishing MFA enforcement across your small-business and internal ops. <a href="https://isc.sans.edu/diary/rss/33272" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-7">SANS documents Microsoft Graph PowerShell risk-detection commands</a></strong> -- SANS diary walks through Microsoft Graph PowerShell commands to query Identity Protection risk detections and risky users. Enables scripted review of Entra risk signals for tenants without a P2 dashboard. <a href="https://isc.sans.edu/diary/rss/33266" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-3">Microsoft Entra August 2026 adds Exchange writeback and admin-controlled SSO auto-approval</a></strong> -- Entra Cloud Sync now writes Exchange attribute changes back to on-premises AD, syncs devices from AD to Entra, and lets admins auto-approve SSO permissions on managed Windows devices. External ID also gains sign-up support for federated IdPs that do not share email. Useful for hybrid identity work at your construction client and your internal ops. <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/whats-new-in-microsoft-entra-august-2026/4545172" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-4">Intune Service Release 2608 ships Shadow AI detection, Bluetooth-sharing block, Apple Intelligence DDM</a></strong> -- Intune 2608 adds a public-preview Shadow AI detect/block flow, an Android Enterprise Bluetooth-sharing block, DDM management of Apple Intelligence, a Wired Networks profile for iOS/iPadOS, and Strict Tunnel Mode for Microsoft Tunnel on Android. The Vulnerability Remediation Agent also moves to Entra agentic identity. Applies as you finish the small-business Intune rollout. <a href="https://www.prajwaldesai.com/intune-updates-new-features/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-5">ShareFile schedules eSignature/RightSignature maintenance for Aug 30, 12:30-4:30 AM ET</a></strong> -- Citrix ShareFile posted a four-hour maintenance window on Saturday Aug 30 that takes eSignature and RightSignature offline from 12:30 to 4:30 AM Eastern. Warn any client who depends on ShareFile signature workflows so nothing critical is scheduled for that window. <a href="https://status.sharefile.com/incidents/kz2dgptz2yqy" target="_blank">Source &rarr;</a></li>
   </ul>
-  <details class="section-overflow"><summary>Show 5 more updates</summary><ul class="new-list">
-    <li><strong><a href="#item-8">Trimble Viewpoint runs Jobpac Connect infrastructure upgrade Aug 21-23</a></strong> -- Trimble Viewpoint scheduled a Jobpac Connect R2026.3.0 infrastructure upgrade with maintenance running August 21 through 23. Spectrum was not called out, but shared Viewpoint status infrastructure means your construction client may see intermittent portal impact through the weekend. <a href="https://status.viewpoint.com/incidents/pnbqrn5zc0tm" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-9">Anthropic adds Claude Mythos 5 to Claude Security for enterprise codebase scanning</a></strong> -- Anthropic expanded Claude Security with Claude Mythos 5, adding automated codebase scans, vulnerability findings, and suggested patches for enterprise customers. Worth an evaluation slot if you plan to offer secure-code review services. <a href="https://releasebot.io/updates/anthropic/claude" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-10">Claude adds support for MCP 2026-07-28 spec with OAuth/OIDC and private tunnels</a></strong> -- Claude now supports the new MCP 2026-07-28 specification with a stateless core, stronger OAuth/OIDC authorization, and versioned extensions. New connector features include embedded UI, enterprise-managed auth, observability, and private network tunnels &mdash; useful if you wire Claude into internal SMB systems. <a href="https://releasebot.io/updates/anthropic" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-11">Simon Willison ships llm 0.33 CLI update</a></strong> -- The llm command-line tool for querying LLMs from the terminal received a 0.33 release. Handy for scripting model calls or building lightweight AI workflows without an app. <a href="https://simonwillison.net/2026/Aug/22/llm/" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-12">Word Copilot adds model choice including Anthropic Claude</a></strong> -- Word Copilot now lets users pick a model &mdash; including supported Anthropic Claude models &mdash; before rewriting, summarizing, restructuring, or refining a document. Notable for tenants standardizing on Copilot but wanting Claude quality on specific tasks. <a href="https://www.aguidetocloud.com/blog/microsoft-365-copilot-august-2026-updates/" target="_blank">Source &rarr;</a></li>
+  <details class="section-overflow"><summary>Show 3 more updates</summary><ul class="new-list">
+    <li><strong><a href="#item-6">Microsoft Teams August 2026: AI meeting archives, Recap app, mobile multi-line calling</a></strong> -- Teams is rolling out AI-generated meeting archives that feed Copilot, a new Recap app with 30-day history and Audio Recap, multi-line calling with unified history on mobile, call-delegation lock and warning tones, and Planner-plan linking from meeting invites. Staged Aug-Sep 2026. <a href="https://releasebot.io/updates/microsoft/microsoft-teams" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-7">UniFi Protect Cameras firmware 5.3.95 released</a></strong> -- Ubiquiti pushed a maintenance camera-firmware bump on Aug 21 as part of the wave following UniFi OS 5.1.31. No advisories are tied to this build; treat as routine and stage into the OCC Protect fleet on the normal cadence. <a href="https://community.ui.com/releases" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-8">UniFi Protect Android mobile app 3.6.0 released</a></strong> -- Ubiquiti released Protect Android app 3.6.0 on Aug 22 with no security fixes called out. FYI for OCC staff running the Protect client on Android phones or tablets. <a href="https://community.ui.com/releases" target="_blank">Source &rarr;</a></li>
   </ul></details>
 </div>
 
 <div class="section-security">
   <h2>Security &amp; Patches</h2>
-  <p class="section-transparency">Showing 3 of 6</p>
+  <p class="section-transparency">Showing 3 of 10</p>
   <div class="security-cards">
-    <div class="security-card"><a href="#item-13" class="security-headline">KnowBe4: vishing and device-code phishing are surging</a><span class="urgency-green">FYI</span><span class="security-summary">KnowBe4 report highlights sharp increases in voice phishing and Entra device-code phishing.</span></div>
-    <div class="security-card"><a href="#item-14" class="security-headline">KnowBe4: Americans lose an estimated $148B a year to scams</a><span class="urgency-green">FYI</span><span class="security-summary">KnowBe4 summarizes new figures putting annual U.S. scam losses at roughly $148B, far above previous estimates.</span></div>
-    <div class="security-card"><a href="#item-15" class="security-headline">CVE-2026-70335: GitHub Copilot / VS Code elevation of privilege</a><span class="urgency-green">FYI</span><span class="security-summary">Microsoft published an advisory for an elevation-of-privilege vulnerability in GitHub Copilot and Visual Studio Code.</span></div>
+    <div class="security-card"><a href="#item-9" class="security-headline">iAuthFlow v2 phishing kit plants attacker-controlled passkeys that survive password resets</a><span class="urgency-yellow">This Week</span><span class="security-summary">$10K phishing toolkit registers attacker-owned passkeys after AitM compromise, so password resets alone will not evict the attacker.</span></div>
+    <div class="security-card"><a href="#item-10" class="security-headline">NIST drafts small-business cyber guide for non-employer firms (CSWP 50 IPD)</a><span class="urgency-green">FYI</span><span class="security-summary">NIST published an initial public draft extending CSF 2.0 to sole proprietors and micro-businesses, written in non-technical language.</span></div>
+    <div class="security-card"><a href="#item-11" class="security-headline">KnowBe4/Resilience: AI-enabled social engineering behind 85%+ of H1 2026 insurance losses</a><span class="urgency-green">FYI</span><span class="security-summary">Cyber-insurer Resilience data shows AI-driven social engineering has jumped from &lt;20% to 85%+ of insured loss dollars in two years.</span></div>
   </div>
-  <details class="section-overflow"><summary>Show 3 more security items</summary><div class="security-cards">
-    <div class="security-card"><a href="#item-16" class="security-headline">SANS: PowerShell hunt queries for Entra password-spray detection</a><span class="urgency-green">FYI</span><span class="security-summary">Follow-up SANS diary walking through PowerShell/Graph queries to surface anomalous Entra sign-in patterns consistent with password spray.</span></div>
-    <div class="security-card"><a href="#item-17" class="security-headline">UK power plant disabled four days by Iran-linked hackers alongside US water attacks</a><span class="urgency-yellow">This Week</span><span class="security-summary">Security Affairs reports a UK power plant was knocked offline for four days by Iran-linked threat actors, concurrent with attacks on US water utilities.</span></div>
-    <div class="security-card"><a href="#item-18" class="security-headline">CVE-2026-54981: VS Code Python extension security-feature bypass</a><span class="urgency-green">FYI</span><span class="security-summary">MSRC published a security feature bypass advisory for the VS Code Python extension.</span></div>
+  <details class="section-overflow"><summary>Show 7 more security items</summary><div class="security-cards">
+    <div class="security-card"><a href="#item-12" class="security-headline">M365 AitM &quot;Payroll Pirates&quot; campaign hijacks accounts to reroute payroll and finance mail</a><span class="urgency-yellow">This Week</span><span class="security-summary">Arctic Wolf reports voicemail-lure AitM attacks against hundreds of M365 tenants, pivoting to payroll redirection and invoice interception.</span></div>
+    <div class="security-card"><a href="#item-13" class="security-headline">MSRC re-publishes acknowledgements for three Office/Excel CVEs (no new patches)</a><span class="urgency-green">FYI</span><span class="security-summary">Metadata-only republishes for CVE-2026-68801, 64903, and 64899; already remediated by August Patch Tuesday. Awareness only.</span></div>
+    <div class="security-card"><a href="#item-14" class="security-headline">Microsoft blames Windows August update gaming crashes on RGB lighting drivers (Logitech/Corsair)</a><span class="urgency-yellow">This Week</span><span class="security-summary">RGB utilities from Logitech, Corsair, ASUS and others load a legacy inpoutx64 driver that breaks Windows 11 24H2/25H2 after KB5121003.</span></div>
+    <div class="security-card"><a href="#item-15" class="security-headline">DoD CMMC RFI comment window closed; Reform Task Force report expected mid-September</a><span class="urgency-yellow">This Week</span><span class="security-summary">CMMC Phase 2 remains suspended; Reform Task Force report due mid-September. DFARS 252.204-7012 obligations still apply during the pause.</span></div>
+    <div class="security-card"><a href="#item-16" class="security-headline">Trimble Jobpac Connect slowdowns and login issues resolved, capacity added</a><span class="urgency-yellow">This Week</span><span class="security-summary">Trimble deployed a fix and provisioned additional server resources Aug 24 after Aug 23-24 Jobpac performance and login issues.</span></div>
+    <div class="security-card"><a href="#item-17" class="security-headline">DOUBLECUP PowerShell payload hidden after PNG image data, extractable with FINDSTR</a><span class="urgency-yellow">This Week</span><span class="security-summary">SANS ISC describes malware appending a PowerShell payload past a legitimate PNG so the image still renders. Add to IR runbooks.</span></div>
+    <div class="security-card"><a href="#item-18" class="security-headline">Anthropic's Opus struggles to attract users as cheaper models thrive</a><span class="urgency-green">FYI</span><span class="security-summary">Reporting flagged by Simon Willison shows enterprises leaning to cheaper Anthropic/competitor models over flagship Opus for cost reasons.</span></div>
   </div></details>
 </div>
 
@@ -65,223 +64,223 @@
   <h2>Details</h2>
   <details class="item" id="item-1">
     <summary class="item-header">
-      <span class="item-title">Windows Winsock CVE-2026-68820</span>
+      <span class="item-title">CISA orders three-day federal patch deadline on actively-exploited Zimbra flaw</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>CISA and Microsoft confirmed active exploitation of CVE-2026-68820, a Winsock AFD elevation-of-privilege flaw patched in August Patch Tuesday. CISA gave federal agencies until August 25 to remediate; the vulnerability is in the KEV catalog, so any unpatched endpoints need the August Windows update this week.</p>
-      <a href="https://therecord.media/cisa-gives-federal-agencies-two-weeks-to-patch-dprk-microsoft-bug" target="_blank" class="src">Source &rarr;</a>
+      <p>CISA added the Zimbra Collaboration Suite SNMP vulnerability to its KEV catalog and ordered federal agencies to patch within three days, following confirmation of active exploitation. None of your clients run Zimbra, so this is awareness only; any SMB still hosting on-prem Zimbra should treat this as an emergency patch window.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/cisa-orders-urgent-patching-of-actively-exploited-zimbra-flaw/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-2">
     <summary class="item-header">
-      <span class="item-title">CISA TrueConf Server actively exploited</span>
+      <span class="item-title">Microsoft August 2026 updates break WPF printing and PDF export</span>
       <span class="item-type type-security">security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 8/11</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>CISA added TrueConf Server vulnerabilities to the KEV catalog with a federal patch mandate after confirming active exploitation. No client of yours runs TrueConf, so this is awareness only; any SMB running TrueConf for video conferencing should patch or take the service offline immediately.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-trueconf-server-flaws/" target="_blank" class="src">Source &rarr;</a>
+      <p>The August 2026 Windows cumulative updates broke printing and PDF export in Windows Presentation Foundation (WPF) apps built on .NET Framework and .NET 6+. Users see failed print jobs or corrupted PDF output. Microsoft is investigating and has not shipped a fix. Your construction client and small-business client should audit line-of-business apps (accounting, dispatch, takeoff) that print via WPF and be prepared to defer or roll back the August CU on affected endpoints.</p>
+      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-august-updates-break-printing-pdf-export-in-wpf-apps/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-3">
     <summary class="item-header">
-      <span class="item-title">Zimbra Collaboration SNMP command injection</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 8/11</span>
+      <span class="item-title">Microsoft Entra August 2026 update</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>The Hacker News reports attackers actively exploiting an SNMP command-injection flaw in Zimbra Collaboration to gain code execution on mail servers. All your clients are on M365, so no direct action; any SMB still running on-prem Zimbra should patch immediately and audit for compromise.</p>
-      <a href="https://thehackernews.com/2026/08/attackers-exploit-zimbra-snmp-flaw-for.html" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft published the August 2026 Entra release notes: Exchange writeback through Entra Cloud Sync (sync Exchange Online attribute changes back to on-premises AD), device sync from on-premises AD to Entra via Cloud Sync, admin-controlled auto-approval of SSO permissions on managed Windows devices, and External ID sign-up support for federated identity providers that do not share email. Relevant for hybrid identity work at your construction client and your internal ops.</p>
+      <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/whats-new-in-microsoft-entra-august-2026/4545172" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-4">
     <summary class="item-header">
-      <span class="item-title">Entra ID CVE-2026-69836 status corrected</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 10/11</span>
+      <span class="item-title">Intune Service Release 2608</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft corrected the exploitation status on this max-severity Entra ID remote code execution flaw to "not exploited in the wild" after initially marking it exploited. Bleeping Computer covered the original alarm. The patch remains critical and should be applied on the standard cycle; no urgent incident response required.</p>
-      <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-69836" target="_blank" class="src">Source &rarr;</a>
+      <p>Intune 2608 (August 2026) adds a public-preview capability to detect and block Shadow AI via the properties catalog, device query, and a new security baseline; introduces Block Bluetooth sharing in the Android Enterprise settings catalog; supports DDM management of Apple Intelligence settings; adds a new Wired Networks profile for iOS/iPadOS; enables Strict Tunnel Mode for Microsoft Tunnel on Android; and moves the Vulnerability Remediation Agent to Entra agentic identity. Applicable to the Intune enrollment in progress at your small-business client.</p>
+      <a href="https://www.prajwaldesai.com/intune-updates-new-features/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-5">
     <summary class="item-header">
-      <span class="item-title">UniFi Network Application 10.6.97</span>
+      <span class="item-title">ShareFile eSignature/RightSignature maintenance Aug 30</span>
       <span class="item-type type-feature">feature</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Ubiquiti released UniFi Network Application 10.6.97, adding Drift Inspector for configuration drift tracking, Topology Spotlight for device filtering, and expanded SafeOps features including Test &amp; Confirm support for VPN networks and nightly channel optimization. Directly applicable to your construction client's deployed 10.3+ estate.</p>
-      <a href="https://community.ui.com/releases/UniFi-Network-Application-10-6-97/ef8cd545-b479-4fac-bdc5-cabdd91692de" target="_blank" class="src">Source &rarr;</a>
+      <p>Citrix ShareFile scheduled a four-hour maintenance window for eSignature and RightSignature on Saturday, August 30, 2026 from 12:30 to 4:30 AM Eastern Time. Signature workflows will be unavailable during that window. Notify any signature-dependent client in advance so nothing critical is booked in that block.</p>
+      <a href="https://status.sharefile.com/incidents/kz2dgptz2yqy" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-6">
     <summary class="item-header">
-      <span class="item-title">SANS MFA rollout script</span>
+      <span class="item-title">Microsoft Teams August 2026 rollouts</span>
       <span class="item-type type-feature">feature</span>
       <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>SANS ISC published a PowerShell/Microsoft Graph script that flags Entra ID users who never registered for MFA. Practical hygiene tool for tenants finishing MFA enforcement across your small-business and internal ops.</p>
-      <a href="https://isc.sans.edu/diary/rss/33272" target="_blank" class="src">Source &rarr;</a>
+      <p>August rollout notes for Teams include AI-generated meeting archives that feed Copilot better meeting context, a new Recap app centralizing past meeting recaps with 30-day history and Audio Recap, multi-line calling on mobile with unified call history, call-delegation controls that let delegators lock calls and add warning tones, and Planner-plan linking directly from Teams meetings. Rollouts staged August through September 2026.</p>
+      <a href="https://releasebot.io/updates/microsoft/microsoft-teams" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-7">
     <summary class="item-header">
-      <span class="item-title">SANS Microsoft Graph risk detection</span>
+      <span class="item-title">UniFi Protect Cameras firmware 5.3.95</span>
       <span class="item-type type-feature">feature</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>SANS diary documenting Microsoft Graph PowerShell commands to query Identity Protection risk detections and risky users. Enables scripted review of Entra risk signals for tenants without a P2 dashboard.</p>
-      <a href="https://isc.sans.edu/diary/rss/33266" target="_blank" class="src">Source &rarr;</a>
+      <p>Ubiquiti published UniFi Protect Cameras firmware 5.3.95 on August 21, a maintenance release included in the wave of Protect-side updates following the August 20 UniFi OS 5.1.31 bundle. No advisories are tied to this build. Stage into the OCC Protect fleet on your normal camera-firmware cadence.</p>
+      <a href="https://community.ui.com/releases" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-8">
     <summary class="item-header">
-      <span class="item-title">Trimble Viewpoint Jobpac Connect upgrade</span>
+      <span class="item-title">UniFi Protect Android mobile app 3.6.0</span>
       <span class="item-type type-feature">feature</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 7/11</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 6/11</span>
     </summary>
     <div class="item-body">
-      <p>Trimble Viewpoint scheduled a Jobpac Connect R2026.3.0 infrastructure upgrade with maintenance running August 21 through 23. Spectrum was not called out in this incident, but shared Viewpoint status infrastructure means your construction client should expect intermittent portal impact through the weekend.</p>
-      <a href="https://status.viewpoint.com/incidents/pnbqrn5zc0tm" target="_blank" class="src">Source &rarr;</a>
+      <p>Ubiquiti pushed UniFi Protect Android app version 3.6.0 on August 22. Client-side mobile update for the Protect ecosystem; no security fixes called out. FYI for OCC staff using the Android Protect client on phones or tablets.</p>
+      <a href="https://community.ui.com/releases" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-9">
     <summary class="item-header">
-      <span class="item-title">Anthropic Claude Mythos 5 for enterprise security</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
+      <span class="item-title">iAuthFlow v2 phishing kit plants persistent passkeys</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Anthropic expanded Claude Security with Claude Mythos 5, adding automated codebase scans, vulnerability findings, and suggested patches for enterprise customers. Positions Claude alongside Copilot-style security tooling MSPs may evaluate for internal or customer code review.</p>
-      <a href="https://releasebot.io/updates/anthropic/claude" target="_blank" class="src">Source &rarr;</a>
+      <p>Security Affairs details iAuthFlow v2, a $10,000 phishing toolkit that, after compromising a session, registers an attacker-controlled passkey on the victim's account so persistence outlives the victim's password reset. Combined with AitM against Microsoft 365, this raises the incident-response bar: password resets alone will not evict the attacker &mdash; enrolled authenticators and passkeys must be reviewed and revoked. Update your M365 compromise runbook for your construction, small-business, and internal ops tenants.</p>
+      <a href="https://securityaffairs.com/197748/cyber-crime/iauthflow-v2-the-10000-phishing-toolkit-that-survives-your-password-reset.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-10">
     <summary class="item-header">
-      <span class="item-title">Claude adopts MCP 2026-07-28 spec</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Claude now supports the new MCP 2026-07-28 specification with a stateless core, stronger OAuth/OIDC authorization, and versioned extensions. New connector features include embedded UI, enterprise-managed auth, observability, and private network tunnels &mdash; relevant if you wire Claude into internal SMB systems.</p>
-      <a href="https://releasebot.io/updates/anthropic" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-11">
-    <summary class="item-header">
-      <span class="item-title">llm 0.33 CLI released</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 6/11</span>
-    </summary>
-    <div class="item-body">
-      <p>The llm command-line tool for querying LLMs from the terminal received a 0.33 release. Useful for IT pros scripting model calls or building lightweight AI workflows without an app.</p>
-      <a href="https://simonwillison.net/2026/Aug/22/llm/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-12">
-    <summary class="item-header">
-      <span class="item-title">Word Copilot adds model choice</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 6/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Word Copilot now lets users pick a model &mdash; including supported Anthropic Claude models &mdash; before rewriting, summarizing, restructuring, or refining a document. Meaningful for tenants standardizing on Copilot but wanting Claude quality on specific tasks.</p>
-      <a href="https://www.aguidetocloud.com/blog/microsoft-365-copilot-august-2026-updates/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-13">
-    <summary class="item-header">
-      <span class="item-title">KnowBe4 vishing surge</span>
+      <span class="item-title">NIST small-business cyber guide (CSWP 50 IPD)</span>
       <span class="item-type type-industry">industry</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>KnowBe4 report highlights sharp increases in voice phishing (vishing) and Entra device-code phishing attacks. Both bypass classic email filters and MFA prompts, warranting awareness training and Conditional Access review to block device-code flow where not needed.</p>
-      <a href="https://blog.knowbe4.com/report-vishing-and-device-code-phishing-are-surging" target="_blank" class="src">Source &rarr;</a>
+      <p>NIST released the initial public draft of Cybersecurity White Paper 50, "Small Business Cybersecurity: Non-Employer Firms," extending CSF 2.0 to sole proprietors and micro-businesses with minimal IT. Written in non-technical language, it covers phishing and ransomware and prescribes MFA, secure backups, and other baseline controls. A useful client-handout basis for the smallest SMB engagements.</p>
+      <a href="https://www.executivegov.com/articles/nist-small-business-cyber-guidance" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
-  <details class="item" id="item-14">
+  <details class="item" id="item-11">
     <summary class="item-header">
-      <span class="item-title">KnowBe4 $148B scam losses</span>
+      <span class="item-title">KnowBe4/Resilience: AI social engineering behind 85%+ of H1 2026 insured losses</span>
       <span class="item-type type-industry">industry</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Cyber-insurer Resilience data cited by KnowBe4 finds AI-enabled social engineering caused more than 85% of insured loss dollars in H1 2026, up from under 20% two years ago. The report underscores that human-factor training and BEC-specific controls are outpacing traditional endpoint spend in claims impact &mdash; a strong talking point for SMB security-awareness renewals.</p>
+      <a href="https://blog.knowbe4.com/human-error-ai-enabled-social-engineering" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-12">
+    <summary class="item-header">
+      <span class="item-title">M365 &quot;Payroll Pirates&quot; AitM campaign</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 8/11</span>
+    </summary>
+    <div class="item-body">
+      <p>The Hacker News, citing Arctic Wolf, reports hundreds of organizations hit last month by voicemail-themed lures leading to AitM proxy pages that capture credentials and MFA codes. After takeover, operators pivot to payroll and finance mailboxes to redirect direct deposits and intercept invoice threads. Reinforces the need for phishing-resistant MFA and inbox-rule monitoring on M365 tenants at your construction and small-business clients.</p>
+      <a href="https://thehackernews.com/2026/08/microsoft-365-aitm-phishing-hijacks.html" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-13">
+    <summary class="item-header">
+      <span class="item-title">MSRC re-publishes Office/Excel CVE metadata</span>
+      <span class="item-type type-security">security</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>KnowBe4 summarizes new figures putting annual U.S. scam losses at roughly $148B, far above previously reported figures. Useful talking point for SMB security-awareness campaigns.</p>
-      <a href="https://blog.knowbe4.com/report-americans-lose-an-estimated-148-billion-to-scams-each-year" target="_blank" class="src">Source &rarr;</a>
+      <p>On August 21 MSRC updated the credit/acknowledgement metadata for CVE-2026-68801 (Excel RCE), CVE-2026-64903 (Office RCE), and CVE-2026-64899 (Office information disclosure). No new patches or exploitability change; the underlying August Patch Tuesday updates already remediate them. Note only if you track CVE metadata for compliance evidence.</p>
+      <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68801" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-14">
+    <summary class="item-header">
+      <span class="item-title">Windows August update gaming crashes from RGB drivers</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 8/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Microsoft confirmed on August 21 that game crashes, freezes, and EXCEPTION_ACCESS_VIOLATION errors on Windows 11 24H2/25H2 following KB5121003 are caused by RGB-lighting control software installing legacy "inpoutx64" kernel drivers, commonly bundled with Logitech, Corsair, and motherboard/GPU RGB utilities. Workaround is to uninstall affected RGB software while Microsoft investigates. Minor for fleet endpoints but likely to hit any personal or shop-floor gaming rig.</p>
+      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-blames-windows-gaming-issues-on-rgb-lighting-devices/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-15">
     <summary class="item-header">
-      <span class="item-title">CVE-2026-70335 Copilot/VS Code EoP</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
+      <span class="item-title">CMMC RFI closed; Reform Task Force report due mid-September</span>
+      <span class="item-type type-industry">industry</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft published an advisory for an elevation-of-privilege vulnerability in GitHub Copilot and Visual Studio Code. No exploitation reported; apply extension updates on developer endpoints.</p>
-      <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70335" target="_blank" class="src">Source &rarr;</a>
+      <p>Following July's suspension of CMMC Phase 2, the DoD CIO's CMMC Reform Task Force closed the public RFI on August 14 and is on track to deliver its report &mdash; with recommendations for scalable, resilient cybersecurity requirements &mdash; around mid-September 2026. C3PAO capacity remains a core issue (100,000+ contractors, roughly 100 authorized C3PAOs). Contractual DFARS 252.204-7012 obligations remain in force during the pause &mdash; keep your construction client's CMMC Level 2 work moving on the assumption that the technical requirements will not soften.</p>
+      <a href="https://federalnewsnetwork.com/cybersecurity/2026/07/pentagon-suspends-cmmc-phase-two-requirements-launches-review-of-program/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-16">
     <summary class="item-header">
-      <span class="item-title">SANS Entra password-spray hunting</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
+      <span class="item-title">Trimble Jobpac Connect slowdowns resolved, capacity added</span>
+      <span class="item-type type-industry">industry</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>Follow-up SANS diary walking through PowerShell/Graph queries to surface anomalous Entra sign-in patterns consistent with password spray. Useful detection recipe for SMB admins without a SIEM.</p>
-      <a href="https://isc.sans.edu/diary/rss/33268" target="_blank" class="src">Source &rarr;</a>
+      <p>Trimble Viewpoint reported intermittent Jobpac Connect performance and login issues on August 23-24. A fix was deployed and additional server resources provisioned August 24. Spectrum was not called out, but shared Viewpoint infrastructure means your construction client should watch for residual portal complaints early this week.</p>
+      <a href="https://status.viewpoint.com/incidents/ry03zy0x7p9c" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-17">
     <summary class="item-header">
-      <span class="item-title">UK power plant disabled by Iran-linked hackers</span>
-      <span class="item-type type-industry">industry</span>
+      <span class="item-title">DOUBLECUP PowerShell payload hidden after PNG data</span>
+      <span class="item-type type-security">security</span>
       <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 6/11</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>Security Affairs reports a UK power plant was knocked offline for four days by Iran-linked threat actors, concurrent with attacks on US water utilities. Signals ongoing OT/critical-infrastructure targeting; SMB IT should reassess remote-access exposure on any ICS or building-control systems.</p>
-      <a href="https://securityaffairs.com/197734/cyber-warfare-2/uk-power-plant-disabled-for-four-days-by-iran-linked-hackers-concurrent-with-us-water-attacks.html" target="_blank" class="src">Source &rarr;</a>
+      <p>SANS ISC diary describes DOUBLECUP appending a PowerShell payload after the trailing bytes of a legitimate PNG so the image renders normally while the malicious script rides along. Analysts (and detection engineers) can pull the payload with FINDSTR. Worth adding to IR runbooks and considering for content-inspection rules on file gateways.</p>
+      <a href="https://isc.sans.edu/diary/rss/33274" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-18">
     <summary class="item-header">
-      <span class="item-title">CVE-2026-54981 VS Code Python bypass</span>
-      <span class="item-type type-security">security</span>
+      <span class="item-title">Anthropic Opus struggles to attract users as cheaper models thrive</span>
+      <span class="item-type type-industry">industry</span>
       <span class="urgency-green">FYI</span>
-      <span class="score">Score: 6/11</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>MSRC published a security feature bypass advisory for the VS Code Python extension. FYI-level; ensure developer workstations pull the fixed extension version.</p>
-      <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54981" target="_blank" class="src">Source &rarr;</a>
+      <p>Reporting flagged by Simon Willison shows Anthropic's flagship Opus is losing share to cheaper alternatives (Fable/Sonnet variants and competitor models) as enterprises prioritize ROI over frontier capability. Relevant for IT pros evaluating AI tooling costs: cheaper mid-tier models are often adequate for most SMB workflows without paying flagship prices.</p>
+      <a href="https://simonwillison.net/2026/Aug/23/anthropics-best-ai-model-struggles-to-attract-users-as-cheaper-t/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 </div>
 
-<div class="footer">Generated Sunday, August 23, 2026 at 6:00 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-08-23.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
+<div class="footer">Generated Monday, August 24, 2026 at 6:37 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-08-24.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
 
 </main>
 </body>
