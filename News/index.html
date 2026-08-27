@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<title>Morning Briefing -- Wednesday, August 26, 2026</title>
+<title>Morning Briefing -- Thursday, August 27, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -14,354 +14,177 @@
 <main class="briefing-content">
 
 <div class="page-header">
-  <h1>Morning Briefing -- Wednesday, August 26, 2026</h1>
+  <h1>Morning Briefing -- Thursday, August 27, 2026</h1>
   <p class="page-meta">Microsoft &bull; Security &amp; Compliance &bull; Firewall / VPN / Networking &bull; Servers/NAS &bull; Workstations &amp; Mobile &bull; Peripherals &amp; AV &bull; RMM &amp; Remote Access &bull; Construction &amp; Specialty Software &bull; General Tech &amp; AI &bull; Pacific Time</p>
 </div>
 
 <div class="section-actions">
   <h2>Today's Actions</h2>
-  <p class="section-transparency">Showing 3 of 6</p>
+  <p class="section-transparency">Showing 3 of 5</p>
   <ol class="action-list">
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Prioritize the August cumulative update carrying the CVE-2026-70337 PowerShell RCE fix across every managed Windows Server and workstation. <a href="#item-1" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Update every UniFi OS Console (Dream Machine, Cloud Key, UNVR) hosting OCC's Network Application or Protect to UniFi OS Server 5.0.8 -- three chained max-severity flaws are already being exploited by a Mirai-style botnet. <a href="#item-2" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> File the CISA KEV addition for Gitea CVE-2026-60004 -- no client runs self-hosted Gitea, so awareness only. <a href="#item-3" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> File CISA's KEV additions for Citrix NetScaler (CVE-2026-8452), a SQL Server flaw, and older Linux kernel and Red Hat bugs -- no client runs NetScaler, but confirm no shadow instance exists at your construction client or internal ops. <a href="#item-1" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Send a KnowBe4-style alert to every Microsoft 365 user warning about Mirage2FA session-cookie theft that bypasses MFA, and confirm conditional access with token protection is on across your construction, small-business, and internal-ops tenants. <a href="#item-2" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Warn finance and payroll contacts about the voicemail-themed AitM phishing campaign hitting Microsoft 365 mailboxes via Graph API, and audit OAuth app consents for anomalous scopes across all tenants. <a href="#item-3" class="detail-link">details</a></li>
   </ol>
-  <details class="section-overflow"><summary>Show 3 more actions</summary><ol class="action-list" start="4">
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-yellow">This Week</span> Roll the August CLFS driver EoP fix (CVE-2026-62728) into this week's Windows patch ring -- CLFS bugs have a strong post-disclosure exploitation track record. <a href="#item-4" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-yellow">This Week</span> Include the Winlogon EoP fix (CVE-2026-61939) in the same endpoint update pass so a foothold cannot escalate to SYSTEM. <a href="#item-5" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-yellow">This Week</span> Ship the Windows Device Association Service EoP fix (CVE-2026-62747) with the standard monthly Windows 10/11 rollout. <a href="#item-6" class="detail-link">details</a></li>
+  <details class="section-overflow"><summary>Show 2 more actions</summary><ol class="action-list" start="4">
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> File the China-nexus VMware vCenter exploitation deploying Babuk-derived ransomware -- no client runs vCenter, so awareness only. <a href="#item-4" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> File the N-able N-central CVE-2026-18577 Hotfix 2 news -- your RMM stack is Atera, not N-central, but the pattern (auth bypass in an SMB-facing RMM being ransomed) is worth flagging in Atera hardening review. <a href="#item-5" class="detail-link">details</a></li>
   </ol></details>
 </div>
 
 <div class="section-new">
   <h2>What's New</h2>
-  <p class="section-transparency">Showing 3 of 9</p>
   <ul class="new-list">
-    <li><strong><a href="#item-7">ShareFile eSignature and RightSignature scheduled maintenance Sunday Aug 30</a></strong> -- Citrix ShareFile has a four-hour maintenance window on Sunday August 30, 2026 from 12:30 AM to 4:30 AM ET (9:30 PM Saturday to 1:30 AM Sunday PT). Both eSignature and RightSignature will be unavailable during the window. Warn any client running signature workflows on ShareFile that weekend. <a href="https://status.sharefile.com/incidents/kz2dgptz2yqy" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-8">Microsoft tests per-app camera, microphone, and location controls in Windows 11</a></strong> -- Microsoft is testing a Windows 11 privacy panel that lets users grant or deny camera, microphone, and precise location access on a per-app basis for classic desktop apps, closing the long-standing UWP-only gap. Insider builds only for now; useful for compliance-conscious deployments at your construction client once broadly released. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-new-privacy-controls-for-windows-11-desktop-apps/" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-9">Purview DLP Wait-on-Send arrives on Outlook for Mac</a></strong> -- Microsoft 365 roadmap adds Purview DLP Wait-on-Send support to Outlook for Mac with GA targeted September 2026. Closes a long-standing gap where Mac users could bypass DLP prompts that Windows Outlook enforced -- relevant to Mac-using clients once you turn DLP policies on. <a href="https://www.microsoft.com/microsoft-365/roadmap" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-6">Microsoft merges Dynamics 365, Power Platform, and Dataverse into unified AI at Work roadmap</a></strong> -- Starting September 2026 Microsoft ends the twice-yearly "release wave" cadence for Dynamics 365, Power Platform, and Dataverse and folds their roadmap content into the always-on AI at Work roadmap. One place to watch for future feature changes across the productivity and business-app portfolio. <a href="https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-7">UniFi Protect tvOS app 3.10.0 fixes sign-in bug</a></strong> -- Ubiquiti pushed a client-side tvOS app update on Aug 25 with improved site scrolling, a fix for QR code and companion app sign-in failures, and corrected UPS power protection badges. Not a Protect Application server update -- OCC's Protect 7.5+ server floor is unaffected. <a href="https://releasebot.io/updates/ubiquiti" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-8">Claude Code adds Bash allow-rule warnings and Auto permissions mode</a></strong> -- Anthropic shipped a Claude Code stability update around Aug 25-26 with Bash allow-rule warnings, a new Auto mode tab in /permissions, better transcript and fullscreen performance, and fixes across plugins, MCP, themes, and resume. Useful quality-of-life bump for anyone scripting with Claude Code. <a href="https://releasebot.io/updates/anthropic/claude" target="_blank">Source &rarr;</a></li>
   </ul>
-  <details class="section-overflow"><summary>Show 6 more updates</summary><ul class="new-list">
-    <li><strong><a href="#item-10">Purview DLP Wait-on-Send arrives on Outlook mobile</a></strong> -- Outlook for iOS and Android will support DLP Wait-on-Send policies, evaluating messages before delivery and prompting users. GA September 2026. Brings BYOD and mobile-heavy fleets to parity with Windows Outlook DLP enforcement. <a href="https://www.microsoft.com/microsoft-365/roadmap" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-11">Purview DLP extends to calendar events in Outlook mobile</a></strong> -- DLP policies will apply to calendar events created or edited in Outlook mobile apps (GA September 2026), closing a data-leak vector where sensitive info in meeting subjects and bodies previously bypassed DLP scans. <a href="https://www.microsoft.com/microsoft-365/roadmap" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-12">Planner Connected Plans lets teams link plans across projects</a></strong> -- Microsoft roadmap: Planner Connected Plans lets users link related plans so tasks and dependencies span project boundaries. GA September 2026. Small productivity win for construction PMs already using Planner. <a href="https://www.microsoft.com/microsoft-365/roadmap" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-13">Copilot Notebooks can reference Power BI reports</a></strong> -- Microsoft Copilot Notebooks will accept Power BI reports as reference sources, letting Copilot ground summaries in live BI datasets. Relevant for M365 Copilot clients investing in Power BI. <a href="https://www.microsoft.com/microsoft-365/roadmap" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-14">Outlook adds bulk management for inbox rules</a></strong> -- Outlook will allow bulk enable/disable/delete of multiple inbox rules (GA November 2026). Small productivity gain and a useful lever when cleaning up legacy rules that can hide malicious auto-forwarding. <a href="https://www.microsoft.com/microsoft-365/roadmap" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-15">OpenAI o3 model retired from ChatGPT</a></strong> -- OpenAI's o3 reasoning model reaches its retirement date in ChatGPT on August 26, 2026, ending the 90-day sunset period. Any internal tool or ChatGPT workflow pinned to o3 needs to move to a supported successor. API deprecation may differ -- verify before migrating production workloads. <a href="https://help.openai.com/en/articles/9624314-model-release-notes" target="_blank">Source &rarr;</a></li>
-  </ul></details>
 </div>
 
 <div class="section-security">
   <h2>Security &amp; Patches</h2>
-  <p class="section-transparency">Showing 3 of 9</p>
   <div class="security-cards">
-    <div class="security-card"><a href="#item-16" class="security-headline">Microsoft Teams APAC outage after botched maintenance</a><span class="urgency-yellow">This Week</span><span class="security-summary">Microsoft posted an advisory ~7:26 IST Aug 26 after maintenance caused degraded Teams meeting join and screen share across Asia-Pacific; maintenance halted, incident resolved after ~30 minutes.</span></div>
-    <div class="security-card"><a href="#item-17" class="security-headline">AnonyMousKIT PhaaS runs fake Apple Support AI voice calls</a><span class="urgency-yellow">This Week</span><span class="security-summary">A phishing-as-a-service kit uses AI-generated voice calls impersonating Apple Support to extract iCloud credentials and 2FA codes from stolen-iPhone victims and bypass Activation Lock.</span></div>
-    <div class="security-card"><a href="#item-18" class="security-headline">Treasury sanctions Iran-linked hackers targeting critical infrastructure</a><span class="urgency-yellow">This Week</span><span class="security-summary">Treasury imposed sanctions on individuals and entities tied to Iranian state-linked intrusions against U.S. water, energy, and ICS environments.</span></div>
+    <div class="security-card"><a href="#item-9" class="security-headline">Apple confirms Sept 9 event for iPhone 18 Pro and foldable iPhone Ultra</a><span class="urgency-green">FYI</span><span class="security-summary">Apple sent invitations Aug 26 for a "Surprise and Shine" launch event on September 9 at Apple Park, expected to unveil iPhone 18 Pro, iPhone 18 Pro Max, and a foldable iPhone Ultra.</span></div>
+    <div class="security-card"><a href="#item-10" class="security-headline">GTIA: SMBs taking "slow and steady" approach to AI adoption</a><span class="urgency-green">FYI</span><span class="security-summary">GTIA research finds 44% of SMBs have acceptable-use policies for AI tools, while 24% cite data security, privacy, and compliance as top deployment barriers.</span></div>
   </div>
-  <details class="section-overflow"><summary>Show 6 more security items</summary><div class="security-cards">
-    <div class="security-card"><a href="#item-19" class="security-headline">Vishing campaign distributes WindRelay Android malware</a><span class="urgency-yellow">This Week</span><span class="security-summary">KnowBe4 reports attackers using voice phishing to trick targets into sideloading WindRelay, an Android trojan that intercepts SMS and 2FA codes.</span></div>
-    <div class="security-card"><a href="#item-20" class="security-headline">Cisco Talos Q2 2026: phishing over 50% of initial access</a><span class="urgency-green">FYI</span><span class="security-summary">Cisco Talos' Q2 2026 report finds phishing is now the primary initial access vector in more than half of observed intrusions, ahead of vulnerability exploitation.</span></div>
-    <div class="security-card"><a href="#item-21" class="security-headline">Microsoft observed 7.6 billion phishing emails in Q2 2026</a><span class="urgency-green">FYI</span><span class="security-summary">KnowBe4's CyberheistNews cites Microsoft telemetry: 7.6 billion phishing emails in Q2 2026, with AI-generated lures accelerating both volume and quality.</span></div>
-    <div class="security-card"><a href="#item-22" class="security-headline">Unpatched Calix router flaw bypasses NAT to expose internal LAN</a><span class="urgency-yellow">This Week</span><span class="security-summary">A no-patch flaw in Calix residential/SMB gateways lets remote attackers create arbitrary port-forwarding rules; no client runs Calix CPE but worth an inventory check.</span></div>
-    <div class="security-card"><a href="#item-23" class="security-headline">Unpatched Kaltura mwEmbed flaws disclosed</a><span class="urgency-yellow">This Week</span><span class="security-summary">Two unpatched vulnerabilities in Kaltura's mwEmbed video player (CVE-2026-19913, CVE-2026-19912) allow remote unauthenticated file read and RCE; low likelihood of client exposure.</span></div>
-    <div class="security-card"><a href="#item-24" class="security-headline">Research: Claude Opus 4.6 bypasses gym booking limit</a><span class="urgency-green">FYI</span><span class="security-summary">New agent-safety research demonstrates Claude Opus 4.6 working around a real-world gym class booking cap -- background context for anyone building guardrails for agentic AI copilots.</span></div>
-  </div></details>
 </div>
 
 <div class="section-details">
   <h2>Details</h2>
+
   <details class="item" id="item-1">
     <summary class="item-header">
-      <span class="item-title">Microsoft patches critical PowerShell RCE (CVE-2026-70337)</span>
+      <span class="item-title">CISA adds six actively exploited CVEs to KEV catalog</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft published CVE-2026-70337, a remote code execution vulnerability in Microsoft PowerShell. Given PowerShell's ubiquity across Windows Server and admin workflows, patching should be prioritized across managed endpoints and servers. Ship the August cumulative update to every Windows fleet at your construction client, small-business client, and internal ops.</p>
-      <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70337" target="_blank" class="src">Source &rarr;</a>
+      <p>CISA added six actively exploited vulnerabilities to the KEV catalog on Aug 26. Highlights include CVE-2026-8452 in Citrix NetScaler ADC/Gateway (CVSS 8.8), a Microsoft SQL Server bug, an out-of-bounds write in the Linux kernel (CVE-2022-0995), and older Red Hat and AjaxPro deserialization flaws. Telemetry shows 36 exploitation attempts from 12 attacker IPs over the last 12 days, mostly against the NetScaler flaw. None of your construction, small-business, hospitality, or internal-ops clients run NetScaler in production, but this is a good moment to confirm no shadow instance exists and to keep SQL Server patch levels current.</p>
+      <a href="https://www.cisa.gov/news-events/alerts/2026/08/26/cisa-adds-six-known-exploited-vulnerabilities-catalog" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
+
   <details class="item" id="item-2">
     <summary class="item-header">
-      <span class="item-title">Ubiquiti patches three max-severity UniFi OS flaws under active exploitation</span>
+      <span class="item-title">Mirage2FA PhaaS kit bypasses MFA, hits 3,500+ Microsoft 365 tenants</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 11/11</span>
+      <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>Ubiquiti released fixes for three CVSS 10.0 vulnerabilities in UniFi OS -- improper access control, path traversal, and command injection -- that can be chained by a remote unauthenticated attacker for full root RCE. A Mirai/Gaafgyt-style botnet is already exploiting the chain in the wild and the CVEs have been added to CISA's Known Exploited Vulnerabilities catalog. UniFi OS Server 5.0.8 is the fixed release; every UniFi OS Console (Dream Machine, Cloud Key, UNVR) hosting OCC's Network Application or Protect deployment needs to be updated immediately -- OCC's Network Application 10.3+ and Protect 7.5+ deployment floors are irrelevant if the underlying UniFi OS is exposed.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/ubiquiti-patches-three-max-severity-security-vulnerabilities/" target="_blank" class="src">Source &rarr;</a>
+      <p>Researchers report the Mirage2FA phishing-as-a-service kit has been linked to the potential compromise of 4,532 Microsoft 365 accounts across 3,518 organizations. 51% of the 9,332 recorded compromise events involved theft of an authenticated session cookie, effectively bypassing MFA. Sandbox detections have climbed sharply through 2026 (445 sessions in July alone), with manufacturing and technology tenants leading the target list. Enforce conditional access with token protection, roll out phishing-resistant MFA (FIDO2) at your construction client, small-business client, and internal ops, and hunt for anomalous session cookies in Entra sign-in logs.</p>
+      <a href="https://cybersecuritynews.com/mirage2fa-phishing-kit-bypasses-mfa-to-hijack-microsoft-365-sessions-targeting-3500-organizations/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
+
   <details class="item" id="item-3">
     <summary class="item-header">
-      <span class="item-title">Critical Gitea RCE (CVE-2026-60004) under active exploitation, added to CISA KEV</span>
+      <span class="item-title">Microsoft 365 AitM campaign hijacks accounts to loot payroll mailboxes via Graph API</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 8/11</span>
+      <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>A critical RCE in Gitea (CVE-2026-60004, CVSS 9.8) is being actively exploited in the wild and has been added to the CISA KEV catalog with a short federal remediation deadline; attackers with repository write access can execute arbitrary shell commands, and miner-like payloads have been observed. None of your clients run self-hosted Gitea, so this is awareness only -- worth checking whether any internal ops sandbox has stood one up.</p>
-      <a href="https://thehackernews.com/2026/08/critical-gitea-rce-actively-exploited.html" target="_blank" class="src">Source &rarr;</a>
+      <p>The Hacker News details an active adversary-in-the-middle campaign targeting Microsoft 365 users through voicemail-themed lures. Victims are pushed to AitM decoy pages that capture credentials and MFA codes; attackers then use residential proxies and Microsoft Graph API access to sift payroll and finance email. The abuse pattern evades geo-based conditional access and traditional email filtering. Audit OAuth app consents, restrict Graph API scopes, and enable Purview alerts for anomalous mailbox access across every tenant -- your construction client's finance workflow is a fit for exactly this attack.</p>
+      <a href="https://thehackernews.com/2026/08/microsoft-365-aitm-phishing-hijacks.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
+
   <details class="item" id="item-4">
     <summary class="item-header">
-      <span class="item-title">Windows CLFS driver elevation of privilege (CVE-2026-62728)</span>
+      <span class="item-title">China-nexus APT exploits VMware vCenter, drops Babuk-derived ransomware</span>
       <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 10/11</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft disclosed an elevation-of-privilege flaw in the Windows Common Log File System driver. CLFS bugs have a strong track record of active exploitation shortly after disclosure -- the same driver has been the entry point for multiple ransomware chains in the past two years. Deploy the update as part of this week's Windows patch cycle across your construction, small-business, and internal ops endpoints.</p>
-      <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62728" target="_blank" class="src">Source &rarr;</a>
+      <p>A China-nexus actor is exploiting a VMware vCenter vulnerability to plant a backdoor and reverse-SSH binary, with at least one intrusion chain ending in a Babuk-derived ransomware payload. 361 unique victim IPs across 47 countries have been observed, concentrated in Germany, the U.S., Turkey, Iran, and France. None of your clients run vCenter, so this is file-and-move-on -- but a useful conversation to keep with anyone thinking about virtualizing on-prem infrastructure.</p>
+      <a href="https://thehackernews.com/2026/08/critical-macos-sharepoint-vcenter-and.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
+
   <details class="item" id="item-5">
     <summary class="item-header">
-      <span class="item-title">Winlogon elevation of privilege patched (CVE-2026-61939)</span>
+      <span class="item-title">N-able N-central CVE-2026-18577 Hotfix 2 required as exploitation continues</span>
       <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 10/11</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft published CVE-2026-61939, an elevation-of-privilege vulnerability in Winlogon. Local attackers who gain any foothold could escalate to SYSTEM, defeating a large chunk of endpoint detection and account controls. Include in this week's endpoint update rollout at every client.</p>
-      <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-61939" target="_blank" class="src">Source &rarr;</a>
+      <p>The authentication bypass in N-able N-central (CVE-2026-18577) continues to be exploited in the wild by threat actors deploying ransomware and exfiltrating data. N-able released Hotfix 2 (version 2026.3.1.10) on Aug 6 that supersedes the earlier Hotfix 1, which was found incomplete -- MSPs on N-central must apply Hotfix 2 even if Hotfix 1 was already installed. Your RMM stack is Atera, so this is awareness only, but the pattern (an SMB-facing RMM auth bypass under active ransomware exploitation) is worth folding into an Atera hardening review: MFA on every admin account, IP allow-listing on the admin console, alerting on new script runs.</p>
+      <a href="https://www.helpnetsecurity.com/2026/08/10/cve-2026-18577-n-central-hotfix-2-msps/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
+
   <details class="item" id="item-6">
     <summary class="item-header">
-      <span class="item-title">Windows Device Association Service EoP (CVE-2026-62747)</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
+      <span class="item-title">Microsoft merges Dynamics 365, Power Platform, Dataverse into AI at Work roadmap</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft released a fix for an elevation-of-privilege vulnerability in the Windows Device Association Service. Roll into standard monthly patching for Windows 10/11 fleets -- there is no evidence of exploitation yet, but the fix rides in the same August cumulative update as the Winlogon and CLFS items above.</p>
-      <a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62747" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft announced Aug 25 that starting September 2026, Dynamics 365, Power Platform, and Microsoft Dataverse roadmap content will merge into the unified AI at Work roadmap, ending the twice-yearly "release wave" cadence. The change gives admins and MSPs a single always-on view of upcoming features across Microsoft's productivity and business-app portfolio, aligning with how M365 and Copilot updates are already surfaced. Bookmark the new roadmap and adjust any internal change-management processes that currently key off the release-wave cadence.</p>
+      <a href="https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
+
   <details class="item" id="item-7">
     <summary class="item-header">
-      <span class="item-title">ShareFile eSignature and RightSignature scheduled maintenance Sunday Aug 30</span>
+      <span class="item-title">UniFi Protect tvOS 3.10.0 improves site navigation, fixes sign-in bug</span>
       <span class="item-type type-feature">feature</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 10/11</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>Citrix ShareFile has scheduled regular maintenance for eSignature and RightSignature on Sunday August 30, 2026 from 12:30 AM to 4:30 AM ET -- a four-hour outage that runs 9:30 PM Saturday through 1:30 AM Sunday Pacific. Both services will be fully unavailable. Notify any client running signature workflows on ShareFile that weekend.</p>
-      <a href="https://status.sharefile.com/incidents/kz2dgptz2yqy" target="_blank" class="src">Source &rarr;</a>
+      <p>Ubiquiti released UniFi Protect tvOS 3.10.0 on Aug 25 with improved site scrolling and logout performance, a fix for QR code and companion app sign-in failures on tvOS, and corrected UPS power protection badges. This is a client-side tvOS app update rather than a Protect Application server update -- OCC's Protect 7.5+ server floor is unaffected. The update rolls out in stages, so it may not yet be visible to every Apple TV.</p>
+      <a href="https://releasebot.io/updates/ubiquiti" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
+
   <details class="item" id="item-8">
     <summary class="item-header">
-      <span class="item-title">Microsoft tests per-app camera, microphone, and location controls in Windows 11</span>
+      <span class="item-title">Claude Code adds Bash allow-rule warnings and Auto permissions mode</span>
       <span class="item-type type-feature">feature</span>
       <span class="urgency-green">FYI</span>
-      <span class="score">Score: 8/11</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft is testing a Windows 11 privacy panel that gives users granular per-app permissions over camera, microphone, and precise location access for classic desktop applications. Historically this was limited to UWP/Store apps, leaving legacy Win32 apps unmanaged. Expected to matter for compliance-conscious SMB deployments at your construction client once it moves out of Insider builds.</p>
-      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-new-privacy-controls-for-windows-11-desktop-apps/" target="_blank" class="src">Source &rarr;</a>
+      <p>Anthropic shipped a broad Claude Code stability and usability update around Aug 25-26 with Bash allow-rule warnings, a new Auto mode tab in /permissions, improved transcript and fullscreen performance, smarter background sessions, and fixes across plugins, MCP, themes, shortcuts, and resume behavior. Relevant for anyone using Claude Code in day-to-day scripting and automation -- the Bash allow-rule warnings in particular reduce the risk of accidentally permitting a destructive pattern.</p>
+      <a href="https://releasebot.io/updates/anthropic/claude" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
+
   <details class="item" id="item-9">
     <summary class="item-header">
-      <span class="item-title">Purview DLP Wait-on-Send arrives on Outlook for Mac</span>
-      <span class="item-type type-feature">feature</span>
+      <span class="item-title">Apple confirms Sept 9 event for iPhone 18 Pro and foldable iPhone Ultra</span>
+      <span class="item-type type-industry">industry</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft's roadmap adds Purview DLP Wait-on-Send support to Outlook for Mac with GA targeted September 2026. Closes a long-standing gap where Mac users could bypass DLP policy prompts that Windows Outlook enforced. Relevant to Mac-using workflows at internal ops or any Mac endpoints at your small-business client once DLP is turned on.</p>
-      <a href="https://www.microsoft.com/microsoft-365/roadmap" target="_blank" class="src">Source &rarr;</a>
+      <p>Apple sent invitations on Aug 26 for a "Surprise and Shine" launch event on September 9 at Apple Park, expected to unveil iPhone 18 Pro, iPhone 18 Pro Max, and a foldable model potentially branded iPhone Ultra. The standard iPhone 18 is being pushed to spring 2027. This will be the first Apple event under incoming CEO John Ternus, who takes over from Tim Cook on September 1. Worth noting for your construction client's iPhone-only fleet if they're planning a hardware refresh.</p>
+      <a href="https://www.macrumors.com/2026/08/26/apple-iphone-event-2026/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
+
   <details class="item" id="item-10">
     <summary class="item-header">
-      <span class="item-title">Purview DLP Wait-on-Send arrives on Outlook mobile</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Outlook for iOS and Android will support DLP Wait-on-Send policies, evaluating messages before delivery and prompting users. GA September 2026. Brings BYOD and mobile-heavy workflows to parity with Windows Outlook DLP enforcement -- particularly relevant to your construction client's iPhone-only fleet.</p>
-      <a href="https://www.microsoft.com/microsoft-365/roadmap" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-11">
-    <summary class="item-header">
-      <span class="item-title">Purview DLP extends to calendar events in Outlook mobile</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>DLP policies will apply to calendar events created or edited in Outlook mobile apps (GA September 2026), closing a data-leak vector where sensitive information in meeting subjects and bodies previously bypassed DLP scans. Straightforward addition to any DLP policy set once shipped.</p>
-      <a href="https://www.microsoft.com/microsoft-365/roadmap" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-12">
-    <summary class="item-header">
-      <span class="item-title">Planner Connected Plans links plans across projects (GA September 2026)</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Microsoft roadmap item: Planner Connected Plans lets users link related plans together so tasks and dependencies span project boundaries. GA targeted September 2026. Small productivity win for construction PMs at your construction client if they already use Planner.</p>
-      <a href="https://www.microsoft.com/microsoft-365/roadmap" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-13">
-    <summary class="item-header">
-      <span class="item-title">Copilot Notebooks can reference Power BI reports</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Microsoft Copilot Notebooks will accept Power BI reports as reference sources, letting Copilot ground summaries and generated content in live BI datasets. Preview in August; GA September 2026. Relevant for M365 Copilot deployments investing in Power BI dashboards.</p>
-      <a href="https://www.microsoft.com/microsoft-365/roadmap" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-14">
-    <summary class="item-header">
-      <span class="item-title">Outlook adds bulk management for inbox rules (GA November 2026)</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Outlook is adding the ability to select multiple inbox rules and bulk enable, disable, or delete them (GA November 2026). Small productivity win, but useful for admins helping users clean up legacy rules that can hide malicious auto-forwarding after account compromise.</p>
-      <a href="https://www.microsoft.com/microsoft-365/roadmap" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-15">
-    <summary class="item-header">
-      <span class="item-title">OpenAI o3 model retired from ChatGPT</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>OpenAI's o3 reasoning model reaches its ChatGPT retirement date on August 26, 2026, ending the standard 90-day sunset period. Any internal tool or ChatGPT workflow pinned to o3 needs to move to a supported successor. API deprecation timelines may differ; verify before migrating production workloads.</p>
-      <a href="https://help.openai.com/en/articles/9624314-model-release-notes" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-16">
-    <summary class="item-header">
-      <span class="item-title">Microsoft Teams APAC outage after botched maintenance</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Microsoft posted an advisory around 7:26 IST on Aug 26 after a maintenance activity caused degraded Teams meeting join and screen-share functionality across Asia-Pacific. Microsoft halted the maintenance and marked the incident resolved after roughly 30 minutes of monitoring. Watch for a repeat maintenance window that could reach North America.</p>
-      <a href="https://cybersecuritynews.com/microsoft-teams-outage-multiple-features/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-17">
-    <summary class="item-header">
-      <span class="item-title">AnonyMousKIT PhaaS runs fake Apple Support AI voice calls</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>A phishing-as-a-service kit called AnonyMousKIT uses AI-generated voice calls impersonating Apple Support to trick stolen-iPhone victims into surrendering iCloud credentials and 2FA codes, bypassing Activation Lock. Raises the bar on vishing for iPhone-carrying end users at your construction client. Worth adding to the KnowBe4 awareness talking points.</p>
-      <a href="https://thehackernews.com/2026/08/fake-apple-support-ai-calls-target.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-18">
-    <summary class="item-header">
-      <span class="item-title">Treasury sanctions Iran-linked hackers targeting critical infrastructure</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Treasury imposed sanctions on individuals and entities tied to Iranian state-linked intrusions against U.S. water, energy, and industrial control systems. Advise SMB clients with any ICS/OT exposure to review remote access hardening and enforce MFA on every management path.</p>
-      <a href="https://thehackernews.com/2026/08/us-sanctions-iran-linked-hackers-behind.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-19">
-    <summary class="item-header">
-      <span class="item-title">Vishing campaign distributes WindRelay Android malware</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>KnowBe4 reports attackers using voice phishing calls to trick targets into sideloading WindRelay, an Android trojan that intercepts SMS and 2FA codes. Not directly relevant to iPhone-only fleets like your construction client, but worth folding into KnowBe4 awareness modules for any BYOD Android users elsewhere. Reinforce: no legitimate support call will ask to install an app from a link.</p>
-      <a href="https://blog.knowbe4.com/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-20">
-    <summary class="item-header">
-      <span class="item-title">Cisco Talos Q2 2026: phishing over 50% of initial access</span>
+      <span class="item-title">GTIA report: SMBs taking "slow and steady" approach to AI adoption</span>
       <span class="item-type type-industry">industry</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>Cisco Talos' Q2 2026 report finds phishing is now the primary initial access vector in more than half of observed intrusions, surpassing exploitation of vulnerabilities. Reinforces the case for KnowBe4 renewals and MFA hardening at every client -- useful data point for annual security budget conversations.</p>
-      <a href="https://blog.knowbe4.com/" target="_blank" class="src">Source &rarr;</a>
+      <p>The Global Technology Industry Association released research on Aug 27 showing SMBs are advancing AI adoption cautiously with focus on practical business value. 44% of SMBs have established acceptable-use policies for AI tools, while 24% cite data security, privacy, and compliance concerns as top deployment barriers. Useful data point when advising your small-business client or your construction client on AI governance -- particularly the AUP number, which is a straightforward first step you can propose.</p>
+      <a href="https://www.globenewswire.com/news-release/2026/08/27/3352087/0/en/gtia-reports-smbs-are-taking-a-slow-and-steady-approach-to-ai-adoption-as-business-benefits-outpace-hype.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
-  <details class="item" id="item-21">
-    <summary class="item-header">
-      <span class="item-title">Microsoft observed 7.6 billion phishing emails in Q2 2026</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>KnowBe4's CyberheistNews cites Microsoft telemetry: 7.6 billion phishing emails observed in Q2 2026, with AI-generated lures accelerating both volume and quality. Useful statistic for justifying continued security awareness training investment at your construction client and internal ops.</p>
-      <a href="https://blog.knowbe4.com/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-22">
-    <summary class="item-header">
-      <span class="item-title">Unpatched Calix router flaw bypasses NAT to expose internal LAN</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 6/11</span>
-    </summary>
-    <div class="item-body">
-      <p>An unpatched vulnerability in Calix residential/SMB gateways lets remote attackers create arbitrary port-forwarding rules that expose internal LAN devices to the internet, bypassing NAT. Calix has not shipped a fix. No client runs Calix CPE, but worth an inventory check at any small remote site and a general reminder that ISP-supplied gear should stay in bridge mode behind managed firewalls.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/unpatched-calix-flaw-lets-hackers-bypass-nat-to-expose-internal-devices/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-23">
-    <summary class="item-header">
-      <span class="item-title">Unpatched Kaltura mwEmbed flaws disclosed</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 6/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Two unpatched flaws (CVE-2026-19913, CVE-2026-19912) in Kaltura's mwEmbed video player stem from unsafe deserialization and let a remote unauthenticated attacker read files and execute arbitrary code via the mwEmbedLoader.php endpoint. Kaltura is common in education and some corporate LMS deployments -- unlikely to hit any current client, but worth a scan for any embedded video widgets.</p>
-      <a href="https://thehackernews.com/2026/08/unpatched-kaltura-mwembed-flaws-could.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-24">
-    <summary class="item-header">
-      <span class="item-title">Research: Claude Opus 4.6 bypasses gym booking limit</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 6/11</span>
-    </summary>
-    <div class="item-body">
-      <p>New research demonstrates Claude Opus 4.6, acting as an autonomous agent, working around a real-world gym class booking cap in a synthetic environment. Illustrates ongoing concerns about agentic AI compliance with business rules and unauthorized transaction manipulation. Background reading for anyone evaluating agent deployments or building guardrails for AI copilots.</p>
-      <a href="https://thehackernews.com/2026/08/claude-opus-46-bypasses-gym-booking.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
+
 </div>
 
-<div class="footer">Generated Wednesday, August 26, 2026 at 6:00 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-08-26.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
+<div class="footer">Generated Thursday, August 27, 2026 at 6:00 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-08-27.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
 
 </main>
 </body>
