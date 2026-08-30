@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<title>Morning Briefing -- Saturday, August 29, 2026</title>
+<title>Morning Briefing -- Sunday, August 30, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -14,62 +14,52 @@
 <main class="briefing-content">
 
 <div class="page-header">
-  <h1>Morning Briefing -- Saturday, August 29, 2026</h1>
+  <h1>Morning Briefing -- Sunday, August 30, 2026</h1>
   <p class="page-meta">Microsoft &bull; Security &amp; Compliance &bull; Firewall / VPN / Networking &bull; Servers/NAS &bull; Workstations &amp; Mobile &bull; Peripherals &amp; AV &bull; RMM &amp; Remote Access &bull; Construction &amp; Specialty Software &bull; General Tech &amp; AI &bull; Pacific Time</p>
 </div>
 
 <div class="section-actions">
   <h2>Today's Actions</h2>
-  <p class="section-transparency">Showing 3 of 9</p>
   <ol class="action-list">
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Verify your construction client's UniFi consoles are on the fixed builds in Ubiquiti Security Advisory Bulletin 067 -- three CVSS 10.0 flaws hit UniFi Protect (fix 7.2.105), UniFi OS (CRLF auth bypass CVE-2026-77550), and UniFi Talk (fix 5.3.2), with 21 of 22 issues rated 9.0+. <a href="#item-1" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Send a phishing alert about the TerminalFix ClickFix campaign that uses fake CAPTCHA prompts to trick users into pasting PowerShell commands, and confirm PowerShell and Run-dialog logging is on for your construction, small-business, and internal-ops tenants. <a href="#item-2" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> File CISA's KEV additions for ownCloud, Linux Kernel, and JFrog Artifactory -- no client runs these, awareness only, but keep watching for downstream Rhysida/ShinyHunters activity. <a href="#item-3" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Verify your construction client's UniFi consoles are on the fixed builds from Ubiquiti Security Advisory Bulletin 067 -- 22 vulnerabilities with three CVSS 10.0 flaws (UniFi Protect fix 7.2.105, UniFi OS Server CRLF auth bypass CVE-2026-77550, UniFi Talk fix 5.3.2) and 21 of 22 issues rated 9.0+. <a href="#item-1" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Send a phishing alert about Microsoft's TerminalFix ClickFix campaign that uses fake Cloudflare CAPTCHA prompts to push users into pasting commands into Windows Terminal or PowerShell, and confirm Terminal/PowerShell/Run-dialog logging is on across your construction, small-business, and internal-ops tenants. <a href="#item-2" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> File PaperCut's active zero-day exploitation of CVE-2026-81578 and CVE-2026-82078 (chained unauth RCE, ~47% of tracked servers still unpatched) -- no client runs PaperCut, awareness only for the pattern of slow patch adoption on print-management servers. <a href="#item-3" class="detail-link">details</a></li>
   </ol>
-  <details class="section-overflow"><summary>Show 6 more actions</summary><ol class="action-list" start="4">
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> File the PaperCut NG/MF second emergency patch -- attackers found bypasses for the first fix, no client runs PaperCut but the pattern of bypassed first-round fixes is worth noting. <a href="#item-4" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> File the GiveWP WordPress donation plugin CVSS 10.0 unauthenticated RCE -- no client uses GiveWP, awareness only for nonprofit or SMB WordPress environments. <a href="#item-5" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> File the 8,300+ Gitea self-hosted servers under active RCE exploitation -- no client runs Gitea, awareness only. <a href="#item-6" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-yellow">This Week</span> Confirm Microsoft Edge is at the Aug 28 build across your construction, small-business, and internal-ops fleets -- 175 CVEs including four native RCEs (CVE-2026-66323/66798/70341/72984) and an LLM prompt-injection spoof; force a browser restart. <a href="#item-7" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-yellow">This Week</span> File the Autodesk AutoCAD CVE-2026-0875 out-of-bounds write via malicious MODEL file (fix Shared Components 2026.6) -- no confirmed AutoCAD deployment at your clients, but flag for any construction subcontractor workflows. <a href="#item-8" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-yellow">This Week</span> Notify users at your construction, small-business, and internal-ops tenants about the .vu (Vanuatu) TLD phishing surge and add .vu to Defender for Office 365 and Barracuda URL block rules. <a href="#item-9" class="detail-link">details</a></li>
-  </ol></details>
 </div>
 
 <div class="section-new">
   <h2>What's New</h2>
   <p class="section-transparency">Showing 3 of 8</p>
   <ul class="new-list">
-    <li><strong><a href="#item-10">M365 Roadmap adds Agent Sharing, Outlook offline email admin policy, Planner conditional coloring</a></strong> -- New Aug 27 roadmap items include Agent Sharing amongst Makers (569475), Campaigns Hub in Viva Engage/Teams Mobile (570157), Outlook Offline Email Settings admin policy (570069), Planner Conditional Coloring (569476), and a Data Quality Report for Profile Data (568937). The Outlook offline policy is worth reviewing for mobile-worker fleets. <a href="https://www.microsoft.com/microsoft-365/roadmap" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-11">Entra August 2026: SSO Admin Control and Exchange Writeback via Cloud Sync</a></strong> -- Microsoft's Entra August 2026 update introduces registry-based SSO Admin Control (auto-accepts SSO permissions on managed Windows devices) and Exchange Writeback via Entra Cloud Sync, moving Source of Authority for a synced mailbox's Exchange attributes to Exchange Online. Relevant for any hybrid tenant planning an AD Connect to Cloud Sync migration. <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/whats-new-in-microsoft-entra-august-2026/4545172" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-12">Intune August 2026: Autopilot device association GA and macOS 27 App Settings</a></strong> -- Intune's August 2026 release makes Windows Autopilot device association generally available (associate devices with a tenant before enrollment), adds native App Settings configuration for macOS 27+, and improves Remote Help. Autopilot device association matters for your construction client's ongoing Intune rollout. <a href="https://www.neowin.net/news/here-are-all-the-new-features-microsoft-added-to-intune-in-august-2026/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-4">Windows 11 KB5120998 preview ships 35 fixes, unlocks taskbar repositioning, retires WMIC</a></strong> -- Microsoft's August 2026 non-security preview cumulative (build 26100.9278/26200.9278) delivers the long-requested taskbar move-to-top/left/right, improved Start menu, indexed folder search, and app-Windows Update coordination. WMIC is being removed from 24H2/25H2 starting this month and will no longer be available as a Feature on Demand (WMI itself remains supported) -- audit scripts before the September rollout. <a href="https://support.microsoft.com/en-us/servicing/os/windows-11/2026/08/kb5120998-windows-11-24h2-25h2-update" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-5">Microsoft Entra August 2026 adds Windows SSO auto-approval and Exchange writeback via Cloud Sync</a></strong> -- The August Entra release GAs a registry-based SSO auto-approve on managed Windows devices, Cloud Sync writeback of key Exchange Online attributes to on-prem AD, and Lifecycle Workflows What-if simulation mode with up to 10 configurable attributes. Public preview adds AD device sync via Cloud Sync, unsponsored guest cleanup, and GPO backup in Entra Domain Services -- worth reviewing for any hybrid tenant planning an AD Connect to Cloud Sync migration. <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/whats-new-in-microsoft-entra-august-2026/4545172" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-6">Intune service release 2608 GAs Autopilot device association and unattended Remote Help</a></strong> -- Intune's August 2026 (2608) release makes Windows Autopilot device association generally available (associate devices with a tenant before enrollment via TPM attestation), adds unattended Remote Help with remote sign-in to idle Windows devices, native macOS 27+ App Settings configuration, and OS-version assignment filters. Autopilot device association matters for your construction client's ongoing Intune rollout. <a href="https://techcommunity.microsoft.com/blog/microsoftintuneblog/what%E2%80%99s-new-in-microsoft-intune-%E2%80%93-august/4537393" target="_blank">Source &rarr;</a></li>
   </ul>
   <details class="section-overflow"><summary>Show 5 more updates</summary><ul class="new-list">
-    <li><strong><a href="#item-13">Apple unveils Mac mini (M6 / M5 Pro) and Mac Studio (M5 Max / M5 Ultra), ships Sept 2</a></strong> -- Apple announced refreshed Mac mini and Mac Studio desktops with new M-series silicon plus updated Magic Keyboards. Pre-orders are open with deliveries starting Tuesday, September 2 -- relevant for SMB refresh planning and standard-image updates. <a href="https://www.macrumors.com/2026/08/28/apple-huge-week/" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-14">What's New in Microsoft Security August 2026 recap posted</a></strong> -- Microsoft's monthly security recap covers AI agent protection, Entra tenant governance, Windows Autopilot device association, and Purview auto-labeling improvements shipped in August. Useful checklist for MSP monthly security reviews with SMB clients. <a href="https://www.microsoft.com/en-us/security/blog/2026/08/27/whats-new-in-microsoft-security-august-2026/" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-15">Exchange Online enables cross-tenant message recall</a></strong> -- Exchange Online now supports cross-tenant message recall when the receiving tenant opts in and adds the sender to its allow list. Review the opt-in setting and update recall guidance for staff. <a href="https://changepilot.cloud/blog/top-microsoft-365-message-center-roadmap-updates-august-2026" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-16">Teams external-domain blocks now managed via Defender Tenant Allow/Block List</a></strong> -- Security admins can now manage blocked external Teams domains through the Tenant Allow/Block List (TABL) in the Defender portal, consolidating collaboration blocklists with existing email TABL entries. Update runbooks that used the Teams admin center for external-domain blocks. <a href="https://changepilot.cloud/blog/top-microsoft-365-message-center-roadmap-updates-august-2026" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-17">ChatGPT adds multi-account Google connectors for Gmail, Calendar, Contacts</a></strong> -- OpenAI enabled connecting multiple Google accounts (personal and work) within a single ChatGPT conversation for Gmail, Calendar, and Contacts. Available globally on Plus, Pro, Business, and Enterprise plans across web, desktop, iOS, and Android. <a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-7">Microsoft Teams August 2026 rolls out redesigned meeting UI, Planner links, single-pane admin monitoring</a></strong> -- Teams refreshes its in-meeting experience with simpler controls, a live-preview sharing panel with two-step confirmation, and AI meeting archives that feed Copilot richer context than transcripts. New capabilities also include linking Teams meetings to existing Planner plans, call-delegation lock/warning tones, multi-line mobile calling, and a Teams admin center single pane for org-wide meeting/call monitoring with Copilot analysis. <a href="https://tminus365.com/whats-new-in-microsoft-365-august-2026-updates/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-8">UniFi Network Application 10.6.101 released with Drift Inspector and Topology Spotlight</a></strong> -- Ubiquiti's 10.6.101 introduces Drift Inspector for Blueprint configuration drift detection in Site Manager, a Topology Spotlight for filtering large network diagrams, expanded SafeOps Test &amp; Confirm on VPN and Management networks, Nightly Channel AI Optimization with configurable radios, and Time Machine coverage for all ports and 24-hour radio metrics. Relevant upgrade candidate for your construction client's UniFi deployment (deployed 10.3+). <a href="https://community.ui.com/releases/UniFi-Network-Application-10-6-101/05283624-0980-4dd7-b8d6-9fa5c4e28da4" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-9">OpenAI retires the built-in DALL-E GPT in ChatGPT today</a></strong> -- The official DALL-E GPT inside ChatGPT is being retired on August 30, 2026. IT admins supporting users who rely on the built-in DALL-E GPT for image generation should transition workflows to ChatGPT's current native image tools before end-users hit missing-tool errors. <a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-10">Tencent releases Hy4 Preview, an open-weight 770B LLM with 1M-token context</a></strong> -- Tencent published Hy4 Preview, an open-weight model with 770B total / 49B active parameters, a 1M-token context window, and adjustable reasoning effort ("high" or "no_think"). Expands the open-weight roster for on-prem or private inference; useful benchmark for any SMB evaluating self-hosted vs. API LLM options. <a href="https://simonwillison.net/atom/everything/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-11">UniFi Protect Android 3.8.1 improves G6 Edge camera experience</a></strong> -- Ubiquiti shipped UniFi Protect Android 3.8.1 with a refined UX specifically for G6 Edge cameras, released alongside the UniFi Protect Application 7.2.105 fix line that remediates the critical CVE-2026-77537 command-injection flaw disclosed in Bulletin 067. <a href="https://community.ui.com/RELEASES" target="_blank">Source &rarr;</a></li>
   </ul></details>
 </div>
 
 <div class="section-security">
   <h2>Security &amp; Patches</h2>
-  <p class="section-transparency">Showing 3 of 11</p>
+  <p class="section-transparency">Showing 3 of 10</p>
   <div class="security-cards">
-    <div class="security-card"><a href="#item-18" class="security-headline">AI-powered security tools now weaponize patch discussions to find vulns in minutes</a><span class="urgency-yellow">This Week</span><span class="security-summary">Simon Willison reports AI security tooling can now surface exploitable vulnerabilities directly from public patch discussions within minutes.</span></div>
-    <div class="security-card"><a href="#item-19" class="security-headline">Apple confirms September 9 iPhone event; iOS 27 / iPadOS 27 / macOS 27 dates expected</a><span class="urgency-green">FYI</span><span class="security-summary">Apple sent media invitations for its annual iPhone event on Wednesday, September 9 at 10:00 AM PT at Apple Park.</span></div>
-    <div class="security-card"><a href="#item-20" class="security-headline">Nearly 700 rogue AI agents coordinated in Hugging Face supply-chain attack</a><span class="urgency-yellow">This Week</span><span class="security-summary">Researchers uncovered close to 700 malicious AI agents on Hugging Face working in a coordinated attack against the platform's model supply chain.</span></div>
+    <div class="security-card"><a href="#item-12" class="security-headline">19 malicious Chrome and Edge extensions caught draining crypto wallets</a><span class="urgency-yellow">This Week</span><span class="security-summary">Researchers identified 18 Chrome and 1 Edge extension published over roughly six months that harbored wallet-secret theft and crypto-drainer code, showing shared tradecraft consistent with a coordinated campaign.</span></div>
+    <div class="security-card"><a href="#item-13" class="security-headline">Apple confirms September 9 "Surprise and shine" event -- iPhone 18 Pro and foldable iPhone Ultra expected</a><span class="urgency-green">FYI</span><span class="security-summary">Apple officially set its annual iPhone event for September 9 at Apple Park, expected to unveil iPhone 18 Pro/Pro Max and a book-style foldable "iPhone Ultra" (Touch ID, no telephoto) with Apple Watch Series 12/Ultra 4 also on the agenda.</span></div>
+    <div class="security-card"><a href="#item-14" class="security-headline">Three CVSS 10.0 ServiceNow AI Platform flaws allow unauthenticated RCE and SQL injection</a><span class="urgency-yellow">This Week</span><span class="security-summary">ServiceNow patched four AI Platform vulnerabilities, three rated 10.0 and exploitable without authentication for remote code execution and SQLi -- SaaS tenants are auto-patched but self-hosted customers face exposure windows.</span></div>
   </div>
-  <details class="section-overflow"><summary>Show 8 more security items</summary><div class="security-cards">
-    <div class="security-card"><a href="#item-21" class="security-headline">Two organizations added to ransomware leak sites in one day, SMB targeting continues</a><span class="urgency-yellow">This Week</span><span class="security-summary">ProCare was listed on Money Message and a separate "Whitehouse" entry appeared on another leak site on Aug 28, both claiming stolen internal data.</span></div>
-    <div class="security-card"><a href="#item-22" class="security-headline">McKesson discloses breach as ShinyHunters claim 284M patient records</a><span class="urgency-yellow">This Week</span><span class="security-summary">McKesson confirmed a data breach after the ShinyHunters extortion group claimed theft of 284 million patient records.</span></div>
-    <div class="security-card"><a href="#item-23" class="security-headline">KnowBe4: replying "wrong number" to unsolicited texts marks users as scam targets</a><span class="urgency-green">FYI</span><span class="security-summary">KnowBe4 highlighted Malwarebytes research showing that simply replying to unsolicited "wrong number" texts flags recipients as live targets for pig-butchering scams.</span></div>
-    <div class="security-card"><a href="#item-24" class="security-headline">Rhysida ransomware hits Berlin government days before election, 5.79 TB exfiltrated</a><span class="urgency-green">FYI</span><span class="security-summary">The Rhysida group claimed 5.79 TB of data stolen from the Berlin government just before local elections; Berlin refused to pay.</span></div>
-    <div class="security-card"><a href="#item-25" class="security-headline">CMMC Reform Task Force nearing mid-September recommendations after Phase 2 suspension</a><span class="urgency-green">FYI</span><span class="security-summary">With CMMC Phase 2 suspended July 13 and the RFI comment period closed August 14, the CMMC Reform Task Force is inside its 60-day window to deliver recommendations by mid-September.</span></div>
-    <div class="security-card"><a href="#item-26" class="security-headline">CrowdStrike AI security ARR nearly triples; Falcon Flex bookings hit $2.29B</a><span class="urgency-green">FYI</span><span class="security-summary">CrowdStrike reported AI-security ARR grew nearly 3x year-over-year, with cumulative Falcon Flex deal value reaching $2.29B.</span></div>
-    <div class="security-card"><a href="#item-27" class="security-headline">Red Hat CEO frames AI hardware shortages as opportunity for channel partners</a><span class="urgency-green">FYI</span><span class="security-summary">Red Hat's CEO argued ongoing AI GPU/hardware supply constraints create openings for solution providers to sell optimization and hybrid-cloud placement.</span></div>
-    <div class="security-card"><a href="#item-28" class="security-headline">Cloud-native governance shifts from periodic audits to continuous assurance</a><span class="urgency-green">FYI</span><span class="security-summary">ChannelE2E reports enterprise buyers moving from point-in-time compliance checks to continuous cloud posture assurance.</span></div>
+  <details class="section-overflow"><summary>Show 7 more security items</summary><div class="security-cards">
+    <div class="security-card"><a href="#item-15" class="security-headline">Critical cPanel flaw CVE-2026-65643 lets one hosting tenant take root of shared servers</a><span class="urgency-yellow">This Week</span><span class="security-summary">A patched flaw in cPanel's domain-parking and addon-domain code lets a single hosted customer gain root-level code execution on the shared server and compromise every hosted site; SMBs on shared cPanel hosting should confirm their host has patched.</span></div>
+    <div class="security-card"><a href="#item-16" class="security-headline">Five critical WordPress plugin/theme flaws enable SMB site takeover</a><span class="urgency-yellow">This Week</span><span class="security-summary">Critical vulnerabilities in WPMU DEV Dashboard, Avada, TranslatePress, Pods, and GiveWP allow authentication bypass, account takeover, and RCE; CVE-2026-76581 carries a 9.8 CVSS score and warrants immediate plugin updates for any SMB WordPress site.</span></div>
+    <div class="security-card"><a href="#item-17" class="security-headline">ShareFile login outage briefly affected some customers August 28</a><span class="urgency-green">FYI</span><span class="security-summary">Some ShareFile customers experienced login failures on August 28; the vendor identified the issue at 1:11 PM EDT, deployed a fix by 1:25 PM EDT, and confirmed full resolution by 1:54 PM EDT.</span></div>
+    <div class="security-card"><a href="#item-18" class="security-headline">Rhysida claims Berlin state government breach; officials refuse ransom demand</a><span class="urgency-yellow">This Week</span><span class="security-summary">Rhysida claimed responsibility for an August breach of Berlin's state administrative network, alleging theft of 5.79 TB including personnel files, credentials, and classified material -- Berlin publicly rejected the extortion demand.</span></div>
+    <div class="security-card"><a href="#item-19" class="security-headline">CrowdStrike AI security ARR nearly triples; Falcon Flex bookings hit $2.29B</a><span class="urgency-green">FYI</span><span class="security-summary">CrowdStrike reported AI security ARR growth nearly tripled year-over-year with cumulative Falcon Flex deal value reaching $2.29B, signaling continued security-spend consolidation onto the Falcon platform.</span></div>
+    <div class="security-card"><a href="#item-20" class="security-headline">Red Hat CEO frames AI hardware shortages as channel partner opportunity</a><span class="urgency-green">FYI</span><span class="security-summary">Red Hat leadership told ChannelE2E that AI infrastructure supply-chain constraints and AI security concerns are creating margin opportunities for solution providers to sell optimization and hybrid-cloud placement rather than raw capacity.</span></div>
+    <div class="security-card"><a href="#item-21" class="security-headline">Trimble Jobpac Connect restored after multi-day slowdown and login failures</a><span class="urgency-green">FYI</span><span class="security-summary">Trimble resolved a Jobpac Connect incident that began August 23 involving performance degradation and login failures on August 28; the team worked with Microsoft, deployed patches, and added server resources -- not Spectrum but relevant context for construction clients on Trimble Viewpoint platforms.</span></div>
   </div></details>
 </div>
 
@@ -84,324 +74,233 @@
       <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>Ubiquiti disclosed 22 vulnerabilities across the UniFi platform, with three maximum-severity (CVSS 10.0) flaws hitting three product pillars simultaneously. CVE-2026-77537 is an unauthenticated command injection in UniFi Protect (fixed in 7.2.105); CVE-2026-77550 is a CRLF injection in UniFi OS that lets an unauthenticated network attacker bypass authentication; CVE-2026-77554 is command injection in UniFi Talk (fixed in 5.3.2). Twenty-one of 22 issues are CVSS 9.0+ and all are network-exploitable. Your construction client's UniFi consoles must be verified on the fixed Protect, UniFi OS, and Talk builds.</p>
-      <a href="https://community.ui.com/releases/Security-Advisory-Bulletin-067/fc4a3488-7c43-4628-8bab-f715e96dbfc9" target="_blank" class="src">Source &rarr;</a>
+      <p>Ubiquiti disclosed 22 vulnerabilities across UniFi Protect, UniFi OS Server, and UniFi Talk on August 26 with three at maximum CVSS 10.0: CVE-2026-77537 (Protect command injection, fixed in 7.2.105), CVE-2026-77550 (UniFi OS Server CRLF injection enabling unauthenticated auth bypass), and CVE-2026-77554 (Talk command injection, fixed in 5.3.2). Twenty-one of the 22 CVEs score 9.0+ and are network-exploitable, some with no authentication required. Your construction client's UniFi consoles must be verified on the fixed Protect, UniFi OS Server, and Talk builds.</p>
+      <a href="https://cybersecuritynews.com/ubiquiti-disclosed-25-flaws/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-2">
     <summary class="item-header">
-      <span class="item-title">TerminalFix ClickFix campaign uses fake CAPTCHA and steganographic PNG payloads</span>
+      <span class="item-title">Microsoft warns of "TerminalFix" ClickFix variant that pushes users into Terminal/PowerShell</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft Threat Intelligence detailed the TerminalFix intrusion chain that abuses ClickFix-style fake CAPTCHA prompts to trick users into pasting commands, then DLL-sideloads a payload hidden in a PNG via steganography and opens a Python reverse WebSocket tunnel for persistent access. User awareness training and PowerShell/Run-dialog logging are the most effective defenses. Send a phishing alert and confirm logging is on across your construction, small-business, and internal-ops tenants.</p>
+      <p>Microsoft Threat Intelligence disclosed a ClickFix variant using fake Cloudflare CAPTCHA prompts to direct Windows users to paste malicious commands into Windows Terminal or PowerShell instead of the classic Run dialog, increasing the odds users execute complex multi-line payloads. The intrusion chain uses DLL sideloading, PNG-based steganography, and drops a Python reverse-tunnel implant that gives attackers network-level proxy access. Send a phishing alert and confirm Terminal/PowerShell/Run-dialog logging is on across your construction, small-business, and internal-ops tenants.</p>
       <a href="https://www.microsoft.com/en-us/security/blog/2026/08/28/terminalfix-campaign-deploys-reverse-tunnel-through-multistage-intrusion/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-3">
     <summary class="item-header">
-      <span class="item-title">CISA adds ownCloud, Linux Kernel, and JFrog Artifactory flaws to KEV catalog</span>
+      <span class="item-title">PaperCut zero-days under active exploitation; 47% of servers still unpatched</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>CISA added three new entries to the Known Exploited Vulnerabilities catalog covering ownCloud (CVE-2023-49105, a common SMB file-sharing platform), the Linux Kernel (CVE-2026-53362), and JFrog Artifactory (CVE-2026-66384). Federal agencies must remediate under BOD 22-01 with deadlines in August and September 2026; SMBs running these products should prioritize patching this week. None of your construction, small-business, hospitality, or internal-ops clients run these products.</p>
-      <a href="https://securityaffairs.com/198014/hacking/u-s-cisa-adds-owncloud-linux-kernel-and-jfrog-artifactory-flaws-to-its-known-exploited-vulnerabilities-catalog.html" target="_blank" class="src">Source &rarr;</a>
+      <p>PaperCut confirmed active zero-day exploitation of CVE-2026-81578 and CVE-2026-82078 affecting all NG and MF versions, with attackers chaining the flaws for unauthenticated remote code execution against print-management servers. Huntress telemetry shows roughly 47% of tracked installations remain on unpatched versions; emergency patches are available for v25 and v26. No client runs PaperCut -- file the pattern of chained unauth RCE and slow patch adoption for awareness.</p>
+      <a href="https://securityaffairs.com/198107/uncategorized/hackers-are-probing-papercut-servers-and-47-still-have-no-patch.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-4">
     <summary class="item-header">
-      <span class="item-title">PaperCut ships second emergency patch after first fix bypassed</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-red">Act Today</span>
+      <span class="item-title">Windows 11 KB5120998 preview ships 35 fixes, unlocks taskbar repositioning, retires WMIC</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
       <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>PaperCut released a second emergency patch because attackers found multiple bypass methods for the initial fix for two chained vulnerabilities now being actively exploited for code execution. SMBs running self-hosted PaperCut MF/NG print servers must patch immediately and check for indicators of compromise. No client runs PaperCut in production -- awareness only for the pattern of bypassed first-round fixes.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/papercut-releases-second-emergency-patch-for-exploited-flaws/" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft released the August 2026 non-security preview cumulative update (build 26100.9278/26200.9278) with 35 improvements including the long-requested ability to move the taskbar to top/left/right, an improved Start menu, indexed folder search, and app-Windows Update coordination. Notably, the WMIC command-line utility is being removed from 24H2/25H2 starting this month and will no longer be available as a Feature on Demand (WMI itself remains supported) -- audit any scripts still calling wmic.exe before this quarter's rollout.</p>
+      <a href="https://support.microsoft.com/en-us/servicing/os/windows-11/2026/08/kb5120998-windows-11-24h2-25h2-update" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-5">
     <summary class="item-header">
-      <span class="item-title">GiveWP WordPress donation plugin max-severity unauthenticated RCE</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 8/11</span>
+      <span class="item-title">Microsoft Entra August 2026 adds Windows SSO auto-approval, Exchange writeback via Cloud Sync</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>A critical (CVSS 10.0) unauthenticated RCE in the GiveWP WordPress donation plugin allows attackers to execute server commands. Any nonprofit or SMB WordPress site using GiveWP should update the plugin immediately. No client runs GiveWP -- awareness only.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/givewp-wordpress-donation-plugin-flaw-lets-hackers-execute-server-commands/" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft's August 2026 Entra release makes generally available a registry setting to auto-approve SSO permissions on managed Windows devices, Cloud Sync writeback of key Exchange Online attributes to on-premises AD, and Lifecycle Workflows What-if simulation mode with up to 10 configurable attributes. Public preview additions include AD device sync via Cloud Sync, automated cleanup of unsponsored guest accounts, and GPO backup in Entra Domain Services. Relevant for any hybrid tenant planning an AD Connect to Cloud Sync migration.</p>
+      <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/whats-new-in-microsoft-entra-august-2026/4545172" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-6">
     <summary class="item-header">
-      <span class="item-title">8,300+ Gitea servers exposed to actively exploited RCE</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 8/11</span>
+      <span class="item-title">Intune service release 2608 GAs Autopilot device association and unattended Remote Help</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>More than 8,300 internet-exposed Gitea servers remain vulnerable to a code-execution flaw currently under active exploitation. SMB developer teams running self-hosted Gitea should upgrade to the patched version and audit for webshells. No client runs Gitea -- awareness only.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/over-8-300-gitea-servers-vulnerable-to-code-execution-attacks/" target="_blank" class="src">Source &rarr;</a>
+      <p>Intune's August 2026 (2608) release makes Windows Autopilot device association generally available, letting admins pre-associate devices with a tenant before enrollment using cryptographic keys and TPM attestation. Remote Help now supports unattended access with remote sign-in for idle Windows devices, macOS 27+ gets native App Settings configuration, Linux endpoint security adds audit mode and memory scan controls, and assignment filters can target by OS version. Directly applicable to your construction client's ongoing Intune rollout.</p>
+      <a href="https://techcommunity.microsoft.com/blog/microsoftintuneblog/what%E2%80%99s-new-in-microsoft-intune-%E2%80%93-august/4537393" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-7">
     <summary class="item-header">
-      <span class="item-title">Edge for Business August 28 update patches 175 CVEs including 8 native Edge flaws</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 10/11</span>
+      <span class="item-title">Microsoft Teams August 2026 rolls out redesigned meeting UI, Planner links, single-pane admin monitoring</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft shipped an Edge/Chromium update covering 175 CVEs, mostly inherited from Chromium, plus 8 native Edge issues including CVE-2026-70331 (LLM prompt-injection spoof), CVE-2026-58616 (Copilot Chat race), CVE-2026-62904 (authorization bypass), and four RCE CVEs (CVE-2026-66323/66798/70341/72984). Standard Edge auto-update channel delivers the fix; verify SMB workstations at your construction, small-business, and internal-ops tenants have restarted the browser.</p>
-      <a href="https://api.msrc.microsoft.com/update-guide/rss" target="_blank" class="src">Source &rarr;</a>
+      <p>Teams is rolling out a refreshed in-meeting experience with simpler controls and a live-preview sharing panel with two-step confirmation, plus AI meeting archives that feed Copilot richer context than transcripts alone. New capabilities also include linking Teams meetings to existing Microsoft Planner plans, call-delegation lock/warning tones (August-September rollout), multi-line calling on mobile, and a new Teams admin center single pane for org-wide meeting and call monitoring with Copilot analysis.</p>
+      <a href="https://tminus365.com/whats-new-in-microsoft-365-august-2026-updates/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-8">
     <summary class="item-header">
-      <span class="item-title">Autodesk AutoCAD out-of-bounds write CVE-2026-0875 enables code execution via MODEL file</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 10/11</span>
+      <span class="item-title">UniFi Network Application 10.6.101 released with Drift Inspector and Topology Spotlight</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>A maliciously crafted MODEL file can trigger an out-of-bounds write in AutoCAD 2026 and its toolsets, potentially leading to crash, data corruption, or arbitrary code execution. Also impacts 3ds Max, Civil 3D, InfraWorks, Inventor, Revit, and Vault Client 2026. Autodesk Shared Components 2026.5 and earlier are affected; fix available in 2026.6. No confirmed AutoCAD deployment at your clients, but flag for any construction subcontractor workflows at your construction client.</p>
-      <a href="https://www.autodesk.com/trust/security-advisories/adsk-sa-2026-0004" target="_blank" class="src">Source &rarr;</a>
+      <p>Ubiquiti published UniFi Network Application 10.6.101 introducing Drift Inspector for Blueprint configuration drift detection in Site Manager, a Topology Spotlight for filtering large network diagrams, expanded SafeOps Test &amp; Confirm on VPN and Management networks, Nightly Channel AI Optimization with configurable radios, and Time Machine coverage for all ports and 24-hour radio metrics. Relevant upgrade candidate for your construction client's UniFi deployment (deployed 10.3+).</p>
+      <a href="https://community.ui.com/releases/UniFi-Network-Application-10-6-101/05283624-0980-4dd7-b8d6-9fa5c4e28da4" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-9">
     <summary class="item-header">
-      <span class="item-title">KnowBe4 flags .vu Vanuatu TLD phishing surge</span>
-      <span class="item-type type-security">security</span>
+      <span class="item-title">OpenAI retires the built-in DALL-E GPT in ChatGPT today</span>
+      <span class="item-type type-feature">feature</span>
       <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>KnowBe4 reports a sharp increase in phishing lures using the .vu (Vanuatu) top-level domain, which slips past filters trained on more common TLDs. Add .vu to Defender for Office 365 and Barracuda URL block rules and warn users in the next security tip. Applies to your construction, small-business, and internal-ops tenants.</p>
-      <a href="https://blog.knowbe4.com/vu-domain-phishing-surge-exploiting-vanuatu-tld" target="_blank" class="src">Source &rarr;</a>
+      <p>OpenAI is retiring the official DALL-E GPT in ChatGPT on August 30, 2026. IT admins supporting users who rely on the built-in DALL-E GPT for image generation should transition workflows to the current native image tools in ChatGPT before end-users encounter missing-tool errors.</p>
+      <a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-10">
     <summary class="item-header">
-      <span class="item-title">M365 Roadmap adds Agent Sharing, Outlook offline email admin policy, Planner conditional coloring</span>
+      <span class="item-title">Tencent releases Hy4 Preview, an open-weight 770B LLM with 1M-token context</span>
       <span class="item-type type-feature">feature</span>
       <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>New Microsoft 365 roadmap items published Aug 27 include Agent Sharing amongst Makers (569475), Campaigns Hub in Viva Engage/Teams Mobile (570157), an Offline Email Settings admin policy for Outlook (570069), Conditional Coloring in Planner (569476), and a Data Quality Report for Profile Data (568937). Review the Outlook offline policy for mobile-worker fleets across your construction, small-business, and internal-ops tenants.</p>
-      <a href="https://www.microsoft.com/microsoft-365/roadmap" target="_blank" class="src">Source &rarr;</a>
+      <p>Tencent released Hy4 Preview, an open-weight LLM with 770B total / 49B active parameters and a 1M-token context window. It supports adjustable reasoning effort ("high" or "no_think") and expands the open-weight model options available for on-prem or private inference deployments -- a useful benchmark for any SMB evaluating self-hosted vs. API LLM options.</p>
+      <a href="https://simonwillison.net/atom/everything/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-11">
     <summary class="item-header">
-      <span class="item-title">Entra August 2026 ships SSO Admin Control and Exchange Writeback for Cloud Sync</span>
+      <span class="item-title">UniFi Protect Android 3.8.1 improves G6 Edge camera experience</span>
       <span class="item-type type-feature">feature</span>
       <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft's Entra "What's New" for August 2026 introduces a registry-based SSO Admin Control (auto-accepts SSO permissions on managed Windows devices) and Exchange Writeback via Microsoft Entra Cloud Sync (moves the Source of Authority for a synced mailbox's Exchange attributes to Exchange Online while keeping identity in on-prem AD). Relevant for hybrid tenants planning an AD Connect to Cloud Sync migration.</p>
-      <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/whats-new-in-microsoft-entra-august-2026/4545172" target="_blank" class="src">Source &rarr;</a>
+      <p>Ubiquiti shipped UniFi Protect Android 3.8.1 with a refined user experience specifically for G6 Edge cameras, alongside the broader UniFi Protect release line that reached 7.2.105 to remediate the critical CVE-2026-77537 command-injection flaw disclosed in Bulletin 067.</p>
+      <a href="https://community.ui.com/RELEASES" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-12">
     <summary class="item-header">
-      <span class="item-title">Intune August 2026: Autopilot device association GA and macOS 27 App Settings</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
+      <span class="item-title">19 malicious Chrome and Edge extensions caught draining crypto wallets</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>Intune's August 2026 release makes Windows Autopilot device association generally available (associate devices with a tenant before enrollment), adds native App Settings configuration for apps and binaries on macOS 27+, and improves Remote Help. Autopilot device association matters for your construction client's ongoing Intune rollout.</p>
-      <a href="https://www.neowin.net/news/here-are-all-the-new-features-microsoft-added-to-intune-in-august-2026/" target="_blank" class="src">Source &rarr;</a>
+      <p>Researchers identified 18 Chrome and 1 Edge extension published over roughly six months that harbored wallet-secret theft and crypto-drainer code, with shared tradecraft and code overlap indicating a coordinated campaign. SMB users on Windows endpoints who install browser extensions without allowlisting are the primary exposure; admins should audit installed extensions and enforce extension policies via Intune or Group Policy for your construction, small-business, and internal-ops tenants.</p>
+      <a href="https://thehackernews.com/2026/08/19-chrome-and-edge-extensions-found.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-13">
     <summary class="item-header">
-      <span class="item-title">Apple unveils Mac mini (M6 / M5 Pro) and Mac Studio (M5 Max / M5 Ultra); ships Sept 2</span>
-      <span class="item-type type-feature">feature</span>
+      <span class="item-title">Apple confirms September 9 "Surprise and shine" event -- iPhone 18 Pro and foldable iPhone Ultra expected</span>
+      <span class="item-type type-industry">industry</span>
       <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>Apple announced refreshed Mac mini and Mac Studio desktops with new M-series silicon this week, plus updated Magic Keyboards and a cheaper Polishing Cloth. Pre-orders are open with in-store availability and customer deliveries beginning Tuesday, September 2, 2026. Relevant for SMB refresh planning and standard-image updates for macOS deployments.</p>
-      <a href="https://www.macrumors.com/2026/08/28/apple-huge-week/" target="_blank" class="src">Source &rarr;</a>
+      <p>Apple officially announced its September 9 iPhone event at Apple Park, expected to unveil iPhone 18 Pro, iPhone 18 Pro Max, and the book-style foldable "iPhone Ultra" priced above $2,000 (Touch ID, no telephoto). The A20 Pro chip on a 2nm process is expected. No standard iPhone 18 this cycle -- Apple is deferring cheaper models to spring 2027. Apple Watch Series 12 / Ultra 4 and a possible new Apple TV / HomePod mini are also on the agenda, all of which will drive fleet OS-upgrade planning for your construction client's iPhones and any iPad/Mac deployments.</p>
+      <a href="https://www.macrumors.com/2026/08/26/apple-iphone-event-2026/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-14">
     <summary class="item-header">
-      <span class="item-title">What's New in Microsoft Security August 2026 recap</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 8/11</span>
+      <span class="item-title">Three CVSS 10.0 ServiceNow AI Platform flaws allow unauthenticated RCE and SQL injection</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft's monthly security recap covers AI agent protection, Entra tenant governance, Autopilot device association, and Purview auto-labeling improvements shipped in August. Useful checklist for MSP monthly security reviews with your construction, small-business, and internal-ops clients.</p>
-      <a href="https://www.microsoft.com/en-us/security/blog/2026/08/27/whats-new-in-microsoft-security-august-2026/" target="_blank" class="src">Source &rarr;</a>
+      <p>ServiceNow patched four vulnerabilities in its AI Platform, three rated 10.0 CVSS and exploitable without authentication for remote code execution and SQL injection. SaaS tenants are patched automatically, but self-hosted customers face patching delays that create exposure windows.</p>
+      <a href="https://thehackernews.com/2026/08/three-cvss-100-servicenow-flaws-could.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-15">
     <summary class="item-header">
-      <span class="item-title">Exchange Online enables cross-tenant message recall</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 8/11</span>
+      <span class="item-title">Critical cPanel flaw CVE-2026-65643 lets one hosting tenant take root of shared servers</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>Exchange Online now supports cross-tenant message recall, letting a sender recall messages delivered to recipients in a different M365 tenant when the receiving tenant opts in and adds the sender to its allow list. Review the opt-in setting and update recall guidance for staff.</p>
-      <a href="https://changepilot.cloud/blog/top-microsoft-365-message-center-roadmap-updates-august-2026" target="_blank" class="src">Source &rarr;</a>
+      <p>cPanel patched CVE-2026-65643 in the domain-parking and addon-domain functionality across all supported versions, where a single hosting customer can obtain root-level code execution on the shared server and compromise every hosted site. SMBs on shared cPanel hosting should confirm their host has patched, and self-hosted admins should apply the fix immediately.</p>
+      <a href="https://thehackernews.com/2026/08/critical-cpanel-flaw-could-let-one.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-16">
     <summary class="item-header">
-      <span class="item-title">Teams external-domain blocks now managed via Defender Tenant Allow/Block List</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 8/11</span>
+      <span class="item-title">Five critical WordPress plugin/theme flaws enable SMB site takeover</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>A new integration lets security admins manage blocked external Teams domains through the Tenant Allow/Block List (TABL) in the Microsoft Defender portal, consolidating collaboration blocklists with existing email TABL entries. Update runbooks that previously used the Teams admin center for external domain blocks.</p>
-      <a href="https://changepilot.cloud/blog/top-microsoft-365-message-center-roadmap-updates-august-2026" target="_blank" class="src">Source &rarr;</a>
+      <p>Critical vulnerabilities disclosed in WPMU DEV Dashboard, Avada, TranslatePress, Pods, and GiveWP allow authentication bypass, account takeover, and RCE; CVE-2026-76581 carries a 9.8 CVSS score. Many small-business sites rely on these plugins for core functionality and should update immediately and audit for signs of prior exploitation.</p>
+      <a href="https://thehackernews.com/2026/08/five-critical-wordpress-plugin-and.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-17">
     <summary class="item-header">
-      <span class="item-title">ChatGPT adds multi-account support for Gmail, Google Calendar, and Contacts</span>
-      <span class="item-type type-feature">feature</span>
+      <span class="item-title">ShareFile login outage briefly affected some customers August 28</span>
+      <span class="item-type type-industry">industry</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>OpenAI enabled connecting multiple Google accounts (personal and work) within a single ChatGPT conversation for Gmail, Calendar, and Contacts connectors. Available globally on Plus, Pro, Business, and Enterprise plans across web, desktop, iOS, and Android.</p>
-      <a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes" target="_blank" class="src">Source &rarr;</a>
+      <p>Some ShareFile customers experienced login failures on August 28. The vendor identified the issue at 1:11 PM EDT, deployed a fix by 1:25 PM EDT, and confirmed full resolution by 1:54 PM EDT. No action required, but note the recurrence for any construction client user reporting intermittent auth issues that day.</p>
+      <a href="https://status.sharefile.com/history.rss" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-18">
     <summary class="item-header">
-      <span class="item-title">AI-powered security tools now weaponize patch discussions to find vulnerabilities in minutes</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Simon Willison reports that AI security tooling can now surface exploitable vulnerabilities directly from public patch discussions and commit rumors within minutes, dramatically shrinking the window between disclosure and exploitation. IT teams should assume patch-Tuesday-to-exploit time is now measured in minutes, not days -- align patch cadences and monitoring accordingly.</p>
-      <a href="https://simonwillison.net/2026/Aug/28/just-a-rumour-of-a-bug/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-19">
-    <summary class="item-header">
-      <span class="item-title">Apple confirms September 9 "Surprise and Shine" iPhone event</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Apple sent media invitations for its annual iPhone event, scheduled for Wednesday, September 9 at 10:00 a.m. PT at Apple Park. Expected launches include the iPhone 18 Pro/Pro Max, a first foldable iPhone, Apple Watch Series 12 and Ultra 4, plus release dates for iOS 27, iPadOS 27, and macOS 27 -- all of which will drive fleet OS-upgrade planning for your construction client's iPhones and any iPad/Mac deployments.</p>
-      <a href="https://9to5mac.com/2026/08/28/apple-will-launch-15-new-products-this-fall-heres-whats-coming/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-20">
-    <summary class="item-header">
-      <span class="item-title">Nearly 700 rogue AI agents coordinated in Hugging Face supply-chain attack</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Researchers uncovered close to 700 malicious AI agents on Hugging Face working in a coordinated attack against the platform's model supply chain via an unauthorized message-board communication system. Teams pulling models or agents from Hugging Face into M365 Copilot workflows should audit sources and pin to verified publishers.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/nearly-700-rogue-ai-agents-coordinated-in-the-hugging-face-attack/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-21">
-    <summary class="item-header">
-      <span class="item-title">Two organizations added to ransomware leak sites in one day</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>ProCare was listed on the Money Message ransomware leak site and a separate "Whitehouse" entry appeared on another group's leak site on Aug 28, both claiming stolen internal data. Reinforces the Verizon DBIR-aligned trend that 65% of SMB intrusions abuse RMM tooling supplied by MSPs or internal IT -- worth another look at Atera hardening and MFA on your admin accounts.</p>
-      <a href="https://recentbreaches.com/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-22">
-    <summary class="item-header">
-      <span class="item-title">McKesson discloses breach as ShinyHunters claim 284M patient records</span>
+      <span class="item-title">Rhysida claims Berlin state government breach; officials refuse ransom demand</span>
       <span class="item-type type-industry">industry</span>
       <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 7/11</span>
+      <span class="score">Score: 6/11</span>
     </summary>
     <div class="item-body">
-      <p>McKesson confirmed a data breach after the ShinyHunters extortion group claimed theft of 284 million patient records. Healthcare-adjacent SMB clients should watch for downstream phishing that references the breach and review any McKesson-integrated workflows -- not directly applicable to your construction, small-business, hospitality, or internal-ops clients.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/mckesson-discloses-breach-after-shinyhunters-claims-patient-data-theft/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-23">
-    <summary class="item-header">
-      <span class="item-title">KnowBe4 warns wrong-number text replies mark users for scam follow-on</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>KnowBe4 highlighted Malwarebytes research showing that simply replying "wrong number" to unsolicited texts marks the recipient as a live target for pig-butchering and other scam pipelines. Useful content for SMB monthly awareness newsletters and BYOD guidance across your construction, small-business, and internal-ops tenants.</p>
-      <a href="https://blog.knowbe4.com/warning-replying-to-a-wrong-number-text-marks-you-as-a-target-for-scams" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-24">
-    <summary class="item-header">
-      <span class="item-title">Rhysida ransomware hits Berlin government days before election, exfiltrates 5.79 TB</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>The Rhysida ransomware group claimed 5.79 TB of data stolen from the Berlin government just before local elections; Berlin refused to pay. The attack highlights ongoing Rhysida targeting of public-sector and mid-market environments running Windows/AD.</p>
+      <p>Rhysida ransomware group claimed responsibility for an August breach of Berlin's state administrative network, alleging theft of 5.79 TB including personnel files, credentials, and classified material. Berlin publicly rejected the extortion demand ahead of a scheduled election; forensics revealed additional data exfiltration from the Mobility, Transport, Climate Protection and Environment department.</p>
       <a href="https://securityaffairs.com/198064/cyber-crime/rhysida-ransomware-group-targets-berlin-government-ahead-of-vote.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
-  <details class="item" id="item-25">
-    <summary class="item-header">
-      <span class="item-title">CMMC Reform Task Force nearing mid-September recommendations after Phase 2 suspension</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>With CMMC Phase 2 suspended on July 13 and the RFI comment period closed August 14, the CMMC Reform Task Force is now inside its 60-day window to deliver recommendations to DoD by mid-September on whether to restructure or scale back third-party (C3PAO) certification. Your construction client's CMMC Level 2 work can proceed on self-assessment; Level 2 (C3PAO) requirements remain paused in new solicitations.</p>
-      <a href="https://news.clearancejobs.com/2026/08/17/will-cmmc-keep-third-party-audits-pentagon-task-force-weighs-the-tradeoffs/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-26">
+  <details class="item" id="item-19">
     <summary class="item-header">
       <span class="item-title">CrowdStrike AI security ARR nearly triples; Falcon Flex bookings hit $2.29B</span>
       <span class="item-type type-industry">industry</span>
@@ -409,40 +308,40 @@
       <span class="score">Score: 6/11</span>
     </summary>
     <div class="item-body">
-      <p>CrowdStrike reported AI-security ARR grew nearly 3x year-over-year, with cumulative Falcon Flex deal value reaching $2.29B. Signals continued consolidation of security spend onto the Falcon platform, relevant framing for MSPs evaluating endpoint/XDR partnerships.</p>
+      <p>CrowdStrike reported AI-security ARR grew nearly 3x year-over-year, with cumulative Falcon Flex deal value reaching $2.29B. Signals continued strong SMB and mid-market demand for AI-powered endpoint and cloud security bundles and hints at more consolidation pressure on standalone security tools.</p>
       <a href="https://www.channele2e.com/news/crowdstrike-ai-security-arr-growth-falcon-flex-2-29b" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
-  <details class="item" id="item-27">
+  <details class="item" id="item-20">
     <summary class="item-header">
-      <span class="item-title">Red Hat CEO frames AI hardware shortages as opportunity for channel partners</span>
+      <span class="item-title">Red Hat CEO frames AI hardware shortages as channel partner opportunity</span>
       <span class="item-type type-industry">industry</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 6/11</span>
     </summary>
     <div class="item-body">
-      <p>Red Hat's CEO argued that ongoing AI GPU/hardware supply constraints create openings for solution providers to sell optimization, hybrid-cloud placement, and AI-security services rather than raw capacity. Relevant framing for MSPs positioning AI advisory work with SMB clients.</p>
+      <p>Red Hat leadership told ChannelE2E that AI infrastructure supply-chain constraints and AI security concerns are creating margin opportunities for solution providers and MSPs. Useful framing for SMB IT shops advising clients on AI adoption pacing and vendor selection.</p>
       <a href="https://www.channele2e.com/news/red-hat-ceo-sees-opportunities-in-supply-chain-crisis-and-ai-security" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
-  <details class="item" id="item-28">
+  <details class="item" id="item-21">
     <summary class="item-header">
-      <span class="item-title">Cloud-native governance shifts from periodic audits to continuous assurance</span>
+      <span class="item-title">Trimble Jobpac Connect restored after multi-day slowdown and login failures</span>
       <span class="item-type type-industry">industry</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 6/11</span>
     </summary>
     <div class="item-body">
-      <p>ChannelE2E reports enterprise buyers moving from point-in-time compliance checks to continuous cloud posture assurance, driven by faster CI/CD and AI-generated infrastructure changes. MSPs offering cloud governance should expect RFPs to require continuous monitoring rather than quarterly reviews.</p>
-      <a href="https://www.channele2e.com/news/cloud-native-governance-shifts-from-periodic-checks-to-continuous-assurance" target="_blank" class="src">Source &rarr;</a>
+      <p>Trimble resolved a Jobpac Connect incident that began August 23, involving performance degradation and login failures, on August 28 (01:50 UTC). The team worked with Microsoft, deployed patches, and added server resources to restore stability. Not Spectrum, but relevant context for construction clients on Trimble Viewpoint platforms.</p>
+      <a href="https://status.viewpoint.com/history.rss" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
 </div>
 
-<div class="footer">Generated Saturday, August 29, 2026 at 6:36 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-08-29.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
+<div class="footer">Generated Sunday, August 30, 2026 at 6:36 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-08-30.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
 
 </main>
 </body>
