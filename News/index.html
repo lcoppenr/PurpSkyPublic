@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<title>Morning Briefing -- Wednesday, September 2, 2026</title>
+<title>Morning Briefing -- Thursday, September 3, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -14,416 +14,205 @@
 <main class="briefing-content">
 
 <div class="page-header">
-  <h1>Morning Briefing -- Wednesday, September 2, 2026</h1>
+  <h1>Morning Briefing -- Thursday, September 3, 2026</h1>
   <p class="page-meta">Microsoft &bull; Security &amp; Compliance &bull; Firewall / VPN / Networking &bull; Servers/NAS &bull; Workstations &amp; Mobile &bull; Peripherals &amp; AV &bull; RMM &amp; Remote Access &bull; Construction &amp; Specialty Software &bull; General Tech &amp; AI &bull; Pacific Time</p>
 </div>
 
 <div class="section-actions">
   <h2>Today's Actions</h2>
   <ol class="action-list">
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Verify Entra Connect version across any hybrid tenant and upgrade to 2.5.79.0 or later before Microsoft's September 2026 enforcement date to avoid directory sync outages at your construction and small-business clients. <a href="#item-1" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-yellow">This Week</span> File SonicWall's SMA1000 zero-day advisory (CVE-2026-83548 / 83549) -- SonicWall confirms TZ series and SonicOS SSL-VPN are NOT affected, so your construction client's TZ 7.2+ fleet is out of scope; awareness only. <a href="#item-2" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-yellow">This Week</span> Warn users at your construction and small-business clients about the FBI's Sept 1 PSA on OAuth consent phishing -- attackers DM prominent victims and family/friends with malicious consent links to gain persistent account access. <a href="#item-1" class="detail-link">details</a></li>
   </ol>
 </div>
 
 <div class="section-new">
   <h2>What's New</h2>
-  <p class="section-transparency">Showing 3 of 14</p>
+  <p class="section-transparency">Showing 3 of 9</p>
   <ul class="new-list">
-    <li><strong><a href="#item-3">Entra Security Administrator role gains user-response actions by end of September</a></strong> -- The built-in Security Administrator role expands to include disable/enable accounts, revoke sessions, and force password reset for non-privileged users, rolling out through end of September 2026. Simplifies incident response delegation without granting broader privileged access -- useful for your construction and small-business clients' helpdesk workflows. <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%E2%80%99s-new-in-microsoft-entra-september-2026/4545179" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-4">Windows 11 September 2026 cumulative KB5120998 ships movable Taskbar and Administrator Protection</a></strong> -- KB5120998 (build 26200.9278) begins rollout to Windows 11 24H2 and 25H2 on September 8, 2026, with a movable/resizable Taskbar, redesigned Start and Search, updated context menu, and Administrator Protection (JIT-elevated admin token). Features arrive via Controlled Feature Rollout so behavior will vary across fleets -- test in a ring before broad deployment. <a href="https://pureinfotech.com/kb5120998-windows-11-september-2026-update/" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-5">Bluebeam Revu 21.11 released with ChatGPT/Codex MCP support and Autodesk 2027 plugin</a></strong> -- Revu 21.11 launched September 1 adding expanded MCP capabilities with ChatGPT (Codex) support, new hyperlink workflows, bookmark improvements, automatic text box sizing, faster Studio search, and Autodesk 2027 plugin compatibility alongside continued AutoCAD/Revit/Navisworks 2026 support. Directly relevant to your construction client's Bluebeam users. <a href="https://support.bluebeam.com/revu/resources/revu-21-release-notes.html" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-2">Passkeys become the default authentication method in Entra ID</a></strong> -- Starting Sept 1, 2026, Microsoft Entra makes passkeys the default auth experience; tenants with SMS/voice MFA are auto-enrolled in passkey prompts, and beginning Feb 1, 2027, SMS/voice MFA users must register a passkey before signing in. Plan passkey registration campaigns at your construction and small-business clients now. <a href="https://www.microsoft.com/en-us/security/blog/2026/07/13/microsoft-entra-id-security-updates-passkeys-are-the-default-authentication-method-in-entra-id/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-3">Microsoft Defender retires standalone Automated Investigation and Response</a></strong> -- As of Sept 1, 2026, Microsoft Defender retires the standalone AIR capability; admins relying on the legacy AIR interface must transition to the unified Defender XDR experience for automated remediation. Verify any playbooks or documentation at your small-business client and internal ops still reference the deprecated interface. <a href="https://blog.cloudcapsule.io/blog/whats-new-in-microsoft-365-september-updates" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-4">Entra SSPR to require explicitly registered auth methods starting Sept 7</a></strong> -- Beginning Sept 7, 2026, Entra Self-Service Password Reset accepts only explicitly registered auth methods for identity verification, ending fallback behavior that accepted implicitly registered methods. Confirm users at your construction and small-business clients have registered supported methods before the cutover. <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%E2%80%99s-new-in-microsoft-entra-september-2026/4545179" target="_blank">Source &rarr;</a></li>
   </ul>
-  <details class="section-overflow"><summary>Show 11 more updates</summary><ul class="new-list">
-    <li><strong><a href="#item-6">Anthropic launches Claude Fable 5.1 with lower cache costs and stronger root-cause debugging</a></strong> -- Anthropic released Claude Fable 5.1 (and Mythos 5.1) on September 1, tuned for coding and long-running problem-solving. It matches or beats Fable 5 at low/medium effort, delivers more at higher effort, cuts API cache-read costs up to 45% on complex tasks, and is trained to pursue root causes over band-aid fixes. Mythos 5.1 is limited to U.S. trusted-access participants. <a href="https://platform.claude.com/docs/en/models/fable-5-1/overview" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-7">ShareFile restores automated workflow email notifications after ~18-hour outage</a></strong> -- ShareFile disabled automated workflow email notifications at 6:56 PM EDT Aug 31 and confirmed restoration on Sept 1. Verify any missed notifications during the outage window and re-check automated processes tied to email delivery -- flag anyone in your construction client's Spectrum/ShareFile workflows. <a href="https://status.sharefile.com/incidents/tpf30l4kyq08" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-8">Defender for Office 365 adds prompt-injection protection for email</a></strong> -- Microsoft is rolling out prompt-injection protection in Defender for Office 365 in early September 2026, aimed at defending Copilot and AI-processing pipelines from malicious instructions embedded in inbound mail. Relevant to any tenant with Defender for Office 365 and Copilot enabled -- worth reviewing licensing at your internal-ops and small-business tenants. <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%E2%80%99s-new-in-microsoft-entra-september-2026/4545179" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-9">Entra ID adds Tenant Governance for shadow-tenant discovery and drift monitoring</a></strong> -- New Entra Tenant Governance lets admins discover shadow-IT tenants, set least-privilege governance relationships, and monitor configuration drift against baselines across Entra, Intune, Exchange Online, Teams, Purview, and Defender. Meaningful control plane for MSPs managing multiple tenants -- worth piloting in your internal-ops tenant first. <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%E2%80%99s-new-in-microsoft-entra-september-2026/4545179" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-10">Trimble Viewpoint for Projects (UK) resolves web app performance degradation</a></strong> -- Trimble's status page reported a performance degradation incident on Viewpoint for Projects (UK) with a fix implemented and resolution monitored/confirmed on Sept 2. No direct client impact (US-hosted Spectrum unaffected), but useful signal on Trimble's UK infrastructure health. <a href="https://status.viewpoint.com/incidents/m0d634y7bpy4" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-11">Microsoft Teams adds AI meeting archive files in early September</a></strong> -- Teams introduces AI-generated meeting archive files, an early-September 2026 rollout. Also starting late September, Teams Channel-tab whiteboards move from the creator's OneDrive to the channel's SharePoint site, affecting retention and ownership models -- worth flagging in your construction client's Teams governance review. <a href="https://learn.microsoft.com/en-us/officeupdates/teams-admin" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-12">OpenAI Codex desktop app ships bundled with LibreOffice, Poppler, Git, Python, and Node.js</a></strong> -- OpenAI's Codex desktop application now ships with a bundled runtime stack including LibreOffice, Poppler, Git, Python, and Node.js. IT pros supporting Codex installs should be aware of the expanded install footprint and dependency surface area on developer workstations. <a href="https://simonwillison.net/2026/Sep/1/codex-libreoffice/" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-13">KnowBe4 releases healthcare cybersecurity whitepaper &quot;Hacking the Healers&quot;</a></strong> -- KnowBe4 publishes a healthcare-focused cybersecurity whitepaper covering current threats, remote-staff and AI-agent perimeter dissolution, and awareness recommendations. Useful reference material if any client asks about healthcare-vertical training programs. <a href="https://blog.knowbe4.com/hacking-the-healers-knowbe4-healthcare-cybersecurity-white-paper" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-14">Copilot Studio: makers can now require human approval for tool calls</a></strong> -- New Microsoft 365 Roadmap entry (ID 570434) lets makers require human approval before an agent tool call executes. Governance control worth enabling on any Copilot Studio agent that touches email, payments, or other sensitive operations. <a href="https://www.microsoft.com/microsoft-365/roadmap?id=570434" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-15">Copilot Studio agents in M365 Copilot get streamlined UX</a></strong> -- Roadmap ID 570435 aligns Copilot Studio agent responses with M365 Copilot Chat formatting, streaming behavior, and citation delivery. Minor UX improvement for tenants already using Copilot Studio. <a href="https://www.microsoft.com/microsoft-365/roadmap?id=570435" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-16">Viva Glint adds a new Survey Owner role</a></strong> -- Roadmap ID 570444 introduces a Survey Owner role in Viva Glint, separating survey ownership from broader admin and enabling delegated survey lifecycle management. Narrow relevance -- only matters if a tenant uses Viva Glint. <a href="https://www.microsoft.com/microsoft-365/roadmap?id=570444" target="_blank">Source &rarr;</a></li>
+  <details class="section-overflow"><summary>Show 6 more updates</summary><ul class="new-list">
+    <li><strong><a href="#item-5">Intune 2609 makes the redesigned single device page the default</a></strong> -- With the Intune September (2609) service release, the redesigned single device page becomes the default view and replaces the legacy page, consolidating device details, compliance, and actions into one interface. Familiarize the Intune admin workflow at your construction and small-business clients with the new layout. <a href="https://daily.intune.admin.news/week/2026-08-17/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-6">Microsoft Teams refreshes in-meeting experience with simpler controls</a></strong> -- Microsoft is rolling out a refreshed Teams in-meeting UI in late September 2026, consolidating meeting controls (mute, video, share, reactions) to reduce clutter; the change is tenant-wide and does not require admin opt-in. Expect user questions at all your clients on M365. <a href="https://blog.cloudcapsule.io/blog/whats-new-in-microsoft-365-september-updates" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-7">KnowBe4 launches Defend for Google Workspace with GA on Sept 15</a></strong> -- KnowBe4 announced Defend for Google Workspace on Sept 2, extending its Defend email security portfolio to Gmail with AI-based threat detection, explainable verdicts, and real-time employee coaching. Not directly applicable to your M365-based clients, but useful signal on KnowBe4's product direction. <a href="https://techafricanews.com/2026/09/02/knowbe4-launches-defend-for-google-workspace-to-strengthen-email-security/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-8">Google releases Gemini 3.8 Flash with configurable thinking levels</a></strong> -- Google launched Gemini 3.8 Flash on Sept 2, 2026, a fast general-purpose model with low/medium/high thinking levels; Google highlights frontier-level performance on autonomous vulnerability discovery benchmarks, surpassing larger Anthropic and OpenAI models. Available via API for internal ops tooling and integrations. <a href="https://simonwillison.net/2026/Sep/2/llm-gemini/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-9">llm-gemini 0.34 adds support for Gemini 3.8 Flash</a></strong> -- Simon Willison shipped llm-gemini 0.34 on Sept 2, 2026, adding support for Gemini 3.8 Flash with switchable thinking levels. Useful for IT pros scripting Gemini across ops workflows from the LLM CLI. <a href="https://simonwillison.net/2026/Sep/2/llm-gemini/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-10">Alibaba releases Qwen3.8 27B and Qwen3.8-Max-0902</a></strong> -- Alibaba shipped Qwen3.8 27B and Qwen3.8-Max-0902 on Sept 2, 2026, expanding the open-weight Qwen family with a mid-size 27B model and an updated Max tier. Relevant if evaluating on-prem or self-hosted LLM options for internal ops automation. <a href="https://aireleasetracker.com/latest" target="_blank">Source &rarr;</a></li>
   </ul></details>
 </div>
 
 <div class="section-security">
   <h2>Security &amp; Patches</h2>
-  <p class="section-transparency">Showing 3 of 13</p>
   <div class="security-cards">
-    <div class="security-card"><a href="#item-17" class="security-headline">Microsoft: &quot;Silver Fox&quot; deceptive-download campaign delivers counterfeit vendor installers</a><span class="urgency-yellow">This Week</span><span class="security-summary">Microsoft Security Blog details a Silver Fox campaign delivering counterfeit vendor installers through fake download pages, with persistent implants and C2 established on infected systems.</span></div>
-    <div class="security-card"><a href="#item-18" class="security-headline">Microsoft Defender flags legitimate Google search links as malicious</a><span class="urgency-yellow">This Week</span><span class="security-summary">Microsoft is investigating an issue causing Defender for Office 365 to mistakenly block access to legitimate Google search result URLs.</span></div>
-    <div class="security-card"><a href="#item-19" class="security-headline">Dropbox accounts breached via Lenovo email verification flaw</a><span class="urgency-yellow">This Week</span><span class="security-summary">Dropbox is notifying users that an unauthorized party accessed accounts by exploiting a flaw in Lenovo's email verification process.</span></div>
+    <div class="security-card"><a href="#item-11" class="security-headline">Apple confirms &quot;Surprise and shine&quot; event Sept 9 with iPhone 18 Pro, foldable iPhone Ultra, iOS 27</a><span class="urgency-yellow">This Week</span><span class="security-summary">Apple's fall event is confirmed for Sept 9 at Apple Park; iPhone 18 Pro/Pro Max, the first foldable iPhone (reportedly &quot;iPhone Ultra&quot;), plus iOS 27, iPadOS 27, and macOS 27 are expected.</span></div>
+    <div class="security-card"><a href="#item-12" class="security-headline">SkySwitch launches white-label AI voice agent for MSPs</a><span class="urgency-green">FYI</span><span class="security-summary">SkySwitch on Sept 2 announced a native AI voice agent that white-label UCaaS partners can deliver under their own brand with no development or third-party tools.</span></div>
+    <div class="security-card"><a href="#item-13" class="security-headline">Report: 97% of organizations hit by security tool misconfigurations</a><span class="urgency-yellow">This Week</span><span class="security-summary">A new industry report finds 97% of organizations have been affected by security tool misconfigurations, with configuration drift a leading contributor to breaches.</span></div>
   </div>
-  <details class="section-overflow"><summary>Show 10 more security items</summary><div class="security-cards">
-    <div class="security-card"><a href="#item-20" class="security-headline">BGP hijack pushes malicious Virtualizor update, root access on 5 hypervisors</a><span class="urgency-yellow">This Week</span><span class="security-summary">An Aug 28 BGP hijack redirected Virtualizor update traffic and delivered a malicious update, giving persistent root access on 5 of 34 hypervisors examined.</span></div>
-    <div class="security-card"><a href="#item-21" class="security-headline">Iran-linked APT Mirage Kitten uses fake LinkedIn coding tests to spread malware</a><span class="urgency-yellow">This Week</span><span class="security-summary">Mirage Kitten is distributing NodeRabbit and PollCat via fraudulent LinkedIn coding assessments, explicitly banning AI tools that might detect the trojaned code.</span></div>
-    <div class="security-card"><a href="#item-22" class="security-headline">FBI probes darkweb service selling 153M+ US drivers licenses</a><span class="urgency-green">FYI</span><span class="security-summary">Krebs reports the FBI is investigating a darkweb ID-theft service offering scans of 153M+ US/Canada drivers licenses, reportedly sourced from a Louisiana ID verification vendor.</span></div>
-    <div class="security-card"><a href="#item-23" class="security-headline">Microsoft AI Cloud Partner Program Agreement updated terms take effect Sept 1</a><span class="urgency-yellow">This Week</span><span class="security-summary">Updated MAICPP terms took effect automatically for MSPs and resellers beginning September 1, 2026 -- review contractual changes to obligations, compliance, and program benefits.</span></div>
-    <div class="security-card"><a href="#item-24" class="security-headline">Active exploitation of Langflow CVE-2026-0768 unauth RCE (50+ attempts)</a><span class="urgency-yellow">This Week</span><span class="security-summary">VulnCheck reports 50+ exploitation attempts against Langflow CVE-2026-0768, an unauthenticated remote Python code execution flaw on the AI workflow platform.</span></div>
-    <div class="security-card"><a href="#item-25" class="security-headline">US charges Russian national for infecting 80,000 freelancers with malware</a><span class="urgency-green">FYI</span><span class="security-summary">A California federal grand jury indicted a Russian national for a phishing campaign that infected roughly 80,000 freelancers worldwide.</span></div>
-    <div class="security-card"><a href="#item-26" class="security-headline">Sality botnet infrastructure dismantled in joint global takedown</a><span class="urgency-green">FYI</span><span class="security-summary">International law enforcement and private partners seized Sality malware infrastructure to disrupt the peer-to-peer botnet.</span></div>
-    <div class="security-card"><a href="#item-27" class="security-headline">Aesto Health AWS breach exposes 9.5M patient records</a><span class="urgency-green">FYI</span><span class="security-summary">Healthcare firm Aesto Health disclosed a breach affecting 9.5M+ individuals after attackers accessed AWS infrastructure between Dec 2-18, 2025.</span></div>
-    <div class="security-card"><a href="#item-28" class="security-headline">Paint.NET creator credits Claude with heavy assist on Direct2D WINE port</a><span class="urgency-green">FYI</span><span class="security-summary">Rick Brewster describes using Claude to work through Direct2D issues in porting Paint.NET to WINE -- useful data point on LLM assistants for complex Windows-graphics work.</span></div>
-    <div class="security-card"><a href="#item-29" class="security-headline">MSP trends: buyers want unified billing; specialization eclipses the generalist model</a><span class="urgency-green">FYI</span><span class="security-summary">ChannelProNetwork's MSP roundup notes SMB customers expect simpler unified-billing buying experiences while specialization and vertical focus displace generalist MSPs.</span></div>
-  </div></details>
 </div>
 
 <div class="section-details">
   <h2>Details</h2>
   <details class="item" id="item-1">
     <summary class="item-header">
-      <span class="item-title">Entra Connect requires upgrade to 2.5.79.0 or later by September 2026</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 11/11</span>
+      <span class="item-title">FBI IC3 PSA I-260901: OAuth consent phishing targeting personal accounts</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft is enforcing a required Entra Connect upgrade to version 2.5.79.0 (or later) by September 2026. Any hybrid tenant still on an older Connect build will experience directory sync outages after enforcement. Verify version across your construction and small-business clients (both hybrid Entra/Intune) and upgrade now.</p>
-      <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%E2%80%99s-new-in-microsoft-entra-september-2026/4545179" target="_blank" class="src">Source &rarr;</a>
+      <p>The FBI Internet Crime Complaint Center issued PSA I-260901 on September 1 warning that malicious cyber actors are targeting prominent victims, their family members, and personal acquaintances via direct messages containing malicious OAuth consent links. Attackers trick users into granting app permissions to gain persistent access to their accounts. Reinforce awareness training at your construction and small-business clients -- both already run KnowBe4/security awareness -- with a targeted note about consent-page phishing and how to spot suspicious permission scopes.</p>
+      <a href="https://www.ic3.gov/PSA/2026/PSA260901" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-2">
     <summary class="item-header">
-      <span class="item-title">SonicWall SMA1000 zero-days (CVE-2026-83548 / 83549) actively exploited; TZ series NOT affected</span>
-      <span class="item-type type-security">security</span>
+      <span class="item-title">Passkeys become the default authentication method in Entra ID</span>
+      <span class="item-type type-feature">feature</span>
       <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
+      <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>SonicWall's Sept 1 advisory details two actively exploited zero-days chained in RCE attacks against SMA1000 6210, 7210, and 8200v appliances -- a pre-auth SSRF (CVSS 10) and a post-auth RCE (CVSS 7.8). SonicWall explicitly confirms the flaws do NOT affect SSL-VPN on SonicWall firewalls (including the TZ series) or the SMA 100 line, so your construction client's TZ 7.2+ deployments are not exposed. Fixed in SMA1000 hotfixes 12.4.3-03526 and 12.5.0-02952 or higher.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-actively-exploited-sma1000-zero-day-flaws/" target="_blank" class="src">Source &rarr;</a>
+      <p>Starting September 1, 2026, passkeys become the default authentication experience in Microsoft Entra. Tenants with SMS or voice MFA enabled are automatically enrolled in passkey prompts, and beginning February 1, 2027, users relying on SMS/voice for MFA must register a passkey before signing in. Plan passkey registration campaigns at your construction client (hybrid Entra/Intune, ~55 users) and your small-business client (M365 Business Premium) now to avoid a scramble at the Feb 2027 cutover.</p>
+      <a href="https://www.microsoft.com/en-us/security/blog/2026/07/13/microsoft-entra-id-security-updates-passkeys-are-the-default-authentication-method-in-entra-id/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-3">
     <summary class="item-header">
-      <span class="item-title">Entra Security Administrator role gains user-response actions by end of September</span>
+      <span class="item-title">Microsoft Defender retires standalone Automated Investigation and Response</span>
       <span class="item-type type-feature">feature</span>
       <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>The built-in Security Administrator role expands to include disable/enable user accounts, revoke sessions, and force password reset for non-privileged users, with rollout completing by end of September 2026. Simplifies incident response delegation without granting broader privileged access -- useful for your construction and small-business clients' helpdesk workflows.</p>
-      <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%E2%80%99s-new-in-microsoft-entra-september-2026/4545179" target="_blank" class="src">Source &rarr;</a>
+      <p>As of September 1, 2026, Microsoft Defender retires the standalone Automated Investigation and Response (AIR) capability. Admins relying on the legacy AIR interface must transition to the unified Defender XDR experience for automated remediation actions. Check documentation and any Defender playbooks tied to your small-business client (migrating from Bitdefender to Defender for Business) and your internal ops M365 tenant for lingering references.</p>
+      <a href="https://blog.cloudcapsule.io/blog/whats-new-in-microsoft-365-september-updates" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-4">
     <summary class="item-header">
-      <span class="item-title">Windows 11 September 2026 cumulative KB5120998 ships movable Taskbar and Administrator Protection</span>
+      <span class="item-title">Entra SSPR to require explicitly registered auth methods starting Sept 7</span>
       <span class="item-type type-feature">feature</span>
       <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 10/11</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>KB5120998 (build 26200.9278) begins rollout to Windows 11 24H2 and 25H2 on September 8, 2026, with a movable/resizable Taskbar, redesigned Start and Search, updated context menu, and Administrator Protection -- the JIT-elevated admin token model. Features arrive via Controlled Feature Rollout so behavior will vary across the fleet. Test in a pilot ring before broad deployment across your construction, small-business, and internal-ops tenants.</p>
-      <a href="https://pureinfotech.com/kb5120998-windows-11-september-2026-update/" target="_blank" class="src">Source &rarr;</a>
+      <p>Beginning September 7, 2026, Microsoft Entra Self-Service Password Reset accepts only explicitly registered authentication methods for identity verification, ending the fallback behavior that accepted implicitly registered methods. Confirm users at your construction and small-business clients have registered supported methods (Authenticator, security questions, or email) before the cutover -- otherwise self-service password reset will fail for anyone relying on the implicit fallback.</p>
+      <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%E2%80%99s-new-in-microsoft-entra-september-2026/4545179" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-5">
     <summary class="item-header">
-      <span class="item-title">Bluebeam Revu 21.11 released with ChatGPT/Codex MCP support and Autodesk 2027 plugin compatibility</span>
+      <span class="item-title">Intune 2609 makes the redesigned single device page the default</span>
       <span class="item-type type-feature">feature</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Revu 21.11 launched September 1, 2026, adding expanded MCP capabilities with ChatGPT (Codex) support, new hyperlink workflows, bookmark improvements, and automatic text box sizing. Studio search across Sessions and Projects is faster, and new Autodesk 2027 plugin support ships alongside continued AutoCAD/Revit/Navisworks 2026 support. Also includes a redesigned first-time user experience with an Essentials profile -- directly relevant to your construction client's Bluebeam users.</p>
-      <a href="https://support.bluebeam.com/revu/resources/revu-21-release-notes.html" target="_blank" class="src">Source &rarr;</a>
+      <p>With the Intune September (2609) service release, the redesigned single device page becomes the default view and replaces the legacy page. The new page consolidates device details, compliance, and actions into one interface for admins managing endpoints. Familiarize the Intune admin workflow at your construction client (hybrid Entra/Intune) and your small-business client (Intune enrollment in progress) with the new layout.</p>
+      <a href="https://daily.intune.admin.news/week/2026-08-17/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-6">
     <summary class="item-header">
-      <span class="item-title">Anthropic launches Claude Fable 5.1 with lower cache costs and stronger root-cause debugging</span>
+      <span class="item-title">Microsoft Teams refreshes in-meeting experience with simpler controls</span>
       <span class="item-type type-feature">feature</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Anthropic released Claude Fable 5.1 (and Mythos 5.1) on September 1, 2026, positioning it for coding and long-running problem-solving. It matches or beats Fable 5 at low/medium effort and delivers higher performance at higher effort tiers, cuts API cache-read costs up to 45% on complex tasks, and is tuned to pursue root causes rather than band-aid fixes. Mythos 5.1 is limited to U.S. trusted-access participants.</p>
-      <a href="https://platform.claude.com/docs/en/models/fable-5-1/overview" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft is rolling out a refreshed Teams in-meeting UI in late September 2026, consolidating meeting controls to reduce clutter and streamline common actions (mute, video, share, reactions). The change is tenant-wide and does not require admin opt-in. Expect end-user questions at your construction and small-business clients plus internal ops -- worth a short heads-up to power users before the rollout lands.</p>
+      <a href="https://blog.cloudcapsule.io/blog/whats-new-in-microsoft-365-september-updates" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-7">
     <summary class="item-header">
-      <span class="item-title">ShareFile restores automated workflow email notifications after ~18-hour outage</span>
+      <span class="item-title">KnowBe4 launches Defend for Google Workspace with GA on Sept 15</span>
       <span class="item-type type-feature">feature</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>ShareFile disabled the ability to send emails through automated workflows at 6:56 PM EDT Aug 31 and confirmed restoration on Sept 1, 2026. Verify any missed notifications during the outage window and re-check automated processes tied to email delivery -- flag anyone in your construction client's Spectrum/ShareFile workflows that depend on automated notifications.</p>
-      <a href="https://status.sharefile.com/incidents/tpf30l4kyq08" target="_blank" class="src">Source &rarr;</a>
+      <p>KnowBe4 announced Defend for Google Workspace on September 2, extending its Defend email security portfolio to Gmail with AI-based threat detection, explainable verdicts, and real-time employee coaching. General availability is set for September 15, 2026. Your construction client already runs KnowBe4 with Barracuda on M365 -- this Workspace product does not apply directly but signals KnowBe4's product direction for future portfolio expansion.</p>
+      <a href="https://techafricanews.com/2026/09/02/knowbe4-launches-defend-for-google-workspace-to-strengthen-email-security/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-8">
     <summary class="item-header">
-      <span class="item-title">Defender for Office 365 adds prompt-injection protection for email</span>
+      <span class="item-title">Google releases Gemini 3.8 Flash with configurable thinking levels</span>
       <span class="item-type type-feature">feature</span>
       <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft announced an early-September 2026 rollout of prompt-injection protection for email in Defender for Office 365, aimed at defending Copilot/AI-processing pipelines from malicious instructions embedded in inbound mail. Relevant for any SMB tenant with Defender for Office 365 and Copilot enabled -- worth confirming licensing coverage at your internal-ops and small-business tenants.</p>
-      <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%E2%80%99s-new-in-microsoft-entra-september-2026/4545179" target="_blank" class="src">Source &rarr;</a>
+      <p>Google launched Gemini 3.8 Flash on September 2, 2026, a fast general-purpose model with configurable thinking levels (low, medium, high). Google highlighted it demonstrates frontier-level performance in autonomous vulnerability discovery, surpassing larger models from Anthropic and OpenAI on cyber benchmarks. Available via API for IT and developer tool integrations at your internal ops.</p>
+      <a href="https://simonwillison.net/2026/Sep/2/llm-gemini/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-9">
     <summary class="item-header">
-      <span class="item-title">Entra ID adds Tenant Governance for shadow-tenant discovery and drift monitoring</span>
+      <span class="item-title">llm-gemini 0.34 adds support for Gemini 3.8 Flash</span>
       <span class="item-type type-feature">feature</span>
       <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
+      <span class="score">Score: 6/11</span>
     </summary>
     <div class="item-body">
-      <p>New Entra Tenant Governance lets admins discover shadow-IT tenants, set least-privilege governance relationships, and monitor configuration drift against baselines across Entra, Intune, Exchange Online, Teams, Purview, and Defender. Meaningful new control plane for SMB MSPs managing multiple tenants -- worth piloting in your internal-ops tenant first before rolling to client tenants.</p>
-      <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%E2%80%99s-new-in-microsoft-entra-september-2026/4545179" target="_blank" class="src">Source &rarr;</a>
+      <p>Simon Willison shipped llm-gemini 0.34 on September 2, 2026, adding support for the newly released Gemini 3.8 Flash model with switchable thinking levels. Useful for IT pros running the LLM CLI to script Gemini across ops workflows at your internal ops tenant.</p>
+      <a href="https://simonwillison.net/2026/Sep/2/llm-gemini/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-10">
     <summary class="item-header">
-      <span class="item-title">Trimble Viewpoint for Projects (UK) resolves web app performance degradation</span>
+      <span class="item-title">Alibaba releases Qwen3.8 27B and Qwen3.8-Max-0902</span>
       <span class="item-type type-feature">feature</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 6/11</span>
     </summary>
     <div class="item-body">
-      <p>Trimble's status page reported a performance degradation incident on Viewpoint for Projects (UK) with a fix implemented and resolution monitored/confirmed on Sept 2, 2026. No direct client impact (US-hosted Spectrum unaffected), but useful signal on Trimble's UK infrastructure health if any partner ever needs it.</p>
-      <a href="https://status.viewpoint.com/incidents/m0d634y7bpy4" target="_blank" class="src">Source &rarr;</a>
+      <p>Alibaba shipped Qwen3.8 27B and Qwen3.8-Max-0902 on September 2, 2026, expanding the open-weight Qwen family with a mid-size 27B model and an updated Max tier. Relevant if evaluating on-prem or self-hosted LLM options for automation and internal tooling at your internal ops.</p>
+      <a href="https://aireleasetracker.com/latest" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-11">
     <summary class="item-header">
-      <span class="item-title">Microsoft Teams adds AI meeting archive files in early September</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 8/11</span>
+      <span class="item-title">Apple confirms &quot;Surprise and shine&quot; event Sept 9 with iPhone 18 Pro, foldable iPhone Ultra, and iOS 27</span>
+      <span class="item-type type-industry">industry</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Teams introduces AI-generated meeting archive files, an early-September 2026 rollout. Also announced: starting late September, Teams Channel-tab whiteboards will be stored in the channel's SharePoint site rather than the creator's OneDrive, affecting retention and ownership models. Worth flagging in your construction client's Teams governance review.</p>
-      <a href="https://learn.microsoft.com/en-us/officeupdates/teams-admin" target="_blank" class="src">Source &rarr;</a>
+      <p>Apple's fall event is confirmed for Wednesday, September 9 at Apple Park, where the iPhone 18 Pro, iPhone 18 Pro Max, and the first foldable iPhone (reportedly &quot;iPhone Ultra&quot;) are expected. The standard iPhone 18/18e/Air 2 have been pushed to spring 2027. iOS 27, iPadOS 27, and macOS 27 are expected to ship alongside the new hardware -- your construction client (iPhones only, ~55 users) should prep inventory decisions, MDM/Intune profiles for iOS 27, and app-compatibility testing this week before Sept 9.</p>
+      <a href="https://appleinsider.com/articles/26/08/26/what-to-expect-from-apples-surprise-and-shine-iphone-18-pro-event-on-september-9" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-12">
     <summary class="item-header">
-      <span class="item-title">OpenAI Codex desktop app ships bundled with LibreOffice, Poppler, Git, Python, and Node.js</span>
-      <span class="item-type type-feature">feature</span>
+      <span class="item-title">SkySwitch launches white-label AI voice agent for MSPs</span>
+      <span class="item-type type-industry">industry</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>Simon Willison highlights that OpenAI's Codex desktop application now ships with a bundled runtime stack including LibreOffice, Poppler, Git, Python, and Node.js. IT pros supporting Codex installs should be aware of the expanded install footprint and dependency surface area on developer workstations.</p>
-      <a href="https://simonwillison.net/2026/Sep/1/codex-libreoffice/" target="_blank" class="src">Source &rarr;</a>
+      <p>SkySwitch on September 2, 2026 announced a native AI voice agent that its white-label UCaaS partners can deliver under their own brand with no development or third-party tools. The move brings enterprise-style AI voice automation into reach for smaller MSPs offering hosted voice. Not directly applicable to Purplesky's stack, but a data point on how AI voice is bundling into MSP channel offerings.</p>
+      <a href="https://www.channele2e.com/news/skyswitch-launches-native-ai-agent-bringing-enterprise-ai-communications-to-every-white-label-partner" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-13">
     <summary class="item-header">
-      <span class="item-title">KnowBe4 releases healthcare cybersecurity whitepaper &quot;Hacking the Healers&quot;</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>KnowBe4 publishes a healthcare-focused cybersecurity whitepaper covering current threats, how remote staff and AI agents dissolve traditional network perimeters, and awareness recommendations. Useful reference material if any client asks about healthcare-vertical training programs.</p>
-      <a href="https://blog.knowbe4.com/hacking-the-healers-knowbe4-healthcare-cybersecurity-white-paper" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-14">
-    <summary class="item-header">
-      <span class="item-title">Copilot Studio: makers can now require human approval for tool calls</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>New Microsoft 365 Roadmap entry (ID 570434) lets makers require human approval before an agent tool call executes, providing guardrails for sensitive operations like sending emails or processing payments. Governance control worth enabling on any Copilot Studio agent that touches sensitive workflows.</p>
-      <a href="https://www.microsoft.com/microsoft-365/roadmap?id=570434" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-15">
-    <summary class="item-header">
-      <span class="item-title">Copilot Studio agents in M365 Copilot get streamlined UX</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Roadmap ID 570435 aligns Copilot Studio agent responses with M365 Copilot Chat formatting, streaming behavior, and citation delivery across platforms. Minor UX improvement for organizations already using Copilot Studio agents inside M365 Copilot.</p>
-      <a href="https://www.microsoft.com/microsoft-365/roadmap?id=570435" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-16">
-    <summary class="item-header">
-      <span class="item-title">Viva Glint adds a new Survey Owner role</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 6/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Roadmap ID 570444 introduces a Survey Owner role in Viva Glint, separating survey ownership from broader admin and enabling delegated survey lifecycle management. Narrow relevance -- only matters if a tenant uses Viva Glint.</p>
-      <a href="https://www.microsoft.com/microsoft-365/roadmap?id=570444" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-17">
-    <summary class="item-header">
-      <span class="item-title">Microsoft: &quot;Silver Fox&quot; deceptive-download campaign delivers counterfeit vendor installers</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Microsoft Security Blog details a Silver Fox campaign delivering counterfeit vendor installers through fake download pages, with persistent implants and C2 established on infected systems. Primary targeting is Chinese-speaking users in healthcare and manufacturing, but the technique is broadly applicable to SMB endpoint compromise -- reinforce install-from-vendor guidance and application-control policies.</p>
-      <a href="https://www.microsoft.com/en-us/security/blog/2026/09/01/counterfeit-installers-system-compromise-tracking-deceptive-software-download-campaign/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-18">
-    <summary class="item-header">
-      <span class="item-title">Microsoft Defender flags legitimate Google search links as malicious</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Microsoft is investigating an issue causing Defender for Office 365 to mistakenly block access to legitimate Google search result URLs, disrupting user browsing and generating admin alerts. SMB admins running Defender for Business should expect user complaints and prepare exclusions or wait for the Microsoft fix -- relevant across your small-business and internal-ops tenants.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/microsoft-defender-flags-legitimate-google-search-links-as-malicious/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-19">
-    <summary class="item-header">
-      <span class="item-title">Dropbox accounts breached via Lenovo email verification flaw</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Dropbox is warning some users that an unauthorized party accessed their accounts by exploiting a flaw in Lenovo's email verification process. Relevant for SMBs relying on cloud storage and email-verification identity flows -- verify no client Dropbox accounts are tied to Lenovo-issued email verification.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/dropbox-accounts-breached-through-lenovo-email-verification-flaw/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-20">
-    <summary class="item-header">
-      <span class="item-title">BGP hijack pushes malicious Virtualizor update, root access on 5 hypervisors</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>An Aug 28 BGP hijack redirected Virtualizor update traffic and delivered a malicious update, giving persistent root access on 5 of 34 hypervisors examined. Illustrates supply-chain risk for any SMB or hosting provider running Virtualizor-based virtualization platforms.</p>
-      <a href="https://thehackernews.com/2026/09/bgp-hijack-delivers-malicious.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-21">
-    <summary class="item-header">
-      <span class="item-title">Iran-linked APT Mirage Kitten uses fake LinkedIn coding tests to spread malware</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Iran-linked Mirage Kitten is running fraudulent LinkedIn job coding assessments to deliver NodeRabbit and PollCat malware, explicitly banning AI tools that could detect the trojaned code. Relevant to SMB employees, especially developers, targeted via social-engineering job lures -- reinforce awareness training on unsolicited recruiter approaches.</p>
-      <a href="https://securityaffairs.com/198289/apt/iran-linked-apt-mirage-kitten-uses-fake-job-tests-to-spread-malware.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-22">
-    <summary class="item-header">
-      <span class="item-title">FBI probes darkweb service selling 153M+ US drivers licenses</span>
+      <span class="item-title">Report: 97% of organizations hit by security tool misconfigurations</span>
       <span class="item-type type-industry">industry</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Krebs reports the FBI's New Orleans office is investigating a darkweb identity-theft service offering digital scans of 153 million-plus US and Canada drivers licenses, reportedly sourced from a Louisiana-based ID verification company. Raises identity-verification fraud risk for SMBs handling KYC/onboarding data.</p>
-      <a href="https://krebsonsecurity.com/2026/09/fbi-probes-service-selling-153m-drivers-licenses/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-23">
-    <summary class="item-header">
-      <span class="item-title">Microsoft AI Cloud Partner Program Agreement updated terms take effect Sept 1</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Updated Microsoft AI Cloud Partner Program Agreement terms took effect automatically for MSPs and resellers beginning September 1, 2026. Partners should review contractual changes to obligations, compliance, and program benefits under the new terms -- applies to your internal-ops as a partner.</p>
-      <a href="https://learn.microsoft.com/en-us/partner-center/announcements/2026-august" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-24">
-    <summary class="item-header">
-      <span class="item-title">Active exploitation of Langflow CVE-2026-0768 unauth RCE (50+ attempts)</span>
-      <span class="item-type type-security">security</span>
       <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 6/11</span>
     </summary>
     <div class="item-body">
-      <p>VulnCheck reports 50+ exploitation attempts against Langflow CVE-2026-0768, an unauthenticated remote Python code execution flaw on the AI workflow platform. SMBs running Langflow should patch immediately or isolate the instance -- not present in your client base, awareness only for the pattern.</p>
-      <a href="https://securityaffairs.com/198270/hacking/hackers-target-langflow-in-cve-2026-0768-attacks.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-25">
-    <summary class="item-header">
-      <span class="item-title">US charges Russian national for infecting 80,000 freelancers with malware</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 6/11</span>
-    </summary>
-    <div class="item-body">
-      <p>A California federal grand jury indicted a Russian national for his role in a phishing campaign that infected thousands of freelancers with malware. Notable law-enforcement action but low direct urgency for SMB IT operations.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/us-charges-russian-for-infecting-80-000-freelancers-with-malware/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-26">
-    <summary class="item-header">
-      <span class="item-title">Sality botnet infrastructure dismantled in joint global takedown</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 6/11</span>
-    </summary>
-    <div class="item-body">
-      <p>International law enforcement agencies and private partners have seized Sality malware infrastructure in a joint action aiming to disrupt the peer-to-peer botnet. Positive news but limited direct action required by SMB IT beyond confirming endpoints are clean.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/sality-botnet-infrastructure-dismantled-in-joint-global-takedown/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-27">
-    <summary class="item-header">
-      <span class="item-title">Aesto Health AWS breach exposes 9.5M patient records</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 6/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Healthcare firm Aesto Health disclosed a breach affecting over 9.5 million individuals after attackers accessed AWS infrastructure between December 2-18, 2025, exposing personal and medical data. Reinforces cloud-configuration and third-party-vendor risk for SMBs in regulated verticals.</p>
-      <a href="https://securityaffairs.com/198250/data-breach/attackers-access-aesto-health-aws-infrastructure-exposing-9-5-million-records.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-28">
-    <summary class="item-header">
-      <span class="item-title">Paint.NET creator credits Claude with heavy assist on Direct2D WINE port</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 6/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Paint.NET creator Rick Brewster credits Claude with substantially helping him navigate Direct2D issues while getting Paint.NET running on WINE, describing the AI's work as both remarkably productive and requiring significant oversight. A useful data point for IT pros evaluating LLM coding assistants on complex Windows-graphics-stack porting work.</p>
-      <a href="https://simonwillison.net/2026/Sep/2/rick-brewster/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-29">
-    <summary class="item-header">
-      <span class="item-title">MSP trends: buyers want unified billing; specialization eclipses the generalist model</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 6/11</span>
-    </summary>
-    <div class="item-body">
-      <p>ChannelProNetwork's Sept 1 MSP trends roundup notes SMB customers increasingly expect simpler buying experiences with unified billing and integrated outcomes, while the traditional generalist MSP model fades in favor of specialization, cybersecurity expertise, and vertical-industry focus. Also flags Harbor IT acquisition activity as ongoing consolidation in the channel.</p>
-      <a href="https://www.channelpronetwork.com/2026/09/01/msp-trends-quick-bytes/" target="_blank" class="src">Source &rarr;</a>
+      <p>A new industry report covered by ChannelE2E on September 2, 2026 finds that 97% of organizations have been affected by security tool misconfigurations, with configuration drift a leading contributor to breaches. Reinforces the case for periodic posture audits and patch/policy drift reviews at your construction, small-business, and internal-ops tenants, especially with hybrid Entra/Intune and Defender in flight.</p>
+      <a href="https://www.channele2e.com/news/configuration-drift-leads-to-widespread-security-breaches-report-finds" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 </div>
 
-<div class="footer">Generated Wednesday, September 2, 2026 at 6:42 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-09-02.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
+<div class="footer">Generated Thursday, September 3, 2026 at 6:37 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-09-03.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
 
 </main>
 </body>
