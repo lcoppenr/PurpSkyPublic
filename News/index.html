@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<title>Morning Briefing -- Monday, September 7, 2026</title>
+<title>Morning Briefing -- Tuesday, September 8, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -14,260 +14,406 @@
 <main class="briefing-content">
 
 <div class="page-header">
-  <h1>Morning Briefing -- Monday, September 7, 2026</h1>
+  <h1>Morning Briefing -- Tuesday, September 8, 2026</h1>
   <p class="page-meta">Microsoft &bull; Security &amp; Compliance &bull; Firewall / VPN / Networking &bull; Servers/NAS &bull; Workstations &amp; Mobile &bull; Peripherals &amp; AV &bull; RMM &amp; Remote Access &bull; Construction &amp; Specialty Software &bull; General Tech &amp; AI &bull; Pacific Time</p>
 </div>
 
 <div class="section-actions">
   <h2>Today's Actions</h2>
-  <p class="section-transparency">Showing 3 of 6</p>
+  <p class="section-transparency">Showing 3 of 12</p>
   <ol class="action-list">
-    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Push the emergency Chrome update tenant-wide and tell users to restart their browsers today -- an actively exploited V8 zero-day (CVE-2026-85046) is being hit in the wild, and Edge (Chromium) will inherit the same fix. <a href="#item-1" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> Note the SonicWall SMA 1000 chained pre-auth RCE (CVE-2026-83548 + -83549) added to CISA KEV -- no SMA 1000 in your fleet, but confirm none was quietly stood up and keep an eye out for TZ-line advisories in the same disclosure wave. <a href="#item-2" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> Log the CrowdStrike Falcon "FalconFlank" SYSTEM-privilege zero-day -- your clients run Defender, not Falcon, so no direct action, but be ready if a client mentions a Falcon-based MSP catching the update. <a href="#item-3" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Warn all M365 client tenants and queue a KnowBe4 campaign about the BigBear phishing-as-a-service platform -- it just bypassed MFA at 258 organizations and stole 5,000+ M365 credentials via adversary-in-the-middle session-cookie theft. <a href="#item-1" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Tell users at every client (especially your construction client executives) that fake IT support calls are being used to steal M365 session tokens and drive extortion -- never approve MFA prompts or share codes from an unexpected inbound "help desk" call. <a href="#item-2" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Reinforce the same anti-vishing message everywhere: PREY-0058 is impersonating internal help desk staff to bypass MFA and enroll their own MFA methods for persistence, so users must verify any inbound "IT" contact through a known internal channel. <a href="#item-3" class="detail-link">details</a></li>
   </ol>
-  <details class="section-overflow"><summary>Show 3 more actions</summary><ol class="action-list" start="4">
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Verify TCP/445 is not reachable from the internet at any client site and confirm SMB signing is enforced -- WantToCry is scanning exposed SMB and encrypting shares remotely without dropping local malware. <a href="#item-4" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-yellow">This Week</span> Refresh Barracuda rules and queue a KnowBe4 campaign on invisible-Unicode phishing -- a millions-strong wave is hiding lure text inside zero-width characters that most SEGs miss. <a href="#item-5" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-yellow">This Week</span> Stage the September 2026 Patch Tuesday cumulative for Tuesday Sept 8 -- forecast is 9 Critical fixes across Windows/Office/Azure/Dynamics with pre-published CVE-2026-50376 (Windows Remote Desktop Client info disclosure) already in the queue. <a href="#item-6" class="detail-link">details</a></li>
+  <details class="section-overflow"><summary>Show 9 more actions</summary><ol class="action-list" start="4">
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> Note the unpatched ConnectWise ScreenConnect file-transfer flaw being used to spread malware -- your clients are on Atera, not ScreenConnect, so no action, but log it in case a partner MSP asks. <a href="#item-4" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> Log the N-able N-central pre-auth RCE (CVE-2026-86218, CVSS 10.0) actively exploited and patched in HF4 (2026.3.1.14) -- Atera clients unaffected, but keep the CVE handy if a peer MSP mentions N-central. <a href="#item-5" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> Note Adobe's out-of-band Magento zero-day patch (CVE-2026-75650 "StyleSmuggler," max severity, active exploitation) -- no Magento in your fleet, but reference for any e-commerce contact. <a href="#item-6" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-yellow">This Week</span> Stage the September 2026 Patch Tuesday cumulative in Atera -- 9 Critical CVEs across Azure, Office, and Dynamics, no active exploitation at ship time, plus 172 Azure Linux and 23 Chromium republished Edge fixes. <a href="#item-7" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-yellow">This Week</span> Watch for app crashes on Windows Server 2025 tied to recent memory-management changes -- SQL Server with "Lock Pages in Memory" enabled is confirmed affected, and an Aug 13 update also causes hangs when apps open/save to OneDrive or Dropbox. <a href="#item-8" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-yellow">This Week</span> Restrict Teams external federation at your construction client and monitor WinRM outbound -- Microsoft is tracking a campaign where attackers pose as help desk in Teams external chat, deploy Node.js implants, and pivot enterprise-wide. <a href="#item-9" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-yellow">This Week</span> Tune Barracuda rules to strip or flag invisible Unicode "tag" characters and queue a KnowBe4 module -- attackers are using ASCII smuggling to hide phishing lure words from SEG parsing. <a href="#item-10" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-yellow">This Week</span> Track the rise of AI-agent frameworks wrapping LLMs around automated phishing, lure generation, and stolen-mailbox parsing -- your defenders' scale/quality gap will widen. <a href="#item-11" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-yellow">This Week</span> Watch for unexpected Chrome/Edge native-messaging manifests and unsigned extension sideloads across managed endpoints -- PEEP converts an already-compromised browser into a persistent host-command backdoor. <a href="#item-12" class="detail-link">details</a></li>
   </ol></details>
 </div>
 
 <div class="section-new">
   <h2>What's New</h2>
-  <p class="section-transparency">Showing 3 of 8</p>
+  <p class="section-transparency">Showing 3 of 11</p>
   <ul class="new-list">
-    <li><strong><a href="#item-7">OpenAI GPT-6 Astra rolls out to paid ChatGPT tiers with "computer use" agent capability</a></strong> -- OpenAI opened GPT-6 Astra to ChatGPT Plus/Pro/Business/Enterprise and the API/AWS on Sept 4, headlining an agent that navigates spreadsheets, forms, and websites autonomously. Cybersecurity-adjacent prompts are restricted in the public release. Worth pricing out for admin-workflow pilots. <a href="https://www.cnbc.com/2026/09/03/open-ai-astra-gpt-6-cyber.html" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-8">Exchange Online "Server busy" errors delay external mail (Sept 4 incident)</a></strong> -- Microsoft confirmed a Sept 4 Exchange Online service degradation causing intermittent "Server busy" errors and delivery delays on outbound external mail, following the broader Aug 31-Sept 2 M365 auth outage. Check the M365 admin center for tenant-specific impact before assuming a client-side mail problem. <a href="https://cybersecuritynews.com/exchange-online-outage-delaying-emails/" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-9">Teams desktop client failing to launch for a subset of users (Microsoft investigating)</a></strong> -- Microsoft acknowledged a known issue preventing the Teams desktop client from opening for some users; workaround is the Teams web client while Microsoft ships a fix. Expect a wave of "Teams won't open" tickets today. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-says-some-users-cant-open-the-teams-desktop-client/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-13">Entra ID begins passkey-as-default authentication rollout with SMS and voice retiring Feb 2027</a></strong> -- Beginning Sept 1, 2026 Microsoft is rolling out passkeys as the default Entra ID authentication experience, auto-enabling passkeys for users still on SMS or voice-based sign-in. Phone SMS and voice methods will be retired across all tenants in February 2027. Microsoft plans to publish supported provider list and deployment guidance on Sept 18, 2026. <a href="https://www.helpnetsecurity.com/2026/07/14/microsoft-entra-passkey-authentication/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-14">Apple "Surprise and Shine" event tomorrow (Sept 9) to unveil iPhone 18 Pro and foldable iPhone Ultra</a></strong> -- Apple's fall event lands Wednesday Sept 9 at 10 a.m. PT with iPhone 18 Pro, Pro Max, and the long-rumored foldable "iPhone Ultra" as headline hardware, all on the new A20 Pro (2nm) chip. The foldable uses a book-style design with a ~5.5" outer and ~7.6" inner display, titanium frame, and liquid-metal hinge; sales rumored October-December. No standard iPhone 18 this cycle -- Apple is holding the cheaper models until spring 2027. <a href="https://www.macrumors.com/guide/apple-september-2026-what-to-expect/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-15">macOS Golden Gate, iOS 27, iPadOS 27 final release dates expected at Sept 9 event</a></strong> -- Apple is expected to announce final release dates for macOS 27 "Golden Gate," iOS 27, iPadOS 27, tvOS 27, watchOS 27, and visionOS 27 tomorrow, with the week of Sept 14 the most credible ship window. macOS Golden Gate drops Intel Mac support entirely and requires Apple silicon; advanced Siri/Apple Intelligence features need M3 or newer with 12+ GB unified memory. <a href="https://www.macworld.com/article/3139330/macos-27-mac-features-siri-apple-intelligence-release-date-compatibility.html" target="_blank">Source &rarr;</a></li>
   </ul>
-  <details class="section-overflow"><summary>Show 5 more updates</summary><ul class="new-list">
-    <li><strong><a href="#item-10">KnowBe4 Defend for Google Workspace ships Sept 15 with in-Gmail AI coaching</a></strong> -- KnowBe4 announced Defend for Google Workspace, generally available Sept 15, adding AI threat detection and real-time in-Gmail coaching. Early telemetry cites roughly 1-in-666 emails intercepted as dangerous. Useful reference even if your clients are M365-first. <a href="https://www.zawya.com/en/press-release/companies-news/knowbe4-launches-email-and-collaboration-security-protection-for-google-workspace-475206" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-11">Teams gets automatic QR-code phishing protection in chat</a></strong> -- M365 Roadmap 570439: Teams will automatically scan images shared in chat and obscure QR codes from external senders until the user reveals them, cutting the "quishing" attack surface. Rolling out to tenants; GA October 2026. <a href="https://www.microsoft.com/microsoft-365/roadmap?id=570439" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-12">Teams meeting recording/transcription options now honor admin policy</a></strong> -- M365 Roadmap 570468: meeting organizers will only see recording and transcription choices allowed by tenant policy, with a new "Record only" option separated from transcription. GA November 2026. Review policies before rollout. <a href="https://www.microsoft.com/microsoft-365/roadmap?id=570468" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-13">Admins gain control over profanity filtering in Teams meeting transcripts</a></strong> -- M365 Roadmap 570467: tenant admins can enable or disable profanity masking in live and saved Teams meeting transcripts, GA October 2026. Useful for construction sites and any regulated / HR-record scenario where verbatim transcripts matter. <a href="https://www.microsoft.com/microsoft-365/roadmap?id=570467" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-14">Windows 11 KB5120998 optional preview brings Taskbar/Start customization (builds 26200.9278 / 26100.9278)</a></strong> -- The September 2026 optional non-security preview starts rolling Sept 8 with Taskbar position/size options, redesigned Start menu customization, and Windows Search UI changes. Feature availability is gated by Controlled Feature Rollout, so preview a pilot ring first. <a href="https://pureinfotech.com/kb5120998-windows-11-september-2026-update/" target="_blank">Source &rarr;</a></li>
+  <details class="section-overflow"><summary>Show 8 more updates</summary><ul class="new-list">
+    <li><strong><a href="#item-16">Windows 11 September 2026 preview KB5120998 delivers movable Taskbar and Start menu resize</a></strong> -- KB5120998 (build 26200.9278) began rolling out to Windows 11 25H2 and 24H2 on Sept 8, adding a Taskbar movable to any screen edge with resize options, new Start menu size choices, and refined Windows Search with more control over web/Store suggestions. Rollout is gradual via Controlled Feature Rollout. <a href="https://pureinfotech.com/kb5120998-windows-11-september-2026-update/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-17">Intune 2609 release makes new single device page the default</a></strong> -- The redesigned Intune single device page becomes the default in the September (2609) release, replacing the legacy view. All management capabilities remain but admins should update internal runbooks and screenshots. The China cloud endpoint page now correctly lists graph.chinacloudapi.cn. <a href="https://daily.intune.admin.news/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-18">Entra Tenant Governance reaches general availability</a></strong> -- Microsoft Entra Tenant Governance is now GA, giving admins visibility into all Entra tenants connected to the organization, including shadow-IT tenants central IT does not administer. Lifecycle Workflows admins can also now clone existing workflows, and the Security Administrator role is expanding this month to include user disable/enable, session revocation, and forced password reset. <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%e2%80%99s-new-in-microsoft-entra-september-2026/4545179" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-19">Teams QR code protection in chat targeted for GA in October 2026</a></strong> -- M365 Roadmap 570439 adds QR-code protection to Teams chat, flagging or blocking suspicious embedded QR codes to counter "quishing" pivoted into Teams. Targeted GA October 2026. <a href="https://www.microsoft.com/microsoft-365/roadmap?id=570439" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-20">Teams recording and transcription options aligning with admin policies (GA November 2026)</a></strong> -- M365 Roadmap 570468 makes participants' recording and transcription option visibility respect tenant admin policies rather than showing options users cannot actually invoke. Targeted GA November 2026. <a href="https://www.microsoft.com/microsoft-365/roadmap?id=570468" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-21">Teams admins get control over profanity filtering in transcripts (GA October 2026)</a></strong> -- M365 Roadmap 570467 lets Teams admins configure whether meeting transcripts filter profanity, replacing the current one-size default -- useful for regulated verticals that need verbatim capture. Targeted GA October 2026. <a href="https://www.microsoft.com/microsoft-365/roadmap?id=570467" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-22">Apple Watch Series 12, Ultra 4, and AirPods 5 also expected at Sept 9 event</a></strong> -- Alongside the new iPhones, Apple is expected to launch Apple Watch Series 12 (faster S11-class chip, ceramic case option, fitness tracking upgrades), Apple Watch Ultra 4 (adds satellite Apple Maps and photo Messages via satellite), and AirPods 5 in two variants (with and without ANC). <a href="https://www.macrumors.com/2026/08/30/apple-watch-series-12-ultra-4-features/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-23">Simon Willison ships llm 0.35 with GPT-6 Astra support</a></strong> -- The open-source llm CLI released version 0.35, adding support for OpenAI's newly launched GPT-6 Astra model. Useful for IT pros doing quick LLM-based scripting or evaluation from the command line. <a href="https://simonwillison.net/2026/Sep/7/llm/" target="_blank">Source &rarr;</a></li>
   </ul></details>
 </div>
 
 <div class="section-security">
   <h2>Security &amp; Patches</h2>
+  <p class="section-transparency">Showing 3 of 5</p>
   <div class="security-cards">
-    <div class="security-card"><a href="#item-15" class="security-headline">CMMC Reform Task Force delivers findings to DoD CIO Sept 13, public report Sept 28</a><span class="urgency-yellow">This Week</span><span class="security-summary">With CMMC Phase 2 suspended in July, the CMMC Reform Task Force is on track to hand findings to the DoD CIO on Sept 13, 2026, with a public report expected Sept 28.</span></div>
-    <div class="security-card"><a href="#item-16" class="security-headline">Apple's "Surprise and Shine" event set for Sept 9 -- iPhone 18 Pro, foldable "iPhone Ultra" expected</a><span class="urgency-green">FYI</span><span class="security-summary">Apple's fall event lands Tuesday Sept 9 at 10:00 a.m. Pacific, CEO John Ternus's first product launch, with iPhone 18 Pro / Pro Max, a foldable "iPhone Ultra," and Apple Watch Series 12 / Ultra 4 expected on the A20 Pro (2nm) chip.</span></div>
-    <div class="security-card"><a href="#item-17" class="security-headline">Microsoft publishes guidance on securing edge AI in customer-owned environments</a><span class="urgency-green">FYI</span><span class="security-summary">Microsoft's Sept 4 security blog lays out architecture and defensive guidance for organizations running AI workloads at the edge in their own tenants, covering identity, data, and endpoint hardening.</span></div>
+    <div class="security-card"><a href="#item-24" class="security-headline">CMMC Phase 2 suspended; DoD review guidance expected mid-September 2026</a><span class="urgency-yellow">This Week</span><span class="security-summary">DoD suspended CMMC Phase 2 (previously scheduled Nov 10, 2026) on July 13, launching a 60-day top-to-bottom review of the program.</span></div>
+    <div class="security-card"><a href="#item-25" class="security-headline">Huntress and blueAPACHE expand Microsoft security partnership</a><span class="urgency-green">FYI</span><span class="security-summary">Huntress and blueAPACHE announced an expanded partnership giving MSPs more paths to sell managed security wrapped around Microsoft's stack.</span></div>
+    <div class="security-card"><a href="#item-26" class="security-headline">KnowBe4 pushes Quantum Readiness Day September 24 with quantum-security upgrade guidance</a><span class="urgency-green">FYI</span><span class="security-summary">KnowBe4 is promoting Quantum Readiness Day on Sept 24 with a blog post arguing security programs need to start planning crypto-agility, PQC pilot inventories, and vendor roadmap conversations now rather than after a quantum break.</span></div>
   </div>
+  <details class="section-overflow"><summary>Show 2 more security items</summary><div class="security-cards">
+    <div class="security-card"><a href="#item-27" class="security-headline">OpenAI reports sharp acceleration in internal coding-agent usage</a><span class="urgency-green">FYI</span><span class="security-summary">OpenAI publicly detailed a late-July inflection in coding-agent usage and spending by its own researchers, a signal that agentic coding workflows are moving from pilot to daily driver at frontier labs.</span></div>
+    <div class="security-card"><a href="#item-28" class="security-headline">Security leaders urged to reassess CCPA compliance posture</a><span class="urgency-green">FYI</span><span class="security-summary">ChannelE2E highlights consumer friction accessing personal data from companies under CCPA and argues security leaders at SMBs should audit their data-subject-access-request handling now.</span></div>
+  </div></details>
 </div>
 
 <div class="section-details">
   <h2>Details</h2>
   <details class="item" id="item-1">
     <summary class="item-header">
-      <span class="item-title">Google patches actively exploited Chrome V8 zero-day CVE-2026-85046</span>
+      <span class="item-title">BigBear phishing-as-a-service bypassed MFA at 258 organizations, stole 5,000+ M365 credentials</span>
       <span class="item-type type-security">SECURITY</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>Google shipped an emergency Chrome update for a V8 engine zero-day (CVE-2026-85046, high-severity type confusion) already being exploited in the wild. Push the update across all Windows endpoints today; Microsoft Edge (Chromium) will follow with the same fix. Users must restart their browsers for the patch to take effect.</p>
-      <a href="https://thehackernews.com/2026/09/google-releases-chrome-update-to-patch.html" target="_blank" class="src">Source &rarr;</a>
+      <p>A phishing-as-a-service platform tracked as BigBear bypassed multi-factor authentication at 258 organizations, harvesting more than 5,000 Microsoft 365 credentials. The PhaaS uses adversary-in-the-middle proxying to intercept session cookies after MFA is completed, giving attackers persistent access to victim tenants.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/bigbear-microsoft-365-phishing-service-bypassed-mfa-at-258-organizations/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-2">
     <summary class="item-header">
-      <span class="item-title">SonicWall SMA 1000 zero-days CVE-2026-83548 / -83549 chained for pre-auth RCE, added to CISA KEV</span>
+      <span class="item-title">Fake IT help desk calls target M365 executives for token theft and extortion</span>
       <span class="item-type type-security">SECURITY</span>
       <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
+      <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>SonicWall confirms active in-the-wild exploitation of two SMA 1000 zero-days that can be chained for unauthenticated RCE: CVE-2026-83548 is a pre-auth SSRF (CVSS 10.0) in the Appliance Work Place interface and CVE-2026-83549 is an OS command injection in the Appliance Management Console. Affected models are 6210, 7210, and 8200v, and both CVEs were added to CISA's KEV catalog. Not the TZ series at your construction client, but same vendor -- confirm no SMA 1000 was quietly deployed and stay alert for follow-on TZ advisories.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-actively-exploited-sma1000-zero-day-flaws/" target="_blank" class="src">Source &rarr;</a>
+      <p>Threat actors are vishing executives while posing as internal IT support, walking targets through steps that hand over M365 session tokens; stolen tokens are then replayed from residential-proxy IP space to evade conditional access. Follow-on activity includes bulk data theft and extortion demands.</p>
+      <a href="https://thehackernews.com/2026/09/microsoft-365-attackers-use-help-desk.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-3">
     <summary class="item-header">
-      <span class="item-title">CrowdStrike "FalconFlank" zero-day grants SYSTEM privileges on Windows</span>
+      <span class="item-title">PREY-0058 threat actors bypass MFA via IT help desk impersonation</span>
       <span class="item-type type-security">SECURITY</span>
       <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
+      <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>A newly disclosed zero-day in CrowdStrike's Falcon sensor, dubbed FalconFlank, lets a local attacker escalate to SYSTEM on Windows endpoints. Your clients run Defender for Business rather than Falcon, so no direct patching action -- but keep the CVE handy for any client that mentions running Falcon under an MSP, and watch for a broader "Defender bypass" copycat pattern.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/new-crowdstrike-falconflank-zero-day-grants-system-privileges/" target="_blank" class="src">Source &rarr;</a>
+      <p>Security Affairs details PREY-0058, a threat cluster that impersonates IT help desk staff to trick users into approving MFA prompts or handing over one-time codes. Once inside, attackers pivot laterally through M365 and enroll their own MFA methods for persistence, validating the trend seen from Microsoft and The Hacker News this week.</p>
+      <a href="https://securityaffairs.com/198634/cyber-crime/it-help-desk-impersonation-lets-hackers-bypass-mfa.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-4">
     <summary class="item-header">
-      <span class="item-title">WantToCry ransomware scans exposed SMB and encrypts files remotely</span>
+      <span class="item-title">ConnectWise warns of unpatched ScreenConnect file-transfer flaw</span>
       <span class="item-type type-security">SECURITY</span>
       <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 9/11</span>
+      <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>Sophos details WantToCry, a ransomware that finds internet-exposed SMB shares and performs the encryption entirely from attacker infrastructure without dropping local malware. Sophos estimates over 1.5 million devices are exposing SMB to the internet. Confirm TCP/445 is not reachable externally at any client site (SonicWall TZ / UCG Fiber / carrier firewalls) and enforce SMB signing across servers and NAS.</p>
-      <a href="https://www.sophos.com/en-us/blog/wanttocry-ransomware-remotely-encrypts-files" target="_blank" class="src">Source &rarr;</a>
+      <p>ConnectWise disclosed a new ScreenConnect vulnerability affecting file-transfer permissions in both Cloud and On-Premise deployments; no patch has shipped yet, with a CVE and fix expected within the week. Workaround is to disable file-transfer permissions for technician roles. Attackers are reportedly spreading malware through ScreenConnect file-transfer sessions.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/connectwise-warns-of-new-screenconnect-flaw-without-patch/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-5">
     <summary class="item-header">
-      <span class="item-title">Invisible-Unicode phishing wave slips past most secure email gateways</span>
+      <span class="item-title">N-able patches actively exploited N-central pre-auth RCE (CVE-2026-86218, CVSS 10.0)</span>
       <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 10/11</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft and press are reporting a millions-strong phishing campaign that hides financial lure words and payload logic inside zero-width Unicode characters, defeating many SEG detection rules. Tune Barracuda rules to strip or flag Unicode Tag characters in email bodies, and queue a KnowBe4 module warning users that "clean-looking" invoice and DocuSign lures may still be phishing.</p>
-      <a href="https://thehackernews.com/2026/09/phishing-campaign-sends-millions-of.html" target="_blank" class="src">Source &rarr;</a>
+      <p>N-able released Hotfix 4 for N-central 2026.3 (build 2026.3.1.14) on Sept 5 addressing CVE-2026-86218, a critical pre-authenticated RCE zero-day already exploited in the wild per Huntress. Systems still on HF3 remain vulnerable; hosted NCOD instances are already patched. This is the fourth N-central hotfix in five weeks and the third attack wave against the RMM in six weeks.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/n-able-patches-max-severity-n-central-flaw-amid-ongoing-attacks/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-6">
     <summary class="item-header">
-      <span class="item-title">September 2026 Patch Tuesday forecast: 9 Critical fixes across Windows, Office, Azure, Dynamics</span>
+      <span class="item-title">Adobe patches actively exploited Magento zero-day StyleSmuggler (CVE-2026-75650)</span>
+      <span class="item-type type-security">SECURITY</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 8/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Adobe shipped an out-of-band fix for CVE-2026-75650, a maximum-severity Magento/Adobe Commerce vulnerability being actively exploited to backdoor storefronts. Any customer running Magento or Adobe Commerce should patch immediately and check for webshells or injected admin accounts.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/adobe-fixes-critical-magento-zero-day-exploited-to-backdoor-servers/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-7">
+    <summary class="item-header">
+      <span class="item-title">Microsoft September 2026 Patch Tuesday: 9 Critical CVEs across Azure, Office, Dynamics</span>
+      <span class="item-type type-security">SECURITY</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 10/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Microsoft's September 2026 Patch Tuesday addresses 9 vulnerabilities, all rated Critical, spanning Azure, Microsoft Office, and Microsoft Dynamics. Zero were publicly disclosed pre-release and none are reported as actively exploited at ship time. Full release also carries 172 Azure Linux package updates and 23 Chromium republished Edge fixes.</p>
+      <a href="https://trinetriops.com/resources/patch-tuesday/september-2026" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-8">
+    <summary class="item-header">
+      <span class="item-title">Windows Server 2025 memory management changes trigger app crashes, including SQL Server</span>
+      <span class="item-type type-security">SECURITY</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 10/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Microsoft has issued a service alert that recent Windows Server 2025 memory-management modifications may cause application crashes for software using Address Windowing Extensions (AWE). SQL Server is confirmed affected, particularly when the Lock Pages in Memory policy is enabled. A separate Aug 13 update is also causing hangs/errors when apps open or save to OneDrive or Dropbox.</p>
+      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2025-changes-may-cause-app-crashes/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-9">
+    <summary class="item-header">
+      <span class="item-title">Microsoft: IT support impersonation weaponizes Teams external chat, Node.js implants, WinRM pivot</span>
+      <span class="item-type type-security">SECURITY</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 10/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Microsoft's security blog walks through a campaign where attackers pose as help desk over Teams external federation, get victims to launch a remote session, deploy Node.js-based implants, and pivot enterprise-wide via WinRM. Key mitigations: restrict Teams external access, block unsanctioned remote-support tools, and monitor WinRM outbound.</p>
+      <a href="https://www.microsoft.com/en-us/security/blog/2026/09/02/impersonating-it-support-threat-actors-turn-remote-session-into-enterprise-wide-access/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-10">
+    <summary class="item-header">
+      <span class="item-title">ASCII smuggling technique crosses from AI prompt injection into phishing evasion</span>
+      <span class="item-type type-security">SECURITY</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 10/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Microsoft documents attackers using invisible Unicode "tag" characters (ASCII smuggling) to hide malicious keywords in phishing email content so filters parse benign text while the rendered message reads as an attack lure. Email security stacks and detection rules need to normalize or strip these codepoints.</p>
+      <a href="https://www.microsoft.com/en-us/security/blog/2026/09/03/ascii-smuggling-crosses-over-from-ai-prompt-injection-to-phishing-evasion/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-11">
+    <summary class="item-header">
+      <span class="item-title">Hackers build AI frameworks for wide-scale credential theft</span>
       <span class="item-type type-security">SECURITY</span>
       <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Help Net Security's Sept 4 forecast previews the Sept 8 cumulative as a much smaller drop than August's 398-CVE "Patch Apocalypse" -- roughly 9 Critical items across Azure, Microsoft Office, and Microsoft Dynamics, none under active attack in the pre-release advisories. Pre-published CVE-2026-50376 (Windows Remote Desktop Client information disclosure) is already in queue. Stage Atera policies for a Tuesday deploy and re-validate RDP Gateway client versions.</p>
-      <a href="https://www.helpnetsecurity.com/2026/09/04/september-2026-patch-tuesday-forecast/" target="_blank" class="src">Source &rarr;</a>
+      <p>BleepingComputer reports on new attacker toolkits that wrap LLMs and agent frameworks around credential-harvesting workflows: automated lure generation, adaptive phishing pages, and AI-assisted parsing of stolen mailboxes for high-value follow-on targets. The trend accelerates the scale/quality gap defenders have to close.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/hackers-build-ai-frameworks-for-widescale-credential-theft/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
-  <details class="item" id="item-7">
+  <details class="item" id="item-12">
     <summary class="item-header">
-      <span class="item-title">OpenAI GPT-6 Astra rolls out to paid ChatGPT tiers with "computer use" agent capability</span>
+      <span class="item-title">PEEP turns Chrome and Edge into post-compromise backdoors executing host commands</span>
+      <span class="item-type type-security">SECURITY</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 9/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Researchers detail PEEP, a technique that abuses Chromium's native messaging and extension surface to convert an already-compromised Chrome or Edge install into a persistent command-execution channel on the host. Detection guidance focuses on unexpected native-messaging manifests and unsigned extension sideloads.</p>
+      <a href="https://thehackernews.com/2026/09/peep-turns-chrome-and-edge-into-post.html" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-13">
+    <summary class="item-header">
+      <span class="item-title">Entra ID begins passkey-as-default authentication rollout with SMS and voice retiring Feb 2027</span>
       <span class="item-type type-feature">FEATURE</span>
       <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>OpenAI opened GPT-6 Astra to trusted partners on Sept 3 and broadened availability to ChatGPT Plus/Pro/Business/Enterprise and the API/AWS on Sept 4. The headline capability is "computer use" -- the model can navigate spreadsheets, forms, and web pages autonomously. Certain cybersecurity-adjacent prompts are restricted in the public release. Worth pricing out for admin-workflow pilots at Purplesky Internal before recommending to clients.</p>
-      <a href="https://www.cnbc.com/2026/09/03/open-ai-astra-gpt-6-cyber.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-8">
-    <summary class="item-header">
-      <span class="item-title">Exchange Online "Server busy" errors delay external mail (Sept 4 incident)</span>
-      <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Microsoft confirmed a Sept 4 Exchange Online service degradation causing intermittent "Server busy" errors when users email recipients outside their own organization, plus general delivery delays. This follows the broader Aug 31-Sept 2 M365 authentication outage that also hit Teams and Defender XDR. Check M365 admin center incidents for tenant-specific impact before chasing a client-side cause.</p>
-      <a href="https://cybersecuritynews.com/exchange-online-outage-delaying-emails/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-9">
-    <summary class="item-header">
-      <span class="item-title">Microsoft Teams desktop client fails to open for a subset of users</span>
-      <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Microsoft acknowledged a known issue causing delays or preventing some users from launching the Teams desktop client on Windows, tracked in the M365 admin center. Workaround is the Teams web client while Microsoft ships a fix. Expect a small wave of "Teams won't open" tickets today.</p>
-      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-says-some-users-cant-open-the-teams-desktop-client/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-10">
-    <summary class="item-header">
-      <span class="item-title">KnowBe4 Defend for Google Workspace ships Sept 15 with in-Gmail AI coaching</span>
-      <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>KnowBe4 announced Defend for Google Workspace, generally available Sept 15, 2026, bringing AI threat detection and real-time in-Gmail coaching to SMB through enterprise customers. Early telemetry cites roughly 1-in-666 emails intercepted as dangerous. Useful KnowBe4 roadmap data point even though your clients are M365-first.</p>
-      <a href="https://www.zawya.com/en/press-release/companies-news/knowbe4-launches-email-and-collaboration-security-protection-for-google-workspace-475206" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-11">
-    <summary class="item-header">
-      <span class="item-title">Teams gets automatic QR-code phishing protection in chat</span>
-      <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>M365 Roadmap 570439: Teams will automatically scan images shared in chat and obscure QR codes from external senders until the user explicitly reveals them, reducing the "quishing" attack surface. Rolling out to tenants with GA in October 2026; no admin action required initially.</p>
-      <a href="https://www.microsoft.com/microsoft-365/roadmap?id=570439" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-12">
-    <summary class="item-header">
-      <span class="item-title">Teams meeting recording/transcription options now honor admin policy</span>
-      <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>M365 Roadmap 570468: meeting organizers will only see recording and transcription choices allowed by tenant policy, with a new "Record only" option separated from transcription. GA November 2026. Review Teams meeting policies before rollout so organizers aren't surprised.</p>
-      <a href="https://www.microsoft.com/microsoft-365/roadmap?id=570468" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-13">
-    <summary class="item-header">
-      <span class="item-title">Admins gain control over profanity filtering in Teams meeting transcripts</span>
-      <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>M365 Roadmap 570467: tenant admins will be able to enable or disable profanity masking in Teams live transcription and saved transcripts. GA October 2026. Useful for construction crews and any HR / legal record-keeping scenario where verbatim transcripts are required.</p>
-      <a href="https://www.microsoft.com/microsoft-365/roadmap?id=570467" target="_blank" class="src">Source &rarr;</a>
+      <p>Beginning Sept 1, 2026 Microsoft is rolling out passkeys as the default authentication experience in Entra ID, auto-enabling passkeys for users currently on SMS or voice-based sign-in. Phone SMS and voice methods will be retired across all tenants in February 2027. Microsoft plans to publish supported provider list and deployment guidance on Sept 18, 2026.</p>
+      <a href="https://www.helpnetsecurity.com/2026/07/14/microsoft-entra-passkey-authentication/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-14">
     <summary class="item-header">
-      <span class="item-title">Windows 11 KB5120998 optional preview brings Taskbar / Start customization (builds 26200.9278 / 26100.9278)</span>
+      <span class="item-title">Apple "Surprise and Shine" event tomorrow (Sept 9) to unveil iPhone 18 Pro and foldable iPhone Ultra</span>
+      <span class="item-type type-feature">FEATURE</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 10/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Apple's fall event lands Wednesday Sept 9 at 10 a.m. PT with iPhone 18 Pro, Pro Max, and the long-rumored foldable "iPhone Ultra" as headline hardware, all on the new A20 Pro (2nm) chip. The foldable uses a book-style design with a ~5.5" outer and ~7.6" inner display, titanium frame, and liquid-metal hinge, with sales rumored October-December. No standard iPhone 18 this cycle -- Apple is holding the cheaper models until spring 2027.</p>
+      <a href="https://www.macrumors.com/guide/apple-september-2026-what-to-expect/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-15">
+    <summary class="item-header">
+      <span class="item-title">macOS Golden Gate, iOS 27, iPadOS 27 final release dates expected at Sept 9 event</span>
+      <span class="item-type type-feature">FEATURE</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 10/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Apple is expected to announce final release dates for macOS 27 "Golden Gate," iOS 27, iPadOS 27, tvOS 27, watchOS 27, and visionOS 27 at tomorrow's event, with the week of Sept 14 the most credible ship window. macOS Golden Gate drops Intel Mac support entirely and requires Apple silicon; advanced Siri/Apple Intelligence features need an M3 or newer with 12+ GB unified memory.</p>
+      <a href="https://www.macworld.com/article/3139330/macos-27-mac-features-siri-apple-intelligence-release-date-compatibility.html" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-16">
+    <summary class="item-header">
+      <span class="item-title">Windows 11 September 2026 preview KB5120998 delivers movable Taskbar and Start menu resize</span>
       <span class="item-type type-feature">FEATURE</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft is rolling KB5120998 (builds 26200.9278 / 26100.9278) as the September 2026 optional non-security preview starting Sept 8, adding Taskbar position/size options, redesigned Start menu customization, and Windows Search UI changes. Feature availability is gated by Controlled Feature Rollout. Preview a pilot ring before pushing broadly via Intune.</p>
+      <p>KB5120998 (build 26200.9278) began rolling out to Windows 11 25H2 and 24H2 on Sept 8, adding a Taskbar movable to any screen edge with resize options, new Start menu size choices, and refined Windows Search with more control over web/Store suggestions. Rollout is gradual via Controlled Feature Rollout.</p>
       <a href="https://pureinfotech.com/kb5120998-windows-11-september-2026-update/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-15">
-    <summary class="item-header">
-      <span class="item-title">CMMC Reform Task Force delivers findings to DoD CIO Sept 13, public report Sept 28</span>
-      <span class="item-type type-industry">INDUSTRY</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>With CMMC Phase 2 suspended in July, the CMMC Reform Task Force is on track to deliver findings to the DoD CIO on Sept 13, 2026, with recommendations expected to be made public Sept 28. Phase 1 self-assessments, SPRS scores, and DFARS 252.204-7012 obligations remain in effect for contractors, so keep your construction client's Level 2 workstream moving; expect direction changes end of month.</p>
-      <a href="https://www.governmentcontractslaw.com/2026/07/dod-suspends-cmmc-phase-2-what-happened-what-it-means-and-what-nobody-is-telling-you/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-16">
-    <summary class="item-header">
-      <span class="item-title">Apple's "Surprise and Shine" event set for Sept 9 -- iPhone 18 Pro, foldable "iPhone Ultra" expected</span>
-      <span class="item-type type-industry">INDUSTRY</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Apple's fall event lands Tuesday Sept 9 at 10:00 a.m. Pacific at Apple Park -- CEO John Ternus's first product launch. Expected announcements include iPhone 18 Pro / Pro Max, a foldable "iPhone Ultra," and Apple Watch Series 12 / Ultra 4, all on the A20 Pro (2nm) chip. No standard iPhone 18 this cycle -- Apple is holding the affordable models for spring 2027. Pre-orders expected Sept 11-12, availability Sept 19.</p>
-      <a href="https://www.macrumors.com/2026/08/26/apple-iphone-event-2026/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-17">
     <summary class="item-header">
-      <span class="item-title">Microsoft publishes guidance on securing edge AI in customer-owned environments</span>
-      <span class="item-type type-industry">INDUSTRY</span>
+      <span class="item-title">Intune 2609 release makes new single device page the default</span>
+      <span class="item-type type-feature">FEATURE</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft's Sept 4 security blog lays out architecture and defensive guidance for organizations running AI workloads at the edge in their own tenants, covering identity, data, and endpoint hardening. Useful reference for SMBs starting to deploy on-prem or hybrid AI features -- keep for later when construction clients start piloting AI copilots on jobsite hardware.</p>
-      <a href="https://www.microsoft.com/en-us/security/blog/2026/09/04/secure-edge-ai-customer-owned-environments/" target="_blank" class="src">Source &rarr;</a>
+      <p>The redesigned Intune single device page becomes the default in the September (2609) release, replacing the legacy view. All management capabilities remain but admins should update internal runbooks and screenshots. The China cloud endpoint page now correctly lists graph.chinacloudapi.cn (replacing the stale .us hostname).</p>
+      <a href="https://daily.intune.admin.news/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-18">
+    <summary class="item-header">
+      <span class="item-title">Entra Tenant Governance reaches general availability</span>
+      <span class="item-type type-feature">FEATURE</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 8/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Microsoft Entra Tenant Governance is now generally available, giving admins visibility into all Entra tenants connected to the organization, including shadow-IT tenants central IT does not administer. Separately, Lifecycle Workflows admins can now clone existing workflows in the Entra admin center, and the Security Administrator role is expanding through end of September to include user disable/enable, session revocation, and forced password reset.</p>
+      <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%e2%80%99s-new-in-microsoft-entra-september-2026/4545179" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-19">
+    <summary class="item-header">
+      <span class="item-title">Teams QR code protection in chat targeted for GA in October 2026</span>
+      <span class="item-type type-feature">FEATURE</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 8/11</span>
+    </summary>
+    <div class="item-body">
+      <p>M365 Roadmap ID 570439 adds QR-code protection to Teams messages, flagging or blocking suspicious embedded QR codes to counter "quishing" pivoted into Teams chat. Targeted general availability is October 2026.</p>
+      <a href="https://www.microsoft.com/microsoft-365/roadmap?id=570439" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-20">
+    <summary class="item-header">
+      <span class="item-title">Teams recording and transcription options aligning with admin policies (GA November 2026)</span>
+      <span class="item-type type-feature">FEATURE</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 8/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Roadmap ID 570468 makes participants' recording and transcription option visibility respect tenant admin policies rather than showing options users cannot actually invoke. Targeted GA November 2026.</p>
+      <a href="https://www.microsoft.com/microsoft-365/roadmap?id=570468" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-21">
+    <summary class="item-header">
+      <span class="item-title">Teams admins get control over profanity filtering in transcripts (GA October 2026)</span>
+      <span class="item-type type-feature">FEATURE</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 7/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Roadmap ID 570467 lets Teams admins configure whether meeting transcripts filter profanity, replacing the current one-size default. Useful for regulated verticals that need verbatim capture. Targeted GA October 2026.</p>
+      <a href="https://www.microsoft.com/microsoft-365/roadmap?id=570467" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-22">
+    <summary class="item-header">
+      <span class="item-title">Apple Watch Series 12, Ultra 4, and AirPods 5 also expected at Sept 9 event</span>
+      <span class="item-type type-feature">FEATURE</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 7/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Alongside the new iPhones, Apple is expected to launch Apple Watch Series 12 (faster S11-class chip, ceramic case option, fitness tracking upgrades), Apple Watch Ultra 4 (adds satellite Apple Maps and photo Messages via satellite), and AirPods 5 in two variants (with and without ANC). Relevant context for iPhone-carrying users deciding on ecosystem upgrades this fall.</p>
+      <a href="https://www.macrumors.com/2026/08/30/apple-watch-series-12-ultra-4-features/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-23">
+    <summary class="item-header">
+      <span class="item-title">Simon Willison ships llm 0.35 with GPT-6 Astra support</span>
+      <span class="item-type type-feature">FEATURE</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 6/11</span>
+    </summary>
+    <div class="item-body">
+      <p>The open-source llm CLI released version 0.35, adding support for OpenAI's newly launched GPT-6 Astra model. Useful for IT pros doing quick LLM-based scripting or evaluation from the command line.</p>
+      <a href="https://simonwillison.net/2026/Sep/7/llm/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-24">
+    <summary class="item-header">
+      <span class="item-title">CMMC Phase 2 suspended; DoD review guidance expected mid-September 2026</span>
+      <span class="item-type type-industry">INDUSTRY</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 10/11</span>
+    </summary>
+    <div class="item-body">
+      <p>DoD suspended CMMC Phase 2 (previously scheduled Nov 10, 2026) on July 13, 2026, launching a 60-day top-to-bottom review of the certification program. Further guidance from CIO Kirsten Davies is expected around mid-September 2026. Phase 1 self-assessment requirements and existing DFARS cybersecurity clauses remain in force.</p>
+      <a href="https://federalnewsnetwork.com/cybersecurity/2026/07/pentagon-suspends-cmmc-phase-two-requirements-launches-review-of-program/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-25">
+    <summary class="item-header">
+      <span class="item-title">Huntress and blueAPACHE expand Microsoft security partnership</span>
+      <span class="item-type type-industry">INDUSTRY</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 7/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Huntress and blueAPACHE announced an expanded partnership giving MSPs more paths to sell managed security wrapped around Microsoft's stack. Relevant channel news for SMB-focused MSPs adding or maturing security-service offerings.</p>
+      <a href="https://www.channele2e.com/news/huntress-and-blueapache-expand-partnership-around-microsoft-security" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-26">
+    <summary class="item-header">
+      <span class="item-title">KnowBe4 pushes Quantum Readiness Day September 24 with quantum-security upgrade guidance</span>
+      <span class="item-type type-industry">INDUSTRY</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 7/11</span>
+    </summary>
+    <div class="item-body">
+      <p>KnowBe4 is promoting Quantum Readiness Day on Sept 24 with a blog post arguing security programs need to start planning crypto-agility, PQC pilot inventories, and vendor roadmap conversations now rather than after a quantum break. Useful pointer for MSP client conversations.</p>
+      <a href="https://blog.knowbe4.com/why-your-security-program-needs-a-quantum-upgrade-now-1" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-27">
+    <summary class="item-header">
+      <span class="item-title">OpenAI reports sharp acceleration in internal coding-agent usage</span>
+      <span class="item-type type-industry">INDUSTRY</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 6/11</span>
+    </summary>
+    <div class="item-body">
+      <p>OpenAI publicly detailed a late-July inflection in coding-agent usage and spending by its own researchers, a signal that agentic coding workflows are moving from pilot to daily driver at frontier labs. Directionally relevant for IT teams evaluating agentic dev tooling for their own environments.</p>
+      <a href="https://simonwillison.net/2026/Sep/6/research-acceleration-the-view-inside-openai/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+  <details class="item" id="item-28">
+    <summary class="item-header">
+      <span class="item-title">Security leaders urged to reassess CCPA compliance posture</span>
+      <span class="item-type type-industry">INDUSTRY</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 6/11</span>
+    </summary>
+    <div class="item-body">
+      <p>ChannelE2E highlights consumer friction accessing personal data from companies under CCPA and argues security leaders at SMBs should audit their data-subject-access-request (DSAR) handling now. Practical prompt for MSPs advising clients on privacy compliance.</p>
+      <a href="https://www.channele2e.com/news/consumers-face-hurdles-accessing-personal-data-from-companies" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 </div>
 
-<div class="footer">Generated Monday, September 7, 2026 at 6:35 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-09-07.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
+<div class="footer">Generated Tuesday, September 8, 2026 at 6:37 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-09-08.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
 
 </main>
 </body>
