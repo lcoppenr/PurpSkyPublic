@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<title>Morning Briefing -- Tuesday, September 15, 2026</title>
+<title>Morning Briefing -- Wednesday, September 16, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -14,328 +14,182 @@
 <main class="briefing-content">
 
 <div class="page-header">
-  <h1>Morning Briefing -- Tuesday, September 15, 2026</h1>
+  <h1>Morning Briefing -- Wednesday, September 16, 2026</h1>
   <p class="page-meta">Microsoft &bull; Security &amp; Compliance &bull; Firewall / VPN / Networking &bull; Servers/NAS &bull; Workstations &amp; Mobile &bull; Peripherals &amp; AV &bull; RMM &amp; Remote Access &bull; Construction &amp; Specialty Software &bull; General Tech &amp; AI &bull; Pacific Time</p>
 </div>
 
 <div class="section-actions">
   <h2>Today's Actions</h2>
-  <p class="section-transparency">Showing 3 of 9</p>
+  <p class="section-transparency">Showing 3 of 5</p>
   <ol class="action-list">
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Confirm the September 8 Windows LCU is deployed across your construction, small-business, and internal ops fleets before CISA's September 22 KEV deadline for CVE-2026-81963 -- both Windows zero-days (ALPC EoP CVE-2026-85880 and Windows Update Stack EoP CVE-2026-81963) remain under active exploitation. <a href="#item-1" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Push iOS 26.7 and iPadOS 26.7 to your construction client's iPhone fleet (and any Mac endpoints) and tell users to install today -- Apple's September 14 point releases patch 80+ WebKit, Kernel, and ImageIO vulnerabilities for organizations not ready to jump to iOS 27. <a href="#item-2" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Patch RDS hosts for CVE-2026-69525, an unauthenticated CVSS 9.8 Use-After-Free RCE in Remote Desktop Services that lets any in-network attacker execute code -- directly hits the RDP-through-RDP-Gateway path at your construction client. <a href="#item-3" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Deploy Microsoft's out-of-band KB5129238 to Windows Server 2019/2022/2025 RDS hosts at your construction client to restore Remote Desktop Services broken by last week's September rollup -- this replaces the community workaround with Microsoft's official fix for the OCC RDP-through-RDP-Gateway path. <a href="#item-1" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Push out-of-band update KB5129195 (build 26200.9457 / 26100.9457) to Windows 11 24H2 and 25H2 endpoints across your construction, small-business, and internal ops fleets to remediate stability regressions introduced by the September Patch Tuesday cumulative. <a href="#item-2" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-yellow">This Week</span> Confirm any Windows 11 24H2/25H2 hotpatch-enrolled devices at your construction client pick up out-of-band Hotpatch KB5129241 automatically -- standard-servicing devices need the cumulative KB5129195 in the item above instead. <a href="#item-3" class="detail-link">details</a></li>
   </ol>
-  <details class="section-overflow"><summary>Show 6 more actions</summary><ol class="action-list" start="4">
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Verify Windows 10, Windows 11 (through 24H2), and Windows Server endpoints across your construction, small-business, and internal ops fleets are current on the June 2025 SMB patch -- CISA just flagged CVE-2025-33073 (SYSTEM-level EoP over SMB) as actively exploited. <a href="#item-4" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Patch RD Gateway hosts for CVE-2026-69338, an elevation-of-privilege bug in the Remote Desktop Gateway Service itself -- directly relevant to your construction client's OCC RDP-through-RDP-Gateway architecture. <a href="#item-5" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Before pushing the September Windows Server LCU to any RDS or RD Gateway host at your construction client, apply the community-published remediation for the September 2026 RDS regression so security patches deploy without breaking Remote Desktop sessions. <a href="#item-6" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Prioritize the September Office update across your construction, small-business, and internal ops fleets -- 12 of the 22 Critical Office CVEs this month are exploitable via the Outlook Preview/Reading Pane (zero-click, no macro prompt) once a crafted file lands in a mailbox. <a href="#item-7" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> File that CISA added Citrix NetScaler CVE-2026-19490 (CVSS 9.3 auth bypass in RDP Proxy config) to the KEV catalog with in-the-wild exploitation observed since September 3 -- no client of yours runs NetScaler, useful peer signal. <a href="#item-8" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-red">Act Today</span> Note the active exploitation of Cisco Secure Email Gateway CVE-2026-76461 (CVSS 9.8 unauthenticated RCE) -- no client of yours runs the Cisco appliance (construction uses Barracuda, others use Microsoft-native filtering). <a href="#item-9" class="detail-link">details</a></li>
+  <details class="section-overflow"><summary>Show 2 more actions</summary><ol class="action-list" start="4">
+    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-yellow">This Week</span> Warn Excel users across your construction, small-business, and internal ops fleets that copy/paste may silently fail after the September KB5002914 M365 Apps update -- Microsoft has acknowledged the issue and a fix is pending. <a href="#item-4" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-yellow">This Week</span> Add an Exchange Online transport rule rejecting blank-envelope-sender mail across your construction, small-business, and internal ops tenants -- ReliaQuest and KnowBe4 flagged a credential-phishing wave using empty SMTP MAIL FROM headers to bypass M365 anti-phishing filters. <a href="#item-5" class="detail-link">details</a></li>
   </ol></details>
 </div>
 
 <div class="section-new">
   <h2>What's New</h2>
-  <p class="section-transparency">Showing 3 of 8</p>
+  <p class="section-transparency">Showing 3 of 5</p>
   <ul class="new-list">
-    <li><strong><a href="#item-10">Entra Connect Sync stops working Sept 30 for outdated deployments</a></strong> -- Microsoft confirmed that all sync services in Entra Connect below version 2.5.79.0 cease functioning on September 30, 2026; verify Connect version at your construction client's hybrid Entra/Intune tenant and any other hybrid deployments this week to avoid an identity-sync outage. <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%e2%80%99s-new-in-microsoft-entra-september-2026/4545179" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-11">Apple ships iOS 27, iPadOS 27 and macOS 27 as annual majors</a></strong> -- Apple made iOS 27, iPadOS 27, macOS 27, watchOS 27, visionOS 27, and tvOS 27 publicly available on September 14 alongside the .7 point releases; the major release fixes 100+ CVEs but evaluate app compatibility at your construction client before opting into fleet-wide upgrades. <a href="https://appleosophy.com/2026/09/14/apple-rolls-out-ios-26-7-ipados-26-7-macos-tahoe-26-7-and-more-with-security-fixes/" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-12">Entra ID adds Tenant Governance and expanded Security Administrator actions</a></strong> -- The September Entra update ships Tenant Governance to surface shadow tenants and configuration drift across Entra/Intune/Exchange/Teams/Purview/Defender, and the Security Administrator built-in role gains identity response actions (disable accounts, revoke sessions, force password reset) for non-privileged users by end of September. <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%e2%80%99s-new-in-microsoft-entra-september-2026/4545179" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-6">Entra Resource Accounts for Teams Devices delivers passwordless shared-device identity</a></strong> -- Microsoft announced Entra Resource Accounts for Teams Devices, a passwordless identity model covering Teams Rooms, Teams Panels, common-area phones and other shared Teams endpoints, removing the long-standing dependency on shared passwords and MFA workarounds for meeting-room hardware. <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%e2%80%99s-new-in-microsoft-entra-september-2026/4545179" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-7">Microsoft Teams rolls out refreshed in-meeting experience with simplified controls</a></strong> -- Microsoft is rolling out a refreshed in-meeting experience in Teams later this month, consolidating meeting controls into a simpler layout ahead of the broader unified Teams/Outlook calendar work; communicate the UI change to end-users at your construction, small-business, and internal ops fleets to reduce help-desk friction. <a href="https://techcommunity.microsoft.com/blog/partnernews/september-update-what%E2%80%99s-new-in-security-for-partners/4554532" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-8">UniFi Protect mobile apps updated: iOS 3.11.1 and Android 3.8.3</a></strong> -- Ubiquiti released UniFi Protect iOS 3.11.1 on September 15 with G6 Edge camera UX improvements, alongside UniFi Protect Android 3.8.3 improving the UniFi OS update experience; these are companion mobile apps to your construction client's UniFi Protect Application (deployed 7.5+). <a href="https://releasebot.io/updates/ubiquiti" target="_blank">Source &rarr;</a></li>
   </ul>
-  <details class="section-overflow"><summary>Show 5 more updates</summary><ul class="new-list">
-    <li><strong><a href="#item-13">UniFi Network Application 10.6.106 adds WiFi 7 MLO STR Mesh support</a></strong> -- Ubiquiti published 10.6.106 with MLO STR Mesh for WiFi 7 access points (UAP 8.8+) plus stability fixes for MLO client IP display and network configuration save issues; your construction client's UniFi Network Application (deployed 10.3+) is eligible at the next maintenance window. <a href="https://community.ui.com/releases/UniFi-Network-Application-10-6-106/f206c01d-3f73-471b-b4a5-2da48f157ea6" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-14">Windows 11 KB5124008 delivers movable taskbar and resizable Start menu</a></strong> -- The September Patch Tuesday cumulative update KB5124008 bundles the previewed non-security features for Windows 11 24H2 and 25H2: users can move the taskbar to top/left/right, shrink it, and get a redesigned Search; expect a light wave of user questions after rollout. <a href="https://4sysops.com/archives/windows-11-kb5124008-and-kb5122880-new-features-in-the-september-2026-update/" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-15">Teams September update: pinned channel resources, Room Optimization Mode, agent discovery</a></strong> -- Teams now supports pinning key links, files, and messages under any chat or channel; the new Room Optimization Mode replaces "shared display" in huddle spaces; Teams Admin Center gains an agents discovery experience; and management of Teams Rooms on Android/panels/phones from TAC is being deprecated end of September. <a href="https://empowering.cloud/microsoft-teams-enterprise-update-september-2026/" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-16">Anthropic weekly usage-limit reduction now live</a></strong> -- Anthropic's previously scheduled weekly usage-limit reduction landed September 14, tightening throughput ceilings on Claude API and Claude.ai plans; verify capacity headroom for any automations your internal ops runs against Claude and adjust job pacing if needed. <a href="https://llm-stats.com/llm-updates" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-17">DeepSeek keeps V4 Pro on the API alongside V4.1 Flash</a></strong> -- DeepSeek reversed its earlier plan to route all deepseek-v4-pro API traffic to V4.1 Flash from 04:00 UTC on September 14; V4 Pro service continues at the same billing, so pinned model dependencies do not need to be updated. <a href="https://llm-stats.com/ai-news" target="_blank">Source &rarr;</a></li>
+  <details class="section-overflow"><summary>Show 2 more updates</summary><ul class="new-list">
+    <li><strong><a href="#item-9">Shanghai AI Lab releases Atria Dawn Preview, a 744B agentic MoE</a></strong> -- Shanghai AI Laboratory published a 143-author preprint introducing Atria Dawn Preview, a 744-billion-parameter agentic mixture-of-experts model built on GLM-5.2 and trained via a Verifiable Experience Pipeline that grounds tool use in executable environments; relevant for IT pros tracking open agentic model options beyond OpenAI/Anthropic/Google. <a href="https://aiweekly.co/ai-news-today/edition/2026-09-15" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-10">Cornelis Networks raises $205M and launches Active Compute Fabric for GPU-agnostic AI clusters</a></strong> -- Intel spinoff Cornelis Networks announced a $205 million funding round on September 15 alongside the launch of Active Compute Fabric, an open GPU-agnostic networking layer for AI clusters, with 400 Gbps CN5000 switches shipping now and an 800 Gbps CN6000 generation planned. <a href="https://aiweekly.co/ai-news-today/edition/2026-09-15" target="_blank">Source &rarr;</a></li>
   </ul></details>
 </div>
 
 <div class="section-security">
   <h2>Security &amp; Patches</h2>
-  <p class="section-transparency">Showing 3 of 5</p>
   <div class="security-cards">
-    <div class="security-card"><a href="#item-18" class="security-headline">CMMC Reform Task Force findings delivered to DoD CIO; public report Sept 28</a><span class="urgency-yellow">This Week</span><span class="security-summary">The Task Force chartered after July's CMMC Phase 2 suspension delivered its findings to DoD CIO Kirsten Davies on Sept 13, with public release scheduled for September 28 -- assessor capacity and small-business cost projections are the headline concerns.</span></div>
-    <div class="security-card"><a href="#item-19" class="security-headline">KnowBe4: OAuth device-code phishing bypasses M365 MFA</a><span class="urgency-yellow">This Week</span><span class="security-summary">KnowBe4 Threat Labs is tracking a campaign that lures users to microsoft.com/devicelogin and tricks them into entering an attacker-supplied device code, granting persistent OAuth tokens to Outlook, Teams, and OneDrive despite strong passwords and MFA.</span></div>
-    <div class="security-card"><a href="#item-20" class="security-headline">Automated scanners harvest AWS/Azure creds from exposed Vite dev servers</a><span class="urgency-yellow">This Week</span><span class="security-summary">F5 Labs disclosed a mass-scanning campaign targeting internet-exposed Vite development servers to exfiltrate AWS and Azure credentials plus infrastructure configuration files.</span></div>
+    <div class="security-card"><a href="#item-11" class="security-headline">GTIA acquires The ASCII Group, consolidating major MSP community organizations</a><span class="urgency-yellow">This Week</span><span class="security-summary">The Global Technology Industry Association (GTIA) announced acquisition of The ASCII Group on September 15, uniting two of the largest MSP/solution-provider member communities.</span></div>
   </div>
-  <details class="section-overflow"><summary>Show 2 more security items</summary><div class="security-cards">
-    <div class="security-card"><a href="#item-21" class="security-headline">LiteSpeed Enterprise privilege escalation to root on shared hosts</a><span class="urgency-yellow">This Week</span><span class="security-summary">A critical LiteSpeed Web Server Enterprise flaw lets a low-privilege hosting account user escalate to root on shared servers, enabling compromise of every co-tenant site on the machine.</span></div>
-    <div class="security-card"><a href="#item-22" class="security-headline">Anthropic expands MSP partner training with AI security certifications</a><span class="urgency-green">FYI</span><span class="security-summary">ChannelE2E reports Anthropic expanded its channel-partner training program with new AI security certifications aimed at MSPs and integrators -- signal for SMB IT shops evaluating a Claude-based service offering.</span></div>
-  </div></details>
 </div>
 
 <div class="section-details">
   <h2>Details</h2>
   <details class="item" id="item-1">
     <summary class="item-header">
-      <span class="item-title">Two Windows zero-days under active exploit; CISA KEV deadline September 22</span>
+      <span class="item-title">Microsoft ships out-of-band KB5129238 to fix September patch that broke Remote Desktop Services</span>
       <span class="item-type type-security">SECURITY</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft's September 8 Patch Tuesday addressed 974 CVEs, including two zero-days already exploited in the wild: CVE-2026-81963 (Windows Update Stack EoP) and CVE-2026-85880 (Windows ALPC EoP). CISA has added CVE-2026-81963 to the Known Exploited Vulnerabilities Catalog with a federal remediation deadline of September 22, 2026. Applies across your construction, small-business, and internal ops fleets -- verify the September LCU is deployed on every Windows 11 (23H2/24H2/25H2) and Windows Server endpoint before the deadline.</p>
-      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-september-2026-patch-tuesday-fixes-966-flaws-2-zero-days/" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft's September 2026 Patch Tuesday updates (KB5122876/2019, KB5122882/2022, KB5122871/2025) closed critical RDP RCE flaws CVE-2026-69525 (CVSS 9.8), CVE-2026-69485, and CVE-2026-69518 but caused RDS session failures and host unresponsiveness on Windows Server. Microsoft released out-of-band update KB5129238 on September 14, with permanent fixes for Server 2019/2022/2025 posted September 15. Applies directly to your construction client's OCC RDP-through-RDP-Gateway path -- apply the OOB update rather than roll back the security fixes; this supersedes the community workaround referenced in the September 15 briefing.</p>
+      <a href="https://www.bleepingcomputer.com/news/microsoft/september-windows-server-updates-break-remote-desktop-services/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-2">
     <summary class="item-header">
-      <span class="item-title">Apple ships iOS 26.7, iPadOS 26.7, macOS Tahoe 26.7 and macOS Sequoia 15.8 with 80+ security fixes</span>
+      <span class="item-title">Out-of-band KB5129195 released for Windows 11 24H2/25H2 to fix Patch Tuesday regressions</span>
       <span class="item-type type-security">SECURITY</span>
       <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 11/11</span>
+      <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>Apple pushed maintenance updates across its supported OS families on September 14 covering 80+ vulnerabilities in WebKit, Kernel, ImageIO and other components. These .7 point releases are the recommended path for organizations not yet moving to the iOS 27 / macOS 27 majors that shipped the same day. Applies to your construction client's iPhone fleet (iPhones only per client context) and any Mac endpoints across other clients; push via MDM this week and message users that a phone restart is required.</p>
-      <a href="https://www.macrumors.com/2026/09/14/apple-releases-ios-26-7/" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft shipped an emergency out-of-band update (KB5129195, builds 26200.9457 and 26100.9457) on September 14 to remediate issues introduced by last week's September security rollup. Admins running 24H2 or 25H2 fleets should deploy this over the initial monthly update to restore stability. Applies to Windows 11 endpoints across your construction, small-business, and internal ops fleets.</p>
+      <a href="https://support.microsoft.com/en-us/servicing/os/windows-11/2026/09/kb5129195-windows-11-24h2-25h2-security-update" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-3">
     <summary class="item-header">
-      <span class="item-title">Critical Remote Desktop Services RCE CVE-2026-69525 (CVSS 9.8)</span>
+      <span class="item-title">Out-of-band Hotpatch KB5129241 issued for Windows 11 24H2/25H2</span>
       <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 11/11</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>CVE-2026-69525 is an unauthenticated, no-user-interaction Use-After-Free RCE in Remote Desktop Services with a CVSS 9.8 rating. Any in-network attacker can execute arbitrary code on affected hosts, putting RDP Gateway deployments at direct risk until the September patch is applied. Your construction client's OCC RDP-through-RDP-Gateway path runs Windows Server RDS -- patch the gateway and session hosts this week (after applying the RDS regression fix in item 6).</p>
-      <a href="https://www.zerodayinitiative.com/blog/2026/9/8/the-september-2026-security-update-review" target="_blank" class="src">Source &rarr;</a>
+      <p>Alongside KB5129195, Microsoft released Hotpatch KB5129241 (OS builds 26200.9448 and 26100.9448) on September 14 as an out-of-band hotpatch companion for the September servicing branch. Hotpatch-enrolled endpoints should pick this up automatically; standard-servicing devices need the corresponding cumulative package (see item 2). Verify Intune-managed hotpatch rings at your construction client are current.</p>
+      <a href="https://support.microsoft.com/en-us/servicing/os/hotpatch/windows-11/2026/kb5129241-windows-11-24h2-25h2-security-update" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-4">
     <summary class="item-header">
-      <span class="item-title">CISA flags Windows SMB privilege-escalation flaw CVE-2025-33073 as actively exploited</span>
+      <span class="item-title">Excel copy/paste silently fails after September KB5002914 M365 Apps update</span>
       <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>CISA has flagged CVE-2025-33073, a high-severity Windows SMB improper-access-control flaw enabling SYSTEM-level privilege escalation over the network, as being actively exploited. Microsoft's June 2025 patch remediates it; any endpoint that missed the June 2025 rollup is exposed now. Applies across your construction, small-business, and internal ops Windows fleets -- run an Intune compliance report on the June 2025 KB for Windows 10, Windows 11 (through 24H2), and Windows Server hosts this week.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/cisa-high-severity-windows-smb-flaw-now-exploited-in-attacks/" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft has confirmed that copy and paste operations may silently fail for Excel users after installing the September 2026 KB5002914 security update to Microsoft 365 Apps. Help-desk teams should expect tickets and can point users to the known-issue advisory pending a fix. Affects any Microsoft 365 Apps for enterprise/Business tenant on the current channel -- so your construction, small-business, and internal ops fleets.</p>
+      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-september-2026-patch-tuesday-fixes-966-flaws-2-zero-days/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-5">
     <summary class="item-header">
-      <span class="item-title">Remote Desktop Gateway Service elevation-of-privilege bug (CVE-2026-69338)</span>
+      <span class="item-title">Phishing wave uses blank SMTP sender to bypass M365 anti-phishing filters</span>
       <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft disclosed CVE-2026-69338, an elevation-of-privilege vulnerability in the Remote Desktop Gateway Service itself, on September 8. Combined with the RDS RCE (CVE-2026-69525), the September Patch Tuesday materially raises the pressure on any organization running an internet-facing RD Gateway. Directly relevant to your construction client's OCC RDP-through-RDP-Gateway architecture -- patch the gateway role along with the RDS hosts this week.</p>
-      <a href="https://vulners.com/cvelist/CVELIST:CVE-2026-69338" target="_blank" class="src">Source &rarr;</a>
+      <p>KnowBe4 amplified ReliaQuest research showing attackers using an empty SMTP MAIL FROM (blank envelope sender) header to slip past Microsoft 365 anti-phishing filters and deliver credential-harvesting messages. Recommended mitigations include tightening Exchange Online transport rules to reject blank envelope senders and adding a user-awareness reminder. Applies directly to your construction, small-business, and internal ops tenants; construction already runs KnowBe4 for the training half plus Barracuda in front of Exchange Online.</p>
+      <a href="https://blog.knowbe4.com/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-6">
     <summary class="item-header">
-      <span class="item-title">Community fix guidance published for September RDS regression</span>
-      <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
+      <span class="item-title">Microsoft Entra Resource Accounts for Teams Devices delivers passwordless shared-device identity</span>
+      <span class="item-type type-feature">FEATURE</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>Community remediation guidance is now available for the September 2026 Patch Tuesday side effect that breaks RDS on Windows Server 2019/2022/2025 after install. The workaround restores Remote Desktop sessions and gateway connectivity without rolling back the security patches -- critical given the RDS RCE (CVE-2026-69525) and RD Gateway EoP (CVE-2026-69338) fixed this cycle. Apply the workaround on your construction client's RD Gateway path before installing the September LCU there; Microsoft's own fix is still pending.</p>
-      <a href="https://byteiota.com/windows-server-rds-september-2026-patch-fix/" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft announced Entra Resource Accounts for Teams Devices, a passwordless identity model covering Teams Rooms, Teams Panels, common-area phones and other shared Teams endpoints. This removes the long-standing dependency on shared passwords and MFA workarounds for meeting-room hardware, and is included in the September Entra update roundup. Relevant across your construction client and internal ops if either runs Teams Rooms hardware -- currently a nice-to-have posture upgrade, not urgent.</p>
+      <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%e2%80%99s-new-in-microsoft-entra-september-2026/4545179" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-7">
     <summary class="item-header">
-      <span class="item-title">12 Office CVEs exploitable via Outlook Preview Pane in September patches</span>
-      <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
+      <span class="item-title">Microsoft Teams rolls out refreshed in-meeting experience with simplified controls</span>
+      <span class="item-type type-feature">FEATURE</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>Of the 22 Critical Office patches this month, 12 are exploitable via the Outlook Preview/Reading Pane -- a crafted file previewed with no click, no attachment open, and no macro prompt triggers code execution. Enterprise SMB fleets should prioritize Office channel updates alongside OS patching. Applies to your construction, small-business, and internal ops fleets -- confirm Microsoft 365 Apps for enterprise / Business is on the September Monthly Enterprise Channel build or later before end of week.</p>
-      <a href="https://cybersecuritynews.com/microsoft-patch-tuesday-update-september-2026/" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft is rolling out a refreshed in-meeting experience in Teams later this month, consolidating meeting controls into a simpler layout ahead of the broader unified Teams/Outlook calendar work. IT should communicate the UI change to end-users to reduce help-desk friction during rollout. Applies to Teams users across your construction, small-business, and internal ops tenants.</p>
+      <a href="https://techcommunity.microsoft.com/blog/partnernews/september-update-what%E2%80%99s-new-in-security-for-partners/4554532" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-8">
     <summary class="item-header">
-      <span class="item-title">Citrix NetScaler auth bypass CVE-2026-19490 added to CISA KEV</span>
-      <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
+      <span class="item-title">UniFi Protect mobile apps updated: iOS 3.11.1 and Android 3.8.3</span>
+      <span class="item-type type-feature">FEATURE</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>CVE-2026-19490 is a CVSS 9.3 authentication bypass in Citrix NetScaler ADC and NetScaler Gateway when configured as an RDP Proxy Gateway. Active exploitation has been observed since at least September 3, 2026, and CISA added it to the KEV catalog with a federal remediation deadline. No client of yours runs NetScaler (your construction client uses SonicWall TZ; small-business uses UCG Fiber), but the pattern -- an "RDP proxy" gateway compromise -- is useful peer signal alongside the Microsoft RD Gateway story above.</p>
-      <a href="https://www.rescana.com/post/citrix-netscaler-cve-2026-19490-authentication-bypass-kev" target="_blank" class="src">Source &rarr;</a>
+      <p>Ubiquiti released UniFi Protect iOS 3.11.1 on September 15, improving the user experience for G6 Edge cameras, alongside UniFi Protect Android 3.8.3, which improves the UniFi OS update experience. These are rolling updates delivered to users over the following days and are companion mobile apps to the UniFi Protect Application server. Applies to your construction client's Protect Application deployment (7.5+) -- users on iOS/Android will pick up the app updates through the App Store and Google Play.</p>
+      <a href="https://releasebot.io/updates/ubiquiti" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-9">
     <summary class="item-header">
-      <span class="item-title">Cisco Secure Email Gateway RCE CVE-2026-76461 under active exploitation</span>
-      <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 8/11</span>
+      <span class="item-title">Shanghai AI Lab releases Atria Dawn Preview, a 744B agentic MoE trained on verifiable tool use</span>
+      <span class="item-type type-feature">FEATURE</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 6/11</span>
     </summary>
     <div class="item-body">
-      <p>A critical unauthenticated RCE in AsyncOS for Cisco Secure Email Gateway (CVSS 9.8) is being exploited in the wild via crafted email parsing. Any organization running a Cisco email appliance should apply the fix or take the device offline until patched. No client of yours runs Cisco email (construction is on Barracuda Email Security; small-business and internal ops rely on Microsoft-native filtering) -- file for awareness and use as a peer talking point.</p>
-      <a href="https://feeds.feedburner.com/TheHackersNews" target="_blank" class="src">Source &rarr;</a>
+      <p>Shanghai AI Laboratory published a 143-author preprint on September 15, 2026 introducing Atria Dawn Preview, a 744-billion-parameter agentic mixture-of-experts model built on GLM-5.2 and trained via a Verifiable Experience Pipeline that grounds tool use in executable environments. Evaluated across 16 benchmarks with a focus on agentic tasks. Relevant for IT pros tracking open agentic model options beyond OpenAI/Anthropic/Google -- file for awareness, not currently an internal-ops candidate.</p>
+      <a href="https://aiweekly.co/ai-news-today/edition/2026-09-15" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-10">
     <summary class="item-header">
-      <span class="item-title">Entra Connect Sync stops working September 30 for outdated deployments</span>
+      <span class="item-title">Cornelis Networks raises $205M and launches Active Compute Fabric for GPU-agnostic AI clusters</span>
       <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 10/11</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 6/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft confirmed that all synchronization services in Microsoft Entra Connect Sync will cease working on September 30, 2026 for tenants running below version 2.5.79.0. Admins with legacy Connect installations have roughly two weeks to upgrade or face a full identity-sync outage. Applies to your construction client (hybrid Entra/Intune) -- confirm the Connect version this week and plan an upgrade window; small-business, hospitality, and internal ops tenants are cloud-only and unaffected.</p>
-      <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%e2%80%99s-new-in-microsoft-entra-september-2026/4545179" target="_blank" class="src">Source &rarr;</a>
+      <p>Intel spinoff Cornelis Networks announced a $205 million funding round on September 15, 2026 alongside the launch of Active Compute Fabric, an open, GPU-agnostic networking layer for AI clusters. Current 400 Gbps CN5000 switches are shipping now with an 800 Gbps CN6000 generation planned. Signals continued vendor pressure on NVIDIA InfiniBand/NVLink dominance in the AI infrastructure stack -- not directly relevant to SMB IT today, background context for AI infrastructure conversations.</p>
+      <a href="https://aiweekly.co/ai-news-today/edition/2026-09-15" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
   <details class="item" id="item-11">
     <summary class="item-header">
-      <span class="item-title">Apple ships iOS 27, iPadOS 27 and macOS 27 as annual major releases</span>
-      <span class="item-type type-feature">FEATURE</span>
+      <span class="item-title">GTIA acquires The ASCII Group, consolidating major MSP community organizations</span>
+      <span class="item-type type-industry">INDUSTRY</span>
       <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 10/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Alongside the .7 point updates, Apple made iOS 27, iPadOS 27, macOS 27, watchOS 27, visionOS 27, and tvOS 27 publicly available on September 14. The major release also addresses 100+ security vulnerabilities. IT teams should evaluate compatibility (MDM profiles, remote-access apps, industry software) at your construction client before allowing fleet-wide upgrades; a .7 push is the safe short-term option (see item 2) while you validate iOS 27 with the general iPhone fleet.</p>
-      <a href="https://appleosophy.com/2026/09/14/apple-rolls-out-ios-26-7-ipados-26-7-macos-tahoe-26-7-and-more-with-security-fixes/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-12">
-    <summary class="item-header">
-      <span class="item-title">Entra ID adds Tenant Governance and expanded Security Administrator response actions</span>
-      <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Microsoft's September 2026 Entra update introduces Tenant Governance to discover shadow tenants and monitor configuration drift across Entra, Intune, Exchange Online, Teams, Purview and Defender. By end of September the Security Administrator built-in role also gains identity response actions -- disable/enable accounts, revoke sessions, and force password resets for non-privileged users. The MemberOf preview operator in dynamic groups/AUs and entitlement management will be retired November 3, 2026. Useful posture-visibility win for your construction client's hybrid Entra tenant and internal ops.</p>
-      <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%e2%80%99s-new-in-microsoft-entra-september-2026/4545179" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-13">
-    <summary class="item-header">
-      <span class="item-title">UniFi Network Application 10.6.106 adds WiFi 7 MLO STR Mesh support</span>
-      <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Ubiquiti published UniFi Network Application 10.6.106 adding MLO STR Mesh support for WiFi 7 access points (UAP 8.8 or newer) plus stability fixes. Bug fixes include incorrect MLO client IP display, save failures on network configuration changes, and a Site Admin settings issue in multi-site deployments. Applies to your construction client's UniFi Network Application (deployed 10.3+) -- schedule at the next maintenance window; rollout is staged so the controller may not offer the update immediately.</p>
-      <a href="https://community.ui.com/releases/UniFi-Network-Application-10-6-106/f206c01d-3f73-471b-b4a5-2da48f157ea6" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-14">
-    <summary class="item-header">
-      <span class="item-title">Windows 11 KB5124008 delivers movable taskbar and resizable Start menu</span>
-      <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-green">FYI</span>
       <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>The September Patch Tuesday cumulative update KB5124008 (build 26200.9445 / 26100.9445) targets Windows 11 24H2 and 25H2 and bundles the non-security features previewed in August: taskbar can move to top/left/right, shrink for more screen space, and Search gets a redesign. KB5124012 lands on 26H1 with File Explorer, Hello ESS, Voice Access, and AI improvements. Expect a light wave of "where did my taskbar go" questions across all fleets once the September LCU deploys.</p>
-      <a href="https://4sysops.com/archives/windows-11-kb5124008-and-kb5122880-new-features-in-the-september-2026-update/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-15">
-    <summary class="item-header">
-      <span class="item-title">Teams September update: pinned channel resources, Room Optimization Mode, agent discovery</span>
-      <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 8/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Microsoft's September 2026 Teams enterprise update introduces pinning of key links, files and messages beneath any chat or channel, and replaces "shared display" with a new Room Optimization Mode for huddle/focus spaces that auto-selects audio/video devices and toggles voice isolation. Admins get a new Teams Agents Discovery experience surfacing third-party agents in the Teams Admin Center (recommendations arriving October 2026). Management of Teams Rooms on Android, Teams panels and phones from the Teams Admin Center is being deprecated end of September -- flag if your construction client or internal ops uses TAC for those devices.</p>
-      <a href="https://empowering.cloud/microsoft-teams-enterprise-update-september-2026/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-16">
-    <summary class="item-header">
-      <span class="item-title">Anthropic weekly usage-limit reduction takes effect September 14</span>
-      <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 7/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Anthropic's previously scheduled weekly usage-limit reduction landed on September 14, 2026, tightening throughput ceilings for Claude API and Claude.ai plans. Anyone running scheduled Claude jobs -- including your internal ops morning briefing and dashboard workflows -- should verify headroom against the new caps and adjust automation pacing if runs start bumping the ceiling.</p>
-      <a href="https://llm-stats.com/llm-updates" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-17">
-    <summary class="item-header">
-      <span class="item-title">DeepSeek retains V4 Pro on the API alongside V4.1 Flash</span>
-      <span class="item-type type-feature">FEATURE</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 6/11</span>
-    </summary>
-    <div class="item-body">
-      <p>DeepSeek had announced that from 04:00 UTC on September 14 all deepseek-v4-pro API requests would be routed to V4.1 Flash. After user pushback the API documentation was updated to continue V4 Pro service past that date with billing unchanged. Relevant for anyone with pinned model dependencies who was preparing a migration.</p>
-      <a href="https://llm-stats.com/ai-news" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-18">
-    <summary class="item-header">
-      <span class="item-title">CMMC Reform Task Force delivers findings to DoD CIO; public release September 28</span>
-      <span class="item-type type-industry">INDUSTRY</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>The CMMC Reform Task Force chartered after July's suspension of CMMC Phase 2 delivered its findings to DoD CIO Kirsten Davies on September 13, 2026, with public release scheduled for September 28. The review addresses assessor capacity (roughly 100 authorized C3PAOs against >100,000 contractors) and small-business cost projections exceeding $7B/year. Directly relevant to your construction client's CMMC Level 2 track -- hold on assessment scheduling until the recommendations are published; NIST SP 800-171 self-assessment and SPRS scores remain required in DoD contracts today.</p>
-      <a href="https://federalnewsnetwork.com/cybersecurity/2026/07/pentagon-suspends-cmmc-phase-two-requirements-launches-review-of-program/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-19">
-    <summary class="item-header">
-      <span class="item-title">KnowBe4 details OAuth device-code phishing bypassing M365 MFA</span>
-      <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
-    </summary>
-    <div class="item-body">
-      <p>KnowBe4 Threat Labs is tracking a sophisticated campaign against North American businesses that abuses Microsoft's OAuth 2.0 Device Authorization Grant to hijack M365 (Outlook, Teams, OneDrive) sessions despite strong passwords and MFA. Victims are lured to the legitimate microsoft.com/devicelogin URL and prompted to enter an attacker-supplied device code, granting the attacker persistent OAuth tokens. Mitigations: block device-code flow in Entra Conditional Access where not required, and train users to never enter device codes received via email. Directly applicable to your construction, small-business, and internal ops tenants; construction already uses KnowBe4 for the training half.</p>
-      <a href="https://blog.knowbe4.com/uncovering-the-sophisticated-phishing-campaign-bypassing-m365-mfa" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-20">
-    <summary class="item-header">
-      <span class="item-title">Mass-scanning campaign harvests AWS/Azure creds from exposed Vite dev servers</span>
-      <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 6/11</span>
-    </summary>
-    <div class="item-body">
-      <p>F5 Labs disclosed an automated scanning campaign targeting internet-exposed Vite development servers to exfiltrate AWS and Azure credentials plus infrastructure configuration files. Dev environments left on public IPs are the entry point. Not directly a client concern -- no client of yours runs a Vite dev workflow -- but a useful reminder about exposed dev endpoints for peer conversations.</p>
-      <a href="https://feeds.feedburner.com/TheHackersNews" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-21">
-    <summary class="item-header">
-      <span class="item-title">LiteSpeed Web Server Enterprise privilege escalation to root on shared hosts</span>
-      <span class="item-type type-security">SECURITY</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 6/11</span>
-    </summary>
-    <div class="item-body">
-      <p>A critical flaw in LiteSpeed Web Server Enterprise lets a low-privilege hosting account user escalate to root on shared servers, enabling compromise of every co-tenant site on the machine. Relevant for SMBs hosting on shared LiteSpeed infrastructure or running their own multi-tenant environments -- not deployed by any current client of yours, useful peer signal about shared-hosting exposure.</p>
-      <a href="https://feeds.feedburner.com/TheHackersNews" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-  <details class="item" id="item-22">
-    <summary class="item-header">
-      <span class="item-title">Anthropic expands Claude AI partner training with new security certifications</span>
-      <span class="item-type type-industry">INDUSTRY</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 6/11</span>
-    </summary>
-    <div class="item-body">
-      <p>ChannelE2E reports Anthropic has expanded its channel-partner training program with new AI security certifications aimed at MSPs and integrators. Relevant for SMB IT shops evaluating whether to add Claude-based service offerings to their internal ops playbook.</p>
-      <a href="https://www.channele2e.com/feed/topic/latest" target="_blank" class="src">Source &rarr;</a>
+      <p>The Global Technology Industry Association (GTIA) announced acquisition of The ASCII Group on September 15, 2026, uniting two of the largest MSP/solution-provider member communities. Channel leaders are expected to meet at ASCII Edge Chicago September 23-24 to hear integration plans. Impacts SMB IT vendors, peer groups, and events currently split between the two organizations -- worth tracking if your internal ops relies on either community for peer benchmarking or vendor discovery.</p>
+      <a href="https://www.globenewswire.com/news-release/2026/09/15/3362322/0/en/gtia-acquires-the-ascii-group-broadening-its-industry-reach-and-impact-across-the-it-channel.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 </div>
 
-<div class="footer">Generated Tuesday, September 15, 2026 at 6:36 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-09-15.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
+<div class="footer">Generated Wednesday, September 16, 2026 at 6:36 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-09-16.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
 
 </main>
 </body>
