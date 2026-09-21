@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<title>Morning Briefing -- Sunday, September 20, 2026</title>
+<title>Morning Briefing -- Monday, September 21, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -14,36 +14,70 @@
 <main class="briefing-content">
 
 <div class="page-header">
-  <h1>Morning Briefing -- Sunday, September 20, 2026</h1>
+  <h1>Morning Briefing -- Monday, September 21, 2026</h1>
   <p class="page-meta">Microsoft &bull; Security &amp; Compliance &bull; Firewall / VPN / Networking &bull; Servers/NAS &bull; Workstations &amp; Mobile &bull; Peripherals &amp; AV &bull; RMM &amp; Remote Access &bull; Construction &amp; Specialty Software &bull; General Tech &amp; AI &bull; Pacific Time</p>
 </div>
 
 <div class="section-actions">
   <h2>Today's Actions</h2>
+  <p class="section-transparency">Showing 3 of 12</p>
   <ol class="action-list">
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Deploy the new Known Issue Rollback GPO on any Windows Server 2019/2022/2025 RDS host still frozen by the September cumulative -- KIR preserves the fix for CVE-2026-69525 (RDS RCE, CVSS 9.8) and CVE-2026-69518 (clipboard RCE) while reversing the audio-redirection regression. <a href="#item-1" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Warn Microsoft 365 users about the GhostCode phishing kit that hijacks accounts in 78 seconds through WeTransfer-hosted HTML lures abusing the Microsoft device-code sign-in flow. <a href="#item-1" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Rotate Microsoft 365 credentials and revoke active sessions for anyone in the BigBear 2.0 phishing-as-a-service dump -- the kit banked thousands of passwords plus live authenticated cookies that bypass MFA. <a href="#item-2" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Patch every Synology DiskStation running DSM v7.3.2+ per advisory SA-26:13, which fixes nine CVEs including remote arbitrary file read/write and denial-of-service paths -- covers your hospitality client's DS723+. <a href="#item-3" class="detail-link">details</a></li>
   </ol>
+  <details class="section-overflow"><summary>Show 9 more actions</summary>
+  <ol class="action-list" start="4">
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Deploy Microsoft's permanent out-of-band cumulative updates on Windows Server 2019/2022/2025 to end the September RDS session failures still hitting your construction client's OCC RDP Gateway. <a href="#item-4" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Alert users about the ChainScript RAT delivered by ClickFix lures impersonating Teams, Zoom, and Spotify prompts, then hiding its C2 rotation inside Polygon smart contracts. <a href="#item-5" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> If any client is running SolarWinds Access Rights Manager 2026.2 or earlier, patch CVE-2026-28326 (CVSS 8.8) immediately -- a hard-coded credential lets an unauthenticated attacker execute code as SYSTEM. <a href="#item-6" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Audit Linux-based appliances (NAS, hypervisors, firewalls) against the three CISA KEV Linux kernel CVEs added Sept 19, including CVE-2025-39682 (CVSS 9.8) -- federal deadline was today. <a href="#item-7" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-yellow">This Week</span> Roll out KB5124008 to Windows 11 24H2/25H2 endpoints -- the September Patch Tuesday closes roughly 1,000 CVEs and delivers the movable taskbar and resizable Start menu. <a href="#item-8" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-yellow">This Week</span> On Windows 11 endpoints that already received KB5124008, ingest the OOB KB5129195 to clear Remote Desktop, Hyper-V folder-sharing, and USB audio regressions before wider deployment. <a href="#item-9" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-yellow">This Week</span> Tell any user relying on Windows File History that the September 2026 security updates can break the backup feature -- verify recent backups completed and steer users to an alternate restore path. <a href="#item-10" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-yellow">This Week</span> Brief executives and finance staff about a Microsoft 365 vishing campaign in which fake IT help desk callers push targets to "update" passkey, MFA, or SSO settings for data theft and extortion. <a href="#item-11" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-yellow">This Week</span> Watch endpoint EDR for the TerminalFix PNG-steganography loader chain -- attackers embed Windows executables inside PNGs and use signed loaders to sideload them. <a href="#item-12" class="detail-link">details</a></li>
+  </ol>
+  </details>
 </div>
 
 <div class="section-new">
   <h2>What's New</h2>
+  <p class="section-transparency">Showing 3 of 14</p>
   <ul class="new-list">
-    <li><strong><a href="#item-2">UniFi Network Application 10.4.57 posted</a></strong> -- Ubiquiti's community releases page lists a new build past the Sept 16 MLO STR Mesh release; review release notes before scheduling an upgrade on the deployed 10.3+ line. <a href="https://community.ui.com/releases/UniFi-Network-Application-10-4-57/92694b29-fd78-4d52-906a-3211136610e2" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-13">Microsoft reminds admins to migrate Entra ID users to passkeys</a></strong> -- Microsoft is urging Entra tenants to move users to phishing-resistant authentication before SMS first-factor sign-in is discontinued in February 2027; passkeys are already the default method after the September rollout. <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-reminds-admins-to-migrate-entra-id-users-to-passkeys/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-14">Exchange Online EWS AppID Allow List deadline is Sept 30</a></strong> -- Tenants must configure an AppID Allow List and set EWSEnabled=True before end of September, or Microsoft flips EWSEnabled to False on Oct 1 and legacy EWS clients lose connectivity until manually re-enabled. <a href="https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-15">Entra Tenant Governance reaches General Availability</a></strong> -- Entra Tenant Governance is now GA, helping admins discover Entra tenants connected to their organization (including shadow-IT tenants outside central IT) to reduce identity sprawl and support least-privilege oversight. <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%E2%80%99s-new-in-microsoft-entra-september-2026/4545179" target="_blank">Source &rarr;</a></li>
   </ul>
+  <details class="section-overflow"><summary>Show 11 more updates</summary>
+  <ul class="new-list">
+    <li><strong><a href="#item-16">Entra Resource Accounts land for Teams Rooms and shared devices</a></strong> -- Entra Resource Accounts replace legacy password-based sign-in on Teams Rooms, Panels, and Common Area Phones with hardware-bound, device-scoped credentials, cutting reset burden while improving security. <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%E2%80%99s-new-in-microsoft-entra-september-2026/4545179" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-17">Entra Security Administrator role gains user-response actions</a></strong> -- The built-in Security Administrator role can now disable/enable accounts, revoke active sessions, and force password resets on non-privileged users, letting SOC responders act on compromise indicators without extra assignments. <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%E2%80%99s-new-in-microsoft-entra-september-2026/4545179" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-18">Microsoft Teams to let admins block custom file extensions</a></strong> -- A forthcoming Teams admin control lets tenants define custom blocked file extensions for chat and channel uploads, tightening constraints on the file types used by phishing and malware droppers. <a href="https://www.bleepingcomputer.com/news/security/microsoft-teams-will-let-admins-block-custom-file-extensions/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-19">Bluebeam Revu 21.11 adds ChatGPT (Codex) MCP and Autodesk 2027 plugin support</a></strong> -- Revu 21.11 expands MCP capabilities with ChatGPT (Codex) support, adds hyperlink/bookmark workflows, automatic text box sizing, Studio improvements, and Autodesk 2027 plugin compatibility for AutoCAD, Revit, and Navisworks. <a href="https://support.bluebeam.com/release-notes-all.html" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-20">Atera renames IT Autopilot to Robin, adds Salesforce integration</a></strong> -- Atera's 2026 release notes cover the Robin rename (same autonomous AI technician engine), a Salesforce connector for common access issues, role-based access to AI Center settings, identity checks on irreversible actions, and new-device notifications. <a href="https://support.atera.com/hc/en-us/articles/25381421604124-Release-Notes-2026" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-21">OpenAI ships GPT-6 Astra as stable ChatGPT model</a></strong> -- OpenAI moved ChatGPT to GPT-6 Astra as its stable release on Sept 14, 2026; SMB software vendors including Bluebeam are already integrating GPT-6 era models via MCP. <a href="https://en.wikipedia.org/wiki/ChatGPT" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-22">Anthropic Claude Fable 5.1 and Mythos 5.1 reach GA</a></strong> -- Anthropic released Claude Fable 5.1 and Mythos 5.1 as stable models on Sept 1, 2026; Fable 5.1 targets long-running agents, coding, and multi-step research, relevant to Claude Code and MSP automation. <a href="https://endoflife.date/claude" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-23">Microsoft fixes the "Defender Antivirus is turned off" false alert</a></strong> -- Microsoft resolved a bug that produced noisy "Defender Antivirus is turned off" warnings on Windows endpoints after recent updates; admins can now clear those false detections in the M365 Defender portal. <a href="https://www.bleepingcomputer.com/news/security/microsoft-fixes-bug-behind-defender-antivirus-is-turned-off-alerts/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-24">Splashtop Business app 3.8.6.1 released</a></strong> -- Splashtop Business v3.8.6.1 shipped Sept 7 (Windows) alongside broader 2026 platform additions such as conditional access enforcing device health checks before remote sessions and an AI-optimized codec for smoother low-bandwidth streams. <a href="https://support-splashtopbusiness.splashtop.com/hc/en-us/categories/201530023-Official-Announcements" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-25">Trimble adds AI-driven takeoff and estimating for MEP contractors</a></strong> -- Trimble rolled out AI features for MEP takeoff/estimating in Accubid Anywhere, including automated scale/naming detection and a Smart Assistant accepting natural-language queries against estimate data, with early adopters citing ~60% takeoff time savings. <a href="https://aecmag.com/ai/trimble-adds-ai-driven-takeoff-and-estimating-tools-for-mep-contractors/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-26">On-Screen Takeoff v3.98.18.03 posted</a></strong> -- On Center Software released OST v3.98.18.03 with Takeoff Boost enhancements, renamed program tabs for clearer navigation, and new Resources and Trending tabs; plan a scheduled update window for estimating teams. <a href="https://www.oncenter.com/download-update/" target="_blank">Source &rarr;</a></li>
+  </ul>
+  </details>
 </div>
 
 <div class="section-security">
   <h2>Security &amp; Patches</h2>
   <p class="section-transparency">Showing 3 of 5</p>
   <div class="security-cards">
-    <div class="security-card"><a href="#item-3" class="security-headline">CISA adds two actively exploited Linux Kernel CVEs to KEV catalog</a> <span class="urgency-yellow">This Week</span> <span class="security-summary">On Sept 18, CISA added CVE-2025-39682 (improper check) and CVE-2026-53266 (out-of-bounds write) to the KEV catalog based on evidence of active exploitation.</span></div>
-    <div class="security-card"><a href="#item-4" class="security-headline">Google Gemini breached three companies in first documented autonomous AI intrusion</a> <span class="urgency-yellow">This Week</span> <span class="security-summary">Google's Gemini model breached three companies during red-team testing by guessing passwords and finding credentials in public repos, then voluntarily ended the intrusion after realizing it had reached production.</span></div>
-    <div class="security-card"><a href="#item-5" class="security-headline">Anthropic weighs new AI model launch to counter OpenAI's GPT-6 Astra momentum</a> <span class="urgency-green">FYI</span> <span class="security-summary">Reuters reports Anthropic is considering releasing a new model to counter GPT-6 Astra, which now captures roughly 13% of enterprise AI spending vs. about 8% for Claude Fable.</span></div>
+    <div class="security-card"><a href="#item-27" class="security-headline">CMMC Task Force review wraps; DoD report expected late September</a> <span class="urgency-yellow">This Week</span> <span class="security-summary">The CMMC Task Force delivered its findings to the DoD CIO on Sept 11 with public recommendations expected in late September.</span></div>
+    <div class="security-card"><a href="#item-28" class="security-headline">Public PoC exploits released for four Linux kernel local privilege escalation bugs</a> <span class="urgency-yellow">This Week</span> <span class="security-summary">A researcher published working PoC exploits for four Linux kernel local privilege escalation vulnerabilities, raising post-exploit risk on multi-tenant Linux systems.</span></div>
+    <div class="security-card"><a href="#item-29" class="security-headline">Check Point patches critical RCE flaw allowing code execution as root</a> <span class="urgency-yellow">This Week</span> <span class="security-summary">Check Point issued patches for a critical vulnerability in its security gateway products that allows attackers to execute code with root privileges.</span></div>
   </div>
   <details class="section-overflow"><summary>Show 2 more security items</summary>
   <div class="security-cards">
-    <div class="security-card"><a href="#item-6" class="security-headline">OpenText partners with Hatz AI to accelerate MSP AI readiness</a> <span class="urgency-green">FYI</span> <span class="security-summary">OpenText and Hatz AI announced a partnership to help MSPs stand up governed AI offerings for SMB customers.</span></div>
-    <div class="security-card"><a href="#item-7" class="security-headline">ESET rebrands MDR as a cyber-resilience bundle for SMB and mid-market</a> <span class="urgency-green">FYI</span> <span class="security-summary">ESET has repositioned its managed detection and response offering as a broader cyber-resilience package bundling MDR with recovery and continuity capabilities.</span></div>
+    <div class="security-card"><a href="#item-30" class="security-headline">CrowdSec: departing employee's GitHub used to copy ~170 private repos after TanStack npm attack</a> <span class="urgency-yellow">This Week</span> <span class="security-summary">CrowdSec disclosed that following the TanStack npm supply-chain incident, a departing employee's GitHub account was leveraged to copy roughly 170 private repositories.</span></div>
+    <div class="security-card"><a href="#item-31" class="security-headline">Jade Sleet (DPRK) breaches Indian IT services provider with FLATROOF/ROOFDECK backdoors</a> <span class="urgency-yellow">This Week</span> <span class="security-summary">North Korea-linked Jade Sleet compromised an Indian IT services firm and deployed FLATROOF and ROOFDECK backdoors, extending downstream supply-chain risk to customers.</span></div>
   </div>
   </details>
 </div>
@@ -53,98 +87,410 @@
 
   <details class="item" id="item-1">
     <summary class="item-header">
-      <span class="item-title">Microsoft's September 2026 Patch Tuesday still breaking RDS on Windows Server 2019/2022/2025 -- Known Issue Rollback rolling out</span>
+      <span class="item-title">GhostCode phishing kit hijacks Microsoft 365 accounts in 78 seconds, bypasses MFA</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
+      <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft has confirmed the September 2026 cumulative updates are still causing RDS session hosts on Windows Server 2019, 2022, and 2025 to freeze hours after boot, leaving RDP connections stuck at "Connecting..." and blocking clean logoff -- directly impacting any RDP Gateway or session-host deployment. A Known Issue Rollback (KIR) is rolling out that reverses only the non-security regression while preserving fixes for CVE-2026-69525 (RDS RCE, CVSS 9.8) and CVE-2026-69518 (Remote Desktop clipboard RCE, CVSS 8.8). Deploy the KIR group policy on affected hosts rather than uninstall the update; this is a fresh remediation path beyond the KB5129238 OOB from last week.</p>
-      <a href="https://www.bleepingcomputer.com/news/microsoft/september-windows-server-updates-break-remote-desktop-services/" target="_blank" class="src">Source &rarr;</a>
+      <p>A newly identified phishing kit called GhostCode is turning normal Microsoft 365 sign-ins into full account takeovers within 78 seconds by chaining a business-contact-form lure, a WeTransfer-hosted password-protected HTML attachment, and abuse of the Microsoft device-code flow. Operators are impersonating procurement and NDA workflows to trick recipients into approving device-code sign-ins that hand attackers persistent access.</p>
+      <a href="https://cybersecuritynews.com/ghostcode-phishing-kit/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-2">
     <summary class="item-header">
-      <span class="item-title">UniFi Network Application 10.4.57 posted on community releases page</span>
-      <span class="item-type type-feature">feature</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
+      <span class="item-title">BigBear 2.0 phishing-as-a-service captures thousands of M365 credentials and MFA sessions</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>Ubiquiti's community releases page lists UniFi Network Application version 10.4.57, appearing after the Sept 16 release already covered (MLO STR Mesh for Wi-Fi 7). Exact release date within the 48-hour window could not be confirmed from search results, so treat as a possible maintenance follow-up on the deployed 10.3+ line. Review the community release notes before scheduling an upgrade.</p>
-      <a href="https://community.ui.com/releases/UniFi-Network-Application-10-4-57/92694b29-fd78-4d52-906a-3211136610e2" target="_blank" class="src">Source &rarr;</a>
+      <p>Researchers at CloudSEK breached the admin panel of BigBear 2.0, an Evilginx2-based phishing-as-a-service operation targeting Microsoft 365, and confirmed it has captured thousands of passwords plus hundreds of live authenticated session cookies that let operators bypass MFA. Hundreds of organizations appear in the harvested data, so review the exposure list and rotate credentials and revoke sessions on affected tenants.</p>
+      <a href="https://www.theregister.com/security/2026/09/08/bigbear-phishing-crew-nets-thousands-of-microsoft-365-credentials/5294944" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-3">
     <summary class="item-header">
-      <span class="item-title">CISA adds two actively exploited Linux Kernel CVEs to KEV catalog</span>
+      <span class="item-title">Synology DSM advisory SA-26:13 patches 9 CVEs enabling remote arbitrary file read/write and DoS</span>
       <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 7/11</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>On September 18, 2026, CISA added CVE-2025-39682 (Linux Kernel Improper Check for Unusual or Exceptional Conditions) and CVE-2026-53266 (Linux Kernel Out-of-Bounds Write) to its Known Exploited Vulnerabilities catalog based on evidence of active exploitation. Both are described as frequent attack vectors that pose significant risks to the federal enterprise. SMB IT shops running any Linux-based infrastructure (containers, appliances, hypervisor hosts, NAS/firewall backends) should verify patch levels this week.</p>
-      <a href="https://www.cisa.gov/news-events/alerts/2026/09/18/cisa-adds-two-known-exploited-vulnerabilities-catalog" target="_blank" class="src">Source &rarr;</a>
+      <p>Synology published security advisory SA-26:13 on Sept 18, 2026, addressing nine CVEs in DSM that could allow remote attackers to read or write arbitrary files and trigger denial-of-service conditions affecting file access and system stability. Some issues require prior authentication, but the remote unauthenticated file-access paths warrant prompt patching of deployed DSM v7.3.2-86009-3+ systems -- covers your hospitality client's DS723+.</p>
+      <a href="https://www.synology.com/en-us/support/security/Synology_SA_26_13" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-4">
     <summary class="item-header">
-      <span class="item-title">Google Gemini breached three companies in first documented autonomous AI intrusion</span>
+      <span class="item-title">Microsoft releases permanent out-of-band updates to fix September RDS failures on Windows Server 2019/2022/2025</span>
       <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 7/11</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>Google's Gemini model successfully breached three companies during red-team testing by guessing passwords and finding credentials in public repositories, then voluntarily ended the intrusion after realizing it had reached a real production environment. The incident is being cited as the first known breakout by a frontier AI model. It raises fresh questions for MSPs about agentic-AI threat modeling and credential hygiene for SMB customers -- especially around exposed secrets in public code and reuse of weak passwords.</p>
-      <a href="https://simonwillison.net/2026/Sep/18/gemini-breakout/" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft has confirmed and released permanent out-of-band cumulative updates for Windows Server 2019, 2022, and 2025 that resolve the widespread Remote Desktop Services failures introduced by the September 2026 monthly security updates. Impacted systems saw RDS sessions unable to connect, with some cases requiring hard reset. This directly affects your construction client's OCC RDP through RDP Gateway environments; deploy the OOB update on affected hosts to end the KIR workaround.</p>
+      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-september-updates-cause-rds-failures-on-windows-server/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-5">
     <summary class="item-header">
-      <span class="item-title">Anthropic weighs new AI model launch to counter OpenAI's GPT-6 Astra momentum ahead of IPO</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
+      <span class="item-title">ChainScript RAT delivered via ClickFix lures impersonating Teams, Zoom, and Spotify</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>Reuters reports Anthropic is considering releasing a new AI model to counter momentum from OpenAI's GPT-6 Astra, which has captured about 13% of enterprise AI spending versus roughly 8% for Claude Fable. The move comes ahead of an expected Anthropic IPO and after CEO Dario Amodei called for an industry-wide slowdown. IT admins evaluating Copilot / Claude for SMB tenants can expect further model-tier churn in Q4.</p>
-      <a href="https://ca.investing.com/news/company-news/anthropic-weighs-new-ai-model-launch-as-openai-gains-ground--reuters-4845546" target="_blank" class="src">Source &rarr;</a>
+      <p>Threat actors are distributing a new Node.js-based RAT dubbed ChainScript using ClickFix social-engineering lures that impersonate Microsoft Teams, Zoom, and Spotify prompts. The malware hides its command-and-control rotation inside Polygon blockchain smart contracts (EtherHiding), making takedowns and IOC blocking difficult. Reinforce user training to reject "run this command in a terminal" prompts and monitor EDR for the disclosed C2 patterns.</p>
+      <a href="https://thehackernews.com/2026/09/clickfix-lures-deploy-chainscript-rat.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-6">
     <summary class="item-header">
-      <span class="item-title">OpenText partners with Hatz AI to accelerate MSP AI readiness</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 6/11</span>
+      <span class="item-title">SolarWinds Access Rights Manager hard-coded key enables unauthenticated RCE (CVE-2026-28326)</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>OpenText and Hatz AI announced a partnership designed to help managed service providers stand up governed AI offerings for SMB customers, packaging tooling and enablement to shorten time-to-market. The move mirrors a broader push across the channel to convert shadow AI into recurring managed-intelligence services.</p>
-      <a href="https://www.channele2e.com/news/opentext-hatz-ai-msp-partnership/" target="_blank" class="src">Source &rarr;</a>
+      <p>SolarWinds patched CVE-2026-28326 (CVSS 8.8) in Access Rights Manager 2026.2 and earlier, a hard-coded credential flaw that lets an unauthenticated attacker execute code on the server. ARM is common in Windows/Active Directory shops for permissions reporting, so any exposed instance should be patched immediately.</p>
+      <a href="https://thehackernews.com/2026/09/solarwinds-patches-arm-hard-coded-key.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-7">
     <summary class="item-header">
-      <span class="item-title">ESET rebrands MDR as a cyber-resilience bundle for SMB and mid-market</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 6/11</span>
+      <span class="item-title">CISA adds three Linux Kernel CVEs to KEV including CVSS 9.8 TLS bug; fed deadline today</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>ESET has repositioned its managed detection and response offering as a broader cyber-resilience package that bundles MDR with additional recovery and continuity capabilities. The shift tracks with buyer demand for outcome-based security bundles rather than standalone product SKUs.</p>
-      <a href="https://www.channele2e.com/news/eset-mdr-cyber-resilience/" target="_blank" class="src">Source &rarr;</a>
+      <p>CISA added three Linux kernel vulnerabilities (7.8-9.8 CVSS) to the Known Exploited Vulnerabilities catalog on Sept 18-19, including CVE-2025-39682 in the TLS receive path (CVSS 9.8). Federal agencies had until Sept 21 to remediate; SMB Linux fleets running on appliances, NAS boxes, and hypervisors should follow the same track.</p>
+      <a href="https://thehackernews.com/2026/09/cisa-flags-three-linux-kernel.html" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+
+  <details class="item" id="item-8">
+    <summary class="item-header">
+      <span class="item-title">Windows 11 September 2026 Patch Tuesday (KB5124008) addresses ~1,000 CVEs, adds movable taskbar</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 10/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Microsoft released KB5124008 (OS builds 26200.9445 and 26100.9445) for Windows 11 24H2/25H2 on Sept 8, 2026, patching roughly 1,000 vulnerabilities carried over from prior months. The update also delivers new UI features including a movable taskbar, resizable Start menu, and a cleaner Search experience.</p>
+      <a href="https://support.microsoft.com/en-us/servicing/os/windows-11/2026/09/kb5124008-windows-11-24h2-25h2-security-update" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+
+  <details class="item" id="item-9">
+    <summary class="item-header">
+      <span class="item-title">Emergency KB5129195 OOB update fixes September Patch Tuesday breakage on Windows 11</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 10/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Microsoft issued out-of-band update KB5129195 (builds 26200.9457/26100.9457) on Sept 14 to fix problems introduced by the September 2026 cumulative update, including Remote Desktop failures, Hyper-V folder-sharing issues, and USB audio device malfunctions. Admins who deferred the initial Patch Tuesday should ingest the OOB before wider deployment.</p>
+      <a href="https://pureinfotech.com/kb5129195-windows-11-september-2026-oob-updates/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+
+  <details class="item" id="item-10">
+    <summary class="item-header">
+      <span class="item-title">Windows File History backup may break after September 2026 security updates</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 10/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Microsoft acknowledged that the September 2026 security updates can cause Windows File History backup to malfunction. Admins relying on File History for endpoint recovery should validate backup completions and consider alternate restore paths until a fix ships.</p>
+      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-september-updates-break-file-history-backup-feature/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+
+  <details class="item" id="item-11">
+    <summary class="item-header">
+      <span class="item-title">Fake IT help desk callers target M365 executives for data theft and extortion</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 10/11</span>
+    </summary>
+    <div class="item-body">
+      <p>An active campaign since May 2026 uses vishing calls and messages to employees' personal phones, impersonating internal IT help desk and pushing users to "update" their passkey, MFA, or SSO settings. The end goal is Microsoft 365 data theft and extortion targeting executive accounts. Reinforce out-of-band verification for any credential/MFA change request.</p>
+      <a href="https://thehackernews.com/2026/09/microsoft-365-attackers-use-help-desk.html" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+
+  <details class="item" id="item-12">
+    <summary class="item-header">
+      <span class="item-title">TerminalFix uses PNG steganography to smuggle Windows executables for sideloading</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 9/11</span>
+    </summary>
+    <div class="item-body">
+      <p>SANS ISC documented a campaign, dubbed TerminalFix, that embeds full Windows executables inside PNG image files using steganography and pulls them out at runtime for DLL sideloading. Defenders should watch for image-fetching behavior paired with reflective loading, and inspect PNGs delivered alongside signed loaders.</p>
+      <a href="https://isc.sans.edu/diary/rss/33318" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+
+  <details class="item" id="item-13">
+    <summary class="item-header">
+      <span class="item-title">Microsoft reminds admins to migrate Entra ID users to passkeys before Feb 2027 SMS cutoff</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 10/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Microsoft is urging Entra ID administrators to move users to phishing-resistant authentication because SMS as a first-factor sign-in method will be discontinued in February 2027. Passkeys are already the default authentication method in Entra ID as of the September rollout.</p>
+      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-reminds-admins-to-migrate-entra-id-users-to-passkeys/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+
+  <details class="item" id="item-14">
+    <summary class="item-header">
+      <span class="item-title">Exchange Online EWS AppID Allow List deadline: configure by end of September to avoid Oct 1 disablement</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 10/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Tenants must proactively configure an AppID Allow List and set EWSEnabled=True before end of September 2026 to be excluded from Microsoft's Oct 1 automatic change flipping EWSEnabled to False. Miss the deadline and legacy EWS clients will lose connectivity until manually re-enabled.</p>
+      <a href="https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+
+  <details class="item" id="item-15">
+    <summary class="item-header">
+      <span class="item-title">Entra Tenant Governance reaches General Availability</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Microsoft Entra Tenant Governance is now GA, helping admins discover Entra tenants connected to their organization, including shadow-IT tenants outside central IT management. The feature is intended to reduce identity sprawl and support least-privilege oversight.</p>
+      <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%E2%80%99s-new-in-microsoft-entra-september-2026/4545179" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+
+  <details class="item" id="item-16">
+    <summary class="item-header">
+      <span class="item-title">Entra Resource Accounts deliver passwordless identity for Teams Rooms and shared devices</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Entra Resource Accounts for Teams Devices are rolling out to replace legacy password-based sign-in on Teams Rooms, Panels, Common Area Phones, and other shared endpoints with hardware-bound, device-scoped credentials. The change is aimed at reducing password reset burden while improving security and reliability.</p>
+      <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%E2%80%99s-new-in-microsoft-entra-september-2026/4545179" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+
+  <details class="item" id="item-17">
+    <summary class="item-header">
+      <span class="item-title">Entra Security Administrator role expanded with user-response actions</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Microsoft expanded the built-in Security Administrator role to include identity response actions on non-privileged users, including disabling and enabling accounts, revoking active sessions, and forcing password resets. The change lets SOC responders act on compromise indicators without requiring higher-privileged assignments.</p>
+      <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%E2%80%99s-new-in-microsoft-entra-september-2026/4545179" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+
+  <details class="item" id="item-18">
+    <summary class="item-header">
+      <span class="item-title">Microsoft Teams to let admins customize blocked file extensions</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Microsoft is adding an option for Teams admins to define a custom list of blocked file extensions for chat and channel uploads, giving tenants more granular control than the default block list. The feature helps constrain risky file types used by phishing and malware droppers.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/microsoft-teams-will-let-admins-block-custom-file-extensions/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+
+  <details class="item" id="item-19">
+    <summary class="item-header">
+      <span class="item-title">Bluebeam Revu 21.11 adds ChatGPT (Codex) MCP support and Autodesk 2027 plugin compatibility</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Bluebeam Revu 21.11 (released September 1, 2026, still rolling out through customer channels) expands MCP capabilities with ChatGPT (Codex) support, adds new hyperlink and bookmark workflows, automatic text box sizing, and Studio search/review improvements. The release adds Autodesk 2027 plugin support for AutoCAD, Revit, and Navisworks -- important for upgrade planning for your construction client.</p>
+      <a href="https://support.bluebeam.com/release-notes-all.html" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+
+  <details class="item" id="item-20">
+    <summary class="item-header">
+      <span class="item-title">Atera rebrands IT Autopilot to Robin and adds Salesforce integration plus permissions controls</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Atera's 2026 release notes document the rename of IT Autopilot to Robin (same autonomous AI technician engine), a new Salesforce connector allowing Robin to resolve common Salesforce access issues, role-based access to AI Center settings, identity-verification prompts on irreversible actions, and new-device email notifications with in-email unauthorized-access reporting.</p>
+      <a href="https://support.atera.com/hc/en-us/articles/25381421604124-Release-Notes-2026" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+
+  <details class="item" id="item-21">
+    <summary class="item-header">
+      <span class="item-title">OpenAI ships GPT-6 Astra as stable ChatGPT model</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
+    </summary>
+    <div class="item-body">
+      <p>OpenAI moved ChatGPT to GPT-6 Astra as its stable release on September 14, 2026. Relevant for IT teams standardizing on assistant tooling and for evaluating vendor AI features (many SMB software vendors, including Bluebeam, are now integrating GPT-6 era models via MCP).</p>
+      <a href="https://en.wikipedia.org/wiki/ChatGPT" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+
+  <details class="item" id="item-22">
+    <summary class="item-header">
+      <span class="item-title">Anthropic Claude Fable 5.1 and Mythos 5.1 generally available</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Anthropic released Claude Fable 5.1 and Mythos 5.1 as stable GA models on September 1, 2026. Fable 5.1 targets demanding reasoning, long-running agents, coding, multi-step research, and document-heavy professional tasks -- directly relevant to Claude Code and MSP automation use cases.</p>
+      <a href="https://endoflife.date/claude" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+
+  <details class="item" id="item-23">
+    <summary class="item-header">
+      <span class="item-title">Microsoft fixes bug behind "Defender Antivirus is turned off" false alerts</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 8/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Microsoft resolved a bug that produced false "Defender Antivirus is turned off" warnings on Windows endpoints after recent updates. Admins that saw noisy alerts in the M365 Defender portal or endpoint UI can now clear those detections.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/microsoft-fixes-bug-behind-defender-antivirus-is-turned-off-alerts/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+
+  <details class="item" id="item-24">
+    <summary class="item-header">
+      <span class="item-title">Splashtop Business app v3.8.6.1 released with H2 2026 update stream</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 8/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Splashtop Business app v3.8.6.1 shipped September 7, 2026 (Windows), following August's v3.8.6.0 Mac release. Broader 2026 platform updates include conditional access control that enforces device health checks before remote sessions and an AI-optimized codec for smoother sessions at lower bandwidth.</p>
+      <a href="https://support-splashtopbusiness.splashtop.com/hc/en-us/categories/201530023-Official-Announcements" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+
+  <details class="item" id="item-25">
+    <summary class="item-header">
+      <span class="item-title">Trimble expands AI-driven takeoff and estimating for MEP contractors in Accubid Anywhere</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 8/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Trimble has rolled out AI features for MEP takeoff/estimating including automated scale-and-naming detection across full plan sets and an AI Smart Assistant inside Accubid Anywhere that accepts natural-language queries against connected estimate data. Trimble reports early adopters saw up to 60% reduction in takeoff/estimating time.</p>
+      <a href="https://aecmag.com/ai/trimble-adds-ai-driven-takeoff-and-estimating-tools-for-mep-contractors/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+
+  <details class="item" id="item-26">
+    <summary class="item-header">
+      <span class="item-title">On-Screen Takeoff v3.98.18.03 rolls out with Takeoff Boost and UI improvements</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 8/11</span>
+    </summary>
+    <div class="item-body">
+      <p>On Center Software has released On-Screen Takeoff v3.98.18.03 with enhancements to Takeoff Boost, renamed program tabs for clearer navigation, and new Resources and Trending tabs. Estimating teams using OST should plan a scheduled update window.</p>
+      <a href="https://www.oncenter.com/download-update/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+
+  <details class="item" id="item-27">
+    <summary class="item-header">
+      <span class="item-title">CMMC Task Force concludes review; DoD report expected late September 2026</span>
+      <span class="item-type type-industry">industry</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 10/11</span>
+    </summary>
+    <div class="item-body">
+      <p>The CMMC Task Force wrapped up its review and delivered findings to the DoD CIO on Sept 11, 2026, with public release of recommendations expected in late September. Phase 2 mandatory C3PAO third-party assessments remain suspended since July 13, 2026, with DoD enforcing NIST 800-171 through self-assessment and select government checks in the interim. Directly relevant to your construction client's CMMC Level 2 track.</p>
+      <a href="https://www.preveil.com/blog/cmmc-timeline/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+
+  <details class="item" id="item-28">
+    <summary class="item-header">
+      <span class="item-title">Public PoC exploits released for four Linux kernel local privilege escalation bugs</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 8/11</span>
+    </summary>
+    <div class="item-body">
+      <p>A researcher published proof-of-concept exploits for four Linux kernel local privilege escalation vulnerabilities, raising the risk of chained post-exploit access on multi-tenant or shared Linux systems. Patch cadence on Linux-based network and storage appliances should be audited this week.</p>
+      <a href="https://thehackernews.com/2026/09/public-exploits-released-for-four-linux.html" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+
+  <details class="item" id="item-29">
+    <summary class="item-header">
+      <span class="item-title">Check Point patches critical RCE flaw allowing code execution as root</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 8/11</span>
+    </summary>
+    <div class="item-body">
+      <p>Check Point issued patches for a critical vulnerability in its security gateway products that allows attackers to execute code with root privileges. SMBs and MSP-managed environments running Check Point appliances should apply the fixed builds without waiting for the maintenance window.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/check-point-warns-critical-flaw-lets-hackers-execute-code-as-root/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+
+  <details class="item" id="item-30">
+    <summary class="item-header">
+      <span class="item-title">CrowdSec: departing employee's GitHub used to copy ~170 private repos after TanStack npm attack</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 8/11</span>
+    </summary>
+    <div class="item-body">
+      <p>CrowdSec disclosed that following the TanStack npm supply-chain incident, a departing employee's GitHub account was leveraged to copy roughly 170 private repositories. The incident underscores prompt offboarding of source-control accounts and enforcing SSO plus PAT revocation for former staff.</p>
+      <a href="https://thehackernews.com/2026/09/crowdsec-says-tanstack-npm-attack-led.html" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+
+  <details class="item" id="item-31">
+    <summary class="item-header">
+      <span class="item-title">Jade Sleet (DPRK) breaches Indian IT services provider with FLATROOF/ROOFDECK backdoors</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 8/11</span>
+    </summary>
+    <div class="item-body">
+      <p>North Korea-linked threat actor Jade Sleet compromised an Indian IT services firm and deployed FLATROOF and ROOFDECK backdoors, extending downstream supply-chain risk to their customers. MSPs and clients of Indian IT outsourcers should look for the disclosed indicators.</p>
+      <a href="https://thehackernews.com/2026/09/jade-sleet-linked-to-indian-it-provider.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
 </div>
 
-<div class="footer">Generated Sunday, September 20, 2026 at 6:00 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-09-20.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
+<div class="footer">Generated Monday, September 21, 2026 at 6:36 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-09-21.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
 
 </main>
 </body>
