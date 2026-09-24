@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<title>Morning Briefing -- Wednesday, September 23, 2026</title>
+<title>Morning Briefing -- Thursday, September 24, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -14,82 +14,70 @@
 <main class="briefing-content">
 
 <div class="page-header">
-  <h1>Morning Briefing -- Wednesday, September 23, 2026</h1>
+  <h1>Morning Briefing -- Thursday, September 24, 2026</h1>
   <p class="page-meta">Microsoft &bull; Security &amp; Compliance &bull; Firewall / VPN / Networking &bull; Servers/NAS &bull; Workstations &amp; Mobile &bull; Peripherals &amp; AV &bull; RMM &amp; Remote Access &bull; Construction &amp; Specialty Software &bull; General Tech &amp; AI &bull; Pacific Time</p>
 </div>
 
 <div class="section-actions">
   <h2>Today's Actions</h2>
-  <p class="section-transparency">Showing 3 of 12</p>
+  <p class="section-transparency">Showing 3 of 14</p>
   <ol class="action-list">
-    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Audit M365 / Entra ID device-code sign-in logs and disable device-code flow via Conditional Access where it is not required -- Microsoft dismantled the AI-powered EvilTokens phishing-as-a-service ring that compromised 12,000+ mailboxes across 10,000 organizations. <a href="#item-1" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Update every SonicWall TZ firewall to the newly released SonicOS build today -- SonicWall SNWLID-2026-0004 discloses three flaws including CVE-2026-0204 (CVSS 8.0) and directly affects your construction client's TZ fleet on the deployed 7.2+ baseline. <a href="#item-2" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Hold the September 2026 Windows 11 / Windows Server cumulative on any endpoint that uses Always On VPN device tunnels -- Microsoft confirmed the update prevents tunnels from establishing or reconnecting, with no fix yet. <a href="#item-3" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Stage rollback plans or Microsoft's promised OOB fix on Windows Server 2019/2022/2025 RDS hosts before the September 2026 cumulative freezes more session hosts. <a href="#item-1" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Patch Check Point, Arista, VeloCloud Orchestrator, and F5 BIG-IP APM by the CISA Sept 25 KEV deadline. <a href="#item-2" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Patch every Roundcube webmail install immediately -- attackers are mass-exploiting the May-patched code-injection flaw. <a href="#item-3" class="detail-link">details</a></li>
   </ol>
-  <details class="section-overflow"><summary>Show 9 more actions</summary>
-  <ol class="action-list" start="4">
-    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-red">Act Today</span> Watch Defender signature-freshness telemetry across every Windows fleet -- the BigDiskBuster PoC blocks Microsoft Defender AV update delivery with no patch, and your small-business client's Defender for Business rollout is exposed. <a href="#item-4" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Confirm Chrome and Edge auto-updated on every managed endpoint today and stage patching capacity for an out-of-band Windows kernel fix -- Chinese threat actor UTA0565 is chaining a Chrome sandbox escape with a Windows kernel elevation to drop the CLEANGULP implant. <a href="#item-5" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Push Microsoft's vulnerable-driver blocklist to every Windows endpoint and hunt for the fake "LastPass Authenticator" installer -- the Rapuncel loader uses a Microsoft-signed driver to disable 145 AV/EDR products before it steals credentials, blinding endpoints Atera and Splashtop reach. <a href="#item-6" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Patch any client WordPress site running the affected plugin today -- CVE-2026-87902 is an unauthenticated file-inclusion flaw present since WordPress 4.7 that reaches remote code execution on common server configurations. <a href="#item-7" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-yellow">This Week</span> Schedule the Dell DSA-2026-355 Intel 2026.3 IPU BIOS/firmware update on every Intel-based Dell PowerEdge server during the next maintenance window -- Dell shipped fixes for local privilege escalation and information-disclosure CVEs. <a href="#item-8" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-yellow">This Week</span> Apply the companion Dell DSA-2026-356 Intel processor firmware update in the same maintenance window as DSA-2026-355 -- both target Intel-based Dell PowerEdge servers and both allow local system compromise. <a href="#item-9" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-yellow">This Week</span> Send a short user awareness note that phishing quality took another step change -- Microsoft researchers documented a single campaign that used generative AI to personalize over one million lures with per-recipient pretexts, dramatically improving click rates. <a href="#item-10" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-yellow">This Week</span> Update secure email gateway rules on your construction client's Barracuda tenant and other managed SEGs to normalize or strip invisible Unicode tag characters -- millions of phishing emails now use ASCII smuggling to slip past both SEGs and LLM-based classifiers. <a href="#item-11" class="detail-link">details</a></li>
-    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-yellow">This Week</span> File the SANS ISC LausivLoader analysis and feed its detection guidance (PNG image fetch followed by reflective loader execution) into the next Defender for Business ASR / EDR tuning review. <a href="#item-12" class="detail-link">details</a></li>
-  </ol>
-  </details>
+  <details class="section-overflow"><summary>Show 11 more actions</summary><ol class="action-list" start="4">
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Patch or firewall off any internet-exposed JetBrains TeamCity servers before ransomware crews reach yours. <a href="#item-4" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Hotfix or take offline any internet-reachable F5 BIG-IP APM appliance to close CVE-2026-94127 RCE. <a href="#item-5" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-red">Act Today</span> Warn users that GitHub-sourced LastPass installers ship a signed kernel driver that kills Defender and 144 other AV/EDR tools. <a href="#item-6" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Update every WordPress marketing site to 7.1.2 to close CVE-2026-87902 file-inclusion RCE. <a href="#item-7" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-red">Act Today</span> Apply the Check Point Security Management hotfix for CVE-2026-93616 today -- the path-traversal is under active exploitation. <a href="#item-8" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-yellow">This Week</span> Audit Entra ID device-code sign-ins and disable the device-code flow via Conditional Access where it is not required, following the Microsoft EvilTokens takedown. <a href="#item-9" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-patch-this-week">[Patch This Week]</span> <span class="urgency-yellow">This Week</span> Apply the Synology-SA-26:13 DSM update on every DiskStation to close remote unauthenticated file-access and DoS holes. <a href="#item-10" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-notify-users">[Notify Users]</span> <span class="urgency-yellow">This Week</span> Push AutoCAD 2026.1.2 (build W.179.0.0) to every workstation to close CVE-2026-17550 DWG/DXF and CVE-2026-0874 CATPART code-execution flaws. <a href="#item-11" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-yellow">This Week</span> Deploy the follow-up Windows update that fixes the File History backup regression from the September 2026 cumulative. <a href="#item-12" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-monitor">[Monitor]</span> <span class="urgency-yellow">This Week</span> Watch Defender signature-update telemetry until Microsoft patches the BigDiskBuster DoS PoC blocking updates. <a href="#item-13" class="detail-link">details</a></li>
+    <li><span class="action-tag tag-read-and-file">[Read &amp; File]</span> <span class="urgency-yellow">This Week</span> Review Entra ID Conditional Access token-lifetime and CAE settings to align with the new CISA/NIST one-hour cloud-token guidance. <a href="#item-14" class="detail-link">details</a></li>
+  </ol></details>
 </div>
 
 <div class="section-new">
   <h2>What's New</h2>
-  <p class="section-transparency">Showing 3 of 9</p>
+  <p class="section-transparency">Showing 3 of 12</p>
   <ul class="new-list">
-    <li><strong><a href="#item-13">Windows 11 25H2/24H2 preview update KB5124010 released</a></strong> -- Microsoft published the September 22 optional preview cumulative (builds 26200.9550 / 26100.9550) with production-quality servicing-stack and reliability improvements ahead of October Patch Tuesday. Hold in test rings given the Always On VPN regression in the mainline September update. <a href="https://support.microsoft.com/en-us/servicing/os/windows-11/2026/09/kb5124010-windows-11-24h2-25h2-update" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-14">Entra ID passkeys become the default sign-in experience for all tenants</a></strong> -- Starting September 1, 2026, Microsoft began rolling out passkeys as the default authentication experience in Microsoft Entra ID, prompting eligible users to enroll a passkey at sign-in. SMB admins should validate FIDO2 policies, communicate the change to end users, and confirm break-glass account exclusions are in place. <a href="https://www.microsoft.com/en-us/security/blog/2026/07/13/microsoft-entra-id-security-updates-passkeys-are-the-default-authentication-method-in-entra-id/" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-15">Entra Tenant Governance reaches general availability</a></strong> -- Microsoft made Entra Tenant Governance GA, giving admins visibility into every Entra tenant connected to their organization including shadow-IT tenants central IT never provisioned. Useful for MSPs auditing customer environments for stray tenants during onboarding or a CMMC readiness pass. <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%E2%80%99s-new-in-microsoft-entra-september-2026/4545179" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-15">M365 Roadmap: Teams alt text for images shared from OneDrive/SharePoint</a></strong> -- Roadmap item 571687 adds automatic and manual alt-text support to images shared in Teams chats/channels from OneDrive and SharePoint, improving accessibility compliance. <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-16">UniFi Network Application 10.6.106 adds WiFi 7 MLO STR Mesh support</a></strong> -- Ubiquiti's 10.6.106 release introduces MLO STR Mesh support for WiFi 7 access points along with stability improvements including client IP display fixes. Sites deployed on 10.3+ get a straight upgrade path. <a href="https://community.ui.com/releases/UniFi-Network-Application-10-6-106/f206c01d-3f73-471b-b4a5-2da48f157ea6" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-17">Anthropic releases Claude Opus 5.5 with 20% price cut and 30% faster responses</a></strong> -- Opus 5.5 launched Sept 22 at $4/M input and $20/M output tokens (roughly 40% cheaper on typical workloads) with cache reads down 75% to $0.25/M. Focused on coding, autonomous work, and professional tasks. <a href="https://siliconangle.com/2026/09/22/anthropic-releases-claude-opus-5-5-and-openai-counters-with-two-cheaper-gpt-6-models/" target="_blank">Source &rarr;</a></li>
   </ul>
-  <details class="section-overflow"><summary>Show 6 more updates</summary>
-  <ul class="new-list">
-    <li><strong><a href="#item-16">M365 Copilot gains Federated Connectors for real-time third-party read/write</a></strong> -- Microsoft rolled out Federated Copilot Connectors, letting Copilot Chat query external SaaS in real time and perform user-confirmed create/update/delete actions. SMBs should review governance and DLP posture around any new connectors they enable in tenants. <a href="https://www.microsoft.com/microsoft-365/roadmap?id=570964" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-17">LLM price war intensifies with Claude Opus 5.5, GPT-6 Sol, and GPT-6 Luna</a></strong> -- OpenAI released GPT-6 Sol and GPT-6 Luna and Anthropic released Claude Opus 5.5 the same day; GPT-6 Luna lands at $0.10/$0.50 per million tokens (half of GPT-5.6) and Opus 5.5 gets a 20% price cut. Early testing shows Opus 5.5 max-thinking mode can hit token-limit failures, so factor into tooling and agent workflows before rolling defaults forward. <a href="https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-18">EasyDMARC launches AI/ML email security and deliverability platform</a></strong> -- EasyDMARC announced a consolidated platform pitched at MSPs and SMB IT that bundles DMARC/DKIM/SPF enforcement with AI/ML-driven deliverability analytics and vulnerability management. Worth a look if you currently manage email authentication via a mix of DNS scripts and separate reporting tools. <a href="https://www.channele2e.com/news/easydmarc-launches-platform-to-tackle-email-security-deliverability" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-19">llm CLI 0.36 adds GPT-6 Sol/Luna support and collapsible reasoning traces</a></strong> -- Simon Willison's llm CLI 0.36 ships GPT-6 Sol and Luna providers plus collapsible reasoning-trace rendering, useful for IT scripting and log-analysis pipelines that shell out to LLMs. Pairs with llm-anthropic 0.29 for Claude Opus 5.5. <a href="https://github.com/simonw/llm/releases/tag/0.36" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-20">llm-anthropic 0.29 adds Claude Opus 5.5</a></strong> -- The llm-anthropic plugin bumped to 0.29 with Claude Opus 5.5 support the same day the model shipped. If you drive Claude from CLI or cron for triage and summarization, upgrade the plugin before pointing scripts at opus-5.5. <a href="https://github.com/simonw/llm-anthropic/releases/tag/0.29" target="_blank">Source &rarr;</a></li>
-    <li><strong><a href="#item-21">TypeSafe AI releases Jev, a confidence-scoring model at $0.042/M input and free output</a></strong> -- TypeSafe AI released Jev, an unusually cheap model that emits per-token confidence scores and prices output at $0. Interesting for high-volume classification and extraction workloads in SMB IT (ticket routing, log tagging) where cost was the blocker; validate accuracy before production use. <a href="https://simonwillison.net/2026/Sep/21/jev/" target="_blank">Source &rarr;</a></li>
-  </ul>
-  </details>
+  <details class="section-overflow"><summary>Show 9 more updates</summary><ul class="new-list">
+    <li><strong><a href="#item-18">OpenAI launches GPT-6 Sol and GPT-6 Luna at half the price of predecessors</a></strong> -- Released roughly an hour after Opus 5.5 on Sept 22. Sol is $2/M in / $10/M out; Luna is $0.10/M in / $0.50/M out -- each half the price of their GPT-5.6 same-name predecessors. Confirms an escalating frontier-model price war. <a href="https://decrypt.co/378986/openai-launches-gpt-6-sol-luna-anthropic-claude-opus-5-5" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-19">Microsoft unveils ISOC to integrate SIEM and threat protection for AI agents</a></strong> -- Microsoft announced the Integrated SOC (ISOC), a new Defender-based architecture that unifies SIEM and threat protection for AI agent workloads. Positioned as a re-imagining of the SOC for the agentic era. <a href="https://www.microsoft.com/en-us/security/blog/2026/09/23/reimagining-the-soc-for-the-agentic-era-in-microsoft-defender/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-20">M365 Roadmap: Purview auto-labeling per-policy coverage report</a></strong> -- Roadmap item 572677 introduces a per-policy coverage report for Purview auto-labeling, letting admins see which content is labeled by which policy. Useful for CMMC and CUI-handling tenants. <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-21">Windows 11 KB5124010 non-security preview ships 46 changes for 24H2/25H2</a></strong> -- September non-security preview for Windows 11 24H2 and 25H2, bundling 46 fixes including remapping the Copilot key, WMIC removal on 26H1, and a WinRE remote-management plug-in for MDM. Optional; rolls into October Patch Tuesday. <a href="https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5124010-update-released-with-46-changes-and-fixes/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-22">Trimble migrates Viewpoint status notifications from Statuspage to StatusCast on Sept 27</a></strong> -- Trimble is moving Viewpoint service-status notifications (including Spectrum) from Statuspage to StatusCast Sept 27. Existing subscriptions auto-transfer, but subscribers should confirm delivery after cutover and update monitoring integrations or allow-listed sender domains. <a href="https://status.viewpoint.com/incidents/c8n4sjgcgf6l" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-23">M365 Roadmap: Power Apps adds density control</a></strong> -- Roadmap item 572682 introduces a UI density control for Power Apps, giving makers per-app compact/comfortable spacing options. <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-24">xAI ships Grok 4.7</a></strong> -- xAI released Grok 4.7 on Sept 21, one of 20 AI model releases across 12 providers logged this month. Sits alongside the same-week Anthropic and OpenAI launches. <a href="https://llmgateway.io/timeline" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-25">Google Gemini 3.8 TTS launches with 2,000+ voices and 30-second voice cloning</a></strong> -- Two new Gemini 3.8 text-to-speech models released Sept 23 with over 2,000 voices and 30-second voice-cloning, exposed via a public TTS Playground. Relevant for IT teams evaluating voice bots or IVR -- and worth flagging on social-engineering risk given the low-friction cloning. <a href="https://simonwillison.net/2026/Sep/23/gemini-tts-playground/" target="_blank">Source &rarr;</a></li>
+    <li><strong><a href="#item-26">EasyDMARC launches unified email security and deliverability platform</a></strong> -- EasyDMARC launched a unified platform combining DMARC/SPF/DKIM enforcement with deliverability tooling, positioned as an alternative or complement to Barracuda and other email-security stacks for SMBs. <a href="https://www.channele2e.com/news/easydmarc-launches-platform-to-tackle-email-security-deliverability" target="_blank">Source &rarr;</a></li>
+  </ul></details>
 </div>
 
 <div class="section-security">
   <h2>Security &amp; Patches</h2>
-  <p class="section-transparency">Showing 4 of 20</p>
+  <p class="section-transparency">Showing 3 of 9</p>
   <div class="security-cards">
-    <div class="security-card"><a href="#item-22" class="security-headline">ShareFile cloud zone upload failures (Sep 23, resolved in ~1 hour)</a> <span class="urgency-green">FYI</span> <span class="security-summary">Citrix ShareFile reported cloud-zone upload problems starting 5:26 PM EDT on Sep 23 and resolved them in roughly an hour.</span></div>
-    <div class="security-card"><a href="#item-23" class="security-headline">ShareFile account issues Sep 21 (5-hour incident, resolved)</a> <span class="urgency-green">FYI</span> <span class="security-summary">Citrix ShareFile posted an account-access incident on the evening of Sep 21 that ran roughly five hours before resolution.</span></div>
-    <div class="security-card"><a href="#item-24" class="security-headline">Trimble Vista TID login issue under active monitoring</a> <span class="urgency-yellow">This Week</span> <span class="security-summary">Trimble Viewpoint reported a Vista TID login issue at 01:49 UTC on Sep 23 that is still being monitored rather than fully resolved.</span></div>
-    <div class="security-card"><a href="#item-25" class="security-headline">CMMC Reform Task Force wraps 60-day review; public recommendations due late September</a> <span class="urgency-yellow">This Week</span> <span class="security-summary">The DoW's CMMC Reform Task Force concluded its 60-day review on September 11 and will deliver findings within 15 days.</span></div>
+    <div class="security-card"><a href="#item-27" class="security-headline">Citrix ShareFile suffered same-day account access outage on September 21</a><span class="urgency-green">FYI</span><span class="security-summary">ShareFile investigated an "Account Access Issues" incident starting at 17:45 EDT on Sept 21 and marked it fully resolved by 22:45 EDT the same evening.</span></div>
+    <div class="security-card"><a href="#item-28" class="security-headline">Seven Chromium CVEs affecting Microsoft Edge patched</a><span class="urgency-yellow">This Week</span><span class="security-summary">MSRC listed seven Chromium engine vulnerabilities (V8 memory corruption, UAF, type-confusion, race conditions) that flow into Microsoft Edge.</span></div>
+    <div class="security-card"><a href="#item-29" class="security-headline">17,000 URLs show ClickFix turning trusted websites into malware traps</a><span class="urgency-yellow">This Week</span><span class="security-summary">Researchers analyzed roughly 17,000 URLs and documented how ClickFix social-engineering lures are being injected into otherwise legitimate sites, tricking users into pasting PowerShell into Run.</span></div>
   </div>
-  <details class="section-overflow"><summary>Show 16 more security items</summary>
-  <div class="security-cards">
-    <div class="security-card"><a href="#item-26" class="security-headline">Trimble Jobpac Connect intermittent login delays resolved</a> <span class="urgency-green">FYI</span> <span class="security-summary">Trimble resolved intermittent login delays in Jobpac Connect at 05:13 UTC on Sep 23.</span></div>
-    <div class="security-card"><a href="#item-27" class="security-headline">WordPress 7.1.2 patches critical core vulnerability</a> <span class="urgency-yellow">This Week</span> <span class="security-summary">WordPress released 7.1.2 to fix a critical flaw in core; auto-updates should apply for most sites but managed hosts must verify.</span></div>
-    <div class="security-card"><a href="#item-28" class="security-headline">Comment2Shell WordPress flaw CVE-2026-93485 turns comment XSS into RCE</a> <span class="urgency-yellow">This Week</span> <span class="security-summary">A chain in a popular commenting plugin lets an attacker escalate a stored XSS in comments into full remote code execution on the host.</span></div>
-    <div class="security-card"><a href="#item-29" class="security-headline">North Korea's Contagious Interview compromises 30,000 devs, steals $10.71M crypto</a> <span class="urgency-yellow">This Week</span> <span class="security-summary">WaterPlum/DPRK operators expanded the fake-job-lure campaign to compromise 30,000+ devices via trojanized coding-test packages.</span></div>
-    <div class="security-card"><a href="#item-30" class="security-headline">Macfinger ClickFix campaign delivers macOS AMOS stealer</a> <span class="urgency-yellow">This Week</span> <span class="security-summary">SANS ISC documents Macfinger, a ClickFix-style social-engineering lure that tricks macOS users into running AppleScript that installs the AMOS infostealer.</span></div>
-    <div class="security-card"><a href="#item-31" class="security-headline">TerminalFix uses PNG steganography to hide loader payloads</a> <span class="urgency-green">FYI</span> <span class="security-summary">SANS ISC diary on TerminalFix, another PNG-steg loader family observed alongside LausivLoader.</span></div>
-    <div class="security-card"><a href="#item-32" class="security-headline">Opus 5.5 and OpenAI models still attempt restricted actions in red-team tests</a> <span class="urgency-yellow">This Week</span> <span class="security-summary">Evaluators report Anthropic Opus 5.5 and current OpenAI models, while measurably improved, still attempt disallowed actions in structured tests.</span></div>
-    <div class="security-card"><a href="#item-33" class="security-headline">cPanel flaw allows a hosting account to execute code as root</a> <span class="urgency-yellow">This Week</span> <span class="security-summary">A newly disclosed cPanel vulnerability lets any authenticated hosting user escalate to root on the shared server, exposing every co-tenant.</span></div>
-    <div class="security-card"><a href="#item-34" class="security-headline">Ubuntu host-root container escape CVE-2026-80521 PoC released</a> <span class="urgency-yellow">This Week</span> <span class="security-summary">Public exploit released for an unpatched Ubuntu kernel flaw allowing a container to break out and gain root on the host.</span></div>
-    <div class="security-card"><a href="#item-35" class="security-headline">Critical Next.js ImageResponse SVG flaw enables server-side code execution</a> <span class="urgency-yellow">This Week</span> <span class="security-summary">Vercel patched a Next.js vulnerability allowing server-side code execution through malicious SVG input in ImageResponse functions.</span></div>
-    <div class="security-card"><a href="#item-36" class="security-headline">Critical Bifrost AI Gateway flaw CVE-2026-90898 (CVSS 9.8)</a> <span class="urgency-yellow">This Week</span> <span class="security-summary">The Bifrost AI Gateway has a critical unauthenticated RCE that lets an attacker take over the gateway and pivot into connected LLM infrastructure.</span></div>
-    <div class="security-card"><a href="#item-37" class="security-headline">Seven Chromium V8 CVEs shipped in Edge (memory corruption/UAF/type confusion)</a> <span class="urgency-green">FYI</span> <span class="security-summary">MSRC published seven V8 CVEs affecting Microsoft Edge only; none flagged as exploited and standard Edge auto-update handles it.</span></div>
-    <div class="security-card"><a href="#item-38" class="security-headline">Ryuk ransomware affiliate sentenced to 24 months</a> <span class="urgency-green">FYI</span> <span class="security-summary">A Ryuk operator was sentenced to 24 months for their role in ransomware attacks that heavily targeted SMBs and hospitals.</span></div>
-    <div class="security-card"><a href="#item-39" class="security-headline">AI agents are rewriting the rules of lateral movement</a> <span class="urgency-green">FYI</span> <span class="security-summary">Analysis on how attacker-controlled AI agents automate reconnaissance and lateral movement inside compromised networks.</span></div>
-    <div class="security-card"><a href="#item-40" class="security-headline">Foreign hackers target two Colorado water utilities</a> <span class="urgency-yellow">This Week</span> <span class="security-summary">Foreign actors probed and partly accessed OT/IT systems at two Colorado water utilities without impact to water service.</span></div>
-    <div class="security-card"><a href="#item-41" class="security-headline">Salesforce pitches AI agents that make purchases, reshaping procurement</a> <span class="urgency-green">FYI</span> <span class="security-summary">Salesforce outlined a vision where AI agents transact on a buyer's behalf, targeting B2B procurement flows.</span></div>
-  </div>
-  </details>
+  <details class="section-overflow"><summary>Show 6 more security items</summary><div class="security-cards">
+    <div class="security-card"><a href="#item-30" class="security-headline">AI-assisted phishing campaign sent over one million personalized emails</a><span class="urgency-yellow">This Week</span><span class="security-summary">KnowBe4 highlights Microsoft telemetry showing a single AI-assisted phishing campaign generating over one million personalized emails.</span></div>
+    <div class="security-card"><a href="#item-31" class="security-headline">Passkey-themed phishing used to breach cloud tenants</a><span class="urgency-yellow">This Week</span><span class="security-summary">Attackers are using passkey-themed phishing lures to trick users into approving rogue credentials in Entra/Google tenants.</span></div>
+    <div class="security-card"><a href="#item-32" class="security-headline">SANS ISC breaks down phishing URL abusing parser differences</a><span class="urgency-green">FYI</span><span class="security-summary">SANS ISC dissects a phishing URL that abuses inconsistent handling of the userinfo field across browsers, security proxies, and mail parsers to bypass URL scanning.</span></div>
+    <div class="security-card"><a href="#item-33" class="security-headline">KnowBe4: AI assistants framed as the next attack surface</a><span class="urgency-green">FYI</span><span class="security-summary">KnowBe4 published an analysis piece framing embedded AI assistants (Copilot, Gemini, etc.) as a new phishing/prompt-injection attack surface, with recommended controls.</span></div>
+    <div class="security-card"><a href="#item-34" class="security-headline">Slide expands MSP backup platform into Microsoft 365</a><span class="urgency-green">FYI</span><span class="security-summary">MSP-focused backup vendor Slide is extending its platform to cover Microsoft 365, targeting SaaS backup sprawl.</span></div>
+    <div class="security-card"><a href="#item-35" class="security-headline">SANS ISC documents Macfinger macOS ClickFix campaign</a><span class="urgency-yellow">This Week</span><span class="security-summary">SANS ISC documented "Macfinger," a macOS-targeted ClickFix variant using injected scripts on legitimate pages to steer Mac users into running attacker commands.</span></div>
+  </div></details>
 </div>
 
 <div class="section-details">
@@ -97,540 +85,462 @@
 
   <details class="item" id="item-1">
     <summary class="item-header">
-      <span class="item-title">Microsoft disrupts EvilTokens phishing-as-a-service tied to 12,000+ M365 inbox compromises</span>
+      <span class="item-title">Microsoft September 2026 Patch Tuesday breaks Remote Desktop Services on Windows Server 2019/2022/2025</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 11/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft's Digital Crimes Unit dismantled EvilTokens, an AI-powered device-code phishing operation that compromised 12,000+ mailboxes across 10,000 organizations by tricking users into approving OAuth device-code prompts. A UK-based operator was arrested in London. SMB tenants on M365/Entra ID (including your internal ops) should audit device-code sign-in logs and consider disabling device-code flow via Conditional Access for user accounts that do not need it.</p>
-      <a href="https://www.microsoft.com/en-us/security/blog/2026/09/22/unmasking-eviltokens-getting-to-the-root-of-device-code-phishing/" target="_blank" class="src">Source &rarr;</a>
+      <p>Session hosts running Windows Server 2019, 2022, and 2025 are freezing hours after boot following installation of Microsoft's September 2026 cumulative updates, with MMC, RDS Licensing Diagnoser, and File Explorer becoming unresponsive. The regression is being tracked alongside the same-cycle patch fixes for CVE-2026-69485 (auth RDS Gateway EoP, CVSS 8.8) and CVE-2026-69525 (unauthenticated RDS RCE, CVSS 9.8). Admins are weighing rollback vs. targeted workarounds while awaiting a Microsoft OOB fix.</p>
+      <a href="https://cybersecuritynews.com/remote-desktop-services-stop-working/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-2">
     <summary class="item-header">
-      <span class="item-title">SonicWall SNWLID-2026-0004 firmware update required on Gen 6/7/8 firewalls (TZ series affected)</span>
+      <span class="item-title">CISA adds Check Point, Arista, VeloCloud, and F5 BIG-IP APM flaws to KEV</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 11/11</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>SonicWall published SNWLID-2026-0004 disclosing three SonicOS vulnerabilities on Gen 6, Gen 7 (includes TZ series on 7.2+), and Gen 8 firewalls. The most severe, CVE-2026-0204 (CVSS 8.0), is an improper access-control flaw that can expose management interface functions; the others allow path traversal and remote crash. Patched firmware is on MySonicWall; interim mitigations include disabling HTTP/HTTPS management and SSL-VPN on all interfaces and restricting management to SSH. Directly relevant to your construction client's TZ fleet across Redmond and Alaska sites.</p>
-      <a href="https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0004" target="_blank" class="src">Source &rarr;</a>
+      <p>CISA added four exploited vulnerabilities to KEV -- Check Point Security Management, Arista, VMware VeloCloud Orchestrator, and F5 BIG-IP APM -- with a federal remediation deadline of Sept 25. Private-sector orgs are urged to patch or mitigate on the same schedule.</p>
+      <a href="https://securityaffairs.com/199631/hacking/u-s-cisa-adds-check-point-arista-velocloud-orchestrator-and-f5-big-ip-apm-flaws-to-its-known-exploited-vulnerabilities-catalog.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-3">
     <summary class="item-header">
-      <span class="item-title">Microsoft September 2026 Windows updates break Always On VPN connections</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
-    </summary>
-    <div class="item-body">
-      <p>The September cumulative updates for Windows 11 (24H2/25H2) and Windows Server 2022/2025 cause Always On VPN device tunnels to fail to establish or reconnect after the update, per Microsoft. Remote-work SMBs relying on AOVPN should stage the update and prepare a mitigation KIR or rollback. No fix has been released yet.</p>
-      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-september-2026-windows-updates-break-always-on-vpn-connections/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-4">
-    <summary class="item-header">
-      <span class="item-title">BigDiskBuster zero-day blocks Microsoft Defender signature and engine updates</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Researcher Naceri (Chaotic Eclipse) released a proof-of-concept that abuses a Windows Defender update-handler flaw to prevent Microsoft AV from receiving new definitions, effectively freezing endpoint protection at whatever signature was last installed. No patch yet; Defender and Defender for Business customers -- including your small-business client's in-progress rollout -- should monitor definition age and lean on compensating EDR telemetry until a fix ships.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/new-windows-defender-zero-day-blocks-microsoft-antivirus-updates/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-5">
-    <summary class="item-header">
-      <span class="item-title">Chinese UTA0565 chains Chrome and Windows zero-days to deploy CLEANGULP implant</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Chinese threat actor UTA0565 is exploiting an unpatched Chrome sandbox escape chained with a Windows kernel elevation to drop the CLEANGULP backdoor on targeted enterprises via fake websites. Ensure Chrome and Edge are current on every managed endpoint and monitor for kernel driver LOLBIN patterns; expect an out-of-band Windows patch, and stage capacity to push it fast when it lands.</p>
-      <a href="https://thehackernews.com/2026/09/chinese-hackers-exploit-chrome-windows.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-6">
-    <summary class="item-header">
-      <span class="item-title">Fake LastPass Authenticator installer uses Microsoft-signed driver to kill 145 AV/EDR products</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-red">Act Today</span>
-      <span class="score">Score: 10/11</span>
-    </summary>
-    <div class="item-body">
-      <p>A trojanized LastPass Authenticator installer distributed via SEO-poisoned GitHub pages (the "Rapuncel" campaign) loads a Microsoft-signed vulnerable driver to disable 145 security products before deploying an infostealer. Because it bypasses defensive tooling silently, any endpoint reachable through Atera-managed or Splashtop-accessed sessions could be blinded before other detections fire. Enforce the Microsoft vulnerable-driver blocklist, block the loader hashes, and hunt for the installer names in Atera today.</p>
-      <a href="https://thehackernews.com/2026/09/fake-lastpass-authenticator-installer.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-7">
-    <summary class="item-header">
-      <span class="item-title">WordPress unauthenticated RCE via file inclusion (CVE-2026-87902)</span>
+      <span class="item-title">Roundcube critical flaw now actively exploited in code-injection attacks</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-red">Act Today</span>
       <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>Security Affairs details CVE-2026-87902, an unauthenticated local file inclusion issue present in WordPress since version 4.7 that reaches remote code execution under common server configurations. SMB-hosted WordPress sites should patch immediately, audit web logs for exploitation attempts, and verify managed hosts have already rolled the fix.</p>
+      <p>A critical Roundcube webmail vulnerability originally patched in May 2026 is now under mass exploitation, with attackers injecting malicious code into hosted mailboxes. SMBs running self-hosted or hosted-Roundcube tenants must patch immediately.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/critical-roundcube-flaw-now-actively-exploited-in-code-injection-attacks/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+
+  <details class="item" id="item-4">
+    <summary class="item-header">
+      <span class="item-title">CISA warns ransomware gangs are exploiting critical JetBrains TeamCity flaw</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 8/11</span>
+    </summary>
+    <div class="item-body">
+      <p>CISA reports ransomware crews are now actively exploiting a critical TeamCity vulnerability that JetBrains patched in July 2026. Affected builds are named in the advisory; internet-exposed CI/CD servers are the primary target.</p>
+      <a href="https://www.bleepingcomputer.com/news/security/cisa-ransomware-gangs-now-exploiting-critical-teamcity-flaw/" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+
+  <details class="item" id="item-5">
+    <summary class="item-header">
+      <span class="item-title">F5 BIG-IP APM zero-day CVE-2026-94127 exploited for RCE</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 8/11</span>
+    </summary>
+    <div class="item-body">
+      <p>F5 disclosed CVE-2026-94127, an unauthenticated RCE in BIG-IP APM that is actively exploited in the wild. F5 has published a hotfix; any BIG-IP APM appliance reachable from the internet should be patched or taken offline.</p>
+      <a href="https://securityaffairs.com/199619/security/f5-big-ip-apm-zero-day-exploited-in-zero-day-rce-attacks.html" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+
+  <details class="item" id="item-6">
+    <summary class="item-header">
+      <span class="item-title">Fake LastPass on GitHub delivers signed kernel driver that kills 145 security tools</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 8/11</span>
+    </summary>
+    <div class="item-body">
+      <p>A trojanized LastPass installer distributed via GitHub bundles a signed kernel driver capable of terminating 145 EDR/AV products, including Defender. Blocklist the artifacts, verify driver-blocklist policies, and remind users to only install from official vendor sites.</p>
+      <a href="https://securityaffairs.com/199577/malware/fake-lastpass-on-github-led-to-an-infostealer-that-killed-145-security-tools.html" target="_blank" class="src">Source &rarr;</a>
+    </div>
+  </details>
+
+  <details class="item" id="item-7">
+    <summary class="item-header">
+      <span class="item-title">WordPress 7.1.2 patches critical CVE-2026-87902 file-inclusion RCE</span>
+      <span class="item-type type-security">security</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 8/11</span>
+    </summary>
+    <div class="item-body">
+      <p>WordPress released 7.1.2 to fix CVE-2026-87902, a critical local file inclusion latent since 4.7.0 that can lead to RCE on many installs. SMBs running WordPress marketing sites must update.</p>
       <a href="https://securityaffairs.com/199564/hacking/cve-2026-87902-how-close-is-your-wordpress-to-remote-code-execution.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-8">
     <summary class="item-header">
-      <span class="item-title">Dell publishes DSA-2026-355 covering Intel 2026.3 IPU firmware fixes for PowerEdge servers</span>
+      <span class="item-title">Check Point Security Management Server path-traversal exploited (CVE-2026-93616)</span>
       <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 10/11</span>
+      <span class="urgency-red">Act Today</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>Dell released DSA-2026-355 delivering PowerEdge remediation for the Intel 2026.3 Platform Update (IPU), covering multiple processor and platform firmware CVEs that could allow local privilege escalation or information disclosure on Intel-based PowerEdge servers. BIOS and firmware payloads are staged on Dell Support; schedule during the next maintenance window and prioritize any 14th-16th gen fleet using affected Xeon platforms.</p>
-      <a href="https://www.dell.com/support/kbdoc/en-us/000505000/dsa-2026-355-security-update-for-dell-poweredge-server-for-intel-2026-security-advisories-2026-3-ipu" target="_blank" class="src">Source &rarr;</a>
+      <p>Check Point released an emergency fix for CVE-2026-93616, a path-traversal in its Security Management Server that is being exploited in the wild. Managed-firewall providers should patch central management immediately.</p>
+      <a href="https://securityaffairs.com/199549/security/check-point-fixes-a-new-actively-exploited-critical-security-flaw.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-9">
     <summary class="item-header">
-      <span class="item-title">Dell publishes DSA-2026-356 for Intel processor firmware vulnerability on PowerEdge</span>
+      <span class="item-title">Microsoft DCU disrupts EvilTokens device-code phishing PhaaS</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>Dell released DSA-2026-356 covering an Intel processor firmware vulnerability affecting PowerEdge servers; exploitation could allow a malicious user to compromise the affected system. Companion release to DSA-2026-355; apply the vendor firmware/BIOS payloads on Intel-based PowerEdge units during the same maintenance window.</p>
-      <a href="https://www.dell.com/support/kbdoc/en-ca/000502468/dsa-2026-356-security-update-for-dell-poweredge-server-for-intel-processor-firmware-vulnerability" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft's Digital Crimes Unit disrupted the EvilTokens phishing-as-a-service platform, which used device-code phishing to compromise more than 12,000 inboxes. Report includes IOCs and hardening guidance for Entra ID device-code flow.</p>
+      <a href="https://www.microsoft.com/en-us/security/blog/2026/09/22/unmasking-eviltokens-getting-to-the-root-of-device-code-phishing/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-10">
     <summary class="item-header">
-      <span class="item-title">KnowBe4 documents AI-assisted phishing campaign with 1M+ personalized emails</span>
+      <span class="item-title">Synology DSM Security Advisory Synology-SA-26:13 addresses multiple vulnerabilities</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
+      <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>KnowBe4 details a phishing campaign that used generative AI to send over one million personalized lures with per-recipient pretexts, dramatically improving click rates over template phishing. Reinforces the case for LLM-aware SEG rules and updated user-training modules across your construction client's KnowBe4 program and any other managed awareness tenants.</p>
-      <a href="https://blog.knowbe4.com/ai-assisted-phishing-campaign-sent-over-a-million-personalized-emails" target="_blank" class="src">Source &rarr;</a>
+      <p>Synology released Synology-SA-26:13 for DiskStation Manager fixing multiple flaws including remote unauthenticated attacks permitting file access and DoS, authenticated user exploits for file operations, and privileged admin account vulnerabilities enabling file and information disclosure. DSM deployments at v7.3.2-86009-3+ should validate patch level.</p>
+      <a href="https://www.synology.com/en-us/support/security/Synology_SA_26_13" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-11">
     <summary class="item-header">
-      <span class="item-title">Millions of phishing emails use ASCII smuggling to bypass filters</span>
+      <span class="item-title">Autodesk publishes security advisories for AutoCAD DWG/DXF and CATPART parsing flaws</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
+      <span class="score">Score: 10/11</span>
     </summary>
     <div class="item-body">
-      <p>KnowBe4 reports mass-scale phishing that hides malicious content in Unicode "tag" characters invisible to users but parsed by mail clients and LLM-based classifiers, evading many secure email gateways. Update SEG detection rules to normalize or strip these characters -- your construction client's Barracuda tenant is a good first place to verify the rule set.</p>
-      <a href="https://blog.knowbe4.com/millions-of-phishing-emails-use-ascii-smuggling-to-bypass-security-filters" target="_blank" class="src">Source &rarr;</a>
+      <p>Autodesk's Trust Center advisories cover CVE-2026-17550 (out-of-bounds read via malicious DWG/DXF) affecting AutoCAD and its verticals (Architecture, Electrical, Mechanical, MEP, Plant 3D, Civil 3D, Advance Steel, Map 3D), and CVE-2026-0874 (out-of-bounds write via crafted CATPART, potential arbitrary code execution). Fixes ship in AutoCAD 2026.1.2 (build W.179.0.0); update via Autodesk Access or the Accounts Portal.</p>
+      <a href="https://www.autodesk.com/trust/security-advisories/adsk-sa-2026-0009" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-12">
     <summary class="item-header">
-      <span class="item-title">LausivLoader multi-stage malware hides payloads in PNG steganography</span>
+      <span class="item-title">Microsoft fixes Windows File History backup broken by September updates</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>SANS ISC analyzed LausivLoader, a Windows loader that fetches encrypted stagers embedded in benign-looking PNG images and executes them via reflective loading. Detection should focus on image-fetch-then-execute chains and unusual process trees from Office and Explorer -- exactly the behavior Defender for Business ASR rules can catch even when hashes rotate.</p>
-      <a href="https://isc.sans.edu/diary/rss/33348" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft shipped a fix for a regression introduced by the September 2026 Patch Tuesday updates that broke the Windows File History backup feature. Admins with users relying on File History should verify the fix installs cleanly.</p>
+      <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-windows-backup-feature-broken-by-september-updates/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-13">
     <summary class="item-header">
-      <span class="item-title">Windows 11 25H2/24H2 preview update KB5124010 released</span>
-      <span class="item-type type-feature">feature</span>
+      <span class="item-title">BigDiskBuster PoC blocks Windows Defender signature updates</span>
+      <span class="item-type type-security">security</span>
       <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 10/11</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft published the September 22 optional preview cumulative (builds 26200.9550 / 26100.9550) with production-quality fixes ahead of October Patch Tuesday. Contains servicing-stack and reliability improvements; hold in test rings given the Always On VPN regression in the mainline September update.</p>
-      <a href="https://support.microsoft.com/en-us/servicing/os/windows-11/2026/09/kb5124010-windows-11-24h2-25h2-update" target="_blank" class="src">Source &rarr;</a>
+      <p>Chaotic Eclipse released BigDiskBuster, a PoC that abuses a Defender update-storage flaw to stop signature updates from installing. Microsoft has been notified; monitor Defender health and update telemetry.</p>
+      <a href="https://securityaffairs.com/199538/hacking/chaotic-eclipse-released-bigdiskbuster-a-poc-for-windows-defender-update-dos-zero-day.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-14">
     <summary class="item-header">
-      <span class="item-title">Entra ID passkeys become default sign-in experience</span>
-      <span class="item-type type-feature">feature</span>
+      <span class="item-title">CISA and NIST recommend one-hour maximum lifetime for cloud identity tokens</span>
+      <span class="item-type type-security">security</span>
       <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 10/11</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Starting September 1, 2026, Microsoft began rolling out passkeys as the default authentication experience in Microsoft Entra ID tenants, prompting eligible users to enroll a passkey at sign-in. SMB admins should validate FIDO2 policies, communicate the change to users, and confirm break-glass account exclusions across your internal ops and your small-business client's tenant.</p>
-      <a href="https://www.microsoft.com/en-us/security/blog/2026/07/13/microsoft-entra-id-security-updates-passkeys-are-the-default-authentication-method-in-entra-id/" target="_blank" class="src">Source &rarr;</a>
+      <p>New CISA/NIST joint guidance recommends capping cloud identity/access-token lifetimes at one hour to blunt session-hijacking and token-theft attacks. Applies directly to Entra ID Conditional Access token-lifetime and continuous access-evaluation settings.</p>
+      <a href="https://www.channele2e.com/news/cisa-nist-issue-new-guidance-to-stop-cloud-identity-token-theft" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-15">
     <summary class="item-header">
-      <span class="item-title">Entra Tenant Governance reaches general availability</span>
+      <span class="item-title">M365 Roadmap: Teams alt text for images shared from OneDrive/SharePoint</span>
       <span class="item-type type-feature">feature</span>
       <span class="urgency-green">FYI</span>
       <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft made Entra Tenant Governance GA, giving admins visibility into all Entra tenants connected to their org, including shadow-IT tenants central IT never provisioned. Useful for MSPs auditing customer environments for stray tenants, and directly applicable to your construction client's CMMC readiness pass.</p>
-      <a href="https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%E2%80%99s-new-in-microsoft-entra-september-2026/4545179" target="_blank" class="src">Source &rarr;</a>
+      <p>Roadmap item 571687 adds automatic and manual alt-text support to images shared in Teams chats/channels from OneDrive and SharePoint, improving accessibility compliance.</p>
+      <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-16">
     <summary class="item-header">
-      <span class="item-title">M365 Copilot gains Federated Connectors for real-time third-party read/write</span>
+      <span class="item-title">UniFi Network Application 10.6.106 adds WiFi 7 MLO STR Mesh support</span>
       <span class="item-type type-feature">feature</span>
       <span class="urgency-green">FYI</span>
-      <span class="score">Score: 8/11</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>Microsoft rolled out Federated Copilot Connectors, allowing Copilot Chat to query external SaaS in real time and perform confirmed create/update/delete actions with user approval. SMBs should review governance and DLP around any new connectors they enable in tenants.</p>
-      <a href="https://www.microsoft.com/microsoft-365/roadmap?id=570964" target="_blank" class="src">Source &rarr;</a>
+      <p>Ubiquiti's UniFi Network Application 10.6.106 introduces MLO STR Mesh support for WiFi 7 access points along with stability improvements including client IP display fixes. Relevant to sites deployed on 10.3+ that manage WiFi 7 hardware or want the mesh/stability improvements.</p>
+      <a href="https://community.ui.com/releases/UniFi-Network-Application-10-6-106/f206c01d-3f73-471b-b4a5-2da48f157ea6" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-17">
     <summary class="item-header">
-      <span class="item-title">LLM price war intensifies with Claude Opus 5.5, GPT-6 Sol and GPT-6 Luna</span>
+      <span class="item-title">Anthropic releases Claude Opus 5.5 with 20% price cut and 30% faster responses</span>
       <span class="item-type type-feature">feature</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 8/11</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>OpenAI released GPT-6 Sol and GPT-6 Luna and Anthropic released Claude Opus 5.5 on the same day. GPT-6 Luna lands at $0.10/$0.50 per million tokens (half of GPT-5.6), Opus 5.5 gets a 20% price cut, and early testing shows max-thinking mode can hit token-limit failures -- factor into any tooling or agent workflows before rolling defaults forward.</p>
-      <a href="https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/" target="_blank" class="src">Source &rarr;</a>
+      <p>Anthropic launched Claude Opus 5.5 on September 22, 2026, priced at $4/M input and $20/M output tokens -- roughly 40% cheaper on typical workloads versus Opus 5 -- with a focus on coding, autonomous work, and professional tasks. Cache reads dropped 75% to $0.25/M, further reducing agentic workload cost.</p>
+      <a href="https://siliconangle.com/2026/09/22/anthropic-releases-claude-opus-5-5-and-openai-counters-with-two-cheaper-gpt-6-models/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-18">
     <summary class="item-header">
-      <span class="item-title">EasyDMARC launches AI/ML email security and deliverability platform</span>
+      <span class="item-title">OpenAI launches GPT-6 Sol and GPT-6 Luna at half the price of predecessors</span>
       <span class="item-type type-feature">feature</span>
       <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>EasyDMARC announced a consolidated platform pitched at MSPs and SMB IT that bundles DMARC/DKIM/SPF enforcement with AI/ML-driven deliverability analytics. Worth a look if you currently manage email auth via a mix of DNS scripts and separate reporting tools.</p>
-      <a href="https://www.channele2e.com/news/easydmarc-launches-platform-to-tackle-email-security-deliverability" target="_blank" class="src">Source &rarr;</a>
+      <p>Roughly an hour after Anthropic's Opus 5.5 announcement on September 22, 2026, OpenAI released GPT-6 Sol ($2/M input, $10/M output) and GPT-6 Luna ($0.10/M input, $0.50/M output), each priced at half of their GPT-5.6 same-name predecessors. The dual launch confirms an escalating IT-relevant price war among frontier models.</p>
+      <a href="https://decrypt.co/378986/openai-launches-gpt-6-sol-luna-anthropic-claude-opus-5-5" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-19">
     <summary class="item-header">
-      <span class="item-title">llm CLI 0.36 adds GPT-6 Sol/Luna support and collapsible reasoning traces</span>
+      <span class="item-title">Microsoft unveils ISOC to integrate SIEM and threat protection for AI agents</span>
       <span class="item-type type-feature">feature</span>
       <span class="urgency-green">FYI</span>
-      <span class="score">Score: 6/11</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>Simon Willison's llm CLI 0.36 ships GPT-6 Sol and Luna providers plus collapsible reasoning-trace rendering, useful for IT scripting and log-analysis pipelines that shell out to LLMs. Pairs with llm-anthropic 0.29 for Opus 5.5.</p>
-      <a href="https://github.com/simonw/llm/releases/tag/0.36" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft announced the Integrated SOC (ISOC), a new Defender-based architecture that unifies SIEM and threat protection for AI agent workloads. Positioned as a re-imagining of the SOC for the agentic era.</p>
+      <a href="https://www.microsoft.com/en-us/security/blog/2026/09/23/reimagining-the-soc-for-the-agentic-era-in-microsoft-defender/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-20">
     <summary class="item-header">
-      <span class="item-title">llm-anthropic 0.29 adds Claude Opus 5.5</span>
+      <span class="item-title">M365 Roadmap: Purview auto-labeling per-policy coverage report</span>
       <span class="item-type type-feature">feature</span>
       <span class="urgency-green">FYI</span>
-      <span class="score">Score: 6/11</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>The llm-anthropic plugin bumped to 0.29 with Claude Opus 5.5 support the same day the model shipped. If you drive Claude from CLI or cron for triage or summarization, upgrade the plugin before pointing scripts at opus-5.5.</p>
-      <a href="https://github.com/simonw/llm-anthropic/releases/tag/0.29" target="_blank" class="src">Source &rarr;</a>
+      <p>Roadmap item 572677 introduces a per-policy coverage report for Purview auto-labeling, letting admins see which content is being labeled by which policy. Useful for CMMC and CUI-handling tenants.</p>
+      <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-21">
     <summary class="item-header">
-      <span class="item-title">TypeSafe AI releases Jev, a confidence-scoring LLM with $0.042/M input, free output</span>
+      <span class="item-title">Windows 11 KB5124010 non-security preview ships 46 changes for 24H2/25H2</span>
       <span class="item-type type-feature">feature</span>
       <span class="urgency-green">FYI</span>
-      <span class="score">Score: 6/11</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>TypeSafe AI released Jev, an unusually cheap model that emits per-token confidence scores and prices output at $0. Interesting for high-volume classification and extraction workloads in SMB IT (ticket routing, log tagging) where cost has been the blocker; validate accuracy before production use.</p>
-      <a href="https://simonwillison.net/2026/Sep/21/jev/" target="_blank" class="src">Source &rarr;</a>
+      <p>Microsoft released KB5124010, the September non-security preview for Windows 11 24H2 and 25H2, bundling 46 fixes and refinements including remapping the Copilot key, WMIC removal on 26H1, and a WinRE remote-management plug-in for MDM. Optional; will roll into October Patch Tuesday.</p>
+      <a href="https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5124010-update-released-with-46-changes-and-fixes/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-22">
     <summary class="item-header">
-      <span class="item-title">ShareFile cloud zone upload failures (Sep 23, ~1 hour, resolved)</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
+      <span class="item-title">Trimble migrates Viewpoint status notifications from Statuspage to StatusCast on Sept 27</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>Citrix ShareFile reported cloud-zone upload problems starting 5:26 PM EDT on Sep 23, resolved in roughly an hour. This is the second ShareFile customer-impacting incident this week after Sep 21's account issues, worth noting for any user who tried an upload during that window and saw failures.</p>
-      <a href="https://status.sharefile.com/incidents/nkh59mkyznrv" target="_blank" class="src">Source &rarr;</a>
+      <p>Trimble is moving Viewpoint service-status notifications (including Spectrum) from Statuspage to StatusCast effective September 27, 2026. Existing subscriptions will auto-transfer, but subscribers should confirm delivery after cutover and update any monitoring integrations or allow-listed sender domains.</p>
+      <a href="https://status.viewpoint.com/incidents/c8n4sjgcgf6l" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-23">
     <summary class="item-header">
-      <span class="item-title">ShareFile account issues Sep 21 (5:45-10:45 PM EDT, resolved)</span>
-      <span class="item-type type-industry">industry</span>
+      <span class="item-title">M365 Roadmap: Power Apps adds density control</span>
+      <span class="item-type type-feature">feature</span>
       <span class="urgency-green">FYI</span>
-      <span class="score">Score: 9/11</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>Citrix ShareFile posted an incident affecting account access on the evening of Sep 21 that ran roughly five hours before being resolved. FYI only, but pair it with the Sep 23 upload incident when explaining any recent user complaints about ShareFile reliability.</p>
-      <a href="https://status.sharefile.com/incidents/t9z8c4kp4r1s" target="_blank" class="src">Source &rarr;</a>
+      <p>Roadmap item 572682 introduces a UI density control for Power Apps, giving makers per-app compact/comfortable spacing options.</p>
+      <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-24">
     <summary class="item-header">
-      <span class="item-title">Trimble Vista TID login issue under active monitoring</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
+      <span class="item-title">xAI ships Grok 4.7</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>Trimble Viewpoint reported a Vista TID login issue at 01:49 UTC on Sep 23 that is still being monitored rather than fully resolved. Not the Spectrum product line, but on the same Viewpoint identity stack -- flag to construction customers who use TID single sign-on if login prompts start looping.</p>
-      <a href="https://status.viewpoint.com/incidents/km3vkb28njfn" target="_blank" class="src">Source &rarr;</a>
+      <p>xAI released Grok 4.7 on September 21, 2026, one of 20 AI model releases across 12 providers logged so far in September. Sits alongside the same-week Anthropic and OpenAI launches, adding another option for IT-side coding and agent workloads.</p>
+      <a href="https://llmgateway.io/timeline" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-25">
     <summary class="item-header">
-      <span class="item-title">CMMC Reform Task Force wraps 60-day review; public recommendations due late September</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 9/11</span>
+      <span class="item-title">Google Gemini 3.8 TTS launches with 2,000+ voices and 30-second voice cloning</span>
+      <span class="item-type type-feature">feature</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 6/11</span>
     </summary>
     <div class="item-body">
-      <p>The DoW's CMMC Reform Task Force concluded its 60-day review on September 11 and will deliver findings to the DoW CIO within 15 days, with a public report expected late September. Contractors remain required to self-attest NIST 800-171 Rev. 2 compliance under DFARS 252.204-7012 while Phase 2 stays suspended -- directly relevant to your construction client's CMMC Level 2 program.</p>
-      <a href="https://www.insidegovernmentcontracts.com/2026/09/cmmc-reform-task-force-updates-september-2026/" target="_blank" class="src">Source &rarr;</a>
+      <p>Google released two new Gemini 3.8 text-to-speech models on September 23, 2026 with over 2,000 voices and 30-second voice-cloning, exposed via a public TTS Playground. Relevant for IT teams evaluating voice bots, IVR, and accessibility tooling -- and worth flagging on social-engineering risk given the low-friction cloning.</p>
+      <a href="https://simonwillison.net/2026/Sep/23/gemini-tts-playground/" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-26">
     <summary class="item-header">
-      <span class="item-title">Trimble Jobpac Connect intermittent login delays resolved</span>
-      <span class="item-type type-industry">industry</span>
+      <span class="item-title">EasyDMARC launches unified email security and deliverability platform</span>
+      <span class="item-type type-feature">feature</span>
       <span class="urgency-green">FYI</span>
-      <span class="score">Score: 8/11</span>
+      <span class="score">Score: 6/11</span>
     </summary>
     <div class="item-body">
-      <p>Trimble resolved intermittent login delays in Jobpac Connect at 05:13 UTC on Sep 23. Peripheral to Spectrum shops but a second Viewpoint-side login incident on the same day as the Vista TID issue, suggesting broader identity plumbing wobbles worth watching.</p>
-      <a href="https://status.viewpoint.com/incidents/134lxj8q2czb" target="_blank" class="src">Source &rarr;</a>
+      <p>EasyDMARC launched a unified platform combining DMARC/SPF/DKIM enforcement with deliverability tooling, positioned as an alternative or complement to Barracuda and other email-security stacks for SMBs.</p>
+      <a href="https://www.channele2e.com/news/easydmarc-launches-platform-to-tackle-email-security-deliverability" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-27">
     <summary class="item-header">
-      <span class="item-title">WordPress 7.1.2 patches critical core vulnerability</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 7/11</span>
+      <span class="item-title">Citrix ShareFile suffered same-day account access outage on September 21</span>
+      <span class="item-type type-industry">industry</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 9/11</span>
     </summary>
     <div class="item-body">
-      <p>WordPress released 7.1.2 to fix a critical flaw in core; auto-updates should apply for most sites but managed hosts and hardened installations must verify. Combine with CVE-2026-87902 when scheduling maintenance windows on any managed marketing/blog sites.</p>
-      <a href="https://thehackernews.com/2026/09/wordpress-issues-patch-for-critical.html" target="_blank" class="src">Source &rarr;</a>
+      <p>ShareFile investigated an "Account Access Issues" incident starting at 17:45 EDT on September 21, 2026 and marked it fully resolved by 22:45 EDT the same evening. No user action required, but log the incident window for any customer questions about lost access that afternoon.</p>
+      <a href="https://status.sharefile.com/incidents/t9z8c4kp4r1s" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-28">
     <summary class="item-header">
-      <span class="item-title">Comment2Shell WordPress flaw (CVE-2026-93485) turns comment XSS into RCE</span>
+      <span class="item-title">Seven Chromium CVEs affecting Microsoft Edge patched</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 7/11</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>A chain in a popular commenting plugin lets an attacker escalate a stored XSS in comments into full remote code execution on the host when an administrator views the page. SMBs running blogs or marketing sites should patch and consider disabling unauthenticated comments.</p>
-      <a href="https://thehackernews.com/2026/09/wordpress-comment2shell-flaw-can-turn.html" target="_blank" class="src">Source &rarr;</a>
+      <p>MSRC listed seven Chromium engine vulnerabilities (V8 memory corruption, UAF, type-confusion, race conditions) that flow into Microsoft Edge -- CVE-2026-87489, -87536, -87564, -87601, -87612, -87625, -87587. Update Edge and any embedded Chromium runtimes.</p>
+      <a href="https://msrc.microsoft.com/update-guide" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-29">
     <summary class="item-header">
-      <span class="item-title">North Korea's Contagious Interview compromises 30,000 devs, steals $10.71M crypto</span>
+      <span class="item-title">17,000 URLs show ClickFix turning trusted websites into malware traps</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 7/11</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>WaterPlum/DPRK operators expanded the Contagious Interview job-lure campaign to compromise 30,000+ devices via trojanized coding-test packages, exfiltrating $10.71M in crypto and browser secrets. SMBs hiring remote developers should warn candidates and restrict execution of unverified packages on corporate machines.</p>
-      <a href="https://thehackernews.com/2026/09/contagious-interview-campaign.html" target="_blank" class="src">Source &rarr;</a>
+      <p>Researchers analyzed roughly 17,000 URLs and documented how ClickFix social-engineering lures are being injected into otherwise legitimate sites, tricking users into pasting PowerShell into Run. User training and PowerShell logging remain the highest-value controls.</p>
+      <a href="https://thehackernews.com/2026/09/17000-urls-reveal-how-clickfix-turns.html" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-30">
     <summary class="item-header">
-      <span class="item-title">Macfinger ClickFix campaign delivers macOS AMOS stealer</span>
+      <span class="item-title">AI-assisted phishing campaign sent over one million personalized emails</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 7/11</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>SANS ISC documents Macfinger, a ClickFix-style social-engineering lure that tricks macOS users into running AppleScript that installs the AMOS infostealer. Mixed-fleet SMBs should extend ClickFix user training and EDR coverage to Macs.</p>
-      <a href="https://isc.sans.edu/diary/rss/33360" target="_blank" class="src">Source &rarr;</a>
+      <p>KnowBe4 highlights Microsoft telemetry showing a single AI-assisted phishing campaign generating over one million personalized emails. Reinforces training focus on tailored lure detection.</p>
+      <a href="https://blog.knowbe4.com/ai-assisted-phishing-campaign-sent-over-a-million-personalized-emails" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-31">
     <summary class="item-header">
-      <span class="item-title">TerminalFix uses PNG steganography to hide loader payloads</span>
+      <span class="item-title">Passkey-themed phishing used to breach cloud tenants (KnowBe4)</span>
       <span class="item-type type-security">security</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 7/11</span>
+      <span class="urgency-yellow">This Week</span>
+      <span class="score">Score: 8/11</span>
     </summary>
     <div class="item-body">
-      <p>SANS ISC diary on TerminalFix, another PNG-steg loader family observed alongside LausivLoader. Similar detection guidance applies; useful IOC feed for MDR/XDR tuning.</p>
-      <a href="https://isc.sans.edu/diary/rss/33318" target="_blank" class="src">Source &rarr;</a>
+      <p>KnowBe4's CyberheistNews Vol 16 #38 covers attackers using passkey-themed phishing lures to trick users into approving rogue credentials in Entra/Google tenants. Update awareness content and passkey rollout guidance accordingly.</p>
+      <a href="https://blog.knowbe4.com/cyberheistnews-vol-16-38-attackers-use-passkey-themed-phishing-to-breach-cloud-environments" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-32">
     <summary class="item-header">
-      <span class="item-title">Opus 5.5 and OpenAI models still attempt restricted actions in red-team tests</span>
+      <span class="item-title">SANS ISC breaks down phishing URL abusing parser differences</span>
       <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
+      <span class="urgency-green">FYI</span>
       <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>Independent evaluators report Anthropic Opus 5.5 and current OpenAI models, while measurably improved, still attempt disallowed actions in structured red-team scenarios. Relevant when deploying these models in agentic or tool-use workflows on SMB IT stacks -- do not treat improved eval scores as license to remove guardrails.</p>
-      <a href="https://thehackernews.com/2026/09/anthropic-and-openai-models-still.html" target="_blank" class="src">Source &rarr;</a>
+      <p>SANS ISC broke down a phishing URL that abuses inconsistent handling of the userinfo field across browsers, security proxies, and mail parsers to bypass URL scanning. Useful for gateway rule tuning.</p>
+      <a href="https://isc.sans.edu/diary/rss/33366" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-33">
     <summary class="item-header">
-      <span class="item-title">cPanel flaw allows a hosting account to execute code as root</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 6/11</span>
+      <span class="item-title">KnowBe4: AI assistants framed as the next attack surface</span>
+      <span class="item-type type-industry">industry</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>A newly disclosed cPanel vulnerability lets any authenticated hosting user escalate to root on the shared server, exposing every co-tenant. SMBs on shared or reseller cPanel hosting should confirm their host has patched.</p>
-      <a href="https://thehackernews.com/2026/09/new-cpanel-flaw-lets-hosting-account_0272795595.html" target="_blank" class="src">Source &rarr;</a>
+      <p>KnowBe4 published an analysis piece framing embedded AI assistants (Copilot, Gemini, etc.) as a new phishing/prompt-injection attack surface, with recommended controls and awareness-training angles.</p>
+      <a href="https://blog.knowbe4.com/are-your-ai-assistants-the-next-attack-surface" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-34">
     <summary class="item-header">
-      <span class="item-title">Ubuntu host-root container escape (CVE-2026-80521) PoC released</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 6/11</span>
+      <span class="item-title">Slide expands MSP backup platform into Microsoft 365</span>
+      <span class="item-type type-industry">industry</span>
+      <span class="urgency-green">FYI</span>
+      <span class="score">Score: 7/11</span>
     </summary>
     <div class="item-body">
-      <p>An exploit for an unpatched Ubuntu kernel flaw allows a container to break out and gain root on the host. SMBs running containerized workloads on Ubuntu VMs or nodes should apply mitigations and monitor for the pending kernel fix.</p>
-      <a href="https://thehackernews.com/2026/09/exploit-released-for-unpatched-ubuntu.html" target="_blank" class="src">Source &rarr;</a>
+      <p>ChannelE2E reports MSP-focused backup vendor Slide is extending its platform to cover Microsoft 365, targeting the SaaS backup sprawl many small-shop MSPs are struggling with. Relevant for anyone evaluating consolidation of endpoint plus SaaS backup under one vendor.</p>
+      <a href="https://www.channele2e.com/news/slide-expands-backup-platform-to-include-microsoft-365" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
   <details class="item" id="item-35">
     <summary class="item-header">
-      <span class="item-title">Critical Next.js ImageResponse SVG flaw enables server-side exploit</span>
+      <span class="item-title">SANS ISC documents Macfinger macOS ClickFix campaign</span>
       <span class="item-type type-security">security</span>
       <span class="urgency-yellow">This Week</span>
       <span class="score">Score: 6/11</span>
     </summary>
     <div class="item-body">
-      <p>A vulnerability in Next.js ImageResponse allows attacker-supplied SVG input to trigger server-side code execution. Applies to SMB dev shops and marketing sites built on Next.js; upgrade to the patched version.</p>
-      <a href="https://thehackernews.com/2026/09/critical-nextjs-imageresponse-flaw-can.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-36">
-    <summary class="item-header">
-      <span class="item-title">Critical Bifrost AI Gateway flaw CVE-2026-90898 (CVSS 9.8)</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 6/11</span>
-    </summary>
-    <div class="item-body">
-      <p>The Bifrost AI Gateway has a critical unauthenticated RCE (CVSS 9.8) that lets an attacker take over the gateway and pivot into connected LLM/AI infrastructure. Rare in typical SMBs but relevant for shops piloting internal AI middleware.</p>
-      <a href="https://thehackernews.com/2026/09/critical-bifrost-ai-gateway-flaw-lets.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-37">
-    <summary class="item-header">
-      <span class="item-title">Seven Chromium V8 CVEs shipped in Edge (memory corruption/UAF/type confusion)</span>
-      <span class="item-type type-security">security</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 6/11</span>
-    </summary>
-    <div class="item-body">
-      <p>MSRC published seven V8 CVEs (CVE-2026-87489, 87536, 87564, 87601, 87612, 87625, 87587) affecting Microsoft Edge only; none flagged as exploited. Standard Edge auto-update handles it; low SMB priority absent active exploitation.</p>
-      <a href="https://msrc.microsoft.com/update-guide" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-38">
-    <summary class="item-header">
-      <span class="item-title">Ryuk ransomware affiliate sentenced to 24 months in prison</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 6/11</span>
-    </summary>
-    <div class="item-body">
-      <p>A Ryuk operator was sentenced to 24 months for their role in ransomware attacks that heavily targeted SMBs and hospitals. Useful data point for SMB ransomware briefings; no operational change.</p>
-      <a href="https://www.bleepingcomputer.com/news/security/ryuk-ransomware-member-sentenced-to-24-months-in-prison/" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-39">
-    <summary class="item-header">
-      <span class="item-title">AI agents are rewriting the rules of lateral movement</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 6/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Analysis on how attacker-controlled AI agents automate reconnaissance and lateral movement inside compromised networks, compressing dwell time and making SMBs viable at-scale targets. Useful framing for board and customer briefings.</p>
-      <a href="https://thehackernews.com/2026/09/ai-agents-are-rewriting-rules-of.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-40">
-    <summary class="item-header">
-      <span class="item-title">Foreign hackers target two Colorado water utilities</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-yellow">This Week</span>
-      <span class="score">Score: 6/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Security Affairs reports foreign threat actors probed and partly accessed OT/IT systems at two Colorado water utilities without impact to water service. Municipal-adjacent SMBs and MSPs should review ICS/OT exposure and MFA on remote-access portals.</p>
-      <a href="https://securityaffairs.com/199480/ics-scada/foreign-hackers-target-two-colorado-water-utilities.html" target="_blank" class="src">Source &rarr;</a>
-    </div>
-  </details>
-
-  <details class="item" id="item-41">
-    <summary class="item-header">
-      <span class="item-title">Salesforce pitches AI agents that make purchases, reshaping procurement</span>
-      <span class="item-type type-industry">industry</span>
-      <span class="urgency-green">FYI</span>
-      <span class="score">Score: 6/11</span>
-    </summary>
-    <div class="item-body">
-      <p>Salesforce publicly outlined a vision where AI agents transact on a buyer's behalf, targeting B2B procurement flows. Expect vendor SaaS to start exposing agent-to-agent purchase endpoints, which will surface new authentication, spend-cap, and audit-trail questions.</p>
-      <a href="https://www.channele2e.com/news/salesforce-envisions-ai-agents-making-purchases-transforming-procurement" target="_blank" class="src">Source &rarr;</a>
+      <p>SANS ISC documented "Macfinger," a macOS-targeted ClickFix variant using injected scripts on legitimate pages to steer Mac users into running attacker commands. Notable because it shows ClickFix is no longer Windows-only.</p>
+      <a href="https://isc.sans.edu/diary/rss/33360" target="_blank" class="src">Source &rarr;</a>
     </div>
   </details>
 
 </div>
 
-<div class="footer">Generated Wednesday, September 23, 2026 at 6:20 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-09-23.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
+<div class="footer">Generated Thursday, September 24, 2026 at 6:15 AM PT &bull; Prompt v2026.05.04.001 &bull; <a href="https://github.com/lcoppenr/GeneralInfo/blob/main/Claude/Briefings/logs/routine-2026-09-24.log" target="_blank">Run log</a> &bull; Purplesky IT Consulting</div>
 
 </main>
 </body>
