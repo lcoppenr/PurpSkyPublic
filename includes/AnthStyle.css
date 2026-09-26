@@ -1,6 +1,6 @@
 /* ============================================================
    AnthStyle.css -- Purplesky IT Consulting Design System
-   Version: v2026.04.26.002
+   Version: v2026.09.25.001
 
    Single source of truth for all Purplesky-branded pages.
    Consumers:
@@ -1263,4 +1263,92 @@ input.area-input::placeholder { font-style: italic; font-weight: 400; }
   .summary-card > * { border-bottom: none; }
   .summary-card > *:last-child { border-bottom: 1px solid var(--border-dark); padding-bottom: 9px; }
   .summary-card:last-child > *:last-child { border-bottom: none; }
+}
+
+
+/* ==========================================================
+   BRIEFING v2: TWO-COLUMN DO / KNOW LAYOUT (v2026.09.25.001)
+   Used by routine-prompt v2026.09.25.001 and later.
+   ========================================================== */
+
+.brief-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 32px;
+  align-items: start;
+}
+
+.brief-col {}
+
+.brief-coltitle {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-ink);
+  margin: 8px 0 -20px;
+}
+
+.brief-sec {}
+
+.brief-rule {
+  color: var(--muted);
+  font-size: 0.82rem;
+  margin: -6px 0 8px;
+}
+
+.brief-lines {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: var(--card-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.brief-lines li {
+  padding: 9px 16px;
+  border-top: 1px solid var(--border-soft);
+  line-height: 1.45;
+}
+
+.brief-lines li:first-child { border-top: none; }
+
+.brief-col:first-child .brief-sec:first-of-type .brief-lines { border-left: 4px solid var(--accent); }
+
+.brief-tag {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  background: var(--accent-soft);
+  color: #4A2416;
+  border-radius: 4px;
+  padding: 1px 7px;
+  margin-right: 6px;
+  white-space: nowrap;
+}
+
+.brief-hl {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.brief-act {
+  display: block;
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-top: 2px;
+}
+
+.brief-empty { color: var(--muted-light); font-style: italic; }
+
+.brief-quiet {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-weight: 600;
+  color: var(--ok);
+}
+
+@media (max-width: 900px) {
+  .brief-cols { grid-template-columns: 1fr; }
 }
