@@ -1352,3 +1352,8 @@ input.area-input::placeholder { font-style: italic; font-weight: 400; }
 @media (max-width: 900px) {
   .brief-cols { grid-template-columns: 1fr; }
 }
+
+/* Briefing v2 detail cards: collapsed <details class="item"> without the double padding */
+.section-details details.item { padding: 0; margin-bottom: 8px; }
+.section-details details.item > summary.item-header { margin-bottom: 0; padding: 10px 16px; }
+.section-details details.item .item-body { padding: 0 16px 12px 36px; }
